@@ -172,3 +172,43 @@ branches:
                 url: /ai-subscriptions
               - title: Economics of renting GPUs
                 url: /ai-bm#economics-of-renting-gpus
+  - id: multimodal
+    label: Multimodal
+    what: Models that take in and give back more than text. Pictures, diagrams, speech and video, on the way in and on the way out.
+    why: Text is the narrowest pipe between me and a model. Each extra channel changes what I can ask for and what it feels like to work together.
+    links:
+      - title: AI and art
+        url: /ai-art
+    children:
+      - id: explainers
+        label: explainers
+        full: Creating explainers
+        what: Turning something I want to understand into a page I can play with. A model drafts the interactive part, I check it against the source.
+        why: An explainer is the test of whether I understood the thing, and AI made building one cheap enough to do for a single lecture.
+        links:
+          - title: Explainers
+            url: /explainers
+          - title: Explainers I've built
+            url: /explainers#explainers-ive-built
+      - id: voice
+        label: voice
+        full: Voice interfaces
+        what: Talking to the model instead of typing. Dictation for commands at the desk, and a model that talks back on a walk.
+        why: I say things out loud that I would never type, and it works where a keyboard doesn't. That changes where I think with it, not just how fast.
+        links:
+          - title: Voice input in the cockpit
+            url: /ai-cockpit#voice-input---the-primary-interface
+          - title: You need to use voice
+            url: /ai-operator#you-need-to-use-voice
+          - title: Using voice to make commands
+            url: /ai-journal#using-voice-to-make-commands
+      - id: video
+        label: video
+        full: Video interfaces
+        what: A camera or a recording as the input. The model watches a card trick, a kettlebell swing or a lecture and tells me what it saw.
+        why: Most of what I do away from the keyboard is visible but never written down. Video is how a model gets to see it.
+        links:
+          - title: Magic Monitor and the form analyzer
+            url: /pet-projects
+          - title: Digesting a YouTube video
+            url: /ai-journal#used-it-to-digest-content-from-a-youtube-video

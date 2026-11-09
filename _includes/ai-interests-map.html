@@ -1,354 +1,1239 @@
-{% comment %} Interactive AI interests map, transcribed from a hand-drawn mind
-map. Three branches (Training, Usage, Inference), each with up to two levels of
-children, laid out as columns that stack on a phone. Tapping a node (or a topic
-chip in the header) opens its card below the map. Cards are rendered server-side
-in .aim-cards; without JavaScript they show as a plain list under the tree, with
-JavaScript that list hides and the clicked card is copied into the panel. Data:
-_data/ai_interests_map.yml. Self-contained, no libraries, no network. Used by:
+{% comment %} Interactive AI interests map, an atlas you move through. Three
+tinted territories (Training, Usage, Inference), places sized by depth, roads
+from parent to child. Drag to pan, scroll or pinch to zoom, tap a place to fly
+to it and open its card. Labels thin out when zoomed out and one-line blurbs
+appear when zoomed in. Wide frames get a landscape world, phones a portrait one.
+Data: _data/ai_interests_map.yml, handed to the script as JSON below. Without
+JavaScript the noscript block lists every card (ai-interests-map-card.html).
+Deep link: #node=ID. Self-contained, no libraries, no network. Keep tag-like
+text out of this comment: prettier parses it as HTML. Used by:
 _d/ai-interests-map.md {% endcomment %} {%- assign aim =
 site.data.ai_interests_map -%}
 <style>
-  .aim {
-    --aim-ink: #1b1f24;
-    --aim-soft: #5a636e;
-    --aim-rule: #d8dbe0;
-    --aim-paper: #ffffff;
-    --aim-panel: #f5f6f8;
-    --aim-link: #1f5fa8;
-    --aim-training: #2f6fb5;
-    --aim-usage: #2e8a57;
-    --aim-inference: #b0701a;
+  .at {
+    --at-sea: #eaeff3;
+    --at-grid: rgba(30, 50, 70, 0.14);
+    --at-ink: #1c2530;
+    --at-soft: #5d6b7a;
+    --at-link: #1d5ea8;
+    --at-card: rgba(255, 255, 255, 0.94);
+    --at-card-edge: rgba(28, 37, 48, 0.12);
+    --at-ctl: #ffffff;
+    --at-training: #3f72c4;
+    --at-usage: #2f8f5b;
+    --at-inference: #b8761f;
+    --at-multimodal: #6f52b8;
+    --at-land-alpha: 0.16;
+    --at-region-alpha: 0.42;
     box-sizing: border-box;
-    max-width: 820px;
-    margin: 1.5em auto;
-    padding: 1rem 1.1rem 1.1rem;
-    background: var(--aim-paper);
-    border: 1px solid var(--aim-rule);
-    border-radius: 4px;
-    color: var(--aim-ink);
+    margin: 1.5em 0;
+    color: var(--at-ink);
+    line-height: 1.35;
     font-family:
       -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.35;
-  }
-  .aim * {
-    box-sizing: border-box;
   }
   @media (prefers-color-scheme: dark) {
-    .aim {
-      --aim-ink: #e6e8eb;
-      --aim-soft: #aab2bc;
-      --aim-rule: #3a4049;
-      --aim-paper: #1e2228;
-      --aim-panel: #272c33;
-      --aim-link: #7fb4f0;
-      --aim-training: #6aa5e8;
-      --aim-usage: #5cc28a;
-      --aim-inference: #e0a64e;
+    :root:not([data-bs-theme="light"]) .at {
+      --at-sea: #151b22;
+      --at-grid: rgba(190, 210, 230, 0.12);
+      --at-ink: #e6e9ee;
+      --at-soft: #9aa6b4;
+      --at-link: #8ab8f5;
+      --at-card: rgba(30, 36, 44, 0.95);
+      --at-card-edge: rgba(255, 255, 255, 0.12);
+      --at-ctl: #262d36;
+      --at-training: #7aa6ea;
+      --at-usage: #6cc48f;
+      --at-inference: #e1a553;
+      --at-multimodal: #a98ff0;
+      --at-land-alpha: 0.2;
+      --at-region-alpha: 0.6;
     }
   }
-  [data-bs-theme="dark"] .aim {
-    --aim-ink: #e6e8eb;
-    --aim-soft: #aab2bc;
-    --aim-rule: #3a4049;
-    --aim-paper: #1e2228;
-    --aim-panel: #272c33;
-    --aim-link: #7fb4f0;
-    --aim-training: #6aa5e8;
-    --aim-usage: #5cc28a;
-    --aim-inference: #e0a64e;
+  [data-bs-theme="dark"] .at {
+    --at-sea: #151b22;
+    --at-grid: rgba(190, 210, 230, 0.12);
+    --at-ink: #e6e9ee;
+    --at-soft: #9aa6b4;
+    --at-link: #8ab8f5;
+    --at-card: rgba(30, 36, 44, 0.95);
+    --at-card-edge: rgba(255, 255, 255, 0.12);
+    --at-ctl: #262d36;
+    --at-training: #7aa6ea;
+    --at-usage: #6cc48f;
+    --at-inference: #e1a553;
+    --at-multimodal: #a98ff0;
+    --at-land-alpha: 0.2;
+    --at-region-alpha: 0.6;
   }
-  .aim-topics {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.35rem 0.5rem;
-    margin: 0 0 0.9rem;
-    font-size: 0.85rem;
-    color: var(--aim-soft);
+  .at *,
+  .at *::before,
+  .at *::after {
+    box-sizing: border-box;
   }
-  .aim button {
-    font: inherit;
-    color: inherit;
+  .at-frame {
+    position: relative;
+    height: 620px;
+    background: var(--at-sea);
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--at-card-edge);
+  }
+  @media (max-width: 759px) {
+    .at-frame {
+      height: min(80vh, 680px);
+      min-height: 480px;
+    }
+  }
+  .at svg.at-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    touch-action: pan-y;
+    cursor: grab;
+    outline: none;
+  }
+  .at svg.at-canvas.is-dragging {
+    cursor: grabbing;
+  }
+  .at svg.at-canvas:focus-visible {
+    box-shadow: inset 0 0 0 2px var(--at-link);
+  }
+  .at .land {
+    fill-opacity: var(--at-land-alpha);
+    stroke-width: 1.2;
+    stroke-opacity: 0.55;
+    vector-effect: non-scaling-stroke;
+  }
+  .at .region-name {
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    fill-opacity: var(--at-region-alpha);
+    pointer-events: none;
+  }
+  .at g > .road {
+    fill: none;
+    stroke-opacity: 0.5;
+    stroke-width: 1.4;
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: round;
+  }
+  .at .node {
     cursor: pointer;
   }
-  .aim .aim-chip {
-    padding: 0.15rem 0.6rem;
-    border: 1px solid var(--aim-rule);
-    border-radius: 999px;
-    background: transparent;
-    font-size: 0.85rem;
+  .at .node:focus {
+    outline: none;
   }
-  .aim-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: 1rem;
+  .at .node .pin {
+    stroke: var(--at-sea);
+    stroke-width: 2;
   }
-  .aim-branch {
-    --aim-c: var(--aim-rule);
+  .at .node:focus-visible .pin,
+  .at .node.is-current .pin {
+    stroke: var(--at-ink);
+    stroke-width: 2.5;
   }
-  .aim-branch[data-branch="training"] {
-    --aim-c: var(--aim-training);
+  .at .node text {
+    fill: var(--at-ink);
+    paint-order: stroke;
+    stroke: var(--at-sea);
+    stroke-width: 3px;
+    stroke-linejoin: round;
+    user-select: none;
+    -webkit-user-select: none;
   }
-  .aim-branch[data-branch="usage"] {
-    --aim-c: var(--aim-usage);
-  }
-  .aim-branch[data-branch="inference"] {
-    --aim-c: var(--aim-inference);
-  }
-  .aim ul.aim-tree,
-  .aim ul.aim-tree ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .aim ul.aim-tree ul {
-    margin-left: 0.7rem;
-    padding-left: 0.8rem;
-  }
-  /* Vertical connector per item, so the line stops at the last child's elbow. */
-  .aim ul.aim-tree ul > li::after {
-    content: "";
-    position: absolute;
-    left: -0.8rem;
-    top: -0.35rem;
-    bottom: 0;
-    border-left: 2px solid var(--aim-c);
-  }
-  .aim ul.aim-tree ul > li:last-child::after {
-    bottom: auto;
-    height: 1.5rem;
-  }
-  .aim ul.aim-tree li {
-    margin: 0.35rem 0 0;
-    position: relative;
-  }
-  .aim ul.aim-tree ul > li::before {
-    content: "";
-    position: absolute;
-    left: -0.8rem;
-    top: 1.05rem;
-    width: 0.6rem;
-    border-top: 2px solid var(--aim-c);
-  }
-  .aim .aim-node {
-    display: inline-block;
-    min-height: 2.1rem;
-    padding: 0.3rem 0.7rem;
-    border: 2px solid var(--aim-c);
-    border-radius: 6px;
-    background: var(--aim-paper);
-    text-align: left;
-    font-size: 0.92rem;
-  }
-  .aim .aim-node small {
-    color: var(--aim-soft);
-    font-size: 0.78rem;
-  }
-  .aim .aim-node.is-branch {
+  .at .node.is-current text.lbl {
     font-weight: 700;
-    font-size: 1.02rem;
   }
-  .aim .aim-node:hover,
-  .aim .aim-chip:hover {
-    background: var(--aim-panel);
+  .at .node .lbl {
+    transition: opacity 0.18s;
   }
-  .aim .aim-chip[aria-pressed="true"] {
-    border-color: var(--aim-training);
-    color: var(--aim-training);
-    font-weight: 600;
+  .at .node .snip {
+    color: var(--at-soft);
+    font-size: 11.5px;
+    line-height: 1.3;
+    width: 200px;
+    transition: opacity 0.18s;
+    pointer-events: none;
   }
-  .aim .aim-node[aria-pressed="true"] {
-    background: var(--aim-c);
-    color: var(--aim-paper);
+  .at .snip-fo {
+    overflow: visible;
   }
-  .aim .aim-node[aria-pressed="true"] small {
-    color: var(--aim-paper);
+  .at .c-training {
+    color: var(--at-training);
+    fill: var(--at-training);
+    stroke: var(--at-training);
   }
-  .aim button:focus-visible {
-    outline: 2px solid var(--aim-link);
-    outline-offset: 2px;
+  .at .c-usage {
+    color: var(--at-usage);
+    fill: var(--at-usage);
+    stroke: var(--at-usage);
   }
-  .aim-hint {
-    margin: 0.9rem 0 0;
-    font-size: 0.85rem;
-    color: var(--aim-soft);
+  .at .c-inference {
+    color: var(--at-inference);
+    fill: var(--at-inference);
+    stroke: var(--at-inference);
   }
-  .aim-panel {
-    margin-top: 0.9rem;
+  .at .c-multimodal {
+    color: var(--at-multimodal);
+    fill: var(--at-multimodal);
+    stroke: var(--at-multimodal);
   }
-  .aim-panel[hidden],
-  .aim.is-live .aim-cards {
-    display: none;
-  }
-  .aim:not(.is-live) .aim-hint {
-    display: none;
-  }
-  .aim-card {
-    --aim-c: var(--aim-rule);
-    margin-top: 0.9rem;
-    border-left: 4px solid var(--aim-c);
-    border-radius: 0 4px 4px 0;
-    background: var(--aim-panel);
-    padding: 0.7rem 0.9rem 0.8rem;
-    font-size: 0.92rem;
-  }
-  .aim-card[data-branch="training"] {
-    --aim-c: var(--aim-training);
-  }
-  .aim-card[data-branch="usage"] {
-    --aim-c: var(--aim-usage);
-  }
-  .aim-card[data-branch="inference"] {
-    --aim-c: var(--aim-inference);
-  }
-  .aim-card-head {
+  .at-regions {
+    position: absolute;
+    top: 10px;
+    left: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 0.5rem;
+    gap: 6px;
+    flex-wrap: wrap;
+    z-index: 2;
   }
-  .aim .aim-card .aim-title {
-    margin: 0;
-    font-weight: 700;
-    font-size: 1.05rem;
-    color: var(--aim-ink);
+  .at-regions button,
+  .at-zoom button {
+    font: inherit;
+    font-size: 0.82rem;
+    line-height: 1.2;
+    color: var(--at-ink);
+    background: var(--at-ctl);
+    border: 1px solid var(--at-card-edge);
+    border-radius: 4px;
+    padding: 0.25rem 0.6rem;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   }
-  .aim-path {
-    margin: 0.1rem 0 0.45rem;
-    font-size: 0.78rem;
-    color: var(--aim-soft);
+  .at-regions button {
+    padding-left: 0.45rem;
   }
-  .aim .aim-card p {
-    margin: 0 0 0.45rem;
+  .at-regions button::before {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+    vertical-align: 0;
+    background: var(--at-ink);
   }
-  .aim .aim-card ul {
-    margin: 0.2rem 0 0;
-    padding-left: 1.1rem;
+  .at-regions button.c-training::before {
+    background: var(--at-training);
   }
-  .aim .aim-card a {
-    color: var(--aim-link);
+  .at-regions button.c-usage::before {
+    background: var(--at-usage);
   }
-  .aim .aim-close {
-    display: none;
-    padding: 0 0.4rem;
-    border: 0;
-    background: transparent;
-    color: var(--aim-soft);
-    font-size: 1.2rem;
+  .at-regions button.c-inference::before {
+    background: var(--at-inference);
+  }
+  .at-regions button.c-multimodal::before {
+    background: var(--at-multimodal);
+  }
+  .at-regions button.c-training,
+  .at-regions button.c-usage,
+  .at-regions button.c-inference,
+  .at-regions button.c-multimodal {
+    color: var(--at-ink);
+  }
+  .at-zoom {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 2;
+  }
+  .at-zoom button {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    font-size: 1.1rem;
     line-height: 1;
   }
-  .aim-panel .aim-close {
-    display: inline-block;
+  .at-zoom button.fit {
+    font-size: 0.75rem;
+  }
+  .at button:focus-visible {
+    outline: 2px solid var(--at-link);
+    outline-offset: 1px;
+  }
+  .at-hint {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 0.75rem;
+    color: var(--at-soft);
+    background: var(--at-ctl);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--at-card-edge);
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 2;
+    transition: opacity 0.3s;
+  }
+  .at-hint.is-hidden {
+    opacity: 0;
+  }
+  .at-card {
+    position: absolute;
+    z-index: 3;
+    background: var(--at-card);
+    border: 1px solid var(--at-card-edge);
+    border-radius: 6px;
+    padding: 12px 14px 14px;
+    font-size: 0.9rem;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    top: 54px;
+    right: 10px;
+    width: 300px;
+    max-height: calc(100% - 64px);
+    overflow: auto;
+  }
+  .at-card[hidden] {
+    display: none;
+  }
+  @media (max-width: 759px) {
+    .at-card {
+      top: auto;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: auto;
+      max-height: 58%;
+      border-radius: 10px 10px 0 0;
+      padding-top: 16px;
+    }
+    .at-card::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      width: 36px;
+      height: 4px;
+      margin-left: -18px;
+      border-radius: 2px;
+      background: var(--at-soft);
+      opacity: 0.5;
+    }
+    .at-zoom {
+      bottom: auto;
+      top: 84px;
+    }
+    .at-hint {
+      display: none;
+    }
+  }
+  .at-card .at-path {
+    margin: 0 0 2px;
+    font-size: 0.76rem;
+    color: var(--at-soft);
+  }
+  .at-card .at-title {
+    margin: 0 0 0.45rem;
+    font-size: 1.12rem;
+    font-weight: 700;
+    line-height: 1.2;
+    padding-left: 0.6rem;
+    border-left: 4px solid var(--at-c);
+    color: var(--at-ink);
+  }
+  .at-card p {
+    margin: 0 0 0.5rem;
+  }
+  .at-card .at-why b {
+    font-weight: 600;
+    color: var(--at-soft);
+  }
+  .at-card ul {
+    margin: 0.4rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .at-card li {
+    margin: 0.3rem 0;
+    display: flex;
+    gap: 0.45rem;
+    align-items: baseline;
+  }
+  .at-card li::before {
+    content: "";
+    flex: none;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--at-c);
+    position: relative;
+    top: -1px;
+  }
+  .at-card a {
+    color: var(--at-link);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .at-card .at-ext {
+    font-size: 0.74rem;
+    color: var(--at-soft);
+  }
+  .at-card .at-nearby {
+    margin: 0.6rem 0 0;
+    font-size: 0.82rem;
+    color: var(--at-soft);
+  }
+  .at-card .at-nearby button {
+    font: inherit;
+    color: var(--at-ink);
+    background: none;
+    border: 0;
+    padding: 0 1px;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .at-card .at-close {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    border: 0;
+    background: none;
+    font: inherit;
+    font-size: 1.3rem;
+    line-height: 1;
+    color: var(--at-soft);
+    cursor: pointer;
+    padding: 2px 6px;
+  }
+  .at.is-live .at-fallback {
+    display: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .at * {
+      transition: none !important;
+    }
   }
 </style>
-<div class="aim" aria-label="Map of the AI topics I keep coming back to">
-  <div class="aim-topics">
-    <span>Topics:</span>
-    {%- for t in aim.topics %} {%- for b in aim.branches %}{% for c in
-    b.children %}{% if c.id == t %}
-    <button type="button" class="aim-chip" data-node="{{ c.id }}">
-      {{ c.full | default: c.label }}
-    </button>
-    {%- endif %}{% endfor %}{% endfor %} {%- endfor %}
-  </div>
-  <div class="aim-grid">
-    {%- for b in aim.branches %}
-    <div class="aim-branch" data-branch="{{ b.id }}">
-      <ul class="aim-tree">
-        <li>
-          <button
-            type="button"
-            class="aim-node is-branch"
-            data-node="{{ b.id }}"
-          >
-            {{ b.label }}
-          </button>
-          {%- if b.children %}
-          <ul>
-            {%- for c in b.children %}
-            <li>
-              <button type="button" class="aim-node" data-node="{{ c.id }}">
-                {{ c.label }}{% if c.label contains "A2" %}
-                <small>{{ c.full }}</small>{% endif %}
-              </button>
-              {%- if c.children %}
-              <ul>
-                {%- for g in c.children %}
-                <li>
-                  <button type="button" class="aim-node" data-node="{{ g.id }}">
-                    {{ g.label }}
-                  </button>
-                </li>
-                {%- endfor %}
-              </ul>
-              {%- endif %}
-            </li>
-            {%- endfor %}
-          </ul>
-          {%- endif %}
-        </li>
-      </ul>
+<div class="at" aria-label="Map of the AI topics I keep coming back to">
+  <div class="at-frame">
+    <svg
+      class="at-canvas"
+      tabindex="0"
+      role="application"
+      aria-label="Zoomable map of AI interests. Drag to pan, scroll or pinch to zoom, tap a place to read about it."
+    ></svg>
+    <div class="at-regions" data-regions></div>
+    <div class="at-zoom">
+      <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
+      <button type="button" data-zoom="out" aria-label="Zoom out">−</button>
+      <button
+        type="button"
+        data-zoom="fit"
+        class="fit"
+        aria-label="Fit the whole map"
+      >
+        fit
+      </button>
     </div>
-    {%- endfor %}
+    <div class="at-hint" data-hint>
+      Zoom in to read more. Tap a place to open it.
+    </div>
+    <div class="at-card" data-card hidden></div>
   </div>
-  <p class="aim-hint">Tap a node to open its card.</p>
-  <div class="aim-panel" hidden aria-live="polite"></div>
-  <div class="aim-cards">
-    {%- for b in aim.branches %} {%- include ai-interests-map-card.html node=b
-    branch=b.id path=b.label %} {%- for c in b.children %} {%- capture cpath
-    %}{{ b.label }} › {{ c.label }}{% endcapture %} {%- include
-    ai-interests-map-card.html node=c branch=b.id path=cpath %} {%- for g in
-    c.children %} {%- capture gpath %}{{ cpath }} › {{ g.label }}{% endcapture
-    %} {%- include ai-interests-map-card.html node=g branch=b.id path=gpath %}
-    {%- endfor %} {%- endfor %} {%- endfor %}
-  </div>
+  <script type="application/json" class="at-data">
+    {{ aim | jsonify }}
+  </script>
+  <noscript>
+    <div class="at-fallback">
+      {%- for b in aim.branches %} {%- include ai-interests-map-card.html node=b
+      branch=b.id path=b.label %} {%- for c in b.children %} {%- capture cpath
+      %}{{ b.label }} › {{ c.label }}{% endcapture %} {%- include
+      ai-interests-map-card.html node=c branch=b.id path=cpath %} {%- for g in
+      c.children %} {%- capture gpath %}{{ cpath }} › {{ g.label }}{% endcapture
+      %} {%- include ai-interests-map-card.html node=g branch=b.id path=gpath %}
+      {%- endfor %} {%- endfor %} {%- endfor %}
+    </div>
+  </noscript>
 </div>
 <script>
   (function () {
-    document.querySelectorAll(".aim:not(.is-live)").forEach(function (root) {
-      var panel = root.querySelector(".aim-panel");
-      var nodes = root.querySelectorAll(".aim-node, .aim-chip");
-      var current = null;
+    document.querySelectorAll(".at:not(.is-live)").forEach(function (root) {
+      var DATA = JSON.parse(root.querySelector(".at-data").textContent);
+      var frame = root.querySelector(".at-frame");
+      var svg = root.querySelector("svg.at-canvas");
+      var card = root.querySelector("[data-card]");
+      var hint = root.querySelector("[data-hint]");
+      var NS = "http://www.w3.org/2000/svg";
+      var reduce =
+        window.matchMedia &&
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-      function close() {
-        current = null;
-        panel.hidden = true;
-        panel.innerHTML = "";
-        nodes.forEach(function (n) {
-          n.setAttribute("aria-pressed", "false");
+      // World coordinates. Positions are hand-placed so each branch reads as a
+      // territory. Wide frames get a landscape world; phones get the same
+      // places stacked into a portrait one. names = an empty patch inside each
+      // hull where the territory's name sits. A node missing from a world is
+      // dropped next to its parent, so a new yml node still shows up.
+      var WORLDS = {
+        wide: {
+          W: 1000,
+          H: 900,
+          pos: {
+            training: [215, 205],
+            pre: [105, 115],
+            post: [90, 250],
+            evals: [385, 290],
+            coding: [290, 455],
+            judges: [430, 425],
+            usage: [715, 215],
+            a2a: [630, 95],
+            a2h: [820, 330],
+            think: [735, 440],
+            enable: [905, 450],
+            a2c: [880, 120],
+            inference: [600, 700],
+            efficiency: [730, 740],
+            costs: [850, 775],
+            multimodal: [215, 720],
+            explainers: [95, 665],
+            voice: [125, 790],
+            video: [365, 790],
+          },
+          names: {
+            training: [250, 350],
+            usage: [775, 290],
+            inference: [720, 650],
+            multimodal: [225, 760],
+          },
+        },
+        narrow: {
+          W: 600,
+          H: 1540,
+          pos: {
+            training: [190, 150],
+            pre: [80, 70],
+            post: [70, 230],
+            evals: [330, 230],
+            coding: [260, 340],
+            judges: [400, 330],
+            usage: [300, 580],
+            a2a: [120, 510],
+            a2c: [390, 480],
+            a2h: [330, 710],
+            think: [200, 820],
+            enable: [430, 830],
+            inference: [170, 980],
+            efficiency: [320, 1040],
+            costs: [450, 1090],
+            multimodal: [190, 1340],
+            explainers: [80, 1260],
+            voice: [120, 1430],
+            video: [410, 1432],
+          },
+          names: {
+            training: [230, 292],
+            usage: [300, 652],
+            inference: [340, 958],
+            multimodal: [330, 1390],
+          },
+        },
+      };
+      function pickWorld() {
+        return frame.clientWidth < 600 ? "narrow" : "wide";
+      }
+      var worldName = pickWorld();
+      var WORLD = WORLDS[worldName];
+
+      var nodes = [],
+        byId = {};
+      DATA.branches.forEach(function (b) {
+        walk(b, null, b.id, 0, [b.label]);
+      });
+      function walk(n, parent, branch, depth, path) {
+        var rec = {
+          id: n.id,
+          label: n.label,
+          full: n.full || n.label,
+          what: n.what || "",
+          why: n.why || "",
+          links: n.links || [],
+          parent: parent,
+          branch: branch,
+          depth: depth,
+          path: path.slice(),
+          children: [],
+          x: 0,
+          y: 0,
+        };
+        nodes.push(rec);
+        byId[n.id] = rec;
+        if (parent) byId[parent].children.push(rec);
+        (n.children || []).forEach(function (c) {
+          walk(c, n.id, branch, depth + 1, path.concat([c.label]));
+        });
+      }
+      function placeAll() {
+        nodes.forEach(function (n, i) {
+          var p = WORLD.pos[n.id];
+          if (!p && n.parent) {
+            var pp = byId[n.parent];
+            p = [pp.x + 60 + (i % 3) * 20, pp.y + 70];
+          }
+          if (!p) p = [WORLD.W / 2, WORLD.H / 2];
+          n.x = p[0];
+          n.y = p[1];
         });
       }
 
-      function show(id) {
-        if (id === current) return close();
-        var card = root.querySelector('.aim-card[data-card="' + id + '"]');
-        if (!card) return;
-        current = id;
-        panel.innerHTML = "";
-        var copy = card.cloneNode(true);
-        copy.style.marginTop = "0";
-        panel.appendChild(copy);
-        copy.querySelector(".aim-close").addEventListener("click", close);
-        panel.hidden = false;
+      function el(tag, attrs, parent) {
+        var e = document.createElementNS(NS, tag);
+        if (attrs)
+          Object.keys(attrs).forEach(function (k) {
+            e.setAttribute(k, attrs[k]);
+          });
+        if (parent) parent.appendChild(e);
+        return e;
+      }
+      function esc(s) {
+        return String(s).replace(/[&<>"]/g, function (c) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+        });
+      }
+      function clip(s, n) {
+        return s.length <= n ? s : s.slice(0, n).replace(/\s+\S*$/, "") + "…";
+      }
+
+      // ---- geometry ----
+      function centroid(pts) {
+        var x = 0,
+          y = 0;
+        pts.forEach(function (p) {
+          x += p[0];
+          y += p[1];
+        });
+        return [x / pts.length, y / pts.length];
+      }
+      function convexHull(pts) {
+        pts = pts.slice().sort(function (a, b) {
+          return a[0] - b[0] || a[1] - b[1];
+        });
+        var cross = function (o, a, b) {
+          return (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0]);
+        };
+        var lower = [],
+          upper = [];
+        pts.forEach(function (p) {
+          while (
+            lower.length >= 2 &&
+            cross(lower[lower.length - 2], lower[lower.length - 1], p) <= 0
+          )
+            lower.pop();
+          lower.push(p);
+        });
+        pts
+          .slice()
+          .reverse()
+          .forEach(function (p) {
+            while (
+              upper.length >= 2 &&
+              cross(upper[upper.length - 2], upper[upper.length - 1], p) <= 0
+            )
+              upper.pop();
+            upper.push(p);
+          });
+        upper.pop();
+        lower.pop();
+        return lower.concat(upper);
+      }
+      function blob(pts, pad) {
+        // ring each point so a chain of places still gets a territory, pad the
+        // hull outward, then draw a closed Catmull-Rom curve through it
+        var ringed = [];
+        pts.forEach(function (p) {
+          for (var a = 0; a < 6; a++)
+            ringed.push([
+              p[0] + Math.cos((a * Math.PI) / 3) * 40,
+              p[1] + Math.sin((a * Math.PI) / 3) * 40,
+            ]);
+        });
+        var hull = convexHull(ringed),
+          c = centroid(hull),
+          out = [];
+        hull.forEach(function (p, i) {
+          var next = hull[(i + 1) % hull.length];
+          var ax = p[0] - c[0],
+            ay = p[1] - c[1],
+            al = Math.hypot(ax, ay) || 1;
+          out.push([p[0] + (ax / al) * pad, p[1] + (ay / al) * pad]);
+          var mx = (p[0] + next[0]) / 2,
+            my = (p[1] + next[1]) / 2,
+            bx = mx - c[0],
+            by = my - c[1],
+            bl = Math.hypot(bx, by) || 1;
+          out.push([mx + (bx / bl) * pad, my + (by / bl) * pad]);
+        });
+        var d = "M" + out[0][0] + " " + out[0][1];
+        for (var i = 0; i < out.length; i++) {
+          var p0 = out[(i - 1 + out.length) % out.length],
+            p1 = out[i],
+            p2 = out[(i + 1) % out.length],
+            p3 = out[(i + 2) % out.length];
+          var c1 = [p1[0] + (p2[0] - p0[0]) / 6, p1[1] + (p2[1] - p0[1]) / 6],
+            c2 = [p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6];
+          d +=
+            " C" +
+            c1[0] +
+            " " +
+            c1[1] +
+            " " +
+            c2[0] +
+            " " +
+            c2[1] +
+            " " +
+            p2[0] +
+            " " +
+            p2[1];
+        }
+        return d + " Z";
+      }
+
+      // ---- scene ----
+      var defs = el("defs", null, svg);
+      var patId = "at-dots-" + Math.random().toString(36).slice(2, 8);
+      var pat = el(
+        "pattern",
+        { id: patId, width: 28, height: 28, patternUnits: "userSpaceOnUse" },
+        defs
+      );
+      el("circle", { cx: 1.2, cy: 1.2, r: 1.1, fill: "var(--at-grid)" }, pat);
+      var world = el("g", { class: "world" }, svg);
+      var gNames,
+        nodeEls = {};
+      function buildScene() {
+        world.innerHTML = "";
+        placeAll();
+        el(
+          "rect",
+          {
+            x: -3000,
+            y: -3000,
+            width: 7000,
+            height: 7000,
+            fill: "url(#" + patId + ")",
+          },
+          world
+        );
+        var gLand = el("g", null, world),
+          gRoads = el("g", null, world);
+        gNames = el("g", null, world);
+        var gNodes = el("g", null, world);
+        DATA.branches.forEach(function (b) {
+          var pts = nodes
+            .filter(function (n) {
+              return n.branch === b.id;
+            })
+            .map(function (n) {
+              return [n.x, n.y];
+            });
+          el("path", { d: blob(pts, 58), class: "land c-" + b.id }, gLand);
+          var c = WORLD.names[b.id] || centroid(pts);
+          var name = el(
+            "text",
+            {
+              x: c[0],
+              y: c[1],
+              "text-anchor": "middle",
+              "font-size": 36,
+              class: "region-name c-" + b.id,
+            },
+            gNames
+          );
+          name.textContent = b.label;
+        });
         nodes.forEach(function (n) {
-          n.setAttribute(
-            "aria-pressed",
-            n.getAttribute("data-node") === id ? "true" : "false"
+          if (!n.parent) return;
+          var p = byId[n.parent],
+            mx = (p.x + n.x) / 2,
+            my = (p.y + n.y) / 2,
+            dx = n.x - p.x,
+            dy = n.y - p.y,
+            bend = 0.18;
+          el(
+            "path",
+            {
+              d:
+                "M" +
+                p.x +
+                " " +
+                p.y +
+                " Q" +
+                (mx - dy * bend) +
+                " " +
+                (my + dx * bend) +
+                " " +
+                n.x +
+                " " +
+                n.y,
+              class: "road c-" + n.branch,
+            },
+            gRoads
           );
         });
-        var r = panel.getBoundingClientRect();
-        if (r.bottom > window.innerHeight || r.top < 0) {
-          panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
-        }
+        nodes.forEach(function (n) {
+          var g = el(
+            "g",
+            {
+              class: "node c-" + n.branch,
+              transform: "translate(" + n.x + " " + n.y + ")",
+              tabindex: "0",
+              role: "button",
+              "data-node": n.id,
+            },
+            gNodes
+          );
+          g.setAttribute("aria-label", n.full + ". " + n.what);
+          var inner = el("g", { class: "inner" }, g);
+          var r = n.depth === 0 ? 9 : n.depth === 1 ? 6.5 : 5;
+          var fs = n.depth === 0 ? 17 : n.depth === 1 ? 13.5 : 12.5;
+          var hit = el(
+            "rect",
+            {
+              x: -r - 6,
+              y: -fs,
+              width: 60,
+              height: fs * 2,
+              fill: "transparent",
+              stroke: "none",
+              rx: 4,
+            },
+            inner
+          );
+          el("circle", { r: r, class: "pin" }, inner);
+          var t = el(
+            "text",
+            {
+              x: r + 6,
+              y: fs * 0.36,
+              "font-size": fs,
+              "font-weight": n.depth === 0 ? 700 : 500,
+              class: "lbl",
+            },
+            inner
+          );
+          t.textContent = n.full.length <= 22 ? n.full : n.label;
+          var fo = el(
+            "foreignObject",
+            {
+              x: r + 6,
+              y: fs * 0.36 + 4,
+              width: 210,
+              height: 64,
+              class: "snip-fo",
+            },
+            inner
+          );
+          var div = document.createElementNS(
+            "http://www.w3.org/1999/xhtml",
+            "div"
+          );
+          div.className = "snip";
+          div.textContent = clip(n.what, 92);
+          fo.appendChild(div);
+          try {
+            var bb = t.getBBox();
+            hit.setAttribute("width", bb.x + bb.width + 8 + r + 6);
+          } catch (e) {}
+          nodeEls[n.id] = g;
+          g.addEventListener("click", function () {
+            if (moved) return;
+            select(n.id);
+          });
+          g.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              select(n.id);
+            }
+          });
+        });
       }
 
-      nodes.forEach(function (n) {
-        n.setAttribute("aria-pressed", "false");
-        n.addEventListener("click", function () {
-          show(n.getAttribute("data-node"));
+      // ---- camera ----
+      var cam = { k: 1, tx: 0, ty: 0 },
+        KMIN = 0.3,
+        KMAX = 4;
+      function size() {
+        var r = frame.getBoundingClientRect();
+        return { w: r.width, h: r.height };
+      }
+      function fitCam() {
+        var s = size(),
+          k = Math.min(s.w / (WORLD.W + 40), s.h / (WORLD.H + 40));
+        return {
+          k: k,
+          tx: (s.w - WORLD.W * k) / 2,
+          ty: (s.h - WORLD.H * k) / 2,
+        };
+      }
+      function apply() {
+        world.setAttribute(
+          "transform",
+          "translate(" + cam.tx + " " + cam.ty + ") scale(" + cam.k + ")"
+        );
+        var inv = 1 / cam.k;
+        nodes.forEach(function (n) {
+          var g = nodeEls[n.id];
+          g.querySelector(".inner").setAttribute(
+            "transform",
+            "scale(" + inv + ")"
+          );
+          var showLbl =
+            n.depth === 0 || (n.depth === 1 && cam.k >= 0.42) || cam.k >= 0.65;
+          var showSnip = cam.k >= 1.55;
+          g.querySelector(".lbl").style.opacity = showLbl ? 1 : 0;
+          g.querySelector(".snip").style.opacity = showSnip ? 1 : 0;
+          g.querySelector(".snip-fo").style.display = showSnip ? "" : "none";
+        });
+        gNames.style.opacity =
+          cam.k < 1.6 ? 1 : Math.max(0, 1 - (cam.k - 1.6) / 0.8);
+        hint.classList.toggle("is-hidden", cam.k > 1.3 || !!current);
+      }
+      var animId = null;
+      function flyTo(target, ms) {
+        if (animId) cancelAnimationFrame(animId);
+        if (reduce || ms === 0) {
+          cam = target;
+          apply();
+          return;
+        }
+        var from = { k: cam.k, tx: cam.tx, ty: cam.ty },
+          t0 = performance.now();
+        (function step(now) {
+          var t = Math.min(1, (now - t0) / ms),
+            e = t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+          cam = {
+            k: from.k + (target.k - from.k) * e,
+            tx: from.tx + (target.tx - from.tx) * e,
+            ty: from.ty + (target.ty - from.ty) * e,
+          };
+          apply();
+          if (t < 1) animId = requestAnimationFrame(step);
+          else animId = null;
+        })(t0);
+      }
+      function zoomAt(px, py, factor) {
+        var k = Math.max(KMIN, Math.min(KMAX, cam.k * factor)),
+          f = k / cam.k;
+        return { k: k, tx: px - (px - cam.tx) * f, ty: py - (py - cam.ty) * f };
+      }
+      function centerOn(x, y, k, offsetX) {
+        var s = size();
+        return {
+          k: k,
+          tx: s.w / 2 - x * k + (offsetX || 0),
+          ty: s.h / 2 - y * k,
+        };
+      }
+
+      // ---- input ----
+      // Mouse: drag pans, wheel zooms once the map has been touched (so the page
+      // still scrolls past it), ctrl+wheel (trackpad pinch) always zooms.
+      // Touch: touch-action pan-y keeps vertical page scroll; a horizontal
+      // one-finger drag pans, two fingers pinch-zoom.
+      var pointers = {},
+        dragStart = null,
+        moved = false,
+        pinch = null,
+        armed = false;
+      function mid(a, b) {
+        return { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+      }
+      svg.addEventListener("pointerdown", function (e) {
+        if (e.button !== 0 && e.pointerType === "mouse") return;
+        pointers[e.pointerId] = { x: e.clientX, y: e.clientY };
+        var ids = Object.keys(pointers);
+        if (ids.length === 1) {
+          dragStart = { x: e.clientX, y: e.clientY, tx: cam.tx, ty: cam.ty };
+          moved = false;
+        } else if (ids.length === 2) {
+          var a = pointers[ids[0]],
+            b = pointers[ids[1]];
+          pinch = {
+            d: Math.hypot(a.x - b.x, a.y - b.y),
+            cam: { k: cam.k, tx: cam.tx, ty: cam.ty },
+            mid: mid(a, b),
+          };
+          dragStart = null;
+        }
+        armed = true;
+      });
+      svg.addEventListener("pointermove", function (e) {
+        if (!pointers[e.pointerId]) return;
+        pointers[e.pointerId] = { x: e.clientX, y: e.clientY };
+        var ids = Object.keys(pointers);
+        if (pinch && ids.length === 2) {
+          e.preventDefault();
+          var a = pointers[ids[0]],
+            b = pointers[ids[1]],
+            d = Math.hypot(a.x - b.x, a.y - b.y),
+            m = mid(a, b),
+            r = frame.getBoundingClientRect();
+          var k = Math.max(KMIN, Math.min(KMAX, (pinch.cam.k * d) / pinch.d)),
+            f = k / pinch.cam.k;
+          var px = pinch.mid.x - r.left,
+            py = pinch.mid.y - r.top;
+          cam = {
+            k: k,
+            tx: px - (px - pinch.cam.tx) * f + (m.x - pinch.mid.x),
+            ty: py - (py - pinch.cam.ty) * f + (m.y - pinch.mid.y),
+          };
+          apply();
+          moved = true;
+          return;
+        }
+        if (dragStart) {
+          var dx = e.clientX - dragStart.x,
+            dy = e.clientY - dragStart.y;
+          if (!moved && Math.hypot(dx, dy) < 4) return;
+          // capture only once this is really a drag; capturing on pointerdown
+          // would steal the click from the node under the pointer
+          if (!moved) {
+            try {
+              svg.setPointerCapture(e.pointerId);
+            } catch (err) {}
+          }
+          moved = true;
+          svg.classList.add("is-dragging");
+          cam.tx = dragStart.tx + dx;
+          cam.ty = dragStart.ty + dy;
+          apply();
+        }
+      });
+      function endPointer(e) {
+        delete pointers[e.pointerId];
+        if (Object.keys(pointers).length < 2) pinch = null;
+        if (!Object.keys(pointers).length) {
+          dragStart = null;
+          svg.classList.remove("is-dragging");
+          setTimeout(function () {
+            moved = false;
+          }, 0);
+        }
+      }
+      svg.addEventListener("pointerup", endPointer);
+      svg.addEventListener("pointercancel", endPointer);
+      svg.addEventListener("lostpointercapture", endPointer);
+      svg.addEventListener(
+        "wheel",
+        function (e) {
+          if (!(e.ctrlKey || e.metaKey || armed)) return;
+          e.preventDefault();
+          var r = frame.getBoundingClientRect(),
+            f = Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.0022));
+          cam = zoomAt(e.clientX - r.left, e.clientY - r.top, f);
+          apply();
+        },
+        { passive: false }
+      );
+      svg.addEventListener("focus", function () {
+        armed = true;
+      });
+      document.addEventListener("pointerdown", function (e) {
+        if (!frame.contains(e.target)) armed = false;
+      });
+      svg.addEventListener("keydown", function (e) {
+        if (e.target !== svg) return;
+        var step = 40,
+          s = size();
+        if (e.key === "ArrowLeft") cam.tx += step;
+        else if (e.key === "ArrowRight") cam.tx -= step;
+        else if (e.key === "ArrowUp") cam.ty += step;
+        else if (e.key === "ArrowDown") cam.ty -= step;
+        else if (e.key === "+" || e.key === "=")
+          cam = zoomAt(s.w / 2, s.h / 2, 1.3);
+        else if (e.key === "-") cam = zoomAt(s.w / 2, s.h / 2, 1 / 1.3);
+        else if (e.key === "0") cam = fitCam();
+        else return;
+        e.preventDefault();
+        apply();
+      });
+      root.querySelectorAll("[data-zoom]").forEach(function (b) {
+        b.addEventListener("click", function () {
+          var s = size(),
+            m = b.getAttribute("data-zoom");
+          flyTo(
+            m === "fit"
+              ? fitCam()
+              : zoomAt(s.w / 2, s.h / 2, m === "in" ? 1.5 : 1 / 1.5),
+            260
+          );
+          if (m === "fit") select(null);
         });
       });
+      var regionsEl = root.querySelector("[data-regions]");
+      DATA.branches.forEach(function (b) {
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "c-" + b.id;
+        btn.textContent = b.label;
+        btn.addEventListener("click", function () {
+          var pts = nodes.filter(function (n) {
+              return n.branch === b.id;
+            }),
+            c = centroid(
+              pts.map(function (n) {
+                return [n.x, n.y];
+              })
+            );
+          var narrow = size().w < 760;
+          select(null, { keepCam: true });
+          flyTo(
+            centerOn(c[0], c[1] + (narrow ? 0 : 20), narrow ? 1.05 : 1.35),
+            420
+          );
+        });
+        regionsEl.appendChild(btn);
+      });
+
+      // ---- card ----
+      var current = null;
+      function select(id, opts) {
+        opts = opts || {};
+        if (id && id === current && !opts.force) id = null;
+        current = id;
+        nodes.forEach(function (n) {
+          nodeEls[n.id].classList.toggle("is-current", n.id === id);
+        });
+        if (!id) {
+          card.hidden = true;
+          card.innerHTML = "";
+          apply();
+          if (!opts.silent) setHash(null);
+          return;
+        }
+        var n = byId[id],
+          s = size(),
+          narrow = s.w < 760;
+        var host = function (u) {
+          return /:\/\//.test(u)
+            ? ' <span class="at-ext">' +
+                esc(u.replace(/^https?:\/\/(www\.)?/, "").split("/")[0]) +
+                "</span>"
+            : "";
+        };
+        var nearby = [].concat(
+          n.parent ? [byId[n.parent]] : [],
+          n.children,
+          n.parent
+            ? byId[n.parent].children.filter(function (c) {
+                return c.id !== n.id;
+              })
+            : []
+        );
+        card.style.setProperty("--at-c", "var(--at-" + n.branch + ")");
+        card.innerHTML =
+          '<button type="button" class="at-close" aria-label="Close">×</button>' +
+          '<p class="at-path">' +
+          esc(n.path.join(" › ")) +
+          "</p>" +
+          '<p class="at-title">' +
+          esc(n.full) +
+          "</p>" +
+          "<p>" +
+          esc(n.what) +
+          "</p>" +
+          '<p class="at-why"><b>Why it interests me:</b> ' +
+          esc(n.why) +
+          "</p>" +
+          (n.links.length
+            ? "<ul>" +
+              n.links
+                .map(function (l) {
+                  return (
+                    '<li><a href="' +
+                    esc(l.url) +
+                    '">' +
+                    esc(l.title) +
+                    "</a>" +
+                    host(l.url) +
+                    "</li>"
+                  );
+                })
+                .join("") +
+              "</ul>"
+            : "") +
+          (nearby.length
+            ? '<p class="at-nearby">Nearby: ' +
+              nearby
+                .map(function (c) {
+                  return (
+                    '<button type="button" data-go="' +
+                    c.id +
+                    '">' +
+                    esc(c.full) +
+                    "</button>"
+                  );
+                })
+                .join(", ") +
+              "</p>"
+            : "");
+        card.hidden = false;
+        card.querySelector(".at-close").addEventListener("click", function () {
+          select(null);
+        });
+        card.querySelectorAll("[data-go]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            select(b.getAttribute("data-go"), { force: true });
+          });
+        });
+        if (!opts.keepCam) {
+          // fly so the place sits in the part of the frame the card doesn't cover
+          var k = Math.max(cam.k, narrow ? 1.5 : 1.8);
+          flyTo(
+            narrow
+              ? centerOn(n.x, n.y + (s.h * 0.29) / k, k)
+              : centerOn(n.x, n.y, k, -150),
+            380
+          );
+        }
+        apply();
+        if (!opts.silent) setHash(id);
+      }
+      function setHash(id) {
+        try {
+          history.replaceState(
+            null,
+            "",
+            id ? "#node=" + id : location.pathname + location.search
+          );
+        } catch (e) {}
+      }
+
+      // ---- boot ----
       root.classList.add("is-live");
+      buildScene();
+      cam = fitCam();
+      apply();
+      function onResize() {
+        var w = pickWorld();
+        if (w !== worldName) {
+          worldName = w;
+          WORLD = WORLDS[w];
+          buildScene();
+          if (current) nodeEls[current].classList.add("is-current");
+        }
+        if (!current) cam = fitCam();
+        apply();
+      }
+      if (window.ResizeObserver) new ResizeObserver(onResize).observe(frame);
+      else window.addEventListener("resize", onResize);
+      var m = /node=([\w-]+)/.exec(location.hash);
+      if (m && byId[m[1]])
+        setTimeout(function () {
+          select(m[1], { silent: true, force: true });
+        }, 50);
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && current) select(null);
+      });
     });
   })();
 </script>
