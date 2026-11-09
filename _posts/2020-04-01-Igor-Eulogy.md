@@ -59,6 +59,8 @@ Making cards change colors at a spectator's command or passing coins through a s
 
 In 2022 Igor discovered [ballooning](/balloon) which was amazing as well.
 
+Why this mattered so much to him is in [Smiles, Joy and Wonder](/joy).
+
 Back in his 30s he used to juggle lots of things, the coolest of which being [juggle fire](http://ig66.blogspot.com/2014/08/accomplishment-unlocked-juggling-file.html?q=torches).
 
 <!--
