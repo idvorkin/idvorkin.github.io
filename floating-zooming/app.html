@@ -1,10 +1,8 @@
 ---
 layout: empty
 title: "Floating and Zooming"
-permalink: /floating-zooming/
-redirect_from:
-  - /floating
-  - /zooming
+permalink: /floating-zooming/app.html
+sitemap: false
 description: "Two interactive ideas: how high you float (balloons lift you, weights sink you) and how pain zooms your attention in, and how to zoom back out."
 ---
 
@@ -25,6 +23,11 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
     function apply() { document.documentElement.setAttribute('data-theme', mq.matches ? 'dark' : 'light'); }
     apply();
     if (mq.addEventListener) mq.addEventListener('change', apply);
+  })();
+  // ?embed=float or ?embed=zoom: show only that interactive, sized to the iframe /staying-afloat gives it.
+  (function () {
+    var m = /[?&]embed=(float|zoom)\b/.exec(location.search);
+    if (m) document.documentElement.classList.add('embed', 'embed-' + m[1]);
   })();
 </script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
@@ -278,6 +281,22 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
     .hint-long { display: none; } .hint-short { display: inline; } .drag-hint { font-size: 12px; }
     .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; bottom: .3rem; padding: .25rem .4rem; gap: .25rem; scrollbar-width: none; }
     .tray .spare { font-size: 13px; padding: 0 .45rem; white-space: nowrap; flex: none; }
+  }
+
+  /* ---- embed mode (?embed=float|zoom): just one interactive, inside an iframe on /staying-afloat.
+     The post carries the prose; the iframe is a fixed height, so the sticky scene still works inside it. ---- */
+  html.embed main { max-width: none; padding: .5rem; }
+  html.embed-float main > :not(#part1), html.embed-float #part1 > :not(#float-wrap),
+  html.embed-zoom main > :not(#interactive), html.embed-zoom #takeaway { display: none; }
+  html.embed .float-wrap { width: auto; margin-left: 0; }
+  html.embed .sound-toggle { right: .5rem; bottom: .5rem; }
+  .embed-presets { margin-top: .75rem; }
+  @media (min-width: 700px) {
+    /* the post column is narrower than the standalone 1024px breakpoint, so go side by side sooner */
+    html.embed-float .float-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 1rem; align-items: start; }
+    html.embed-float .float-wrap > figure { position: sticky; top: .5rem; width: 100%; max-width: calc((100vh - 1rem) * 1.1); justify-self: center; }
+    html.embed-float .float-panel { max-height: calc(100vh - 1rem); overflow-y: auto; position: sticky; top: .5rem; padding-right: .25rem; }
+    html.embed-float .float-panel #dial-list, html.embed-float .float-panel #toggle-cols, html.embed-float .float-panel #custom-cols { grid-template-columns: minmax(0, 1fr); }
   }
 </style>
 </head>
@@ -2174,6 +2193,14 @@ window.FX = (function () {
   requestAnimationFrame(frame);
   ready = true;
 })();
+</script>
+<script>
+  // embed-float hides #separate, so its preset buttons move into the side panel (their listeners come along).
+  if (document.documentElement.classList.contains('embed-float')) {
+    var presets = document.querySelector('#separate .flex');
+    presets.classList.add('embed-presets');
+    document.getElementById('float-panel').appendChild(presets);
+  }
 </script>
 </body>
 </html>
