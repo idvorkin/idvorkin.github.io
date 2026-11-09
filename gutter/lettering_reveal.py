@@ -27,6 +27,10 @@ SPEC (paths relative to the spec file):
   ]
 }
 Optional "audio": a separate track (e.g. a re-voiced mix) to align against and mux in.
+"window": [t0, t1] (seconds, optional) pins a bubble's speech span when the
+heard segments split the speakers wrongly (two speakers merged into one segment).
+"first": t (seconds, optional) pins the first word's start. The first word is capped
+from the second word's start, so a pause after it ("Larry. ... It's me.") makes it late.
 mode: "reveal" (spoken in this clip), "full" (already said), "empty" (not yet said).
 "pop" (default true): a bubble is invisible until its speaker starts, then pops
 in from its tail (lowest point, or "tail": [x, y]) over 0.25 s with a small
@@ -227,8 +231,9 @@ def windows(heard, counts, dur):
     return [(heard[a]["start"], heard[b - 1]["end"]) for a, b in best[1]]
 
 
-def align(clip: Path, bubbles: list[list[str]]):
-    """Forced-align each bubble's DRAWN words (spoken forms) inside its window."""
+def align(clip: Path, bubbles: list[list[str]], fixed=None):
+    """Forced-align each bubble's DRAWN words (spoken forms) inside its window.
+    fixed: optional per-bubble [t0, t1] that replaces the heard-segment window."""
     import whisperx  # heavy; import late
 
     audio = whisperx.load_audio(str(clip))
@@ -242,7 +247,9 @@ def align(clip: Path, bubbles: list[list[str]]):
     # as ONE run of their concatenated words, so they keep their spoken order
     # instead of each matching the same audio.
     runs = []  # (words, window)
-    for words, win in zip(bubbles, windows(heard, [len(b) for b in bubbles], dur)):
+    wins = windows(heard, [len(b) for b in bubbles], dur)
+    wins = [tuple(f) if f else w for w, f in zip(wins, fixed or [None] * len(wins))]
+    for words, win in zip(bubbles, wins):
         if runs and runs[-1][1] == win:
             runs[-1][0].extend(words)
         else:
@@ -370,7 +377,16 @@ def main() -> None:
             outline=(0, 255, 255),
             width=3,
         )
-        bubbles.append({"mode": mode, "mask": m, "tail": tail, "words": words})
+        bubbles.append(
+            {
+                "mode": mode,
+                "mask": m,
+                "tail": tail,
+                "words": words,
+                "window": b.get("window"),
+                "first": b.get("first"),
+            }
+        )
     debug.save(out.with_name(out.stem + "-words.png"))
 
     audio_src = (
@@ -378,10 +394,16 @@ def main() -> None:
     )  # e.g. a re-voiced mix
     talkers = [b for b in bubbles if b["words"]]
     if talkers:
-        starts, scores = align(audio_src, [[w[1] for w in b["words"]] for b in talkers])
+        starts, scores = align(
+            audio_src,
+            [[w[1] for w in b["words"]] for b in talkers],
+            [b["window"] for b in talkers],
+        )
         i = 0
         for b in talkers:
             b["starts"] = starts[i : i + len(b["words"])]
+            if b["first"] is not None:  # a pause after the first word fools the cap
+                b["starts"][0] = b["first"]
             for (w, sp, _), t, sc in zip(
                 b["words"], b["starts"], scores[i : i + len(b["words"])]
             ):
