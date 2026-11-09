@@ -234,7 +234,7 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   @media (min-width: 1024px) {
     .float-wrap { --fw: min(1180px, calc(100vw - 2rem)); width: var(--fw); margin-left: calc(50% - var(--fw) / 2);
       display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 1.25rem; align-items: start; }
-    .float-wrap > figure { position: sticky; top: 1rem; width: 100%; max-width: calc((100vh - 2rem) * 1.1); justify-self: center; }
+    .float-wrap > figure { position: sticky; top: 1rem; width: 100%; max-width: calc((100vh - 2rem - 3.75rem) * 1.1); justify-self: center; }
     .float-panel { max-height: calc(100vh - 2rem); overflow-y: auto; position: sticky; top: 1rem; padding-right: .25rem; }
     .float-panel #dial-list, .float-panel #toggle-cols, .float-panel #custom-cols { grid-template-columns: minmax(0, 1fr); }
     .float-panel #tolerance-box { margin-bottom: .25rem; }
@@ -243,11 +243,13 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   #water-front-g, #zones, #wlabel-float, #float-fx { pointer-events: none; }
   .grab { cursor: grab; touch-action: none; }
   .grab:active, .dragging .grab { cursor: grabbing; }
-  .tray { position: absolute; left: 50%; bottom: .5rem; transform: translateX(-50%); max-width: calc(100% - 1rem);
-    display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem; padding: .35rem .5rem;
-    background: #f3e7cf; border: 1.5px solid #b0916a; border-radius: .7rem; box-shadow: 0 3px 10px -4px rgb(0 0 0 / .45);
+  /* the tray is its own felt strip under the scene, not an overlay: floating over the bottom it hid the waterline
+     and the water, which is the point of the picture (Igor, 2026-11-09). It stays inside the figure so it moves with it. */
+  .tray { position: relative; min-height: 3.25rem; align-items: center;
+    display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem; padding: .4rem .6rem;
+    background: #f3e7cf; border-top: 1.5px solid #b0916a;
     outline: 1px dashed #8a6c48; outline-offset: -5px; font-family: "Patrick Hand", ui-rounded, system-ui, sans-serif; }
-  .tray:empty { display: none; }
+  .tray:empty::before { content: "drag a balloon or weight here to take it off"; color: #7a5a34; font-size: 15px; opacity: .8; }
   .tray .spare { display: inline-flex; align-items: center; gap: .3rem; padding: .1rem .55rem; border-radius: 999px; font-size: 15px; line-height: 1.4;
     color: #4b3826; background: #fff6df; border: 1px solid #c9ab82; cursor: grab; touch-action: none; user-select: none; }
   .tray .spare:hover { background: #fffbef; } .tray .spare:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 1px; }
@@ -279,7 +281,7 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   .hint-short { display: none; }
   @media (max-width: 640px) {
     .hint-long { display: none; } .hint-short { display: inline; } .drag-hint { font-size: 12px; }
-    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; bottom: .3rem; padding: .25rem .4rem; gap: .25rem; scrollbar-width: none; }
+    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding: .25rem .4rem; gap: .25rem; scrollbar-width: none; }
     .tray .spare { font-size: 13px; padding: 0 .45rem; white-space: nowrap; flex: none; }
   }
 
@@ -303,13 +305,13 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   @media (min-width: 700px) {
     /* the post column is narrower than the standalone 1024px breakpoint, so go side by side sooner */
     html.embed-float .float-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 1rem; align-items: start; }
-    html.embed-float .float-wrap > figure { width: 100%; max-width: calc((var(--pvh, 100vh) - 1rem) * var(--fig-ar, 1.1)); justify-self: center; }
+    html.embed-float .float-wrap > figure { width: 100%; max-width: calc((var(--pvh, 100vh) - 1rem - 3.75rem) * var(--fig-ar, 1.1)); justify-self: center; }   /* 3.75rem: the tray strip under the scene */
     html.embed-float .float-panel #dial-list, html.embed-float .float-panel #toggle-cols, html.embed-float .float-panel #custom-cols { grid-template-columns: minmax(0, 1fr); }
   }
   /* a narrow scene (iPhone landscape puts a ~400px scene beside the panel): one scrolling row of spares, not a block over the weights */
   .float-wrap > figure { container-type: inline-size; }
   @container (max-width: 520px) {
-    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; bottom: .3rem; padding: .25rem .4rem; gap: .25rem; scrollbar-width: none; }
+    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding: .25rem .4rem; gap: .25rem; scrollbar-width: none; }
     .tray .spare { white-space: nowrap; flex: none; }
     .hint-long { display: none; } .hint-short { display: inline; }   /* the long hint ran under the scissors */
   }
