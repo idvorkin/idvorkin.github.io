@@ -13,6 +13,7 @@ This is a hand-off for whichever agent picks it up next. The explainer lives in 
 - **Stress tolerance** is the only thing that moves the water. It's one slider at the top of the sidebar. Igor rejected a "where panic sets in" control as complexity for nothing.
 - **Felt raccoon art only.** No vector people. His shirt reads "THIS TOO SHALL PASS".
 - **Game feel matters**, and sound is off by default. Removing a balloon pops it, removing a weight lets it go into the sea, and scissors cut strings or chains.
+- **Nothing covers the water.** The waterline and the water are the point of the picture, so the spare-item tray is a strip under the scene, not an overlay (Igor, 2026-11-09: "I can't see the water because of that overlay"). Only the scissors and the hint sit in the scene, in the top corners.
 
 ## Where things live in `app.html`
 
