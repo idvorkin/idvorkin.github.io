@@ -234,7 +234,7 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   @media (min-width: 1024px) {
     .float-wrap { --fw: min(1180px, calc(100vw - 2rem)); width: var(--fw); margin-left: calc(50% - var(--fw) / 2);
       display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 1.25rem; align-items: start; }
-    .float-wrap > figure { position: sticky; top: 1rem; width: 100%; max-width: calc((100vh - 2rem - 3.75rem) * 1.1); justify-self: center; }
+    .float-wrap > figure { position: sticky; top: 1rem; width: 100%; max-width: calc((100vh - 2rem - 7.5rem) * 1.1); justify-self: center; }
     .float-panel { max-height: calc(100vh - 2rem); overflow-y: auto; position: sticky; top: 1rem; padding-right: .25rem; }
     .float-panel #dial-list, .float-panel #toggle-cols, .float-panel #custom-cols { grid-template-columns: minmax(0, 1fr); }
     .float-panel #tolerance-box { margin-bottom: .25rem; }
@@ -243,18 +243,23 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   #water-front-g, #zones, #wlabel-float, #float-fx { pointer-events: none; }
   .grab { cursor: grab; touch-action: none; }
   .grab:active, .dragging .grab { cursor: grabbing; }
-  /* the tray is its own felt strip under the scene, not an overlay: floating over the bottom it hid the waterline
-     and the water, which is the point of the picture (Igor, 2026-11-09). It stays inside the figure so it moves with it. */
-  .tray { position: relative; min-height: 3.25rem; align-items: center;
-    display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem; padding: .4rem .6rem;
-    background: #f3e7cf; border-top: 1.5px solid #b0916a;
-    outline: 1px dashed #8a6c48; outline-offset: -5px; font-family: "Patrick Hand", ui-rounded, system-ui, sans-serif; }
-  .tray:empty::before { content: "drag a balloon or weight here to take it off"; color: #7a5a34; font-size: 15px; opacity: .8; }
+  /* Two felt strips frame the scene, never cover it: an overlay hid the waterline and the water, the point of the
+     picture (Igor, 2026-11-09). Good things up top (the tools and spare balloons), weights in the strip under the water.
+     They sit inside the figure so they move with the scene, and either one takes a dragged item off. */
+  .scene-box { position: relative; }
+  #float-figure { grid-template-columns: minmax(0, 1fr); }   /* else a long one-row strip widens the column and the scene overflows the frame */
+  .strip { display: flex; align-items: center; gap: .5rem; min-height: 3.25rem; padding: .4rem .6rem;
+    background: #f3e7cf; outline: 1px dashed #8a6c48; outline-offset: -5px; font-family: "Patrick Hand", ui-rounded, system-ui, sans-serif; }
+  .strip-top { border-bottom: 1.5px solid #b0916a; }
+  .strip-bottom { border-top: 1.5px solid #b0916a; }
+  .strip.drop-target { background: #ffe9b8; }
+  .strip .tools { display: flex; gap: .4rem; flex: none; padding-right: .5rem; border-right: 1px dashed #b0916a; }
+  .tray { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .3rem; }
+  .tray:empty::before { content: attr(data-empty); color: #7a5a34; font-size: 15px; opacity: .8; }
   .tray .spare { display: inline-flex; align-items: center; gap: .3rem; padding: .1rem .55rem; border-radius: 999px; font-size: 15px; line-height: 1.4;
     color: #4b3826; background: #fff6df; border: 1px solid #c9ab82; cursor: grab; touch-action: none; user-select: none; }
   .tray .spare:hover { background: #fffbef; } .tray .spare:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 1px; }
   .tray .spare .sw { width: .7rem; height: .7rem; border-radius: 999px; flex: none; } .tray .spare .sw.sq { border-radius: 2px; }
-  .tray.drop-target { background: #ffe9b8; }
   .drag-ghost { position: fixed; z-index: 100; pointer-events: none; transform: translate(-50%, -50%) scale(1.1); }
   .drag-hint { position: absolute; left: .6rem; top: .5rem; font: 13px/1.2 "Patrick Hand", ui-rounded, system-ui, sans-serif; color: #4b3826;
     background: rgb(255 246 223 / .82); padding: .15rem .5rem; border-radius: .5rem; pointer-events: none; transition: opacity .6s ease; }
@@ -270,18 +275,23 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   #face[data-mood="scared"] .pupil { animation: darty .5s steps(2) infinite; }
   @keyframes darty { 50% { transform: translateX(1.2px); } }
   @media (prefers-reduced-motion: reduce) { #face .lids, #face .pupil { animation: none !important; } }
-  .scissors { position: absolute; right: .6rem; top: .5rem; width: 2.6rem; height: 2.6rem; border-radius: 999px; font-size: 1.45rem; line-height: 1;
-    background: #f3e7cf; border: 1.5px solid #b0916a; outline: 1px dashed #8a6c48; outline-offset: -5px; cursor: grab; touch-action: none;
-    box-shadow: 0 3px 10px -4px rgb(0 0 0 / .45); transition: transform .15s ease; }
-  .scissors:hover { transform: rotate(-12deg) scale(1.06); } .scissors:focus-visible { outline: 3px solid var(--color-accent); }
+  .tool { display: inline-grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 999px; font-size: 1.45rem; line-height: 1;
+    background: #fff6df; border: 1.5px solid #b0916a; outline: 1px dashed #8a6c48; outline-offset: -5px; cursor: grab; touch-action: none;
+    box-shadow: 0 3px 10px -4px rgb(0 0 0 / .45); transition: transform .15s ease, background .15s ease; }
+  .tool:hover { transform: rotate(-12deg) scale(1.06); } .tool:focus-visible { outline: 3px solid var(--color-accent); }
   .scissors.in-use { opacity: .35; }
+  .pump { cursor: pointer; }
+  .pump[aria-pressed="true"] { background: #ffd98a; border-color: #7a5a34; transform: scale(1.08); box-shadow: 0 0 0 3px rgb(255 190 80 / .55); }
+  .pump-armed .grab { cursor: copy; }
+  .pump-ghost { position: fixed; z-index: 100; pointer-events: none; transform: translate(-50%, -85%) rotate(-15deg) scale(1.4); }
   .scissor-ghost { position: fixed; z-index: 100; pointer-events: none; font-size: 2.2rem; line-height: 1; transform: translate(-30%, -50%) rotate(-30deg); }
   .scissor-ghost.snip { animation: snip .18s ease; }
   @keyframes snip { 50% { transform: translate(-30%, -50%) rotate(-50deg) scale(1.15); } }
   .hint-short { display: none; }
   @media (max-width: 640px) {
     .hint-long { display: none; } .hint-short { display: inline; } .drag-hint { font-size: 12px; }
-    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding: .25rem .4rem; gap: .25rem; scrollbar-width: none; }
+    .strip { padding: .3rem .4rem; gap: .35rem; }
+    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; gap: .25rem; scrollbar-width: none; }
     .tray .spare { font-size: 13px; padding: 0 .45rem; white-space: nowrap; flex: none; }
   }
 
@@ -305,27 +315,28 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   @media (min-width: 700px) {
     /* the post column is narrower than the standalone 1024px breakpoint, so go side by side sooner */
     html.embed-float .float-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 1rem; align-items: start; }
-    html.embed-float .float-wrap > figure { width: 100%; max-width: calc((var(--pvh, 100vh) - 1rem - 3.75rem) * var(--fig-ar, 1.1)); justify-self: center; }   /* 3.75rem: the tray strip under the scene */
+    html.embed-float .float-wrap > figure { width: 100%; max-width: calc((var(--pvh, 100vh) - 1rem - 7.5rem) * var(--fig-ar, 1.1)); justify-self: center; }   /* 7.5rem: the strips above and below the scene */
     html.embed-float .float-panel #dial-list, html.embed-float .float-panel #toggle-cols, html.embed-float .float-panel #custom-cols { grid-template-columns: minmax(0, 1fr); }
   }
   /* a narrow scene (iPhone landscape puts a ~400px scene beside the panel): one scrolling row of spares, not a block over the weights */
   .float-wrap > figure { container-type: inline-size; }
   @container (max-width: 520px) {
-    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding: .25rem .4rem; gap: .25rem; scrollbar-width: none; }
+    .strip { padding: .3rem .4rem; gap: .35rem; }
+    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; gap: .25rem; scrollbar-width: none; }
     .tray .spare { white-space: nowrap; flex: none; }
-    .hint-long { display: none; } .hint-short { display: inline; }   /* the long hint ran under the scissors */
+    .hint-long { display: none; } .hint-short { display: inline; }   /* the long hint wraps over the balloons in a narrow scene */
   }
 
   /* ---- fingers: 44px targets (Apple HIG) wherever the pointer is coarse ---- */
   @media (pointer: coarse) {
     .btn-sm, .tray .spare { min-height: 44px; }
     .tray .spare { font-size: 16px; padding: 0 .7rem; }
-    .scissors { width: 3rem; height: 3rem; }
+    .tool { width: 3rem; height: 3rem; }
     /* the slider row takes the finger, not just the 16px track. A transparent border, not height: DaisyUI draws
        the fill as a thumb shadow clipped to the padding box, so a taller box would paint a solid block */
     .range { --range-thumb-size: 20px; height: 48px; border-block: 14px solid transparent; }
     #custom summary { padding-block: .75rem; }
-    .tray .spare { touch-action: pan-x; }  /* a sideways swipe scrolls the one-row tray; dragging up into the scene still adds it */
+    .tray.scrolls .spare { touch-action: pan-x; }  /* a sideways swipe scrolls an overflowing one-row strip; dragging into the scene still adds it */
     .input-sm { min-height: 44px; font-size: 16px; }   /* under 16px, iOS Safari zooms the page on focus */
   }
 </style>
@@ -371,6 +382,17 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
 
     <div class="float-wrap" id="float-wrap">
     <figure class="stage-frame" id="float-figure">
+      <!-- top strip: the tools, then the spare balloons (good things up top, weights in the strip under the water) -->
+      <div class="strip strip-top" id="strip-top">
+        <div class="tools">
+          <button id="scissors" class="tool scissors" type="button" title="Scissors: drag across a string to cut a balloon loose, or across a chain to let a weight go" aria-label="Scissors (drag across strings or chains)">&#9986;&#65039;</button>
+          <button id="pump" class="tool pump" type="button" aria-pressed="false" title="Balloon pump: tap it, then tap or hold a balloon to pump it up. Or drag the pump onto a balloon." aria-label="Balloon pump (tap, then tap a balloon; or drag onto a balloon)">
+            <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path d="M9 5h14" stroke="#6b4a2f" stroke-width="3.2" stroke-linecap="round"/><path d="M16 5v8" stroke="#8d8b97" stroke-width="2.2"/><rect x="11" y="12" width="10" height="14" rx="2.5" fill="#c9302c" stroke="#7d1f2c" stroke-width="1.2"/><path d="M8 27h16" stroke="#6b4a2f" stroke-width="3" stroke-linecap="round"/><path d="M21 21c5 0 6 -4 7 -8" fill="none" stroke="#3b3a44" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <div id="tray-up" class="tray" data-empty="drag a balloon here to take it off" aria-label="Spare balloons"></div>
+      </div>
+      <div class="scene-box">
       <svg id="float-svg" class="float-scene block w-full" viewBox="60 0 660 600" role="img" aria-labelledby="float-title float-desc" style="aspect-ratio: 660 / 600; height: auto;">
         <title id="float-title">A person floating above water</title>
         <desc id="float-desc">A person floats above a waterline. Labeled helium balloons are tied to one raised hand and pull up. One chain runs down from the other hand to a ring below the feet, and labeled iron weights hang from the ring and pull down.</desc>
@@ -431,10 +453,12 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
         <g id="zones" aria-hidden="true"></g>
         <g id="float-fx" aria-hidden="true" pointer-events="none"></g>
       </svg>
-      <!-- the felt tray: spare items. Tap to add, or drag one up into the sky (balloon) or down by the chain (weight). -->
-      <div id="tray" class="tray" aria-label="Spare balloons and weights"></div>
-      <button id="scissors" class="scissors" type="button" title="Scissors: drag across a string to cut a balloon loose, or across a chain to let a weight go" aria-label="Scissors (drag across strings or chains)">&#9986;&#65039;</button>
-      <div id="drag-hint" class="drag-hint" aria-hidden="true"><span class="hint-long">hold to pump it up &middot; drag a dial across the hand to flip it &middot; drag it into the tray to remove</span><span class="hint-short">hold: pump &middot; drag: flip or remove</span></div>
+      <div id="drag-hint" class="drag-hint" aria-hidden="true"><span class="hint-long">hold to pump it up &middot; drag a dial across the hand to flip it &middot; drag it into a strip to remove</span><span class="hint-short">hold: pump &middot; drag: flip or remove</span></div>
+      </div><!-- /scene-box -->
+      <!-- bottom strip, under the water: the spare weights. Tap to add, or drag one into the scene. -->
+      <div class="strip strip-bottom" id="strip-bottom">
+        <div id="tray" class="tray" data-empty="drag a weight here to take it off" aria-label="Spare weights"></div>
+      </div>
     </figure>
     <div class="float-panel" id="float-panel">
 
@@ -1714,7 +1738,7 @@ window.FX = (function () {
     }
     // camera: keep the waterline in frame when it can, but never lose the raccoon, its balloons or the ring
     // the water (and the overwhelmed tag) is always in frame: it's the reference everything else is measured against
-    var top = TARGET.feet + TARGET.top - 14, bot = Math.max(TARGET.feet + TARGET.bot + 12, CUR.water + 125);  // +125: room for the overwhelmed tag and the tray under it
+    var top = TARGET.feet + TARGET.top - 14, bot = Math.max(TARGET.feet + TARGET.bot + 12, CUR.water + 125);  // +125: room for the overwhelmed tag under the waterline
     // too tall: zoom out (up to MAXZ) before cropping; if still too tall, crop the balloon tops, never the water
     var hT = clamp(bot - top, FH, FH * MAXZ);
     var camT = bot - top <= hT ? clamp(CUR.water + 50 - hT, bot - hT, top) : bot - hT;
@@ -2012,9 +2036,12 @@ window.FX = (function () {
 
   // ---------- inline controls: grab the balloons and weights themselves ----------
   // hold = pump it up a size (1 -> 2 -> 3 -> 1); drag a dial across the hand line to flip balloon <-> weight;
-  // drag anything into the tray (or out of the frame) to remove it; tap or drag a tray spare in to add it.
+  // drag anything into either strip (or out of the frame) to remove it; tap or drag a spare in to add it.
   TOGGLES.forEach(function (t) { t.size0 = t.size; });
-  var svg = $('float-svg'), fig = $('float-figure'), tray = $('tray'), hint = $('drag-hint');
+  var svg = $('float-svg'), fig = $('float-figure'), tray = $('tray'), trayUp = $('tray-up'), hint = $('drag-hint');
+  var STRIPS = [$('strip-top'), $('strip-bottom')];
+  function inStrip(x, y) { return STRIPS.some(function (s) { return inRect(s.getBoundingClientRect(), x, y); }); }
+  function markStrip(x, y) { STRIPS.forEach(function (s) { s.classList.toggle('drop-target', x != null && inRect(s.getBoundingClientRect(), x, y)); }); }
   var FLIP_Y = (HW[1] + RING[1]) / 2 - 30;   // the hand line: above it a dial is a balloon, below it a weight
   function model(key) { return DIALS.filter(function (d) { return d.id === key; })[0] || TOGGLES.filter(function (t) { return t.id === key; })[0]; }
   function isDial(m) { return 'value' in m; }
@@ -2026,21 +2053,27 @@ window.FX = (function () {
   function toLocal(cx, cy) { var p = svg.createSVGPoint(); p.x = cx; p.y = cy; return p.matrixTransform(bLayer.getScreenCTM().inverse()); }
   function inRect(r, x, y) { return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom; }
   function dismissHint() { hint.classList.add('gone'); }
+  function pumpOnce(m, kind) {   // one size up (1 -> 2 -> 3), and past 3 it deflates back to 1
+    var sz = sizeOf(m); setItem(m, kind, sz >= 3 ? 1 : sz + 1);
+    if (sz >= 3) FX.play('deflate');
+    update();
+  }
+  var pumpArmed = false;
   function grabbable(key, kind) {
     var n = (kind === 'balloon' ? B : W)[key];
-    n.pos.classList.add('grab');
+    n.pos.classList.add('grab'); n.pos.setAttribute('data-key', key); n.pos.setAttribute('data-kind', kind);
     n.pos.addEventListener('pointerdown', function (e) {
       if (e.button) return;
       e.preventDefault(); n.pos.setPointerCapture(e.pointerId);
       var m = model(key), x0 = e.clientX, y0 = e.clientY, dragging = false, held = false;
       var at = toLocal(e.clientX, e.clientY), off = [n.cur.x - at.x, n.cur.y - at.y];
+      var timer;
       var pump = function () {
-        held = true; dismissHint();
-        var sz = sizeOf(m); setItem(m, kind, sz >= 3 ? 1 : sz + 1);
-        if (sz >= 3) FX.play('deflate');
-        update(); timer = setTimeout(pump, 520);
+        held = true; dismissHint(); pumpOnce(m, kind);
+        timer = setTimeout(pump, 520);
       };
-      var timer = setTimeout(pump, 380);
+      // pump tool armed: pump on the press itself (a quick mouse click releases before even a 0ms timer would fire)
+      if (pumpArmed && kind === 'balloon') pump(); else timer = setTimeout(pump, 380);
       function move(ev) {
         if (!dragging && Math.hypot(ev.clientX - x0, ev.clientY - y0) > 8 && !held) {
           dragging = true; clearTimeout(timer); n.drag = true; fig.classList.add('dragging'); dismissHint();
@@ -2048,17 +2081,17 @@ window.FX = (function () {
         if (!dragging) return;
         var p = toLocal(ev.clientX, ev.clientY);
         n.tgt = { x: p.x + off[0], y: p.y + off[1], k: n.tgt.k }; n.cur.x = n.tgt.x; n.cur.y = n.tgt.y;
-        tray.classList.toggle('drop-target', inRect(tray.getBoundingClientRect(), ev.clientX, ev.clientY));
+        markStrip(ev.clientX, ev.clientY);
       }
       function up(ev) {
         clearTimeout(timer); n.pos.removeEventListener('pointermove', move); n.pos.removeEventListener('pointerup', up); n.pos.removeEventListener('pointercancel', up);
-        tray.classList.remove('drop-target'); fig.classList.remove('dragging');
+        markStrip(null); fig.classList.remove('dragging');
         if (!dragging) return;
         n.drag = false;
         var p = toLocal(ev.clientX, ev.clientY), fr = svg.getBoundingClientRect();
         if (ev.type === 'pointercancel') { update(); return; }
-        if (inRect(tray.getBoundingClientRect(), ev.clientX, ev.clientY) || !inRect(fr, ev.clientX, ev.clientY)) {
-          setItem(m, kind, 0); update(); return;                  // dropped in the tray or flung off the frame: gone
+        if (inStrip(ev.clientX, ev.clientY) || !inRect(fr, ev.clientX, ev.clientY)) {
+          setItem(m, kind, 0); update(); return;                  // dropped in a strip or flung off the frame: gone
         }
         var side = p.y < FLIP_Y ? 'balloon' : 'weight';
         if (isDial(m) && side !== kind) {                         // across the hand line: sleep flips from balloon to weight
@@ -2114,21 +2147,54 @@ window.FX = (function () {
     document.addEventListener('pointermove', move); document.addEventListener('pointerup', up); document.addEventListener('pointercancel', up);
   });
 
-  // the felt tray: whatever is off. Tap adds it (dials come in as a balloon); drag it into the scene to pick a side.
+  // the balloon pump: tap it to arm it, then tap (or hold) a balloon to pump it up; tap the pump again to put it down.
+  // Or drag the pump onto a balloon for one pump. Same effect as holding a balloon, as a tool you can see.
+  var pumpBtn = $('pump');
+  function armPump(on) { pumpArmed = on; pumpBtn.setAttribute('aria-pressed', String(on)); fig.classList.toggle('pump-armed', on); }
+  pumpBtn.addEventListener('pointerdown', function (e) {
+    if (e.button) return;
+    e.preventDefault(); dismissHint();
+    var x0 = e.clientX, y0 = e.clientY, ghost = null;
+    function move(ev) {
+      if (!ghost && Math.hypot(ev.clientX - x0, ev.clientY - y0) > 8) {
+        ghost = document.createElement('div'); ghost.className = 'pump-ghost'; ghost.innerHTML = pumpBtn.innerHTML;
+        document.body.appendChild(ghost); fig.classList.add('dragging');
+      }
+      if (ghost) { ghost.style.left = ev.clientX + 'px'; ghost.style.top = ev.clientY + 'px'; }
+    }
+    function up(ev) {
+      document.removeEventListener('pointermove', move); document.removeEventListener('pointerup', up); document.removeEventListener('pointercancel', up);
+      if (!ghost) { if (ev.type === 'pointerup') armPump(!pumpArmed); return; }
+      ghost.remove(); fig.classList.remove('dragging');
+      if (ev.type !== 'pointerup') return;
+      var hit = document.elementFromPoint(ev.clientX, ev.clientY), g = hit && hit.closest && hit.closest('.grab');
+      if (g && g.getAttribute('data-kind') === 'balloon') pumpOnce(model(g.getAttribute('data-key')), 'balloon');
+    }
+    document.addEventListener('pointermove', move); document.addEventListener('pointerup', up); document.addEventListener('pointercancel', up);
+  });
+  pumpBtn.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); armPump(!pumpArmed); } });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && pumpArmed) armPump(false); });
+
+  // the strips hold whatever is off: balloons in the top strip, weights in the bottom one. A dial (sleep, friends...)
+  // goes to the strip of the side it was last on, and tapping it brings it back on that side; drag it into the
+  // scene to pick a side.
   function spareLabel(m) { return isDial(m) ? m.name.toLowerCase() : m.short; }
   function renderTray() {
-    while (tray.firstChild) tray.removeChild(tray.firstChild);
+    [tray, trayUp].forEach(function (t) { while (t.firstChild) t.removeChild(t.firstChild); });
     DIALS.concat(TOGGLES).forEach(function (m) {
+      if (isDial(m) && m.value) m.side = m.value < 0 ? 'weight' : 'balloon';
       if (sizeOf(m) || m.custom) return;
-      var b = document.createElement('button'), kind = isDial(m) ? 'balloon' : m.kind;
+      var b = document.createElement('button'), kind = isDial(m) ? (m.side || 'balloon') : m.kind;
       b.type = 'button'; b.className = 'spare';
       b.innerHTML = '<span class="sw' + (kind === 'weight' ? ' sq' : '') + '" style="background:' + m.color + '"></span><span></span>';
       b.lastChild.textContent = spareLabel(m);
-      b.setAttribute('aria-label', 'Add ' + spareLabel(m) + (isDial(m) ? ' (drag below the hand for a weight)' : ' ' + kind));
+      b.setAttribute('aria-label', 'Add ' + spareLabel(m) + ' as a ' + kind + (isDial(m) ? ' (or drag it above or below the hand)' : ''));
       b.addEventListener('pointerdown', function (e) { spareDrag(e, m, kind, b); });
       b.addEventListener('click', function () { if (b._dragged) return; setItem(m, kind, isDial(m) ? 1 : m.size0); update(); });
-      tray.appendChild(b);
+      (kind === 'weight' ? tray : trayUp).appendChild(b);
     });
+    // only a strip that overflows needs sideways finger panning; otherwise a diagonal drag out of it is a drag, not a pan
+    [tray, trayUp].forEach(function (t) { t.classList.toggle('scrolls', t.scrollWidth > t.clientWidth + 1); });
   }
   function spareDrag(e, m, kind, b) {
     if (e.button) return;
@@ -2144,7 +2210,7 @@ window.FX = (function () {
       if (!ghost) return;
       ghost.remove();
       if (ev.type === 'pointercancel') { setTimeout(function () { b._dragged = false; }, 0); return; }   // the browser took the touch: no stranded ghost
-      if (inRect(svg.getBoundingClientRect(), ev.clientX, ev.clientY) && !inRect(tray.getBoundingClientRect(), ev.clientX, ev.clientY)) {
+      if (inRect(svg.getBoundingClientRect(), ev.clientX, ev.clientY) && !inStrip(ev.clientX, ev.clientY)) {
         var p = toLocal(ev.clientX, ev.clientY), side = isDial(m) ? (p.y < FLIP_Y ? 'balloon' : 'weight') : kind;
         (side === 'balloon' ? B : W)[m.id].spawnAt = [p.x, p.y];
         setItem(m, side, isDial(m) ? 1 : m.size0); update();

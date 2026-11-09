@@ -13,24 +13,26 @@ This is a hand-off for whichever agent picks it up next. The explainer lives in 
 - **Stress tolerance** is the only thing that moves the water. It's one slider at the top of the sidebar. Igor rejected a "where panic sets in" control as complexity for nothing.
 - **Felt raccoon art only.** No vector people. His shirt reads "THIS TOO SHALL PASS".
 - **Game feel matters**, and sound is off by default. Removing a balloon pops it, removing a weight lets it go into the sea, and scissors cut strings or chains.
-- **Nothing covers the water.** The waterline and the water are the point of the picture, so the spare-item tray is a strip under the scene, not an overlay (Igor, 2026-11-09: "I can't see the water because of that overlay"). Only the scissors and the hint sit in the scene, in the top corners.
+- **Nothing covers the water.** The waterline and the water are the point of the picture, so spare items live in felt strips that frame the scene, never in an overlay (Igor, 2026-11-09: "I can't see the water because of that overlay"). Only the first-run hint sits in the scene, top left, and it fades on the first touch.
+- **Good things on top, weights below.** The top strip holds the tools (scissors, balloon pump) and the spare balloons; the bottom strip, under the water, holds the spare weights (Igor: "positive ideas on top just like -ones are on the bottom"). A dial goes to the strip of the side it was last on. Dropping anything into either strip takes it off.
+- **The pump is a tool, not a gesture.** Tap it to arm it (it glows), then tap or hold balloons to pump them; tap it again or press Escape to put it down. Dragging the pump onto a balloon pumps that one once. Holding a balloon still pumps it too.
 
 ## Where things live in `app.html`
 
-| What                                                                | Search for                                                     |
-| ------------------------------------------------------------------- | -------------------------------------------------------------- |
-| Sprite config (figure, balloons, weights, chain, ring, water)       | `var ART = {` and `var FIGURES = {`                            |
-| Raccoon anchors (paws, feet, head, face points for expressions)     | `FIGURES.A2` (sprite pixels; the code converts to scene units) |
-| Items: dials and toggles (labels, sizes, colors, power)             | `var DIALS = [` / `var TOGGLES = [`                            |
-| Height math (lift − load → feet height, sink depth)                 | `var net = lift - load;` and `var shown =`                     |
-| Zones (thriving / coping / barely coping / overwhelmed)             | `function zoneOf` and `buildZones`                             |
-| Camera (keeps water in frame, zooms out up to 1.4× before cropping) | `// the water (and the overwhelmed tag) is always in frame`    |
-| Raccoon alive: breathing, trembling, sweat, face mood               | `function alive(` and the `#face` CSS                          |
-| Overwhelmed gasp cycle                                              | `// overwhelmed: he doesn't just sit under`                    |
-| Weight pendulum swing                                               | `// a pendulum on its drop`                                    |
-| In-scene controls: hold to pump, drag to flip, tray, scissors       | `// ---------- inline controls`, `renderTray`, `$('scissors')` |
-| Pop and let go                                                      | `function popBalloon`, `n.fall`, `n.fly`                       |
-| Layout: sticky scene + side panel (≥1024px), sticky scene on phone  | `/* ---- inline controls: sticky scene + side panel`           |
+| What                                                                | Search for                                                                |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Sprite config (figure, balloons, weights, chain, ring, water)       | `var ART = {` and `var FIGURES = {`                                       |
+| Raccoon anchors (paws, feet, head, face points for expressions)     | `FIGURES.A2` (sprite pixels; the code converts to scene units)            |
+| Items: dials and toggles (labels, sizes, colors, power)             | `var DIALS = [` / `var TOGGLES = [`                                       |
+| Height math (lift − load → feet height, sink depth)                 | `var net = lift - load;` and `var shown =`                                |
+| Zones (thriving / coping / barely coping / overwhelmed)             | `function zoneOf` and `buildZones`                                        |
+| Camera (keeps water in frame, zooms out up to 1.4× before cropping) | `// the water (and the overwhelmed tag) is always in frame`               |
+| Raccoon alive: breathing, trembling, sweat, face mood               | `function alive(` and the `#face` CSS                                     |
+| Overwhelmed gasp cycle                                              | `// overwhelmed: he doesn't just sit under`                               |
+| Weight pendulum swing                                               | `// a pendulum on its drop`                                               |
+| Controls: hold to pump, drag to flip, strips, scissors, pump        | `// ---------- inline controls`, `renderTray`, `$('scissors')`, `pumpBtn` |
+| Pop and let go                                                      | `function popBalloon`, `n.fall`, `n.fly`                                  |
+| Layout: sticky scene + side panel (≥1024px), sticky scene on phone  | `/* ---- inline controls: sticky scene + side panel`                      |
 
 ## Pending
 
@@ -40,7 +42,7 @@ This is a hand-off for whichever agent picks it up next. The explainer lives in 
 ## How to check a change
 
 1. Run `just jekyll-serve` and open `/staying-afloat` (embedded) or `/floating-zooming/app.html` (standalone), or open `floating-zooming/app.html` directly (file:// works, but skip the front-matter lines), or review with Lavish: `lavish-axi app.html`, then `lavish-axi poll app.html --agent-reply "..."` after every change so the board never goes deaf.
-2. Playwright smoke test: load the page, scroll to `#float-wrap`, and check there are no `pageerror`s and no horizontal overflow at 1440×900 and 390×844. Useful selectors: `#zone-val` (current zone, hidden but kept updated), `#dial-sleep` … `#dial-moving`, `#tolerance`, `#preset-both` / `#preset-neither` / `#preset-reset`, toggle buttons by accessible name (for example `^pain,`), `#tray .spare`, `#scissors`, `#face[data-mood]`.
+2. Playwright smoke test: load the page, scroll to `#float-wrap`, and check there are no `pageerror`s and no horizontal overflow at 1440×900 and 390×844. Useful selectors: `#zone-val` (current zone, hidden but kept updated), `#dial-sleep` … `#dial-moving`, `#tolerance`, `#preset-both` / `#preset-neither` / `#preset-reset`, toggle buttons by accessible name (for example `^pain,`), `#tray-up .spare` (balloons), `#tray .spare` (weights), `#scissors`, `#pump`, `#face[data-mood]`.
 3. Screenshot `#float-figure` in these states: default, everything on (`#preset-both`), every weight on with sleep at −3 (overwhelmed: he should gasp up and sink), and low tolerance.
 
 Respect `prefers-reduced-motion`. Every animation has a reduced-motion path, so keep it that way.
