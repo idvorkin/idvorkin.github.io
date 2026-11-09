@@ -34,3 +34,6 @@ _includes/den_strip.html
 # Must emit one line: prettier splits the optional <a ...> wrapper across
 # lines and kramdown then escapes it into a blockquote.
 _includes/local_image_float_right.html
+
+# Hand-built interactive; prettier would rewrite all ~2,000 lines
+floating-zooming/app.html

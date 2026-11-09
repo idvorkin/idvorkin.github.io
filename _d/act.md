@@ -179,7 +179,7 @@ De Mello's _waking up from the sleep of unconscious living_ ([/awareness](/aware
 
 ### 3. Present: notice X
 
-Also called _flexible attention_ — narrow, broaden, sustain or redirect my focus as the situation demands. Inflexible attention costs me three ways: cutting off (missing the person I'm with), missing out (dinner without tasting it), and doing things poorly (mistakes because I'm in my head). [/mind-at-work](/mind-at-work) is what that costs at a desk. I built [Floating and Zooming](/floating-zooming/) to make the narrowing and the widening something you can drag around.
+Also called _flexible attention_ — narrow, broaden, sustain or redirect my focus as the situation demands. Inflexible attention costs me three ways: cutting off (missing the person I'm with), missing out (dinner without tasting it), and doing things poorly (mistakes because I'm in my head). [/mind-at-work](/mind-at-work) is what that costs at a desk. I built [Staying Afloat](/staying-afloat#zooming) to make the narrowing and the widening something you can drag around.
 
 ACT itself avoids the word "mindfulness." The word is broken — monks, incense, long silent sits — and the skill underneath is three words: **notice X**. Breath, feet on the floor, sounds in the room, the taste of coffee, the feeling of fear. Meditation is one of hundreds of ways to train it; the framework does not require formal practice. That reframe is why I stopped bouncing off it. Every time I'd bounced before, it was because I believed mindfulness meant sitting still with my eyes closed. I can notice X on a run along Hood Canal. [Search Inside Yourself](/siy) is this skill in engineer vocabulary.
 
