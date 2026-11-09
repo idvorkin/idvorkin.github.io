@@ -52,7 +52,9 @@ DEMUCS = [
     "--python",
     "3.11",
     "--from",
-    "demucs",
+    "demucs==4.0.1",  # 4.1 pulls sphn, which fails to build on Linux aarch64
+    "--with",
+    "setuptools<81",  # demucs's torch imports pkg_resources
     "--with",
     "torch<2.2",
     "--with",

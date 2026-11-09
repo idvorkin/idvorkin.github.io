@@ -16,7 +16,9 @@
                     the receipts (e.g. a link to an alternate style)
 
   When num exists in _data/den.json, that manifest supplies the title, date,
-  image, alt text, receipts URL, and panel files. The include arguments remain
+  image, alt text, receipts URL, and panel files, plus an optional animated
+  version: "video" (an mp4 URL) and "video_poster" (its poster image; defaults
+  to the strip image). The include arguments remain
   fallbacks so standalone uses keep working.
 
   Example:
@@ -59,6 +61,9 @@
   {%- endfor -%}
 {%- endif %}
 </div>
+{%- if _entry and _entry.video %}
+<video src="{{ _entry.video }}" poster="{{ _entry.video_poster | default: _img }}" controls playsinline preload="metadata" width="640" height="360" style="display:block;width:100%;height:auto;margin-top:0.5em;"></video>
+{%- endif %}
 <figcaption><small><em>{{ _label }}</em> · {{ _date }}</small></figcaption>
 </figure>
 {%- if include.note %}

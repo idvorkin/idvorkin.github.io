@@ -10,7 +10,9 @@
       "/images/den/den-015-p2.webp",
       "/images/den/den-015-p3.webp",
       "/images/den/den-015-p4.webp"
-    ]
+    ],
+    "video": "https://github.com/idvorkin/blob/raw/master/blog/den/den-015-direct-line-voiced-360p.mp4",
+    "video_poster": "/images/den/den-015-video-poster.webp"
   },
   {
     "num": 14,
