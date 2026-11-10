@@ -1,5 +1,18 @@
 [
   {
+    "num": 16,
+    "title": "Backwards",
+    "date": "November 9, 2026",
+    "img": "/images/den/den-016.webp",
+    "alt": "The Den #16: Backwards — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — peers at a big heap of gold coins through a brass telescope held the wrong way round, the wide end clapped over his eye: 'ONE COIN LEFT. WE'RE BROKE.' Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, stands right beside the heap with a paw held out at it, baffled. 2: Igor has taken the telescope and is turning it end for end, little arrows circling it, the coin heap behind him: 'NO, I THINK YOU HAVE IT BACKWARDS.' Larry waits, claw raised. 3: Larry looks again, the right way round this time, and beams: 'WE'RE RICH. BUY EVERYTHING.' Behind him three small blue robots are already wheeling a cart of coins away. Igor throws a paw up, mouth open, too late. 4: The attic is stacked to the beams with brown paper parcels, a brass tuba and a carousel horse. One gold coin lies alone on the rug. Igor points down at it: 'NOW THERE'S ONE COIN LEFT.' Larry, bent double with the telescope trained on the coin from a few inches away, claw raised: 'IT'S ENORMOUS.'",
+    "panels": [
+      "/images/den/den-016-p1.webp",
+      "/images/den/den-016-p2.webp",
+      "/images/den/den-016-p3.webp",
+      "/images/den/den-016-p4.webp"
+    ]
+  },
+  {
     "num": 15,
     "title": "Direct Line",
     "date": "November 1, 2026",
