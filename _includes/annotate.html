@@ -65,6 +65,17 @@
   version is always measured on the real article, never the diff DOM.
 
   Larry reads the batches back with scripts/blog_review.py.
+
+  SEND TO LARRY: only when the page itself is served on a tailnet host
+  (`location.hostname` ends in `.ts.net`) or localhost, the pill also gets a
+  status dot and a "Send to Larry" button. Both talk to the Cockpit on the
+  SAME hostname over https at the default port (`/larry/status`,
+  `/blog-review`); no host is written here. The dot is green when Larry is
+  idle, amber when busy, red when down or unreachable (off the tailnet).
+  Send posts one batch per page and clears only what the Cockpit accepted
+  (2xx); on any failure the buffer stays and the review card opens with the
+  gist/clipboard fallback. Production (idvork.in) gets none of this: no
+  button, no dot, no request.
 -->
 
 <!--
@@ -76,6 +87,7 @@
   id="blog-annot-meta"
   data-permalink="{{ page.url }}"
   data-title="{{ page.title | default: '' | escape }}"
+  data-site-url="{{ site.url }}"
   hidden
 ></div>
 
@@ -170,6 +182,13 @@
       var ORIGIN =
         window.location.origin ||
         window.location.protocol + "//" + window.location.host;
+      var SITE_URL = ((meta && meta.dataset.siteUrl) || "").replace(/\/$/, "");
+      // The Cockpit on this same host (see SEND TO LARRY), or "" off-tailnet.
+      var HOST = String(window.location.hostname || "").toLowerCase();
+      var LARRY =
+        HOST === "localhost" || /\.ts\.net$/.test(HOST)
+          ? "https://" + HOST
+          : "";
 
       // ------------------------------------------------------------- storage
       function loadBuffer() {
@@ -299,6 +318,11 @@
         "padding:5px 9px;border:0;border-radius:12px;cursor:pointer;",
         "background:#495057;color:#fff}",
         "#blog-annot-pill button:disabled{opacity:.45;cursor:default}",
+        "#blog-annot-larry-dot{width:10px;height:10px;border-radius:50%;",
+        "background:#868e96;display:inline-block}",
+        "#blog-annot-larry-dot[data-state='idle']{background:#2f9e44}",
+        "#blog-annot-larry-dot[data-state='busy']{background:#f59f00}",
+        "#blog-annot-larry-dot[data-state='down']{background:#e03131}",
         "#blog-annot-modal{position:fixed;inset:0;z-index:100000;display:none;",
         "align-items:center;justify-content:center;background:rgba(0,0,0,.45);",
         "padding:16px}",
@@ -345,7 +369,11 @@
       pill.id = "blog-annot-pill";
       pill.innerHTML =
         '<span id="blog-annot-count">Review (0)</span>' +
-        '<button type="button" id="blog-annot-open">Open</button>';
+        '<button type="button" id="blog-annot-open">Open</button>' +
+        (LARRY
+          ? '<span id="blog-annot-larry-dot" data-state="unknown" title="Larry: checking…"></span>' +
+            '<button type="button" id="blog-annot-send">Send to Larry</button>'
+          : "");
       document.body.appendChild(pill);
 
       var modal = document.createElement("div");
@@ -648,6 +676,159 @@
           }
           uploadGist(list, note);
         };
+      }
+
+      // ------------------------------------------------------ send to Larry
+      var LARRY_TITLES = {
+        idle: "Larry: idle, ready",
+        busy: "Larry: busy",
+        down: "Larry: down",
+        unreachable: "Larry: unreachable (not on the tailnet?)",
+      };
+
+      function setDot(state, status) {
+        var dot = document.getElementById("blog-annot-larry-dot");
+        if (!dot) return;
+        dot.setAttribute(
+          "data-state",
+          state === "unreachable" ? "down" : state
+        );
+        var t = LARRY_TITLES[state] || "Larry: " + state;
+        if (state === "busy" && status && status.queued)
+          t += ", " + status.queued + " queued";
+        if (state === "down" && status && status.why)
+          t += " (" + status.why + ")";
+        dot.title = t;
+      }
+
+      function refreshLarry() {
+        if (!LARRY || !live) return Promise.resolve();
+        return fetch(LARRY + "/larry/status", { cache: "no-store" })
+          .then(function (res) {
+            if (!res.ok) throw new Error("status " + res.status);
+            return res.json();
+          })
+          .then(function (s) {
+            setDot(s && s.state ? s.state : "down", s);
+          })
+          .catch(function () {
+            setDot("unreachable");
+          });
+      }
+
+      // One POST per page: the buffer can span pages, and each review lands on
+      // its own page's thread. An id derived from the batch lets the Cockpit
+      // recognize a resend whose first answer was lost.
+      function reviewBatches(list) {
+        var groups = {};
+        var order = [];
+        list.forEach(function (a) {
+          var key = (a.origin || ORIGIN) + "|" + (a.permalink || PERMALINK);
+          if (!groups[key]) {
+            groups[key] = [];
+            order.push(key);
+          }
+          groups[key].push(a);
+        });
+        return order.map(function (key) {
+          var items = groups[key];
+          var first = items[0];
+          var path = first.permalink || PERMALINK;
+          var annotations = items.map(function (a) {
+            return {
+              quote: a.quote || "",
+              prefix: a.prefix || "",
+              suffix: a.suffix || "",
+              intent: a.intent || DEFAULT_INTENT,
+              note: a.comment || "",
+            };
+          });
+          return {
+            items: items,
+            body: {
+              id: "blog-" + fnv1a(key + JSON.stringify(annotations)),
+              permalink: SITE_URL ? SITE_URL + path : "",
+              page_url: (first.origin || ORIGIN) + path,
+              branch: String(window.__GIT_BRANCH__ || ""),
+              title: first.title || "",
+              annotations: annotations,
+            },
+          };
+        });
+      }
+
+      function sendToLarry() {
+        var list = loadBuffer();
+        var sendBtn = document.getElementById("blog-annot-send");
+        if (!list.length) {
+          sendBtn.textContent = "Nothing to send";
+          setTimeout(function () {
+            sendBtn.textContent = "Send to Larry";
+          }, 1500);
+          return Promise.resolve();
+        }
+        sendBtn.disabled = true;
+        sendBtn.textContent = "Sending…";
+        var sent = {};
+        var failed = [];
+        var errors = [];
+        var noteKey = function (a) {
+          return a.ts + "|" + a.quote;
+        };
+        return reviewBatches(list)
+          .reduce(function (chain, batch) {
+            return chain.then(function () {
+              return fetch(LARRY + "/blog-review", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(batch.body),
+              })
+                .then(function (res) {
+                  if (!res.ok)
+                    throw new Error("Cockpit returned " + res.status);
+                  batch.items.forEach(function (a) {
+                    sent[noteKey(a)] = true;
+                  });
+                })
+                .catch(function (err) {
+                  failed = failed.concat(batch.items);
+                  errors.push(err.message || String(err));
+                });
+            });
+          }, Promise.resolve())
+          .then(function () {
+            // Only what the Cockpit accepted leaves the buffer; a note saved
+            // while the send was in flight stays too.
+            saveBuffer(
+              loadBuffer().filter(function (a) {
+                return !sent[noteKey(a)];
+              })
+            );
+            refreshPill();
+            sendBtn.disabled = false;
+            sendBtn.textContent = "Send to Larry";
+            refreshLarry();
+            if (!failed.length) {
+              sendBtn.textContent = "Sent ✓";
+              setTimeout(function () {
+                sendBtn.textContent = "Send to Larry";
+              }, 2000);
+              return;
+            }
+            openReview();
+            document.getElementById("blog-annot-note").textContent =
+              "Send to Larry failed (" +
+              errors.join("; ") +
+              "). Your notes are kept: upload a gist or copy them instead.";
+          });
+      }
+
+      if (LARRY) {
+        document.getElementById("blog-annot-send").onclick = sendToLarry;
+        refreshLarry();
+        setInterval(refreshLarry, 60000);
+        window.blogAnnotate.sendToLarry = sendToLarry;
+        window.blogAnnotate.refreshLarry = refreshLarry;
       }
 
       function payloadJson(list) {
