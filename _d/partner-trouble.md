@@ -24,6 +24,8 @@ There are two types of couples in the world. Those who fight, and those you don'
   - [Drain - What's killing your relationship](#drain---whats-killing-your-relationship)
   - [Being Assertive](#being-assertive)
     - [Assertion vs Aggression](#assertion-vs-aggression)
+    - [Before you say anything](#before-you-say-anything)
+    - [How to ask: the three-part request](#how-to-ask-the-three-part-request)
     - [Declining Requests and setting boundaries](#declining-requests-and-setting-boundaries)
     - [Advanced Assertions Skills](#advanced-assertions-skills)
 - [Love Languages](#love-languages)
@@ -62,17 +64,53 @@ The things that are killing your relationship:
 
 ### Being Assertive
 
+Harris's picture: a puppy dog only cares about you, a shark only cares about itself. I've got both in me. Assertiveness is the third option: standing up for my needs in a way that's fair and considerate to _both_ of us. It comes down to two skills: asking for what I want, and saying no to what I don't.
+
 #### Assertion vs Aggression
+
+- **Passive (puppy dog)**: my needs go behind my partner's, at a real cost to me. It pays off short term: I dodge conflict and rejection, and it can even feel like I'm living my values of being caring. Long term it ends in burnout and resentment. This is the doormat in DRAIN's "N". The way out is values like self-respect and self-care, plus remembering I have rights.
+- **Aggressive (shark)**: I get my way and ignore my partner's feelings and rights. Every attack and defend tactic is aggressive, and a lot of detour and withdraw (the sulk, the "sure" I never follow through on) is passive-aggressive. The way out is values like caring and fairness, plus remembering my partner has rights.
+
+The line between the two is a bill of rights. I have the right to be treated fairly and considerately, to make my needs as important as theirs, to make mistakes, to feel what I feel, and to ask for what I want, decline requests and state my opinions, _provided I do so in a way that is fair and considerate_. That last clause is the whole difference. Stand up for a right unfairly and it's aggression. And my partner has every right on the list too.
+
+#### Before you say anything
+
+The words are the "frosting on the cake." Get these in place first, or the best-phrased request lands badly:
+
+- **Unhook from the "should" stories.** "I shouldn't have to ask." "They only listen when I get angry." These may even be true. Harris's question is whether holding them tightly makes the relationship better or worse. Notice them, name them, let them pass.
+- **Be present, drop anchor, connect with values.** Make room for the feelings that show up, then remember I want this relationship to thrive.
+- **Face, voice, posture.** Folded arms, a pointed finger or a scornful tone cancel the words. Lower the voice, soften the face, look at them.
+- **When I can:** pick a good time and place, and first aim to understand them before asking to be understood.
+
+My own fear blocks assertiveness too: "my needs don't matter", "if I ask, they'll resent me." That's normal. Notice and name it, make room for the anxiety, be kind to myself, then ask the willingness question: _in the service of building the relationship I want, am I willing to make room for these difficult thoughts and feelings?_
+
+#### How to ask: the three-part request
+
+A ladder. Most of the time the bottom rung is enough; climb only when I'm not being heard.
+
+1. **Ask nicely.** "Would you mind…", "Is it OK with you if…". For something they resist, lead with appreciation and use "I'd really appreciate it if…".
+2. **"I" statements.** "I feel frustrated when my wishes aren't taken into account" instead of "You never listen to me." I own the feeling instead of blaming them for it. Watch for sneaky ones: "I feel like you're being lazy" is a "you" statement in disguise.
+3. **Video description.** Describe what a camera would record, not my judgment of it. No "you are X", no "always" or "never". Those just start an argument about my words instead of the issue.
+4. **The three-part statement:** _I feel X when you do Y, and I'd appreciate it if you could do Z._ Z has to be specific too: what does "tidy up" look like on video?
+
+| **"You" + judgment**        | **"I" + judgment**                           | **"I" + video description (the one that works)**                                                |
+| --------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| "You're always nagging me." | "I feel irritated when you keep nagging me." | "I feel irritated when you ask me to do something four or five times in a short space of time." |
+| "You're so lazy."           | "I feel annoyed when you're being lazy."     | "I feel annoyed when you say you'll take the trash out later, and then you don't."              |
+
+Two caveats. This is influence, not control: it raises the odds they'll change, it guarantees nothing. And when they do change, I need to keep noticing and thanking them ("catch them doing it right") or the new behavior fades. If it slips anyway, I ask again and open with appreciation for when they did it.
 
 #### Declining Requests and setting boundaries
 
-The two problems:
+Two failure modes: those who can't say no, especially to a pushy request or a guilt trip, and those who say no easily but forcefully. Declining is a right, so:
 
-- Those who struggle to decline requests
-- Those who struggle to decline requests while being fair and considerate.
+- Be direct, firm and honest, and still fair. No apology needed. A reason is optional, but it often helps.
+- Not sure what's being asked? Ask what, when, where, with whom and for how long.
+- Need time? Say so: "Let me think about it." If postponing a conversation, name a specific time; a vague "later" never happens.
+- Offer an alternative that might meet their need.
 - See [essentialism](/essentialism) for lots of ways to say no kindly.
 
-Regardless, you need to have boundaries
+Boundaries are limits on my time, energy, body, and how I let others treat me. Setting one usually takes both skills: asking and declining.
 
 | **Boundary Type**  | **What to Say**                                                                                                                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -85,30 +123,31 @@ Regardless, you need to have boundaries
 
 #### Advanced Assertions Skills
 
-**Advanced Skills**
+Sometimes a good request gets attack, defend, detour or withdraw back: mockery, "you do it too", a yes with no follow-through, walking out. The pull is to go shark or go puppy. Instead: drop anchor, then de-escalate with something like "I'm not trying to attack or blame you. I love you, and I want us to have a better relationship." Then ramp up.
 
-| **Skill**                 | **Description**                                                                                               | **Example**                                                                                                                                                                                                                                                                       |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Empathic Assertion**    | Acknowledges the other person's feelings before making or declining a request.                                | "I realize this must be disappointing for you. However, I'm going to say no because I just can't find time right now." <br> "I totally get that you don't like this way of doing things. And I'd appreciate it if you'd work with me on this, even though you have reservations." |
-| **Fogging**               | A way to respond to harsh criticism by finding a small grain of truth without arguing or getting defensive.   | "Yes, there are times when I don't follow through." <br> "Yes, I was late on this occasion, and I can see how frustrating that is for you."                                                                                                                                       |
-| **Broken Record**         | Calmly repeating an assertive statement until the other person takes notice, without escalating the conflict. | "I don't want a drink. I want to go home." <br> "No thanks. It's late, and I'd like to go home."                                                                                                                                                                                  |
-| **Combination Approach**  | Mixing empathy, fogging, and the broken record technique to handle repeated pushback.                         | "I get that you intend these comments as jokes - however, I don't experience them as funny, I find them hurtful." <br> "Yes, there are times when I don't have much of a sense of humor, it's true. But I find those comments hurtful."                                           |
-| **Discrepancy Assertion** | Pointing out a gap between an agreement and reality, then making an assertive request.                        | "We agreed you'd be home by 6pm, but you've been arriving after 7pm. Can we discuss this?" <br> "We agreed that you'd take care of the dishes, but for the past few days, they've been left in the sink. Can we find a way to stick to our agreement?"                            |
-| **Consequence Assertion** | A last-resort approach where consequences are clearly stated if the other person continues their behavior.    | "If you continue doing this, then I'll have to issue a formal warning." <br> "I've asked you multiple times to stop ABC. If it happens again, I will have to take XYZ action."                                                                                                    |
+The book says there are six techniques for that pushback, but leaves them out of the book and puts them in its free "Extra Bits" download. My notes on the six:
 
----
+| **Skill**                 | **What it does**                                                                                      |
+| ------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Empathic Assertion**    | Acknowledge their feelings before making or declining a request.                                      |
+| **Fogging**               | Meet harsh criticism by agreeing with the small grain of truth, without arguing or getting defensive. |
+| **Broken Record**         | Calmly repeat the same assertive statement until it lands, without escalating.                        |
+| **Combination Approach**  | Mix empathy, fogging and broken record to handle repeated pushback.                                   |
+| **Discrepancy Assertion** | Point out the gap between what we agreed and what's happening, then make an assertive request.        |
+| **Consequence Assertion** | Last resort: state clearly what I'll do if the behavior continues.                                    |
 
 **Examples**
 
 | **Partner ...**                                      | **You Respond (Skill Used)**                                                                                                                                                 |
 | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Asks for something you can't do right now.           | "I realize this must be disappointing for you. However, I'm going to say no because I just can't find time right now." (_Empathic Assertion_)                                |
 | Expresses frustration with your approach.            | "I totally get that you don't like this way of doing things. And I'd appreciate it if you'd work with me on this, even though you have reservations." (_Empathic Assertion_) |
 | Calls you lazy and says you never follow through.    | "Yes, there are times when I don't follow through." (_Fogging_)                                                                                                              |
 | Criticizes you for always being late.                | "Yes, I was late on this occasion, and I can see how frustrating that is for you." (_Fogging_)                                                                               |
 | Pressures you to have another drink.                 | "No thanks, no more drinks for me. I'd like to go home." (_Broken Record_)                                                                                                   |
 | Insists again that you have another drink.           | "No thanks. It's late, and I'd like to go home." (_Broken Record_)                                                                                                           |
-| Makes a joke that you find hurtful.                  | "I get that you intend these comments as jokes - however, I don't experience them as funny, I find them hurtful." (_Combination Approach: Empathy + Fogging_)                |
-| Accuses you of not having a sense of humor.          | "Yes, there are times when I don't have much of a sense of humor, it's true. But I find those comments hurtful." (_Combination Approach: Fogging + Broken Record_)           |
+| Makes a joke that you find hurtful.                  | "I get that you intend these comments as jokes - however, I don't experience them as funny, I find them hurtful." (_Combination: empathy first_)                             |
+| Accuses you of not having a sense of humor.          | "Yes, there are times when I don't have much of a sense of humor, it's true. But I find those comments hurtful." (_Combination: fogging, then broken record_)                |
 | Doesn't follow through on an agreement.              | "We agreed you'd be home by 6pm, but you've been arriving late. Can we discuss what's been holding you up and come up with a plan?" (_Discrepancy Assertion_)                |
 | Fails to complete an agreed-upon chore.              | "We agreed that you'd take care of the dishes, but they're still in the sink. Can we find a way to stick to our agreement?" (_Discrepancy Assertion_)                        |
 | Repeatedly does something you've asked them to stop. | "If you continue doing this, then I'll have to issue a formal warning." (_Consequence Assertion_)                                                                            |
