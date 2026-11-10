@@ -13,7 +13,7 @@ redirect_from:
   - /afloat
 ---
 
-I picture my calm as floating above water. Balloons in one hand pull me up: sleep, friends, time with my family, moving. Weights in the other hand pull me down: pain, a deadline, anger, debt. How high I float is how much I can cope with right now. Near the water I'm barely coping, and under it I'm overwhelmed. So I built the felt raccoon below. Pump up a balloon, cut a weight loose, and watch him rise or sink.
+I picture stress as water, with me floating above it. Balloons lift me: sleep, friends, family, moving. Weights pull me down: pain, a deadline, anger, debt. How high the water sits depends on my stress tolerance. When the weights win, I go under.
 
 {% include ai-slop.html percent="80" %}
 
@@ -46,12 +46,10 @@ I picture my calm as floating above water. Balloons in one hand pull me up: slee
   })();
 </script>
 
-Tap a tag in the top strip to add a balloon, or one in the bottom strip to add a weight. Hold a balloon or weight to pump it up. Sleep, friends, family and moving go both ways: with the sleep balloon up, tap bad sleep in the bottom strip and it becomes a weight. Drag the scissors across a string or chain to cut it loose. The rest is under More controls. The stress tolerance slider there is the only thing that moves the water: same balloons, same weights, but with lower tolerance he goes under sooner.
+## How to play
 
-Three things I keep relearning from it:
-
-- **Sleep matters most.** Its balloon is the biggest, and bad sleep is the heaviest weight. Poor sleep is also the first thing on my list for [detecting anxiety](/anxiety#detection).
-- **Balloons and weights are separate.** Cutting a weight doesn't add a balloon. "Lots of both" and "Neither" (under More controls) land at about the same height with a very different day. Same idea as [satisfaction is not the lack of dissatisfaction](/work-satisfaction), and the energy inflows on my [life income statement](/life-as-business).
-- **This too shall pass.** It's on his shirt, and it's my mantra for smoothing out the highs and the lows. Being low in the water is a state, not a verdict.
-
-This is a metaphor, not a research model. The closest research idea is Lazarus and Folkman's: stress is what you feel when demands seem to exceed the resources you have to meet them (_Stress, Appraisal, and Coping_, 1984).
+- Tap a tag in the top strip to add a balloon. Tap one in the bottom strip to add a weight.
+- Sleep, friends, family and moving go both ways. Bad sleep is a weight.
+- Tap the pump, then a balloon, to make it bigger.
+- Drag the scissors across a string or chain to cut it loose.
+- More controls has the stress tolerance slider. It moves the water.
