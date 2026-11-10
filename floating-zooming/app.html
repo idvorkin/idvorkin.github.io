@@ -162,9 +162,6 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   .tchip[aria-pressed="true"] { border-color: color-mix(in oklab, var(--color-base-content) 45%, transparent); background: var(--color-base-200); }
   .tchip:focus-visible, .series-nav a:focus-visible, summary:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
   .series-nav a[aria-current="true"] { font-weight: 700; }
-  @media (max-width: 640px) {
-    .float-scene .zone { font-size: 22px; }
-  }
   @media (prefers-reduced-motion: reduce) {
     #floater, #wlabel-float, .water-move, .balloon, .bstring, .weight { transition: none !important; }
     #wlabel-bob { animation: none !important; }
@@ -202,18 +199,16 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   .float-scene .wlabel { font-size: 14px; }
   .dial-range { --range-fill: 0; }
 
-  @media (max-width: 640px) { .float-scene .blabel, .float-scene .wlabel { font-size: 18px; stroke-width: 4px; } .float-scene .zone { font-size: 19px; } }
 
   /* ---- felt layers ---- */
   .float-scene .blabel, .float-scene .wlabel { font-family: "Patrick Hand", ui-rounded, system-ui, sans-serif; font-weight: 400; font-size: 19px; }
   .float-scene .wlabel { font-size: 13px; stroke: rgb(0 0 0 / .35); stroke-width: 2px; }
   .float-scene .zone { font-family: "Patrick Hand", ui-rounded, system-ui, sans-serif; font-size: 17px; }
   [data-theme="dark"] .float-scene .felt-bg { filter: brightness(.62) saturate(.9); }
-  @media (max-width: 640px) {
-    .float-scene .blabel { font-size: 17px; }
-    .float-scene .wlabel { font-size: 15px; }
-    .float-scene .zone { font-size: 18px; }
-  }
+  /* .narrow: the scene itself is drawn small (set by fitScene), whatever the viewport is */
+  .narrow .float-scene .blabel { font-size: 17px; stroke-width: 4px; }
+  .narrow .float-scene .wlabel { font-size: 15px; }
+  .narrow .float-scene .zone { font-size: 18px; }
 
   /* ---- felt zone tags ---- */
   .ztag rect.tag { fill: #f3e7cf; stroke: #b0916a; stroke-width: 1.2; }
@@ -223,7 +218,7 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   .ztag.cur text { font-weight: 700; }
   .zline { stroke: #fffaf0; stroke-width: 3; stroke-linecap: round; stroke-dasharray: .1 9; opacity: .75; }
   [data-theme="dark"] .ztag rect.tag { fill: #d9cbb0; }
-  @media (max-width: 640px) { .ztag text { font-size: 19px; } }
+  .narrow .ztag text { font-size: 19px; }
 
   /* ---- inline controls: sticky scene + side panel, grab-able items, felt tray ---- */
   .float-wrap > figure { margin: 0; position: relative; }
@@ -254,16 +249,32 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   .strip-bottom { border-top: 1.5px solid #b0916a; }
   .strip.drop-target { background: #ffe9b8; }
   .strip .tools { display: flex; gap: .4rem; flex: none; padding-right: .5rem; border-right: 1px dashed #b0916a; }
-  .tray { flex: 1; min-width: 0; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .3rem; }
-  .tray:empty::before { content: attr(data-empty); color: #7a5a34; font-size: 15px; opacity: .8; }
-  .tray .spare { display: inline-flex; align-items: center; gap: .3rem; padding: .1rem .55rem; border-radius: 999px; font-size: 15px; line-height: 1.4;
-    color: #4b3826; background: #fff6df; border: 1px solid #c9ab82; cursor: grab; touch-action: none; user-select: none; }
-  .tray .spare:hover { background: #fffbef; } .tray .spare:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 1px; }
+  /* one row, always: a strip that wrapped to two rows grew and shoved the scene down. It scrolls sideways if it overflows. */
+  .tray { flex: 1; min-width: 0; display: flex; flex-wrap: nowrap; overflow-x: auto; align-items: center; gap: .35rem; scrollbar-width: none; }
+  .tray::-webkit-scrollbar { display: none; }
+  .tray > :first-child { margin-left: auto; } .tray > :last-child { margin-right: auto; }   /* centered when it fits, start-aligned when it scrolls */
+  .tray:empty { justify-content: center; }
+  .tray:empty::before { content: attr(data-empty); color: #7a5a34; font-size: 15px; opacity: .8; white-space: nowrap; }
+  .tray .spare { display: inline-flex; align-items: center; gap: .35rem; flex: none; min-height: 2.1rem; padding: 0 .7rem; border-radius: 999px; font-size: 16px; line-height: 1.2;
+    white-space: nowrap; color: #4b3826; background: #fff6df; border: 1px solid #c9ab82; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none;
+    transition: transform .12s ease, background .12s ease; }
+  .tray .spare:active { transform: scale(.94); }
+  .tray .spare:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 1px; }
+  @media (hover: hover) { .tray .spare:hover { background: #fffbef; } }
   .tray .spare .sw { width: .7rem; height: .7rem; border-radius: 999px; flex: none; } .tray .spare .sw.sq { border-radius: 2px; }
   .drag-ghost { position: fixed; z-index: 100; pointer-events: none; transform: translate(-50%, -50%) scale(1.1); }
-  .drag-hint { position: absolute; left: .6rem; top: .5rem; font: 13px/1.2 "Patrick Hand", ui-rounded, system-ui, sans-serif; color: #4b3826;
-    background: rgb(255 246 223 / .82); padding: .15rem .5rem; border-radius: .5rem; pointer-events: none; transition: opacity .6s ease; }
-  .drag-hint.gone { opacity: 0; }
+  /* the how-to is a caption under the scene: as an overlay it sat on top of the balloons and their labels */
+  .float-caption { margin: .5rem 0 0; text-align: center; font: 15px/1.3 "Patrick Hand", ui-rounded, system-ui, sans-serif; opacity: .8; text-wrap: balance; }
+  /* everything past the two core moves (add a balloon, add a weight) is behind one disclosure */
+  #more > summary { display: flex; align-items: center; justify-content: center; gap: .4rem; width: fit-content; min-height: 2.25rem; margin: .5rem auto 0; padding: 0 1rem;
+    border-radius: 999px; border: 1px solid color-mix(in oklab, var(--color-base-content) 25%, transparent); font-size: .9rem; font-weight: 600; cursor: pointer;
+    list-style: none; user-select: none; -webkit-user-select: none; }
+  #more > summary::-webkit-details-marker { display: none; }
+  #more > summary::before { content: "\25B8"; transition: transform .15s ease; }
+  #more[open] > summary::before { transform: rotate(90deg); }
+  #more[open] > summary { margin-bottom: .75rem; }
+  #more > summary:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { #more > summary::before, .tray .spare, .tool { transition: none !important; } }
   #face .mood-worried, #face .mood-scared { opacity: 0; transition: opacity .35s ease; }
   #face[data-mood="worried"] .mood-worried, #face[data-mood="scared"] .mood-worried, #face[data-mood="scared"] .mood-scared { opacity: 1; }
   #face[data-mood="scared"] .brow-l { transform: translate(0, -2.2px) rotate(-6deg); }
@@ -278,7 +289,8 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   .tool { display: inline-grid; place-items: center; width: 2.75rem; height: 2.75rem; border-radius: 999px; font-size: 1.45rem; line-height: 1;
     background: #fff6df; border: 1.5px solid #b0916a; outline: 1px dashed #8a6c48; outline-offset: -5px; cursor: grab; touch-action: none;
     box-shadow: 0 3px 10px -4px rgb(0 0 0 / .45); transition: transform .15s ease, background .15s ease; }
-  .tool:hover { transform: rotate(-12deg) scale(1.06); } .tool:focus-visible { outline: 3px solid var(--color-accent); }
+  @media (hover: hover) { .tool:hover { transform: rotate(-12deg) scale(1.06); } }   /* on a touch screen :hover sticks after a tap and leaves the tool tilted */
+  .tool:active { transform: scale(.94); } .tool:focus-visible { outline: 3px solid var(--color-accent); }
   .scissors.in-use { opacity: .35; }
   .pump { cursor: pointer; }
   .pump[aria-pressed="true"] { background: #ffd98a; border-color: #7a5a34; transform: scale(1.08); box-shadow: 0 0 0 3px rgb(255 190 80 / .55); }
@@ -287,50 +299,36 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   .scissor-ghost { position: fixed; z-index: 100; pointer-events: none; font-size: 2.2rem; line-height: 1; transform: translate(-30%, -50%) rotate(-30deg); }
   .scissor-ghost.snip { animation: snip .18s ease; }
   @keyframes snip { 50% { transform: translate(-30%, -50%) rotate(-50deg) scale(1.15); } }
-  .hint-short { display: none; }
-  @media (max-width: 640px) {
-    .hint-long { display: none; } .hint-short { display: inline; } .drag-hint { font-size: 12px; }
-    .strip { padding: .3rem .4rem; gap: .35rem; }
-    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; gap: .25rem; scrollbar-width: none; }
-    .tray .spare { font-size: 13px; padding: 0 .45rem; white-space: nowrap; flex: none; }
-  }
 
-  /* ---- embed mode (?embed=float|zoom): just one interactive, inside an iframe on /staying-afloat.
-     The post carries the prose; the iframe is a fixed height, so the sticky scene still works inside it. ---- */
+  /* ---- embed mode (?embed=float|zoom): just one interactive, inside an iframe on /staying-afloat. The post carries the prose. ---- */
   html.embed main { max-width: none; padding: .5rem; }
   html.embed-float main > :not(#part1), html.embed-float #part1 > :not(#float-wrap),
   html.embed-zoom main > :not(#interactive), html.embed-zoom #takeaway { display: none; }
   html.embed .float-wrap { width: auto; margin-left: 0; }
-  html.embed .sound-toggle { position: static; box-shadow: none; }   /* the embed script moves it in with the presets */
-  .embed-presets { margin-top: .75rem; }
+  html.embed .sound-toggle { position: static; box-shadow: none; }   /* the embed script moves it into More controls */
+  .embed-presets { margin: 0 0 .75rem; }
   /* The post sizes the iframe to fit this content (postMessage 'height'), so nothing in here scrolls by itself:
      a scroller nested in the page traps a finger's swipe. The scene keeps itself on screen instead, with a
-     transform the post drives as it scrolls (postMessage 'view'); --pvh is the post's viewport height. */
-  html.embed-float .float-wrap > figure { position: relative; top: auto; z-index: 20; will-change: transform; }
-  html.embed-float .float-panel { max-height: none; overflow: visible; position: static; }
-  @media (max-width: 699px) {
-    /* stacked: cap the scene at ~56% of the screen so the controls it floats over still have room below it */
-    html.embed-float .float-wrap > figure { max-width: calc(var(--pvh, 100vh) * .56 * var(--fig-ar, .8)); margin-inline: auto; }
-  }
-  @media (min-width: 700px) {
-    /* the post column is narrower than the standalone 1024px breakpoint, so go side by side sooner */
-    html.embed-float .float-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 1rem; align-items: start; }
-    html.embed-float .float-wrap > figure { width: 100%; max-width: calc((var(--pvh, 100vh) - 1rem - 7.5rem) * var(--fig-ar, 1.1)); justify-self: center; }   /* 7.5rem: the strips above and below the scene */
-    html.embed-float .float-panel #dial-list, html.embed-float .float-panel #toggle-cols, html.embed-float .float-panel #custom-cols { grid-template-columns: minmax(0, 1fr); }
-  }
-  /* a narrow scene (iPhone landscape puts a ~400px scene beside the panel): one scrolling row of spares, not a block over the weights */
+     transform the post drives as it scrolls (it calls window.afloatView with where its viewport is). */
+  /* Closed (the default): the scene alone, centered, as big as one screen allows. Open: the controls sit beside the
+     scene when there's room (.side), else under it while the scene follows the reader down them. fitScene() in the
+     embed script sets the figure's max-width and the .side / .narrow classes: the right size depends on the post's
+     viewport, the open state and both strips, which is more than a media query can see from inside an iframe. */
+  html.embed-float .float-wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0; opacity: 0; transition: opacity .25s ease; }
+  html.embed-float.fitted .float-wrap { opacity: 1; }   /* shown once it's been sized to the post's viewport, so it doesn't jump on load */
+  @media (prefers-reduced-motion: reduce) { html.embed-float .float-wrap { transition: none; } }
+  html.embed-float .float-wrap > figure { position: relative; top: auto; z-index: 20; will-change: transform; width: 100%; justify-self: center; }
+  html.embed-float .float-panel { max-height: none; overflow: visible; position: static; padding-right: 0; }
+  html.embed-float .float-wrap.side { grid-template-columns: minmax(0, 1fr) 290px; gap: 1rem; align-items: start; }
+  html.embed-float .float-wrap.side #more > summary { margin-top: 0; }
+  html.embed-float .float-wrap.side .float-caption { display: none; }   /* beside the scene it reads as part of the controls; the post's prose says it too */
+  html.embed-float .float-panel #dial-list, html.embed-float .float-panel #toggle-cols, html.embed-float .float-panel #custom-cols { grid-template-columns: minmax(0, 1fr); }
   .float-wrap > figure { container-type: inline-size; }
-  @container (max-width: 520px) {
-    .strip { padding: .3rem .4rem; gap: .35rem; }
-    .tray { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; gap: .25rem; scrollbar-width: none; }
-    .tray .spare { white-space: nowrap; flex: none; }
-    .hint-long { display: none; } .hint-short { display: inline; }   /* the long hint wraps over the balloons in a narrow scene */
-  }
+  @container (max-width: 520px) { .strip { padding: .3rem .4rem; gap: .35rem; } .strip .tools { gap: .3rem; padding-right: .35rem; } }
 
   /* ---- fingers: 44px targets (Apple HIG) wherever the pointer is coarse ---- */
   @media (pointer: coarse) {
-    .btn-sm, .tray .spare { min-height: 44px; }
-    .tray .spare { font-size: 16px; padding: 0 .7rem; }
+    .btn-sm, .tray .spare, #more > summary { min-height: 44px; }
     .tool { width: 3rem; height: 3rem; }
     /* the slider row takes the finger, not just the 16px track. A transparent border, not height: DaisyUI draws
        the fill as a thumb shadow clipped to the padding box, so a taller box would paint a solid block */
@@ -453,7 +451,6 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
         <g id="zones" aria-hidden="true"></g>
         <g id="float-fx" aria-hidden="true" pointer-events="none"></g>
       </svg>
-      <div id="drag-hint" class="drag-hint" aria-hidden="true"><span class="hint-long">hold to pump it up &middot; drag a dial across the hand to flip it &middot; drag it into a strip to remove</span><span class="hint-short">hold: pump &middot; drag: flip or remove</span></div>
       </div><!-- /scene-box -->
       <!-- bottom strip, under the water: the spare weights. Tap to add, or drag one into the scene. -->
       <div class="strip strip-bottom" id="strip-bottom">
@@ -461,6 +458,9 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
       </div>
     </figure>
     <div class="float-panel" id="float-panel">
+    <p class="float-caption" id="float-caption">Tap a tag to add it &middot; drag it back to a strip to take it off &middot; hold a balloon to pump it up</p>
+    <details id="more">
+    <summary>More controls</summary>
 
     <!-- readouts -->
     <div class="grid grid-cols-3 gap-2 mt-4" id="float-readouts" hidden><!-- hidden: the highlighted zone tag in the scene already says this; JS still writes here -->
@@ -473,7 +473,7 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
     <!-- stress tolerance: the only thing that moves the water -->
     <div class="rounded-box bg-base-200" id="tolerance-box">
       <div class="flex items-baseline justify-between gap-2"><label class="font-semibold" for="tolerance">Stress tolerance</label><span class="text-xs opacity-75" id="tolerance-val">typical</span></div>
-      <input id="tolerance" type="range" min="0" max="100" step="1" value="71" class="range range-xs w-full mt-2" aria-describedby="tolerance-help">
+      <input id="tolerance" type="range" min="0" max="100" step="1" value="71" class="range range-xs w-full mt-2 dial-range" aria-describedby="tolerance-help">
       <div class="flex justify-between text-xs opacity-60 mt-1" aria-hidden="true"><span>&larr; low (water high)</span><span>high (water low) &rarr;</span></div>
       <p id="tolerance-help" class="sr-only">Moves the waterline. Same balloons and weights, but someone with lower tolerance goes under sooner.</p>
     </div>
@@ -509,6 +509,7 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
         </div>
       </div>
     </details>
+    </details><!-- /more -->
     </div><!-- /float-panel -->
     </div><!-- /float-wrap -->
 
@@ -1722,7 +1723,13 @@ window.FX = (function () {
     for (var i = 0; i < 9; i++) droplet(x + (Math.random() * 50 - 25), wy, Math.random() * 160 - 80, -(120 + Math.random() * 180), 650, 2 + Math.random() * 2.5);
     ripple(x, 0); ripple(x, 220);
   }
+  var svgEl = $('float-svg'), plateEl = $('plate-slot'), floaterEl = $('floater'), wlabelEl = $('wlabel-float');
+  var waterEls = ['water-back-g', 'water-front-g', 'zones'].map($), lastBox = '', lastWy = '';
+  var onScreen = true;   // the loop idles while the scene is scrolled away: the rest of the post shouldn't pay for it
+  if (window.IntersectionObserver) new IntersectionObserver(function (es) { onScreen = es[es.length - 1].isIntersecting; }).observe(svgEl);
   function frame(now) {
+    requestAnimationFrame(frame);
+    if (!onScreen || document.hidden) return;
     var rm = FX.reduce();
     if (rm) { CUR.feet = TARGET.feet; CUR.v = 0; CUR.water = WATER; }
     else {
@@ -1746,13 +1753,19 @@ window.FX = (function () {
     CUR.h = first ? hT : CUR.h + (hT - CUR.h) * 0.08;
     CUR.cam = first ? camT : CUR.cam + (camT - CUR.cam) * 0.08;
     var z = CUR.h / FH, vw = FW * z, ox = XC - vw / 2;
-    $('float-svg').setAttribute('viewBox', ox.toFixed(1) + ' ' + CUR.cam.toFixed(1) + ' ' + vw.toFixed(1) + ' ' + CUR.h.toFixed(1));
-    // the sky plate always fills the frame: lay it out as at zoom 1, then scale about the frame's corner
-    $('plate-slot').setAttribute('transform', 'translate(' + ox.toFixed(1) + ' ' + CUR.cam.toFixed(1) + ') scale(' + z.toFixed(4) + ') translate(' + (-(XC - FW / 2)).toFixed(1) + ' 0) scale(1 ' + (FH / SCENE_H).toFixed(3) + ')');
-    ['water-back-g', 'water-front-g', 'zones'].forEach(function (id) { $(id).setAttribute('transform', 'translate(0 ' + wy.toFixed(1) + ')'); });
-    $('floater').setAttribute('transform', 'translate(' + FLOAT_X + ' ' + f.toFixed(1) + ')');
+    // a new viewBox re-lays-out the whole scene, so only write it (and the water) when the camera actually moved
+    var box = ox.toFixed(1) + ' ' + CUR.cam.toFixed(1) + ' ' + vw.toFixed(1) + ' ' + CUR.h.toFixed(1);
+    if (box !== lastBox) {
+      lastBox = box; svgEl.setAttribute('viewBox', box);
+      // the sky plate always fills the frame: lay it out as at zoom 1, then scale about the frame's corner
+      plateEl.setAttribute('transform', 'translate(' + ox.toFixed(1) + ' ' + CUR.cam.toFixed(1) + ') scale(' + z.toFixed(4) + ') translate(' + (-(XC - FW / 2)).toFixed(1) + ' 0) scale(1 ' + (FH / SCENE_H).toFixed(3) + ')');
+    }
+    var wyS = wy.toFixed(1);
+    if (wyS !== lastWy) { lastWy = wyS; waterEls.forEach(function (e) { e.setAttribute('transform', 'translate(0 ' + wyS + ')'); }); }
+    var at = 'translate(' + FLOAT_X + ' ' + f.toFixed(1) + ')';
+    floaterEl.setAttribute('transform', at);
     alive(now, rm, f);
-    $('wlabel-float').setAttribute('transform', 'translate(' + FLOAT_X + ' ' + f.toFixed(1) + ')');
+    wlabelEl.setAttribute('transform', at);
     BAL_KEYS.forEach(function (key) {
       var n = B[key];
       if (n.fly) {                                   // cut loose: drifts up and out of the sky, string trailing
@@ -1802,7 +1815,6 @@ window.FX = (function () {
     wKick = nW > lastNW; lastNW = nW; lastV = CUR.v;
     mainChain.show(anyW); ringEl.style.display = anyW ? '' : 'none';
     mainChain.set(HW[0], HW[1], RING[0], RING[1]);
-    requestAnimationFrame(frame);
   }
 
   // ---------- controls ----------
@@ -2038,7 +2050,7 @@ window.FX = (function () {
   // hold = pump it up a size (1 -> 2 -> 3 -> 1); drag a dial across the hand line to flip balloon <-> weight;
   // drag anything into either strip (or out of the frame) to remove it; tap or drag a spare in to add it.
   TOGGLES.forEach(function (t) { t.size0 = t.size; });
-  var svg = $('float-svg'), fig = $('float-figure'), tray = $('tray'), trayUp = $('tray-up'), hint = $('drag-hint');
+  var svg = $('float-svg'), fig = $('float-figure'), tray = $('tray'), trayUp = $('tray-up');
   var STRIPS = [$('strip-top'), $('strip-bottom')];
   function inStrip(x, y) { return STRIPS.some(function (s) { return inRect(s.getBoundingClientRect(), x, y); }); }
   function markStrip(x, y) { STRIPS.forEach(function (s) { s.classList.toggle('drop-target', x != null && inRect(s.getBoundingClientRect(), x, y)); }); }
@@ -2052,7 +2064,6 @@ window.FX = (function () {
   }
   function toLocal(cx, cy) { var p = svg.createSVGPoint(); p.x = cx; p.y = cy; return p.matrixTransform(bLayer.getScreenCTM().inverse()); }
   function inRect(r, x, y) { return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom; }
-  function dismissHint() { hint.classList.add('gone'); }
   function pumpOnce(m, kind) {   // one size up (1 -> 2 -> 3), and past 3 it deflates back to 1
     var sz = sizeOf(m); setItem(m, kind, sz >= 3 ? 1 : sz + 1);
     if (sz >= 3) FX.play('deflate');
@@ -2069,14 +2080,14 @@ window.FX = (function () {
       var at = toLocal(e.clientX, e.clientY), off = [n.cur.x - at.x, n.cur.y - at.y];
       var timer;
       var pump = function () {
-        held = true; dismissHint(); pumpOnce(m, kind);
+        held = true; pumpOnce(m, kind);
         timer = setTimeout(pump, 520);
       };
       // pump tool armed: pump on the press itself (a quick mouse click releases before even a 0ms timer would fire)
       if (pumpArmed && kind === 'balloon') pump(); else timer = setTimeout(pump, 380);
       function move(ev) {
         if (!dragging && Math.hypot(ev.clientX - x0, ev.clientY - y0) > 8 && !held) {
-          dragging = true; clearTimeout(timer); n.drag = true; fig.classList.add('dragging'); dismissHint();
+          dragging = true; clearTimeout(timer); n.drag = true; fig.classList.add('dragging');
         }
         if (!dragging) return;
         var p = toLocal(ev.clientX, ev.clientY);
@@ -2116,7 +2127,7 @@ window.FX = (function () {
   }
   $('scissors').addEventListener('pointerdown', function (e) {
     if (e.button) return;
-    e.preventDefault(); dismissHint();
+    e.preventDefault();
     var btn = this, ghost = document.createElement('div'); ghost.className = 'scissor-ghost'; ghost.textContent = '\u2702\uFE0F';
     document.body.appendChild(ghost); btn.classList.add('in-use'); fig.classList.add('dragging');
     var last = null;
@@ -2153,7 +2164,7 @@ window.FX = (function () {
   function armPump(on) { pumpArmed = on; pumpBtn.setAttribute('aria-pressed', String(on)); fig.classList.toggle('pump-armed', on); }
   pumpBtn.addEventListener('pointerdown', function (e) {
     if (e.button) return;
-    e.preventDefault(); dismissHint();
+    e.preventDefault();
     var x0 = e.clientX, y0 = e.clientY, ghost = null;
     function move(ev) {
       if (!ghost && Math.hypot(ev.clientX - x0, ev.clientY - y0) > 8) {
@@ -2201,7 +2212,7 @@ window.FX = (function () {
     var x0 = e.clientX, y0 = e.clientY, ghost = null; b._dragged = false;
     function move(ev) {
       if (!ghost && Math.hypot(ev.clientX - x0, ev.clientY - y0) > 8) {
-        b._dragged = true; dismissHint(); ghost = b.cloneNode(true); ghost.classList.add('drag-ghost'); ghost.classList.add('spare'); document.body.appendChild(ghost);
+        b._dragged = true; ghost = b.cloneNode(true); ghost.classList.add('drag-ghost'); ghost.classList.add('spare'); document.body.appendChild(ghost);
       }
       if (ghost) { ghost.style.left = ev.clientX + 'px'; ghost.style.top = ev.clientY + 'px'; }
     }
@@ -2243,18 +2254,21 @@ window.FX = (function () {
   $('tolerance').addEventListener('input', function () { setTolerance(+this.value); });
 
   // ---------- camera: a tight frame that follows the figure but keeps the waterline in view when it can ----------
-  var SMALL = window.matchMedia('(max-width: 640px)');
-  var FW = 660, FH = 600, XC = FLOAT_X + 10;
+  // A small scene gets the narrow framing (a 480-wide view, bigger labels). Standalone that's a phone viewport;
+  // embedded, fitScene() decides from the size it gives the scene (an iPad beside its controls is narrow too).
+  var SMALL = window.matchMedia('(max-width: 640px)'), EMBED = document.documentElement.classList.contains('embed-float');
+  var FW = 660, FH = 600, XC = FLOAT_X + 10, narrow = EMBED ? false : SMALL.matches;
+  window.afloatNarrow = function (on) { if (on !== narrow) { narrow = on; fitPhone(); } };
   function fitPhone() {
-    FW = SMALL.matches ? 480 : 660;
+    FW = narrow ? 480 : 660;
+    fig.classList.toggle('narrow', narrow);
     $('float-svg').style.aspectRatio = FW + ' / ' + FH;
-    document.documentElement.style.setProperty('--fig-ar', (FW / FH).toFixed(3));   // embed CSS sizes the scene by height
     buildZones();
   }
   // zone tags: felt tags pinned to the right edge of the frame, stitched dotted lines between bands
   function buildZones() {
     var z = $('zones'); while (z.firstChild) z.removeChild(z.firstChild);
-    var right = XC + FW / 2 - 10, big = SMALL.matches;
+    var right = XC + FW / 2 - 10, big = narrow;
     [500 - 180, 500 - 110].forEach(function (y) { el('line', { 'class': 'zline', x1: right - (big ? 150 : 200), x2: right, y1: y, y2: y }, z); });
     [['thriving', 288], ['coping', 355], ['barely coping', 452], ['overwhelmed', 548]].forEach(function (t) {
       var w = t[0].length * (big ? 10 : 8) + 22, h = big ? 30 : 24;
@@ -2290,7 +2304,7 @@ window.FX = (function () {
   buildWater($('water-back-g'), false);
   buildWater($('water-front-g'), true);
   fitPhone();
-  if (SMALL.addEventListener) SMALL.addEventListener('change', fitPhone);
+  if (!EMBED && SMALL.addEventListener) SMALL.addEventListener('change', function () { window.afloatNarrow(SMALL.matches); });
 
   setTolerance(71);
   requestAnimationFrame(frame);
@@ -2298,35 +2312,66 @@ window.FX = (function () {
 })();
 </script>
 <script>
-  // embed-float hides #separate, so its preset buttons move into the side panel (their listeners come along).
-  if (document.documentElement.classList.contains('embed-float')) {
+  // Everything past the scene and its two strips lives in the "More controls" disclosure. Embedded it starts
+  // closed: the picture and add-a-balloon / add-a-weight carry the idea. Standalone it starts open.
+  var more = document.getElementById('more');
+  if (!document.documentElement.classList.contains('embed-float')) more.open = true;
+  else {
+    // embed-float hides #separate, so its preset buttons move to the top of the disclosure (their listeners come along)
     var presets = document.querySelector('#separate .flex');
     presets.classList.add('embed-presets');
-    presets.appendChild(document.getElementById('sound-toggle'));   // a fixed corner button would sit on top of the controls
-    document.getElementById('float-panel').appendChild(presets);
+    more.insertBefore(presets, more.querySelector('summary').nextSibling);
+    var snd = document.getElementById('sound-toggle');   // a fixed corner button would sit on top of the controls
+    snd.classList.add('mt-3'); more.appendChild(snd);
 
-    // The post sizes this iframe to fit (so there's no inner scroller to trap a finger) and reports where its
-    // viewport is, so the scene can follow the reader down the controls the way position: sticky would.
+    // The post sizes this iframe to fit (so there's no inner scroller to trap a finger) and tells it where the
+    // post's viewport is, so the scene can be sized to one screen and can follow the reader down the open controls
+    // the way position: sticky would.
     (function () {
-      var root = document.documentElement, main = document.querySelector('main'), wrap = document.getElementById('float-wrap'),
-          fig = document.getElementById('float-figure'), view = null, GAP = 8;
-      function sendHeight() { parent.postMessage({ afloat: 'height', h: Math.ceil(main.getBoundingClientRect().bottom + scrollY) }, '*'); }
-      function follow() {
-        if (!view) return;
-        var w = wrap.getBoundingClientRect(), fh = fig.offsetHeight, side = getComputedStyle(wrap).display === 'grid';
-        // side by side: stick until the panel ends. Stacked: stop once the end of the panel is on screen, so the
-        // last controls aren't left underneath the scene.
-        var max = side ? w.bottom - fh : Math.min(w.bottom - fh, w.bottom - view.vh + GAP);
-        var y = Math.max(w.top, Math.min(-view.top + GAP, max)) - w.top;
-        fig.style.transform = y > 0.5 ? 'translateY(' + y.toFixed(1) + 'px)' : '';
+      var main = document.querySelector('main'), wrap = document.getElementById('float-wrap'), panel = document.getElementById('float-panel'),
+          fig = document.getElementById('float-figure'), box = fig.querySelector('.scene-box'), view = null, side = false, GAP = 8, lastH = 0;
+      function sendHeight() {
+        var h = Math.ceil(main.getBoundingClientRect().bottom + scrollY);
+        if (h !== lastH) { lastH = h; parent.postMessage({ afloat: 'height', h: h }, '*'); }
       }
-      addEventListener('message', function (e) {
-        if (e.source !== parent || !e.data || e.data.afloat !== 'view') return;
-        if (!view || view.vh !== e.data.vh) root.style.setProperty('--pvh', e.data.vh + 'px');
-        view = e.data; follow();
-      });
-      if (window.ResizeObserver) new ResizeObserver(function () { sendHeight(); follow(); }).observe(main);
-      sendHeight();
+      // Size the scene: as wide as the column, but no taller than what's left of one screen after the strips (and,
+      // closed, the caption and button under it). Under 500px wide it switches to the narrow framing.
+      function fitScene() {
+        var vh = view ? view.vh : innerHeight, W = wrap.clientWidth, open = more.open;
+        side = open && W >= 660;
+        wrap.classList.toggle('side', side);
+        var avail = side ? W - 290 - 16 : W, strips = fig.offsetHeight - box.offsetHeight;
+        var budget = side ? vh - 2 * GAP - strips : open ? vh * 0.5 : vh - 2 * GAP - strips - panel.offsetHeight;
+        budget = Math.max(budget, 300);   // a phone on its side: let the scene run past one screen rather than shrink to a stamp
+        var w = Math.min(avail, budget * 1.1, 680), narrow = w < 500;
+        if (narrow) w = Math.min(avail, budget * 0.8);
+        fig.style.maxWidth = Math.floor(w) + 'px';
+        window.afloatNarrow(narrow);
+      }
+      function follow() {
+        var y = 0;
+        if (view && more.open) {
+          var w = wrap.getBoundingClientRect(), fh = fig.offsetHeight;
+          // side by side: stick until the panel ends. Stacked: stop once the end of the panel is on screen, so the
+          // last controls aren't left underneath the scene.
+          var max = side ? w.bottom - fh : Math.min(w.bottom - fh, w.bottom - view.vh + GAP);
+          y = Math.max(w.top, Math.min(-view.top + GAP, max)) - w.top;
+        }
+        fig.style.transform = y > 0.5 ? 'translate3d(0,' + y.toFixed(1) + 'px,0)' : '';
+      }
+      // Called by the post, synchronously, from its scroll handler. It used to arrive by postMessage a frame late,
+      // so the scene slid with the page and snapped back on every frame of a scroll.
+      window.afloatView = function (top, vh) {
+        var resized = !view || view.vh !== vh;
+        view = { top: top, vh: vh };
+        if (resized) fitScene();
+        follow();
+        document.documentElement.classList.add('fitted');
+      };
+      setTimeout(function () { document.documentElement.classList.add('fitted'); }, 1500);   // opened outside the post: nobody calls
+      more.addEventListener('toggle', function () { fitScene(); follow(); sendHeight(); });
+      if (window.ResizeObserver) new ResizeObserver(function () { fitScene(); sendHeight(); follow(); }).observe(main);
+      fitScene(); sendHeight();
     })();
   }
 </script>
