@@ -7,17 +7,17 @@ import {
   initDevInfo,
   isChangedPage,
   isDevServer,
+  wantsDiffOnLoad,
 } from "../dev-info";
 
-vi.mock("../rich-diff", () => {
-  let on = false;
-  return {
-    toggleRichDiff: vi.fn(async () => {
-      on = !on;
-      return on;
-    }),
-  };
-});
+const richDiff = vi.hoisted(() => ({ on: false }));
+
+vi.mock("../rich-diff", () => ({
+  toggleRichDiff: vi.fn(async () => {
+    richDiff.on = !richDiff.on;
+    return richDiff.on;
+  }),
+}));
 
 describe("dev-info", () => {
   let originalLocation: Location;
@@ -158,6 +158,64 @@ describe("dev-info", () => {
       btn.click();
       await vi.waitFor(() => expect(btn.getAttribute("aria-pressed")).toBe("false"));
       expect(btn.title).toBe("Diff vs main");
+    });
+  });
+
+  describe("diff on load", () => {
+    const toggle = () => document.getElementById("dev-diff-toggle") as HTMLButtonElement;
+
+    const load = (loc: Partial<Location>) => {
+      window.location = {
+        hostname: "localhost",
+        port: "4001",
+        pathname: "/foo",
+        search: "",
+        hash: "",
+        ...loc,
+      } as Location;
+      (window as any).__GIT_BRANCH__ = "mimo-envs";
+      (window as any).__GIT_CHANGED__ = ["/foo"];
+      richDiff.on = false;
+      document.body.innerHTML = "";
+      initDevInfo();
+    };
+
+    afterEach(() => {
+      (window as any).__GIT_BRANCH__ = undefined;
+      (window as any).__GIT_CHANGED__ = undefined;
+      document.body.innerHTML = "";
+    });
+
+    it("reads ?diff=1 and #diff, nothing else", () => {
+      expect(wantsDiffOnLoad({ search: "?diff=1", hash: "" })).toBe(true);
+      expect(wantsDiffOnLoad({ search: "?x=2&diff=1", hash: "" })).toBe(true);
+      expect(wantsDiffOnLoad({ search: "", hash: "#diff" })).toBe(true);
+      expect(wantsDiffOnLoad({ search: "?diff=0", hash: "" })).toBe(false);
+      expect(wantsDiffOnLoad({ search: "", hash: "#diffusion" })).toBe(false);
+      expect(wantsDiffOnLoad({ search: "", hash: "" })).toBe(false);
+    });
+
+    it.each([{ search: "?diff=1" }, { hash: "#diff" }])(
+      "%o opens the diff as if the button was clicked once",
+      async (loc) => {
+        load(loc);
+        await vi.waitFor(() => expect(toggle().getAttribute("aria-pressed")).toBe("true"));
+        expect(toggle().title).toBe("Exit diff");
+        expect(richDiff.on).toBe(true);
+      },
+    );
+
+    it("leaves the diff off without the param", async () => {
+      load({});
+      await new Promise((r) => setTimeout(r, 0));
+      expect(toggle().getAttribute("aria-pressed")).toBe("false");
+      expect(richDiff.on).toBe(false);
+    });
+
+    it("does nothing on production, where there is no banner", () => {
+      load({ hostname: "idvork.in", port: "", search: "?diff=1" });
+      expect(document.getElementById("dev-info-banner")).toBeNull();
+      expect(richDiff.on).toBe(false);
     });
   });
 });
