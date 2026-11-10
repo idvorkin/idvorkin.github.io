@@ -53,21 +53,21 @@ I grew up in a small town, with a conservative synagogue. Services were always i
 
 Every Friday night we would walk to services. My dad didn’t believe in God, but he loved the synagogue. For him it wasn’t about belief; it was about community. Because the congregation was small, they often struggled to gather the ten men needed for certain prayers. Most weeks the phone would ring, and they’d ask him to come. We lived just five minutes away, so he always did.
 
-When you’re Jewish, turning thirteen means becoming a man — you study the Torah and have a Bar Mitzvah. My grandparents had immigrated to Israel, so when it was my turn, we flew there, my first time on a plane. Standing at the Wall, surrounded by history and prayer, made it unforgettable.
+When you’re Jewish, turning thirteen means becoming a man — you study the Torah and have a Bar Mitzvah. My grandparents had immigrated to Israel, so when it was my turn, we flew there, my first time on a plane. Standing at the Wall made it unforgettable.
 
 ### When Proof Became My Religion
 
-I am an engineer: science, cause and effect, proof. If you can’t measure it, model it, or test it, you don’t trust it. No proof, no belief. Stories without evidence - bugs in the system. Miracles? Not reproducible. God? No causal mechanism. The whole thing looked like bad engineering.
+I'm an engineer. If you can’t measure it, model it, or test it, you don’t trust it. Miracles aren't reproducible, and God has no causal mechanism. The whole thing looked like bad engineering.
 
 Why would I build my life on something that couldn’t even pass a basic test plan?
 
-What I didn’t see then was that religion doesn’t live or die on proof — it lives in practice.
+What I didn’t see then was that religion lives in practice.
 
 ### The Day I Valued Religion
 
 Just a normal day at work, the phone rang out of the blue. “Igor, please sit down.” My dad was dead. I had no idea what to do, but my synagogue — basically the Jewish version of a church — did. In Judaism, the dead are buried quickly, usually within 24 hours, so there’s no time to get lost in indecision. You just follow the steps.
 
-At the funeral, the rabbi put a tie around my neck, and cut it. Why did that feel important? Who knows, who cares — it just did. Then the congregation sang a song. Even though it was in Hebrew, gobbledygook to me, I remembered the melody from before. It was incredibly comforting, it was right. I just knew everyone was there, supporting me.
+At the funeral, the rabbi put a tie around my neck, and cut it. Why did that feel important? Who knows, who cares — it just did. Then the congregation sang a song. Even though it was in Hebrew, gobbledygook to me, I remembered the melody from before. It was comforting, and it felt right. I just knew everyone was there, supporting me.
 
 At the graveyard, when we were putting him into the ground, I could see the names of his friends from my Bar Mitzvah days on the gravestones beside him. I could picture him laughing with them, and knowing he was with his friends gave me a sense of peace.
 
@@ -77,11 +77,9 @@ After that came shloshim, the thirty days of softer mourning, and later, yahrzei
 
 What I valued most was the certainty of what to do. I didn’t have to ask, “Am I grieving right?” The protocol answered that. And being in community meant I wasn’t alone. Major life events stopped feeling like cruel surprises — I could see that others had walked this path before me.
 
-That was the day religion showed its worth to me: not in metaphysics, but in structure and support when I needed them most.
-
 ### When Someone Important to Me Found God
 
-I won't list their name out of privacy, but in my deep respect for this person I had to really dig into god, I went to a few sermons live, and this person started reading a daily devotional, and so did I.
+I won't name them, for privacy. Out of respect for this person I dug into God: I went to a few sermons live, and when they started reading a daily devotional, so did I.
 
 {%include summarize-page.html src="/walking-with-god" %}
 
@@ -90,7 +88,7 @@ I won't list their name out of privacy, but in my deep respect for this person I
 Some observations I've had:
 
 - There are many different religions, with deeply different beliefs
-- Much of the interpretation is that of a self help book, instead of the classic format I'm used to "build a model and describe it", "several anecdote stories", "1 chapter per story", the bible stuff I'm exposed to starts with a really old verse, then has a bunch of interpretation.
+- Much of the interpretation reads like a self-help book, but not in the format I'm used to (build a model and describe it, then one chapter per anecdote). The Bible material I see starts with a very old verse, then adds a lot of interpretation.
 
 ## It Lives in Practice, Not Proof
 
@@ -100,17 +98,17 @@ That's what I missed when I was running religion through a test plan. Religions 
 
 The data leans the same way, with a caveat. Among 74,534 women in the Nurses' Health Study, those who attended services more than once a week had 33% lower all-cause mortality over about 16 years than those who never went, and social support was one of the bigger mediators ([Li et al. 2016](https://pubmed.ncbi.nlm.nih.gov/27183175/)). It's observational, so it can't separate going from being the kind of person who goes. But look at what it measured: showing up, not believing.
 
-So my question isn't "religious or not." It's which practices reliably open me to meaning while keeping me kind, and where someone like me finds the weekly gathering. The practices side of that lives in [Spiritual Health](/spiritual-health).
+So my question is which practices reliably open me to meaning while keeping me kind, and where someone like me finds the weekly gathering. The practices side of that lives in [Spiritual Health](/spiritual-health).
 
 ## The Hard Parts for Me
 
 ### Proof
 
-The problem is proof. I don’t see it. With an engineering mindset, I expect cause, effect, and data — and religion doesn’t give me that. The parts about burning in hell are especially hard to accept. If I can’t see it, measure it, or reason my way to it, it doesn’t land.
+I don’t see proof. As an engineer I expect cause, effect, and data, and religion doesn’t give me that. The parts about burning in hell are especially hard to accept.
 
 _To be fair, there are things I accept as good even though the only evidence is personal and experiential. Bringing joy makes me feel happy, so I keep doing it. Gratitude practices lift my mood, even if I can’t prove why. Not everything needs to be double-blind tested to matter._
 
-An incredibly good discussion on belief (easily applied to religion), hidden in a discussion of psychics between the host and Dan Harris. I highly, highly recommend (and much better than the Search engine on religion for the parts that pertain to belief). [Search Engine - The Psychic Question](https://podscan.fm/podcasts/search-engine/episodes/the-psychic-question)
+The best discussion of belief I've found is hidden in an episode about psychics, between the host and Dan Harris. It applies to religion, and on belief it beats Search Engine's own religion episode. Highly recommend: [Search Engine - The Psychic Question](https://podscan.fm/podcasts/search-engine/episodes/the-psychic-question)
 
 - While I think the tarot people are wrong, they frankly throw much better parties than the fact checkers. So there's that. But then you spend enough time around the believers and sometimes you feel your own killjoyness more acutely, like you're on a diet or fasting for reasons nobody else quite understands. Wouldn't it be nicer to just give in?
 - Open is better than closed, right? Fluid is better than rigid. People who are too sure of themselves tend to be alienating to others.
@@ -119,25 +117,25 @@ An incredibly good discussion on belief (easily applied to religion), hidden in 
 
 ### Hypocrisy
 
-The problem is hypocrisy. Religion has plenty of examples of evil done in its name, or leaders exploiting faith for personal gain. To be fair, that isn’t unique to religion — some people are just shitty and will exploit whatever they can.
+Religion has plenty of examples of evil done in its name, or leaders exploiting faith for personal gain. That isn’t unique to religion; some people are just shitty and will exploit whatever they can.
 
 _To be fair, I’ve also seen religion call people to their best selves. In community, people often act with generosity and service, not exploitation. That doesn’t erase the bad, but it balances it._
 
 ### Pushiness
 
-The problem is pushiness. Again, not unique to religion, but easy to see there. If someone really believes they hold the greatest gift in the world, of course they want to share it. If someone thinks they’re protecting you, of course they’ll try to stop you from doing something dangerous. I get the intent, but it can feel suffocating.
+Again, not unique to religion, but easy to see there. If someone really believes they hold the greatest gift in the world, of course they want to share it. If someone thinks they’re protecting you, of course they’ll try to stop you from doing something dangerous. I get the intent, but it can feel suffocating.
 
 _To be fair, I’ve been pushy too. When I care deeply, I want to convince people. If I believe something makes life better, I share it — sometimes too strongly. So I get where the impulse comes from, even if I don’t like being on the receiving end._
 
 ### Arbitrariness & Literalism
 
-The problem is arbitrariness. I struggle with random literal interpretations, absolute faith, and the inability to question. It feels like being asked to accept rules without context, as if the meaning is locked and you’re not allowed to ask why.
+I struggle with random literal interpretations, absolute faith, and the inability to question. It feels like being asked to accept rules without context, as if the meaning is locked and you’re not allowed to ask why.
 
 _To be fair, I can see the upside. If we really did have a universal standard, there would be no argument about morality. Everyone would know where the lines are, and that certainty would be a relief. It's also comforting not to have to figure everything out on your own — sometimes having the rules spelled out is easier than reinventing the code of life from scratch._
 
 ## What Is God Anyway?
 
-When I read devotionals each morning, I keep trying to do a mental find-and-replace - if I swap out "God" with something secular, what word would I use? "Universe" feels like a cop-out. "Myself" doesn't capture it either. Then it hit me: I can't do a simple find-and-replace because God isn't one thing - God is doing ten different jobs simultaneously: source of confidence, moral framework, community identifier, ritual designer. Religious people get all of that in one package. Secular people have to cobble together ten different solutions from ten different sources. But here's the twist: religious people face their own cobbling challenge. With conflicting scriptures, denominations, and interpretations, how do they know THEIR understanding of God is correct? And what makes their path actually different from mine?
+When I read devotionals each morning, I try a mental find-and-replace: if I swap "God" for something secular, what word fits? "Universe" feels like a cop-out. "Myself" doesn't capture it either. A simple swap fails because God is doing ten jobs at once: source of confidence, moral framework, community identifier, ritual designer. Religious people get all of that in one package. Secular people have to cobble together ten solutions from ten sources. Religious people have their own cobbling problem, though. With conflicting scriptures, denominations, and interpretations, how do they know THEIR understanding of God is correct? And what makes their path different from mine?
 
 ### The many meanings of God
 
@@ -164,7 +162,7 @@ The religious and secular wisdom behind each row is in the [appendix](#appendix-
 
 ### The Secular Challenge of having to cobble together your own god
 
-Without a religious framework, you face the burden of construction. Look at that list above - ten fundamental roles that religion fills with one answer: God. As a secular person, I need ten different sources, ten different practices, ten different communities.
+Without a religious framework, you have to build it yourself. The table above has ten roles that religion fills with one answer: God. As a secular person, I need a separate source for each.
 
 How do I know my ethics are right? What gives me confidence when everything is uncertain? Where do I find community? What rituals mark important transitions? Should I follow [Stoicism](/stoicism) or Buddhism or just wing it? Is my meditation practice actually helping or am I just sitting quietly convincing myself it matters?
 
@@ -181,13 +179,13 @@ Consider the conflicts:
 - Between interpretations (literal vs metaphorical, conservative vs progressive)
 - Within scripture itself (contradictory verses, unclear guidance)
 
-So religious people face their own cobbling challenge: **How do I know MY interpretation of God's will is correct?**
+So religious people face their own cobbling challenge: how do I know MY interpretation of God's will is correct?
 
-The answer I keep hearing: "I can feel it" or "I feel God's touch" or "The Holy Spirit guides me." But wait - isn't that the same as my secular approach? I test things, see what works, trust my experience. They pray, see what feels right, trust their spiritual sense.
+The answer I keep hearing: "I can feel it" or "I feel God's touch" or "The Holy Spirit guides me." Isn't that the same as my secular approach? I test things, see what works, trust my experience. They pray, see what feels right, trust their spiritual sense.
 
 ### So what's actually different?
 
-Looking at both paths, they have surprising similarities. Both require:
+Both paths require:
 
 1. **Interpretation** - making sense of conflicting inputs
 2. **Experiential testing** - does this work in my life?
@@ -198,13 +196,13 @@ But there are real differences:
 
 **Confidence vs Uncertainty:** Religious people have confidence in their framework because it's backed by divine authority. Secular people are stuck with uncertainty because we know we're making it up as we go.
 
-**Support Infrastructure:** Religious people have massive support systems for asking and answering life's big questions - weekly services, religious education, clergy who've dedicated their lives to these questions, thousands of years of texts, and a community expectation that you should wrestle with meaning. Secular people get self-help books and the occasional philosophical movie. There's no weekly gathering to ask "what's the good life?" together. No secular equivalent of a rabbi whose job is helping you think through ethics and meaning.
+**Support Infrastructure:** Religious people have support systems for life's big questions: weekly services, religious education, clergy who've dedicated their lives to these questions, thousands of years of texts, and a community expectation that you should wrestle with meaning. Secular people get self-help books and the occasional philosophical movie. There's no weekly gathering to ask "what's the good life?" together. No secular equivalent of a rabbi whose job is helping you think through ethics and meaning.
 
-Which is better? I honestly don't know. The confidence sounds incredible - to just _know_ you're right. The support system sounds amazing. But I can't manufacture that confidence. My engineer brain won't let me stop questioning.
+Which is better? I don't know. To just _know_ you're right sounds incredible, and so does the support system. But I can't manufacture that confidence; my engineer brain won't stop questioning.
 
 ### How I'm Cobbling Mine Together
 
-When I read the [daily devotional](/walking-with-god), I do this mental translation exercise:
+When I read the [daily devotional](/walking-with-god), I translate as I go:
 
 - "God has a plan for you" → "Stay true to your eulogy virtues"
 - "Trust in God" → "Focus on maximizing influence, not controlling outcomes"
@@ -212,9 +210,9 @@ When I read the [daily devotional](/walking-with-god), I do this mental translat
 - "Pray without ceasing" → "Regular gratitude and reflection practice"
 - "God loves you unconditionally" → "Practice self-compassion, you're doing your best"
 
-Sometimes the translation feels clunky. Sometimes I wonder if I'm missing something profound by not just accepting the original. The devotional will say something beautiful about resting in God's love, and I'll think "that sounds amazing" - and then my brain immediately goes to "but how do I operationalize that without the God part?"
+Sometimes the translation feels clunky. Sometimes I wonder if I'm missing something profound by not just accepting the original. The devotional will say something beautiful about resting in God's love, and I'll think "that sounds amazing," then my brain goes to "but how do I operationalize that without the God part?"
 
-It's like trying to run Windows software on a Linux machine - constant compatibility issues, constant translation layers, never quite sure if you're getting the full experience.
+It's like running Windows software on Linux: it mostly works through a translation layer, and I'm never sure I'm getting the full experience.
 
 Still, this is my path: take wisdom where I find it, translate it for my engineer brain, and keep what makes my life better.
 
@@ -277,10 +275,10 @@ The signs aren't just for Christians. They're exactly my ethics, and they map on
 
 - **Sign 1: Be merciful to all.** Not just to people you like, but to everyone — as freely as you hope to receive it.
 - **Sign 3: Give aid to the poor.** Including the poor in tenderness, companionship, and dignity. The sin is indifference, not being unable to help everyone.
-- **Sign 4: Suffer with the afflicted.** Before trying to fix the problem, see the person. **Compassion means "with suffering."**
+- **Sign 4: Suffer with the afflicted.** Before trying to fix the problem, see the person. Compassion means "with suffering."
 - **Sign 5: Participate in others' sorrows as though they were your own.** When you see someone carrying a cross, don't just observe — help carry it.
 - **Sign 6: Be an open door to the unhappy.** Anyone should be able to come to you and leave a little happier. Is your door mostly closed?
-- **Sign 7: Don't insult anymore.** Count how many times a day you mock, criticize, or **judge** someone, including in your head. When insulted, answer gently or not at all.
+- **Sign 7: Don't insult anymore.** Count how many times a day you mock, criticize, or judge someone, including in your head. When insulted, answer gently or not at all.
 
 **Calm like water: Be Present. This too shall pass. Work the problem**
 
@@ -301,7 +299,7 @@ The signs aren't just for Christians. They're exactly my ethics, and they map on
 
 ## Appendix: Religious and Secular Wisdom for Each Role
 
-The quotes behind the [ten jobs table](#the-many-meanings-of-god), three religious and three secular per role. Collapsed because it's a reference, not a read.
+The quotes behind the [ten jobs table](#the-many-meanings-of-god), three religious and three secular per role. Collapsed, since it's reference material.
 
 <details markdown="1">
 <summary>Show all ten roles</summary>
