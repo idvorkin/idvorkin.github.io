@@ -711,7 +711,12 @@ Two composition rules from Igor, binding on every future strip:
     "inside out"), two props in the same spot (glasses plus an eyepiece), or
     a line that contradicts the reference. Say the oddity plainly in geometry
     ("the wide end pressed to his eye, the narrow end pointing at the coins")
-    or rework the gag so it needs no odd object.
+    or rework the gag so it needs no odd object. Never name a different
+    object to get the shape ("a funnel or megaphone" for a reversed spyglass):
+    the model draws the object you named. Words like "backwards" and "wrong
+    way round" get drawn as the normal hold, so state the geometry instead.
+    An inherited prompt or character text carries its flaws forward too, so
+    reread it in full rather than editing one line.
   - **The pictures, after.** For every prop and hand in every panel, ask
     whether it reads as what it is: no fused or melted objects, no extra or
     floating parts, no props merged into faces or glasses, no extra fingers
