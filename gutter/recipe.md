@@ -701,6 +701,23 @@ Two composition rules from Igor, binding on every future strip:
 - **Read every candidate before shipping it.** The reject bar was fixed in
   advance: Larry lacking beard or claw, Igor lacking rainbow glasses or green
   tee, or garbled lettering. Two of six tripped it.
+- **Look for anything wonky, panel by panel, before anything ships.** The canon
+  bar above is not enough on its own. Den #16 shipped a panel 1 whose
+  "backwards" spyglass came out as a brass horn fused into Larry's glasses,
+  with a stray lens floating at the tip; Igor caught it after the merge:
+  "look at first cell seems borked, fix that!" Two passes:
+  - **The prompt, before generating.** Reread it for anything a model will
+    draw wrong: an object asked to be odd ("backwards", "upside down",
+    "inside out"), two props in the same spot (glasses plus an eyepiece), or
+    a line that contradicts the reference. Say the oddity plainly in geometry
+    ("the wide end pressed to his eye, the narrow end pointing at the coins")
+    or rework the gag so it needs no odd object.
+  - **The pictures, after.** For every prop and hand in every panel, ask
+    whether it reads as what it is: no fused or melted objects, no extra or
+    floating parts, no props merged into faces or glasses, no extra fingers
+    or limbs, nothing impossible in the geometry. An edit-style "fix" call
+    can trade one wrong thing for another, so recheck the panel it returns.
+    Name every wonky thing you found, and what you did about it, in the job entry.
 - Never pre-pick. Four options to the Cockpit (`ask.py … --option-image "A=/abs/path.webp"`,
   repeatable; it copies into `assets/asks/<bead-id>/` itself) plus the same
   images attached to a Telegram message, no `--recommend`.
