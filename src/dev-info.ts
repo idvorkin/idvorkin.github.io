@@ -92,6 +92,11 @@ export function commentsButton(api: AnnotateApi): HTMLButtonElement {
   return btn;
 }
 
+/** `?diff=1` or `#diff` on a preview URL opens the page with the rich diff already on. */
+export function wantsDiffOnLoad(loc: Pick<Location, "search" | "hash">): boolean {
+  return new URLSearchParams(loc.search || "").get("diff") === "1" || loc.hash === "#diff";
+}
+
 export function isDevServer(): boolean {
   return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 }
@@ -153,11 +158,11 @@ export function initDevInfo(): void {
     }
 
     devInfoElement.innerHTML = infoContent;
+    let diffBtn: HTMLButtonElement | undefined;
     if (isChangedPage(window.location.pathname, changed)) {
+      diffBtn = diffButton(pr ? `https://github.com/idvorkin/idvorkin.github.io/pull/${pr}` : undefined);
       devInfoElement.appendChild(document.createTextNode(" | "));
-      devInfoElement.appendChild(
-        diffButton(pr ? `https://github.com/idvorkin/idvorkin.github.io/pull/${pr}` : undefined),
-      );
+      devInfoElement.appendChild(diffBtn);
     }
     const annotate = annotateApi();
     if (annotate) {
@@ -165,6 +170,8 @@ export function initDevInfo(): void {
       devInfoElement.appendChild(commentsButton(annotate));
     }
     document.body.appendChild(devInfoElement);
+    // Same path as a click, so the button's pressed state stays in sync.
+    if (diffBtn && wantsDiffOnLoad(window.location)) diffBtn.click();
 
     // Adjust body padding to account for the banner
     const currentPaddingTop = Number.parseInt(window.getComputedStyle(document.body).paddingTop) || 0;
