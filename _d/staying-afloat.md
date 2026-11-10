@@ -46,7 +46,7 @@ I picture my calm as floating above water. Balloons in one hand pull me up: slee
   })();
 </script>
 
-Tap a tag in the top strip to add a balloon, or one in the bottom strip to add a weight. Hold a balloon or weight to pump it up. Drag a dial across his paw to flip it from weight to balloon. Drag the scissors across a string or chain to cut it loose. The rest is under More controls. The stress tolerance slider there is the only thing that moves the water: same balloons, same weights, but with lower tolerance he goes under sooner.
+Tap a tag in the top strip to add a balloon, or one in the bottom strip to add a weight. Hold a balloon or weight to pump it up. Sleep, friends, family and moving go both ways: with the sleep balloon up, tap bad sleep in the bottom strip and it becomes a weight. Drag the scissors across a string or chain to cut it loose. The rest is under More controls. The stress tolerance slider there is the only thing that moves the water: same balloons, same weights, but with lower tolerance he goes under sooner.
 
 Three things I keep relearning from it:
 

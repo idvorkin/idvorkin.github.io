@@ -169,7 +169,8 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   }
 
   /* ===== game feel ===== */
-  #floater, #wlabel-float { transition: transform 1.3s cubic-bezier(.34,1.45,.64,1); }
+  /* #floater is moved by the spring in frame() alone. It used to carry a 1.3s CSS transition as well, which restarted
+     every frame: he trailed his own position, the camera and the water, and could drift out of the frame. */
   #wlabel-bob { animation: bob 4.5s ease-in-out infinite; }
   .balloon.popin { animation: popin .55s cubic-bezier(.3,.7,.4,1) both; }
   @keyframes popin { 0% { transform: scale(.15); opacity: 0; } 45% { transform: scale(1.2,.84); opacity: 1; } 70% { transform: scale(.93,1.07); } 100% { transform: scale(1); } }
@@ -253,6 +254,7 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   .tray { flex: 1; min-width: 0; display: flex; flex-wrap: nowrap; overflow-x: auto; align-items: center; gap: .35rem; scrollbar-width: none; }
   .tray::-webkit-scrollbar { display: none; }
   .tray > :first-child { margin-left: auto; } .tray > :last-child { margin-right: auto; }   /* centered when it fits, start-aligned when it scrolls */
+  .tray.scrolls { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 2rem), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 2rem), transparent); }   /* more this way */
   .tray:empty { justify-content: center; }
   .tray:empty::before { content: attr(data-empty); color: #7a5a34; font-size: 15px; opacity: .8; white-space: nowrap; }
   .tray .spare { display: inline-flex; align-items: center; gap: .35rem; flex: none; min-height: 2.1rem; padding: 0 .7rem; border-radius: 999px; font-size: 16px; line-height: 1.2;
@@ -1752,6 +1754,10 @@ window.FX = (function () {
     var first = CUR.cam === null || rm;
     CUR.h = first ? hT : CUR.h + (hT - CUR.h) * 0.08;
     CUR.cam = first ? camT : CUR.cam + (camT - CUR.cam) * 0.08;
+    // He never leaves the frame (Igor, 2026-11-09), whatever the camera would rather show: the eased camera lags a
+    // fast rise or drop, and a tall stack of balloons and weights can outgrow even the widest view. He's 200 tall,
+    // feet at f, so this wins over keeping the water or the balloon tops in view.
+    CUR.cam = clamp(CUR.cam, f + 14 - CUR.h, f - 208);
     var z = CUR.h / FH, vw = FW * z, ox = XC - vw / 2;
     // a new viewBox re-lays-out the whole scene, so only write it (and the water) when the camera actually moved
     var box = ox.toFixed(1) + ' ' + CUR.cam.toFixed(1) + ' ' + vw.toFixed(1) + ' ' + CUR.h.toFixed(1);
@@ -2186,23 +2192,27 @@ window.FX = (function () {
   pumpBtn.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); armPump(!pumpArmed); } });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && pumpArmed) armPump(false); });
 
-  // the strips hold whatever is off: balloons in the top strip, weights in the bottom one. A dial (sleep, friends...)
-  // goes to the strip of the side it was last on, and tapping it brings it back on that side; drag it into the
-  // scene to pick a side.
-  function spareLabel(m) { return isDial(m) ? m.name.toLowerCase() : m.short; }
+  // The strips hold what you can add: balloons in the top strip, weights in the bottom one. A dial (sleep, friends,
+  // family, moving) is one thing that's either a balloon or a weight, so its tag sits in whichever strip it isn't
+  // in the scene from: with sleep up as a balloon, "bad sleep" waits in the bottom strip, and adding it there takes
+  // the balloon away (Igor, 2026-11-09: "if you add on bottom it takes from top"). Off altogether, it's in both.
+  function spareLabel(m, kind) { return isDial(m) ? (kind === 'balloon' ? m.pos : m.neg) : m.short; }
   function renderTray() {
     [tray, trayUp].forEach(function (t) { while (t.firstChild) t.removeChild(t.firstChild); });
-    DIALS.concat(TOGGLES).forEach(function (m) {
-      if (isDial(m) && m.value) m.side = m.value < 0 ? 'weight' : 'balloon';
-      if (sizeOf(m) || m.custom) return;
-      var b = document.createElement('button'), kind = isDial(m) ? (m.side || 'balloon') : m.kind;
-      b.type = 'button'; b.className = 'spare';
-      b.innerHTML = '<span class="sw' + (kind === 'weight' ? ' sq' : '') + '" style="background:' + m.color + '"></span><span></span>';
-      b.lastChild.textContent = spareLabel(m);
-      b.setAttribute('aria-label', 'Add ' + spareLabel(m) + ' as a ' + kind + (isDial(m) ? ' (or drag it above or below the hand)' : ''));
-      b.addEventListener('pointerdown', function (e) { spareDrag(e, m, kind, b); });
-      b.addEventListener('click', function () { if (b._dragged) return; setItem(m, kind, isDial(m) ? 1 : m.size0); update(); });
-      (kind === 'weight' ? tray : trayUp).appendChild(b);
+    TOGGLES.concat(DIALS).forEach(function (m) {
+      if (m.custom) return;
+      var on = isDial(m) ? (m.value > 0 ? 'balloon' : m.value < 0 ? 'weight' : null) : (m.on ? m.kind : null);
+      (isDial(m) ? ['balloon', 'weight'] : [m.kind]).forEach(function (kind) {
+        if (on === kind || (on && !isDial(m))) return;
+        var b = document.createElement('button'), flip = !!on, label = spareLabel(m, kind);
+        b.type = 'button'; b.className = 'spare';
+        b.innerHTML = '<span class="sw' + (kind === 'weight' ? ' sq' : '') + '" style="background:' + m.color + '"></span><span></span>';
+        b.lastChild.textContent = label;
+        b.setAttribute('aria-label', flip ? 'Turn ' + spareLabel(m, on) + ' into the ' + kind + ' ' + label : 'Add ' + label + ' as a ' + kind);
+        b.addEventListener('pointerdown', function (e) { spareDrag(e, m, kind, b); });
+        b.addEventListener('click', function () { if (b._dragged) return; setItem(m, kind, isDial(m) ? (sizeOf(m) || 1) : m.size0); update(); });
+        (kind === 'weight' ? tray : trayUp).appendChild(b);
+      });
     });
     // only a strip that overflows needs sideways finger panning; otherwise a diagonal drag out of it is a drag, not a pan
     [tray, trayUp].forEach(function (t) { t.classList.toggle('scrolls', t.scrollWidth > t.clientWidth + 1); });
@@ -2222,9 +2232,9 @@ window.FX = (function () {
       ghost.remove();
       if (ev.type === 'pointercancel') { setTimeout(function () { b._dragged = false; }, 0); return; }   // the browser took the touch: no stranded ghost
       if (inRect(svg.getBoundingClientRect(), ev.clientX, ev.clientY) && !inStrip(ev.clientX, ev.clientY)) {
-        var p = toLocal(ev.clientX, ev.clientY), side = isDial(m) ? (p.y < FLIP_Y ? 'balloon' : 'weight') : kind;
-        (side === 'balloon' ? B : W)[m.id].spawnAt = [p.x, p.y];
-        setItem(m, side, isDial(m) ? 1 : m.size0); update();
+        var p = toLocal(ev.clientX, ev.clientY);
+        (kind === 'balloon' ? B : W)[m.id].spawnAt = [p.x, p.y];
+        setItem(m, kind, isDial(m) ? (sizeOf(m) || 1) : m.size0); update();
       }
       setTimeout(function () { b._dragged = false; }, 0);
     }
