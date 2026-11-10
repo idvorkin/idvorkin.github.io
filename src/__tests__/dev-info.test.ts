@@ -127,14 +127,14 @@ describe("dev-info", () => {
       document.body.innerHTML = "";
     });
 
-    it("shows branch, PR, port and diff as icons plus values, without label words", () => {
+    it("shows branch, PR and diff as icons plus values, without label words", () => {
       const text = banner().textContent?.replace(/\s+/g, " ").trim();
-      expect(text).toBe("mimo-envs | #933 | 4001 | Changed: /foo |");
+      expect(text).toBe("mimo-envs | #933 | Changed: /foo |");
     });
 
     it("keeps a hover tooltip for every icon-only item", () => {
       expect(banner().querySelector('[title="Branch"] code')?.textContent).toBe("mimo-envs");
-      expect(banner().querySelector('[title="Port"] code')?.textContent).toBe("4001");
+      expect(banner().querySelector('[title="Port"]')).toBeNull();
       expect(banner().querySelector("#dev-diff-toggle")?.getAttribute("title")).toBe("Diff vs main");
     });
 
