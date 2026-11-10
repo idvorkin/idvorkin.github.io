@@ -141,11 +141,6 @@ export function initDevInfo(): void {
       infoContent += `<a href="${prUrl}" title="Pull request" target="_blank" style="color: #58a6ff; text-decoration: none;"><i class="fab fa-github"></i></a> <a href="${prUrl}" target="_blank" style="color: #58a6ff; text-decoration: none;"><code style="background: black; color: #58a6ff; padding: 2px 6px; border-radius: 3px;">#${pr}</code></a>`;
     }
 
-    if ((branch || pr) && port) {
-      infoContent += " | ";
-    }
-    infoContent += `<span title="Port">${icon("fa-plug")} <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${port}</code></span>`;
-
     const changed = getChangedPages();
     if (changed.length) {
       const links = changed
