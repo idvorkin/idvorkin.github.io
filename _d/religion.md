@@ -216,11 +216,11 @@ Sometimes the translation feels clunky. Sometimes I wonder if I'm missing someth
 
 It's like trying to run Windows software on a Linux machine - constant compatibility issues, constant translation layers, never quite sure if you're getting the full experience.
 
-But this is my path: taking wisdom where I find it, translating it into language that works for my engineer brain, testing whether it makes my life better. The cobbling feels messy and uncertain compared to the clean certainty of "God said it, I believe it."
+Still, this is my path: take wisdom where I find it, translate it for my engineer brain, and keep what makes my life better.
 
 ## Bible Verses I Really Like
 
-While I struggle with literal belief, I've found certain verses capture truths about how to live well. They're less about theology and more about practical wisdom - the kind that holds up whether you believe in God or not. Most are ESV or NIV; the odd translation is marked.
+I struggle with literal belief, but these verses hold up as advice on how to live, God or no God. Most are ESV or NIV; other translations are marked.
 
 ### Don't take Faith Blindly
 
