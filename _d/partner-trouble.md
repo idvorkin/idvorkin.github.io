@@ -64,12 +64,12 @@ The things that are killing your relationship:
 
 ### Being Assertive
 
-Harris's picture: a puppy dog only cares about you, a shark only cares about itself. I've got both in me. Assertiveness is the third option: standing up for my needs in a way that's fair and considerate to _both_ of us. It comes down to two skills: asking for what I want, and saying no to what I don't.
+Harris's picture: a puppy dog only cares about you, a shark only cares about itself. I've got both in me. Assertiveness is the third option, [Win/Win](/win-win): standing up for my needs in a way that's fair and considerate to _both_ of us. Lose/Win and Win/Lose both drain the relationship until it's Lose/Lose. It comes down to two skills: asking for what I want, and saying no to what I don't.
 
 #### Assertion vs Aggression
 
-- **Passive (puppy dog)**: my needs go behind my partner's, at a real cost to me. It pays off short term: I dodge conflict and rejection, and it can even feel like I'm living my values of being caring. Long term it ends in burnout and resentment. This is the doormat in DRAIN's "N". The way out is values like self-respect and self-care, plus remembering I have rights.
-- **Aggressive (shark)**: I get my way and ignore my partner's feelings and rights. Every attack and defend tactic is aggressive, and a lot of detour and withdraw (the sulk, the "sure" I never follow through on) is passive-aggressive. The way out is values like caring and fairness, plus remembering my partner has rights.
+- **Passive (puppy dog), Covey's [Lose/Win](/win-win#everything-else-is-loselose)**: my needs go behind my partner's, at a real cost to me. It pays off short term: I dodge conflict and rejection, and it can even feel like I'm living my values of being caring. Long term it ends in burnout and resentment. This is the doormat in DRAIN's "N". The way out is values like self-respect and self-care, plus remembering I have rights.
+- **Aggressive (shark), Covey's [Win/Lose](/win-win#everything-else-is-loselose)**: I get my way and ignore my partner's feelings and rights. Every attack and defend tactic is aggressive, and a lot of detour and withdraw (the sulk, the "sure" I never follow through on) is passive-aggressive. The way out is values like caring and fairness, plus remembering my partner has rights.
 
 The line between the two is a bill of rights. I have the right to be treated fairly and considerately, to make my needs as important as theirs, to make mistakes, to feel what I feel, and to ask for what I want, decline requests and state my opinions, _provided I do so in a way that is fair and considerate_. That last clause is the whole difference. Stand up for a right unfairly and it's aggression. And my partner has every right on the list too.
 
