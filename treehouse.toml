@@ -1,0 +1,10 @@
+# The worktree pool (https://github.com/kunchenguid/treehouse). Take a slot with
+# `treehouse get --lease -b <branch>`, give it back with `treehouse return <path>`.
+# A returned slot runs `git clean -fd` without -x, so the git-ignored _site/ and
+# back-links.json stay put: the next lease's anchor-checker hook works without a fresh build.
+
+# Four slots: enough for the content agents that run at once, and the bound on disk (four _site/ copies).
+max_trees = 4
+
+# Named so a missing main is an error, never a quiet fall back to whatever branch the checkout is on.
+base_branch = "main"
