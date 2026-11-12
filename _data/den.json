@@ -1,5 +1,18 @@
 [
   {
+    "num": 17,
+    "title": "Correction",
+    "date": "November 10, 2026",
+    "img": "/images/den/den-017.webp",
+    "alt": "The Den #17: Correction — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — stands beside a small shut wooden toy chest and holds up a limp little blue wind-up robot on a string, the only one in a white peaked cap and white gloves, a silver whistle at its neck: 'I STOPPED THE ROBOTS.' Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, a cream mug in his paw, smiles: 'GREAT.' 2: The chest lid has flown open. Small blue robots with glowing eyes pack the chest and march out of it in a line across the rug. Larry, still dangling the capped robot, claw raised, is unbothered: 'CORRECTION: I DID NOT STOP THOSE.' Igor freezes mid-sip, eyes wide. 3: Robots everywhere: lining every bookshelf, swarming the rug, climbing Igor's crocs, one sitting on his head. Larry, the capped robot still dangling from his paw: 'OR THOSE.' Igor, mug held out, mouth open: 'THEN WHAT DID YOU STOP?' 4: The attic is waist-deep in hundreds of robots. Larry stands high and dry on the chest and holds out the capped robot, slumped, its eyes dark, proud: 'THE ONE THAT STOPS THEM.' Igor, waist-deep, holds his mug up beside his head, out of the tide, and stares at it.",
+    "panels": [
+      "/images/den/den-017-p1.webp",
+      "/images/den/den-017-p2.webp",
+      "/images/den/den-017-p3.webp",
+      "/images/den/den-017-p4.webp"
+    ]
+  },
+  {
     "num": 16,
     "title": "Backwards",
     "date": "November 9, 2026",
