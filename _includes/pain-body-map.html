@@ -1,268 +1,231 @@
 {%- comment -%} Clickable body-figure opener for /physical-pain: the blog's
-raccoon seen from behind (green tee, ringed tail, head turned so the mask and
-snout peek out). Each tinted zone and its label is one SVG link to a section of
-the page (both shoulders share one link, both knees another). Pure links, no
-script: works without JS, by keyboard (Tab + Enter) and by touch, and the TOC
-above stays the fallback. Only body parts the page has a section for are zoned.
-Floats right beside the first section on wide screens, stacks on phones. No
-headings inside, so nothing leaks into the TOC. Used by: _d/physical-pain.md {%-
-endcomment -%}
-<style>
-  .pm {
-    --pm-ink: #1b1f24;
-    --pm-soft: #6b7280;
-    --pm-panel: #f4f5f7;
-    --pm-rule: #d8dbe0;
-    --pm-fur: #8b6a42;
-    --pm-fur-dark: #3b2d1c;
-    --pm-fur-light: #d8c3a0;
-    --pm-tee: #2f8f4e;
-    --pm-shorts: #3c4656;
-    --pm-hot: #ea580c;
-    --pm-zone-edge: #fff7ed;
-    --pm-focus: #1d4ed8;
-    border: 1px solid var(--pm-rule);
-    border-radius: 10px;
-    background: var(--pm-panel);
-    color: var(--pm-ink);
-    padding: 10px 14px 12px;
-    margin: 1rem auto 1.25rem;
-    max-width: 420px;
-  }
-  @media (min-width: 992px) {
+raccoon seen from behind (images/raccoon-physical-pain-back.webp, 600x902,
+transparent). The picture and the zones share one SVG whose viewBox is the
+image's pixel size, so zone coordinates are image pixels. Each tinted zone and
+its label pill is one SVG link to a section of the page (both shoulders share
+one link, both knees another). Pure links, no script: works without JS, by
+keyboard (Tab + Enter) and by touch, and the TOC above stays the fallback. The
+picture is an SVG
+<image
+  >, not an <img />, so the site's image-zoom script leaves it alone. Only body
+  parts the page has a section for are zoned. Floats right beside the first
+  section on wide screens, stacks on phones. No headings inside, so nothing
+  leaks into the TOC. Used by: _d/physical-pain.md {%- endcomment -%}
+  <style>
     .pm {
-      float: right;
-      width: 270px;
-      margin: 0.25rem 0 1rem 1.25rem;
+      --pm-ink: #1b1f24;
+      --pm-soft: #6b7280;
+      --pm-panel: #f4f5f7;
+      --pm-rule: #d8dbe0;
+      --pm-hot: #ea580c;
+      --pm-zone-edge: #fff7ed;
+      --pm-focus: #1d4ed8;
+      border: 1px solid var(--pm-rule);
+      border-radius: 10px;
+      background: var(--pm-panel);
+      color: var(--pm-ink);
+      padding: 10px 14px 12px;
+      margin: 1rem auto 1.25rem;
+      max-width: 420px;
     }
-    .pm-cap {
-      font-size: 0.8rem;
+    @media (min-width: 992px) {
+      .pm {
+        float: right;
+        /* Headings beside the float are positioned and would otherwise paint
+         over it and swallow taps on the lower zones. */
+        position: relative;
+        z-index: 1;
+        width: 270px;
+        margin: 0.25rem 0 1rem 1.25rem;
+      }
+      .pm-cap {
+        font-size: 0.8rem;
+      }
     }
-  }
-  @media (prefers-color-scheme: dark) {
-    .pm {
+    @media (prefers-color-scheme: dark) {
+      .pm {
+        --pm-ink: #e5e7eb;
+        --pm-soft: #9ca3af;
+        --pm-panel: #1f2328;
+        --pm-rule: #3a3f46;
+        --pm-hot: #fb923c;
+        --pm-focus: #93c5fd;
+      }
+    }
+    [data-bs-theme="dark"] .pm {
       --pm-ink: #e5e7eb;
       --pm-soft: #9ca3af;
       --pm-panel: #1f2328;
       --pm-rule: #3a3f46;
-      --pm-fur: #9a7750;
-      --pm-fur-light: #e2cfae;
-      --pm-shorts: #55627a;
       --pm-hot: #fb923c;
       --pm-focus: #93c5fd;
     }
-  }
-  [data-bs-theme="dark"] .pm {
-    --pm-ink: #e5e7eb;
-    --pm-soft: #9ca3af;
-    --pm-panel: #1f2328;
-    --pm-rule: #3a3f46;
-    --pm-fur: #9a7750;
-    --pm-fur-light: #e2cfae;
-    --pm-shorts: #55627a;
-    --pm-hot: #fb923c;
-    --pm-focus: #93c5fd;
-  }
-  .pm-cap {
-    margin: 0 0 4px;
-    text-align: center;
-    font-size: 0.95rem;
-    color: var(--pm-soft);
-  }
-  .pm svg {
-    display: block;
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 0 auto;
-  }
-  .pm-fur {
-    fill: var(--pm-fur);
-  }
-  .pm-fur-dark {
-    fill: var(--pm-fur-dark);
-  }
-  .pm-fur-light {
-    fill: var(--pm-fur-light);
-  }
-  .pm-tee {
-    fill: var(--pm-tee);
-    stroke: var(--pm-tee);
-  }
-  .pm-shorts {
-    fill: var(--pm-shorts);
-  }
-  .pm-limb {
-    fill: none;
-    stroke: var(--pm-fur);
-    stroke-linecap: round;
-  }
-  .pm-sleeve {
-    fill: none;
-    stroke: var(--pm-tee);
-    stroke-linecap: round;
-  }
-  .pm-tail {
-    fill: none;
-    stroke: var(--pm-fur-light);
-    stroke-width: 20;
-    stroke-linecap: round;
-  }
-  .pm-tail-rings {
-    fill: none;
-    stroke: var(--pm-fur-dark);
-    stroke-width: 20;
-    stroke-dasharray: 9 9;
-  }
-  .pm-zone {
-    fill: var(--pm-hot);
-    fill-opacity: 0.72;
-    stroke: var(--pm-zone-edge);
-    stroke-width: 2;
-    transition:
-      fill-opacity 0.15s,
-      stroke-width 0.15s;
-  }
-  .pm-lead {
-    stroke: var(--pm-soft);
-    stroke-width: 1;
-    stroke-dasharray: 2 3;
-  }
-  .pm svg text.pm-label {
-    fill: var(--pm-ink);
-    font-size: 15px;
-    font-weight: 600;
-  }
-  .pm a {
-    cursor: pointer;
-    outline: none;
-    /* SVG paints the site's link underline with the link's own fill, so
-       match it to the label color or it shows black in dark mode. */
-    fill: var(--pm-ink);
-  }
-  .pm a:hover .pm-zone,
-  .pm a:focus-visible .pm-zone {
-    fill-opacity: 0.95;
-    stroke-width: 3.5;
-  }
-  .pm a:focus-visible .pm-zone {
-    stroke: var(--pm-focus);
-  }
-  .pm a:hover text.pm-label,
-  .pm a:focus-visible text.pm-label {
-    fill: var(--pm-hot);
-    text-decoration: underline;
-  }
-  .pm a:focus-visible text.pm-label {
-    fill: var(--pm-focus);
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .pm-zone {
-      transition: none;
+    .pm-cap {
+      margin: 0 0 4px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--pm-soft);
     }
-  }
-</style>
+    .pm svg {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 0 auto;
+    }
+    .pm-zone {
+      fill: var(--pm-hot);
+      fill-opacity: 0.5;
+      stroke: var(--pm-zone-edge);
+      stroke-width: 4;
+      transition:
+        fill-opacity 0.15s,
+        stroke-width 0.15s;
+    }
+    .pm-lead {
+      stroke: var(--pm-ink);
+      stroke-width: 2;
+      stroke-dasharray: 4 5;
+    }
+    .pm-pill {
+      fill: var(--pm-panel);
+      fill-opacity: 0.92;
+      stroke: var(--pm-rule);
+      stroke-width: 2;
+    }
+    .pm svg text.pm-label {
+      fill: var(--pm-ink);
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .pm a {
+      cursor: pointer;
+      outline: none;
+      /* SVG paints the site's link underline with the link's own fill, so
+       match it to the label color or it shows black in dark mode. */
+      fill: var(--pm-ink);
+    }
+    .pm a:hover .pm-zone,
+    .pm a:focus-visible .pm-zone {
+      fill-opacity: 0.8;
+      stroke-width: 7;
+    }
+    .pm a:focus-visible .pm-zone,
+    .pm a:focus-visible .pm-pill {
+      stroke: var(--pm-focus);
+    }
+    .pm a:focus-visible .pm-pill {
+      stroke-width: 4;
+    }
+    .pm a:hover text.pm-label,
+    .pm a:focus-visible text.pm-label {
+      fill: var(--pm-hot);
+      text-decoration: underline;
+    }
+    .pm a:focus-visible text.pm-label {
+      fill: var(--pm-focus);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pm-zone {
+        transition: none;
+      }
+    }
+  </style>
 
-<nav class="pm" id="pain-body-map" aria-label="Jump to a body part">
-  <p class="pm-cap">Where does it hurt? Tap a spot.</p>
-  <svg viewBox="-10 0 340 320">
-    <!-- the raccoon from behind; the tail sits behind the body -->
-    <path
-      class="pm-tail"
-      d="M188 196 C236 196 266 220 262 250 C259 270 244 274 236 266"
-    />
-    <path
-      class="pm-tail-rings"
-      d="M188 196 C236 196 266 220 262 250 C259 270 244 274 236 266"
-    />
-    <circle class="pm-fur" cx="138" cy="22" r="11" />
-    <circle class="pm-fur" cx="182" cy="22" r="11" />
-    <circle class="pm-fur-light" cx="138" cy="24" r="6" />
-    <circle class="pm-fur-light" cx="182" cy="24" r="6" />
-    <g class="pm-limb">
-      <line x1="118" y1="90" x2="104" y2="140" stroke-width="18" />
-      <line x1="104" y1="140" x2="100" y2="184" stroke-width="15" />
-      <line x1="202" y1="90" x2="216" y2="140" stroke-width="18" />
-      <line x1="216" y1="140" x2="220" y2="184" stroke-width="15" />
-      <line x1="142" y1="206" x2="141" y2="250" stroke-width="26" />
-      <line x1="141" y1="250" x2="141" y2="288" stroke-width="22" />
-      <line x1="178" y1="206" x2="179" y2="250" stroke-width="26" />
-      <line x1="179" y1="250" x2="179" y2="288" stroke-width="22" />
-    </g>
-    <circle class="pm-fur-dark" cx="99" cy="192" r="8" />
-    <circle class="pm-fur-dark" cx="221" cy="192" r="8" />
-    <path
-      class="pm-tee"
-      d="M118 84 Q160 72 202 84 L198 150 Q196 165 198 178 L122 178 Q124 165 122 150 Z"
-      stroke-width="10"
-      stroke-linejoin="round"
-    />
-    <g class="pm-sleeve">
-      <line x1="119" y1="88" x2="113" y2="110" stroke-width="22" />
-      <line x1="201" y1="88" x2="207" y2="110" stroke-width="22" />
-    </g>
-    <rect class="pm-shorts" x="120" y="172" width="80" height="40" rx="14" />
-    <ellipse cx="141" cy="298" rx="15" ry="8" fill="#2b7bb9" />
-    <ellipse cx="179" cy="298" rx="15" ry="8" fill="#e5b82a" />
-    <!-- head turned to its left: the mask, an eye and the snout peek out -->
-    <ellipse class="pm-fur" cx="160" cy="48" rx="31" ry="28" />
-    <ellipse class="pm-fur-dark" cx="184" cy="50" rx="9" ry="7" />
-    <circle cx="187" cy="49" r="2.5" fill="#fffaf0" />
-    <ellipse class="pm-fur-light" cx="193" cy="60" rx="8" ry="5" />
-    <circle class="pm-fur-dark" cx="200" cy="59" r="2.6" />
+  <nav class="pm" id="pain-body-map" aria-label="Jump to a body part">
+    <p class="pm-cap">Where does it hurt? Tap a spot.</p>
+    <svg viewBox="0 0 600 902">
+      <g
+        role="img"
+        aria-label="The blog's raccoon seen from behind, looking back over his shoulder through rainbow glasses: green tee, denim shorts, a ringed tail, and one yellow and one blue croc."
+      >
+        <image
+          href="/images/raccoon-physical-pain-back.webp"
+          x="0"
+          y="0"
+          width="600"
+          height="902"
+        />
+      </g>
 
-    <a
-      href="#shoulder-pain"
-      data-region="shoulders"
-      aria-label="Shoulders: jump to Shoulder Pain"
-    >
-      <ellipse class="pm-zone" cx="122" cy="92" rx="16" ry="13" />
-      <ellipse class="pm-zone" cx="198" cy="92" rx="16" ry="13" />
-      <line class="pm-lead" x1="214" y1="86" x2="236" y2="72" />
-      <text class="pm-label" x="240" y="76">Shoulders</text>
-    </a>
+      <a
+        href="#shoulder-pain"
+        data-region="shoulders"
+        aria-label="Shoulders: jump to Shoulder Pain"
+      >
+        <ellipse class="pm-zone" cx="108" cy="425" rx="44" ry="32" />
+        <ellipse class="pm-zone" cx="380" cy="418" rx="44" ry="32" />
+        <line class="pm-lead" x1="440" y1="352" x2="405" y2="396" />
+        <rect class="pm-pill" x="418" y="304" width="176" height="46" rx="23" />
+        <text
+          class="pm-label"
+          x="504"
+          y="337"
+          text-anchor="middle"
+          textLength="156"
+          lengthAdjust="spacingAndGlyphs"
+        >
+          Shoulders
+        </text>
+      </a>
 
-    <a
-      href="#back-pain"
-      data-region="back"
-      aria-label="Back: jump to Back Pain"
-    >
-      <rect class="pm-zone" x="146" y="100" width="28" height="68" rx="12" />
-      <line class="pm-lead" x1="146" y1="134" x2="90" y2="134" />
-      <text class="pm-label" x="86" y="139" text-anchor="end">Back</text>
-    </a>
+      <a
+        href="#back-pain"
+        data-region="back"
+        aria-label="Back: jump to Back Pain"
+      >
+        <rect class="pm-zone" x="210" y="405" width="72" height="140" rx="30" />
+        <rect class="pm-pill" x="198" y="452" width="96" height="46" rx="23" />
+        <text
+          class="pm-label"
+          x="246"
+          y="485"
+          text-anchor="middle"
+          textLength="70"
+          lengthAdjust="spacingAndGlyphs"
+        >
+          Back
+        </text>
+      </a>
 
-    <a
-      href="#rotation-for-stiffness"
-      data-region="hips"
-      aria-label="Hips: jump to Rotation for stiffness"
-    >
-      <ellipse class="pm-zone" cx="142" cy="198" rx="14" ry="12" />
-      <ellipse class="pm-zone" cx="178" cy="198" rx="14" ry="12" />
-      <line class="pm-lead" x1="128" y1="203" x2="92" y2="214" />
-      <text class="pm-label" x="88" y="220" text-anchor="end">Hips</text>
-    </a>
+      <a
+        href="#rotation-for-stiffness"
+        data-region="hips"
+        aria-label="Hips and glutes: jump to Rotation for stiffness"
+      >
+        <ellipse class="pm-zone" cx="255" cy="618" rx="135" ry="50" />
+        <rect class="pm-pill" x="140" y="595" width="230" height="46" rx="23" />
+        <text
+          class="pm-label"
+          x="255"
+          y="628"
+          text-anchor="middle"
+          textLength="200"
+          lengthAdjust="spacingAndGlyphs"
+        >
+          Hips &amp; glutes
+        </text>
+      </a>
 
-    <a
-      href="#knee-pain"
-      data-region="knees"
-      aria-label="Knees: jump to Knee Pain"
-    >
-      <circle class="pm-zone" cx="141" cy="250" r="14" />
-      <circle class="pm-zone" cx="179" cy="250" r="14" />
-      <line class="pm-lead" x1="127" y1="254" x2="90" y2="262" />
-      <text class="pm-label" x="86" y="268" text-anchor="end">Knees</text>
-    </a>
-
-    <a
-      href="#the-tendon-problem-no-pain-until-its-too-late"
-      data-region="achilles"
-      aria-label="Achilles tendon: jump to The Tendon Problem"
-    >
-      <ellipse class="pm-zone" cx="141" cy="278" rx="8" ry="11" />
-      <ellipse class="pm-zone" cx="179" cy="278" rx="8" ry="11" />
-      <line class="pm-lead" x1="188" y1="282" x2="236" y2="298" />
-      <text class="pm-label" x="240" y="303">Achilles</text>
-    </a>
-  </svg>
-</nav>
+      <a
+        href="#knee-pain"
+        data-region="knees"
+        aria-label="Knees: jump to Knee Pain"
+      >
+        <circle class="pm-zone" cx="165" cy="748" r="36" />
+        <circle class="pm-zone" cx="345" cy="760" r="36" />
+        <rect class="pm-pill" x="203" y="731" width="104" height="46" rx="23" />
+        <text
+          class="pm-label"
+          x="255"
+          y="764"
+          text-anchor="middle"
+          textLength="82"
+          lengthAdjust="spacingAndGlyphs"
+        >
+          Knees
+        </text>
+      </a>
+    </svg>
+  </nav>
+</image>

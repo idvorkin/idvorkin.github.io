@@ -11,7 +11,14 @@ const REGIONS: Record<string, string> = {
   back: "back-pain",
   hips: "rotation-for-stiffness",
   knees: "knee-pain",
-  achilles: "the-tendon-problem-no-pain-until-its-too-late",
+};
+
+// The visible label on each region.
+const LABELS: Record<string, string> = {
+  shoulders: "Shoulders",
+  back: "Back",
+  hips: "Hips & glutes",
+  knees: "Knees",
 };
 
 async function openPage(page: Page, width = 1280): Promise<void> {
@@ -48,8 +55,21 @@ for (const width of [1280, 390]) {
         await page.locator(`${MAP} a[data-region="${region}"] .pm-label`).click();
         await expect(page).toHaveURL(new RegExp(`#${anchor}$`));
         await expect(page.locator(`[id="${anchor}"]`)).toBeInViewport();
-        await page.evaluate(() => window.scrollTo(0, 0));
+        await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
       }
+    });
+
+    test("shows the raccoon picture and the four labels, and no Achilles zone", async ({ page }) => {
+      await openPage(page, width);
+      const href = await page.locator(`${MAP} image`).getAttribute("href");
+      expect(href).toBe("/images/raccoon-physical-pain-back.webp");
+      const response = await page.request.get(href ?? "");
+      expect(response.status()).toBe(200);
+      await expect(page.locator(`${MAP} [role="img"]`)).toHaveAttribute("aria-label", /raccoon/);
+      for (const [region, label] of Object.entries(LABELS)) {
+        await expect(page.locator(`${MAP} a[data-region="${region}"] .pm-label`)).toHaveText(label);
+      }
+      await expect(page.locator(`${MAP} a[data-region="achilles"]`)).toHaveCount(0);
     });
 
     test("tapping the drawn zone (not the label) also jumps", async ({ page }) => {
