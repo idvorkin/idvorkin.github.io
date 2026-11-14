@@ -1,18 +1,25 @@
-{%- comment -%} Clickable body-figure opener for /physical-pain. A back view of
-a simple raccoon-eared figure; each tinted zone and its label is one SVG link to
-a section of the page (both shoulders share one link, both knees another). Pure
-links, no script: works without JS, by keyboard (Tab + Enter) and by touch, and
-the normal TOC below stays the fallback. Only body parts the page has a section
-for are drawn. No headings inside, so nothing leaks into the TOC. Used by:
-_d/physical-pain.md {%- endcomment -%}
+{%- comment -%} Clickable body-figure opener for /physical-pain: the blog's
+raccoon seen from behind (green tee, ringed tail, head turned so the mask and
+snout peek out). Each tinted zone and its label is one SVG link to a section of
+the page (both shoulders share one link, both knees another). Pure links, no
+script: works without JS, by keyboard (Tab + Enter) and by touch, and the TOC
+above stays the fallback. Only body parts the page has a section for are zoned.
+Floats right beside the first section on wide screens, stacks on phones. No
+headings inside, so nothing leaks into the TOC. Used by: _d/physical-pain.md {%-
+endcomment -%}
 <style>
   .pm {
     --pm-ink: #1b1f24;
     --pm-soft: #6b7280;
     --pm-panel: #f4f5f7;
     --pm-rule: #d8dbe0;
-    --pm-body: #d9dce1;
-    --pm-hot: #c2410c;
+    --pm-fur: #8b6a42;
+    --pm-fur-dark: #3b2d1c;
+    --pm-fur-light: #d8c3a0;
+    --pm-tee: #2f8f4e;
+    --pm-shorts: #3c4656;
+    --pm-hot: #ea580c;
+    --pm-zone-edge: #fff7ed;
     --pm-focus: #1d4ed8;
     border: 1px solid var(--pm-rule);
     border-radius: 10px;
@@ -22,13 +29,25 @@ _d/physical-pain.md {%- endcomment -%}
     margin: 1rem auto 1.25rem;
     max-width: 420px;
   }
+  @media (min-width: 992px) {
+    .pm {
+      float: right;
+      width: 270px;
+      margin: 0.25rem 0 1rem 1.25rem;
+    }
+    .pm-cap {
+      font-size: 0.8rem;
+    }
+  }
   @media (prefers-color-scheme: dark) {
     .pm {
       --pm-ink: #e5e7eb;
       --pm-soft: #9ca3af;
       --pm-panel: #1f2328;
       --pm-rule: #3a3f46;
-      --pm-body: #3a4048;
+      --pm-fur: #9a7750;
+      --pm-fur-light: #e2cfae;
+      --pm-shorts: #55627a;
       --pm-hot: #fb923c;
       --pm-focus: #93c5fd;
     }
@@ -38,7 +57,9 @@ _d/physical-pain.md {%- endcomment -%}
     --pm-soft: #9ca3af;
     --pm-panel: #1f2328;
     --pm-rule: #3a3f46;
-    --pm-body: #3a4048;
+    --pm-fur: #9a7750;
+    --pm-fur-light: #e2cfae;
+    --pm-shorts: #55627a;
     --pm-hot: #fb923c;
     --pm-focus: #93c5fd;
   }
@@ -55,20 +76,49 @@ _d/physical-pain.md {%- endcomment -%}
     height: auto;
     margin: 0 auto;
   }
-  .pm-fig {
-    fill: var(--pm-body);
-    stroke: var(--pm-body);
+  .pm-fur {
+    fill: var(--pm-fur);
+  }
+  .pm-fur-dark {
+    fill: var(--pm-fur-dark);
+  }
+  .pm-fur-light {
+    fill: var(--pm-fur-light);
+  }
+  .pm-tee {
+    fill: var(--pm-tee);
+    stroke: var(--pm-tee);
+  }
+  .pm-shorts {
+    fill: var(--pm-shorts);
   }
   .pm-limb {
     fill: none;
-    stroke: var(--pm-body);
+    stroke: var(--pm-fur);
     stroke-linecap: round;
+  }
+  .pm-sleeve {
+    fill: none;
+    stroke: var(--pm-tee);
+    stroke-linecap: round;
+  }
+  .pm-tail {
+    fill: none;
+    stroke: var(--pm-fur-light);
+    stroke-width: 20;
+    stroke-linecap: round;
+  }
+  .pm-tail-rings {
+    fill: none;
+    stroke: var(--pm-fur-dark);
+    stroke-width: 20;
+    stroke-dasharray: 9 9;
   }
   .pm-zone {
     fill: var(--pm-hot);
-    fill-opacity: 0.3;
-    stroke: var(--pm-hot);
-    stroke-width: 1.5;
+    fill-opacity: 0.72;
+    stroke: var(--pm-zone-edge);
+    stroke-width: 2;
     transition:
       fill-opacity 0.15s,
       stroke-width 0.15s;
@@ -92,8 +142,8 @@ _d/physical-pain.md {%- endcomment -%}
   }
   .pm a:hover .pm-zone,
   .pm a:focus-visible .pm-zone {
-    fill-opacity: 0.6;
-    stroke-width: 3;
+    fill-opacity: 0.95;
+    stroke-width: 3.5;
   }
   .pm a:focus-visible .pm-zone {
     stroke: var(--pm-focus);
@@ -114,45 +164,62 @@ _d/physical-pain.md {%- endcomment -%}
 </style>
 
 <nav class="pm" id="pain-body-map" aria-label="Jump to a body part">
-  <p class="pm-cap">Where does it hurt? Pick a spot.</p>
-  <svg viewBox="-10 0 340 400">
-    <!-- the figure, seen from behind: head with raccoon ears, trunk, limbs -->
-    <g class="pm-fig">
-      <circle cx="146" cy="20" r="8" />
-      <circle cx="174" cy="20" r="8" />
-      <circle cx="160" cy="36" r="20" />
-      <path
-        d="M122 82 Q160 72 198 82 L192 150 Q188 175 192 198 L128 198 Q132 175 128 150 Z"
-        stroke-width="10"
-        stroke-linejoin="round"
-      />
-      <rect x="126" y="190" width="68" height="36" rx="14" />
-      <ellipse cx="140" cy="378" rx="12" ry="7" />
-      <ellipse cx="180" cy="378" rx="12" ry="7" />
-      <circle cx="101" cy="224" r="8" />
-      <circle cx="219" cy="224" r="8" />
-    </g>
+  <p class="pm-cap">Where does it hurt? Tap a spot.</p>
+  <svg viewBox="-10 0 340 320">
+    <!-- the raccoon from behind; the tail sits behind the body -->
+    <path
+      class="pm-tail"
+      d="M188 196 C236 196 266 220 262 250 C259 270 244 274 236 266"
+    />
+    <path
+      class="pm-tail-rings"
+      d="M188 196 C236 196 266 220 262 250 C259 270 244 274 236 266"
+    />
+    <circle class="pm-fur" cx="138" cy="22" r="11" />
+    <circle class="pm-fur" cx="182" cy="22" r="11" />
+    <circle class="pm-fur-light" cx="138" cy="24" r="6" />
+    <circle class="pm-fur-light" cx="182" cy="24" r="6" />
     <g class="pm-limb">
-      <line x1="160" y1="50" x2="160" y2="78" stroke-width="16" />
-      <line x1="120" y1="88" x2="108" y2="152" stroke-width="18" />
-      <line x1="108" y1="152" x2="102" y2="214" stroke-width="14" />
-      <line x1="200" y1="88" x2="212" y2="152" stroke-width="18" />
-      <line x1="212" y1="152" x2="218" y2="214" stroke-width="14" />
-      <line x1="142" y1="214" x2="140" y2="292" stroke-width="26" />
-      <line x1="140" y1="292" x2="140" y2="368" stroke-width="20" />
-      <line x1="178" y1="214" x2="180" y2="292" stroke-width="26" />
-      <line x1="180" y1="292" x2="180" y2="368" stroke-width="20" />
+      <line x1="118" y1="90" x2="104" y2="140" stroke-width="18" />
+      <line x1="104" y1="140" x2="100" y2="184" stroke-width="15" />
+      <line x1="202" y1="90" x2="216" y2="140" stroke-width="18" />
+      <line x1="216" y1="140" x2="220" y2="184" stroke-width="15" />
+      <line x1="142" y1="206" x2="141" y2="250" stroke-width="26" />
+      <line x1="141" y1="250" x2="141" y2="288" stroke-width="22" />
+      <line x1="178" y1="206" x2="179" y2="250" stroke-width="26" />
+      <line x1="179" y1="250" x2="179" y2="288" stroke-width="22" />
     </g>
+    <circle class="pm-fur-dark" cx="99" cy="192" r="8" />
+    <circle class="pm-fur-dark" cx="221" cy="192" r="8" />
+    <path
+      class="pm-tee"
+      d="M118 84 Q160 72 202 84 L198 150 Q196 165 198 178 L122 178 Q124 165 122 150 Z"
+      stroke-width="10"
+      stroke-linejoin="round"
+    />
+    <g class="pm-sleeve">
+      <line x1="119" y1="88" x2="113" y2="110" stroke-width="22" />
+      <line x1="201" y1="88" x2="207" y2="110" stroke-width="22" />
+    </g>
+    <rect class="pm-shorts" x="120" y="172" width="80" height="40" rx="14" />
+    <ellipse cx="141" cy="298" rx="15" ry="8" fill="#2b7bb9" />
+    <ellipse cx="179" cy="298" rx="15" ry="8" fill="#e5b82a" />
+    <!-- head turned to its left: the mask, an eye and the snout peek out -->
+    <ellipse class="pm-fur" cx="160" cy="48" rx="31" ry="28" />
+    <ellipse class="pm-fur-dark" cx="184" cy="50" rx="9" ry="7" />
+    <circle cx="187" cy="49" r="2.5" fill="#fffaf0" />
+    <ellipse class="pm-fur-light" cx="193" cy="60" rx="8" ry="5" />
+    <circle class="pm-fur-dark" cx="200" cy="59" r="2.6" />
 
     <a
       href="#shoulder-pain"
       data-region="shoulders"
       aria-label="Shoulders: jump to Shoulder Pain"
     >
-      <ellipse class="pm-zone" cx="124" cy="88" rx="16" ry="13" />
-      <ellipse class="pm-zone" cx="196" cy="88" rx="16" ry="13" />
-      <line class="pm-lead" x1="213" y1="84" x2="236" y2="70" />
-      <text class="pm-label" x="240" y="74">Shoulders</text>
+      <ellipse class="pm-zone" cx="122" cy="92" rx="16" ry="13" />
+      <ellipse class="pm-zone" cx="198" cy="92" rx="16" ry="13" />
+      <line class="pm-lead" x1="214" y1="86" x2="236" y2="72" />
+      <text class="pm-label" x="240" y="76">Shoulders</text>
     </a>
 
     <a
@@ -160,9 +227,9 @@ _d/physical-pain.md {%- endcomment -%}
       data-region="back"
       aria-label="Back: jump to Back Pain"
     >
-      <rect class="pm-zone" x="146" y="96" width="28" height="92" rx="12" />
-      <line class="pm-lead" x1="146" y1="142" x2="90" y2="142" />
-      <text class="pm-label" x="86" y="147" text-anchor="end">Back</text>
+      <rect class="pm-zone" x="146" y="100" width="28" height="68" rx="12" />
+      <line class="pm-lead" x1="146" y1="134" x2="90" y2="134" />
+      <text class="pm-label" x="86" y="139" text-anchor="end">Back</text>
     </a>
 
     <a
@@ -170,10 +237,10 @@ _d/physical-pain.md {%- endcomment -%}
       data-region="hips"
       aria-label="Hips: jump to Rotation for stiffness"
     >
-      <ellipse class="pm-zone" cx="140" cy="210" rx="14" ry="12" />
-      <ellipse class="pm-zone" cx="180" cy="210" rx="14" ry="12" />
-      <line class="pm-lead" x1="195" y1="212" x2="236" y2="212" />
-      <text class="pm-label" x="240" y="217">Hips</text>
+      <ellipse class="pm-zone" cx="142" cy="198" rx="14" ry="12" />
+      <ellipse class="pm-zone" cx="178" cy="198" rx="14" ry="12" />
+      <line class="pm-lead" x1="128" y1="203" x2="92" y2="214" />
+      <text class="pm-label" x="88" y="220" text-anchor="end">Hips</text>
     </a>
 
     <a
@@ -181,10 +248,10 @@ _d/physical-pain.md {%- endcomment -%}
       data-region="knees"
       aria-label="Knees: jump to Knee Pain"
     >
-      <circle class="pm-zone" cx="140" cy="292" r="14" />
-      <circle class="pm-zone" cx="180" cy="292" r="14" />
-      <line class="pm-lead" x1="125" y1="292" x2="90" y2="292" />
-      <text class="pm-label" x="86" y="297" text-anchor="end">Knees</text>
+      <circle class="pm-zone" cx="141" cy="250" r="14" />
+      <circle class="pm-zone" cx="179" cy="250" r="14" />
+      <line class="pm-lead" x1="127" y1="254" x2="90" y2="262" />
+      <text class="pm-label" x="86" y="268" text-anchor="end">Knees</text>
     </a>
 
     <a
@@ -192,10 +259,10 @@ _d/physical-pain.md {%- endcomment -%}
       data-region="achilles"
       aria-label="Achilles tendon: jump to The Tendon Problem"
     >
-      <ellipse class="pm-zone" cx="140" cy="352" rx="8" ry="14" />
-      <ellipse class="pm-zone" cx="180" cy="352" rx="8" ry="14" />
-      <line class="pm-lead" x1="189" y1="352" x2="236" y2="352" />
-      <text class="pm-label" x="240" y="357">Achilles</text>
+      <ellipse class="pm-zone" cx="141" cy="278" rx="8" ry="11" />
+      <ellipse class="pm-zone" cx="179" cy="278" rx="8" ry="11" />
+      <line class="pm-lead" x1="188" y1="282" x2="236" y2="298" />
+      <text class="pm-label" x="240" y="303">Achilles</text>
     </a>
   </svg>
 </nav>
