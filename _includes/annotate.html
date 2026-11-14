@@ -18,6 +18,14 @@
   the first, or one change that appends two or more trailing newlines,
   trims the trailing whitespace and saves with the selected intent. Slow
   Enters and Enters mid-text stay line breaks (see noteEnterStep).
+  Double-click (or double-tap) INSIDE the selection while the bubble shows
+  opens the note box for that selection, same as tapping the bubble. The
+  browser collapses the selection on the first press, so the selection is
+  snapshotted then; the second press within DOUBLE_PRESS_MS and
+  DOUBLE_PRESS_PX (see isDoublePress) opens it and suppresses the word
+  select. If the double-clicked spot already carries a saved, not-yet-sent
+  note on this page, that note opens for editing instead (Save replaces it).
+  With no selection, a double-click keeps the browser's word select.
   The "Review (N)" pill uploads the batch to a SECRET gist (description
   `blog-review: <permalink>`) or copies it to the clipboard.
 
@@ -126,6 +134,23 @@
     var REPO_API = "https://api.github.com/repos/idvorkin/idvorkin.github.io";
     var CTX = 30; // chars of prefix/suffix context (W3C TextQuoteSelector)
     var ENTER_SAVE_MS = 400; // two trailing Enters this close together save the note
+    var DOUBLE_PRESS_MS = 500; // two presses this close in time and space are a double-click
+    var DOUBLE_PRESS_PX = 24;
+
+    // Is `press` ({t, x, y}) the second half of a double-click or double-tap
+    // begun by `prev` (the previous press, or null)? Decided by hand rather
+    // than from the `dblclick` event because a double-tap on a phone fires
+    // none, and by then the browser has replaced the selection with a word.
+    function isDoublePress(prev, press) {
+      if (!prev) return false;
+      var dx = press.x - prev.x;
+      var dy = press.y - prev.y;
+      return (
+        press.t - prev.t >= 0 &&
+        press.t - prev.t <= DOUBLE_PRESS_MS &&
+        dx * dx + dy * dy <= DOUBLE_PRESS_PX * DOUBLE_PRESS_PX
+      );
+    }
 
     // Enter-Enter save rule, decided from the textarea's value before and
     // after one input event (not keydown: dictation and phone keyboards
@@ -215,6 +240,9 @@
       },
       ENTER_SAVE_MS: ENTER_SAVE_MS,
       noteEnterStep: noteEnterStep,
+      DOUBLE_PRESS_MS: DOUBLE_PRESS_MS,
+      DOUBLE_PRESS_PX: DOUBLE_PRESS_PX,
+      isDoublePress: isDoublePress,
       prsTouchingPath: prsTouchingPath,
       set: function (on) {
         live = !!on;
@@ -456,9 +484,20 @@
         card.innerHTML = "";
         composerKeys = null;
       }
-      modal.addEventListener("click", function (e) {
-        if (e.target === modal) hideModal();
+      // Close on a backdrop click only when the press also began on the
+      // backdrop: the double-click that opens the composer ends with its
+      // release (and a phone's synthetic click) landing on the fresh backdrop.
+      var backdropPress = false;
+      modal.addEventListener("pointerdown", function (e) {
+        backdropPress = e.target === modal;
       });
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal && backdropPress) hideModal();
+        backdropPress = false;
+      });
+      function modalOpen() {
+        return modal.style.display === "flex";
+      }
 
       // Keyboard submit/cancel for the composer. Registered once on document so
       // it fires no matter which control has focus (textarea, an intent chip, or
@@ -529,7 +568,7 @@
       }
 
       function onSelectionSettled() {
-        if (!live) return hideBtn();
+        if (!live || modalOpen()) return hideBtn();
         var sel = window.getSelection();
         if (!sel || sel.isCollapsed || sel.rangeCount === 0) return hideBtn();
         var range = sel.getRangeAt(0);
@@ -563,6 +602,117 @@
         });
       });
 
+      // ------------------------------------------------- double-click to note
+      function pointInSelection(x, y) {
+        var sel = window.getSelection();
+        if (!sel || sel.isCollapsed || sel.rangeCount === 0) return false;
+        var rects = sel.getRangeAt(0).getClientRects();
+        for (var i = 0; i < rects.length; i++) {
+          var r = rects[i];
+          if (
+            x >= r.left - 4 &&
+            x <= r.right + 4 &&
+            y >= r.top - 4 &&
+            y <= r.bottom + 4
+          )
+            return true;
+        }
+        return false;
+      }
+
+      function caretAt(x, y) {
+        if (document.caretPositionFromPoint) {
+          var p = document.caretPositionFromPoint(x, y);
+          return p ? { node: p.offsetNode, offset: p.offset } : null;
+        }
+        if (document.caretRangeFromPoint) {
+          var r = document.caretRangeFromPoint(x, y);
+          return r ? { node: r.startContainer, offset: r.startOffset } : null;
+        }
+        return null;
+      }
+
+      // The newest buffered note on this page whose quote covers the point,
+      // located the way selectorFromRange measured it: prefix + quote in the
+      // Range text of the article root. Not offered in the diff view.
+      function savedNoteAt(x, y) {
+        var root = articleRoot();
+        var diffView = document.getElementById("rich-diff-view");
+        var caret = caretAt(x, y);
+        if (!caret || !root.contains(caret.node)) return null;
+        if (diffView && diffView.contains(caret.node)) return null;
+        var whole = document.createRange();
+        whole.selectNodeContents(root);
+        var text = whole.toString();
+        var upTo = document.createRange();
+        upTo.selectNodeContents(root);
+        try {
+          upTo.setEnd(caret.node, caret.offset);
+        } catch (e) {
+          return null;
+        }
+        var at = upTo.toString().length;
+        var list = loadBuffer();
+        for (var i = list.length - 1; i >= 0; i--) {
+          var a = list[i];
+          if ((a.permalink || PERMALINK) !== PERMALINK) continue;
+          if ((a.origin || ORIGIN) !== ORIGIN || !a.quote) continue;
+          var idx = text.indexOf((a.prefix || "") + a.quote);
+          if (idx < 0) continue;
+          var from = idx + (a.prefix || "").length;
+          if (at >= from && at < from + a.quote.length) return a;
+        }
+        return null;
+      }
+
+      function ownUi(node) {
+        return (
+          btn.contains(node) || pill.contains(node) || modal.contains(node)
+        );
+      }
+
+      var lastPress = null;
+      document.addEventListener(
+        "pointerdown",
+        function (e) {
+          if (!live || modalOpen() || ownUi(e.target) || e.button > 0) {
+            lastPress = null;
+            return;
+          }
+          var press = { t: Date.now(), x: e.clientX, y: e.clientY, sel: null };
+          if (isDoublePress(lastPress, press)) {
+            var snap = lastPress.sel;
+            lastPress = null;
+            if (!snap) return; // no selection: the browser selects a word
+            e.preventDefault();
+            var saved = savedNoteAt(press.x, press.y);
+            if (saved) openComposer(saved, saved);
+            else openComposer(snap);
+            return;
+          }
+          // Measured from the live selection, not `pending`, which lags
+          // moving touch handles by the selectionchange debounce.
+          if (
+            btn.style.display === "block" &&
+            pointInSelection(press.x, press.y)
+          ) {
+            press.sel = selectorFromRange(window.getSelection().getRangeAt(0));
+          }
+          lastPress = press;
+        },
+        true
+      );
+      // The second press's mousedown would select a word behind the composer
+      // and pull focus off the note box.
+      document.addEventListener(
+        "mousedown",
+        function (e) {
+          if (live && modalOpen() && !card.contains(e.target))
+            e.preventDefault();
+        },
+        true
+      );
+
       // One tap, seven choices. Keep in sync with INTENTS in scripts/blog_review.py.
       var INTENTS = [
         "fix",
@@ -575,14 +725,20 @@
       ];
       var DEFAULT_INTENT = "note";
 
-      function openComposer(sel_info) {
+      // `editing` is a buffered note to replace on Save, or undefined for a
+      // new one; `sel_info` then is that note (quote, prefix, suffix, diff).
+      function openComposer(sel_info, editing) {
         hideBtn();
+        var intent =
+          editing && INTENTS.indexOf(editing.intent) >= 0
+            ? editing.intent
+            : DEFAULT_INTENT;
         var chips = INTENTS.map(function (name) {
           return (
             '<button type="button" data-intent="' +
             name +
             '" aria-pressed="' +
-            (name === DEFAULT_INTENT ? "true" : "false") +
+            (name === intent ? "true" : "false") +
             '">' +
             name +
             "</button>"
@@ -599,6 +755,7 @@
             "</div>" +
             '<div class="row">' +
             '<span class="hint">' +
+            (editing ? "Editing saved note · " : "") +
             (IS_MAC ? "⌘" : "Ctrl") +
             "+Enter or Enter twice saves · Esc cancels</span>" +
             '<button type="button" class="ghost" id="blog-annot-cancel">Cancel</button>' +
@@ -607,9 +764,10 @@
         );
 
         var ta = document.getElementById("blog-annot-text");
+        if (editing) ta.value = editing.comment || "";
         ta.focus();
+        ta.setSelectionRange(ta.value.length, ta.value.length);
 
-        var intent = DEFAULT_INTENT;
         var chipBox = document.getElementById("blog-annot-intents");
         chipBox.addEventListener("click", function (e) {
           var hit = e.target.closest
@@ -645,7 +803,15 @@
             version: pageVersion(),
           };
           if (sel_info.diff) entry.diff = sel_info.diff;
-          list.push(entry);
+          // An edit replaces its note in place. The fresh ts matters: a send
+          // in flight clears by ts|quote, so it must not clear the edit.
+          var at = -1;
+          for (var i = 0; editing && i < list.length; i++) {
+            if (list[i].ts === editing.ts && list[i].quote === editing.quote)
+              at = i;
+          }
+          if (at >= 0) list[at] = entry;
+          else list.push(entry);
           saveBuffer(list);
           refreshPill();
           hideModal();
