@@ -82,11 +82,11 @@ So the honest answer to "what's left?" starts with the two things that were alwa
 
 <!-- TODO(igor): a line on when you first learned the malleability framing (the 2017 Clean Architecture notes? earlier?), so the "years ago" has a real date and a real story behind it. -->
 
+{% include summarize-page.html src="/design" %}
+{% include summarize-page.html src="/dark-factory" %}
+
 ## The early read
 
 I will say everybody I know in software engineering is a hell of a lot busier than they were at work, and now has infinite stuff they can do at home. That's the early read on the line I opened with, about whether there will be any jobs left.
 
 <!-- TODO(igor): your own example. What are you busier with now, at work and at home, that you couldn't have taken on before agents? -->
-
-{% include summarize-page.html src="/design" %}
-{% include summarize-page.html src="/dark-factory" %}
