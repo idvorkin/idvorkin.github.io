@@ -79,16 +79,33 @@
 
   Larry reads the batches back with scripts/blog_review.py.
 
-  SEND TO LARRY: only when the page itself is served on a tailnet host
-  (`location.hostname` ends in `.ts.net`) or localhost, the pill also gets a
-  status dot and a "Send to Larry" button. Both talk to the Cockpit on the
-  SAME hostname over https at the default port (`/larry/status`,
-  `/blog-review`); no host is written here. The dot is green when Larry is
-  idle, amber when busy, red when down or unreachable (off the tailnet).
-  Send posts one batch per page and clears only what the Cockpit accepted
-  (2xx); on any failure the buffer stays and the review card opens with the
-  gist/clipboard fallback. Production (idvork.in) gets none of this: no
-  button, no dot, no request.
+  SEND TO LARRY: the pill always has a "Send to Larry" button next to Open,
+  greyed out while nothing is buffered or a send is in flight. Send groups
+  the buffer into one batch per page and clears only the batches that were
+  delivered; on any failure the buffer stays and the review card opens with
+  the gist/clipboard fallback. Where a batch goes depends on the host:
+
+    * Tailnet host (`location.hostname` ends in `.ts.net`) or localhost: to
+      the Cockpit on the SAME hostname over https at the default port
+      (`/blog-review`); no host is written here. Only these hosts get the
+      status dot (`/larry/status`): green when Larry is idle, amber when
+      busy, red when down or unreachable (off the tailnet).
+    * Anywhere else (idvork.in): one SECRET gist per batch, through the same
+      gist write and token as "Upload to gist". Description
+      `blog-review: <permalink>`, one file `review.json`: the upload's shape
+      plus `schema: "blog-review-batch/1"`, `batch_id`, `via: "send"`,
+      `page_url`, `site_url` and `source_path`. A watcher lists the token
+      owner's gists (`GET /gists?since=…`), takes those with the
+      description prefix it has not seen, and dedupes resends on `batch_id`.
+      No gist id is written here: every batch makes its own gist.
+
+  OPEN PRS: in comment mode the pill also says "This page has N open PR(s)"
+  with links, when an open PR on idvorkin/idvorkin.github.io changes this
+  page's source file (`page.path`, e.g. `_d/whats-left.md`). It reads
+  GitHub's public API unauthenticated (60 requests/hour per IP): one list of
+  open PRs plus one file list per PR, cached in sessionStorage for
+  PR_CACHE_MS, and any failure shows nothing. The gist token is never sent
+  there. Readers never trigger it: it runs only after the flag check.
 -->
 
 <!--
@@ -101,6 +118,7 @@
   data-permalink="{{ page.url }}"
   data-title="{{ page.title | default: '' | escape }}"
   data-site-url="{{ site.url }}"
+  data-source-path="{{ page.path }}"
   hidden
 ></div>
 
@@ -111,6 +129,9 @@
     var FLAG_KEY = "blogAnnotate";
     var TOKEN_KEY = "blogAnnotateToken";
     var BUF_KEY = "blogAnnotateBuffer";
+    var PR_CACHE_KEY = "blogAnnotateOpenPrs"; // sessionStorage
+    var PR_CACHE_MS = 10 * 60 * 1000;
+    var REPO_API = "https://api.github.com/repos/idvorkin/idvorkin.github.io";
     var CTX = 30; // chars of prefix/suffix context (W3C TextQuoteSelector)
     var ENTER_SAVE_MS = 400; // two trailing Enters this close together save the note
     var DOUBLE_PRESS_MS = 500; // two presses this close in time and space are a double-click
@@ -150,6 +171,16 @@
         return { save: true, lastAt: null };
       }
       return { save: false, lastAt: now };
+    }
+
+    // The open PRs (from loadOpenPrs) whose changed files include this page's
+    // source file. `path` is Jekyll's `page.path`, relative to the repo root.
+    function prsTouchingPath(prs, path) {
+      var want = String(path || "").replace(/^\.?\//, "");
+      if (!want || !Array.isArray(prs)) return [];
+      return prs.filter(function (pr) {
+        return (pr.files || []).indexOf(want) !== -1;
+      });
     }
 
     // ---------------------------------------------------------------- flag
@@ -212,6 +243,7 @@
       DOUBLE_PRESS_MS: DOUBLE_PRESS_MS,
       DOUBLE_PRESS_PX: DOUBLE_PRESS_PX,
       isDoublePress: isDoublePress,
+      prsTouchingPath: prsTouchingPath,
       set: function (on) {
         live = !!on;
         setEnabled(live);
@@ -240,6 +272,7 @@
         window.location.origin ||
         window.location.protocol + "//" + window.location.host;
       var SITE_URL = ((meta && meta.dataset.siteUrl) || "").replace(/\/$/, "");
+      var SOURCE_PATH = (meta && meta.dataset.sourcePath) || "";
       // The Cockpit on this same host (see SEND TO LARRY), or "" off-tailnet.
       var HOST = String(window.location.hostname || "").toLowerCase();
       var LARRY =
@@ -368,7 +401,9 @@
         "#blog-annot-pill{position:fixed;right:14px;bottom:14px;z-index:99999;",
         "display:flex;gap:6px;align-items:center;padding:8px 12px;",
         "font:600 13px/1.2 system-ui,sans-serif;color:#fff;background:#212529;",
-        "border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.35)}",
+        "border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.35);",
+        "flex-wrap:wrap;max-width:calc(100vw - 28px);box-sizing:border-box}",
+        "#blog-annot-prs a{color:#a5d8ff}",
         // Sit above the rich diff's change navigator (#rd-nav) instead of over it.
         "body:has(#rd-nav) #blog-annot-pill{bottom:70px}",
         "#blog-annot-pill button{font:600 12px/1.2 system-ui,sans-serif;",
@@ -428,9 +463,10 @@
         '<span id="blog-annot-count">Review (0)</span>' +
         '<button type="button" id="blog-annot-open">Open</button>' +
         (LARRY
-          ? '<span id="blog-annot-larry-dot" data-state="unknown" title="Larry: checking…"></span>' +
-            '<button type="button" id="blog-annot-send">Send to Larry</button>'
-          : "");
+          ? '<span id="blog-annot-larry-dot" data-state="unknown" title="Larry: checking…"></span>'
+          : "") +
+        '<button type="button" id="blog-annot-send">Send to Larry</button>' +
+        '<span id="blog-annot-prs" hidden></span>';
       document.body.appendChild(pill);
 
       var modal = document.createElement("div");
@@ -485,9 +521,13 @@
         }
       });
 
+      // The pill's Send is greyed out with nothing buffered or mid-send.
+      var sending = false;
       function refreshPill() {
+        var n = loadBuffer().length;
         document.getElementById("blog-annot-count").textContent =
-          "Review (" + loadBuffer().length + ")";
+          "Review (" + n + ")";
+        document.getElementById("blog-annot-send").disabled = sending || !n;
       }
       refreshPill();
 
@@ -753,6 +793,7 @@
             permalink: PERMALINK,
             origin: ORIGIN,
             title: TITLE,
+            source: SOURCE_PATH,
             quote: sel_info.quote,
             prefix: sel_info.prefix,
             suffix: sel_info.suffix,
@@ -964,6 +1005,7 @@
           });
           return {
             items: items,
+            path: path,
             body: {
               id: "blog-" + fnv1a(key + JSON.stringify(annotations)),
               permalink: SITE_URL ? SITE_URL + path : "",
@@ -986,6 +1028,21 @@
           }, 1500);
           return Promise.resolve();
         }
+        // Off the tailnet the batches go to secret gists; ask for the token
+        // once, before anything is sent.
+        var token = LARRY ? null : getToken();
+        if (!LARRY && !token) {
+          openReview();
+          document.getElementById("blog-annot-note").textContent =
+            "No GitHub token, so nothing was sent. Your notes are kept.";
+          return Promise.resolve();
+        }
+        var deliver = LARRY
+          ? deliverToCockpit
+          : function (batch) {
+              return postGist(token, batch.path, reviewBatchJson(batch));
+            };
+        sending = true;
         sendBtn.disabled = true;
         sendBtn.textContent = "Sending…";
         var sent = {};
@@ -997,14 +1054,8 @@
         return reviewBatches(list)
           .reduce(function (chain, batch) {
             return chain.then(function () {
-              return fetch(LARRY + "/blog-review", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(batch.body),
-              })
-                .then(function (res) {
-                  if (!res.ok)
-                    throw new Error("Cockpit returned " + res.status);
+              return deliver(batch)
+                .then(function () {
                   batch.items.forEach(function (a) {
                     sent[noteKey(a)] = true;
                   });
@@ -1016,15 +1067,15 @@
             });
           }, Promise.resolve())
           .then(function () {
-            // Only what the Cockpit accepted leaves the buffer; a note saved
+            // Only what was delivered leaves the buffer; a note saved
             // while the send was in flight stays too.
             saveBuffer(
               loadBuffer().filter(function (a) {
                 return !sent[noteKey(a)];
               })
             );
+            sending = false;
             refreshPill();
-            sendBtn.disabled = false;
             sendBtn.textContent = "Send to Larry";
             refreshLarry();
             if (!failed.length) {
@@ -1042,13 +1093,168 @@
           });
       }
 
+      function deliverToCockpit(batch) {
+        return fetch(LARRY + "/blog-review", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(batch.body),
+        }).then(function (res) {
+          if (!res.ok) throw new Error("Cockpit returned " + res.status);
+        });
+      }
+
+      // One page's batch as the review.json a Send writes to its own gist:
+      // the "Upload to gist" shape (so scripts/blog_review.py reads it as is)
+      // plus the fields a watcher needs. See SEND TO LARRY above.
+      function reviewBatchJson(batch) {
+        var first = batch.items[0];
+        var sentAt = new Date().toISOString();
+        return JSON.stringify(
+          {
+            schema: "blog-review-batch/1",
+            batch_id: batch.body.id,
+            via: "send",
+            permalink: batch.path,
+            origin: first.origin || ORIGIN,
+            title: first.title || "",
+            url: batch.body.page_url,
+            page_url: batch.body.page_url,
+            site_url: batch.body.permalink,
+            source_path: first.source || "",
+            created: sentAt,
+            version: first.version || null,
+            annotations: batch.items,
+          },
+          null,
+          2
+        );
+      }
+
+      document.getElementById("blog-annot-send").onclick = sendToLarry;
+      window.blogAnnotate.sendToLarry = sendToLarry;
       if (LARRY) {
-        document.getElementById("blog-annot-send").onclick = sendToLarry;
         refreshLarry();
         setInterval(refreshLarry, 60000);
-        window.blogAnnotate.sendToLarry = sendToLarry;
         window.blogAnnotate.refreshLarry = refreshLarry;
       }
+
+      // ------------------------------------------------------------ open PRs
+      function readPrCache() {
+        try {
+          var c = JSON.parse(sessionStorage.getItem(PR_CACHE_KEY) || "null");
+          if (c && Array.isArray(c.prs) && Date.now() - c.at < PR_CACHE_MS)
+            return c.prs;
+        } catch (e) {
+          /* no cache */
+        }
+        return null;
+      }
+
+      function writePrCache(prs) {
+        try {
+          sessionStorage.setItem(
+            PR_CACHE_KEY,
+            JSON.stringify({ at: Date.now(), prs: prs })
+          );
+        } catch (e) {
+          /* private mode: refetch next page load */
+        }
+      }
+
+      function githubJson(url) {
+        return fetch(url, {
+          headers: { Accept: "application/vnd.github+json" },
+        }).then(function (res) {
+          if (!res.ok) throw new Error("GitHub returned " + res.status);
+          return res.json();
+        });
+      }
+
+      // [{number, title, url, files: [repo-relative paths]}] for every open PR.
+      // ponytail: first 100 PRs and first 100 files per PR only; a bigger PR
+      // (an image bot) can miss a page. Upgrade: follow the Link header.
+      var prsInFlight = null;
+      function loadOpenPrs() {
+        var cached = readPrCache();
+        if (cached) return Promise.resolve(cached);
+        if (prsInFlight) return prsInFlight;
+        prsInFlight = githubJson(REPO_API + "/pulls?state=open&per_page=100")
+          .then(function (pulls) {
+            return Promise.all(
+              pulls.map(function (p) {
+                return githubJson(
+                  REPO_API + "/pulls/" + p.number + "/files?per_page=100"
+                ).then(function (files) {
+                  return {
+                    number: p.number,
+                    title: p.title || "",
+                    url: p.html_url || "",
+                    files: files.map(function (f) {
+                      return f.filename;
+                    }),
+                  };
+                });
+              })
+            );
+          })
+          .then(function (prs) {
+            writePrCache(prs);
+            return prs;
+          });
+        prsInFlight.then(
+          function () {
+            prsInFlight = null;
+          },
+          function () {
+            prsInFlight = null;
+          }
+        );
+        return prsInFlight;
+      }
+
+      function showOpenPrs(prs) {
+        var el = document.getElementById("blog-annot-prs");
+        if (!el) return; // pill gone (page torn down) before GitHub answered
+        var mine = prsTouchingPath(prs, SOURCE_PATH);
+        if (!mine.length) {
+          el.hidden = true;
+          el.innerHTML = "";
+          return;
+        }
+        var links = mine.map(function (pr) {
+          var n = Number(pr.number);
+          var href = /^https:\/\/github\.com\//.test(pr.url)
+            ? pr.url
+            : "https://github.com/idvorkin/idvorkin.github.io/pull/" + n;
+          return (
+            '<a href="' +
+            escapeHtml(href) +
+            '" target="_blank" rel="noopener" title="' +
+            escapeHtml(pr.title) +
+            '">#' +
+            n +
+            "</a>"
+          );
+        });
+        el.innerHTML =
+          "This page has " +
+          mine.length +
+          " open PR" +
+          (mine.length === 1 ? "" : "s") +
+          ": " +
+          links.join(" ");
+        el.hidden = false;
+      }
+
+      // Fails silent: a rate limit or offline page shows no badge, nothing else.
+      function refreshOpenPrs() {
+        if (!SOURCE_PATH) return Promise.resolve();
+        return loadOpenPrs().then(showOpenPrs, function () {
+          writePrCache([]); // don't retry on every page load while limited
+        });
+      }
+      window.blogAnnotate.refreshOpenPrs = refreshOpenPrs;
+      refreshOpenPrs();
 
       function payloadJson(list) {
         return JSON.stringify(
@@ -1094,6 +1300,44 @@
         return t;
       }
 
+      // Create one secret gist holding `content` as review.json; resolves to
+      // the gist. A rejected token is cleared so the next try re-prompts.
+      function postGist(token, permalink, content) {
+        var body = {
+          // SECRET gist. `public: false` is the whole point — these are private
+          // notes on unpublished thinking.
+          public: false,
+          // Larry greps for exactly this prefix. Do not reformat.
+          description: "blog-review: " + permalink,
+          files: { "review.json": { content: content } },
+        };
+
+        return fetch("https://api.github.com/gists", {
+          method: "POST",
+          headers: {
+            Accept: "application/vnd.github+json",
+            Authorization: "Bearer " + token,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(body),
+        }).then(function (res) {
+          if (res.status === 401 || res.status === 403) {
+            try {
+              localStorage.removeItem(TOKEN_KEY);
+            } catch (e) {
+              /* ignore */
+            }
+            throw new Error(
+              "GitHub rejected the token (" +
+                res.status +
+                "). It has been cleared — retry to re-enter one with `gist` scope."
+            );
+          }
+          if (!res.ok) throw new Error("GitHub returned " + res.status);
+          return res.json();
+        });
+      }
+
       function uploadGist(list, note) {
         var token = getToken();
         if (!token) {
@@ -1102,40 +1346,7 @@
         }
         note.textContent = "Uploading…";
 
-        var body = {
-          // SECRET gist. `public: false` is the whole point — these are private
-          // notes on unpublished thinking.
-          public: false,
-          // Larry greps for exactly this prefix. Do not reformat.
-          description: "blog-review: " + PERMALINK,
-          files: { "review.json": { content: payloadJson(list) } },
-        };
-
-        fetch("https://api.github.com/gists", {
-          method: "POST",
-          headers: {
-            Accept: "application/vnd.github+json",
-            Authorization: "Bearer " + token,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(body),
-        })
-          .then(function (res) {
-            if (res.status === 401 || res.status === 403) {
-              try {
-                localStorage.removeItem(TOKEN_KEY);
-              } catch (e) {
-                /* ignore */
-              }
-              throw new Error(
-                "GitHub rejected the token (" +
-                  res.status +
-                  "). It has been cleared — retry to re-enter one with `gist` scope."
-              );
-            }
-            if (!res.ok) throw new Error("GitHub returned " + res.status);
-            return res.json();
-          })
+        postGist(token, PERMALINK, payloadJson(list))
           .then(function (gist) {
             saveBuffer([]);
             refreshPill();
