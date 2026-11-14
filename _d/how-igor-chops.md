@@ -170,14 +170,32 @@ Lavish reviews what an agent made for me. My own posts get reviewed on the blog 
 2. **Notes on the live page, ideally by voice.** I flip on Comments in the banner, select a line (in the diff or on the page), tap the Comment bubble, and [dictate](#voice-how-i-talk-to-the-agents) what's wrong. One more tap tags it fix, cut, rewrite, expand, check, question or note.
 3. **Send to Larry, and Larry iterates.** The Review pill counts my notes. Send to Larry ships the batch as one message to [Larry](/larry), with the page and the branch attached; he revises the branch and pushes, and I read the new diff and go again.
 
-<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
-<a href="/images/review-flow/review-diff.webp"><img src="/images/review-flow/review-diff.webp" alt="The preview of this post in Diff vs main: the dev banner on top, a new paragraph shown in green" style="max-width:220px;width:100%;border-radius:10px" /></a>
-<a href="/images/review-flow/review-comment.webp"><img src="/images/review-flow/review-comment.webp" alt="A line selected inside the diff, with the Comment bubble just under it" style="max-width:220px;width:100%;border-radius:10px" /></a>
-<a href="/images/review-flow/review-intent.webp"><img src="/images/review-flow/review-intent.webp" alt="The note composer: the quoted line, a typed note, and the seven intent chips with cut picked" style="max-width:220px;width:100%;border-radius:10px" /></a>
-<a href="/images/review-flow/review-pill.webp"><img src="/images/review-flow/review-pill.webp" alt="The Review pill in the corner with a note count, a green status dot and the Send to Larry button" style="max-width:220px;width:100%;border-radius:10px" /></a>
+<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center">
+<a href="/images/review-flow/review-diff.webp"><img src="/images/review-flow/review-diff.webp" alt="This post's preview in Diff vs main on a phone: the dev banner with the branch and PR number on top, and step 7 of the session list with cut words struck through in red and new words in green" style="max-width:220px;width:100%;border-radius:10px" /></a>
+<a href="/images/review-flow/review-comment.webp"><img src="/images/review-flow/review-comment.webp" alt="The words 'either way my notes' selected inside the diff, with the Comment bubble just under them" style="max-width:220px;width:100%;border-radius:10px" /></a>
+<a href="/images/review-flow/review-intent.webp"><img src="/images/review-flow/review-intent.webp" alt="The note composer: the quoted words, a typed note, and the seven intent chips with rewrite picked" style="max-width:220px;width:100%;border-radius:10px" /></a>
+<a href="/images/review-flow/review-pill.webp"><img src="/images/review-flow/review-pill.webp" alt="The Review pill with one note, a green dot for Larry idle, and the Send to Larry button" style="max-width:300px;width:100%;border-radius:10px" /></a>
 </div>
 
-It's step one of my evals recipe, a human reading real output before any automation, pointed at my own writing. Every note is the quoted words plus a few words on each side and the intent, so [`blog_review.py`](https://github.com/idvorkin/idvorkin.github.io/blob/main/scripts/blog_review.py) finds the exact line in the markdown, even in a diff where half the words are struck out, and a note it can't place comes back as unlocated instead of guessed. Readers on idvork.in get none of this: no button, no bubble, no network call. The [changelog entry](/changelog#blog-annotate-highlight-and-comment-review-tool) has the mechanics.
+That note, as Larry gets it (trimmed):
+
+```json
+{
+  "permalink": "https://idvork.in/how-igor-chops",
+  "branch": "review-flow-send-to-larry",
+  "annotations": [
+    {
+      "quote": "either way my notes",
+      "prefix": "a blog post gets the red pen; ",
+      "suffix": " go back to the agent as its n",
+      "intent": "rewrite",
+      "note": "Name which is which: Lavish for pages an agent made, the red pen for my posts."
+    }
+  ]
+}
+```
+
+It's step one of my evals recipe, a human reading real output before any automation, pointed at my own writing. The prefix and suffix are what let [`blog_review.py`](https://github.com/idvorkin/idvorkin.github.io/blob/main/scripts/blog_review.py) find the exact spot in the markdown; a note it can't place comes back as unlocated instead of guessed. A selection made in the diff drops the struck-out words first, so it anchors like one made on the page. Readers on idvork.in get none of this: no button, no bubble, no network call. The [changelog entry](/changelog#blog-annotate-highlight-and-comment-review-tool) has the mechanics.
 
 {% include alert.html content="TODO for Igor: one sentence on what this changed for you. How many notes is a typical pass, and how many rounds before a post is done?" style="warning" %}
 
