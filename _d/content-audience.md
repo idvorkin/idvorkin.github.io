@@ -2,12 +2,12 @@
 layout: post
 title: "Content Audience"
 permalink: /content-audience
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-content-audience.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-content-audience-felt.webp
 ---
 
 When I started creating content — okay, let's be honest, when I started uploading random videos to YouTube and TikTok — I didn't have a plan. I'd record something, maybe clean it up in post, and toss it online. No real story, no strategy, and usually… no good. Looking back, I realize I never stopped to ask the two questions that actually matter: Who is this for? And why am I doing it? This blog is me trying to answer those questions — and maybe help you ask them too.
 
-{%include blob_image_float_right.html src="blog/raccoon-content-audience.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-content-audience-felt.webp" alt="Felt raccoon in rainbow glasses and a bow tie, shirt reading HAVE MESSAGE, WILL SHARE, pointing at a corkboard of audience portraits with notes asking LIKES MAGIC?, NEEDS ENCOURAGEMENT?, HERE TO LEARN? and QUIET BUT LOYAL?, a balloon dog and a #1 LISTENER mug at his feet" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

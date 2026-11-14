@@ -156,7 +156,7 @@ Igor was incredibly grateful to his friend Ammon for teaching him about the weig
 
 ### Emotionally healthy human
 
-{% include local_image_float_right.html src="raccoon-meditate.webp" %}
+{% include local_image_float_right.html src="raccoon-meditate-felt.webp" alt="Felt raccoon in rainbow glasses meditating cross-legged on a cushion under a small white cloud, wearing a green shirt that reads PAIN GOOD! TAKE ACTION!" %}
 
 Igor understood emotional health is the basis of his stability, and [invested](/siy) heavily. Igor started each day at 5am by recording his blessing in his [gratefulness journal](/process-journal), followed by 20 minutes of meditation. Igor closed the day in a similar vein, a final 10 minutes of meditation and writing out what made his day great in his gratefulness journal.
 

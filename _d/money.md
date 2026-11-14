@@ -5,7 +5,7 @@ author: "Igor Dvorkin"
 inprogress: true
 comments: true
 permalink: /money
-imagefeaturelocal: raccoon-money.webp
+imagefeaturelocal: raccoon-tax-desk-felt.webp
 redirect_from:
   - /saving
   - /savings
@@ -13,7 +13,7 @@ redirect_from:
 
 Most of the tax information on the web is a mess. It's confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes.
 
-{% include local_image_float_right.html src="raccoon-money.webp" %}
+{% include local_image_float_right.html src="raccoon-tax-desk-felt.webp" alt="Felt raccoon in rainbow glasses, a grey suit and a tie, signing a TAX form at a desk with two calculators and stacks of gold coins" %}
 
 For the tax-only slice — capital gains, Washington State cap-gains mechanics, step-up in basis, QSBS, plus IRAs, 401(k)s, Roth mechanics, and 529s — see the companion [taxes post](/taxes).
 
