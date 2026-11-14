@@ -90,12 +90,12 @@ Don't assume the guidelines work. Have several people score the same items, meas
 
 Humans can't review every experiment, so build an [offline](#appendix-useful-taxonomy) proxy ([8:20](https://youtu.be/zLc8zeGeNaY?t=500)). There's a trade-off that runs through the whole recipe: the more I can trust a grade, the less it can assess. Each rung up the ladder handles more complex work and input nobody predefined, and costs trust that I then have to earn back by checking it.
 
-| Grader             | How far I can trust the grade         | How complex a thing it can assess   | Input nobody predefined |
-| ------------------ | ------------------------------------- | ----------------------------------- | ----------------------- |
-| Deterministic code | Fully: same answer every time         | Only what I can write down as code  | Breaks                  |
+| Grader             | How far I can trust the grade         | How complex a thing it can assess     | Input nobody predefined  |
+| ------------------ | ------------------------------------- | ------------------------------------- | ------------------------ |
+| Deterministic code | Fully: same answer every time         | Only what I can write down as code    | Breaks                   |
 | Rubric             | Once each check is shown to work      | Whatever the per-task checklist names | Only what the list names |
-| LLM judge          | Only after checking it against humans | Tone, faithfulness, overall quality | Mostly copes            |
-| Calibrated human   | The reference, once raters agree      | Anything an expert can judge        | Copes                   |
+| LLM judge          | Only after checking it against humans | Tone, faithfulness, overall quality   | Mostly copes             |
+| Calibrated human   | The reference, once raters agree      | Anything an expert can judge          | Copes                    |
 
 The rungs, in the same order:
 
@@ -164,10 +164,10 @@ A Netflix project ([writeup](https://netflixtechblog.com/evaluating-netflix-show
 
 An eval is a classifier too: it flags a change as bad or lets it through, and it can be wrong in two ways.
 
-|                     | Eval flags it     | Eval lets it through |
-| ------------------- | ----------------- | -------------------- |
-| **Actually bad**    | Caught            | **Miss**             |
-| **Actually fine**   | **False alarm**   | Correct pass         |
+|                   | Eval flags it   | Eval lets it through |
+| ----------------- | --------------- | -------------------- |
+| **Actually bad**  | Caught          | **Miss**             |
+| **Actually fine** | **False alarm** | Correct pass         |
 
 The two mistakes don't cost the same. A miss ships a regression to users. A false alarm blocks a good change and spends reviewer time chasing nothing. Decide which one hurts more for each kind of failure and tune the eval for that, the way [a confusion matrix prices each mistake](/ai-testing#confusion-matrix-precision-and-recall). The idea of pricing every cell comes from Steve Yegge's The Counting House ([my notes](https://idvorkin-ai-tools.github.io/yegge-field-map/ai/the-counting-house.html)).
 
@@ -280,11 +280,11 @@ The first factor turns α and power into a number: at 5% and 80% it's (1.96 + 0.
 
 A worked example of my own, not from the talk. Say per-item differences vary with a standard deviation of 0.3 (ω² = 0.09), and rerunning an item moves its score with a standard deviation of 0.2 (σ² = 0.04 for both A and B):
 
-| Run each item | Smallest gain to catch | Noise term                  | Items needed |
-| ------------- | ---------------------- | --------------------------- | ------------ |
-| once (K = 1)  | 0.05                   | 0.09 + 0.04 + 0.04 = 0.17   | ≈ 534        |
-| 4× (K = 4)    | 0.05                   | 0.09 + 0.01 + 0.01 = 0.11   | ≈ 346        |
-| once (K = 1)  | 0.10                   | 0.17                        | ≈ 134        |
+| Run each item | Smallest gain to catch | Noise term                | Items needed |
+| ------------- | ---------------------- | ------------------------- | ------------ |
+| once (K = 1)  | 0.05                   | 0.09 + 0.04 + 0.04 = 0.17 | ≈ 534        |
+| 4× (K = 4)    | 0.05                   | 0.09 + 0.01 + 0.01 = 0.11 | ≈ 346        |
+| once (K = 1)  | 0.10                   | 0.17                      | ≈ 134        |
 
 Two lessons. Halving the gap you want to see quadruples the items (534 vs 134). And resampling buys back items: running each one four times cut the count by about a third, which is worth it when items are scarce and runs are cheap.
 
