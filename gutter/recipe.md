@@ -455,6 +455,10 @@ edit.png plate.png`, which keeps the source pixels everywhere except
   its start is capped from the second word's start. A cap on every word,
   measured from its own end, pushed last words late instead, because they
   swallow the trailing sound.
+- The word after a pause inside a bubble ("Polo. … He's fine.") swallows the
+  pause the same way and shows up to 0.7 s early. Pin it with
+  `"pins": {"<word index>": seconds}`, taken from the demucs vocal onsets plus
+  the mix's `"lead"`.
 - Check the `*-words.png` debug image beside the output: magenta word boxes,
   cyan pop anchor.
 
