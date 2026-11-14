@@ -181,7 +181,6 @@ That note, as Larry gets it (trimmed):
 
 ```json
 {
-  "permalink": "https://idvork.in/how-igor-chops",
   "branch": "review-flow-send-to-larry",
   "annotations": [
     {
@@ -195,7 +194,7 @@ That note, as Larry gets it (trimmed):
 }
 ```
 
-It's step one of my evals recipe, a human reading real output before any automation, pointed at my own writing. The prefix and suffix are what let [`blog_review.py`](https://github.com/idvorkin/idvorkin.github.io/blob/main/scripts/blog_review.py) find the exact spot in the markdown; a note it can't place comes back as unlocated instead of guessed. A selection made in the diff drops the struck-out words first, so it anchors like one made on the page. Readers on idvork.in get none of this: no button, no bubble, no network call. The [changelog entry](/changelog#blog-annotate-highlight-and-comment-review-tool) has the mechanics.
+It's step one of my evals recipe, a human reading real output before any automation, pointed at my own writing. The quote plus a few words on each side is what lets Larry find the exact spot in the markdown, and a selection made in the diff drops the struck-out words first, so it anchors like one made on the page. Readers on idvork.in get none of this: no button, no bubble, no network call. The [changelog entry](/changelog#blog-annotate-highlight-and-comment-review-tool) has the mechanics, including the secret-gist fallback and [`blog_review.py`](https://github.com/idvorkin/idvorkin.github.io/blob/main/scripts/blog_review.py), which maps each note to a line.
 
 {% include alert.html content="TODO for Igor: one sentence on what this changed for you. How many notes is a typical pass, and how many rounds before a post is done?" style="warning" %}
 
