@@ -17,11 +17,11 @@ INSTRUCTIONS FOR CLAUDE — do not render
 - The TODO-for-Igor alerts are Igor's to fill. Don't write his opinions into them.
 -->
 
-Did the change make the system better? A new prompt, a new model, a new tool for the agent: that's the only question an eval has to answer, and answering it is hard. It's hardest when there's no right answer to compare against, which is where most of the AI systems people actually want to build live. If the score can't tell a real improvement from a lucky run, it's decoration.
+Did the change make the system better? I changed a prompt, swapped a model or gave the agent a new tool, and an eval has to answer that one question. Answering it is hard. It's hardest when there's no right answer to compare against, and most of the AI systems people want to build are like that. A score that can't tell a real improvement from a lucky run is no use.
 
 {% include ai-slop.html percent="90" %}
 
-This page started from the outline of [Cameron Wolfe's AI Engineer NYC talk](#watch-the-talk), and I've fleshed it out from there for people figuring out how to build AI systems. The talk is highly recommended.
+This page started from the outline of [Cameron Wolfe's AI Engineer NYC talk](#watch-the-talk), and I fleshed it out from there. It's for people figuring out how to build AI systems. I highly recommend the talk.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -61,13 +61,13 @@ A grade is only useful if a higher score means a better system ([12:49](https://
 - **You can only afford a few cases.** A single run of some recent benchmarks costs tens of thousands of dollars ([2:08](https://youtu.be/zLc8zeGeNaY?t=128)), so suites stay small. With few cases the luck doesn't average out, and the [error bar](#error-bars) on the grade stays wide.
 - **The grader is noisy too.** With no answer key, the [grader](#appendix-useful-taxonomy) can't be a function. It's a rubric or an LLM judge, so the one deterministic piece turns into a second source of noise ([3:29](https://youtu.be/zLc8zeGeNaY?t=209)). The grade can move when the output didn't.
 
-Stack those and you can't tell whether the agent got better or worse ([3:45](https://youtu.be/zLc8zeGeNaY?t=225)). The fix has three parts that feed each other ([3:55](https://youtu.be/zLc8zeGeNaY?t=235)): human evaluation defines good, offline evaluation stands in for the humans cheaply, and production monitoring checks what real users do.
+Put the three together and you can't tell whether the agent got better or worse ([3:45](https://youtu.be/zLc8zeGeNaY?t=225)). The fix has three parts ([3:55](https://youtu.be/zLc8zeGeNaY?t=235)). Human evaluation defines good. Offline evaluation stands in for the humans cheaply. Production monitoring checks what real users do. Each part feeds the others.
 
 ## The recipe
 
 ### 1. Define a policy (aka use experts to decide what good means)
 
-Before any automation, set up human review, because it's the reference everything else gets checked against ([4:30](https://youtu.be/zLc8zeGeNaY?t=270)). Sit with a few people who know the domain and write the policy, the quality guidelines that say what good means:
+Set up human review before any automation. Everything else gets checked against it ([4:30](https://youtu.be/zLc8zeGeNaY?t=270)). Sit with a few people who know the domain and write the policy: the quality guidelines that say what good means. It has:
 
 - a short list of criteria,
 - how each one is scored (yes/no or a 1–5 scale),
@@ -75,17 +75,23 @@ Before any automation, set up human review, because it's the reference everythin
 
 ### 2. Make sure humans can apply the policy consistently
 
-That takes three things: training the humans, a good policy, and unambiguous definitions. Don't assume the policy works. Have several people score the same cases, measure how often they agree, and rewrite the policy wherever they split ([5:26](https://youtu.be/zLc8zeGeNaY?t=326)). Repeat until agreement is high. Kappa and its cousins measure it ([the statistics, slowly](#agreement-kappa-and-friends)), and [Humans don't agree either](/ai-testing#humans-dont-agree-either) shows how low human agreement runs in practice.
+This takes training the humans, a good policy, and unambiguous definitions. Don't assume the policy works. Have several people score the same cases and measure how often they agree ([5:26](https://youtu.be/zLc8zeGeNaY?t=326)). Where they split, rewrite the policy. Repeat until agreement is high. Kappa and its cousins measure it ([the statistics, slowly](#agreement-kappa-and-friends)). [Humans don't agree either](/ai-testing#humans-dont-agree-either) shows how low human agreement runs in practice.
 
 ### 3. Decide how many cases and what the cases should be
 
-**How many cases**: power analysis tells you how many you need (the statistics appendix calls a case an item): pick the smallest improvement worth catching, measure how noisy the scores are, and choose how sure you want to be ([6:23](https://youtu.be/zLc8zeGeNaY?t=383)). With typical noise, catching a 5-point gain on a 0–100 scale takes several hundred cases, and halving the gap you want to see quadruples the count; [the statistics, slowly](#how-many-items-power-analysis) walks through it.
+**How many cases**: power analysis gives the number ([6:23](https://youtu.be/zLc8zeGeNaY?t=383)). It takes three inputs: the smallest improvement worth catching, how noisy the scores are, and how sure you want to be. With typical noise, catching a 5-point gain on a 0–100 scale takes several hundred cases. Halve the gap you want to see and you need four times as many. [The statistics, slowly](#how-many-items-power-analysis) walks through it, and calls a case an item.
 
-**What cases** ([7:12](https://youtu.be/zLc8zeGeNaY?t=432)): ones that look like production traffic and cover its variety, hard enough that different models get different scores (find them by sampling a few models and seeing what they fail), and correct, cleaned with a mix of model and human filtering. This applies to every eval set, not only the human one.
+**What cases** ([7:12](https://youtu.be/zLc8zeGeNaY?t=432)):
+
+- They look like production traffic and cover its variety.
+- They're hard enough that different models get different scores. Find them by sampling a few models and seeing what they fail.
+- They're correct. Clean them with a mix of model and human filtering.
+
+The same goes for every eval set on this page, including the ones no human grades.
 
 ### 4. Build an automatic stand-in for the humans
 
-Humans can't review every experiment, so build an [offline](#appendix-useful-taxonomy) proxy ([8:20](https://youtu.be/zLc8zeGeNaY?t=500)). There's a trade-off that runs through the whole recipe: the more I can trust a grade, the less it can assess. Each rung up the ladder handles more complex work and input nobody predefined, and costs trust that I then have to earn back by checking it.
+Humans can't review every experiment, so build an [offline](#appendix-useful-taxonomy) proxy ([8:20](https://youtu.be/zLc8zeGeNaY?t=500)). The trade-off runs through the whole recipe: the more I can trust a grade, the less it can assess. Each rung up the ladder handles more complex work and more input nobody predefined. I trust each rung less until I've checked it.
 
 | Grader             | How far I can trust the grade         | How complex a thing it can assess     | Input nobody predefined  |
 | ------------------ | ------------------------------------- | ------------------------------------- | ------------------------ |
@@ -98,20 +104,20 @@ The rungs, in the same order:
 
 - **Deterministic code**: string match, symbolic math check, unit tests ([2:37](https://youtu.be/zLc8zeGeNaY?t=157)). Same answer every time, so use it wherever the task allows ([my scoring rules](/ai-testing#scoring-rules-i-trust)).
 - **Rubric** ([8:57](https://youtu.be/zLc8zeGeNaY?t=537)): a checklist written per task, each item checked on its own, usually by an LLM. Narrow questions make it more objective than a general judge. In the [DR Tulu paper](https://arxiv.org/abs/2511.19399), a deep-research answer about adapting a novel for the screen is graded against a list of concrete things it must contain ([9:09](https://youtu.be/zLc8zeGeNaY?t=549)).
-- **LLM judge**: one set of quality guidelines applied to every task, much like the human reviewers. Human review already works in tiers: lower-paid reviewers follow instructions, and the hard cases go up to higher-paid experts. Medicine does the same: triage and nurses handle the front line, a doctor takes what they're unsure of, and a specialist takes what the doctor is unsure of. Graders should escalate the same way: code settles what it can, rubrics and judges take the clear calls, and only the uncertain ones go up to a person.
-- **Calibrated human**: the expensive top rung, and the one everything below gets checked against.
+- **LLM judge**: one set of quality guidelines applied to every task, much like the human reviewers. Human review works in tiers. Lower-paid reviewers follow instructions, and the hard cases go up to higher-paid experts. Medicine does the same: nurses do the frontline triage, a doctor takes what confuses them, and a specialist takes what confuses the doctor. Graders can escalate the same way. Code settles what it can, rubrics and judges take the clear calls, and the uncertain ones go up to a person.
+- **Calibrated human**: the expensive top rung. Everything below gets checked against it.
 
-That's why the recipe calibrates the humans (step 2) before trusting them and grades the judge (step 5) before trusting it.
+So the recipe calibrates the humans (step 2) before trusting them, and grades the judge (step 5) before trusting it.
 
 {% include alert.html content="✏️ TODO for Igor: my example of the trade-off, a grade I trusted too much or a check that couldn't see the problem." style="warning" %}
 
 ### 5. Grade the grader
 
-The judge is a proxy, so check it before trusting it ([9:54](https://youtu.be/zLc8zeGeNaY?t=594)): run it on items the calibrated humans already scored and measure agreement, correlation for scores and accuracy for pass/fail ([what those mean](#agreement-kappa-and-friends)).
+The judge is a proxy, so check it before trusting it ([9:54](https://youtu.be/zLc8zeGeNaY?t=594)). Run it on items the calibrated humans already scored and measure agreement: correlation for scores, accuracy for pass/fail ([what those mean](#agreement-kappa-and-friends)).
 
-How good is good enough? Depends on how subjective the task is. Use the humans as the bar: aim for the judge to agree with people about as often as people agree with each other ([10:56](https://youtu.be/zLc8zeGeNaY?t=656)). It's the same bar I use in [AI Testing](/ai-testing#humans-dont-agree-either). The strongest check of all ties the judge to a business outcome, which gets [its own section](#whats-the-point-of-an-eval-if-it-doesnt-drive-a-business-outcome).
+How much agreement is enough depends on how subjective the task is. Use the humans as the bar: the judge should agree with people about as often as people agree with each other ([10:56](https://youtu.be/zLc8zeGeNaY?t=656)). I use the same bar in [AI Testing](/ai-testing#humans-dont-agree-either). The strongest check ties the judge to a business outcome, which gets [its own section](#whats-the-point-of-an-eval-if-it-doesnt-drive-a-business-outcome).
 
-**The golden set** is what makes all this possible: items human experts graded that you trust ([10:01](https://youtu.be/zLc8zeGeNaY?t=601)). Treat it like school exams and split it in two:
+All of this needs a **golden set**: items human experts graded that you trust ([10:01](https://youtu.be/zLc8zeGeNaY?t=601)). Treat it like school exams and split it in two:
 
 - **Practice exam (dev set)**: the part you look at while tuning the judge's prompt, model and rubric. Iterate against it as much as you like.
 - **Final exam (held-out set)**: the part you only grade on, once, when you think you're done. If you tune against it, it stops telling you anything.
@@ -120,21 +126,23 @@ How good is good enough? Depends on how subjective the task is. Use the humans a
 
 With a judge you trust, build benchmarks the same way as step 3: sample the data carefully, grade with the judge, and keep refreshing the set ([11:26](https://youtu.be/zLc8zeGeNaY?t=686)).
 
-Now both the agent and the grader are random ([11:48](https://youtu.be/zLc8zeGeNaY?t=708)), so throw statistics at it ([12:04](https://youtu.be/zLc8zeGeNaY?t=724)):
+Now both the agent and the grader are random ([11:48](https://youtu.be/zLc8zeGeNaY?t=708)), so use statistics ([12:04](https://youtu.be/zLc8zeGeNaY?t=724)):
 
 - power analysis to size the benchmark,
 - [error bars](#error-bars) on every number,
 - resampling (several runs of the agent, several passes of the judge) to shrink variance.
 
-Report each score with its confidence interval next to it. That's what lets you say version B beat version A rather than got luckier.
+Report each score with its confidence interval. Without it you can't say whether version B beat version A or got lucky.
 
 ### 7. The hill-climbing funnel
 
-Run lots of ideas and experiments through the offline evals, since they're cheap: a rubric versus a general judge, the same judge on different models, several judges voting, a new prompt or a new model for the agent. This is [hill climbing](/hill-climbing): try a change, keep it if the score went up, throw it out if it didn't. If none of your experiments are failing, you're doing something wrong. Send only the winners to human review for a closer look ([13:11](https://youtu.be/zLc8zeGeNaY?t=791)), because [human attention is the scarcest thing in the loop](#human-attention-your-most-precious-resource).
+Offline evals are cheap, so run lots of ideas and experiments through them: a rubric versus a general judge, the same judge on different models, several judges voting, a new prompt or a new model for the agent. This is [hill climbing](/hill-climbing): try a change, keep it if the score went up, throw it out if it didn't. If none of your experiments are failing, you're doing something wrong.
+
+Send only the winners to human review for a closer look ([13:11](https://youtu.be/zLc8zeGeNaY?t=791)). [Human attention is the scarcest thing in the loop](#human-attention-your-most-precious-resource).
 
 ### 8. A/B test before you ship
 
-Human review still leaves one step before launch ([13:26](https://youtu.be/zLc8zeGeNaY?t=806)). Pick production signals ([13:33](https://youtu.be/zLc8zeGeNaY?t=813)):
+After human review there's one more step before launch ([13:26](https://youtu.be/zLc8zeGeNaY?t=806)). Pick production signals ([13:33](https://youtu.be/zLc8zeGeNaY?t=813)):
 
 - **explicit**: thumbs up/down, which of two answers users prefer ([13:45](https://youtu.be/zLc8zeGeNaY?t=825)),
 - **implicit**: session length, how often people give up ([13:53](https://youtu.be/zLc8zeGeNaY?t=833)).
@@ -143,15 +151,15 @@ Compare the new agent against the current one in an A/B test, sized with the sam
 
 ### 9. Keep watching, feed failures back, repeat
 
-After launch, watch for drift, new failure cases and uses nobody planned for, and push them back into the offline and human sets ([15:07](https://youtu.be/zLc8zeGeNaY?t=907)). Then keep improving the loop itself ([15:16](https://youtu.be/zLc8zeGeNaY?t=916)): tighten the criteria, re-calibrate humans and judges, swap in harder data before the benchmark saturates, or run the whole loop again for a new domain.
+After launch, watch for drift, new failure cases and uses nobody planned for. Push them back into the offline and human sets ([15:07](https://youtu.be/zLc8zeGeNaY?t=907)). Then improve the loop itself ([15:16](https://youtu.be/zLc8zeGeNaY?t=916)): tighten the criteria, re-calibrate humans and judges, swap in harder data before the benchmark saturates, or run the whole loop again for a new domain.
 
 ### The whole loop on one line
 
-Offline evals screen → humans confirm → A/B test decides → ship → production failures feed the next round. Noise gets fought at every step ([15:46](https://youtu.be/zLc8zeGeNaY?t=946)).
+Offline evals screen → humans confirm → A/B test decides → ship → production failures feed the next round. Every step fights noise ([15:46](https://youtu.be/zLc8zeGeNaY?t=946)).
 
 ## What's the point of an eval if it doesn't drive a business outcome?
 
-It's easy to lose the forest for the trees. I can spend weeks pushing a judge's agreement with raters up a few more points and forget why I wanted the judge at all. Agreement with humans is a means. The end is the product doing better for the people who use it.
+It's easy to lose the forest for the trees. I can spend weeks pushing a judge's agreement with raters up a few more points and forget why I wanted the judge. I wanted it so the product does better for the people who use it.
 
 ### An eval is worth what it predicts
 
@@ -170,16 +178,16 @@ The eval itself can be wrong in two ways: it flags a change that was fine, or it
 | **Actually bad**  | Caught          | **Miss**             |
 | **Actually fine** | **False alarm** | Correct pass         |
 
-The two mistakes don't cost the same. A miss ships a regression to users. A false alarm blocks a good change and spends reviewer time chasing nothing. Decide which one hurts more for each kind of failure and tune the eval for that, the way [a confusion matrix prices each mistake](/ai-testing#confusion-matrix-precision-and-recall). The idea of pricing every cell comes from Steve Yegge's The Counting House ([my notes](https://idvorkin-ai-tools.github.io/yegge-field-map/ai/the-counting-house.html)).
+The two mistakes don't cost the same. A miss ships a regression to users. A false alarm blocks a good change and wastes reviewer time. Decide which one hurts more for each kind of failure and tune the eval for that, the way [a confusion matrix prices each mistake](/ai-testing#confusion-matrix-precision-and-recall). The idea of pricing every cell comes from Steve Yegge's The Counting House ([my notes](https://idvorkin-ai-tools.github.io/yegge-field-map/ai/the-counting-house.html)).
 
 ## Human attention: your most precious resource
 
-Every part of this recipe runs on people: experts writing guidelines, raters calibrating, reviewers checking the winners from the funnel. Their attention is the scarcest input, so every human minute should count.
+This recipe runs on people. Experts write the policy, raters calibrate, and reviewers check the winners from the funnel. Their attention is the scarcest input, so make every human minute count.
 
 **Make them feel respected and valued.** Two parts:
 
-1. **Give them tools that make sure none of their attention is wasted.** The most powerful tools, a polished interface, never a minute spent on busywork. The better the interface, the more people want to do the work.
-2. **Show them the impact of their work.** What their labels changed, which launch they unblocked.
+1. **Give them tools that make sure none of their attention is wasted.** Give them the most powerful tools and a polished interface, and never spend their minutes on busywork. The better the interface, the more people want to do the work.
+2. **Show them the impact of their work.** Tell them what their labels changed and which launch they unblocked.
 
 {% include alert.html content="✏️ TODO for Igor: my second reason trailed off when I dictated it: 'It is just hard, and you get this.' Finish the thought, and add an example." style="warning" %}
 
@@ -219,14 +227,14 @@ graph TD
 
 **What gets graded**, from the outside in:
 
-- **Suite / benchmark**: the whole set of tasks. _Why it matters_: version it, or last month's score means nothing next to this month's.
+- **Suite / benchmark**: the whole set of tasks. _Why it matters_: version it, or you can't compare last month's score with this month's.
   - **Practice exam (dev set)**: the part you iterate against. _Why it matters_: you need somewhere to tune without fooling yourself.
   - **Final exam (held-out set)**: the part you only grade on. _Why it matters_: it's the only honest score once you've tuned on the rest.
   - **Task (case)**: one input, plus whatever the grader needs to judge the answer. _Why it matters_: a suite is only as good as how realistic and hard its tasks are.
-    - **Rollout / trial**: one attempt by the agent at one task, from input to grade ([1:38](https://youtu.be/zLc8zeGeNaY?t=98)). _Why it matters_: the agent is random, so one rollout is an anecdote.
+    - **Rollout / trial**: one attempt by the agent at one task, from input to grade ([1:38](https://youtu.be/zLc8zeGeNaY?t=98)). _Why it matters_: the agent is random, so one rollout tells you little.
       - **Trajectory**: everything the agent did in a rollout: messages, tool calls, intermediate steps, final answer. _Why it matters_: grading only the final answer hides how it got there, and which step broke.
         - **Grade**: the pass/fail or score for one trajectory. _Why it matters_: it's noisy twice, once from the agent and once from the grader.
-  - **Aggregate**: the grades rolled up into one number with an error bar. _Why it matters_: it's the number decisions get made on, so it needs its error bar.
+  - **Aggregate**: the grades rolled up into one number with an error bar. _Why it matters_: decisions get made on this number.
 
 **Who grades**, cheapest first (the [ladder in step 4](#4-build-an-automatic-stand-in-for-the-humans)):
 
@@ -235,15 +243,15 @@ graph TD
 - **LLM judge**: a model grading against general quality guidelines. _Why it matters_: it scales to anything, and it's only as good as its agreement with people.
 - **Calibrated human**: an expert scoring against written guidelines, checked for agreement. _Why it matters_: the reference every other grader is measured against.
 - **Golden set**: items humans graded that you trust, split into the practice and final exams. _Why it matters_: without it you can't check the judge at all.
-- **Meta-evaluation**: grading the grader against the golden set. _Why it matters_: an unchecked judge is a guess with a number attached.
+- **Meta-evaluation**: grading the grader against the golden set. _Why it matters_: you can't trust a judge nobody has checked.
 
 **Where it runs**:
 
 - **Verifiable task**: one deterministic code can check (math, code with tests). _Why it matters_: if you have one, use code and skip most of this page.
 - **Offline eval**: graded before launch, on a fixed suite. _Why it matters_: cheap and fast, so it's where most experiments go.
-- **Online / production monitoring**: signals from real users after launch: thumbs, session length, abandonment. _Why it matters_: it's the ground truth the offline evals are guessing at.
-- **A/B test**: the new version against the current one on split live traffic. _Why it matters_: it's the only test that measures what users actually do.
-- **Saturation**: every model aces the benchmark, so it stops telling them apart. _Why it matters_: a saturated benchmark says "fine" about everything.
+- **Online / production monitoring**: signals from real users after launch: thumbs, session length, abandonment. _Why it matters_: it's what the offline evals are trying to predict.
+- **A/B test**: the new version against the current one on split live traffic. _Why it matters_: it's the only test that measures what users do.
+- **Saturation**: every model aces the benchmark, so it stops telling them apart. _Why it matters_: swap in harder data before it happens (step 9).
 
 The statistics (resampling, power analysis, error bars, kappa) get their own appendix next.
 
@@ -277,7 +285,7 @@ A worked example of my own, not from the talk. Say per-item differences vary wit
 | 4× (K = 4)    | 0.05                   | 0.09 + 0.01 + 0.01 = 0.11 | ≈ 346        |
 | once (K = 1)  | 0.10                   | 0.17                      | ≈ 134        |
 
-Two lessons. Halving the gap you want to see quadruples the items (534 vs 134). And resampling buys back items: running each one four times cut the count by about a third, which is worth it when items are scarce and runs are cheap.
+Two things to take from the table. Halving the gap you want to see quadruples the items (534 vs 134). Resampling saves items: running each one four times cut the count by about a third. That's worth it when items are scarce and runs are cheap.
 
 ### Error bars
 
@@ -288,10 +296,10 @@ A pass rate on n items is an estimate, and its 95% error bar is about ±1.96 × 
 Used in steps 2 and 5 to check raters against each other and the judge against the raters:
 
 - **Percent agreement**: how often two raters give the same label. It flatters: two raters flipping coins on pass/fail agree half the time.
-- **Cohen's kappa**: agreement with luck subtracted, for two raters. κ = (observed − chance) / (1 − chance). If two raters agree 80% of the time and each says "pass" 70% of the time, chance agreement is 0.7 × 0.7 + 0.3 × 0.3 = 0.58, so κ = (0.80 − 0.58) / 0.42 ≈ 0.52. That's an impressive-sounding 80% that's really only moderate.
+- **Cohen's kappa**: agreement with luck subtracted, for two raters. κ = (observed − chance) / (1 − chance). If two raters agree 80% of the time and each says "pass" 70% of the time, chance agreement is 0.7 × 0.7 + 0.3 × 0.3 = 0.58, so κ = (0.80 − 0.58) / 0.42 ≈ 0.52. So 80% agreement is only moderate once luck is taken out.
 - **Fleiss' kappa**: the same idea for more than two raters.
 - **Krippendorff's alpha**: works with any number of raters, missing labels, and 1–5 scales as well as yes/no. Krippendorff wants 0.8 before relying on the data.
 - **Correlation**: for scores rather than labels, whether the judge's scores rise and fall with the humans'.
 - **Binary accuracy**: how often the judge's pass/fail matches the humans'. When failures are rare, report pass and fail accuracy separately, or a judge that passes everything looks great.
 
-[Humans don't agree either](/ai-testing#humans-dont-agree-either) has real-world numbers for all of these.
+[Humans don't agree either](/ai-testing#humans-dont-agree-either) has real-world numbers for these.
