@@ -175,6 +175,51 @@ describe("open-PR badge", () => {
   });
 });
 
+describe("Send to Larry on the collapsed pill", () => {
+  const send = () => document.getElementById("blog-annot-send") as HTMLButtonElement;
+  const preload = (list: unknown[]) => localStorage.setItem("blogAnnotateBuffer", JSON.stringify(list));
+
+  it("sits next to Open, greyed out with no notes", () => {
+    stubFetch(githubPrs);
+    boot("_d/foo.md");
+    const pill = document.getElementById("blog-annot-pill") as HTMLElement;
+    expect(send().parentElement).toBe(pill);
+    expect(document.getElementById("blog-annot-open")?.nextElementSibling).toBe(send());
+    expect(send().disabled).toBe(true);
+  });
+
+  it("is live with notes, sends straight from the pill, and greys out once all are sent", async () => {
+    const gists: unknown[] = [];
+    stubFetch((url, init) => {
+      if (url === "https://api.github.com/gists") {
+        gists.push(init?.body);
+        return json({ id: "g" }, 201);
+      }
+      return githubPrs(url);
+    });
+    preload([note("/foo", "a", "x", "_d/foo.md")]);
+    localStorage.setItem("blogAnnotateToken", "test-token");
+    boot("_d/foo.md");
+    expect(send().disabled).toBe(false);
+    send().click();
+    expect(send().textContent).toBe("Sending…");
+    expect(send().disabled).toBe(true);
+    await vi.waitFor(() => expect(send().textContent).toBe("Sent ✓"));
+    expect(gists).toHaveLength(1);
+    expect(send().disabled).toBe(true);
+  });
+
+  it("stays live when a send fails, so it can be retried", async () => {
+    stubFetch((url) => (url === "https://api.github.com/gists" ? json({}, 502) : githubPrs(url)));
+    preload([note("/foo", "a", "x", "_d/foo.md")]);
+    localStorage.setItem("blogAnnotateToken", "test-token");
+    boot("_d/foo.md");
+    await api().sendToLarry();
+    expect(send().disabled).toBe(false);
+    expect(send().textContent).toBe("Send to Larry");
+  });
+});
+
 describe("Send to Larry from the live site", () => {
   it("writes one secret gist per page in the blog-review-batch/1 shape and clears the buffer", async () => {
     const gists: any[] = [];

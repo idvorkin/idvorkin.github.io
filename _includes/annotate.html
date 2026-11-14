@@ -71,7 +71,8 @@
 
   Larry reads the batches back with scripts/blog_review.py.
 
-  SEND TO LARRY: the pill always has a "Send to Larry" button. Send groups
+  SEND TO LARRY: the pill always has a "Send to Larry" button next to Open,
+  greyed out while nothing is buffered or a send is in flight. Send groups
   the buffer into one batch per page and clears only the batches that were
   delivered; on any failure the buffer stays and the review card opens with
   the gist/clipboard fallback. Where a batch goes depends on the host:
@@ -481,9 +482,13 @@
         }
       });
 
+      // The pill's Send is greyed out with nothing buffered or mid-send.
+      var sending = false;
       function refreshPill() {
+        var n = loadBuffer().length;
         document.getElementById("blog-annot-count").textContent =
-          "Review (" + loadBuffer().length + ")";
+          "Review (" + n + ")";
+        document.getElementById("blog-annot-send").disabled = sending || !n;
       }
       refreshPill();
 
@@ -871,6 +876,7 @@
           : function (batch) {
               return postGist(token, batch.path, reviewBatchJson(batch));
             };
+        sending = true;
         sendBtn.disabled = true;
         sendBtn.textContent = "Sending…";
         var sent = {};
@@ -902,8 +908,8 @@
                 return !sent[noteKey(a)];
               })
             );
+            sending = false;
             refreshPill();
-            sendBtn.disabled = false;
             sendBtn.textContent = "Send to Larry";
             refreshLarry();
             if (!failed.length) {
@@ -1042,6 +1048,7 @@
 
       function showOpenPrs(prs) {
         var el = document.getElementById("blog-annot-prs");
+        if (!el) return; // pill gone (page torn down) before GitHub answered
         var mine = prsTouchingPath(prs, SOURCE_PATH);
         if (!mine.length) {
           el.hidden = true;

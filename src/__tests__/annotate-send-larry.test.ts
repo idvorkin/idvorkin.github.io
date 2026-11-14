@@ -119,6 +119,22 @@ describe("Send to Larry", () => {
     expect(dot()?.title).toContain("not on the tailnet");
   });
 
+  it("puts a Send on the pill next to Open that greys out with no notes", async () => {
+    stubFetch(() => json({ ok: true, state: "idle" }));
+    boot(TAILNET);
+    const send = document.getElementById("blog-annot-send") as HTMLButtonElement;
+    expect(document.getElementById("blog-annot-open")?.nextElementSibling).toBe(dot());
+    expect(dot()?.nextElementSibling).toBe(send);
+    expect(send.disabled).toBe(true);
+    localStorage.setItem("blogAnnotateBuffer", JSON.stringify([note("/foo", "a", "x", `http://${TAILNET}:8445`)]));
+    document.head.innerHTML = "";
+    boot(TAILNET);
+    const live = document.getElementById("blog-annot-send") as HTMLButtonElement;
+    expect(live.disabled).toBe(false);
+    await api().sendToLarry();
+    expect(live.disabled).toBe(true);
+  });
+
   it("works on localhost too", async () => {
     const calls = stubFetch(() => json({ state: "idle" }));
     boot("localhost", "4000");
