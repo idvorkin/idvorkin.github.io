@@ -66,7 +66,7 @@ My first attempt at measuring this bar on my own blog is [three deterministic ch
 
 ## Job 3: Evaluate AI systems
 
-The third job is evaluating the AI systems themselves, and that's a lot of stuff, so it lives in its own posts. [AI Testing](/ai-testing) is how to measure AI: what to test, how to score it, how to read the results, and my own benchmarks. [AI Eval Tools](/ai-eval-tools) is which software to run it with.
+There's also a third job, which is evaluating AI systems. All that stuff lives in its own posts: [AI Testing](/ai-testing) is how to measure AI, and [AI Eval Tools](/ai-eval-tools) is the software to run it with.
 
 <!-- TODO(igor): link the evals recipe page once it merges -->
 
@@ -87,6 +87,6 @@ So the honest answer to "what's left?" starts with the two things that were alwa
 
 ## The early read
 
-I will say everybody I know in software engineering is a hell of a lot busier than they were at work, and now has infinite stuff they can do at home. That's the early read on the line I opened with, about whether there will be any jobs left.
+I will say everybody I know in software engineering is a hell of a lot busier than they were at work, and now has infinite stuff they can do at home. That's my early read on whether there will be jobs left.
 
 <!-- TODO(igor): your own example. What are you busier with now, at work and at home, that you couldn't have taken on before agents? -->
