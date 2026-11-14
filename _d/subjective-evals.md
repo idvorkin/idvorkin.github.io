@@ -17,7 +17,7 @@ INSTRUCTIONS FOR CLAUDE — do not render
 - The TODO-for-Igor alerts are Igor's to fill. Don't write his opinions into them.
 -->
 
-Did the change make the system better? I changed a prompt, swapped a model or gave the agent a new tool, and an eval has to answer that one question. Answering it is hard. It's hardest when there's no right answer to compare against, and most of the AI systems people want to build are like that. A score that can't tell a real improvement from a lucky run is no use.
+Did the change make the system better? That's the one question an eval has to answer, whether the change is a new prompt, a new model or a new tool for the agent. Answering it is hard. It's hardest when there's no right answer to compare against, and most of the AI systems people want to build are like that. A score that can't tell a real improvement from a lucky run is no use.
 
 {% include ai-slop.html percent="90" %}
 
@@ -186,7 +186,7 @@ This recipe runs on people. Experts write the policy, raters calibrate, and revi
 
 **Make them feel respected and valued.** Two parts:
 
-1. **Give them tools that make sure none of their attention is wasted.** Give them the most powerful tools and a polished interface, and never spend their minutes on busywork. The better the interface, the more people want to do the work.
+1. **Give them tools that make sure none of their attention is wasted.** That means the most powerful tools, a polished interface and no busywork. The better the interface, the more people want to do the work.
 2. **Show them the impact of their work.** Tell them what their labels changed and which launch they unblocked.
 
 {% include alert.html content="✏️ TODO for Igor: my second reason trailed off when I dictated it: 'It is just hard, and you get this.' Finish the thought, and add an example." style="warning" %}
@@ -285,7 +285,7 @@ A worked example of my own, not from the talk. Say per-item differences vary wit
 | 4× (K = 4)    | 0.05                   | 0.09 + 0.01 + 0.01 = 0.11 | ≈ 346        |
 | once (K = 1)  | 0.10                   | 0.17                      | ≈ 134        |
 
-Two things to take from the table. Halving the gap you want to see quadruples the items (534 vs 134). Resampling saves items: running each one four times cut the count by about a third. That's worth it when items are scarce and runs are cheap.
+Two lessons. Halving the gap you want to see quadruples the items (534 vs 134). Resampling saves items: running each one four times cut the count by about a third. That's worth it when items are scarce and runs are cheap.
 
 ### Error bars
 
@@ -296,7 +296,7 @@ A pass rate on n items is an estimate, and its 95% error bar is about ±1.96 × 
 Used in steps 2 and 5 to check raters against each other and the judge against the raters:
 
 - **Percent agreement**: how often two raters give the same label. It flatters: two raters flipping coins on pass/fail agree half the time.
-- **Cohen's kappa**: agreement with luck subtracted, for two raters. κ = (observed − chance) / (1 − chance). If two raters agree 80% of the time and each says "pass" 70% of the time, chance agreement is 0.7 × 0.7 + 0.3 × 0.3 = 0.58, so κ = (0.80 − 0.58) / 0.42 ≈ 0.52. So 80% agreement is only moderate once luck is taken out.
+- **Cohen's kappa**: agreement with luck subtracted, for two raters. κ = (observed − chance) / (1 − chance). If two raters agree 80% of the time and each says "pass" 70% of the time, chance agreement is 0.7 × 0.7 + 0.3 × 0.3 = 0.58, so κ = (0.80 − 0.58) / 0.42 ≈ 0.52. That 80% sounds high, but once luck is taken out it's only moderate.
 - **Fleiss' kappa**: the same idea for more than two raters.
 - **Krippendorff's alpha**: works with any number of raters, missing labels, and 1–5 scales as well as yes/no. Krippendorff wants 0.8 before relying on the data.
 - **Correlation**: for scores rather than labels, whether the judge's scores rise and fall with the humans'.
