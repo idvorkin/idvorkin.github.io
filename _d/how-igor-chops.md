@@ -164,39 +164,23 @@ When a plan, diff or report is too big to read in a chat scroll, the agent turns
 
 ### The Red Pen: Send to Larry
 
-Lavish reviews what an agent made for me. My own posts get reviewed on the blog itself, and the loop is three steps:
+With AI I can hyper-optimize my own [enabling environment](/enable), down to tools built for exactly one user. My blog is the example. I don't need GitHub's PR review for my posts, so I built the review into the blog itself: the diff on the page, my notes sent straight to Larry, and my own chat to read them in. [Lavish](#the-review-board-lavish) covers what an agent made for me; this covers what I wrote. Three steps:
 
-1. **A PR with a diff.** Every edit is a PR with a preview, and the preview's dev banner has a Diff vs main button that swaps the post for a rendered diff: new words green, cut words struck through.
+1. **A PR with a diff.** Every edit is a PR with a preview, but I read the diff on the blog, not on GitHub: the preview's dev banner has a Diff vs main button that swaps the post for a rendered diff, new words green, cut words struck through.
 2. **Notes on the live page, ideally by voice.** I flip on Comments in the banner, select a line (in the diff or on the page), tap the Comment bubble, and [dictate](#voice-how-i-talk-to-the-agents) what's wrong. One more tap tags it fix, cut, rewrite, expand, check, question or note.
-3. **Send to Larry, and Larry iterates.** The Review pill counts my notes. Send to Larry ships the batch as one message to [Larry](/larry), with the page and the branch attached; he revises the branch and pushes, and I read the new diff and go again.
+3. **Send to Larry, and Larry iterates.** The Review pill counts my notes. Send to Larry ships the batch straight to [Larry](/larry), page and branch attached, and it lands in [my own chat](/larry-cockpit) as one card with a chip per note, so I see what he got right next to his answer. He revises the branch and pushes, and I read the new diff and go again.
 
 <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center">
 <a href="/images/review-flow/review-diff.webp"><img src="/images/review-flow/review-diff.webp" alt="This post's preview in Diff vs main on a phone: the dev banner with the branch and PR number on top, and step 7 of the session list with cut words struck through in red and new words in green" style="max-width:220px;width:100%;border-radius:10px" /></a>
 <a href="/images/review-flow/review-comment.webp"><img src="/images/review-flow/review-comment.webp" alt="The words 'either way my notes' selected inside the diff, with the Comment bubble just under them" style="max-width:220px;width:100%;border-radius:10px" /></a>
 <a href="/images/review-flow/review-intent.webp"><img src="/images/review-flow/review-intent.webp" alt="The note composer: the quoted words, a typed note, and the seven intent chips with rewrite picked" style="max-width:220px;width:100%;border-radius:10px" /></a>
 <a href="/images/review-flow/review-pill.webp"><img src="/images/review-flow/review-pill.webp" alt="The Review pill with one note, a green dot for Larry idle, and the Send to Larry button" style="max-width:300px;width:100%;border-radius:10px" /></a>
+<a href="/images/review-flow/review-chat-card.webp"><img src="/images/review-flow/review-chat-card.webp" alt="A sent batch in my chat with Larry: one card titled with the post and '2 notes', and a folded chip per note reading its intent and comment" style="max-width:300px;width:100%;border-radius:10px" /></a>
 </div>
 
-That note, as Larry gets it (trimmed):
+It's step one of my evals recipe, a human reading real output before any automation, pointed at my own writing. Each note carries the quote plus a few words on each side, which is what lets Larry find the exact spot in the markdown, and a selection made in the diff drops the struck-out words first, so it anchors like one made on the page. Readers on idvork.in get none of this: no button, no bubble, no network call. The [changelog entry](/changelog#blog-annotate-highlight-and-comment-review-tool) has the mechanics, including the secret-gist fallback and [`blog_review.py`](https://github.com/idvorkin/idvorkin.github.io/blob/main/scripts/blog_review.py), which maps each note to a line.
 
-```json
-{
-  "branch": "review-flow-send-to-larry",
-  "annotations": [
-    {
-      "quote": "either way my notes",
-      "prefix": "a blog post gets the red pen; ",
-      "suffix": " go back to the agent as its n",
-      "intent": "rewrite",
-      "note": "Name which is which: Lavish for pages an agent made, the red pen for my posts."
-    }
-  ]
-}
-```
-
-It's step one of my evals recipe, a human reading real output before any automation, pointed at my own writing. The quote plus a few words on each side is what lets Larry find the exact spot in the markdown, and a selection made in the diff drops the struck-out words first, so it anchors like one made on the page. Readers on idvork.in get none of this: no button, no bubble, no network call. The [changelog entry](/changelog#blog-annotate-highlight-and-comment-review-tool) has the mechanics, including the secret-gist fallback and [`blog_review.py`](https://github.com/idvorkin/idvorkin.github.io/blob/main/scripts/blog_review.py), which maps each note to a line.
-
-{% include alert.html content="TODO for Igor: one sentence on what this changed for you. How many notes is a typical pass, and how many rounds before a post is done?" style="warning" %}
+{% include alert.html content="TODO for Igor: (1) One sentence on what this changed for you: how many notes is a typical pass, how many rounds before a post is done? (2) [My AI policy](/ai-policy#the-sort) says new AI enabling-environment tools are a no: “No practice underneath. The fun is the building, not the using.” This one has a practice under it, writing, and gets used on every post, but it is still a tool I keep improving. Reconcile here, or update the policy line?" style="warning" %}
 
 ### The Gate: no-mistakes
 

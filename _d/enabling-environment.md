@@ -128,7 +128,7 @@ Ala - obsidians graph view
 
 ## AI Augmentation
 
-What I'm most excited about is how to expand this with AI. My thinking program is my first cut.
+What I'm most excited about is how to expand this with AI. My thinking program is my first cut. The newest is a tool built for exactly one user: [my blog reviews itself](/how-igor-chops#the-red-pen-send-to-larry), a diff on the page and notes sent straight to Larry, no GitHub in the loop.
 
 Spell check and summary/eli5/TLDR are the obvious ones, but what if we extended to reflection questions, implicit assumptions, etc....
 
