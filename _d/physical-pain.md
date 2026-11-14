@@ -11,8 +11,6 @@ tags:
 
 Physical pain has been a recurring teacher in my life. Each injury forced me to learn something about how my body works (and doesn't). This page is the hub for my pain-related learnings, with dedicated pages for each area where I've had issues.
 
-{% include pain-body-map.html %}
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
@@ -37,6 +35,8 @@ Physical pain has been a recurring teacher in my life. Each injury forced me to 
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+{% include pain-body-map.html %}
 
 ## Places I've Had Pain
 

@@ -90,6 +90,23 @@ test("keyboard Tab reaches every region with a visible focus ring", async ({ pag
   await expect(page).toHaveURL(/#back-pain$/);
 });
 
+test("the figure sits after the in-page table of contents and before the first section", async ({ page }) => {
+  await openPage(page);
+  const order = await page.evaluate(() => {
+    const map = document.querySelector("#pain-body-map") as Element;
+    const tocLinks = [...document.querySelectorAll('a[href="#great-books-for-across-the-board-improvements"]')];
+    const inPageToc = tocLinks.find((a) => !a.closest("#right-sidebar"));
+    const firstSection = document.getElementById("places-ive-had-pain") as Element;
+    const follows = (a: Element, b: Element) =>
+      Boolean(a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING);
+    return {
+      afterToc: inPageToc ? follows(inPageToc, map) : false,
+      beforeFirstSection: follows(map, firstSection),
+    };
+  });
+  expect(order).toEqual({ afterToc: true, beforeFirstSection: true });
+});
+
 test("the figure contains no headings, so it stays out of the table of contents", async ({ page }) => {
   await openPage(page);
   await expect(page.locator(`${MAP} h1, ${MAP} h2, ${MAP} h3, ${MAP} h4`)).toHaveCount(0);
