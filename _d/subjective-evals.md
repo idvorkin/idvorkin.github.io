@@ -19,7 +19,7 @@ Grading a math answer is a string compare. Grading a short story, a show synopsi
 
 {% include ai-slop.html percent="90" %}
 
-{% include alert.html content="✏️ Draft. Igor is still fleshing this out. The TODO-for-Igor boxes are where his own take goes." style="warning" %}
+{% include alert.html content="✏️ Draft. I'm still fleshing this out; the TODO-for-Igor boxes are where my own take goes." style="warning" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -51,7 +51,7 @@ Grading a math answer is a string compare. Grading a short story, a show synopsi
 
 An eval exists to answer one question: did this change make the system better? A new prompt, a new model, a new tool for the agent. If the score can't tell a real improvement from a lucky run, it's decoration.
 
-That's the frame Wolfe opens with. Everything in an eval wobbles: the agent gives a different answer each run, the test set is small because runs are expensive, and on open-ended work the grader is a model that wobbles too. Stack those and you can't see whether the agent got better or worse ([3:29](https://youtu.be/zLc8zeGeNaY?t=209)). The whole talk is a set of moves for getting a decision you can trust out of that mess ([3:55](https://youtu.be/zLc8zeGeNaY?t=235)).
+Wolfe's version of the point: he wants to know a higher score means a better model, not a noisier run ([12:49](https://youtu.be/zLc8zeGeNaY?t=769)). The trouble is that everything in an eval wobbles. The agent gives a different answer each run, the test set is small because runs are expensive, and on open-ended work the grader is a model that wobbles too. Stack those and you can't tell whether the agent got better or worse ([3:45](https://youtu.be/zLc8zeGeNaY?t=225)). The talk is a set of moves for getting a decision you can trust out of that mess ([3:55](https://youtu.be/zLc8zeGeNaY?t=235)).
 
 {% include alert.html content="✏️ TODO for Igor: why this matters to me. What decision was I trying to make the last time an eval let me down?" style="warning" %}
 
@@ -105,13 +105,11 @@ Don't assume the guidelines work. Have several people score the same items, meas
 
 **How much**: power analysis ([6:23](https://youtu.be/zLc8zeGeNaY?t=383)). Pick the smallest gap between two versions you care about, estimate how noisy scores are (resampling the same items helps), pick how sure you want to be, and the math gives a sample size. The slide has the formula:
 
-```text
-n = (z_α/2 + z_β)² · (ω² + σA²/KA + σB²/KB) / δ²
+> **n = (z<sub>α/2</sub> + z<sub>β</sub>)² × (ω² + σ<sub>A</sub>²/K<sub>A</sub> + σ<sub>B</sub>²/K<sub>B</sub>) / δ²**
 
-δ      smallest difference worth detecting
-ω²     variance of the per-item difference between A and B
-σ²/K   leftover run-to-run noise, shrunk by K resamples per item
-```
+- **δ**: the smallest difference worth detecting
+- **ω²**: how much the per-item score difference between A and B varies
+- **σ²/K**: leftover run-to-run noise, shrunk by taking K resamples per item
 
 A worked example of my own, not from the talk: at the usual 95% confidence and 80% power the first factor is about 7.8. If per-item score differences have a standard deviation of 0.3 on a 0–1 scale and I want to catch a 0.05 improvement, that's about 280 items. To catch a 0.10 improvement, about 70. Halving the gap you want to see quadruples the data.
 
@@ -142,7 +140,7 @@ Now both the agent and the grader are random ([11:48](https://youtu.be/zLc8zeGeN
 - error bars on every number,
 - resampling (several runs of the agent, several passes of the judge) to shrink variance.
 
-The output isn't a score, it's a score plus how sure you are. That's what lets you say version B beat version A rather than got luckier.
+Report each score with its confidence interval next to it. That's what lets you say version B beat version A rather than got luckier.
 
 ### 7. Funnel: many offline, few to humans
 
@@ -150,7 +148,7 @@ Run lots of ideas through the offline evals, since they're cheap. Send only the 
 
 ### 8. A/B test before you ship
 
-Passing human review isn't the finish line ([13:26](https://youtu.be/zLc8zeGeNaY?t=806)). Pick production signals ([13:33](https://youtu.be/zLc8zeGeNaY?t=813)):
+Human review still leaves one step before launch ([13:26](https://youtu.be/zLc8zeGeNaY?t=806)). Pick production signals ([13:33](https://youtu.be/zLc8zeGeNaY?t=813)):
 
 - **explicit**: thumbs up/down, which of two answers users prefer ([13:45](https://youtu.be/zLc8zeGeNaY?t=825)),
 - **implicit**: session length, how often people give up ([13:53](https://youtu.be/zLc8zeGeNaY?t=833)).
@@ -167,11 +165,11 @@ Offline evals screen → humans confirm → A/B test decides → ship → produc
 
 ## Where I am on this
 
-My own evals are small and personal: [my benchmark evals](/ai-testing#my-benchmark-evals) and the tools I run them with in [AI Eval Tools](/ai-eval-tools). No panel of experts, no A/B traffic.
+My own evals are small: [my benchmark evals](/ai-testing#my-benchmark-evals) grade an agent's blog edits with deterministic checkers and an LLM judge layered on top, and [AI Eval Tools](/ai-eval-tools) covers what I run them with.
 
 {% include alert.html content="✏️ TODO for Igor: which of the nine steps do I actually do today, and which do I skip?" style="warning" %}
 
-{% include alert.html content="✏️ TODO for Igor: the solo-builder version. With no expert panel and no production traffic, what stands in for steps 1–2 and 8?" style="warning" %}
+{% include alert.html content="✏️ TODO for Igor: does this shrink to a solo builder? What would stand in for the expert panel (steps 1–2) and the A/B test (step 8)?" style="warning" %}
 
 {% include alert.html content="✏️ TODO for Igor: where I disagree with the talk, or what I'd add." style="warning" %}
 
@@ -183,6 +181,6 @@ Cameron Wolfe, staff research scientist at Netflix and author of the Deep (Learn
 
 - [Slides](https://docs.google.com/presentation/d/146TscsJ21LU4kATVS3ES2oC_oZxoCBsTH3soepY25P4/edit?usp=sharing)
 - [Evaluating Agents on Highly Subjective Tasks](https://cameronrwolfe.substack.com/p/subjective-evals), his written version
-- [Statistics for LLM evals](https://cameronrwolfe.substack.com/p/stats-llm-evals), the power analysis, error bars and resampling in depth
-- [A statistical approach to model evals](https://www.anthropic.com/research/statistical-approach-to-model-evals) (Anthropic)
+- [His post on statistics for LLM evals](https://cameronrwolfe.substack.com/p/stats-llm-evals): power analysis, error bars and resampling in depth
+- [Anthropic's statistical approach to model evals](https://www.anthropic.com/research/statistical-approach-to-model-evals)
 - [Hamel Husain's evals FAQ](https://hamel.dev/blog/posts/evals-faq/) and [Eugene Yan on labeling guidelines](https://eugeneyan.com/writing/labeling-guidelines/), both from his reading list
