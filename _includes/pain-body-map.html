@@ -1,0 +1,231 @@
+{%- comment -%} Clickable body-figure opener for /physical-pain: the blog's
+raccoon seen from behind (images/raccoon-physical-pain-back.webp, 600x902,
+transparent). The picture and the zones share one SVG whose viewBox is the
+image's pixel size, so zone coordinates are image pixels. Each tinted zone and
+its label pill is one SVG link to a section of the page (both shoulders share
+one link, both knees another). Pure links, no script: works without JS, by
+keyboard (Tab + Enter) and by touch, and the TOC above stays the fallback. The
+picture is an SVG
+<image
+  >, not an <img />, so the site's image-zoom script leaves it alone. Only body
+  parts the page has a section for are zoned. Floats right beside the first
+  section on wide screens, stacks on phones. No headings inside, so nothing
+  leaks into the TOC. Used by: _d/physical-pain.md {%- endcomment -%}
+  <style>
+    .pm {
+      --pm-ink: #1b1f24;
+      --pm-soft: #6b7280;
+      --pm-panel: #f4f5f7;
+      --pm-rule: #d8dbe0;
+      --pm-hot: #ea580c;
+      --pm-zone-edge: #fff7ed;
+      --pm-focus: #1d4ed8;
+      border: 1px solid var(--pm-rule);
+      border-radius: 10px;
+      background: var(--pm-panel);
+      color: var(--pm-ink);
+      padding: 10px 14px 12px;
+      margin: 1rem auto 1.25rem;
+      max-width: 420px;
+    }
+    @media (min-width: 992px) {
+      .pm {
+        float: right;
+        /* Headings beside the float are positioned and would otherwise paint
+         over it and swallow taps on the lower zones. */
+        position: relative;
+        z-index: 1;
+        width: 270px;
+        margin: 0.25rem 0 1rem 1.25rem;
+      }
+      .pm-cap {
+        font-size: 0.8rem;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      .pm {
+        --pm-ink: #e5e7eb;
+        --pm-soft: #9ca3af;
+        --pm-panel: #1f2328;
+        --pm-rule: #3a3f46;
+        --pm-hot: #fb923c;
+        --pm-focus: #93c5fd;
+      }
+    }
+    [data-bs-theme="dark"] .pm {
+      --pm-ink: #e5e7eb;
+      --pm-soft: #9ca3af;
+      --pm-panel: #1f2328;
+      --pm-rule: #3a3f46;
+      --pm-hot: #fb923c;
+      --pm-focus: #93c5fd;
+    }
+    .pm-cap {
+      margin: 0 0 4px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--pm-soft);
+    }
+    .pm svg {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 0 auto;
+    }
+    .pm-zone {
+      fill: var(--pm-hot);
+      fill-opacity: 0.5;
+      stroke: var(--pm-zone-edge);
+      stroke-width: 4;
+      transition:
+        fill-opacity 0.15s,
+        stroke-width 0.15s;
+    }
+    .pm-lead {
+      stroke: var(--pm-ink);
+      stroke-width: 2;
+      stroke-dasharray: 4 5;
+    }
+    .pm-pill {
+      fill: var(--pm-panel);
+      fill-opacity: 0.92;
+      stroke: var(--pm-rule);
+      stroke-width: 2;
+    }
+    .pm svg text.pm-label {
+      fill: var(--pm-ink);
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .pm a {
+      cursor: pointer;
+      outline: none;
+      /* SVG paints the site's link underline with the link's own fill, so
+       match it to the label color or it shows black in dark mode. */
+      fill: var(--pm-ink);
+    }
+    .pm a:hover .pm-zone,
+    .pm a:focus-visible .pm-zone {
+      fill-opacity: 0.8;
+      stroke-width: 7;
+    }
+    .pm a:focus-visible .pm-zone,
+    .pm a:focus-visible .pm-pill {
+      stroke: var(--pm-focus);
+    }
+    .pm a:focus-visible .pm-pill {
+      stroke-width: 4;
+    }
+    .pm a:hover text.pm-label,
+    .pm a:focus-visible text.pm-label {
+      fill: var(--pm-hot);
+      text-decoration: underline;
+    }
+    .pm a:focus-visible text.pm-label {
+      fill: var(--pm-focus);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pm-zone {
+        transition: none;
+      }
+    }
+  </style>
+
+  <nav class="pm" id="pain-body-map" aria-label="Jump to a body part">
+    <p class="pm-cap">Where does it hurt? Tap a spot.</p>
+    <svg viewBox="0 0 600 902">
+      <g
+        role="img"
+        aria-label="The blog's raccoon seen from behind, looking back over his shoulder through rainbow glasses: green tee, denim shorts, a ringed tail, and one yellow and one blue croc."
+      >
+        <image
+          href="/images/raccoon-physical-pain-back.webp"
+          x="0"
+          y="0"
+          width="600"
+          height="902"
+        />
+      </g>
+
+      <a
+        href="#shoulder-pain"
+        data-region="shoulders"
+        aria-label="Shoulders: jump to Shoulder Pain"
+      >
+        <ellipse class="pm-zone" cx="108" cy="425" rx="44" ry="32" />
+        <ellipse class="pm-zone" cx="380" cy="418" rx="44" ry="32" />
+        <line class="pm-lead" x1="440" y1="352" x2="405" y2="396" />
+        <rect class="pm-pill" x="418" y="304" width="176" height="46" rx="23" />
+        <text
+          class="pm-label"
+          x="504"
+          y="337"
+          text-anchor="middle"
+          textLength="156"
+          lengthAdjust="spacingAndGlyphs"
+        >
+          Shoulders
+        </text>
+      </a>
+
+      <a
+        href="#back-pain"
+        data-region="back"
+        aria-label="Back: jump to Back Pain"
+      >
+        <rect class="pm-zone" x="210" y="405" width="72" height="140" rx="30" />
+        <rect class="pm-pill" x="198" y="452" width="96" height="46" rx="23" />
+        <text
+          class="pm-label"
+          x="246"
+          y="485"
+          text-anchor="middle"
+          textLength="70"
+          lengthAdjust="spacingAndGlyphs"
+        >
+          Back
+        </text>
+      </a>
+
+      <a
+        href="#rotation-for-stiffness"
+        data-region="hips"
+        aria-label="Hips and glutes: jump to Rotation for stiffness"
+      >
+        <ellipse class="pm-zone" cx="255" cy="618" rx="135" ry="50" />
+        <rect class="pm-pill" x="140" y="595" width="230" height="46" rx="23" />
+        <text
+          class="pm-label"
+          x="255"
+          y="628"
+          text-anchor="middle"
+          textLength="200"
+          lengthAdjust="spacingAndGlyphs"
+        >
+          Hips &amp; glutes
+        </text>
+      </a>
+
+      <a
+        href="#knee-pain"
+        data-region="knees"
+        aria-label="Knees: jump to Knee Pain"
+      >
+        <circle class="pm-zone" cx="165" cy="748" r="36" />
+        <circle class="pm-zone" cx="345" cy="760" r="36" />
+        <rect class="pm-pill" x="203" y="731" width="104" height="46" rx="23" />
+        <text
+          class="pm-label"
+          x="255"
+          y="764"
+          text-anchor="middle"
+          textLength="82"
+          lengthAdjust="spacingAndGlyphs"
+        >
+          Knees
+        </text>
+      </a>
+    </svg>
+  </nav>
+</image>
