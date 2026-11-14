@@ -105,7 +105,7 @@ With 25+ years of experience, I'm both content and confident with my career stag
 
 ### Autonomy
 
-There's a ton of it in my current role.
+**H2'26:** There's a ton of it in my current role.
 
 - Getting to work with amazing people
 - Getting to set a sustainable pace
@@ -122,7 +122,7 @@ NOTE: Things I want my boss to do **that do not feel like** a lack of autonomy f
 
 ### Mastery
 
-I'm building my skills for a new, AI-native world of very high tail intensity. I can't turn around without [learning something](/whats-left).
+**H2'26:** I'm building my skills for a new, AI-native world of very high tail intensity. I can't turn around without [learning something](/whats-left).
 
 - Dedicated time to retool/think
 - Growth in core EM skills (From team to organization):
@@ -130,15 +130,15 @@ I'm building my skills for a new, AI-native world of very high tail intensity. I
   - People Growth
   - New manager mentoring
 - Grow technical:
-  - **Instantiating at the speed of thought.** The gap between "I wish this existed" and using it is collapsing, and closing it is a skill. I wanted a Flameshot-style screenshot tool; 45 minutes and about 140 words from me later, [IgSnap was in my Alfred](/ai-journal#igsnap-writing-my-own-screenshot-app-was-faster-than-installing-one). I wrote no code and read none.
-  - Force-multiplying my technical work with AI.
-  - Force-multiplying my thinking and strategy work, not just my code.
-  - Learning how to test in the non-deterministic AI world.
-  - Learning how to make AI usage multiplayer.
+  - **Instantiating at the speed of thought.** The gap between "I wish this existed" and using it is collapsing, and closing it is a skill. I wanted a Flameshot-style screenshot tool; 45 minutes and about 140 words from me later, [IgSnap was in my Alfred](/ai-journal#igsnap-writing-my-own-screenshot-app-was-faster-than-installing-one). I wrote no code and read none. _(H2'26)_
+  - Force-multiplying my technical work with AI. _(H2'26)_
+  - Force-multiplying my thinking and strategy work, not just my code. _(H2'26)_
+  - Learning how to test in the non-deterministic AI world. _(H2'26)_
+  - Learning how to make AI usage multiplayer. _(H2'26)_
   - Play with new AI models/paradigms
   - Play with new tools (now all AI-assist, Python/data libraries)
   - Contribute to open source
-- Coaching and training others to use AI.
+- Coaching and training others to use AI. _(H2'26)_
 - Growth as presenter:
   - I need to give talks, make vertical short form videos!
   - I love mixing magic and tech presentations
@@ -147,7 +147,7 @@ I'm building my skills for a new, AI-native world of very high tail intensity. I
 
 ### Purpose
 
-I'm making it so grandma can run a personal agent without fear of it doing something stupid.
+**H2'26:** Keep Muse from screwing over Grandma through malice or incompetence.
 
 - People Axis: Grow team + Help org + Mentor others
 - Product Impact: Well-being, reduce loneliness, build relationships
