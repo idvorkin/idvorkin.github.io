@@ -12,9 +12,9 @@ imagefeaturelocal: psychic-weight-staying-afloat.webp
 
 Imagine a weight tied around your body, imagine it dragging behind you, slowing down your motions, preventing you from going where you want to go. Imagine never taking it off, and getting no relief regardless of when you sit or sleep. Now imagine that's not a physical weight, but instead a mental weight, a psychic weight if you will. Psychic weight are the thoughts that prevent your mind and emotions from being fluid and light.
 
-{% include alert.html content="You can see the weights in [Staying Afloat](/staying-afloat): pile them on, take away the balloons, and I sink." style="info" %}
+{% include alert.html content="Play a game: experience this live in [Staying Afloat](/staying-afloat) by adding weights and watching yourself sink." style="info" %}
 
-{% include repo_image_float_right.html src="psychic-weight-staying-afloat.webp" alt="The felt raccoon under water, chained to weights labeled pain, debt, anger, deadline, bad sleep and more, with no balloons" %}
+{% include repo_image_float_right.html src="psychic-weight-staying-afloat.webp" alt="The felt raccoon with just his freaked-out head above the water, chained to weights labeled pain, debt, anger, deadline, bad sleep and more, with no balloons" %}
 
 <!-- prettier-ignore-start -->
 
