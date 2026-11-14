@@ -1,4 +1,4 @@
-// ABOUTME: Double-click inside the annotate selection opens the note box; on a saved note it opens that note to edit.
+// ABOUTME: Double-click inside the annotate selection opens the note box, or the saved note on that spot to edit.
 // ABOUTME: Tests the pure double-press rule exposed by the real _includes/annotate.html, then the edit-in-place wiring.
 
 import { readFileSync } from "node:fs";
@@ -73,7 +73,7 @@ describe("isDoublePress (the pure rule)", () => {
   });
 });
 
-describe("double-click on a saved note", () => {
+describe("double-click inside the selection", () => {
   const saved = (comment: string, intent: string): Note => ({
     quote: "brown fox",
     prefix: "The quick ",
@@ -82,6 +82,19 @@ describe("double-click on a saved note", () => {
     intent,
     ts: "2026-11-14T10:00:00.000Z",
   });
+  const bubble = () => document.getElementById("blog-annot-btn") as HTMLElement;
+  function settle() {
+    document.dispatchEvent(new MouseEvent("mouseup"));
+    vi.advanceTimersByTime(20);
+  }
+  function selectSentence() {
+    const range = document.createRange();
+    range.selectNodeContents(document.querySelector("#content-holder p") as HTMLElement);
+    const sel = window.getSelection() as Selection;
+    sel.removeAllRanges();
+    sel.addRange(range);
+    settle();
+  }
   function press(x = 50, y = 50) {
     const p = document.querySelector("#content-holder p") as HTMLElement;
     p.dispatchEvent(new MouseEvent("pointerdown", { bubbles: true, button: 0, clientX: x, clientY: y }));
@@ -92,22 +105,41 @@ describe("double-click on a saved note", () => {
     press();
   }
 
+  beforeAll(() => {
+    // jsdom has no layout: give every range one box around the point the presses use.
+    const box = { left: 0, top: 0, right: 500, bottom: 100, width: 500, height: 100, x: 0, y: 0 } as DOMRect;
+    Range.prototype.getClientRects = () => Object.assign([box], { item: () => box }) as unknown as DOMRectList;
+    Range.prototype.getBoundingClientRect = () => box;
+  });
+
   beforeEach(() => {
     vi.advanceTimersByTime(1000); // no press from the previous test counts
     (document.getElementById("blog-annot-modal") as HTMLElement).style.display = "none";
     localStorage.setItem("blogAnnotateBuffer", JSON.stringify([saved("tighten", "cut")]));
+    selectSentence();
+    expect(bubble().style.display).toBe("block");
   });
 
-  it("opens that note with its comment and intent", () => {
+  it("opens a new note for the whole selection", () => {
+    caretOffset = SENTENCE.indexOf("lazy");
+    doubleClick();
+    expect(modalOpen()).toBe(true);
+    expect(document.querySelector("#blog-annot-card blockquote")?.textContent).toBe(SENTENCE);
+    expect(textarea()?.value).toBe("");
+    expect(document.querySelector("#blog-annot-card .hint")?.textContent).not.toContain("Editing");
+  });
+
+  it("on a spot with a saved note, opens that note with its comment and intent", () => {
     caretOffset = SENTENCE.indexOf("fox");
     doubleClick();
     expect(modalOpen()).toBe(true);
+    expect(document.querySelector("#blog-annot-card blockquote")?.textContent).toBe("brown fox");
     expect(textarea()?.value).toBe("tighten");
     expect(document.querySelector('button[data-intent="cut"]')?.getAttribute("aria-pressed")).toBe("true");
     expect(document.querySelector("#blog-annot-card .hint")?.textContent).toContain("Editing saved note");
   });
 
-  it("Save replaces the note in place with a fresh timestamp", () => {
+  it("Save on a saved note replaces it in place with a fresh timestamp", () => {
     caretOffset = SENTENCE.indexOf("brown");
     doubleClick();
     (textarea() as HTMLTextAreaElement).value = "tighten, then cut";
@@ -124,22 +156,25 @@ describe("double-click on a saved note", () => {
     expect(list[0].ts).not.toBe("2026-11-14T10:00:00.000Z");
   });
 
-  it("does nothing outside the note's quote", () => {
-    caretOffset = SENTENCE.indexOf("lazy");
+  it("a note saved on another page is not offered", () => {
+    localStorage.setItem("blogAnnotateBuffer", JSON.stringify([{ ...saved("x", "fix"), permalink: "/other/" }]));
+    caretOffset = SENTENCE.indexOf("fox");
+    doubleClick();
+    expect(textarea()?.value).toBe("");
+    expect(document.querySelector("#blog-annot-card blockquote")?.textContent).toBe(SENTENCE);
+  });
+
+  it("with no selection does nothing, even on a saved note", () => {
+    (window.getSelection() as Selection).removeAllRanges();
+    settle();
+    expect(bubble().style.display).toBe("none");
+    caretOffset = SENTENCE.indexOf("fox");
     doubleClick();
     expect(modalOpen()).toBe(false);
     expect(buffer()).toEqual([saved("tighten", "cut")]);
   });
 
-  it("ignores a note saved on another page", () => {
-    localStorage.setItem("blogAnnotateBuffer", JSON.stringify([{ ...saved("x", "fix"), permalink: "/other/" }]));
-    caretOffset = SENTENCE.indexOf("fox");
-    doubleClick();
-    expect(modalOpen()).toBe(false);
-  });
-
   it("two slow presses are not a double-click", () => {
-    caretOffset = SENTENCE.indexOf("fox");
     press();
     vi.advanceTimersByTime(api().DOUBLE_PRESS_MS + 1);
     press();

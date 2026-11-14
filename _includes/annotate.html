@@ -23,9 +23,9 @@
   browser collapses the selection on the first press, so the selection is
   snapshotted then; the second press within DOUBLE_PRESS_MS and
   DOUBLE_PRESS_PX (see isDoublePress) opens it and suppresses the word
-  select. With no selection, a double-click on text covered by a saved,
-  not-yet-sent note on this page opens that note for editing (Save replaces
-  it); anywhere else a double-click keeps the browser's word select.
+  select. If the double-clicked spot already carries a saved, not-yet-sent
+  note on this page, that note opens for editing instead (Save replaces it).
+  With no selection, a double-click keeps the browser's word select.
   The "Review (N)" pill uploads the batch to a SECRET gist (description
   `blog-review: <permalink>`) or copies it to the clipboard.
 
@@ -643,15 +643,20 @@
           if (isDoublePress(lastPress, press)) {
             var snap = lastPress.sel;
             lastPress = null;
-            var saved = snap ? null : savedNoteAt(press.x, press.y);
-            if (!snap && !saved) return;
+            if (!snap) return; // no selection: the browser selects a word
             e.preventDefault();
-            if (snap) openComposer(snap);
-            else openComposer(saved, saved);
+            var saved = savedNoteAt(press.x, press.y);
+            if (saved) openComposer(saved, saved);
+            else openComposer(snap);
             return;
           }
-          if (btn.style.display === "block" && pending) {
-            if (pointInSelection(press.x, press.y)) press.sel = pending;
+          // Measured from the live selection, not `pending`, which lags
+          // moving touch handles by the selectionchange debounce.
+          if (
+            btn.style.display === "block" &&
+            pointInSelection(press.x, press.y)
+          ) {
+            press.sel = selectorFromRange(window.getSelection().getRangeAt(0));
           }
           lastPress = press;
         },

@@ -1,5 +1,5 @@
 // ABOUTME: Real-browser check of double-click in the annotate tool: inside the selection it opens the note box for
-// ABOUTME: that selection, on a saved note it opens the note to edit, elsewhere it keeps the browser's word select.
+// ABOUTME: that selection (or the saved note on that spot, to edit); elsewhere it keeps the browser's word select.
 
 import { type Page, expect, test } from "./base-test";
 
@@ -59,9 +59,9 @@ test.describe("annotate double-click", () => {
   });
 
   test("inside the selection opens the note box for the whole selection", async ({ page }) => {
-    const at = await wordPoint(page, 0);
     const quote = await selectParagraph(page, 0);
     await expect(page.locator("#blog-annot-btn")).toBeVisible();
+    const at = await wordPoint(page, 0);
     await page.mouse.dblclick(at.x, at.y);
     await expect(page.locator("#blog-annot-text")).toBeFocused();
     await expect(page.locator("#blog-annot-card blockquote")).toHaveText(quote);
@@ -72,18 +72,18 @@ test.describe("annotate double-click", () => {
   });
 
   test("a single click inside the selection does not open it", async ({ page }) => {
-    const at = await wordPoint(page, 0);
     await selectParagraph(page, 0);
     await expect(page.locator("#blog-annot-btn")).toBeVisible();
+    const at = await wordPoint(page, 0);
     await page.mouse.click(at.x, at.y);
     await page.waitForTimeout(600);
     await expect(page.locator("#blog-annot-modal")).toBeHidden();
   });
 
   test("outside the selection it selects a word as usual", async ({ page }) => {
-    const p1 = await wordPoint(page, 1);
     await selectParagraph(page, 0);
     await expect(page.locator("#blog-annot-btn")).toBeVisible();
+    const p1 = await wordPoint(page, 1);
     await page.mouse.dblclick(p1.x, p1.y);
     await expect(page.locator("#blog-annot-btn")).toBeVisible();
     await expect(page.locator("#blog-annot-modal")).toBeHidden();
@@ -94,11 +94,11 @@ test.describe("annotate double-click", () => {
   });
 
   test("with no selection it selects a word, not the last dismissed selection", async ({ page }) => {
-    const at = await wordPoint(page, 0);
     await selectParagraph(page, 0);
     await expect(page.locator("#blog-annot-btn")).toBeVisible();
     await page.evaluate(() => (window.getSelection() as Selection).removeAllRanges());
     await expect(page.locator("#blog-annot-btn")).toBeHidden();
+    const at = await wordPoint(page, 0);
     await page.mouse.dblclick(at.x, at.y);
     await expect(page.locator("#blog-annot-modal")).toBeHidden();
     const word = await page.evaluate(() => String(window.getSelection()));
@@ -107,16 +107,22 @@ test.describe("annotate double-click", () => {
     await expect(page.locator("#blog-annot-card blockquote")).toHaveText(word);
   });
 
-  test("on a saved note it opens that note to edit, and Save replaces it", async ({ page }) => {
-    const at = await wordPoint(page, 0);
+  async function saveNoteOnParagraph(page: Page): Promise<string> {
     const quote = await selectParagraph(page, 0);
     await page.locator("#blog-annot-btn").click();
     await page.locator('#blog-annot-intents button[data-intent="cut"]').click();
     await page.keyboard.type("too long");
     await page.keyboard.press("Control+Enter");
     await expect(page.locator("#blog-annot-modal")).toBeHidden();
-
     await page.waitForTimeout(600);
+    return quote;
+  }
+
+  test("inside a selection over a saved note it opens that note to edit, and Save replaces it", async ({ page }) => {
+    const quote = await saveNoteOnParagraph(page);
+    await selectParagraph(page, 0);
+    await expect(page.locator("#blog-annot-btn")).toBeVisible();
+    const at = await wordPoint(page, 0);
     await page.mouse.dblclick(at.x, at.y);
     await expect(page.locator("#blog-annot-text")).toHaveValue("too long");
     await expect(page.locator("#blog-annot-text")).toBeFocused();
@@ -128,6 +134,17 @@ test.describe("annotate double-click", () => {
       expect.objectContaining({ quote, comment: "too long, cut the middle", intent: "cut" }),
     ]);
     await expect(page.locator("#blog-annot-count")).toHaveText("Review (1)");
+  });
+
+  test("with no selection a saved note is left alone and a word is selected", async ({ page }) => {
+    await saveNoteOnParagraph(page);
+    await expect(page.locator("#blog-annot-btn")).toBeHidden();
+    const at = await wordPoint(page, 0);
+    await page.mouse.dblclick(at.x, at.y);
+    await expect(page.locator("#blog-annot-modal")).toBeHidden();
+    const word = await page.evaluate(() => String(window.getSelection()));
+    expect(word.trim().split(/\s+/)).toHaveLength(1);
+    await expect(page.locator("#blog-annot-btn")).toBeVisible();
   });
 
   test("readers get nothing", async ({ page }) => {
