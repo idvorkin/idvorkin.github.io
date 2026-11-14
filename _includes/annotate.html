@@ -618,8 +618,9 @@
 
         var prevText = ta.value;
         var lastEnterAt = null;
-        ta.addEventListener("input", function (e) {
-          if (e.isComposing) return;
+        // Composing input (phone keyboards, some dictation) is judged too: it
+        // can only trigger a save by appending trailing newlines.
+        ta.addEventListener("input", function () {
           var next = ta.value;
           var atEnd =
             ta.selectionStart === next.length &&

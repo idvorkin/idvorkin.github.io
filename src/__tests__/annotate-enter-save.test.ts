@@ -101,11 +101,11 @@ describe("the composer", () => {
     vi.advanceTimersByTime(20);
     (document.getElementById("blog-annot-btn") as HTMLElement).click();
   }
-  function type(value: string) {
+  function type(value: string, isComposing = false) {
     const ta = textarea();
     ta.value = value;
     ta.setSelectionRange(value.length, value.length);
-    ta.dispatchEvent(new Event("input", { bubbles: true }));
+    ta.dispatchEvent(new InputEvent("input", { bubbles: true, isComposing }));
   }
 
   beforeEach(() => {
@@ -127,6 +127,12 @@ describe("the composer", () => {
     expect(buffer()).toHaveLength(1);
     expect(buffer()[0].comment).toBe("tighten this");
     expect(modalOpen()).toBe(false);
+  });
+
+  it("counts newlines from a keyboard that marks its input as composing", () => {
+    type("dictated note", true);
+    type("dictated note\n\n", true);
+    expect(buffer()).toEqual([expect.objectContaining({ comment: "dictated note" })]);
   });
 
   it("a single Enter stays a line break", () => {
