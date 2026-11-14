@@ -16,10 +16,11 @@ const REGIONS: Record<string, string> = {
 
 async function openPage(page: Page, width = 1280): Promise<void> {
   await page.setViewportSize({ width, height: width === 390 ? 844 : 900 });
-  // Off-site images and scripts are irrelevant here and can stall the load event.
+  // Off-site images are irrelevant here and can stall the load event; keep the
+  // CDN stylesheets and scripts so the page is laid out as readers see it.
   await page.route(
     (url) => url.hostname !== "localhost",
-    (route) => route.abort(),
+    (route) => (route.request().resourceType() === "image" ? route.abort() : route.continue()),
   );
   await page.goto("/physical-pain");
   // summarize-page includes load after the first paint and shift the layout.
