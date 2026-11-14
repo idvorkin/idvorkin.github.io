@@ -724,11 +724,15 @@ Two composition rules from Igor, binding on every future strip:
     can trade one wrong thing for another, so recheck the panel it returns.
     Name every wonky thing you found, and what you did about it, in the job entry.
 - **Flagged is not shipped.** Writing a flaw under a candidate on the sheet is
-  fine for the pick. Once Igor picks it, every flaw flagged on it gets fixed
-  before the PR. If a respin keeps re-adding the flaw, fix it by hand
-  (clone-paint it out with `magick`, or one edit call scoped to that region),
-  then recheck by eye. Igor picked a work-satisfaction hero whose second lever
-  handle had been "noted": "didn't your skill update to say check for weirdness".
+  fine for the pick. Once Igor picks it, try to get rid of every flaw flagged
+  on it before the PR: respin, clone-paint it out with `magick`, or one edit
+  call scoped to that region, then recheck by eye. If the weirdness won't go
+  away, report it. Tell Igor which flaw is still there and what was tried, in
+  the reply and at the top of the PR, and let him decide. Never ship it
+  silently and never call it fixed. Igor picked a work-satisfaction hero whose
+  second lever handle had been "noted": "didn't your skill update to say check
+  for weirdness", then on the rule itself: "it should report that I can't get
+  rid of the weirdness."
 - Never pre-pick. Four options to the Cockpit (`ask.py … --option-image "A=/abs/path.webp"`,
   repeatable; it copies into `assets/asks/<bead-id>/` itself) plus the same
   images attached to a Telegram message, no `--recommend`.
