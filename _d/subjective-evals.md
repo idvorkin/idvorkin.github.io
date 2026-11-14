@@ -3,6 +3,7 @@ layout: post
 title: "Evals With No Right Answer: A Recipe"
 permalink: /subjective-evals
 ai_default_image: true
+mermaid: true
 tags:
   - ai
   - machine-learning
@@ -15,7 +16,9 @@ INSTRUCTIONS FOR CLAUDE — do not render
 - The TODO-for-Igor alerts are Igor's to fill. Don't write his opinions into them.
 -->
 
-Grading a math answer is a string compare. Grading a short story, a show synopsis, or an agent's research report has no answer key, and that's where most of the AI systems people actually want to build live. Cameron Wolfe's talk at AI Engineer NYC is the clearest recipe I've found for that case, so this page is my notes on it, written for people figuring out how to build AI systems: what the point is, the background he sets up, then the recipe as steps you can follow.
+Grading a math answer is a string compare. Grading a short story, a show synopsis, or an agent's research report has no answer key, and that's where most of the AI systems people actually want to build live. An eval exists to answer one question: did this change make the system better? A new prompt, a new model, a new tool for the agent. If the score can't tell a real improvement from a lucky run, it's decoration.
+
+Cameron Wolfe's talk at AI Engineer NYC describes this perfectly, and this page turns it into a recipe for people figuring out how to build AI systems.
 
 {% include ai-slop.html percent="90" %}
 
@@ -24,12 +27,7 @@ Grading a math answer is a string compare. Grading a short story, a show synopsi
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [What is the point?](#what-is-the-point)
-- [Background: why evals are hard](#background-why-evals-are-hard)
-  - [Three reasons, and the one he picks](#three-reasons-and-the-one-he-picks)
-  - [Anatomy of one eval run](#anatomy-of-one-eval-run)
-  - [The verifiability spectrum](#the-verifiability-spectrum)
-  - [The three parts](#the-three-parts)
+- [Why it's hard](#why-its-hard)
 - [The recipe](#the-recipe)
   - [1. Write down what "good" means, with experts](#1-write-down-what-good-means-with-experts)
   - [2. Calibrate the humans](#2-calibrate-the-humans)
@@ -41,53 +39,26 @@ Grading a math answer is a string compare. Grading a short story, a show synopsi
   - [8. A/B test before you ship](#8-ab-test-before-you-ship)
   - [9. Keep watching, feed failures back, repeat](#9-keep-watching-feed-failures-back-repeat)
   - [The whole loop on one line](#the-whole-loop-on-one-line)
+- [What's the point of an eval if it doesn't drive a business outcome?](#whats-the-point-of-an-eval-if-it-doesnt-drive-a-business-outcome)
+- [Human attention: your most precious resource](#human-attention-your-most-precious-resource)
 - [Where I am on this](#where-i-am-on-this)
 - [Watch the talk](#watch-the-talk)
+- [Appendix: useful taxonomy](#appendix-useful-taxonomy)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## What is the point?
+## Why it's hard
 
-An eval exists to answer one question: did this change make the system better? A new prompt, a new model, a new tool for the agent. If the score can't tell a real improvement from a lucky run, it's decoration.
+Wolfe's goal is simple to say: when a score goes up, he wants it to be because the model got better, not because the run got lucky ([12:49](https://youtu.be/zLc8zeGeNaY?t=769)). Three things fight that:
 
-Wolfe's version of the point: he wants to know a higher score means a better model, not a noisier run ([12:49](https://youtu.be/zLc8zeGeNaY?t=769)). The trouble is that everything in an eval wobbles. The agent gives a different answer each run, the test set is small because runs are expensive, and on open-ended work the grader is a model that wobbles too. Stack those and you can't tell whether the agent got better or worse ([3:45](https://youtu.be/zLc8zeGeNaY?t=225)). The talk is a set of moves for getting a decision you can trust out of that mess ([3:55](https://youtu.be/zLc8zeGeNaY?t=235)).
+- The agent is random. Run the same [task](#appendix-useful-taxonomy) twice and you get two different [rollouts](#appendix-useful-taxonomy) ([1:48](https://youtu.be/zLc8zeGeNaY?t=108)).
+- Suites stay small, because a single run of some recent benchmarks costs tens of thousands of dollars ([2:08](https://youtu.be/zLc8zeGeNaY?t=128)).
+- With no answer key, the [grader](#appendix-useful-taxonomy) can't be a function. It becomes an LLM judge or a rubric, so the one deterministic piece turns into a second source of noise ([3:29](https://youtu.be/zLc8zeGeNaY?t=209)).
 
-{% include alert.html content="✏️ TODO for Igor: why this matters to me. What decision was I trying to make the last time an eval let me down?" style="warning" %}
-
-## Background: why evals are hard
-
-### Three reasons, and the one he picks
-
-His slides name three: **scope** (agents do too many kinds of things to cover), **cost** (each test case can be slow or expensive), and **noise** (randomness from several places makes results jump around). He spends the talk on noise ([1:17](https://youtu.be/zLc8zeGeNaY?t=77)).
-
-### Anatomy of one eval run
-
-He walks through a single trial ([1:38](https://youtu.be/zLc8zeGeNaY?t=98)):
-
-1. A suite of tasks.
-2. An agent attempts each one and leaves a trajectory and a final answer. The agent is non-deterministic.
-3. A grader turns the answer into pass or fail.
-
-Because a single run of some recent benchmarks costs tens of thousands of dollars ([2:08](https://youtu.be/zLc8zeGeNaY?t=128)), suites stay small. A small suite plus a random agent already makes a shaky number.
-
-### The verifiability spectrum
-
-Most published evals stick to tasks where the grader is a function: string match, symbolic math check, unit tests. Real work spreads across a range ([2:54](https://youtu.be/zLc8zeGeNaY?t=174)). His slide puts math and competitive programming at the checkable end, instruction following, SWE, workplace tasks and deep research in the middle, and chat and creative writing at the open end.
-
-At the open end the grader has to be an LLM judge or a rubric, so the one deterministic piece of the pipeline becomes a second source of randomness ([3:29](https://youtu.be/zLc8zeGeNaY?t=209)). That's the problem the recipe solves.
-
-### The three parts
-
-The recipe has three parts that feed each other ([3:55](https://youtu.be/zLc8zeGeNaY?t=235)):
-
-- **Human evaluation**: the definition of good.
-- **Offline evaluation**: an automatic judge, cheap enough to run on every idea.
-- **Production monitoring**: what real users do.
+Stack those and you can't tell whether the agent got better or worse ([3:45](https://youtu.be/zLc8zeGeNaY?t=225)). His answer has three parts that feed each other ([3:55](https://youtu.be/zLc8zeGeNaY?t=235)): human evaluation defines good, offline evaluation stands in for the humans cheaply, and production monitoring checks what real users do.
 
 ## The recipe
-
-The slides number it Step One to Step Four. I've split those into smaller steps a builder can tick off.
 
 ### 1. Write down what "good" means, with experts
 
@@ -117,18 +88,29 @@ A worked example of my own, not from the talk: at the usual 95% confidence and 8
 
 ### 4. Build an automatic stand-in for the humans
 
-Humans can't review every experiment, so build an offline proxy ([8:20](https://youtu.be/zLc8zeGeNaY?t=500)). Two flavors:
+Humans can't review every experiment, so build an [offline](#appendix-useful-taxonomy) proxy ([8:20](https://youtu.be/zLc8zeGeNaY?t=500)). Start at the bottom rung:
 
+- **Deterministic grader**: string match, symbolic math check, unit tests ([2:37](https://youtu.be/zLc8zeGeNaY?t=157)). Same answer every time, so use one wherever the task allows ([my scoring rules](/ai-testing#scoring-rules-i-trust)).
 - **LLM judge**: one set of quality guidelines, applied to every task, much like the human reviewers.
 - **Rubric** ([8:57](https://youtu.be/zLc8zeGeNaY?t=537)): a checklist written per task, each item checked on its own. More specific, so more objective. His example is from the [DR Tulu paper](https://arxiv.org/abs/2511.19399), where a deep-research answer about adapting a novel for the screen is graded against a list of concrete things it must contain ([9:09](https://youtu.be/zLc8zeGeNaY?t=549)).
+
+There's a trade-off here that runs through the whole recipe: the more I can trust a grade, the less it can assess. Each rung up handles more complex work and input nobody predefined, and costs trust that I then have to earn back by checking it.
+
+| Grader             | How far I can trust the grade         | How complex a thing it can assess  | Input nobody predefined |
+| ------------------ | ------------------------------------- | ---------------------------------- | ----------------------- |
+| Deterministic code | Fully: same answer every time         | Only what I can write down as code | Breaks                  |
+| Rubric / LLM judge | Only after checking it against humans | Tone, faithfulness, coverage       | Mostly copes            |
+| Calibrated human   | The reference, once raters agree      | Anything an expert can judge       | Copes                   |
+
+That's why the recipe calibrates humans (step 2) before trusting them and grades the judge (step 5) before trusting it.
+
+{% include alert.html content="✏️ TODO for Igor: my example of the trade-off, a grade I trusted too much or a check that couldn't see the problem." style="warning" %}
 
 ### 5. Grade the grader
 
 The judge is a proxy, so check it before trusting it ([9:54](https://youtu.be/zLc8zeGeNaY?t=594)). Take items the calibrated humans scored and you're confident in (he calls them golden data), run the judge on them, and measure agreement: correlation for scores, accuracy for pass/fail.
 
-He mentions a Netflix project he worked on ([writeup](https://netflixtechblog.com/evaluating-netflix-show-synopses-with-llm-as-a-judge-6269251e6f28)) where, he says, the judge's scores were causally linked to viewers abandoning shows ([10:34](https://youtu.be/zLc8zeGeNaY?t=634)). Tying a judge to a business metric is about as strong a check as it gets.
-
-How good is good enough? Depends on how subjective the task is. Use the humans as the bar: aim for the judge to agree with people about as often as people agree with each other ([10:56](https://youtu.be/zLc8zeGeNaY?t=656)). It's the same bar I use in [AI Testing](/ai-testing#humans-dont-agree-either).
+How good is good enough? Depends on how subjective the task is. Use the humans as the bar: aim for the judge to agree with people about as often as people agree with each other ([10:56](https://youtu.be/zLc8zeGeNaY?t=656)). It's the same bar I use in [AI Testing](/ai-testing#humans-dont-agree-either). The strongest check of all ties the judge to a business outcome, which gets [its own section](#whats-the-point-of-an-eval-if-it-doesnt-drive-a-business-outcome).
 
 ### 6. Turn it into a benchmark and report the noise
 
@@ -144,7 +126,7 @@ Report each score with its confidence interval next to it. That's what lets you 
 
 ### 7. Funnel: many offline, few to humans
 
-Run lots of ideas through the offline evals, since they're cheap. Send only the winners to human review for a closer look ([13:11](https://youtu.be/zLc8zeGeNaY?t=791)).
+Run lots of ideas through the offline evals, since they're cheap. Send only the winners to human review for a closer look ([13:11](https://youtu.be/zLc8zeGeNaY?t=791)), because [human attention is the scarcest thing in the loop](#human-attention-your-most-precious-resource).
 
 ### 8. A/B test before you ship
 
@@ -162,6 +144,23 @@ After launch, watch for drift, new failure cases and uses nobody planned for, an
 ### The whole loop on one line
 
 Offline evals screen → humans confirm → A/B test decides → ship → production failures feed the next round. Noise gets fought at every step ([15:46](https://youtu.be/zLc8zeGeNaY?t=946)).
+
+## What's the point of an eval if it doesn't drive a business outcome?
+
+It's easy to lose the forest for the trees. I can spend weeks pushing a judge's agreement with raters up a few more points and forget why I wanted the judge at all. Agreement with humans is a means. The end is the product doing better for the people who use it.
+
+Wolfe's example is a Netflix project he worked on ([writeup](https://netflixtechblog.com/evaluating-netflix-show-synopses-with-llm-as-a-judge-6269251e6f28)), where, he says, the judge's scores were causally linked to viewers abandoning shows ([10:34](https://youtu.be/zLc8zeGeNaY?t=634)). Once a bad score predicts people walking away, the eval is a business metric I can run before launch.
+
+{% include alert.html content="✏️ TODO for Igor: my example of an eval that moved and a business outcome that didn't, or one tied to an outcome that mattered." style="warning" %}
+
+## Human attention: your most precious resource
+
+Every part of this recipe runs on people: experts writing guidelines, raters calibrating, reviewers checking the winners from the funnel. Their attention is the scarcest input, so every human minute should count. Keeping raters motivated has two parts:
+
+- **Make them efficient.** Give them the most powerful tools and never waste their time. The more polished the interface, the more people want to do the work and the more valued they feel.
+- **Make them feel respected.** Show them the impact of their work.
+
+{% include alert.html content="✏️ TODO for Igor: my second reason trailed off when I dictated it: 'It is just hard, and you get this.' Finish the thought, and add an example." style="warning" %}
 
 ## Where I am on this
 
@@ -184,3 +183,34 @@ Cameron Wolfe, staff research scientist at Netflix and author of the Deep (Learn
 - [His post on statistics for LLM evals](https://cameronrwolfe.substack.com/p/stats-llm-evals): power analysis, error bars and resampling in depth
 - [Anthropic's statistical approach to model evals](https://www.anthropic.com/research/statistical-approach-to-model-evals)
 - [Hamel Husain's evals FAQ](https://hamel.dev/blog/posts/evals-faq/) and [Eugene Yan on labeling guidelines](https://eugeneyan.com/writing/labeling-guidelines/), both from his reading list
+
+## Appendix: useful taxonomy
+
+The words the talk and this page lean on, with how they fit together:
+
+```mermaid
+graph TD
+    Task["Task / case<br/>one input from the suite"] --> Rollout["Rollout<br/>one attempt by the agent"]
+    Rollout --> Traj["Trajectory<br/>steps, tool calls, final answer"]
+    Traj --> Grader["Grader<br/>code, rubric, LLM judge or human"]
+    Grader --> Grade["Grade<br/>pass/fail or score"]
+    Grade -->|"K resamples × every task"| Agg["Aggregate<br/>mean ± error bar"]
+```
+
+- **Task (case)**: one input in the eval, with whatever the grader needs to judge the answer.
+- **Eval suite / benchmark**: the set of tasks, versioned so scores stay comparable.
+- **Trial**: one task run end to end, from input to grade ([1:38](https://youtu.be/zLc8zeGeNaY?t=98)).
+- **Rollout**: one attempt by the agent at a task. The agent is random, so two rollouts of the same task differ.
+- **Trajectory**: everything the agent did in a rollout: messages, tool calls, intermediate steps, final answer.
+- **Grader**: whatever turns a trajectory or answer into a grade: code, a rubric, an LLM judge, or a person.
+- **Verifiable task**: one a deterministic grader can check (math, code with tests). Its opposite has no answer key.
+- **LLM judge**: a model grading against general quality guidelines.
+- **Rubric**: a per-task checklist, each item graded on its own.
+- **Golden data**: items humans graded that you trust, used to check the judge.
+- **Meta-evaluation**: grading the grader against golden data.
+- **Resampling**: running the agent or the judge several times per task and averaging to cut noise.
+- **Power analysis**: working out how many tasks you need to detect a difference of a given size.
+- **Offline eval**: graded before launch, on a fixed suite.
+- **Online / production monitoring**: signals from real users after launch: thumbs, session length, abandonment.
+- **A/B test**: the new version against the current one on split live traffic.
+- **Saturation**: when every model aces a benchmark and it stops telling them apart.
