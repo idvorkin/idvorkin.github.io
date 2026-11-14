@@ -10,11 +10,9 @@ redirect_from:
 ai_default_image: true
 ---
 
-There's some probability that there will be no jobs left. Until that point, so long as there are jobs, I'm pretty sure I'll have one.
+If the agent writes the code, reviews the code, and merges the code, what's left for me? I keep landing on three jobs. One: how fast can I iterate on the job to be done and the feedback from the app? Two: how do I keep the code I never look at in a state where agents can keep changing it without breaking stuff? Three: how do I evaluate the AI systems doing the work? The second one isn't about code quality. And I already had a name for it, from a post I wrote long before agents existed.
 
-But if the agent writes the code, reviews the code, and merges the code, what's left for me? I keep landing on three jobs. One: how fast can I iterate on the job to be done and the feedback from the app? Two: how do I keep the code I never look at in a state where agents can keep changing it without breaking stuff? Three: how do I evaluate the AI systems doing the work? The second one isn't about code quality. And I already had a name for it, from a post I wrote long before agents existed.
-
-{% include ai-slop.html percent="80" %}
+{% include alert.html content="There's some probability that there will be no jobs left. Until that point, so long as there are jobs, I'm pretty sure I'll have one." style="info" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -25,7 +23,7 @@ But if the agent writes the code, reviews the code, and merges the code, what's 
   - [What the bar actually demands](#what-the-bar-actually-demands)
 - [Job 3: Evaluate AI systems](#job-3-evaluate-ai-systems)
 - [This is what architecture was always for](#this-is-what-architecture-was-always-for)
-- [The early read](#the-early-read)
+- [What's Left in Engineering: The Early Read](#whats-left-in-engineering-the-early-read)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -85,7 +83,9 @@ So the honest answer to "what's left?" starts with the two things that were alwa
 {% include summarize-page.html src="/design" %}
 {% include summarize-page.html src="/dark-factory" %}
 
-## The early read
+## What's Left in Engineering: The Early Read
+
+{% include alert.html content="There's some probability that there will be no jobs left. Until that point, so long as there are jobs, I'm pretty sure I'll have one." style="info" %}
 
 I will say everybody I know in software engineering is a hell of a lot busier than they were at work, and now has infinite stuff they can do at home. That's my early read on whether there will be jobs left.
 
