@@ -8,11 +8,14 @@ permalink: /storytelling
 redirect_from:
   - /stories
   - /story
+imagefeaturelocal: raccoon-storytelling-puppet-theater.webp
 ---
 
 Facts inform, stories move people. A good story is how an idea gets remembered and retold, so it's worth learning how they work: the structure underneath, where to find them, and the delivery on top. This page is the narrative half of [Writing is Thinking](/writing); explaining and recommending stay over there.
 
 {% include ai-slop.html percent="50" %}
+
+{% include repo_image_float_right.html src="raccoon-storytelling-puppet-theater.webp" alt="The felt raccoon peeking over the top of a wooden puppet theater where a knight puppet faces a green dragon puppet, while a hedgehog and an owl watch from the front" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

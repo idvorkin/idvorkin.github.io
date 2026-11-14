@@ -8,11 +8,14 @@ tags:
 redirect_from:
   - /whats-left-in-engineering
 ai_default_image: true
+imagefeaturelocal: raccoon-whats-left-plan.webp
 ---
 
 If the agent writes the code, reviews the code, and merges the code, what's left for me? I keep landing on three jobs. One: how fast can I iterate on the job to be done and the feedback from the app? Two: how do I keep the code I never look at in a state where agents can keep changing it without breaking stuff? Three: how do I evaluate the AI systems doing the work? The second one isn't about code quality. And I already had a name for it, from a post I wrote long before agents existed.
 
 {% include alert.html content="There's some probability that there will be no jobs left. Until that point, so long as there are jobs, I'm pretty sure I'll have one." style="info" %}
+
+{% include repo_image_float_right.html src="raccoon-whats-left-plan.webp" alt="The felt raccoon in a green PLAN t-shirt studying a blueprint while three small robots lay bricks and swing a hammer on a half-built brick house behind him" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

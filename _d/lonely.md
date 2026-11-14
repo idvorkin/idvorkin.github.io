@@ -5,9 +5,12 @@ tags:
 permalink: /lonely
 redirect_from:
   - /loneliness
+imagefeaturelocal: raccoon-lonely-knocking.webp
 ---
 
 Loneliness isn't being alone. It's the feeling of missing a connection you need, and the danger isn't that it hurts. It's that it barely hurts. Hunger gets louder until you eat; loneliness mostly doesn't, so we drift into isolation without the alarm ever going off. Adam Mastroianni [calls this](https://www.experimental-history.com/p/there-is-no-epidemic-of-loneliness) social scurvy: sailors short on vitamin C withered without ever craving an orange. Friendship used to happen to us anyway. School, work, church, and the neighborhood put the same people in front of us week after week, and friends fell out of that for free. Those machines are mostly gone, so I can't wait until I feel lonely. I have to build the machine myself: the same place, the same people, often enough, for long enough.
+
+{% include repo_image_float_right.html src="raccoon-lonely-knocking.webp" alt="The felt raccoon in a green HELLO t-shirt holding a fresh pie and knocking on an orange door with a warmly lit window" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
