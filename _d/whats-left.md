@@ -10,9 +10,9 @@ redirect_from:
 ai_default_image: true
 ---
 
-If the agent writes the code, reviews the code, and merges the code, what's left for me? I keep landing on two jobs. One: how fast can I iterate on the job to be done and the feedback from the app? Two: how do I keep the code I never look at in a state where agents can keep changing it without breaking stuff? The second one isn't about code quality. And I already had a name for it, from a post I wrote long before agents existed.
+If the agent writes the code, reviews the code, and merges the code, what's left for me? I keep landing on three jobs. One: how fast can I iterate on the job to be done and the feedback from the app? Two: how do I keep the code I never look at in a state where agents can keep changing it without breaking stuff? Three: how do I evaluate the AI systems doing the work? The second one isn't about code quality. And I already had a name for it, from a post I wrote long before agents existed.
 
-{% include ai-slop.html percent="80" %}
+{% include alert.html content="There's some probability that there will be no jobs left. Until that point, so long as there are jobs, I'm pretty sure I'll have one." style="info" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -21,7 +21,9 @@ If the agent writes the code, reviews the code, and merges the code, what's left
 - [Job 2: Keep the code changeable by agents](#job-2-keep-the-code-changeable-by-agents)
   - [The bar moved](#the-bar-moved)
   - [What the bar actually demands](#what-the-bar-actually-demands)
+- [Job 3: Evaluate AI systems](#job-3-evaluate-ai-systems)
 - [This is what architecture was always for](#this-is-what-architecture-was-always-for)
+- [What's Left in Engineering: The Early Read](#whats-left-in-engineering-the-early-read)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
@@ -32,7 +34,7 @@ The code was never the point. Somebody hires the app to do a job - that's the jo
 
 Watch what people do, not what they say. [Desire paths](/product#desire-paths-a-methodology-for-discovering-revealed-preferences) - the worn trails that show up where people walk instead of where the planner drew the sidewalk - are the whole method. The app's feedback is the worn grass: the logs, the feature nobody touches, the workaround everyone uses. The speed of that loop is the thing to optimize now, and the loop is mostly not code.
 
-The uncomfortable corollary is that assessment becomes the bottleneck. If one person can run [200 times the projects](/how-igor-chops#what-happens-when-execution-is-no-longer-the-bottleneck), nobody has 200 times the attention to judge them. Which is why [evals](/ai-testing) matter so much: once the job is written down as a scoring function, the agent can [hill-climb](/hill-climbing) toward it while I look at the result, not the diff.
+The uncomfortable corollary is that assessment becomes the bottleneck. If one person can run [200 times the projects](/how-igor-chops#what-happens-when-execution-is-no-longer-the-bottleneck), nobody has 200 times the attention to judge them. Which is why evals ([job 3](#job-3-evaluate-ai-systems)) matter so much: once the job is written down as a scoring function, the agent can [hill-climb](/hill-climbing) toward it while I look at the result, not the diff.
 
 <!-- TODO(igor): your story. One app where the JTBD/feedback loop was fast, or one where it wasn't and you shipped the wrong job for a month. Swing analyzer? Stack picker? -->
 
@@ -60,17 +62,31 @@ My first attempt at measuring this bar on my own blog is [three deterministic ch
 
 <!-- TODO(igor): your story. Either the time an out-of-context agent change broke something (the 2003 network stack parallel from /chop?), or the time the seams held and an agent made a safe change to code you'd never read. -->
 
+## Job 3: Evaluate AI systems
+
+There's also a third job, which is evaluating AI systems. All that stuff lives in its own posts: [AI Testing](/ai-testing) is how to measure AI, and [AI Eval Tools](/ai-eval-tools) is the software to run it with.
+
+<!-- TODO(igor): link the evals recipe page once it merges -->
+
 ## This is what architecture was always for
 
 Here's the part that made me laugh. I wrote in [Software Design and Architecture](/design), years ago: software is measured in two dimensions, use cases and malleability. Use cases are what the software does for the user. Malleability is how easily you can change it. And malleability is the evaluation function for an architecture, because over the life of a system there will be far more changes than there was original building.
 
-Those are my two jobs. Job 1 is the use-case dimension. Job 2 is malleability. The agents didn't invent a new problem; they removed the typing that was hiding the old one.
+Those are my first two jobs. Job 1 is the use-case dimension. Job 2 is malleability. The agents didn't invent a new problem; they removed the typing that was hiding the old one.
 
 What changed is the price of craft. When writing code was the expensive part, "architecture" was the thing you did in the margins, if the PM let you. Now craft is nearly free, so [architecture beats craft](/chop#the-skills-that-matter-now) by a wider margin every month. What didn't change is the test of a good architecture: a person who didn't write the system and can't hold all of it in their head can still find the one place to make a change and make it safely. That was always the junior engineer. Now it's an agent with no memory of last week, a thousand times a day.
 
-So the honest answer to "what's left?" is the two things that were always the hard part. Picking the job, and keeping the system changeable. We used to bury them under a pile of typing.
+So the honest answer to "what's left?" starts with the two things that were always the hard part. Picking the job, and keeping the system changeable. We used to bury them under a pile of typing.
 
 <!-- TODO(igor): a line on when you first learned the malleability framing (the 2017 Clean Architecture notes? earlier?), so the "years ago" has a real date and a real story behind it. -->
 
 {% include summarize-page.html src="/design" %}
 {% include summarize-page.html src="/dark-factory" %}
+
+## What's Left in Engineering: The Early Read
+
+{% include alert.html content="There's some probability that there will be no jobs left. Until that point, so long as there are jobs, I'm pretty sure I'll have one." style="info" %}
+
+I will say everybody I know in software engineering is a hell of a lot busier than they were at work, and now has infinite stuff they can do at home. That's my early read on whether there will be jobs left.
+
+<!-- TODO(igor): your own example. What are you busier with now, at work and at home, that you couldn't have taken on before agents? -->
