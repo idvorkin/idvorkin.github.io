@@ -38,6 +38,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [Codex, Muse and Grok Through Herdr](#codex-muse-and-grok-through-herdr)
   - [The Dashboard That Arrived](#the-dashboard-that-arrived)
   - [The Review Board: Lavish](#the-review-board-lavish)
+  - [The Red Pen: Send to Larry](#the-red-pen-send-to-larry)
   - [The Gate: no-mistakes](#the-gate-no-mistakes)
   - [On Trial: AgentsView](#on-trial-agentsview)
   - [The 8 Stages of AI Coding](#the-8-stages-of-ai-coding)
@@ -160,6 +161,42 @@ The multi-agent dashboard I once filed under "the future" ([history](/chop-histo
 ### The Review Board: Lavish
 
 When a plan, diff or report is too big to read in a chat scroll, the agent turns it into an HTML page and opens it in [Lavish](https://github.com/kunchenguid/lavish-axi), [Kun Chen's](#kun-chen) editor for agent-made HTML. I click an element or select text, type what to change, and the note goes back to the waiting agent as its next prompt. It's the [review step](#a-typical-chop-session) of every big change, and my daily priorities page lives in one; setup is `npx skills add kunchenguid/lavish-axi --skill lavish`.
+
+### The Red Pen: Send to Larry
+
+Lavish reviews what an agent made for me. My own posts get reviewed on the blog itself, and the loop is three steps:
+
+1. **A PR with a diff.** Every edit is a PR with a preview, and the preview's dev banner has a Diff vs main button that swaps the post for a rendered diff: new words green, cut words struck through.
+2. **Notes on the live page, ideally by voice.** I flip on Comments in the banner, select a line (in the diff or on the page), tap the Comment bubble, and [dictate](#voice-how-i-talk-to-the-agents) what's wrong. One more tap tags it fix, cut, rewrite, expand, check, question or note.
+3. **Send to Larry, and Larry iterates.** The Review pill counts my notes. Send to Larry ships the batch as one message to [Larry](/larry), with the page and the branch attached; he revises the branch and pushes, and I read the new diff and go again.
+
+<div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center">
+<a href="/images/review-flow/review-diff.webp"><img src="/images/review-flow/review-diff.webp" alt="This post's preview in Diff vs main on a phone: the dev banner with the branch and PR number on top, and step 7 of the session list with cut words struck through in red and new words in green" style="max-width:220px;width:100%;border-radius:10px" /></a>
+<a href="/images/review-flow/review-comment.webp"><img src="/images/review-flow/review-comment.webp" alt="The words 'either way my notes' selected inside the diff, with the Comment bubble just under them" style="max-width:220px;width:100%;border-radius:10px" /></a>
+<a href="/images/review-flow/review-intent.webp"><img src="/images/review-flow/review-intent.webp" alt="The note composer: the quoted words, a typed note, and the seven intent chips with rewrite picked" style="max-width:220px;width:100%;border-radius:10px" /></a>
+<a href="/images/review-flow/review-pill.webp"><img src="/images/review-flow/review-pill.webp" alt="The Review pill with one note, a green dot for Larry idle, and the Send to Larry button" style="max-width:300px;width:100%;border-radius:10px" /></a>
+</div>
+
+That note, as Larry gets it (trimmed):
+
+```json
+{
+  "branch": "review-flow-send-to-larry",
+  "annotations": [
+    {
+      "quote": "either way my notes",
+      "prefix": "a blog post gets the red pen; ",
+      "suffix": " go back to the agent as its n",
+      "intent": "rewrite",
+      "note": "Name which is which: Lavish for pages an agent made, the red pen for my posts."
+    }
+  ]
+}
+```
+
+It's step one of my evals recipe, a human reading real output before any automation, pointed at my own writing. The quote plus a few words on each side is what lets Larry find the exact spot in the markdown, and a selection made in the diff drops the struck-out words first, so it anchors like one made on the page. Readers on idvork.in get none of this: no button, no bubble, no network call. The [changelog entry](/changelog#blog-annotate-highlight-and-comment-review-tool) has the mechanics, including the secret-gist fallback and [`blog_review.py`](https://github.com/idvorkin/idvorkin.github.io/blob/main/scripts/blog_review.py), which maps each note to a line.
+
+{% include alert.html content="TODO for Igor: one sentence on what this changed for you. How many notes is a typical pass, and how many rounds before a post is done?" style="warning" %}
 
 ### The Gate: no-mistakes
 
@@ -421,7 +458,7 @@ The loop is the same every time; [The CHOP Shop](/chop#the-loop) has the why, th
 4. **Agent.** An Opus or Fable sub-agent for most things; Codex or Muse through Herdr when I want a different vendor on it; Grok when it's about X.
 5. **Gates.** Pre-commit hooks (`prek`) catch the cheap mistakes. A `pr-checks` skill prints the PR review checklist, with the structural checks as code and the prose checks judged by a model. The [no-mistakes](https://github.com/kunchenguid/no-mistakes) gate runs lint, the site build, the fast tests, and that checklist before the PR opens.
 6. **PR plus preview.** The PR goes to my repo from the agent's fork. A Jekyll serve of the branch runs on the VM, served tailnet-only, and the dev banner at the top shows the PR number and a diff of the page against main, so I review on my phone.
-7. **Review.** For anything bigger than a paragraph the agent builds a [Lavish](https://github.com/kunchenguid/lavish-axi) board: an HTML page I can annotate, and the annotations go back to the agent as the next prompt. A build by one model gets a review pass by a different one.
+7. **Review.** For anything bigger than a paragraph the agent builds a [Lavish](#the-review-board-lavish) board, and a blog post gets [the red pen](#the-red-pen-send-to-larry); either way my notes go back to the agent as its next prompt. A build by one model gets a review pass by a different one.
 8. **Merge.** Mine, on my repos. On the agent org the agent merges and I triage after.
 9. **Close-out.** `pr-hygiene` checks every open PR for unanswered review feedback before the session ends; `learn-from-session` writes the durable lessons back into the conventions; the weekly [changelog](/changelog) picks up the rest.
 
