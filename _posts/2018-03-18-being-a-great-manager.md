@@ -4,7 +4,7 @@ title: "Being the best manager I can be"
 date: "2018-03-18 06:24:17 -0700"
 comments: true
 inprogress: true
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-manager.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-manager-support-felt.webp
 redirect_from:
   - /boss
   - /manager
