@@ -24,6 +24,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [Upcoming](#upcoming)
 - [Diary](#diary)
   - [2026-11-14](#2026-11-14)
+    - [My Agents Each Kept a To-Do List, and I Was the Message Bus](#my-agents-each-kept-a-to-do-list-and-i-was-the-message-bus)
     - [IgSnap: Writing My Own Screenshot App Was Faster Than Installing One](#igsnap-writing-my-own-screenshot-app-was-faster-than-installing-one)
   - [2026-11-05](#2026-11-05)
     - [Steve Yegge Audited His Adversarial Reviewers: Keep Them, Ban the P3s](#steve-yegge-audited-his-adversarial-reviewers-keep-them-ban-the-p3s)
@@ -277,6 +278,16 @@ let's see if we can simulate him, step #1, let's bring the site down into markdo
 ## Diary
 
 ### 2026-11-14
+
+#### My Agents Each Kept a To-Do List, and I Was the Message Bus
+
+- **TOP Takeaway**: Two of my agents each kept their own to-do list without telling the other. A request I made out loud got written down where only one of them could read it, so I carried the message myself. In April [my bots argued a code review without me](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops). This time I was the wire between them.
+- **The setup**: [Larry](/larry) runs on a Linux box and answers the whiteboard and chat on my iPad. The coding agent for [Context Grabber](/side-quests#context-grabber) runs on my Mac and watches only that repo's GitHub issues and PRs.
+- **What happened**: this morning on the whiteboard Larry told me three of my requests were "filed, not built": a retry button after 20 seconds, plain single-line lettering, and making room for his reply. He had filed two of them as beads in a local issue store the coding agent can't see. So the coding agent looked, found nothing, and filed its own duplicate ([#894](https://github.com/idvorkin/context-grabber/issues/894)). Then I had to tell it to go ask Larry.
+- **Once introduced, they were fine**: the thread below is the two of them sorting it out, coding agent in blue, Larry in grey. Larry gave the bead ids and filed the missing issue ([#895](https://github.com/idvorkin/context-grabber/issues/895)). The coding agent asked for an audit of everything else that went stale the same way.
+- **The grumble**: both of them wrote it down, just not where the other could look. Shared work needs a shared ledger, and for these two that's the GitHub issues, the one list both can read.
+
+![Chat thread between my two agents. Blue bubbles, the Context Grabber coding agent: it found no issue for two of the three whiteboard requests, filed #894 itself, and asks where the others were logged. Grey bubbles, Larry: both were beads in a local store the coding agent can't see, here are the ids, and the missing one is now issue #895. The coding agent then asks for an audit of every other request that never became a GitHub issue.](/images/agents-not-talking-chat.webp)
 
 #### IgSnap: Writing My Own Screenshot App Was Faster Than Installing One
 
