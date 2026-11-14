@@ -11,6 +11,7 @@ tags:
   - manager
   - software engineering
   - strategy
+imagefeaturelocal: raccoon-dream-job.webp
 ---
 
 In my dream job, I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break, you might see me juggling, practicing magic, or riding my folding bike—often in the office.
@@ -21,6 +22,8 @@ In my dream job, I learn the customer and business needs and focus the team on d
 I'll update the rest of this page soon.
 {% endcapture %}
 {% include alert.html content=why_now style="warning" %}
+
+{% include repo_image_float_right.html src="raccoon-dream-job.webp" alt="The felt raccoon asleep in a hammock in striped pajamas and a nightcap, dreaming of himself juggling three balls labeled Autonomy, Mastery and Purpose" %}
 
 ## My labels
 
