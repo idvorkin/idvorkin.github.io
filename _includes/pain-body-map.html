@@ -1,0 +1,198 @@
+{%- comment -%} Clickable body-figure opener for /physical-pain. A back view of
+a simple raccoon-eared figure; each tinted zone and its label is one SVG link to
+a section of the page (both shoulders share one link, both knees another). Pure
+links, no script: works without JS, by keyboard (Tab + Enter) and by touch, and
+the normal TOC below stays the fallback. Only body parts the page has a section
+for are drawn. No headings inside, so nothing leaks into the TOC. Used by:
+_d/physical-pain.md {%- endcomment -%}
+<style>
+  .pm {
+    --pm-ink: #1b1f24;
+    --pm-soft: #6b7280;
+    --pm-panel: #f4f5f7;
+    --pm-rule: #d8dbe0;
+    --pm-body: #d9dce1;
+    --pm-hot: #c2410c;
+    --pm-focus: #1d4ed8;
+    border: 1px solid var(--pm-rule);
+    border-radius: 10px;
+    background: var(--pm-panel);
+    color: var(--pm-ink);
+    padding: 10px 14px 12px;
+    margin: 1rem auto 1.25rem;
+    max-width: 420px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .pm {
+      --pm-ink: #e5e7eb;
+      --pm-soft: #9ca3af;
+      --pm-panel: #1f2328;
+      --pm-rule: #3a3f46;
+      --pm-body: #3a4048;
+      --pm-hot: #fb923c;
+      --pm-focus: #93c5fd;
+    }
+  }
+  [data-bs-theme="dark"] .pm {
+    --pm-ink: #e5e7eb;
+    --pm-soft: #9ca3af;
+    --pm-panel: #1f2328;
+    --pm-rule: #3a3f46;
+    --pm-body: #3a4048;
+    --pm-hot: #fb923c;
+    --pm-focus: #93c5fd;
+  }
+  .pm-cap {
+    margin: 0 0 4px;
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--pm-soft);
+  }
+  .pm svg {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .pm-fig {
+    fill: var(--pm-body);
+    stroke: var(--pm-body);
+  }
+  .pm-limb {
+    fill: none;
+    stroke: var(--pm-body);
+    stroke-linecap: round;
+  }
+  .pm-zone {
+    fill: var(--pm-hot);
+    fill-opacity: 0.3;
+    stroke: var(--pm-hot);
+    stroke-width: 1.5;
+    transition:
+      fill-opacity 0.15s,
+      stroke-width 0.15s;
+  }
+  .pm-lead {
+    stroke: var(--pm-soft);
+    stroke-width: 1;
+    stroke-dasharray: 2 3;
+  }
+  .pm svg text.pm-label {
+    fill: var(--pm-ink);
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .pm a {
+    cursor: pointer;
+    outline: none;
+  }
+  .pm a:hover .pm-zone,
+  .pm a:focus-visible .pm-zone {
+    fill-opacity: 0.6;
+    stroke-width: 3;
+  }
+  .pm a:focus-visible .pm-zone {
+    stroke: var(--pm-focus);
+  }
+  .pm a:hover text.pm-label,
+  .pm a:focus-visible text.pm-label {
+    fill: var(--pm-hot);
+    text-decoration: underline;
+  }
+  .pm a:focus-visible text.pm-label {
+    fill: var(--pm-focus);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pm-zone {
+      transition: none;
+    }
+  }
+</style>
+
+<nav class="pm" id="pain-body-map" aria-label="Jump to a body part">
+  <p class="pm-cap">Where does it hurt? Pick a spot.</p>
+  <svg viewBox="-10 0 340 400">
+    <!-- the figure, seen from behind: head with raccoon ears, trunk, limbs -->
+    <g class="pm-fig">
+      <circle cx="146" cy="20" r="8" />
+      <circle cx="174" cy="20" r="8" />
+      <circle cx="160" cy="36" r="20" />
+      <path
+        d="M122 82 Q160 72 198 82 L192 150 Q188 175 192 198 L128 198 Q132 175 128 150 Z"
+        stroke-width="10"
+        stroke-linejoin="round"
+      />
+      <rect x="126" y="190" width="68" height="36" rx="14" />
+      <ellipse cx="140" cy="378" rx="12" ry="7" />
+      <ellipse cx="180" cy="378" rx="12" ry="7" />
+      <circle cx="101" cy="224" r="8" />
+      <circle cx="219" cy="224" r="8" />
+    </g>
+    <g class="pm-limb">
+      <line x1="160" y1="50" x2="160" y2="78" stroke-width="16" />
+      <line x1="120" y1="88" x2="108" y2="152" stroke-width="18" />
+      <line x1="108" y1="152" x2="102" y2="214" stroke-width="14" />
+      <line x1="200" y1="88" x2="212" y2="152" stroke-width="18" />
+      <line x1="212" y1="152" x2="218" y2="214" stroke-width="14" />
+      <line x1="142" y1="214" x2="140" y2="292" stroke-width="26" />
+      <line x1="140" y1="292" x2="140" y2="368" stroke-width="20" />
+      <line x1="178" y1="214" x2="180" y2="292" stroke-width="26" />
+      <line x1="180" y1="292" x2="180" y2="368" stroke-width="20" />
+    </g>
+
+    <a
+      href="#shoulder-pain"
+      data-region="shoulders"
+      aria-label="Shoulders: jump to Shoulder Pain"
+    >
+      <ellipse class="pm-zone" cx="124" cy="88" rx="16" ry="13" />
+      <ellipse class="pm-zone" cx="196" cy="88" rx="16" ry="13" />
+      <line class="pm-lead" x1="213" y1="84" x2="236" y2="70" />
+      <text class="pm-label" x="240" y="74">Shoulders</text>
+    </a>
+
+    <a
+      href="#back-pain"
+      data-region="back"
+      aria-label="Back: jump to Back Pain"
+    >
+      <rect class="pm-zone" x="146" y="96" width="28" height="92" rx="12" />
+      <line class="pm-lead" x1="146" y1="142" x2="90" y2="142" />
+      <text class="pm-label" x="86" y="147" text-anchor="end">Back</text>
+    </a>
+
+    <a
+      href="#rotation-for-stiffness"
+      data-region="hips"
+      aria-label="Hips: jump to Rotation for stiffness"
+    >
+      <ellipse class="pm-zone" cx="140" cy="210" rx="14" ry="12" />
+      <ellipse class="pm-zone" cx="180" cy="210" rx="14" ry="12" />
+      <line class="pm-lead" x1="195" y1="212" x2="236" y2="212" />
+      <text class="pm-label" x="240" y="217">Hips</text>
+    </a>
+
+    <a
+      href="#knee-pain"
+      data-region="knees"
+      aria-label="Knees: jump to Knee Pain"
+    >
+      <circle class="pm-zone" cx="140" cy="292" r="14" />
+      <circle class="pm-zone" cx="180" cy="292" r="14" />
+      <line class="pm-lead" x1="125" y1="292" x2="90" y2="292" />
+      <text class="pm-label" x="86" y="297" text-anchor="end">Knees</text>
+    </a>
+
+    <a
+      href="#the-tendon-problem-no-pain-until-its-too-late"
+      data-region="achilles"
+      aria-label="Achilles tendon: jump to The Tendon Problem"
+    >
+      <ellipse class="pm-zone" cx="140" cy="352" rx="8" ry="14" />
+      <ellipse class="pm-zone" cx="180" cy="352" rx="8" ry="14" />
+      <line class="pm-lead" x1="189" y1="352" x2="236" y2="352" />
+      <text class="pm-label" x="240" y="357">Achilles</text>
+    </a>
+  </svg>
+</nav>
