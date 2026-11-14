@@ -25,6 +25,7 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
 
 - [Concepts](#concepts)
   - [Tracing](#tracing)
+  - [Read the failures before picking metrics](#read-the-failures-before-picking-metrics)
   - [LLM as Judge](#llm-as-judge)
   - [Humans don't agree either](#humans-dont-agree-either)
   - [Scoring rules I trust](#scoring-rules-i-trust)
@@ -59,6 +60,12 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
 
 I started by using LangSmith, but now I use ell, which has it built in.
 
+### Read the failures before picking metrics
+
+The metrics I'd invent at my desk are rarely the ones that matter. So before writing any, I read 100 or so traces and jot a note on each one that went wrong, in my own words, no categories yet. Then I group the notes (qualitative researchers call these two passes open and axial coding), and the three biggest piles become my first evals. When I need more inputs, I generate them along axes I name up front (persona × intent × difficulty × edge case) so coverage is a choice, not luck. The resulting golden set lives in git next to the prompts, because a score is meaningless without the version of the data it came from.
+
+The set never stops growing: every failure I see in production becomes a test case. That's the part that compounds. Prompts and models get swapped every few months; a pile of real failures with checks attached keeps paying.
+
 ### LLM as Judge
 
 Fantastic post on using an [LLM as a judge](https://hamel.dev/blog/posts/llm-judge/).
@@ -82,7 +89,7 @@ So the bar: **trust a judge when it agrees with humans about as well as humans a
 How I'd run one:
 
 - **Label 50–100 outputs myself first** and write down why each fails. The rubric comes from those notes and from the items two of us split on. Shreya Shankar calls this [criteria drift](https://arxiv.org/abs/2404.12272): you need criteria to grade, and grading is how you find them.
-- **Report the judge next to the human number,** as kappa, or as pass and fail rates separately when failures are rare.
+- **Treat the judge like a classifier you're training.** Split my labels into train (few-shot examples), dev (tuning the prompt) and a test set I only look at once. Report its true-positive and true-negative rates separately, next to the human number, because a judge that passes everything scores well when failures are rare. Have it write its critique before a binary verdict, and pin the judge model's version so last month's scores still mean something.
 - **Swap positions** and count only wins that survive both orders. On MT-Bench, GPT-4 kept its verdict after a swap 65% of the time, Claude-v1 24%. And don't reward padding: repeating a list's items in new words fooled GPT-3.5 and Claude-v1 91% of the time.
 - **Route on confidence.** Code takes what it can settle ([rule one](#scoring-rules-i-trust)), a cheap decision model that returns a calibrated 0–1 score takes the clear calls, and only the uncertain middle goes to a big model or a person. [Hightouch audited merged customer identities](https://hightouch.com/blog/llm-judges-identity-resolution) this way, on a synthetic benchmark: anything Jev scored between 30% and 90% went to Claude Opus. That sent 22% up and scored 98.8% against Opus-alone's 99.0%, at $0.88 instead of $3.86 per thousand. Calibration is the catch: GPT-6 Luna beat Jev out of the box, but it's overconfident, so on harder data its hybrid fell to 91.6% while Jev's held 95.3%.
 
@@ -92,11 +99,14 @@ My [pr-checks skill](https://github.com/idvorkin/idvorkin.github.io/tree/main/.c
 
 - **Deterministic checks first.** String matches, git diffs, and my own tools as oracles (toc.py decides whether a TOC is right). They're cheap and give the same answer twice. An LLM judge is opt-in, for the quality the checks can't see, never the default gate.
 - **A judge confirms yes/no assertions, not a 1–5 score.** Hand it specific claims ("the new heading is in the TOC") and have it cite the step it's judging. When it has to rank, make it pairwise, [not a scale](#wrinkle---no-known-answer).
-- **Run each task k times; report pass^k next to pass@k.** pass@k (passed at least once) says the agent can do it; pass^k (passed every time) says I can rely on it. The gap is flakiness.
+- **Run each task k times; report pass^k next to pass@k.** pass@k (passed at least once) says the agent can do it; pass^k (passed every time) says I can rely on it. The gap is flakiness, and it compounds: an agent that succeeds 80% of the time passes five runs in a row only 33% of the time.
+- **Score the parts, not just the answer.** For RAG, grade retrieval (did the right documents come back, and how high) apart from whether the answer stayed faithful to them, or I can't tell which half broke. For agents, grade the trajectory: right tools called, wrong ones avoided, step count, recovery after an error.
+- **Cost per successful task and p95 latency are scores too.** A model that's 2 points better at three times the price per success usually loses.
+- **Check the difference is real.** At n=100 and an 80% pass rate, the 95% interval is about ±8 points, so a 3-point gain between prompts is noise. Run both versions on the same items and use a paired test or a bootstrap before believing it.
 - **Count harness failures apart from agent failures.** A run that died on a blocked command or a sandbox that wouldn't start isn't the model getting it wrong. Mix them and the leaderboard measures my setup.
 - **Test the graders.** A known-good run must pass and a deliberately sloppy one must fail. If your checkers have never failed a bad run on purpose, you don't know that they work.
 
-The assertion, pass^k, and harness rules come from [Yesha Shah's Agentic Evals guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/).
+The assertion, pass^k, and harness rules come from [Yesha Shah's Agentic Evals guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/). The error-analysis-first habit, the judge-as-classifier rules and the statistics come from [a 15-point eval playbook](https://x.com/divaagurlxw/status/2115418017891020888), which ends where I would: gate deploys in CI with a threshold per failure category, keep sampling live traffic, and treat the eval suite as the asset.
 
 ### Testing across prompts
 
