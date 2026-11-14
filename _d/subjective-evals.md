@@ -23,20 +23,18 @@ Did the change make the system better? A new prompt, a new model, a new tool for
 
 This page started from the outline of [Cameron Wolfe's AI Engineer NYC talk](#watch-the-talk), and I've fleshed it out from there for people figuring out how to build AI systems. The talk is highly recommended.
 
-{% include alert.html content="✏️ Draft. I'm still fleshing this out; the TODO-for-Igor boxes are where my own take goes." style="warning" %}
-
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [Why grading is hard](#why-grading-is-hard)
 - [The recipe](#the-recipe)
-  - [1. Write down what "good" means, with experts](#1-write-down-what-good-means-with-experts)
-  - [2. Calibrate the humans](#2-calibrate-the-humans)
-  - [3. Decide how much data, and which data](#3-decide-how-much-data-and-which-data)
+  - [1. Define a policy (aka use experts to decide what good means)](#1-define-a-policy-aka-use-experts-to-decide-what-good-means)
+  - [2. Make sure humans can apply the policy consistently](#2-make-sure-humans-can-apply-the-policy-consistently)
+  - [3. Decide how many cases and what the cases should be](#3-decide-how-many-cases-and-what-the-cases-should-be)
   - [4. Build an automatic stand-in for the humans](#4-build-an-automatic-stand-in-for-the-humans)
   - [5. Grade the grader](#5-grade-the-grader)
   - [6. Turn it into a benchmark and report the noise](#6-turn-it-into-a-benchmark-and-report-the-noise)
-  - [7. Funnel: many offline, few to humans](#7-funnel-many-offline-few-to-humans)
+  - [7. The hill-climbing funnel](#7-the-hill-climbing-funnel)
   - [8. A/B test before you ship](#8-ab-test-before-you-ship)
   - [9. Keep watching, feed failures back, repeat](#9-keep-watching-feed-failures-back-repeat)
   - [The whole loop on one line](#the-whole-loop-on-one-line)
@@ -44,7 +42,6 @@ This page started from the outline of [Cameron Wolfe's AI Engineer NYC talk](#wa
   - [An eval is worth what it predicts](#an-eval-is-worth-what-it-predicts)
   - [Which failures does it catch?](#which-failures-does-it-catch)
 - [Human attention: your most precious resource](#human-attention-your-most-precious-resource)
-- [Where I am on this](#where-i-am-on-this)
 - [Watch the talk](#watch-the-talk)
 - [Appendix: useful taxonomy](#appendix-useful-taxonomy)
 - [Appendix: the statistics, slowly](#appendix-the-statistics-slowly)
@@ -58,33 +55,33 @@ This page started from the outline of [Cameron Wolfe's AI Engineer NYC talk](#wa
 
 ## Why grading is hard
 
-When a score goes up, I want it to be because the system got better, not because the run got lucky ([12:49](https://youtu.be/zLc8zeGeNaY?t=769)). Three things fight that:
+A grade is only useful if a higher score means a better system ([12:49](https://youtu.be/zLc8zeGeNaY?t=769)). With no right answer, three things get in the way:
 
-- The agent is random. Run the same [task](#appendix-useful-taxonomy) twice and you get two different [rollouts](#appendix-useful-taxonomy) ([1:48](https://youtu.be/zLc8zeGeNaY?t=108)).
-- Suites stay small, because a single run of some recent benchmarks costs tens of thousands of dollars ([2:08](https://youtu.be/zLc8zeGeNaY?t=128)).
-- With no answer key, the [grader](#appendix-useful-taxonomy) can't be a function. It becomes an LLM judge or a rubric, so the one deterministic piece turns into a second source of noise ([3:29](https://youtu.be/zLc8zeGeNaY?t=209)).
+- **The same task gives different outputs.** Run one [task](#appendix-useful-taxonomy) twice and you get two different [rollouts](#appendix-useful-taxonomy) ([1:48](https://youtu.be/zLc8zeGeNaY?t=108)). So the grade from one run is partly luck.
+- **You can only afford a few cases.** A single run of some recent benchmarks costs tens of thousands of dollars ([2:08](https://youtu.be/zLc8zeGeNaY?t=128)), so suites stay small. With few cases the luck doesn't average out, and the [error bar](#error-bars) on the grade stays wide.
+- **The grader is noisy too.** With no answer key, the [grader](#appendix-useful-taxonomy) can't be a function. It's a rubric or an LLM judge, so the one deterministic piece turns into a second source of noise ([3:29](https://youtu.be/zLc8zeGeNaY?t=209)). The grade can move when the output didn't.
 
 Stack those and you can't tell whether the agent got better or worse ([3:45](https://youtu.be/zLc8zeGeNaY?t=225)). The fix has three parts that feed each other ([3:55](https://youtu.be/zLc8zeGeNaY?t=235)): human evaluation defines good, offline evaluation stands in for the humans cheaply, and production monitoring checks what real users do.
 
 ## The recipe
 
-### 1. Write down what "good" means, with experts
+### 1. Define a policy (aka use experts to decide what good means)
 
-Before any automation, set up human review, because it's the reference everything else gets checked against ([4:30](https://youtu.be/zLc8zeGeNaY?t=270)). Sit with a few people who know the domain and write quality guidelines:
+Before any automation, set up human review, because it's the reference everything else gets checked against ([4:30](https://youtu.be/zLc8zeGeNaY?t=270)). Sit with a few people who know the domain and write the policy, the quality guidelines that say what good means:
 
 - a short list of criteria,
 - how each one is scored (yes/no or a 1–5 scale),
 - lots of detail and worked examples, so a stranger would score the same way.
 
-### 2. Calibrate the humans
+### 2. Make sure humans can apply the policy consistently
 
-Don't assume the guidelines work. Have several people score the same items, measure how often they agree, and rewrite the guidelines wherever they split ([5:26](https://youtu.be/zLc8zeGeNaY?t=326)). Repeat until agreement is high. Kappa and its cousins measure it ([the statistics, slowly](#agreement-kappa-and-friends)), and [Humans don't agree either](/ai-testing#humans-dont-agree-either) shows how low human agreement runs in practice.
+That takes three things: training the humans, a good policy, and unambiguous definitions. Don't assume the policy works. Have several people score the same cases, measure how often they agree, and rewrite the policy wherever they split ([5:26](https://youtu.be/zLc8zeGeNaY?t=326)). Repeat until agreement is high. Kappa and its cousins measure it ([the statistics, slowly](#agreement-kappa-and-friends)), and [Humans don't agree either](/ai-testing#humans-dont-agree-either) shows how low human agreement runs in practice.
 
-### 3. Decide how much data, and which data
+### 3. Decide how many cases and what the cases should be
 
-**How much**: power analysis tells you how many items you need: pick the smallest improvement worth catching, measure how noisy the scores are, and choose how sure you want to be ([6:23](https://youtu.be/zLc8zeGeNaY?t=383)). With typical noise, catching a 5-point gain on a 0–100 scale takes several hundred items, and halving the gap you want to see quadruples the count; [the statistics, slowly](#how-many-items-power-analysis) walks through it.
+**How many cases**: power analysis tells you how many you need (the statistics appendix calls a case an item): pick the smallest improvement worth catching, measure how noisy the scores are, and choose how sure you want to be ([6:23](https://youtu.be/zLc8zeGeNaY?t=383)). With typical noise, catching a 5-point gain on a 0–100 scale takes several hundred cases, and halving the gap you want to see quadruples the count; [the statistics, slowly](#how-many-items-power-analysis) walks through it.
 
-**Which data** ([7:12](https://youtu.be/zLc8zeGeNaY?t=432)): items that look like production traffic and cover its variety, hard enough that different models get different scores (find them by sampling a few models and seeing what they fail), and correct, cleaned with a mix of model and human filtering. This applies to every eval set, not only the human one.
+**What cases** ([7:12](https://youtu.be/zLc8zeGeNaY?t=432)): ones that look like production traffic and cover its variety, hard enough that different models get different scores (find them by sampling a few models and seeing what they fail), and correct, cleaned with a mix of model and human filtering. This applies to every eval set, not only the human one.
 
 ### 4. Build an automatic stand-in for the humans
 
@@ -131,9 +128,9 @@ Now both the agent and the grader are random ([11:48](https://youtu.be/zLc8zeGeN
 
 Report each score with its confidence interval next to it. That's what lets you say version B beat version A rather than got luckier.
 
-### 7. Funnel: many offline, few to humans
+### 7. The hill-climbing funnel
 
-Run lots of ideas and experiments through the offline evals, since they're cheap: a rubric versus a general judge, the same judge on different models, several judges voting, a new prompt or a new model for the agent. Send only the winners to human review for a closer look ([13:11](https://youtu.be/zLc8zeGeNaY?t=791)), because [human attention is the scarcest thing in the loop](#human-attention-your-most-precious-resource).
+Run lots of ideas and experiments through the offline evals, since they're cheap: a rubric versus a general judge, the same judge on different models, several judges voting, a new prompt or a new model for the agent. This is [hill climbing](/hill-climbing): try a change, keep it if the score went up, throw it out if it didn't. If none of your experiments are failing, you're doing something wrong. Send only the winners to human review for a closer look ([13:11](https://youtu.be/zLc8zeGeNaY?t=791)), because [human attention is the scarcest thing in the loop](#human-attention-your-most-precious-resource).
 
 ### 8. A/B test before you ship
 
@@ -162,7 +159,11 @@ A Netflix project ([writeup](https://netflixtechblog.com/evaluating-netflix-show
 
 ### Which failures does it catch?
 
-An eval is a classifier too: it flags a change as bad or lets it through, and it can be wrong in two ways.
+Not every failure is equal. If an eval fails on some obscure failure mode, nobody really cares. The bonus is when the cases it fails are ones humans take notice of.
+
+There's a political side to this. When a business leader sees the failure, they should really care.
+
+The eval itself can be wrong in two ways: it flags a change that was fine, or it lets a bad one through.
 
 |                   | Eval flags it   | Eval lets it through |
 | ----------------- | --------------- | -------------------- |
@@ -181,16 +182,6 @@ Every part of this recipe runs on people: experts writing guidelines, raters cal
 2. **Show them the impact of their work.** What their labels changed, which launch they unblocked.
 
 {% include alert.html content="✏️ TODO for Igor: my second reason trailed off when I dictated it: 'It is just hard, and you get this.' Finish the thought, and add an example." style="warning" %}
-
-## Where I am on this
-
-My own evals are small: [my benchmark evals](/ai-testing#my-benchmark-evals) grade an agent's blog edits with deterministic checkers and an LLM judge layered on top, and [AI Eval Tools](/ai-eval-tools) covers what I run them with.
-
-{% include alert.html content="✏️ TODO for Igor: which of the nine steps do I actually do today, and which do I skip?" style="warning" %}
-
-{% include alert.html content="✏️ TODO for Igor: does this shrink to a solo builder? What would stand in for the expert panel (steps 1–2) and the A/B test (step 8)?" style="warning" %}
-
-{% include alert.html content="✏️ TODO for Igor: where I disagree with the talk, or what I'd add." style="warning" %}
 
 ## Watch the talk
 
