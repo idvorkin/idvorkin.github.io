@@ -20,6 +20,7 @@ In my dream job, I learn the customer and business needs and focus the team on d
 
 - **Autonomy:** there's a ton of it in my current role.
 - **Mastery:** I'm building my skills for a new, AI-native world of very high tail intensity. I can't turn around without [learning something](/whats-left):
+  - **Instantiating at the speed of thought.** The gap between "I wish this existed" and using it is collapsing, and closing it is a skill. I wanted a Flameshot-style screenshot tool; 45 minutes and about 140 words from me later, [IgSnap was in my Alfred](/ai-journal#igsnap-writing-my-own-screenshot-app-was-faster-than-installing-one). I wrote no code and read none.
   - Force-multiplying my technical work with AI.
   - Force-multiplying my thinking and strategy work, not just my code.
   - Learning how to test in the non-deterministic AI world.
