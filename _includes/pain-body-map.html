@@ -86,6 +86,9 @@ _d/physical-pain.md {%- endcomment -%}
   .pm a {
     cursor: pointer;
     outline: none;
+    /* SVG paints the site's link underline with the link's own fill, so
+       match it to the label color or it shows black in dark mode. */
+    fill: var(--pm-ink);
   }
   .pm a:hover .pm-zone,
   .pm a:focus-visible .pm-zone {
