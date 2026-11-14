@@ -233,7 +233,6 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
     .float-wrap > figure { position: sticky; top: 1rem; width: 100%; max-width: calc((100vh - 2rem - 7.5rem) * 1.1); justify-self: center; }
     .float-panel { max-height: calc(100vh - 2rem); overflow-y: auto; position: sticky; top: 1rem; padding-right: .25rem; }
     .float-panel #dial-list, .float-panel #toggle-cols, .float-panel #custom-cols { grid-template-columns: minmax(0, 1fr); }
-    .float-panel #tolerance-box { margin-bottom: .25rem; }
   }
   .float-panel .rounded-box { padding: .5rem .75rem; }
   #water-front-g, #zones, #wlabel-float, #float-fx { pointer-events: none; }
@@ -267,6 +266,13 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
   .drag-ghost { position: fixed; z-index: 100; pointer-events: none; transform: translate(-50%, -50%) scale(1.1); }
   /* the how-to is a caption under the scene: as an overlay it sat on top of the balloons and their labels */
   .float-caption { margin: .5rem 0 0; text-align: center; font: 15px/1.3 "Patrick Hand", ui-rounded, system-ui, sans-serif; opacity: .8; text-wrap: balance; }
+  /* stress tolerance: one short row between the caption and More controls, always in view */
+  .tolerance-row { display: flex; align-items: center; gap: .5rem; max-width: 26rem; margin: .5rem auto 0; padding: 0 .25rem;
+    font: 16px/1.2 "Patrick Hand", ui-rounded, system-ui, sans-serif; }
+  .tolerance-row .tol-label { font-weight: 700; white-space: nowrap; }
+  .tolerance-row .tol-end { font-size: 14px; opacity: .7; flex: none; }
+  .tolerance-row input { flex: 1; min-width: 6rem; }
+  html.embed-float .float-wrap.side .tolerance-row { margin-top: 0; margin-bottom: .75rem; }
   /* everything past the two core moves (add a balloon, add a weight) is behind one disclosure */
   #more > summary { display: flex; align-items: center; justify-content: center; gap: .4rem; width: fit-content; min-height: 2.25rem; margin: .5rem auto 0; padding: 0 1rem;
     border-radius: 999px; border: 1px solid color-mix(in oklab, var(--color-base-content) 25%, transparent); font-size: .9rem; font-weight: 600; cursor: pointer;
@@ -461,6 +467,16 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
     </figure>
     <div class="float-panel" id="float-panel">
     <p class="float-caption" id="float-caption">Tap a tag to add it &middot; drag it back to a strip to take it off &middot; hold a balloon to pump it up</p>
+    <!-- stress tolerance: the only thing that moves the water. It sits outside More controls, on one short row, so the
+         reader finds it without opening anything (Igor, 2026-11-14: "dedicate a small part of the UI to a stress
+         tolerance slider"). Horizontal on purpose: a vertical range needs touch-action: none, and that traps a swipe. -->
+    <div class="tolerance-row" id="tolerance-box">
+      <label class="tol-label" for="tolerance">Stress tolerance</label>
+      <span class="tol-end" aria-hidden="true">low</span>
+      <input id="tolerance" type="range" min="0" max="100" step="1" value="71" class="range range-xs dial-range" aria-describedby="tolerance-help">
+      <span class="tol-end" aria-hidden="true">high</span>
+      <p id="tolerance-help" class="sr-only">Moves the waterline. Same balloons and weights, but someone with lower tolerance goes under sooner.</p>
+    </div>
     <details id="more">
     <summary>More controls</summary>
 
@@ -472,13 +488,6 @@ description: "Two interactive ideas: how high you float (balloons lift you, weig
     </div>
     <p class="sr-only" id="float-live" aria-live="polite"></p>
 
-    <!-- stress tolerance: the only thing that moves the water -->
-    <div class="rounded-box bg-base-200" id="tolerance-box">
-      <div class="flex items-baseline justify-between gap-2"><label class="font-semibold" for="tolerance">Stress tolerance</label><span class="text-xs opacity-75" id="tolerance-val">typical</span></div>
-      <input id="tolerance" type="range" min="0" max="100" step="1" value="71" class="range range-xs w-full mt-2 dial-range" aria-describedby="tolerance-help">
-      <div class="flex justify-between text-xs opacity-60 mt-1" aria-hidden="true"><span>&larr; low (water high)</span><span>high (water low) &rarr;</span></div>
-      <p id="tolerance-help" class="sr-only">Moves the waterline. Same balloons and weights, but someone with lower tolerance goes under sooner.</p>
-    </div>
 
     <!-- dials: two-sided items -->
     <fieldset class="mt-4" id="dials">
@@ -2253,12 +2262,12 @@ window.FX = (function () {
   function setState(dials, toggles) { DIALS.forEach(function (d, i) { d.value = dials[i]; }); TOGGLES.forEach(function (t, i) { t.on = toggles[i]; }); update(); }
   $('preset-both').addEventListener('click', function () { setState([2, 2, 2, -3], TOGGLES.map(function (t) { return !t.custom; })); });
   $('preset-neither').addEventListener('click', function () { setState([0, 0, 0, 0], TOGGLES.map(function () { return false; })); });
-  $('preset-reset').addEventListener('click', function () { TOGGLES.forEach(function (t) { t.size = t.size0; }); $('tolerance').value = 71; WATER = waterOf(29); $('tolerance-val').textContent = 'typical'; $('tolerance').value = 71; WATER = waterOf(29); $('tolerance-val').textContent = 'typical'; setState(DIALS.map(function (d) { return d.start; }), TOGGLES.map(function (t) { return t.start; })); });
+  $('preset-reset').addEventListener('click', function () { TOGGLES.forEach(function (t) { t.size = t.size0; }); setTolerance(71); setState(DIALS.map(function (d) { return d.start; }), TOGGLES.map(function (t) { return t.start; })); });
   // stress tolerance: one slider that only raises or lowers the water (and the zone bands ride with it)
   function setTolerance(t) {
     $('tolerance').value = t; WATER = waterOf(100 - t);
     var word = t < 34 ? 'low' : t > 85 ? 'high' : 'typical';
-    $('tolerance-val').textContent = word; $('tolerance').setAttribute('aria-valuetext', word + ' tolerance');
+    $('tolerance').setAttribute('aria-valuetext', word + ' tolerance');
     update();
   }
   $('tolerance').addEventListener('input', function () { setTolerance(+this.value); });
@@ -2339,7 +2348,7 @@ window.FX = (function () {
     // the way position: sticky would.
     (function () {
       var main = document.querySelector('main'), wrap = document.getElementById('float-wrap'), panel = document.getElementById('float-panel'),
-          fig = document.getElementById('float-figure'), box = fig.querySelector('.scene-box'), view = null, side = false, GAP = 8, lastH = 0;
+          fig = document.getElementById('float-figure'), view = null, side = false, GAP = 8, lastH = 0;
       function sendHeight() {
         var h = Math.ceil(main.getBoundingClientRect().bottom + scrollY);
         if (h !== lastH) { lastH = h; parent.postMessage({ afloat: 'height', h: h }, '*'); }
@@ -2350,7 +2359,9 @@ window.FX = (function () {
         var vh = view ? view.vh : innerHeight, W = wrap.clientWidth, open = more.open;
         side = open && W >= 660;
         wrap.classList.toggle('side', side);
-        var avail = side ? W - 290 - 16 : W, strips = fig.offsetHeight - box.offsetHeight;
+        // the strips by their own heights: fig minus box rounds each one separately, and the 1px it wobbles by
+        // fed back through the ResizeObserver into a scene that never stopped resizing
+        var avail = side ? W - 290 - 16 : W, strips = document.getElementById('strip-top').offsetHeight + document.getElementById('strip-bottom').offsetHeight;
         var budget = side ? vh - 2 * GAP - strips : open ? vh * 0.5 : vh - 2 * GAP - strips - panel.offsetHeight;
         budget = Math.max(budget, 300);   // a phone on its side: let the scene run past one screen rather than shrink to a stamp
         var w = Math.min(avail, budget * 1.1, 680), narrow = w < 500;
