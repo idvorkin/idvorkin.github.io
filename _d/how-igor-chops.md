@@ -2,7 +2,7 @@
 layout: post
 title: "Mumbling on My Couch: My CHOP Setup"
 permalink: /how-igor-chops
-imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_100048.webp
+imagefeaturelocal: raccoon-chop-wood-felt.webp
 mermaid: true
 tags:
   - ai
@@ -18,7 +18,7 @@ redirect_from:
 
 I mumble to Claude on my couch while my family wonders who I'm talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the models, the tools, the machines, and what I've learned. The ideas behind it are in [The CHOP Shop](/chop); how it got this way is in [The CHOP Shop, 2024 to 2026](/chop-history).
 
-{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_100048.webp" %}
+{% include local_image_float_right.html src="raccoon-chop-wood-felt.webp" alt="Felt raccoon in rainbow glasses and an Always Vibing shirt, an ax on one shoulder, one foot on a stump as a log splits in two and wood chips fly" %}
 
 {% include ai-slop.html percent="50" %}
 
