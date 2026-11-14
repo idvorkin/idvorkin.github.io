@@ -16,17 +16,7 @@ tags:
 In my dream job, I learn the customer and business needs and focus the team on delivering them in a sustainable manner. Simultaneously, I help team members grow, develop our culture, and build valuable tech. When talking to others I prefer a couch to a table, and when I need a break, you might see me juggling, practicing magic, or riding my folding bike—often in the office.
 
 {% capture why_now %}
-**This page is currently stale.** I've always said EMs should periodically do a [rotation as a tech lead](/software-leadership-roles), and with AI changing the world this fast, I'm very excited to be a tech lead in the AI safety space right now. It [checks every box](/manager-book#l-motivation):
-
-- **Autonomy:** there's a ton of it in my current role.
-- **Mastery:** I'm building my skills for a new, AI-native world of very high tail intensity. I can't turn around without [learning something](/whats-left):
-  - Force-multiplying my technical work with AI.
-  - Force-multiplying my thinking and strategy work, not just my code.
-  - Learning how to test in the non-deterministic AI world.
-  - Coaching and training others to use AI.
-  - Learning how to make AI usage multiplayer.
-- **Purpose:** I'm making it so grandma can run a personal agent without fear of it doing something stupid.
-- **And we're redefining the industry.**
+**This page is currently stale.** I've always said EMs should periodically do a [rotation as a tech lead](/software-leadership-roles), and with AI changing the world this fast, I'm very excited to be a tech lead in the AI safety space right now. It [checks every box](/manager-book#l-motivation): [Autonomy](#autonomy), [Mastery](#mastery), and [Purpose](#purpose). **And we're redefining the industry.**
 
 I'll update the rest of this page soon.
 {% endcapture %}
@@ -115,6 +105,8 @@ With 25+ years of experience, I'm both content and confident with my career stag
 
 ### Autonomy
 
+There's a ton of it in my current role.
+
 - Getting to work with amazing people
 - Getting to set a sustainable pace
 - Picking side projects to invest in
@@ -130,15 +122,22 @@ NOTE: Things I want my boss to do **that do not feel like** a lack of autonomy f
 
 ### Mastery
 
+I'm building my skills for a new, AI-native world of very high tail intensity. I can't turn around without [learning something](/whats-left).
+
 - Dedicated time to retool/think
 - Growth in core EM skills (From team to organization):
   - Hiring
   - People Growth
   - New manager mentoring
 - Grow technical:
+  - Force-multiplying my technical work with AI.
+  - Force-multiplying my thinking and strategy work, not just my code.
+  - Learning how to test in the non-deterministic AI world.
+  - Learning how to make AI usage multiplayer.
   - Play with new AI models/paradigms
   - Play with new tools (now all AI-assist, Python/data libraries)
   - Contribute to open source
+- Coaching and training others to use AI.
 - Growth as presenter:
   - I need to give talks, make vertical short form videos!
   - I love mixing magic and tech presentations
@@ -146,6 +145,8 @@ NOTE: Things I want my boss to do **that do not feel like** a lack of autonomy f
   - I really value when my boss brings me opportunities for the above.
 
 ### Purpose
+
+I'm making it so grandma can run a personal agent without fear of it doing something stupid.
 
 - People Axis: Grow team + Help org + Mentor others
 - Product Impact: Well-being, reduce loneliness, build relationships
