@@ -8,7 +8,7 @@ redirect_from:
   - /stages
   - /life-stages
   - /life-chapters
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-chapters.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-chapters-four-ages.webp
 ---
 
 Our lives are stories, containing many different chapters. However, regardless of what is in the chapters, we all go through life stages, being young, growing up, getting old, etc. What you need as a 22-year-old, and what you need as a 42-year-old sure are different. I think our lives are both chapters in terms of the plot, but also in terms of the stages of life.
@@ -38,7 +38,7 @@ Our lives are stories, containing many different chapters. However, regardless o
 
 ## The western model
 
-![Four raccoon characters representing different life stages: young raccoon in overalls and sneakers (youth), business casual raccoon with briefcase (young adult), professional raccoon in suit (career-focused adult), and elder raccoon with walking cane and coat (wisdom/retirement) - illustrating the progression through life's chapters](https://github.com/idvorkin/blob/raw/master/blog/racoon-chapters.webp)
+![Four felt raccoons in rainbow glasses walking in a line from youngest to oldest: a child in overalls and sneakers, a young adult with a loose tie and a satchel, a grown-up in a grey suit, and a grey-bearded elder in a long coat with a cane and a briefcase](https://github.com/idvorkin/blob/raw/master/blog/raccoon-chapters-four-ages.webp)
 
 Each decade brings its own unique combination of resources and learnings:
 

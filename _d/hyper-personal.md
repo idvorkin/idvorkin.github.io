@@ -2,7 +2,7 @@
 layout: post
 title: "Hyper Personalization"
 permalink: "/hyper-personal"
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/hyper-personal-hero.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-hyper-personal-bespoke.webp
 redirect_from:
   - /hyper-personalization
   - /bespoke-everything
@@ -12,7 +12,7 @@ tags:
 
 Jeff Bezos has always had a personal chef who knows he hates capers but loves dill. A butler. A tailor with his measurements. A physician who's known his family for years. None of this is new — Vanderbilts had the same staff a century ago. The middle class had pieces of it — your tailor knew your sleeve, your barber knew your part, your family doctor remembered your kids' names — and the poor had almost none: generic clothes, generic schools, generic medicine. The desire was universal; what gated it was cost. Human attention scales 1:1 with each customer — a butler who tracks 47 people equally well doesn't exist — so personalization stayed scarce, concentrated where the money was, thin everywhere else.
 
-{% include blob_image_float_right.html src="blog/hyper-personal-hero.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-hyper-personal-bespoke.webp" alt="Felt raccoon in a top hat, rainbow glasses and a Bespoke shirt sipping tea in a leather armchair while three small raccoons attend: a butler pouring tea, a chef with a covered dish, and a tailor measuring his shoe" %}
 
 **The big shift is the price.** AI dropped the marginal cost of personal attention through the floor. The world Bezos paid for is becoming the everyone-default — same staff, at the cost of a query. And the AI version goes further than Bezos's staff ever could: even his chef didn't know how his blood sugar responded to last week's pasta, his trainer didn't see his HRV trend, his physician couldn't pattern-match across a decade of journal-and-location data. Hyper-personalization isn't just democratizing the old kind. It's reaching into dimensions that didn't exist at any price.
 
