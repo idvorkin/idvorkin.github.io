@@ -68,9 +68,23 @@ test.describe("Staying Afloat stress tolerance", () => {
     await expect(page.locator("#zone-val")).toHaveText("thriving");
   });
 
+  test("a swipe the page takes leaves the water where it was", async ({ page }) => {
+    await page.goto(EMBED);
+    const tol = page.locator("#tolerance");
+    // what a finger landing on the track does before the browser decides it's a scroll: jump, then cancel
+    await tol.evaluate((el) => {
+      const input = el as HTMLInputElement;
+      input.dispatchEvent(new PointerEvent("pointerdown", { bubbles: true }));
+      input.value = "20";
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+      input.dispatchEvent(new PointerEvent("pointercancel", { bubbles: true }));
+    });
+    await expect(tol).toHaveValue("71");
+  });
+
   test("shows under the picture in the post", async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto("/staying-afloat");
+    await page.goto("/staying-afloat", { waitUntil: "domcontentloaded" });
     const frame = page.frameLocator("iframe.afloat-embed");
     await expect(frame.locator("#tolerance")).toBeVisible();
     await expect(frame.locator("#more")).not.toHaveAttribute("open", "");

@@ -2271,6 +2271,12 @@ window.FX = (function () {
     update();
   }
   $('tolerance').addEventListener('input', function () { setTolerance(+this.value); });
+  // A thumb that lands on the track jumps the value before the browser knows it's a scroll. The slider is always in
+  // view now, so a swipe that starts on it would move the water: when the page takes the gesture, put it back.
+  var tolAtDown = null;
+  $('tolerance').addEventListener('pointerdown', function () { tolAtDown = +this.value; });
+  $('tolerance').addEventListener('pointercancel', function () { if (tolAtDown !== null) setTolerance(tolAtDown); tolAtDown = null; });
+  $('tolerance').addEventListener('pointerup', function () { tolAtDown = null; });
 
   // ---------- camera: a tight frame that follows the figure but keeps the waterline in view when it can ----------
   // A small scene gets the narrow framing (a 480-wide view, bigger labels). Standalone that's a phone viewport;
