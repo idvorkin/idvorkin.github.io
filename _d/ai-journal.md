@@ -23,6 +23,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-11-14](#2026-11-14)
+    - [IgSnap: Writing My Own Screenshot App Was Faster Than Installing One](#igsnap-writing-my-own-screenshot-app-was-faster-than-installing-one)
   - [2026-11-05](#2026-11-05)
     - [Steve Yegge Audited His Adversarial Reviewers: Keep Them, Ban the P3s](#steve-yegge-audited-his-adversarial-reviewers-keep-them-ban-the-p3s)
   - [2026-11-01](#2026-11-01)
@@ -273,6 +275,30 @@ let's see if we can simulate him, step #1, let's bring the site down into markdo
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-11-14
+
+#### IgSnap: Writing My Own Screenshot App Was Faster Than Installing One
+
+![IgSnap: a window picked, annotated, with the toolbar under it](https://raw.githubusercontent.com/idvorkin/igsnap/fb9566bcd47b6d40af6ff9f8f5889450c6f8ce94/docs/2-annotate.png)
+
+- **TOP Takeaway**: I wanted [Flameshot](https://github.com/flameshot-org/flameshot) on my Mac: pick a region, snap to a window, draw on it, copy. Instead of finding an open source tool that works and getting it installed, I had Claude write one into my setup. 45 minutes from my first message to [IgSnap](https://github.com/idvorkin/igsnap) signed in /Applications and a PR wiring it into Alfred.
+- **Why not just install one**: the built-in ⌘⇧4 can't annotate in place; you catch the floating thumbnail, open Markup, then copy. Flameshot's README says that on macOS 15 and up you clear the quarantine flag by hand before it will open. I never tried Shottr or CleanShot, so this is not a bake-off. The point is that I didn't have to shop.
+- **The timing**, by the clock:
+  - 07:45: I ask for a plan in a repo.
+  - 07:47: the plan is committed, with an honest "the built-in tool almost does this, here is the narrow gap".
+  - 08:03: the app is committed: freeze the screen, hover to snap to a window or drag a region, arrow, rectangle, ellipse, text, copy.
+  - 08:12: first run on my real screen. My whole review: "otherwise great".
+  - 08:15: my one round of feedback is in: a separate black-out box, thicker lines, thicker arrows.
+  - 08:18: the README has pictures.
+  - 08:30: the PR that puts it behind my Alfred `ss` keyword is open.
+- **How much of me it took**: 11 short messages, about 140 words. Three were product decisions: the ask, "add ellipse, no hotkey, call it IgSnap, make it public", and the black-out and thickness note. The rest were "build and run" and "how to launch". I wrote no code and read none. It cost $10 in tokens.
+- **Why I trust code I didn't read**: Claude couldn't see my screen either, so it built its own eyes.
+  - The geometry and rendering are a [core with no UI](https://github.com/idvorkin/igsnap/blob/fb9566bcd47b6d40af6ff9f8f5889450c6f8ce94/Sources/IgSnapCore/Annotation.swift#L100-L119), covered by pixel-level tests: the crop is full resolution, the right way up, and the arrow lands where it was drawn.
+  - A [headless self-test](https://github.com/idvorkin/igsnap/blob/fb9566bcd47b6d40af6ff9f8f5889450c6f8ce94/Sources/IgSnap/SelfTest.swift#L4-L7) feeds made-up mouse and key events to the real handlers in a window that is never shown.
+  - The README pictures are [drawn off screen over a made-up desktop](https://github.com/idvorkin/igsnap/blob/fb9566bcd47b6d40af6ff9f8f5889450c6f8ce94/Sources/IgSnap/Demo.swift#L4-L7), so Claude could look at its own UI, and my real desktop never lands in a public repo.
+- **Integrated, which no download does**: `ss` in Alfred now [opens IgSnap when it's installed, offers to install it when it isn't, and falls back to the old capture if I say no](https://github.com/idvorkin/alfred/blob/6619c699e2e8cf0ad50e864c8cff0f4e0e0d9caf/workflows/user.workflow.2859BD3B-9CA5-4360-A379-355F434F1908/screenshot.sh#L13-L27) ([PR](https://github.com/idvorkin/alfred/pull/36)). It follows that repo's rules too: a user story, a mocked test, a worktree. An off-the-shelf app would have left that wiring to me.
+- **What it doesn't do**: macOS 27 only, no pixelate, no save to file, and when it breaks there is no upstream to blame. The one thing that waited on me was the merge: the permission check wouldn't let Claude merge its own PR, which is the right call.
 
 ### 2026-11-05
 
