@@ -1,5 +1,18 @@
 [
   {
+    "num": 18,
+    "title": "Marco",
+    "date": "November 14, 2026",
+    "img": "/images/den/den-018.webp",
+    "alt": "The Den #18: Marco — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, stands at the top of the attic stairs with a paw cupped beside his mouth and calls toward a small blue robot painting at an easel in the back corner: 'MARCO.' The robot doesn't turn. Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — sits in the green leather armchair writing on a clipboard and answers for it without looking up: 'POLO. HE'S FINE.' 2: Igor, on the stairs, points at the robot, which hasn't moved. A long drip of blue paint has run from its brush down the easel into a small puddle on the rug. Igor: 'COME ON. HE MUST BE STUCK.' Larry keeps writing and says nothing. 3: Igor stands at the armchair, paws clasped: 'DON'T YOU HAVE A JOB THAT CHECKS?' Larry, pencil still on the clipboard: 'NO, AND THERE SHOULD BE.' Behind them the robot is still frozen and the puddle is wider. 4: The blue paint is now a pool across the whole attic floor, with the armchair standing in it. Igor sits on top of a tall white lifeguard chair in the pool, in a white visor with a silver whistle round his neck, flat-faced, beside the still-frozen robot. Larry, in the armchair, writing, not looking up: 'MARCO.' Igor: 'POLO.'",
+    "panels": [
+      "/images/den/den-018-p1.webp",
+      "/images/den/den-018-p2.webp",
+      "/images/den/den-018-p3.webp",
+      "/images/den/den-018-p4.webp"
+    ]
+  },
+  {
     "num": 17,
     "title": "Correction",
     "date": "November 10, 2026",
