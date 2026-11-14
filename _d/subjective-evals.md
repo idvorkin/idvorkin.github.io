@@ -73,7 +73,7 @@ Set up human review before any automation. Everything else gets checked against 
 - how each one is scored (yes/no or a 1–5 scale),
 - lots of detail and worked examples, so a stranger would score the same way.
 
-My own small version is [the red pen](/how-igor-chops#the-red-pen-send-to-larry): I read my draft on the live page and leave my notes on it.
+For my own writing, that human review is [the red pen](/how-igor-chops#the-red-pen-send-to-larry): I read the draft on the live page and leave my notes on it.
 
 ### 2. Make sure humans can apply the policy consistently
 
