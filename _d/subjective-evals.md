@@ -73,6 +73,8 @@ Set up human review before any automation. Everything else gets checked against 
 - how each one is scored (yes/no or a 1–5 scale),
 - lots of detail and worked examples, so a stranger would score the same way.
 
+For my own writing, that human review is [the red pen](/how-igor-chops#the-red-pen-send-to-larry): I read the draft on the live page and leave my notes on it.
+
 ### 2. Make sure humans can apply the policy consistently
 
 This takes training the humans, a good policy, and unambiguous definitions. Don't assume the policy works. Have several people score the same cases and measure how often they agree ([5:26](https://youtu.be/zLc8zeGeNaY?t=326)). Where they split, rewrite the policy. Repeat until agreement is high. Kappa and its cousins measure it ([the statistics, slowly](#agreement-kappa-and-friends)). [Humans don't agree either](/ai-testing#humans-dont-agree-either) shows how low human agreement runs in practice.
