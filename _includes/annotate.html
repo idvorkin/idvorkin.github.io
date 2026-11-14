@@ -13,6 +13,11 @@
   Once enabled: select text -> a small "Comment" bubble appears near the
   selection -> tap it -> type a note -> pick an intent -> Save
   (or Cmd/Ctrl+Enter; Escape cancels). Notes buffer in localStorage.
+  Enter-Enter also saves, for hands-free dictation: at the END of a
+  non-empty note, a second trailing newline within ENTER_SAVE_MS (400 ms) of
+  the first, or one change that appends two or more trailing newlines,
+  trims the trailing whitespace and saves with the selected intent. Slow
+  Enters and Enters mid-text stay line breaks (see noteEnterStep).
   The "Review (N)" pill uploads the batch to a SECRET gist (description
   `blog-review: <permalink>`) or copies it to the clipboard.
 
@@ -99,6 +104,28 @@
     var TOKEN_KEY = "blogAnnotateToken";
     var BUF_KEY = "blogAnnotateBuffer";
     var CTX = 30; // chars of prefix/suffix context (W3C TextQuoteSelector)
+    var ENTER_SAVE_MS = 400; // two trailing Enters this close together save the note
+
+    // Enter-Enter save rule, decided from the textarea's value before and
+    // after one input event (not keydown: dictation and phone keyboards
+    // often send no usable Enter key). `lastAt` is when the previous event
+    // appended a lone trailing newline, or null. A change counts only when
+    // it appends to the old value with the caret at the end; its trailing
+    // whitespace run gives the number of Enters it added.
+    function noteEnterStep(prev, next, caretAtEnd, lastAt, now) {
+      if (!caretAtEnd || next.slice(0, prev.length) !== prev) {
+        return { save: false, lastAt: null };
+      }
+      var tail = /\s*$/.exec(next.slice(prev.length))[0];
+      var enters = tail.split("\n").length - 1;
+      var hasText = next.trim() !== "";
+      if (enters >= 2) return { save: hasText, lastAt: null };
+      if (enters === 0) return { save: false, lastAt: null };
+      if (hasText && lastAt !== null && now - lastAt <= ENTER_SAVE_MS) {
+        return { save: true, lastAt: null };
+      }
+      return { save: false, lastAt: now };
+    }
 
     // ---------------------------------------------------------------- flag
     // Read the query string first so ?annotate=1 can turn the tool on for a
@@ -155,6 +182,8 @@
       enabled: function () {
         return live;
       },
+      ENTER_SAVE_MS: ENTER_SAVE_MS,
+      noteEnterStep: noteEnterStep,
       set: function (on) {
         live = !!on;
         setEnabled(live);
@@ -531,7 +560,7 @@
             '<div class="row">' +
             '<span class="hint">' +
             (IS_MAC ? "⌘" : "Ctrl") +
-            "+Enter saves · Esc cancels</span>" +
+            "+Enter or Enter twice saves · Esc cancels</span>" +
             '<button type="button" class="ghost" id="blog-annot-cancel">Cancel</button>' +
             '<button type="button" class="primary" id="blog-annot-save">Save</button>' +
             "</div>"
@@ -586,6 +615,29 @@
         document.getElementById("blog-annot-cancel").onclick = hideModal;
         document.getElementById("blog-annot-save").onclick = save;
         composerKeys = { save: save, cancel: hideModal };
+
+        var prevText = ta.value;
+        var lastEnterAt = null;
+        ta.addEventListener("input", function (e) {
+          if (e.isComposing) return;
+          var next = ta.value;
+          var atEnd =
+            ta.selectionStart === next.length &&
+            ta.selectionEnd === next.length;
+          var step = noteEnterStep(
+            prevText,
+            next,
+            atEnd,
+            lastEnterAt,
+            Date.now()
+          );
+          prevText = next;
+          lastEnterAt = step.lastAt;
+          if (step.save) {
+            ta.value = next.replace(/\s+$/, "");
+            save();
+          }
+        });
       }
 
       stop = function () {
