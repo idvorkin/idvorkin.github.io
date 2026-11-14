@@ -1,4 +1,4 @@
-// ABOUTME: The annotate tool's "Send to Larry" (_includes/annotate.html): only on a tailnet or localhost host,
+// ABOUTME: The annotate tool's "Send to Larry" (_includes/annotate.html) on a tailnet or localhost host:
 // ABOUTME: a status dot from the Cockpit on the same hostname, one POST per page, buffer cleared only on 2xx.
 
 import { readFileSync } from "node:fs";
@@ -80,13 +80,13 @@ describe("Send to Larry", () => {
     window.location.pathname = "/";
   });
 
-  it("adds nothing and calls nothing on the production host", () => {
+  it("never polls or posts to a Cockpit on the production host", () => {
     const calls = stubFetch(() => json({}));
     boot("idvork.in", "");
     expect(document.getElementById("blog-annot-pill")).not.toBeNull();
-    expect(document.getElementById("blog-annot-send")).toBeNull();
+    expect(document.getElementById("blog-annot-send")?.textContent).toBe("Send to Larry");
     expect(dot()).toBeNull();
-    expect(api().sendToLarry).toBeUndefined();
+    expect(api().refreshLarry).toBeUndefined();
     vi.advanceTimersByTime(120000);
     expect(calls).toHaveLength(0);
   });
