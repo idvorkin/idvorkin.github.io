@@ -125,6 +125,8 @@ From the prophet:
 
 ### CI/CC (Circle of Influence, Circle of Concern)
 
+I picture this as [Staying Afloat](/staying-afloat): weights in my circle of influence I can cut loose; weights in my circle of concern I can't, so I add balloons and float above them.
+
 ### Talk it through
 
 ### Meditation

@@ -19,7 +19,7 @@ In my dream job, I learn the customer and business needs and focus the team on d
 **This page is currently stale.** I've always said EMs should periodically do a [rotation as a tech lead](/software-leadership-roles), and with AI changing the world this fast, I'm very excited to be a tech lead in the AI safety space right now. It [checks every box](/manager-book#l-motivation):
 
 - **Autonomy:** there's a ton of it in my current role.
-- **Mastery:** I'm building my skills for a new, AI-native world. I can't turn around without learning something:
+- **Mastery:** I'm building my skills for a new, AI-native world of very high tail intensity. I can't turn around without [learning something](/whats-left):
   - Force-multiplying my technical work with AI.
   - Force-multiplying my thinking and strategy work, not just my code.
   - Learning how to test in the non-deterministic AI world.

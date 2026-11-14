@@ -19,7 +19,7 @@ I picture stress as water, with me floating above it. Balloons lift me: sleep, f
 
 ## Floating
 
-<iframe class="afloat-embed" src="/floating-zooming/app.html?embed=float" title="Interactive: balloons lift the raccoon, weights sink him" style="display: block; width: 100%; height: min(96svh, 125vw + 13rem); border: 0; border-radius: 0.75rem;"></iframe>
+<iframe class="afloat-embed" src="/floating-zooming/app.html?embed=float" title="Interactive: balloons lift the raccoon, weights sink him" style="display: block; width: 100%; height: min(96svh, 125vw + 15.5rem); border: 0; border-radius: 0.75rem;"></iframe>
 
 <script>
   // The embed reports its content height and gets the iframe sized to fit, so it never scrolls by itself
@@ -52,4 +52,4 @@ I picture stress as water, with me floating above it. Balloons lift me: sleep, f
 - Sleep, friends, family and moving go both ways. Bad sleep is a weight.
 - Tap the pump, then a balloon, to make it bigger.
 - Drag the scissors across a string or chain to cut it loose.
-- More controls has the stress tolerance slider. It moves the water.
+- The stress tolerance slider by the picture moves the water. Low tolerance raises it, so the same weights sink you sooner.
