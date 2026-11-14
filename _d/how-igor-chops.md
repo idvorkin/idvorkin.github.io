@@ -164,11 +164,11 @@ When a plan, diff or report is too big to read in a chat scroll, the agent turns
 
 ### The Red Pen: Send to Larry
 
-With AI I can hyper-optimize my own [enabling environment](/enable), down to tools built for exactly one user. My blog is the example. I don't need GitHub's PR review for my posts, so I built the review into the blog itself: the diff on the page, my notes sent straight to Larry, and my own chat to read them in. [Lavish](#the-review-board-lavish) covers what an agent made for me; this covers what I wrote. Three steps:
+I don't need to do PR reviews on GitHub for my blog. With AI I can hyper-optimize my [enabling environment](/enable) for me. Why not see the diff in the blog? Why not send my comments direct to Larry, and read them in my own chat? So I built that. [Lavish](#the-review-board-lavish) reviews what an agent made for me; this reviews what I wrote. Three steps:
 
-1. **A PR with a diff.** Every edit is a PR with a preview, but I read the diff on the blog, not on GitHub: the preview's dev banner has a Diff vs main button that swaps the post for a rendered diff, new words green, cut words struck through.
+1. **A PR with a diff.** Every edit is a PR with a preview, and the preview's dev banner has a Diff vs main button that swaps the post for a rendered diff: new words green, cut words struck through.
 2. **Notes on the live page, ideally by voice.** I flip on Comments in the banner, select a line (in the diff or on the page), tap the Comment bubble, and [dictate](#voice-how-i-talk-to-the-agents) what's wrong. One more tap tags it fix, cut, rewrite, expand, check, question or note.
-3. **Send to Larry, and Larry iterates.** The Review pill counts my notes. Send to Larry ships the batch straight to [Larry](/larry), page and branch attached, and it lands in [my own chat](/larry-cockpit) as one card with a chip per note, so I see what he got right next to his answer. He revises the branch and pushes, and I read the new diff and go again.
+3. **Send to Larry, and Larry iterates.** The Review pill counts my notes. Send to Larry ships the batch to [Larry](/larry) with the page and the branch attached. It lands in [my own chat](/larry-cockpit) as one card with a chip per note, next to his answer. He revises the branch and pushes, and I read the new diff and go again.
 
 <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center">
 <a href="/images/review-flow/review-diff.webp"><img src="/images/review-flow/review-diff.webp" alt="This post's preview in Diff vs main on a phone: the dev banner with the branch and PR number on top, and step 7 of the session list with cut words struck through in red and new words in green" style="max-width:220px;width:100%;border-radius:10px" /></a>
