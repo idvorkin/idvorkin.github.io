@@ -74,7 +74,7 @@ Software gets the headlines, but a real lapel mic close to your mouth beats lapt
 
 What I'm using:
 
-{% include amazon.html asin="B0DNQ5D1H4" %}
+{% include amazon.html asin="B0DNQ5D1H4;B0DYCN3G9W" %}
 
 The Hollyland Lark M2S Mini Combo — wireless lavalier, 7g, USB-C plus a Camera RX, works with iPhone, Android, laptop, or camera, 300m range. I didn't actually buy it for this — I had it for another project, and it turned out to be the right tool for vibing too. So this isn't a "go spend a few hundred bucks" rec; it's a "if you already have a good lav, point it at Wispr or Siri" rec.
 
@@ -82,7 +82,7 @@ For the full deep dive on why voice changes how you work with AI, see [You Need 
 
 More mic options as I try them.
 
-And a button for the voice: a $36 [ZTYTO scrolling ring](https://www.amazon.com/s?k=ZTYTO+scrolling+ring+touchpad), a touchpad ring sold for scrolling TikTok. I [remapped it in Karabiner](https://github.com/idvorkin/Settings/blob/main/mac/karabiner.json#L7) so a tap toggles Wispr Flow and the right button hits Enter. Now I can dictate and send a prompt from the couch or the treadmill without touching the keyboard.
+And a button for the voice: a $36 [ZTYTO scrolling ring](https://www.amazon.com/dp/B0DYCN3G9W?tag=ighe-20) (the card next to the mic above), a touchpad ring sold for scrolling TikTok. I [remapped it in Karabiner](https://github.com/idvorkin/Settings/blob/main/mac/karabiner.json#L7) so a tap toggles Wispr Flow and the right button hits Enter. Now I can dictate and send a prompt from the couch or the treadmill without touching the keyboard.
 
 ### Tmux on Super Steroids - The Multiplexer
 
