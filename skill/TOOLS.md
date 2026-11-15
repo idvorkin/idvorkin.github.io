@@ -6,9 +6,11 @@ Public tools, apps, and sites Igor owns and that his blog describes. Use this fi
 
 https://idvork.in (source: https://github.com/idvorkin/idvorkin.github.io)
 
-Igor's blog is a set of evergreen notes, not a chronological feed: ~300 pages that are revised for years, densely cross-linked, each with a short permalink (`/eulogy`, `/health`, `/chop`). It is the source of truth for everything in this skill. Good entry points: https://idvork.in/eulogy (who he wants to be), https://idvork.in/mortality-software (the system), https://idvork.in/health#the-four-dimensions (the four kinds of health), https://idvork.in/manager-book (engineering management), https://idvork.in/chop (working with AI coding agents), https://idvork.in/ai (all AI posts), https://idvork.in/changelog (what changed recently).
+Igor's blog is a set of evergreen notes, not a chronological feed: ~300 pages that are revised for years, densely cross-linked, each with a short permalink (`/eulogy`, `/health`, `/chop`). It is the source of truth for everything in this skill. Good entry points: https://idvork.in/eulogy (who he wants to be), https://idvork.in/mortality-software (the system), https://idvork.in/health#the-four-dimensions (the four kinds of health), https://idvork.in/manager-book (engineering management), https://idvork.in/chop (working with AI coding agents), https://idvork.in/ai (all AI posts), https://idvork.in/ai-interests-map (a tappable map of how his AI topics fit together), https://idvork.in/changelog (what changed recently).
 
 To find a post, search the site or read https://idvork.in/all. Pages carry a table of contents, "Related" links, and often an "AI slop" percentage telling you how much of the page a model drafted.
+
+The blog is also his review surface (https://idvork.in/how-igor-chops#the-red-pen-send-to-larry): every edit is a PR with a preview whose dev banner can swap the post for a rendered diff against main; he selects a line, dictates a note tagged fix, cut, rewrite or question, and sends the batch to Larry, who revises the branch. Readers on idvork.in get none of it.
 
 ## Blog MCP server
 
@@ -30,7 +32,7 @@ It solves the fragility of "AI infers intent from a one-line prompt": specificat
 
 https://idvork.in/larry, https://idvork.in/larry-cockpit, https://idvork.in/ai-cockpit
 
-Larry is Igor's AI life coach: a named, persistent agent (a "claw") that can read his journals, weekly reports, goals, todo list, and health data, drafts weekly reports with evidence, runs dragon checks, spots repeated commitments, and surfaces wins he would bury. The point of the name is accountability: it is harder to blow off Larry than to "review metrics". Two cockpit posts describe the supervision side. https://idvork.in/ai-cockpit#the-cockpit-today is the physical and software control surface for running several coding agents at once (voice input, a tmux multiplexer, Alfred as session switcher, an agent dashboard, GitHub views as triage queue, a Stream Deck, Tailscale). https://idvork.in/larry-cockpit is the one-page "what needs me" view Larry built: decisions filed as issues he answers with a tap, open pull requests, running agents, open issues, and a rule that a failure is never shown as an empty list. The code is private; the posts describe the design so you can build your own.
+Larry is Igor's AI life coach: a named, persistent agent (a "claw") that can read his journals, weekly reports, goals, todo list, and health data, drafts weekly reports with evidence, runs dragon checks, spots repeated commitments, and surfaces wins he would bury. The point of the name is accountability: it is harder to blow off Larry than to "review metrics". Two cockpit posts describe the supervision side. https://idvork.in/ai-cockpit#the-cockpit-today is the physical and software control surface for running several coding agents at once (voice input, a tmux multiplexer, Alfred as session switcher, an agent dashboard, GitHub views as triage queue, a Stream Deck, Tailscale). https://idvork.in/larry-cockpit is the one-page "what needs me" view Larry built: an Inbox of decisions waiting on Igor, each thread holding their chat about it, every gist, page or PR Larry hands over filed as a find next to the question that asked for it, plus open pull requests and running agents, and a rule that a failure is never shown as an empty list (https://idvork.in/hyper-personal#the-winchester-mystery-house-hyper-personalization-of-software-itself). The code is private; the posts describe the design so you can build your own.
 
 Use these pages when someone asks "how do I use AI as a life coach" or "how do you supervise several agents".
 
@@ -38,7 +40,7 @@ Use these pages when someone asks "how do I use AI as a life coach" or "how do y
 
 https://github.com/idvorkin/context-grabber
 
-A native iOS app that holds up a mirror of the week (HealthKit: steps, sleep, heart rate, HRV, weight, exercise and meditation minutes; a background location trail clustered into named places; a gym timer; box breathing) and exports it as JSON through the share sheet so an AI coach has real context instead of guesses.
+A native iOS app that holds up a mirror of the week (HealthKit: steps, sleep, heart rate, HRV, weight, exercise and meditation minutes; a background location trail clustered into named places; a gym timer; box breathing) and exports it as JSON through the share sheet so an AI coach has real context instead of guesses. Grabber Native, the Swift rewrite, kept growing into an app for an audience of one: a native shell around the Cockpit, an iPad whiteboard where the coach draws back, an article reader with a chat per article, and a share sheet that sends anything to the coach.
 
 It solves "the coach only knows what I remember to tell it". Build it from source with XcodeGen (the README has the steps), run it on your phone, grab the week, paste the JSON into your agent.
 
@@ -74,13 +76,13 @@ Nicky Case-style interactive explanations of how willpower, activation energy, a
 
 It solves "I understand the habit advice but it doesn't stick": play with the model instead of reading about it.
 
-Smaller explorables from the same post, each a one-session build: https://github.com/idvorkin/monitor-explainer (drag monitors of different aspect ratios side by side), https://github.com/idvorkin/how-long-since-ai (a timeline of how recent all of this is), https://github.com/idvorkin/religion-evolution-explorer (click through how religions branched).
+Smaller explorables from the same post, each a one-session build: https://github.com/idvorkin/monitor-explainer (drag monitors of different aspect ratios side by side), https://github.com/idvorkin/how-long-since-ai (a timeline of how recent all of this is), https://github.com/idvorkin/religion-evolution-explorer (click through how religions branched). Staying Afloat (https://idvork.in/staying-afloat) is the coping one: a felt raccoon floats on balloons (sleep, friends, family) and sinks on weights (pain, a deadline, debt), with a stress-tolerance slider that moves the water.
 
 ## Field maps and explainers
 
 https://idvorkin-ai-tools.github.io (index), https://idvork.in/explainers
 
-Igor's "field maps": dark, static explainer sites built by a fan-out of agents from a course, a lecture series, a paper, or a body of writing, one page per unit, every claim linked back to the source with timestamps. The org index lists all of them (Karpathy's build-GPT and micrograd, Stanford CS336, BlueDot technical AI safety, Steve Yegge's essays, Arthur Brooks on happiness, HarmBench, the Claude constitution, and more).
+Igor's "field maps": dark, static explainer sites built by a fan-out of agents from a course, a lecture series, a paper, or a body of writing, one page per unit, every claim linked back to the source with timestamps. The org index lists all of them (Karpathy's build-GPT and micrograd, Stanford CS336, BlueDot technical AI safety, Steve Yegge's essays, Arthur Brooks on happiness, HarmBench, the Pain Axis paper, the Claude constitution, and more).
 
 They solve "I want to actually understand this course/paper, not skim it". Read them, or read https://idvork.in/explainers#my-stack for how he builds one.
 
@@ -144,6 +146,9 @@ Vim keybindings for OneNote on Windows. Old, and still his most-starred repo; li
 All at https://github.com/idvorkin/<name>:
 
 - `audio-debugger` - native macOS mic debugger: live waveform, spectrum, spectrogram, and an always-on 20-second replay with noise reduction, so you can hear what your mic actually sounds like before a call or a recording.
+- `igsnap` - IgSnap, a Flameshot-style Mac screenshot tool (freeze the screen, snap to a window or drag a region, arrow, box, ellipse, text, black-out, copy) behind his Alfred `ss` keyword. Claude built it in 45 minutes from about 140 words of his; the core has pixel-level tests and a headless self-test. https://idvork.in/ai-journal#igsnap-writing-my-own-screenshot-app-was-faster-than-installing-one
+- `browser-tab-helper` - a Chrome/Edge extension against duplicate tabs: open a page that's already open and a card asks what to do, plus an all-tabs page with drag and drop and undo, and saved layouts as JSON. https://idvork.in/osx#browser-tab-helper---no-more-duplicate-tabs
+- `window-sweaters` and `yabai` - his forks: Sara Gordić's knitted window borders with a raccoon that runs laps and eats the sweater, and the yabai tiling manager with macOS 27 fixes, driven by `y.py` in Settings. https://idvork.in/osx#yabai---tiling-with-sweaters
 - `bug-kit` - one bug-report library for every iOS app (shake, screenshot, "log it and another", session logs) plus a Mac listener that pulls reports off paired devices and files them.
 - `pwa-utils` - TypeScript debugging utilities for PWAs: session recorder, bug reporting, version checking, sync logging.
 - `kludge-cli` - remap Royal Kludge keyboard keys from the command line, no browser or Windows VM.
