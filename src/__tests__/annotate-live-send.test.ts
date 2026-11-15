@@ -536,14 +536,25 @@ describe("#larry-cockpit= fragment", () => {
     expect(localStorage.getItem("blogLarryCockpit")).toBe(COCKPIT);
   });
 
-  it("rejects an invalid address but still strips it", () => {
+  it("rejects an invalid address but still strips it, silently for a reader", () => {
     const strip = vi.spyOn(history, "replaceState");
     const alerted = vi.fn();
     vi.stubGlobal("alert", alerted);
-    visit("#larry-cockpit=https%3A%2F%2Fevil.example");
+    visit("#larry-cockpit=Call%20this%20number");
     expect(localStorage.getItem("blogLarryCockpit")).toBeNull();
     expect(strip).toHaveBeenCalledWith(null, "", "/foo");
+    expect(alerted).not.toHaveBeenCalled();
+  });
+
+  it("tells Igor (flag on) with fixed text that never echoes the link", () => {
+    vi.spyOn(history, "replaceState");
+    const alerted = vi.fn();
+    vi.stubGlobal("alert", alerted);
+    localStorage.setItem("blogAnnotate", "1");
+    visit("#larry-cockpit=Call%20this%20number");
+    expect(localStorage.getItem("blogLarryCockpit")).toBeNull();
     expect(alerted).toHaveBeenCalledOnce();
+    expect(String(alerted.mock.calls[0][0])).not.toContain("Call this number");
   });
 
   it("asks before replacing a different saved address", () => {

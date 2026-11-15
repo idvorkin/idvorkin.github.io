@@ -3,7 +3,9 @@
 
   INERT BY DEFAULT. Readers get no UI, no network calls, and (aside from
   this tiny script parse) no cost. Everything below is guarded by a
-  localStorage flag that only Igor ever sets.
+  localStorage flag that only Igor ever sets. The one exception is a
+  `#larry-cockpit=` fragment (see SEND TO LARRY): it saves an address to
+  localStorage and strips itself, with no network call.
 
   Enable  : visit any post with ?annotate=1  (persists via localStorage)
   Disable : visit any post with ?annotate=0
@@ -265,7 +267,9 @@
       }
       var origin = cockpitOrigin(raw);
       if (!origin) {
-        window.alert("Not a Cockpit address, so nothing was saved: " + raw);
+        // Fixed text, never the link's: a reader without the flag sees nothing.
+        if (enabled())
+          window.alert("That is not a Cockpit address, so nothing was saved.");
         return;
       }
       var prev = savedCockpit();
