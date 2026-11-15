@@ -1,5 +1,5 @@
 // ABOUTME: The annotate tool on the live site (_includes/annotate.html): the open-PR badge matched by source path,
-// ABOUTME: and Send writing one secret gist per page batch in the documented blog-review-batch/1 shape.
+// ABOUTME: Send posting to a Cockpit address saved once (prompt or #larry-cockpit=), else one secret gist per page.
 
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
@@ -7,6 +7,8 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
 const REPO_API = "https://api.github.com/repos/idvorkin/idvorkin.github.io";
 const LIVE = "https://idvork.in";
+const TAILNET = "box.example-tail.ts.net";
+const COCKPIT = `https://${TAILNET}`;
 
 const loadAnnotate = () => {
   const include = readFileSync(resolve(__dirname, "../../_includes/annotate.html"), "utf8");
@@ -74,8 +76,15 @@ function note(permalink: string, quote: string, comment: string, source: string)
   };
 }
 
+// jsdom has no prompt(); a cancelled one is the default (address prompt -> gist path).
+beforeEach(() => {
+  vi.stubGlobal("prompt", () => null);
+});
+
 afterEach(() => {
+  vi.restoreAllMocks();
   vi.unstubAllGlobals();
+  window.location.hash = "";
   localStorage.clear();
   sessionStorage.clear();
   (window as any).blogAnnotate = undefined;
@@ -350,5 +359,208 @@ describe("Send to Larry from the live site", () => {
         done();
       }, 30),
     );
+  });
+});
+
+describe("Cockpit address validation", () => {
+  beforeEach(() => {
+    stubFetch(() => json([]));
+    boot("");
+  });
+
+  it("accepts an https tailnet or localhost origin and keeps only the origin", () => {
+    expect(api().cockpitOrigin(`${COCKPIT}/blog-review?x=1#y`)).toBe(COCKPIT);
+    expect(api().cockpitOrigin(`${COCKPIT}:8443`)).toBe(`${COCKPIT}:8443`);
+    expect(api().cockpitOrigin(`  ${TAILNET}  `)).toBe(COCKPIT);
+    expect(api().cockpitOrigin("https://localhost")).toBe("https://localhost");
+  });
+
+  it("rejects other schemes, other hosts and suffix tricks", () => {
+    for (const bad of [
+      "",
+      "not a url",
+      `http://${TAILNET}`,
+      "https://idvork.in",
+      `https://${TAILNET}.evil.com`,
+      `https://${TAILNET}@evil.com`,
+      `https://evil.com/${TAILNET}`,
+      `javascript:alert(1)//${TAILNET}`,
+    ])
+      expect(api().cockpitOrigin(bad)).toBe("");
+  });
+});
+
+describe("Send to Larry from the live site with a saved Cockpit", () => {
+  const preload = (list: unknown[]) => localStorage.setItem("blogAnnotateBuffer", JSON.stringify(list));
+
+  it("posts each page to the saved origin, polls its status, and never touches a gist", async () => {
+    const posts: any[] = [];
+    const calls = stubFetch((url, init) => {
+      if (url === `${COCKPIT}/blog-review`) {
+        posts.push(JSON.parse(String(init?.body)));
+        return json({ ok: true });
+      }
+      if (url === `${COCKPIT}/larry/status`) return json({ state: "idle" });
+      return githubPrs(url);
+    });
+    localStorage.setItem("blogLarryCockpit", COCKPIT);
+    preload([note("/foo", "a", "x", "_d/foo.md"), note("/bar", "b", "y", "_d/bar.md")]);
+    boot("_d/foo.md");
+    expect(document.getElementById("blog-annot-larry-dot")).not.toBeNull();
+    await api().refreshLarry();
+    expect(document.getElementById("blog-annot-larry-dot")?.getAttribute("data-state")).toBe("idle");
+
+    await api().sendToLarry();
+    expect(posts.map((p) => p.page_url)).toEqual([`${LIVE}/foo`, `${LIVE}/bar`]);
+    expect(calls.some((c) => c.url.startsWith("https://api.github.com/gists"))).toBe(false);
+    expect(buffer()).toEqual([]);
+    expect(document.getElementById("blog-annot-send")?.textContent).toBe("Sent ✓");
+  });
+
+  it("ignores a saved value that fails validation", () => {
+    const calls = stubFetch(githubPrs);
+    localStorage.setItem("blogLarryCockpit", "https://evil.example");
+    boot("_d/foo.md");
+    expect(document.getElementById("blog-annot-larry-dot")).toBeNull();
+    expect(calls.some((c) => c.url.includes("evil"))).toBe(false);
+  });
+
+  it("falls back to one gist per page when the Cockpit cannot be reached, asking for the token only then", async () => {
+    let cockpitTries = 0;
+    const gists: any[] = [];
+    stubFetch((url, init) => {
+      if (url === `${COCKPIT}/blog-review`) {
+        cockpitTries++;
+        return Promise.reject(new TypeError("Failed to fetch"));
+      }
+      if (url === "https://api.github.com/gists") {
+        gists.push(JSON.parse(String(init?.body)));
+        return json({ id: "g" }, 201);
+      }
+      if (url === `${COCKPIT}/larry/status`) return Promise.reject(new TypeError("Failed to fetch"));
+      return githubPrs(url);
+    });
+    const asked: string[] = [];
+    vi.stubGlobal("prompt", (msg: string) => {
+      asked.push(msg);
+      return "test-token";
+    });
+    localStorage.setItem("blogLarryCockpit", COCKPIT);
+    preload([note("/foo", "a", "x", "_d/foo.md"), note("/bar", "b", "y", "_d/bar.md")]);
+    boot("_d/foo.md");
+    expect(asked).toHaveLength(0);
+
+    await api().sendToLarry();
+    expect(cockpitTries).toBe(1);
+    expect(gists.map((g) => g.description)).toEqual(["blog-review: /foo", "blog-review: /bar"]);
+    expect(asked).toHaveLength(1);
+    expect(asked[0]).toContain("GitHub personal access token");
+    expect(buffer()).toEqual([]);
+    expect(localStorage.getItem("blogLarryCockpit")).toBe(COCKPIT);
+  });
+
+  it("keeps the notes when the Cockpit is down and no token is given", async () => {
+    stubFetch((url) =>
+      url === `${COCKPIT}/blog-review` ? Promise.reject(new TypeError("Failed to fetch")) : githubPrs(url),
+    );
+    localStorage.setItem("blogLarryCockpit", COCKPIT);
+    const list = [note("/foo", "a", "x", "_d/foo.md")];
+    preload(list);
+    boot("_d/foo.md");
+    await api().sendToLarry();
+    expect(buffer()).toEqual(list);
+    const msg = document.getElementById("blog-annot-note")?.textContent || "";
+    expect(msg).toContain("Failed to fetch");
+    expect(msg).toContain("no GitHub token");
+  });
+
+  it("asks for the address on the first Send, saves the origin, and posts there", async () => {
+    const posts: string[] = [];
+    stubFetch((url) => {
+      if (url.endsWith("/blog-review")) posts.push(url);
+      return url.startsWith(COCKPIT) ? json({ ok: true }) : githubPrs(url);
+    });
+    const asked: string[] = [];
+    vi.stubGlobal("prompt", (msg: string) => {
+      asked.push(msg);
+      return `${COCKPIT}/some/path`;
+    });
+    preload([note("/foo", "a", "x", "_d/foo.md")]);
+    boot("_d/foo.md");
+    await api().sendToLarry();
+    expect(asked).toHaveLength(1);
+    expect(asked[0]).toContain("Cockpit address");
+    expect(localStorage.getItem("blogLarryCockpit")).toBe(COCKPIT);
+    expect(posts).toEqual([`${COCKPIT}/blog-review`]);
+    expect(buffer()).toEqual([]);
+  });
+
+  it("sends nothing and saves nothing when the typed address is invalid", async () => {
+    const calls = stubFetch(githubPrs);
+    vi.stubGlobal("prompt", () => "http://idvork.in");
+    const list = [note("/foo", "a", "x", "_d/foo.md")];
+    preload(list);
+    boot("_d/foo.md");
+    await api().refreshOpenPrs();
+    const before = calls.length;
+    await api().sendToLarry();
+    expect(calls).toHaveLength(before);
+    expect(localStorage.getItem("blogLarryCockpit")).toBeNull();
+    expect(buffer()).toEqual(list);
+    expect(document.getElementById("blog-annot-note")?.textContent).toContain("Not a Cockpit address");
+  });
+});
+
+describe("#larry-cockpit= fragment", () => {
+  function visit(hash: string) {
+    window.location.hostname = "idvork.in";
+    window.location.pathname = "/foo";
+    window.location.hash = hash;
+    document.body.innerHTML = '<div id="blog-annot-meta" hidden></div>';
+    loadAnnotate();
+  }
+
+  it("saves the origin and strips itself, even for a reader without the flag", () => {
+    const calls = stubFetch(() => json({}));
+    const strip = vi.spyOn(history, "replaceState");
+    visit(`#larry-cockpit=${encodeURIComponent(`${COCKPIT}/x`)}`);
+    expect(localStorage.getItem("blogLarryCockpit")).toBe(COCKPIT);
+    expect(strip).toHaveBeenCalledWith(null, "", "/foo");
+    expect(document.getElementById("blog-annot-pill")).toBeNull();
+    expect(calls).toHaveLength(0);
+  });
+
+  it("accepts the address unencoded too", () => {
+    vi.spyOn(history, "replaceState");
+    visit(`#larry-cockpit=${COCKPIT}`);
+    expect(localStorage.getItem("blogLarryCockpit")).toBe(COCKPIT);
+  });
+
+  it("rejects an invalid address but still strips it", () => {
+    const strip = vi.spyOn(history, "replaceState");
+    const alerted = vi.fn();
+    vi.stubGlobal("alert", alerted);
+    visit("#larry-cockpit=https%3A%2F%2Fevil.example");
+    expect(localStorage.getItem("blogLarryCockpit")).toBeNull();
+    expect(strip).toHaveBeenCalledWith(null, "", "/foo");
+    expect(alerted).toHaveBeenCalledOnce();
+  });
+
+  it("asks before replacing a different saved address", () => {
+    vi.spyOn(history, "replaceState");
+    localStorage.setItem("blogLarryCockpit", "https://localhost");
+    vi.stubGlobal("confirm", () => false);
+    visit(`#larry-cockpit=${COCKPIT}`);
+    expect(localStorage.getItem("blogLarryCockpit")).toBe("https://localhost");
+    vi.stubGlobal("confirm", () => true);
+    visit(`#larry-cockpit=${COCKPIT}`);
+    expect(localStorage.getItem("blogLarryCockpit")).toBe(COCKPIT);
+  });
+
+  it("leaves other fragments alone", () => {
+    const strip = vi.spyOn(history, "replaceState");
+    visit("#some-heading");
+    expect(strip).not.toHaveBeenCalled();
+    expect(localStorage.getItem("blogLarryCockpit")).toBeNull();
   });
 });
