@@ -68,21 +68,23 @@ The funny part: transcription quality barely matters. Agents are resilient to ga
 
 See more in my [AI Journal entry on voice coding](/ai-journal#using-voice-to-make-commands).
 
-#### The mic matters more than I thought
+#### Custom hardware for voice
 
-Software gets the headlines, but a real lapel mic close to your mouth beats laptop and phone built-ins by a country mile. I used to think Siri dictation was terrible, but it turned out part of the problem was my input. The right microphone totally fixes it — Siri's now almost as good as Wispr Flow.
-
-What I'm using:
+Software gets the headlines, but the hardware around voice matters more than I expected. Two pieces: a mic that hears me, and a button so I never reach for the keyboard.
 
 {% include amazon.html asin="B0DNQ5D1H4;B0DYCN3G9W" %}
 
-The Hollyland Lark M2S Mini Combo — wireless lavalier, 7g, USB-C plus a Camera RX, works with iPhone, Android, laptop, or camera, 300m range. I didn't actually buy it for this — I had it for another project, and it turned out to be the right tool for vibing too. So this isn't a "go spend a few hundred bucks" rec; it's a "if you already have a good lav, point it at Wispr or Siri" rec.
+##### The mic matters more than I thought
+
+A real lapel mic close to your mouth beats laptop and phone built-ins by a country mile. I used to think Siri dictation was terrible, but it turned out part of the problem was my input. The right microphone totally fixes it — Siri's now almost as good as Wispr Flow.
+
+I use the Hollyland Lark M2S Mini Combo — wireless lavalier, 7g, USB-C plus a Camera RX, works with iPhone, Android, laptop, or camera, 300m range. I didn't actually buy it for this — I had it for another project, and it turned out to be the right tool for vibing too. So this isn't a "go spend a few hundred bucks" rec; it's a "if you already have a good lav, point it at Wispr or Siri" rec. More mic options as I try them.
+
+##### A button for the voice
+
+A $36 [ZTYTO scrolling ring](https://www.amazon.com/dp/B0DYCN3G9W?tag=ighe-20), a touchpad ring sold for scrolling TikTok. I [remapped it in Karabiner](https://github.com/idvorkin/Settings/blob/main/mac/karabiner.json#L7) so a tap toggles Wispr Flow and the right button hits Enter. Now I can dictate and send a prompt from the couch or the treadmill without touching the keyboard.
 
 For the full deep dive on why voice changes how you work with AI, see [You Need to Use Voice](/ai-operator#you-need-to-use-voice).
-
-More mic options as I try them.
-
-And a button for the voice: a $36 [ZTYTO scrolling ring](https://www.amazon.com/dp/B0DYCN3G9W?tag=ighe-20) (the card next to the mic above), a touchpad ring sold for scrolling TikTok. I [remapped it in Karabiner](https://github.com/idvorkin/Settings/blob/main/mac/karabiner.json#L7) so a tap toggles Wispr Flow and the right button hits Enter. Now I can dictate and send a prompt from the couch or the treadmill without touching the keyboard.
 
 ### Tmux on Super Steroids - The Multiplexer
 
