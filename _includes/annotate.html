@@ -52,7 +52,7 @@
   reading — a note taken against the local Jekyll preview and one taken
   against the live site are byte-identical without it. `location.origin` is
   scheme + host + port, so `https://idvork.in` and
-  `http://c-5004.squeaker-teeth.ts.net:4000` are distinguishable.
+  `http://<machine>.<tailnet>.ts.net:4000` are distinguishable.
 
   `location.href` is deliberately NOT recorded: beyond origin + permalink it
   only adds the query string and fragment, which here means `?annotate=1` and
