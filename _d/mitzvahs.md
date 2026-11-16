@@ -1,98 +1,61 @@
 ---
 layout: post
-title: "The 613 Mitzvahs: Your Complete Jewish Commandment Checklist"
+title: "The 613 Mitzvahs"
 permalink: /mitzvahs
 redirect_from:
   - /commandments
   - /mitzvot
+  - /positive-mitzvahs
+  - /positive-commandments
+  - /mitzvot-aseh
+  - /negative-mitzvahs
+  - /negative-commandments
+  - /mitzvot-lo-taaseh
 ---
 
-I like saying "I have a mitzvah" - it sounds way more fun than "I have an obligation." A mitzvah is a commandment, a good deed, a blessing all rolled into one. And lucky for us, Judaism comes with exactly **613 of them**.
+I like saying "I have a mitzvah." It sounds way more fun than "I have an obligation." A mitzvah is a commandment, and the Talmud counts 613 of them in the Torah. I'll never do most of them, and the rabbis who counted them spent the very next passage squeezing all 613 down to one.
 
-Think of this as your complete Jewish to-do list, handed down at Mount Sinai. Some are practical (don't murder), some are mystical (attach a mezuzah to your doorpost), and some haven't been possible since the Temple was destroyed (about those animal sacrifices...).
-
-**Inspired by**: A.J. Jacobs' hilarious memoir [The Year of Living Biblically](https://www.amazon.com/dp/0743291484), where he attempted to follow all 613 commandments literally for a year. Spoiler: it involved a lot of creative interpretations and some very awkward social situations.
-
-{%include amazon.html asin="0743291484" %}
-
-{% include ai-slop.html percent="95" %}
+{% include ai-slop.html percent="85" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [The Big Picture](#the-big-picture)
-- [The Two Lists](#the-two-lists)
-  - [Positive Commandments (248)](#positive-commandments-248)
-  - [Negative Commandments (365)](#negative-commandments-365)
+- [Where 613 comes from](#where-613-comes-from)
+- [The rabbis compressed it](#the-rabbis-compressed-it)
+- [The ones I'd keep](#the-ones-id-keep)
+- [The full list](#the-full-list)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## The Big Picture
+## Where 613 comes from
 
-**248 Positive Commandments** - Things you should do (one for each bone/organ in the body, according to tradition)
+The number is Rabbi Simlai's, in the Talmud ([Makkot 23b](https://www.sefaria.org/Makkot.23b.18)): 365 prohibitions, one for each day of the solar year, and 248 positive commandments, one for each limb of a person. The Torah itself never lists them. The count came first, and later scholars argued over what belongs on the list. The one most people use is Maimonides' [Sefer HaMitzvot](https://www.sefaria.org/Sefer_HaMitzvot) from the 12th century.
 
-**365 Negative Commandments** - Things you shouldn't do (one for each day of the year)
+Plenty of them can't be done today. Many only applied while the Temple stood in Jerusalem (destroyed in 70 CE), some only apply to priests, some only in the Land of Israel, and some only to men or only to women.
 
-**Total: 613** - Your comprehensive guide to living Jewishly
+## The rabbis compressed it
 
-Many of these only applied when the Temple stood in Jerusalem (destroyed in 70 CE), some only apply to priests, some only in the Land of Israel, and some only to men or only to women. But they're all part of the traditional count.
+Rabbi Simlai keeps going ([Makkot 24a](https://www.sefaria.org/Makkot.24a.3)). David reduced the 613 to eleven (Psalm 15). Isaiah got it to six, Micah to three, Isaiah again to two, and Habakkuk to one:
 
----
+- Micah: "Do justly, love mercy, and walk humbly with your God" ([Micah 6:8](https://www.sefaria.org/Micah.6.8)).
+- Habakkuk: "The righteous person shall live by his faith" ([Habakkuk 2:4](https://www.sefaria.org/Habakkuk.2.4)).
 
-## The Two Lists
+My hard part with religion is [arbitrariness and literalism](/religion#arbitrariness--literalism): rules without the why. This is the tradition asking the why of its own rulebook and answering in a single line.
 
-The full list lives on two pages — one for each kind of commandment — so each page stays easy to skim.
+## The ones I'd keep
 
-### Positive Commandments (248)
+In [my religion post](/religion) I wrote that you don't have to settle the metaphysics to get the benefit of weekly reflection, shared meals, service, making amends, and a day of rest. Most of that list has a verse behind it:
 
-The things you **should** do - from loving God to helping your neighbor load their donkey.
+- A day of rest: "on the seventh day you shall cease from labor" ([Exodus 23:12](https://www.sefaria.org/Exodus.23.12)).
+- Shared meals: "When you have eaten your fill, give thanks" ([Deuteronomy 8:10](https://www.sefaria.org/Deuteronomy.8.10)), the source of grace after meals.
+- Service: open your hand to someone in need ([Deuteronomy 15:8](https://www.sefaria.org/Deuteronomy.15.8)), and when your neighbor's donkey falls on the road, help lift it ([Deuteronomy 22:4](https://www.sefaria.org/Deuteronomy.22.4)).
+- Making amends: confess the wrong, then pay it back plus a fifth ([Numbers 5:7](https://www.sefaria.org/Numbers.5.7)).
 
-**[View all 248 Positive Commandments →](/positive-mitzvahs)**
+## The full list
 
-{%include summarize-page.html src="/positive-mitzvahs" %}
+This page used to carry AI-generated lists of all 248 and all 365. They had duplicates, and they included reading the Megillah on Purim, which is a rabbinic commandment and not one of the 613. So I cut them. For the real list, read [Sefer HaMitzvot on Sefaria](https://www.sefaria.org/Sefer_HaMitzvot), which gives the verse behind each one.
 
-Categories include:
+The idea for this page came from A.J. Jacobs' [The Year of Living Biblically](https://www.amazon.com/dp/0743291484), where he spent a year trying to follow the Bible's 700-plus rules as literally as he could.
 
-- Relationship with God
-- Torah Study and Teaching
-- Prayer and Blessings
-- Temple Service and Sacrifices
-- Dietary Laws
-- Agricultural Laws
-- Festivals and Holy Days
-- Family and Relationships
-- Civil and Social Justice
-- Tzedakah and Kindness
-- War and Justice
-- Property and Commerce
-
-### Negative Commandments (365)
-
-The things you **should NOT** do - from worshiping idols to wearing mixed fabrics.
-
-**[View all 365 Negative Commandments →](/negative-mitzvahs)**
-
-{%include summarize-page.html src="/negative-mitzvahs" %}
-
-Categories include:
-
-- Idolatry and Blasphemy
-- Forbidden Worship
-- Forbidden Sexual Relations
-- Forbidden Foods
-- Prohibited Business Practices
-- Prohibited Speech
-- Prohibited Violence
-- Temple Prohibitions
-- Priestly Prohibitions
-- Prohibited Agricultural Practices
-- Prohibited Magic and Divination
-- Prohibited Personal Conduct
-- Prohibited Legal Actions
-- Prohibited Treatment of Animals
-- Prohibited Family Actions
-
----
-
-Now go forth and have a mitzvah! Or 613 of them.
+{%include amazon.html asin="0743291484" %}
