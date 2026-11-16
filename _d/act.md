@@ -8,6 +8,7 @@ tags:
   - emotional-health
   - mental health
   - psychology
+imagefeaturelocal: raccoon-act-room-for-the-cloud.webp
 ---
 
 My back goes out a few times a year. My mood tracks the Meta stock price more than I'd like to admit. Twenty years ago I'd meet those moments with a thrash cycle — fused with the pain, angry at my body, tangled up in a story about why this was unfair — which made the experience much worse than the sensation itself. Now I aspire to [be calm like water](/affirmations), be present, remember that _this too shall pass_, and work the problem. I still catch myself mid-thrash often enough to know it's aspiration, not habit.
@@ -26,6 +27,8 @@ These are my working notes on the convergence — reverse-engineered Buddhism. T
 > The one question: if I let this thought run my behavior, does it take me toward the person I want to be?
 
 _This is the short version. My chapter-by-chapter notes on Harris's book, all 32 chapters, are at [/act-made-simple](/act-made-simple)._
+
+{% include repo_image_float_right.html src="raccoon-act-room-for-the-cloud.webp" alt="The felt raccoon in a green ROOM t-shirt sitting calmly on a bench with a steaming cup of tea, a grumpy little raincloud dripping on the seat beside him" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

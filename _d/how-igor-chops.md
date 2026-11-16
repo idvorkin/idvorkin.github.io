@@ -2,7 +2,7 @@
 layout: post
 title: "Mumbling on My Couch: My CHOP Setup"
 permalink: /how-igor-chops
-imagefeature: https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_100048.webp
+imagefeaturelocal: raccoon-chop-wood-felt.webp
 mermaid: true
 tags:
   - ai
@@ -18,7 +18,7 @@ redirect_from:
 
 I mumble to Claude on my couch while my family wonders who I'm talking to. I vibe code in the car while my son drives. I rent the most expensive brain I can get. This is my CHOP (Chat-Oriented Programming) setup: the models, the tools, the machines, and what I've learned. The ideas behind it are in [The CHOP Shop](/chop); how it got this way is in [The CHOP Shop, 2024 to 2026](/chop-history).
 
-{% include image_float_right.html src="https://raw.githubusercontent.com/idvorkin/ipaste/main/20260101_100048.webp" %}
+{% include local_image_float_right.html src="raccoon-chop-wood-felt.webp" alt="Felt raccoon in rainbow glasses and an Always Vibing shirt, an ax on one shoulder, one foot on a stump as a log splits in two and wood chips fly" %}
 
 {% include ai-slop.html percent="50" %}
 
@@ -226,7 +226,7 @@ This diagram perfectly captures the evolution I've lived through. Let me break d
 
 Most of my prompts are spoken. I talk to the agents the way I'd talk to an engineer at a whiteboard: half-formed thoughts, "actually wait, try this instead," trailing off mid-sentence. Transcription quality barely matters, because the receiver is smart enough to respond to my intent instead of my mangled words. Voice is also why the couch, the treadmill, and the car are all places I code.
 
-At home it's [Wispr Flow](https://wisprflow.ai/) and a lapel mic, which turned out to matter more than the software. The write-up, including the mic and the ring I use as a remote for it, lives in the cockpit post: [Voice Input - The Primary Interface](/ai-cockpit#voice-input---the-primary-interface). Why voice changes how you think, not just how you type, is in [You Need to Use Voice](/ai-operator#you-need-to-use-voice).
+At home it's [Wispr Flow](https://wisprflow.ai/) and a lapel mic, which turned out to matter more than the software. The mic and the ring I use as a remote for it are in [Custom hardware for voice](/ai-cockpit#custom-hardware-for-voice). Why voice changes how you think, not just how you type, is in [You Need to Use Voice](/ai-operator#you-need-to-use-voice).
 
 ## Notes from the Trenches
 

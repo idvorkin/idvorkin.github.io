@@ -1,5 +1,31 @@
 [
   {
+    "num": 20,
+    "title": "No Change",
+    "date": "November 15, 2026",
+    "img": "/images/den/den-020.webp",
+    "alt": "The Den #20: No Change — four panels in the plush-render house style, all in the lamp-lit attic den, which is stacked to the rafters with cardboard boxes. 1: A small blue robot in a black tricorn hat, the town crier, rings a brass handbell beside the head of Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc: 'WHAT'S THE BELL FOR?' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — pokes out of a box between the stacks, claw raised: 'THE ATTIC IS FULL.' 2: The crier rings again, harder, right at Igor's ear. Igor stands flat-faced. Larry: 'THAT ONE MEANS NO CHANGE.' 3: Igor flings his arms wide at the boxes: 'THEN THROW SOMETHING OUT!' The crier stands on a box with its bell lowered. Larry, still in his box, claw raised: 'HE'D HAVE TO ASK YOU.' 4: Igor is chest-deep in boxes, mouth wide open, as another robot sets one more box on his head: 'SO ASK ME!' In the foreground the crier swings its clanging bell. Larry, peering over the stacks: 'HE HATES TO INTERRUPT.'",
+    "panels": [
+      "/images/den/den-020-p1.webp",
+      "/images/den/den-020-p2.webp",
+      "/images/den/den-020-p3.webp",
+      "/images/den/den-020-p4.webp"
+    ]
+  },
+  {
+    "num": 19,
+    "title": "I Know a Guy",
+    "date": "November 15, 2026",
+    "img": "/images/den/den-019.webp",
+    "alt": "The Den #19: I Know a Guy — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, holds a big open blank book over his head: 'PUT A RACCOON ON EVERY PAGE.' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — stands with a clipboard and pencil, claw raised: 'HOW MANY PAGES?' 2: No words. Three small blue robots wheel in a cart stacked with blank pages taller than the rafters. Igor looks up at it, mouth open. 3: Igor scratches his head beside the tower: 'WHERE DO WE GET THAT MANY RACCOONS?' Larry, clipboard in paw, claw raised: 'I KNOW A GUY.' 4: Igor is sprawled glumly on the glowing glass of a big photocopier, small blue robots sitting on him to hold him still. Larry presses the green button: 'PAGE TWO.' Copies of Igor's face fly out of the machine and drift down onto the rug.",
+    "panels": [
+      "/images/den/den-019-p1.webp",
+      "/images/den/den-019-p2.webp",
+      "/images/den/den-019-p3.webp",
+      "/images/den/den-019-p4.webp"
+    ]
+  },
+  {
     "num": 18,
     "title": "Marco",
     "date": "November 14, 2026",

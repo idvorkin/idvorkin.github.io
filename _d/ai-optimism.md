@@ -8,7 +8,7 @@ redirect_from:
   - /ai-optimisit
 tags:
   - ai
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-money.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-accountant-count.webp
 ---
 
 Let me tell you about Sergio, and why I'm incredibly optimistic about AI. But first, one of the things I really hate: the homogenization of everything. It doesn't matter where you go — every strip mall is the same five tenants, every main street the same chains. Once in a while I find a gem — a typewriter store, a tiny bookstore with one specific aesthetic, a shop that exists because one person with taste decided it should. And every time, I think: why don't we have more of these?

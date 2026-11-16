@@ -8,11 +8,14 @@ redirect_from:
 tags:
   - communication
   - presenting
+imagefeaturelocal: raccoon-comedy-lab.webp
 ---
 
 I'm not a naturally funny writer. I'm a magician who gets laughs with props, and a guy who draws a [weekly comic strip](/the-den) that, for the first dozen strips, mostly wasn't funny. So I did what I do with anything I'm bad at: I went looking for the models. People have been taking jokes apart for two thousand years, and the pieces are reusable. The first half of this page is what I found. The second half is how I use it on the Den.
 
 {% include ai-slop.html percent="99" %}
+
+{% include repo_image_float_right.html src="raccoon-comedy-lab.webp" alt="The felt raccoon in a lab coat over a green HAHA t-shirt inspecting a rubber chicken, a banana peel and a cream pie through a magnifying glass, a clipboard bar chart in hand" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

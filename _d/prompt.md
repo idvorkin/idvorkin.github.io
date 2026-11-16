@@ -2,7 +2,7 @@
 layout: post
 title: Prompts, your guide to starting a conversation
 permalink: /prompts
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-prompt.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-prompts-vending-felt.webp
 ---
 
 A prompt will kick start a great conversation, a great insight, and a great relationship. Here are lots of prompts. For fun, pick a prompt at random and ask it to someone else, or answer it yourself. However, it takes a lot of trust and vulnerability to answer these questions, so make sure the person feels very empowered to not answer a question.
@@ -11,7 +11,7 @@ A prompt will kick start a great conversation, a great insight, and a great rela
     Too many choices? Pick a category and then ask the question in the blue box!
 </div>
 
-{% include blob_image_float_right.html src="blog/raccoon-prompt.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-prompts-vending-felt.webp" alt="Felt raccoon in rainbow glasses and a green CURIOUS shirt pressing a button on an orange PROMPTS vending machine with choices WEIRD, FUNNY, DEEP and MYSTERY, as a paper slip reading WRITE ABOUT.. rolls out" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

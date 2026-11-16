@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to EM: Be the manager everyone wants"
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-manager.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-manager-support-felt.webp
 tags:
   - manager
   - search-featured
@@ -16,7 +16,7 @@ Being an engineering manager is hard. Supporting people well is harder. Lessons 
 
 This post uses the word manager, but many topics apply to all job functions, regardless of seniority or number of direct reports, zero direct reports included.
 
-{%include blob_image_float_right.html src="blog/racoon-manager.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-manager-support-felt.webp" alt="Felt raccoon in rainbow glasses and a bow tie waving and holding a clipboard, green shirt reading HOW CAN I SUPPORT YOU?, with a yellow balloon dog and three playing cards at his feet" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

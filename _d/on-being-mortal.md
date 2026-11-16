@@ -8,7 +8,7 @@ redirect_from:
   - /on-being-mortal
   - /mortality
   - /fatality
-imagefeature: https://github.com/idvorkin/blob/raw/master/icon_eulogy_1200_628.png
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-eulogy-legacy.webp
 ---
 
 Bad news, you're dying, so is everyone else. Good news, if we didn't die we'd run out of resources, and our kids would be screwed. Bad news, our health care system is optimized for keeping you alive, not for maximizing the enjoyable time you have on earth. Good news, knowing is half the battle - armed with this knowledge you can decide how you want to die, which is ultimately how you want to live.

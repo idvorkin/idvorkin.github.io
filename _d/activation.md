@@ -8,7 +8,7 @@ redirect_from:
   - activation-energy
   - willpower
   - will-power
-imagefeatureblob: blog/raccoon-activation.webp
+imagefeatureblob: blog/raccoon-activation-energy-four.webp
 ---
 
 Doing activities requires will power, addictions and procrastination require negative will power, while positive habits, especially new ones require high will power. Here's a model for these things.
@@ -17,7 +17,7 @@ Doing activities requires will power, addictions and procrastination require neg
 
 {% include alert.html content="Try the interactive [Activation Energy Game](https://activation-energy-game.surge.sh/lessons/morning-choice/) — a Nicky Case-inspired explainer where you experience activation energy, morning choices, and willpower tradeoffs firsthand." style="success" %}
 
-{% include blob_image_float_right.html src="blog/raccoon-activation.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-activation-energy-four.webp" alt="Four felt raccoons in rainbow glasses holding a log labeled Activation Energy over their heads, their shirts reading Cognitive, Professional, Emotional and Physical" %}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.2/chart.min.js" integrity="sha512-tMabqarPtykgDtdtSqCL3uLVM0gS1ZkUAVhRFu1vSEFgvB73niFQWJuvviDyBGBH22Lcau4rHB5p2K2T0Xvr6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/1.2.1/chartjs-plugin-annotation.min.js" integrity="sha512-ooJBPaW5ClG2gzDFT6KIKVeA8Pcie6InrV/gFP+RH6P2hrCJNVjaggZrxT/CeBakKwOlSUwHEwMCa5iny0uJtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

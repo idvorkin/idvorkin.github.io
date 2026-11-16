@@ -72,7 +72,7 @@ It has the same shape as a long deep talk with an old friend — or the flow you
 
 ### Tools matter — the mic especially
 
-Quality of voice transcription is gear-bottlenecked, not model-bottlenecked. A real lapel mic close to your mouth beats laptop and phone built-ins by a country mile. Full deep dive on the cockpit and the specific mic in [ai-cockpit](/ai-cockpit#the-mic-matters-more-than-i-thought).
+Quality of voice transcription is gear-bottlenecked, not model-bottlenecked. The mic I use, and the ring that starts and sends a dictation, are in [Custom hardware for voice](/ai-cockpit#custom-hardware-for-voice).
 
 ### No more gaps between contexts
 

@@ -24,6 +24,7 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [Upcoming](#upcoming)
 - [Diary](#diary)
   - [2026-11-14](#2026-11-14)
+    - [Muse Bought My Magic Supplies](#muse-bought-my-magic-supplies)
     - [My Agents Each Kept a To-Do List, and I Was the Message Bus](#my-agents-each-kept-a-to-do-list-and-i-was-the-message-bus)
     - [IgSnap: Writing My Own Screenshot App Was Faster Than Installing One](#igsnap-writing-my-own-screenshot-app-was-faster-than-installing-one)
   - [2026-11-05](#2026-11-05)
@@ -278,6 +279,15 @@ let's see if we can simulate him, step #1, let's bring the site down into markdo
 ## Diary
 
 ### 2026-11-14
+
+#### Muse Bought My Magic Supplies
+
+- **TOP Takeaway**: Muse replaced another drudgery: going through a website. I needed magic supplies from an online shop, and instead of clicking through the site myself, Muse did it in a browser and bought them.
+- **What it did**: confirmed I was logged in, checked all 9 items in the cart against my list, went through checkout, and told me the order was placed. $113.52 of supplies plus $5 shipping, no tax, $118.52, paid with Stripe Link.
+- **The leash**: a $145 cap. I set the ceiling and it came in under it.
+- **The dream**: this is the dream of Alexa Shopping, which I worked on, but for every store. Right now Amazon blocks this. My guess is that will change.
+
+<img src="/images/muse-bought-magic-supplies.webp" alt="Two chat messages from Muse. First: yes, you're logged in and all 9 items are in the cart under your account, subtotal $113.52, exactly as ordered; I checked it against the list and told the browser to go ahead with checkout. Second: it's in, order placed, $118.52 ($113.52 + $5 shipping, no tax), well under the $145 cap, all 9 items, paid with Stripe Link. The confirmation number is covered." width="685" height="554" loading="lazy" decoding="async" style="max-width:420px;width:100%;height:auto;border-radius:10px;" />
 
 #### My Agents Each Kept a To-Do List, and I Was the Message Bus
 
