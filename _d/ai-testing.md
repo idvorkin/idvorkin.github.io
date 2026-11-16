@@ -10,6 +10,7 @@ ai_default_image: true
 tags:
   - ai
   - machine-learning
+imagefeaturelocal: raccoon-ai-testing-grading.webp
 ---
 
 _How to measure AI: what to test, how to score it, how to read the results, and my own benchmarks. Which software to run it with is [AI Eval Tools](/ai-eval-tools)._
@@ -19,6 +20,8 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
 > Unlike unit tests, evals are an emerging art/science. Anyone who claims to know exactly how your evals should be defined can safely be ignored. We've designed Pydantic Evals to be flexible and useful without being too opinionated.
 >
 > — [Pydantic Evals docs](https://ai.pydantic.dev/evals/)
+
+{% include repo_image_float_right.html src="raccoon-ai-testing-grading.webp" alt="The felt raccoon in a green GRADE t-shirt, pencil behind his ear, frowning between two papers, one reading 2+2=4 with a green check mark and one a smiley face with a red question mark, as a small robot waits at a school desk" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

@@ -2,7 +2,7 @@
 layout: post
 title: "Enabling Environment"
 permalink: /enable
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-enable.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-enable-felt.webp
 redirect_from:
   - /enabling-environment
 ---
@@ -42,7 +42,7 @@ Imagine the place you do your best work. Andy Matuschak defined this, and as som
 <!-- prettier-ignore-end -->
 
 There's so much to say here. Pulling in some content from Andy:
-{%include blob_image_float_right.html src="blog/raccoon-enable.webp" %}
+{%include blob_image_float_right.html src="blog/raccoon-enable-felt.webp" alt="Felt raccoon in rainbow glasses and an Enable shirt sitting at a desk covered in papers, holding up a printed report beside a monitor full of charts" %}
 
 ## From Andy
 

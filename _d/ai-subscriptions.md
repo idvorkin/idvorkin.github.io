@@ -11,6 +11,7 @@ redirect_from:
   - /ai-subs
 alias:
   - /ai-subs
+imagefeaturelocal: raccoon-ai-subscriptions-boxes.webp
 ---
 
 <!--
@@ -22,6 +23,8 @@ INSTRUCTIONS FOR CLAUDE — do not render
 I pay about \$350 a month for AI, across four subscriptions. Is that worth it? One heavy week of agent work at API prices cost me \$230; the subscription that covers every week of the month costs \$200. And the \$200 doesn't buy a chatbot, it buys brilliant collaborators who force multiply everything I do and train me up while they're at it. The other \$150 buys a second and third coding agent for when the first one's window runs dry, and a voice for my life coach.
 
 {% include ai-slop.html percent="90" %}
+
+{% include repo_image_float_right.html src="raccoon-ai-subscriptions-boxes.webp" alt="The felt raccoon in a green MONTHLY t-shirt kneeling with a roll of packing tape beside four open cardboard boxes, a cheerful little robot waving from each one" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

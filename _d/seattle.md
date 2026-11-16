@@ -2,7 +2,7 @@
 layout: post
 title: "Seattle"
 permalink: /seattle
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-seattle.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-seattle-tourist-felt.webp
 ---
 
 Seattle is my home, I want to die here, though not soon. If you're visiting, here's a list of fun things you can try. But here's the deal, give me feedback on stuff to add or remove from this list.
@@ -15,7 +15,7 @@ Seattle is my home, I want to die here, though not soon. If you're visiting, her
 4. Fremont: Troll/Lenin
 5. Ride a ferry, Bremerton and Bainbridge leave from downtown. Take them there and stay on to come back
 
-{% include blob_image_float_right.html src="blog/raccoon-seattle.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-seattle-tourist-felt.webp" alt="Felt raccoon in rainbow glasses, an orange sun hat and a green TOURIST shirt, holding a camera and a map beside a SEATTLE street sign, with the Space Needle and the skyline behind him" %}
 
 ### By Neighborhood:
 

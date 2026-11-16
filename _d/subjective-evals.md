@@ -7,6 +7,7 @@ mermaid: true
 tags:
   - ai
   - machine-learning
+imagefeaturelocal: raccoon-subjective-evals-taste-test.webp
 ---
 
 <!--
@@ -22,6 +23,8 @@ Did the change make the system better? That's the one question an eval has to an
 {% include ai-slop.html percent="90" %}
 
 This page started from the outline of [Cameron Wolfe's AI Engineer NYC talk](#watch-the-talk), and I fleshed it out from there. It's for people figuring out how to build AI systems. I highly recommend the talk.
+
+{% include repo_image_float_right.html src="raccoon-subjective-evals-taste-test.webp" alt="The felt raccoon in a chef hat and green TASTE t-shirt tasting two bowls of soup and holding up a 7 score paddle, next to a small plush robot in a chef hat holding up its own 7" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

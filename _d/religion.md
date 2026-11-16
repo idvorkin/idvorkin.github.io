@@ -2,7 +2,7 @@
 title: "Religion: Losing belief while seeing value"
 layout: post
 permalink: /religion
-imagefeatureblob: blog/raccoon-religion.webp
+imagefeatureblob: blog/raccoon-religion-divine.webp
 ---
 
 I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Judaism. We flew there as a family, and I still remember stepping off the plane and feeling an intense warmth. I turned to my sister and whispered, "I can feel God." She rolled her eyes and said, "That's not God. That's forty degrees Celsius."
@@ -10,7 +10,7 @@ I did my Bar Mitzvah at the Wailing Wall in Israel — the holiest place in Juda
 > "God is the name of the blanket we throw over mystery to give it shape."
 > — Barry Taylor, former AC/DC road manager turned Episcopal priest
 
-{% include blob_image_float_right.html src="blog/raccoon-religion.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-religion-divine.webp" alt="Felt raccoon in rainbow glasses sitting cross-legged, wearing a tallit over his head and shoulders and tefillin on his forehead, holding an open prayer book in one hand and a small glowing light in the other, with books titled Wisdom, Scriptures and Gratitude in front of him" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

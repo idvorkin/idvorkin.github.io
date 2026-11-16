@@ -5,12 +5,12 @@ author: "Igor Dvorkin"
 inprogress: true
 comments: true
 permalink: /taxes
-imagefeaturelocal: raccoon-money.webp
+imagefeaturelocal: raccoon-tax-desk-felt.webp
 ---
 
 Most of the tax information on the web is a mess. It's confusing because it tries to apply to everyone, and it's often written by non-engineers for non-engineers. This post is the taxes-only slice of my notes — capital gains, Washington State cap-gains mechanics, step-up in basis, retirement-account mechanics (IRAs, 401(k)s, Roth, 529s), and related tax-code levers for a software engineer's life.
 
-{% include local_image_float_right.html src="raccoon-money.webp" %}
+{% include local_image_float_right.html src="raccoon-tax-desk-felt.webp" alt="Felt raccoon in rainbow glasses, a grey suit and a tie, signing a TAX form at a desk with two calculators and stacks of gold coins" %}
 
 For RSUs, stock options, metrics, health insurance, and money philosophy, see the companion [money post](/money). To run your own numbers against the tables below, use the [capital gains calculator](https://idvorkin-ai-tools.github.io/cap-gains-explainer/) — same 2026 federal figures, same WA kinks, with wages as a slider so you can watch a salary eat the 0% bracket.
 

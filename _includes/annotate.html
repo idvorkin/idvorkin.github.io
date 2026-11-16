@@ -3,7 +3,9 @@
 
   INERT BY DEFAULT. Readers get no UI, no network calls, and (aside from
   this tiny script parse) no cost. Everything below is guarded by a
-  localStorage flag that only Igor ever sets.
+  localStorage flag that only Igor ever sets. The one exception is a
+  `#larry-cockpit=` fragment (see SEND TO LARRY): it saves an address to
+  localStorage and strips itself, with no network call.
 
   Enable  : visit any post with ?annotate=1  (persists via localStorage)
   Disable : visit any post with ?annotate=0
@@ -50,7 +52,7 @@
   reading — a note taken against the local Jekyll preview and one taken
   against the live site are byte-identical without it. `location.origin` is
   scheme + host + port, so `https://idvork.in` and
-  `http://c-5004.squeaker-teeth.ts.net:4000` are distinguishable.
+  `http://<machine>.<tailnet>.ts.net:4000` are distinguishable.
 
   `location.href` is deliberately NOT recorded: beyond origin + permalink it
   only adds the query string and fragment, which here means `?annotate=1` and
@@ -82,8 +84,20 @@
       (`/blog-review`); no host is written here. Only these hosts get the
       status dot (`/larry/status`): green when Larry is idle, amber when
       busy, red when down or unreachable (off the tailnet).
-    * Anywhere else (idvork.in): one SECRET gist per batch, through the same
-      gist write and token as "Upload to gist". Description
+    * Anywhere else (idvork.in) with a saved Cockpit address: the same POST
+      and status dot, against the origin in localStorage `blogLarryCockpit`
+      (that Cockpit must allow CORS from this site, plus the
+      Private-Network preflight). The address is saved once, either by the
+      prompt on the first Send or by opening any page with the fragment
+      `#larry-cockpit=<origin>` (a fragment, never a query, so it stays out
+      of server logs; it strips itself, and asks before replacing a
+      different saved address). Only an https origin on a tailnet name or
+      localhost is accepted, origin only, re-checked on every read. A POST
+      that fails, errors or hangs past COCKPIT_TIMEOUT_MS sends that batch
+      and the rest of the Send to gists below (token asked for only then).
+    * Fallback, or a Send whose address prompt was cancelled: one SECRET
+      gist per batch, through the same gist write and token as "Upload to
+      gist". Description
       `blog-review: <permalink>`, one file `review.json`: the upload's shape
       plus `schema: "blog-review-batch/1"`, `batch_id`, `via: "send"`,
       `page_url`, `site_url` and `source_path`. A watcher lists the token
@@ -121,6 +135,8 @@
     var FLAG_KEY = "blogAnnotate";
     var TOKEN_KEY = "blogAnnotateToken";
     var BUF_KEY = "blogAnnotateBuffer";
+    var COCKPIT_KEY = "blogLarryCockpit"; // saved Cockpit origin, off-tailnet
+    var COCKPIT_TIMEOUT_MS = 8000; // a hung POST off the tailnet falls back
     var PR_CACHE_KEY = "blogAnnotateOpenPrs"; // sessionStorage
     var PR_CACHE_MS = 10 * 60 * 1000;
     var REPO_API = "https://api.github.com/repos/idvorkin/idvorkin.github.io";
@@ -191,6 +207,83 @@
     var q = readQueryFlag();
     if (q !== null) setEnabled(q);
 
+    // ------------------------------------------------- saved Cockpit address
+    // See SEND TO LARRY. One validator for the prompt, the fragment and every
+    // read: an https origin on a tailnet name or localhost, origin only.
+    function cockpitOrigin(raw) {
+      var s = String(raw || "").trim();
+      if (!s) return "";
+      if (s.indexOf("://") < 0) s = "https://" + s;
+      var u;
+      try {
+        u = new URL(s);
+      } catch (e) {
+        return "";
+      }
+      var h = u.hostname.toLowerCase();
+      if (u.protocol !== "https:") return "";
+      if (h !== "localhost" && !/\.ts\.net$/.test(h)) return "";
+      return u.origin;
+    }
+
+    function savedCockpit() {
+      try {
+        return cockpitOrigin(localStorage.getItem(COCKPIT_KEY));
+      } catch (e) {
+        return "";
+      }
+    }
+
+    function saveCockpit(origin) {
+      try {
+        localStorage.setItem(COCKPIT_KEY, origin);
+      } catch (e) {
+        /* private mode: used for this page load only */
+      }
+    }
+
+    // #larry-cockpit=<origin> saves the address and strips itself. A fragment
+    // never reaches a server log. Replacing a DIFFERENT saved address asks
+    // first: anyone can own a tailnet name, so a crafted link must not
+    // silently redirect the notes.
+    (function readCockpitFragment() {
+      var hash = String(window.location.hash || "");
+      var prefix = "#larry-cockpit=";
+      if (hash.indexOf(prefix) !== 0) return;
+      var raw = hash.slice(prefix.length);
+      try {
+        raw = decodeURIComponent(raw);
+      } catch (e) {
+        /* keep it raw; the validator rejects junk */
+      }
+      try {
+        history.replaceState(
+          null,
+          "",
+          window.location.pathname + window.location.search
+        );
+      } catch (e) {
+        /* the address is still read; the hash just stays visible */
+      }
+      var origin = cockpitOrigin(raw);
+      if (!origin) {
+        // Fixed text, never the link's: a reader without the flag sees nothing.
+        if (enabled())
+          window.alert("That is not a Cockpit address, so nothing was saved.");
+        return;
+      }
+      var prev = savedCockpit();
+      if (
+        prev &&
+        prev !== origin &&
+        !window.confirm(
+          "Send to Larry now posts to " + prev + ". Switch to " + origin + "?"
+        )
+      )
+        return;
+      saveCockpit(origin);
+    })();
+
     // The keyboard toggle is the only listener a normal reader ever pays for.
     // It is a single keydown handler; cost is indistinguishable from zero.
     document.addEventListener("keydown", function (e) {
@@ -216,6 +309,7 @@
       ENTER_SAVE_MS: ENTER_SAVE_MS,
       noteEnterStep: noteEnterStep,
       prsTouchingPath: prsTouchingPath,
+      cockpitOrigin: cockpitOrigin,
       set: function (on) {
         live = !!on;
         setEnabled(live);
@@ -245,12 +339,11 @@
         window.location.protocol + "//" + window.location.host;
       var SITE_URL = ((meta && meta.dataset.siteUrl) || "").replace(/\/$/, "");
       var SOURCE_PATH = (meta && meta.dataset.sourcePath) || "";
-      // The Cockpit on this same host (see SEND TO LARRY), or "" off-tailnet.
+      // The Cockpit (see SEND TO LARRY): on this same host for a tailnet or
+      // localhost page, else the saved address, else "" until a Send asks.
       var HOST = String(window.location.hostname || "").toLowerCase();
-      var LARRY =
-        HOST === "localhost" || /\.ts\.net$/.test(HOST)
-          ? "https://" + HOST
-          : "";
+      var SAME_HOST = HOST === "localhost" || /\.ts\.net$/.test(HOST);
+      var LARRY = SAME_HOST ? "https://" + HOST : savedCockpit();
 
       // ------------------------------------------------------------- storage
       function loadBuffer() {
@@ -862,19 +955,56 @@
           }, 1500);
           return Promise.resolve();
         }
-        // Off the tailnet the batches go to secret gists; ask for the token
-        // once, before anything is sent.
-        var token = LARRY ? null : getToken();
-        if (!LARRY && !token) {
-          openReview();
-          document.getElementById("blog-annot-note").textContent =
-            "No GitHub token, so nothing was sent. Your notes are kept.";
-          return Promise.resolve();
+        // Off the tailnet with no saved address, ask for one once. Cancel
+        // means "use the gist"; a bad address sends nothing.
+        if (!LARRY && !SAME_HOST) {
+          var typed = window.prompt(
+            "Cockpit address for Send to Larry (https://…), saved in this " +
+              "browser. Cancel to send to a secret gist instead."
+          );
+          if (typed && typed.trim()) {
+            var origin = cockpitOrigin(typed);
+            if (!origin) {
+              openReview();
+              document.getElementById("blog-annot-note").textContent =
+                "Not a Cockpit address, so nothing was sent. Your notes are kept.";
+              return Promise.resolve();
+            }
+            saveCockpit(origin);
+            LARRY = origin;
+          }
         }
-        var deliver = LARRY
+        // Gists only off the tailnet, and only once the Cockpit fails: the
+        // token is asked for then, at most once per Send.
+        var token = null;
+        var asked = false;
+        var cockpitDown = !LARRY;
+        var why = "";
+        function gist(batch, why) {
+          if (!asked) {
+            asked = true;
+            token = getToken();
+          }
+          if (!token)
+            return Promise.reject(
+              new Error(
+                (why ? why + ", and no" : "No") +
+                  " GitHub token, so nothing was sent"
+              )
+            );
+          return postGist(token, batch.path, reviewBatchJson(batch));
+        }
+        var deliver = SAME_HOST
           ? deliverToCockpit
           : function (batch) {
-              return postGist(token, batch.path, reviewBatchJson(batch));
+              if (cockpitDown) return gist(batch, why);
+              return deliverToCockpit(batch).catch(function (err) {
+                // Unreachable, CORS, timeout or an error reply: stop trying
+                // the Cockpit for this Send and use the gist for the rest.
+                cockpitDown = true;
+                why = err.message || String(err);
+                return gist(batch, why);
+              });
             };
         sending = true;
         sendBtn.disabled = true;
@@ -928,11 +1058,16 @@
       }
 
       function deliverToCockpit(batch) {
-        return fetch(LARRY + "/blog-review", {
+        var init = {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(batch.body),
-        }).then(function (res) {
+        };
+        // Off the tailnet a saved address can hang instead of failing; cap
+        // it so the gist fallback still runs.
+        if (!SAME_HOST && window.AbortSignal && AbortSignal.timeout)
+          init.signal = AbortSignal.timeout(COCKPIT_TIMEOUT_MS);
+        return fetch(LARRY + "/blog-review", init).then(function (res) {
           if (!res.ok) throw new Error("Cockpit returned " + res.status);
         });
       }
