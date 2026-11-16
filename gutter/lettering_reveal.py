@@ -31,6 +31,8 @@ Optional "audio": a separate track (e.g. a re-voiced mix) to align against and m
 heard segments split the speakers wrongly (two speakers merged into one segment).
 "first": t (seconds, optional) pins the first word's start. The first word is capped
 from the second word's start, so a pause after it ("Larry. ... It's me.") makes it late.
+"pins": {"2": t} (optional) pins the start of any other word by its index in the
+bubble: the word after a mid-bubble pause ("Polo. ... He's fine.") swallows the pause.
 mode: "reveal" (spoken in this clip), "full" (already said), "empty" (not yet said).
 "pop" (default true): a bubble is invisible until its speaker starts, then pops
 in from its tail (lowest point, or "tail": [x, y]) over 0.25 s with a small
@@ -385,6 +387,7 @@ def main() -> None:
                 "words": words,
                 "window": b.get("window"),
                 "first": b.get("first"),
+                "pins": b.get("pins") or {},
             }
         )
     debug.save(out.with_name(out.stem + "-words.png"))
@@ -404,6 +407,8 @@ def main() -> None:
             b["starts"] = starts[i : i + len(b["words"])]
             if b["first"] is not None:  # a pause after the first word fools the cap
                 b["starts"][0] = b["first"]
+            for k, t in b["pins"].items():  # a pause mid-bubble: pin that word
+                b["starts"][int(k)] = t
             for (w, sp, _), t, sc in zip(
                 b["words"], b["starts"], scores[i : i + len(b["words"])]
             ):

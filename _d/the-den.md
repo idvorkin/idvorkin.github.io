@@ -26,6 +26,8 @@ Tap any panel to read it full-screen; swipe or use the arrows to move through th
 
 {% include den_strip.html num="19" %}
 
+{% include den_strip.html num="18" %}
+
 {% include den_strip.html num="17" %}
 
 {% include den_strip.html num="16" %}
