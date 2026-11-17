@@ -18,7 +18,7 @@ alias:
 permalink: /awareness
 ---
 
-A transformative spiritual guide that challenges you to wake up from the sleep of unconscious living. Anthony de Mello, a Jesuit priest and psychotherapist, delivers spiritual tough love through short chapters filled with stories, parables, and direct challenges. His message: most of us spend our lives asleep, and awareness is the key to waking up to true happiness and freedom.
+My notes on Awareness by Anthony de Mello, a Jesuit priest and psychotherapist. His message: most of us spend our lives asleep, and awareness is how you wake up. It's spiritual tough love in short chapters of stories and parables, and one of my guides to spiritual health.
 
 {% include ai-slop.html percent="90" %}
 

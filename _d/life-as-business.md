@@ -10,7 +10,7 @@ tags:
   - balance
 ---
 
-Businesses exist to generate profit. But what about life? Can we manage our lives with the same intentionality and clarity businesses use to thrive? Viewing life through this lens helps prioritize what truly matters, sustain energy, and deepen relationships. Just as businesses carefully manage resources, we can intentionally allocate our energy, nurture meaningful assets, and measure success beyond mere productivity. Life operates on two intertwined currencies—Life Value (the true worth of our existence) and energy (the operational fuel). These currencies are generated and sustained by carefully nurturing life assets such as relationships, health, skills, and character.
+What if I ran my life the way a business runs? Life has two currencies: Life Value (what it's worth) and energy (the fuel). Both come from assets I have to keep up: relationships, health, skills and character. One caution before the balance sheet: the model should serve how I live, not control it.
 
 However, while this model provides structure, approach it with flexibility and wisdom. Remember:
 

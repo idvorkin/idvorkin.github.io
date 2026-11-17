@@ -4,7 +4,7 @@ title: "The Advice Lab: Where Wisdom Gets Beta Tested"
 permalink: /advice
 ---
 
-Welcome to The Advice Lab! Think of advice like software - some versions are stable, others are still in beta, and what works perfectly on one system might crash another. Here we'll explore the art and science of giving and receiving life's most valuable patches and updates.
+No advice is good for everyone, and no advice is good for someone all of the time. So giving it starts with seeking first to understand, and receiving it starts with skepticism. These are my notes on both sides.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

@@ -8,11 +8,7 @@ collapsible: true
 permalink: /nurture
 ---
 
-In "Nurturing Love," the Heath Brothers distill the wisdom of renowned relationship experts Drs. John and Julie Gottman into a concise and actionable guide for couples seeking to strengthen their relationships. Using their signature storytelling approach and evidence-based insights, the Heath Brothers create an engaging and accessible roadmap to the Gottman Method.
-
-The book breaks down the Gottman Method into an easy-to-remember acronym: NURTURE, which represents the seven essential components of healthy relationships. Each chapter delves into a different aspect of NURTURE, offering practical advice, real-life examples, and exercises for couples to practice and deepen their connection.
-
-BTW - OMG this was all created by GPT-4
+GPT-4 wrote this whole page. It's the Gottman Method arranged as an acronym, NURTURE, one chapter per letter, with worksheets at the end.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

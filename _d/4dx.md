@@ -13,7 +13,7 @@ tags:
   - execution
 ---
 
-The 4 Disciplines of Execution (4DX) is a proven framework for executing your most important strategic priorities in the midst of the whirlwind of day-to-day demands. This framework has been tested and refined by hundreds of organizations and thousands of teams over many years.
+4DX is how you get the important thing done when the whirlwind of the day job eats all your time. Four disciplines: focus on the wildly important, act on lead measures, keep a compelling scoreboard, and create a cadence of accountability. My notes on the book.
 
 {% include amazon.html asin="1982156988" %}
 
