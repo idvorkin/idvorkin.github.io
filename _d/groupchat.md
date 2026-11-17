@@ -5,7 +5,7 @@ permalink: /groupchat
 imagefeatureblob: blog/raccoon-dinner-party.webp
 ---
 
-Imagine a group chat as the bustling kitchen of a high-end restaurant. In place of culinary masterpieces, it's ideas, gossip, and insights that are cooked up, seasoned, and served. Just as a great dinner party brings together eclectic personalities for a memorable evening, a stellar group chat assembles diverse voices for ongoing, vibrant conversations. Basically [Sriram's awesome post on great group chats](https://sriramk.com/group-chats-rule-the-world).
+The best group chats are a forever dinner party: good friends and conversation happening in perpetuity. I've been part of several and tried to stand up many myself, and the same patterns repeat across all the good ones. This builds on [Sriram's post on great group chats](https://sriramk.com/group-chats-rule-the-world).
 
 {%include blob_image_float_right.html src="blog/raccoon-dinner-party.webp" %}
 

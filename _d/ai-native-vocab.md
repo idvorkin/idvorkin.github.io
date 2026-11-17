@@ -11,7 +11,7 @@ redirect_from:
 ai_default_image: true
 ---
 
-AI is spawning a whole new vocabulary — some of it genuinely useful, some of it pure hype. This is my running glossary of the terms worth knowing, with my take on what each one actually means and why it matters. It's the companion glossary to [The AI Native Engineering Manager](/ai-native-manager).
+My running glossary of AI-era words, with my take on each. Agency, for example, is the fancy new word for "Gets Shit Done." Companion to [The AI Native Engineering Manager](/ai-native-manager).
 
 {% include ai-slop.html percent="50" %}
 

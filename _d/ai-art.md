@@ -5,7 +5,7 @@ permalink: /ai-art
 ai_default_image: true
 ---
 
-Creativity is a critical aspect of art, and that's something which I think AI can be really good at. Some very random ideas
+I think AI can be really good at creativity, and creativity is a big part of art. My rough notes: the philosophy first (the sandwich workflow, where a human prompts and the AI generates a menu of options), then the tech: image, voice, lip-sync and song generators.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

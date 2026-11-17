@@ -19,7 +19,7 @@ redirect_from:
   - /nonjudgment
 ---
 
-Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached. She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.
+Lead with curiosity, not judgment, toward yourself and toward others. My model is a grandmother: she loves her grandchildren with no strings attached, and because she loves them she steps in when they're being self-destructive. These are my notes on compassion and on swapping judgment for curious questions.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

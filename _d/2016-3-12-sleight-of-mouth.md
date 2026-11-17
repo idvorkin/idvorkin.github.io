@@ -12,7 +12,7 @@ redirect_from:
 imagefeaturelocal: sleight-of-mouth-raccoon-reframe.webp
 ---
 
-Language, often unknown to us, creates our mental models, our reality, and defines our meaning. But the model is not the terrain, and by engaging with the language we can change mental models. Sleight of mouth is a series of techniques for changing our models, reality and meanings, and thus our experiences. Our mental models are a frame, and we need help going from a 'problem frame' to an 'outcome frame', a 'failure frame' to a 'feedback frame', and an 'impossible frame' to an 'as if' frame. To experience the power of language, find anything that is invisible to you, and name it. Now that you've given it a name, see how you perceive it, and become aware of it.
+Find something that is invisible to you and name it. Now notice how differently you perceive it. That's the power of language, and Sleight of Mouth is Robert Dilts's set of fourteen moves for using it: reframing a problem as an outcome, a failure as feedback, an impossibility as "as if". These are my notes, most useful for arguing with your own beliefs.
 
 {% include ai-slop.html percent="50" %}
 
