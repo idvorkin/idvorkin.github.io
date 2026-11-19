@@ -34,7 +34,7 @@ For years my back was stiff every morning until I stretched it out, and kettlebe
 
 ### Who Is Stuart McGill?
 
-He's the spine researcher behind the McGill Big 3. A few things I like about him:
+He's the spine researcher behind the McGill Big 3. Some trivia:
 
 1. He experimented on himself, sticking needles into his own muscles and zapping them with electricity to improve diagnosis
 2. He broke his cervical spine
@@ -67,7 +67,7 @@ The Big 3 are McGill's answer: three isometric holds that build endurance around
 2. **Side plank** (side bridge). Lie on your side propped on your elbow, elbow under your shoulder. Lift your hips until your body is a straight line from head to feet, and hold. Too hard? Bend your knees and bridge from the knees instead.
 3. **Bird dog**. On hands and knees, reach one arm forward and the opposite leg back until both are level with your torso, and hold. Your back shouldn't arch and your hips shouldn't hike or twist; imagine a glass of water balanced on your lower back.
 
-**Dose:** McGill builds endurance with reps of short holds, not one long hold. Each hold is about 10 seconds, done as a descending pyramid: for example 6 holds, then 4, then 2, per side, with a short rest between sets. If 10 seconds gets easy, add reps rather than seconds. The whole routine takes about 10 minutes.
+**Dose:** McGill builds endurance with reps of short holds, not one long hold (the version below is from Back Mechanic). Each hold is about 10 seconds, done as a descending pyramid: for example 6 holds, then 4, then 2, per side, with a short rest between sets. If 10 seconds gets easy, add reps rather than seconds.
 
 If any of these hurt, stop. The goal is a spine that stays quiet, not one you push through pain.
 
