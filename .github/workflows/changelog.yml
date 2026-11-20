@@ -319,6 +319,15 @@ jobs:
               echo "$ERR"
               echo "$FENCE"
             } >> "$GITHUB_STEP_SUMMARY"
+            # A revoked or expired CLAUDE_CODE_OAUTH_TOKEN fails the first API
+            # call (1 turn, $0, modelUsage {}) and nothing in this repo can fix
+            # it — every run 2026-09-28 .. 2026-11-16 died this way. Name the
+            # secret and the fix so the red build says who has to act.
+            if [[ "$ERR" == *"Failed to authenticate"* || "$ERR" == *"OAuth"* ]]; then
+              FIX='CLAUDE_CODE_OAUTH_TOKEN is revoked or expired. Repo owner: run `claude setup-token` locally, then `gh secret set CLAUDE_CODE_OAUTH_TOKEN -R idvorkin/idvorkin.github.io`, then re-run via workflow_dispatch. claude.yml and claude-code-review.yml use the same secret.'
+              echo "::error::${FIX}"
+              printf '\n### Fix\n\n%s\n' "$FIX" >> "$GITHUB_STEP_SUMMARY"
+            fi
           fi
 
       - name: Verify changelog was updated
