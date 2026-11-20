@@ -12,6 +12,28 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
+- [Week of 2026-11-15](#week-of-2026-11-15)
+  - [New Posts and Rewrites (2026-11-15)](#new-posts-and-rewrites-2026-11-15)
+  - [Infrastructure & CI (2026-11-15)](#infrastructure--ci-2026-11-15)
+  - [chop-conventions (2026-11-15)](#chop-conventions-2026-11-15)
+  - [Other Projects (2026-11-15)](#other-projects-2026-11-15)
+- [Week of 2026-11-08](#week-of-2026-11-08)
+  - [New Posts and Rewrites (2026-11-08)](#new-posts-and-rewrites-2026-11-08)
+  - [Infrastructure & CI (2026-11-08)](#infrastructure--ci-2026-11-08)
+  - [chop-conventions (2026-11-08)](#chop-conventions-2026-11-08)
+  - [Other Projects (2026-11-08)](#other-projects-2026-11-08)
+- [Week of 2026-11-01](#week-of-2026-11-01)
+  - [New Posts and Rewrites (2026-11-01)](#new-posts-and-rewrites-2026-11-01)
+  - [Other Projects (2026-11-01)](#other-projects-2026-11-01)
+- [Week of 2026-10-25](#week-of-2026-10-25)
+  - [New Posts and Rewrites (2026-10-25)](#new-posts-and-rewrites-2026-10-25)
+  - [Infrastructure & CI (2026-10-25)](#infrastructure--ci-2026-10-25)
+  - [Other Projects (2026-10-25)](#other-projects-2026-10-25)
+- [Week of 2026-10-18](#week-of-2026-10-18)
+  - [New Posts and Rewrites (2026-10-18)](#new-posts-and-rewrites-2026-10-18)
+  - [Infrastructure & CI (2026-10-18)](#infrastructure--ci-2026-10-18)
+  - [chop-conventions (2026-10-18)](#chop-conventions-2026-10-18)
+  - [Other Projects (2026-10-18)](#other-projects-2026-10-18)
 - [Week of 2026-10-11](#week-of-2026-10-11)
   - [New Posts and Rewrites (2026-10-11)](#new-posts-and-rewrites-2026-10-11)
   - [Infrastructure & CI (2026-10-11)](#infrastructure--ci-2026-10-11)
@@ -235,6 +257,210 @@ A weekly summary of what changed on this blog and across my GitHub projects. Use
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
+
+## Week of 2026-11-15
+
+_47 commits this week_
+
+_Checked through 2026-11-15 23:59 PT; next entry starts from here._
+
+### New Posts and Rewrites (2026-11-15)
+
+- **[Evals With No Right Answer](/subjective-evals#the-recipe) (new post!)** - [A nine-step recipe](https://github.com/idvorkin/idvorkin.github.io/commit/f5edd8b4a) for grading work with no answer key: a policy, consistent humans, an automatic judge, then grade the grader.
+- **[AI Testing](/ai-testing#read-the-failures-before-picking-metrics)** - [Read failures before picking metrics](https://github.com/idvorkin/idvorkin.github.io/commit/85af98456), treat the judge as a classifier, score the parts, check the difference is real.
+- **[What's Left in Engineering?](/whats-left#job-3-evaluate-ai-systems)** - [A third job, evaluating AI systems](https://github.com/idvorkin/idvorkin.github.io/commit/6ec510108), and an early read on whether jobs remain.
+- **[The red pen](/how-igor-chops#the-red-pen-send-to-larry)** - [My blog review loop](https://github.com/idvorkin/idvorkin.github.io/commit/7c577fa06): a PR diff, voice notes on the page, one batch sent to Larry, [a tool built for one user](https://github.com/idvorkin/idvorkin.github.io/commit/3a64d43d9).
+- **[AI Journal](/ai-journal#igsnap-writing-my-own-screenshot-app-was-faster-than-installing-one)** - [Writing a screenshot app beat installing one](https://github.com/idvorkin/idvorkin.github.io/commit/42a297642); [two agents' separate to-do lists](https://github.com/idvorkin/idvorkin.github.io/commit/c540fb0c8); [Muse bought my magic supplies](https://github.com/idvorkin/idvorkin.github.io/commit/9e0dc40a8).
+- **[Being Assertive](/partner-trouble#being-assertive)** - [Rebuilt from ACT with Love](https://github.com/idvorkin/idvorkin.github.io/commit/897fed4f2): puppy and shark become [Covey's Lose/Win and Win/Lose](https://github.com/idvorkin/idvorkin.github.io/commit/d52e25caa), assertive is Win/Win.
+- **[Staying Afloat](/staying-afloat#how-to-play)** - [Zooming dropped, touch-first embed](https://github.com/idvorkin/idvorkin.github.io/commit/8e3e538e4), [picture first with controls tucked away](https://github.com/idvorkin/idvorkin.github.io/commit/a7bec1b63), and [a stress tolerance slider](https://github.com/idvorkin/idvorkin.github.io/commit/57ebed521).
+- **Small edits** - [Religion](/religion) [loses its filler](https://github.com/idvorkin/idvorkin.github.io/commit/1d2c6e238); [Greek Orthodox](/greek-orthodox) [a third shorter](https://github.com/idvorkin/idvorkin.github.io/commit/023a340d3); [a clickable pain body map](https://github.com/idvorkin/idvorkin.github.io/commit/2ed41f68c) on [physical pain](/physical-pain#places-ive-had-pain).
+- **[Voice hardware](/ai-cockpit#custom-hardware-for-voice)** - The lapel mic and [a scrolling ring that toggles dictation](https://github.com/idvorkin/idvorkin.github.io/commit/b3da1ecc3) [get their own section](https://github.com/idvorkin/idvorkin.github.io/commit/7d838f13e).
+- **[The Den #16, #17, #19, #20](/the-den)** - [Backwards](https://github.com/idvorkin/idvorkin.github.io/commit/c2b078e78), [Correction](https://github.com/idvorkin/idvorkin.github.io/commit/6a873c990), [I Know a Guy and No Change](https://github.com/idvorkin/idvorkin.github.io/commit/55e529e35); [voiced videos](https://github.com/idvorkin/idvorkin.github.io/commit/d9b049965) for Den #15 and [the first date](/tori).
+- **Felted raccoons** - [Old-style pictures redrawn](https://github.com/idvorkin/idvorkin.github.io/commit/340bcc729), [a new site default](https://github.com/idvorkin/idvorkin.github.io/commit/1570df1be), and [heroes for eight pages](https://github.com/idvorkin/idvorkin.github.io/commit/cb15d4e52).
+
+### Infrastructure & CI (2026-11-15)
+
+- **[Send to Larry](https://github.com/idvorkin/idvorkin.github.io/commit/1d670e2e9)** - Review notes go to Larry [with a status dot](https://github.com/idvorkin/idvorkin.github.io/commit/1d670e2e9), [now on the live site with an open-PR badge](https://github.com/idvorkin/idvorkin.github.io/commit/b442e4114); [two Enters save a note](https://github.com/idvorkin/idvorkin.github.io/commit/a02a2c700).
+
+### chop-conventions (2026-11-15)
+
+- **[machine-doctor alerts](https://github.com/idvorkin/chop-conventions/commit/eaad41547)** - [Watches heat, low disk and thermal sleeps](https://github.com/idvorkin/chop-conventions/commit/eaad41547), alerting through a command after [a three-minute hold](https://github.com/idvorkin/chop-conventions/commit/dedf606d4).
+- **[PR bodies](https://github.com/idvorkin/chop-conventions/commit/fd6fe0c9d)** - [Open with a human summary, agent write-up folded](https://github.com/idvorkin/chop-conventions/commit/fd6fe0c9d); [Fable subagents told when they own the code](https://github.com/idvorkin/chop-conventions/commit/68481a0b4).
+
+### Other Projects (2026-11-15)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iPhone health and context app)
+
+- **[Whiteboard](https://github.com/idvorkin/context-grabber/commit/e69509871)** - [Retry, Dismiss or Interrupt after 20 seconds](https://github.com/idvorkin/context-grabber/commit/e69509871); Larry's marks [turn purple](https://github.com/idvorkin/context-grabber/commit/4aee2999b), with [Keep and Dismiss on a tap](https://github.com/idvorkin/context-grabber/commit/799018ee2).
+- **[Chat](https://github.com/idvorkin/context-grabber/commit/6d1003e96)** - [Pictures zoom, pan and share](https://github.com/idvorkin/context-grabber/commit/6d1003e96); [tables read as tables](https://github.com/idvorkin/context-grabber/commit/fdb12f044); [the share sheet takes dictation](https://github.com/idvorkin/context-grabber/commit/92850cd9e).
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone lift tracker and rep counter)
+
+- **[Workouts](https://github.com/idvorkin/exercise-analyzer/commit/5dc89236f)** - [Full-screen heart chart on the iPad](https://github.com/idvorkin/exercise-analyzer/commit/5dc89236f); [ellipticals offer no sets](https://github.com/idvorkin/exercise-analyzer/commit/e55413624); [a late watch ending fixes the saved workout](https://github.com/idvorkin/exercise-analyzer/commit/538692ccb).
+
+**New and smaller**
+
+- **[igsnap](https://github.com/idvorkin/igsnap)** (new) - [A Mac screenshot app: region, window snap, annotate, copy](https://github.com/idvorkin/igsnap/commit/4f7ae4d1c), plus [a black-out box](https://github.com/idvorkin/igsnap/commit/e6c0c6bb2).
+- **[Quantum Computing, Mapped](https://idvorkin-ai-tools.github.io/quantum-computing-field-map/)** (new) - [Nine parts, classical baseline to November 2026](https://github.com/idvorkin-ai-tools/quantum-computing-field-map/commit/b596a21ab), with [an error-correction calculator](https://github.com/idvorkin-ai-tools/quantum-computing-field-map/commit/92bd96713).
+- **[Software job title family tree](https://idvorkin-ai-tools.github.io/sw-job-title-family-tree-explainer/)** (new) - [Ian Miell's tree, interactive](https://github.com/idvorkin-ai-tools/sw-job-title-family-tree-explainer/commit/2a5e8b4fa): fold families, trace lineages.
+
+## Week of 2026-11-08
+
+_58 commits this week_
+
+### New Posts and Rewrites (2026-11-08)
+
+- **[Staying Afloat](/staying-afloat#floating) (new post!)** - Stress is water; sleep and friends lift me, pain and deadlines sink me, shown by [an interactive floating raccoon](https://github.com/idvorkin/idvorkin.github.io/commit/1e97ec3a0) [at the post's center](https://github.com/idvorkin/idvorkin.github.io/commit/ab42eeae4).
+- **[My AI Interests Map](/ai-interests-map#the-map) (new post!)** - A journal sketch of four AI branches [becomes a tappable map](https://github.com/idvorkin/idvorkin.github.io/commit/71d781dbd), then [an atlas with a Multimodal branch](https://github.com/idvorkin/idvorkin.github.io/commit/db4d40aa3).
+- **[Pistol Squats](/pistol-squat#the-ladder) (new post!)** - [My way back to a first pistol](https://github.com/idvorkin/idvorkin.github.io/commit/86bedbeb5): a two-part ladder, then a four-week re-entry plan with a test day.
+- **[How to Make It Funny](/comedy#why-anything-is-funny) (new post!)** - [Models of humor, from surprise to benign violation](https://github.com/idvorkin/idvorkin.github.io/commit/7c9070ccf), [rewritten as prose](https://github.com/idvorkin/idvorkin.github.io/commit/4e7f9fd4b) with [the Den pre-flight checklist](/comedy#the-pre-flight-checklist).
+- **[Storytelling](/storytelling#why-stories-work) (new post!)** - [The story talks get their own page](https://github.com/idvorkin/idvorkin.github.io/commit/0f457c9e5), which [becomes the home for narrative craft](https://github.com/idvorkin/idvorkin.github.io/commit/b4682e993), split from /writing.
+- **[AI Testing and Evals](/ai-testing#humans-dont-agree-either)** - [One page for testing and evals](https://github.com/idvorkin/idvorkin.github.io/commit/a798d99fd) with [precision and recall](https://github.com/idvorkin/idvorkin.github.io/commit/801f19ce6); [human raters disagree too](https://github.com/idvorkin/idvorkin.github.io/commit/6adc4985e), which sets the bar for judges.
+- **[Loneliness](/lonely#what-loneliness-is)** - Leads with [the danger being that it barely hurts](https://github.com/idvorkin/idvorkin.github.io/commit/d011b0fe7), plus [Mastroianni's social scurvy](https://github.com/idvorkin/idvorkin.github.io/commit/7739615b8).
+- **[Joy](/joy#novelty-wonder-and-surprise---break-the-mundane)** - [Awe as accommodation](https://github.com/idvorkin/idvorkin.github.io/commit/e6f5aec82): magic leaves the mind mid-rebuild; [a new wonder raccoon](https://github.com/idvorkin/idvorkin.github.io/commit/1c96aaaaf).
+- **[My CHOP setup](/how-igor-chops#the-review-board-lavish)** - [Lavish as the review board](https://github.com/idvorkin/idvorkin.github.io/commit/d274a0476), [AgentsView on trial](https://github.com/idvorkin/idvorkin.github.io/commit/fc5ee18ab), [Gas City moved to tried-and-dropped](https://github.com/idvorkin/idvorkin.github.io/commit/44e46f143).
+- **[The Den #15](/the-den)** - [Direct Line](https://github.com/idvorkin/idvorkin.github.io/commit/d9bbc96ed), with [a redrawn punchline panel](https://github.com/idvorkin/idvorkin.github.io/commit/1b6184e76).
+- **[Small edits](/ai-welfare#the-pain-axis-internal-states-drive-behavior)** - [The Pain Axis paper](https://github.com/idvorkin/idvorkin.github.io/commit/aac6aadea); [the Jevons paradox answers job loss](https://github.com/idvorkin/idvorkin.github.io/commit/054f75ec2); [one-user software](https://github.com/idvorkin/idvorkin.github.io/commit/d8fed30cf) in [hyper-personal](/hyper-personal#the-winchester-mystery-house-hyper-personalization-of-software-itself).
+
+### Infrastructure & CI (2026-11-08)
+
+- **[/idvorkin agent skill](https://github.com/idvorkin/idvorkin.github.io/tree/main/skill)** - [An installable skill that answers from the public blog](https://github.com/idvorkin/idvorkin.github.io/commit/ef7bd5a92), with [every citation deep-linked and checked](https://github.com/idvorkin/idvorkin.github.io/commit/1ef848802).
+- **[Random by topic](/random)** - [?topic= rolls from one topic](https://github.com/idvorkin/idvorkin.github.io/commit/1d1d740d7), which Context Grabber's [hold-to-pick tile](https://github.com/idvorkin/context-grabber/commit/765ffa143) uses.
+- **[Den strips as video](https://github.com/idvorkin/idvorkin.github.io/commit/e78dd4b3f)** - [Bubble words appear as they are spoken](https://github.com/idvorkin/idvorkin.github.io/commit/e78dd4b3f), with [re-voicing](https://github.com/idvorkin/idvorkin.github.io/commit/d8323c5eb); [Den #15 is the first video](https://github.com/idvorkin/blob/commit/2f866d137).
+
+### chop-conventions (2026-11-08)
+
+- **[Cartoonist](https://github.com/idvorkin/chop-conventions/commit/b3dfc632a)** - [A what-makes-it-funny pre-flight checklist](https://github.com/idvorkin/chop-conventions/commit/b3dfc632a), [pointing at /comedy for the humor models](https://github.com/idvorkin/chop-conventions/commit/5f0e65e7e).
+
+### Other Projects (2026-11-08)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iPhone, iPad and Mac context app)
+
+- **[Whiteboard on paper](https://github.com/idvorkin/context-grabber/commit/a2e922fee)** - [Boards become pages of paper](https://github.com/idvorkin/context-grabber/commit/a2e922fee) with [grid, ruled lines and color](https://github.com/idvorkin/context-grabber/commit/7af07efc1); [paper becomes the only canvas](https://github.com/idvorkin/context-grabber/commit/71bba7e02).
+- **[Larry draws](https://github.com/idvorkin/context-grabber/commit/b1e1b1b7c)** - [Larry draws on the board](https://github.com/idvorkin/context-grabber/commit/b1e1b1b7c); [his ghost marks stay while I draw, then fade](https://github.com/idvorkin/context-grabber/commit/26d9d1180); [pasted text becomes ink](https://github.com/idvorkin/context-grabber/commit/135f67c35).
+- **[Mac app](https://github.com/idvorkin/context-grabber/commit/e171012a9)** - [Runs on the Mac via Catalyst](https://github.com/idvorkin/context-grabber/commit/e171012a9), with [keyboard shortcuts as menu items](https://github.com/idvorkin/context-grabber/commit/c6977e431) and [Report a Problem on any screen](https://github.com/idvorkin/context-grabber/commit/ae8c43854).
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone lift tracker and rep counter)
+
+- **[Workout page](https://github.com/idvorkin/exercise-analyzer/commit/7375ddf6b)** - [Live heart rate, large, at top right](https://github.com/idvorkin/exercise-analyzer/commit/7375ddf6b); [Undo trim gives a workout its old end back](https://github.com/idvorkin/exercise-analyzer/commit/c9f889a43).
+
+**New and smaller**
+
+- **[browser-tab-helper](https://github.com/idvorkin/browser-tab-helper)** (new) - [A duplicate-tab card](https://github.com/idvorkin/browser-tab-helper/commit/55b2d9746), [a full tab list](https://github.com/idvorkin/browser-tab-helper/commit/126294b05) and [saved layouts](https://github.com/idvorkin/browser-tab-helper/commit/c572cfd98); [Edge is the supported browser](https://github.com/idvorkin/browser-tab-helper/commit/102ff0c7e).
+- **[audio-debugger](https://github.com/idvorkin/audio-debugger)** - [The mic opens off the main thread](https://github.com/idvorkin/audio-debugger/commit/5bee7ccad), so a car's Bluetooth mic no longer freezes the app.
+- **[yegge-field-map](https://github.com/idvorkin-ai-tools/yegge-field-map)** - [A Counting House page](https://github.com/idvorkin-ai-tools/yegge-field-map/commit/e1ba0bab8): stateless clerks, autonomy tiers, cost-weighted confusion matrix.
+
+## Week of 2026-11-01
+
+_2 commits this week_
+
+### New Posts and Rewrites (2026-11-01)
+
+- **[AI journal: a language practice partner](/ai-journal#are-you-using-llms-to-their-full-potential)** - [A voice call with Larry](https://github.com/idvorkin/idvorkin.github.io/commit/d6b392e46) to rehearse magic patter in Russian and French, after one system-prompt fix.
+- **[Typo sweep](https://github.com/idvorkin/idvorkin.github.io/commit/e619aaab7)** - [Spelling fixes across two hundred posts](https://github.com/idvorkin/idvorkin.github.io/commit/e619aaab7).
+
+### Other Projects (2026-11-01)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iPhone health and context app)
+
+- **[Whiteboard](https://github.com/idvorkin/context-grabber/commit/9c1adc3ad)** - [An Apple Pencil board on the iPad, sent to Larry as a picture](https://github.com/idvorkin/context-grabber/commit/9c1adc3ad); [boards become a list synced over iCloud](https://github.com/idvorkin/context-grabber/commit/f65c023c0).
+- **[Chat voice](https://github.com/idvorkin/context-grabber/commit/f0408536b)** - [Dictate a message with a microphone picker](https://github.com/idvorkin/context-grabber/commit/f0408536b) and [a live input level](https://github.com/idvorkin/context-grabber/commit/5e0cbda9f); [swipe a thread to archive it](https://github.com/idvorkin/context-grabber/commit/61e7f302a).
+- **[Calls](https://github.com/idvorkin/context-grabber/commit/8984bad3b)** - [A call dropped by a cellular-to-Wi-Fi handoff redials on its own](https://github.com/idvorkin/context-grabber/commit/8984bad3b).
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone lift tracker and rep counter)
+
+- **[Ending workouts](https://github.com/idvorkin/exercise-analyzer/commit/4c15f1f24)** - The watch [asks if you're done after fifteen quiet minutes](https://github.com/idvorkin/exercise-analyzer/commit/4c15f1f24), can [end when you leave the gym](https://github.com/idvorkin/exercise-analyzer/commit/2eca58fcd), and [the end can be trimmed](https://github.com/idvorkin/exercise-analyzer/commit/8dab0cc23).
+- **[Workout page](https://github.com/idvorkin/exercise-analyzer/commit/39d9a371f)** - [Heart-rate line draws live from the wrist](https://github.com/idvorkin/exercise-analyzer/commit/39d9a371f); [twelve weeks of one exercise's progression](https://github.com/idvorkin/exercise-analyzer/commit/34747c820).
+- **[Watch](https://github.com/idvorkin/exercise-analyzer/commit/c92f196d7)** - [Run, walk, bike, row and yoga workouts](https://github.com/idvorkin/exercise-analyzer/commit/c92f196d7); [wrist motion recorded per filmed set](https://github.com/idvorkin/exercise-analyzer/commit/aacd43bb3) to train a watch-only rep counter.
+
+**[bug-kit](https://github.com/idvorkin/bug-kit)** (bug reports for iOS apps)
+
+- **[Voice input](https://github.com/idvorkin/bug-kit/commit/1d88f6bcd)** - [A live input-level meter and mic picker any app can reuse](https://github.com/idvorkin/bug-kit/commit/1d88f6bcd).
+- **[Closing the loop](https://github.com/idvorkin/bug-kit/commit/8ff94a445)** - [What's new flags the build that fixed your own report](https://github.com/idvorkin/bug-kit/commit/8ff94a445); [a weekly per-app usage summary](https://github.com/idvorkin/bug-kit/commit/496d50401).
+
+**New and smaller**
+
+- **[audio-debugger](https://github.com/idvorkin/audio-debugger)** - The Mac mic scope [comes to iPhone and iPad](https://github.com/idvorkin/audio-debugger/commit/d4f3b8c0e), [prefers a wired headset mic](https://github.com/idvorkin/audio-debugger/commit/4645d9339), and [gets an app icon](https://github.com/idvorkin/audio-debugger/commit/12d285f4e).
+- **[The Pain Axis](https://idvorkin-ai-tools.github.io/pain-axis-field-map/)** (new) - [A field map of the paper on how LLMs represent self-directed harm](https://github.com/idvorkin-ai-tools/pain-axis-field-map/commit/a18d93c2b), [added to the explainer index](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io/commit/e3f8ef93f).
+
+## Week of 2026-10-25
+
+_12 commits this week_
+
+### New Posts and Rewrites (2026-10-25)
+
+- **[Frameworks vs libraries](/design#frameworks-vs-libraries-who-calls-whom)** - A library you call, a framework calls you: [frameworks ship the goop but own control flow](https://github.com/idvorkin/idvorkin.github.io/commit/df7f8b777) and lock you in.
+- **[Design diagrams](/design#business-logic-platforms-and-goop)** - [Three-layer goop and call-direction diagrams](https://github.com/idvorkin/idvorkin.github.io/commit/43c029118) [float beside the text and open full detail on click](https://github.com/idvorkin/idvorkin.github.io/commit/82c114eb0).
+- **[Igor's Three Claws](/igors-claws#challenges-business-logic-goop-infra)** - A [raccoon illustration](https://github.com/idvorkin/idvorkin.github.io/commit/1c311ec8e) for the [business logic, goop and infra layers](https://github.com/idvorkin/idvorkin.github.io/commit/03307aa0a).
+- **[The Like Switch](/like-switch#the-friendship-formula)** - [Notes distilled into scannable lists](https://github.com/idvorkin/idvorkin.github.io/commit/eff2ee661) of friend and foe signals.
+
+### Infrastructure & CI (2026-10-25)
+
+- **[Search](https://github.com/idvorkin/idvorkin.github.io/commit/f3ef01cd0)** - Site search [never indexes the build-stats loader](https://github.com/idvorkin/idvorkin.github.io/commit/f3ef01cd0), and [title hits drop the description snippet](https://github.com/idvorkin/idvorkin.github.io/commit/9ae461559).
+
+### Other Projects (2026-10-25)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iPhone health and context app)
+
+- **[Chat with Larry](https://github.com/idvorkin/context-grabber/commit/ff6e3b8ef)** - The Inbox [becomes chat threads with reply notifications](https://github.com/idvorkin/context-grabber/commit/ff6e3b8ef); [add notes with dictation and pasted images](https://github.com/idvorkin/context-grabber/commit/c5a40252f), [queued while offline](https://github.com/idvorkin/context-grabber/commit/7efc955ba).
+- **[Calls](https://github.com/idvorkin/context-grabber/commit/03563d660)** - [Dropped calls record the network and error](https://github.com/idvorkin/context-grabber/commit/03563d660), [a mic that fails to open redials](https://github.com/idvorkin/context-grabber/commit/40f5d77a1), and [a direct-to-Larry call](https://github.com/idvorkin/context-grabber/commit/cfa3db43d).
+- **[Daily strip](https://github.com/idvorkin/context-grabber/commit/b39d4f0a0)** - [Press and hold opens a two-week grid](https://github.com/idvorkin/context-grabber/commit/b39d4f0a0) to mark days; the [Live tile shows today's strip](https://github.com/idvorkin/context-grabber/commit/f02df8c05).
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone lift tracker and rep counter)
+
+- **[Exercise drawings](https://github.com/idvorkin/exercise-analyzer/commit/bba46d279)** - The top line [shows the exercise as its drawing, picked from a menu](https://github.com/idvorkin/exercise-analyzer/commit/bba46d279); [swing pills start at Bottom](https://github.com/idvorkin/exercise-analyzer/commit/5aa52e4f6).
+- **[Missing clips](https://github.com/idvorkin/exercise-analyzer/commit/ca2195245)** - A set whose Photos clip is gone [leaves the player](https://github.com/idvorkin/exercise-analyzer/commit/ca2195245) and [explains why](https://github.com/idvorkin/exercise-analyzer/commit/d997cb509).
+
+**New and smaller**
+
+- **[idvorkin-ai-tools.github.io](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io)** - A [Safety and alignment hub](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io/commit/ee48092ff) whose [diagram links every box and line](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io/commit/f686fb883).
+- **[kludge-cli](https://github.com/idvorkin/kludge-cli)** - [rkkb apply sets a keyboard to exactly a checked-in TOML keymap](https://github.com/idvorkin/kludge-cli/commit/c1b3993dc).
+
+## Week of 2026-10-18
+
+_69 commits this week_
+
+### New Posts and Rewrites (2026-10-18)
+
+- **[Why a Raccoon Is My Spirit Animal](/spirit-animal#wet-paws-busy-paws) (new post!)** - [Hands-first, puzzle-obsessed, a little up to something](https://github.com/idvorkin/idvorkin.github.io/commit/b43044d47); where the raccoon falls short, [the crow steps up](https://github.com/idvorkin/idvorkin.github.io/commit/d264f0d25).
+- **[12 Japanese Wisdoms](/japanese-wisdoms#what-i-practice) (new post!)** - [Twelve raccoon panels](https://github.com/idvorkin/idvorkin.github.io/commit/4ed760a0b) sorted into practice, reaching for and least for me; [tap any panel to step through them](https://github.com/idvorkin/idvorkin.github.io/commit/6c276cc84).
+- **[My Old iPhone Turned Up in Shenzhen](/iphone-security#why-i-wasnt-actually-in-trouble) (new post!)** - [Why the data stayed safe](https://github.com/idvorkin/idvorkin.github.io/commit/2987c6074); [Apple Bugs](/apple-bugs) [starts a running list](https://github.com/idvorkin/idvorkin.github.io/commit/02c36533e) of Xcode traps.
+- **[My AI Subscriptions](/ai-subscriptions#the-bill) (new post!)** - [What I pay for and what each line buys](https://github.com/idvorkin/idvorkin.github.io/commit/27fdaf6a3); [anything agentic runs on a subscription](https://github.com/idvorkin/idvorkin.github.io/commit/f75098400), never a key.
+- **[AI Welfare is an Engineering Problem](/ai-welfare#yegges-wager) (new post!)** - [Yegge's wager mapped to how I run Wally](https://github.com/idvorkin/idvorkin.github.io/commit/708d87021): [run agents like a great team](https://github.com/idvorkin/idvorkin.github.io/commit/dbe686c8e), souls or not.
+- **[CHOP rewritten for 2026](/chop)** - [/chop is the ideas, /how-igor-chops the setup](https://github.com/idvorkin/idvorkin.github.io/commit/9c88442dc); the [2024-25 history moves to /chop-history](https://github.com/idvorkin/idvorkin.github.io/commit/95f15b250) with predictions graded.
+- **[Sleight of Mouth absorbs Mind-Lines](/sleight-of-mouth#seven-directions-where-each-pattern-sends-your-attention)** - [Mind-Lines rewritten](https://github.com/idvorkin/idvorkin.github.io/commit/b661d05bd) then [folded in by direction](https://github.com/idvorkin/idvorkin.github.io/commit/fb6fe223e), plus [a belief builder and directions map](https://github.com/idvorkin/idvorkin.github.io/commit/f7a7e9f3f).
+- **[Rewrites](/act#the-one-question)** - ACT [rebuilt around one question](https://github.com/idvorkin/idvorkin.github.io/commit/f40190949), notes to [/act-made-simple](/act-made-simple); [Loneliness](/lonely) [thesis-first](https://github.com/idvorkin/idvorkin.github.io/commit/dbbb0086e); [time off](/timeoff) [rewritten](https://github.com/idvorkin/idvorkin.github.io/commit/0ca0de37f).
+- **[The Den #14](/the-den)** - [Quick Question](https://github.com/idvorkin/idvorkin.github.io/commit/81c480f46): twenty tasks overnight, one question asked after bedtime, nothing done by morning.
+- **[Small edits](/keyboard#programming-the-rk-s70-from-macos)** - [RK-S70 side keys from the terminal](https://github.com/idvorkin/idvorkin.github.io/commit/7c5487877); [OpenRouter Benchmarks](https://github.com/idvorkin/idvorkin.github.io/commit/741aeb953) and [EQ-Bench](https://github.com/idvorkin/idvorkin.github.io/commit/bd980de81) in [eval tools](/ai-eval-tools).
+
+### Infrastructure & CI (2026-10-18)
+
+- **[Build Stats](/build-stats)** - [Month-over-month merged PRs, lines and commits](https://github.com/idvorkin/idvorkin.github.io/commit/fa6ed7eed) across my public repos, [grouped by month, quarter or half-year](https://github.com/idvorkin/idvorkin.github.io/commit/784cdfc29).
+- **[Random dice](/random)** - [Re-roll after a random jump](https://github.com/idvorkin/idvorkin.github.io/commit/d31a806db), with [a dice in every page header](https://github.com/idvorkin/idvorkin.github.io/commit/b3bb3e726).
+- **[Site cleanup](https://github.com/idvorkin/idvorkin.github.io/commit/24afd82e1)** - [Self-hosted Font Awesome](https://github.com/idvorkin/idvorkin.github.io/commit/24afd82e1); [live cursors and chat removed](https://github.com/idvorkin/idvorkin.github.io/commit/8553c1497); [Pages builds on Ruby 3.3.4](https://github.com/idvorkin/idvorkin.github.io/commit/ee2d29caa).
+
+### chop-conventions (2026-10-18)
+
+- **[outline-editor](https://github.com/idvorkin/chop-conventions/commit/62f8916ad)** - [Drag-and-drop outline page for restructuring posts](https://github.com/idvorkin/chop-conventions/commit/62f8916ad); machine-doctor [warns on booted simulators](https://github.com/idvorkin/chop-conventions/commit/b2b32bf79).
+
+### Other Projects (2026-10-18)
+
+**[context-grabber](https://github.com/idvorkin/context-grabber)** (iPhone health and context app)
+
+- **[Native only](https://github.com/idvorkin/context-grabber/commit/4f13fdde0)** - [The React Native app is gone](https://github.com/idvorkin/context-grabber/commit/4f13fdde0); [every home tile gets drawn raccoon art](https://github.com/idvorkin/context-grabber/commit/aba45f47d), [hold a tile for its choices](https://github.com/idvorkin/context-grabber/commit/61fba6218).
+- **[Daily strip](https://github.com/idvorkin/context-grabber/commit/120d47e5f)** - [Syncs between phone and iPad over iCloud](https://github.com/idvorkin/context-grabber/commit/120d47e5f); [hold a counter to edit its whole week](https://github.com/idvorkin/context-grabber/commit/cfe75b8e0).
+
+**[exercise-analyzer](https://github.com/idvorkin/exercise-analyzer)** (iPhone lift tracker and rep counter)
+
+- **[Heart rate](https://github.com/idvorkin/exercise-analyzer/commit/32913bc33)** - [Now, average and max during a workout](https://github.com/idvorkin/exercise-analyzer/commit/32913bc33); the watch shows [the drop since the last set](https://github.com/idvorkin/exercise-analyzer/commit/770b5f7cf).
+- **[Clips and reports](https://github.com/idvorkin/exercise-analyzer/commit/1f44bfab2)** - [Trimming swings into runs keeps the sound](https://github.com/idvorkin/exercise-analyzer/commit/1f44bfab2); [bug reports upload themselves](https://github.com/idvorkin/exercise-analyzer/commit/c0509ee95).
+
+**New and smaller**
+
+- **[bug-kit](https://github.com/idvorkin/bug-kit)** - [A watch report form](https://github.com/idvorkin/bug-kit/commit/06e5da060), [Mac reports and crashes filed](https://github.com/idvorkin/bug-kit/commit/a4200461d), [shake opens over sheets](https://github.com/idvorkin/bug-kit/commit/fc798f797), [a locked-Mac signing guard](https://github.com/idvorkin/bug-kit/commit/da0a5e8ef).
+- **[audio-debugger](https://github.com/idvorkin/audio-debugger)** (new) - [A Mac mic scope with always-on replay, denoise and voice boost](https://github.com/idvorkin/audio-debugger/commit/06c69ad67).
+- **[kludge-cli](https://github.com/idvorkin/kludge-cli)** (new) - [Remap Royal Kludge keyboard keys from the command line](https://github.com/idvorkin/kludge-cli/commit/c9f3f4313), [packaged with fetched layouts](https://github.com/idvorkin/kludge-cli/commit/93877bb3c).
+- **[nlp](https://github.com/idvorkin/nlp)** - [An iMessage exporter](https://github.com/idvorkin/nlp/commit/4bcb6d1c4) with [Contacts names](https://github.com/idvorkin/nlp/commit/fae19318b) and [older archives merged in](https://github.com/idvorkin/nlp/commit/4075591ff).
 
 ## Week of 2026-10-11
 
