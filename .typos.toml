@@ -38,6 +38,7 @@ zach = "zach"
 amelia = "amelia"
 alz = "alz"  # Alzheimer's abbreviation
 psyc = "psyc"  # Psychology abbreviation
+opf = "opf"  # OpenAI Privacy Filter CLI and its OPF_* env vars (/privacy-filter)
 lsat = "lsat"
 gpa = "gpa"
 toc = "toc"  # Table of contents
