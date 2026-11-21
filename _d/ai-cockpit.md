@@ -90,7 +90,7 @@ Wiring it up on a new Mac, once it's paired:
 2. **Add the rule.** [The rule](https://github.com/idvorkin/Settings/blob/671d776/mac/karabiner.json#L6-L63) only matches the ring, so my other mice keep working: tap runs a script, right click sends Enter, middle click becomes a left click.
 3. **Toggle Wispr from the script.** Wispr Flow has no toggle you can call, but the app registers `wispr-flow://start-hands-free` and `wispr-flow://stop-hands-free`. They're undocumented; I found them in version 1.6.1583. [A short script](https://github.com/idvorkin/Settings/blob/671d776/mac/wispr_hands_free.sh) remembers which one comes next.
 
-The first version sent a keyboard shortcut, which only works once you bind that shortcut in Wispr's settings. On a fresh Mac I hadn't, so the tap did nothing. The URLs need no Wispr setup. The cost: if Wispr stops on its own (silence, or Esc), the script doesn't know, so the next tap is a dud and the one after starts listening again.
+Nothing needs binding in Wispr. If Wispr stops on its own (silence, or Esc), the script doesn't know, so the next tap is a dud and the one after starts listening again.
 
 For the full deep dive on why voice changes how you work with AI, see [You Need to Use Voice](/ai-operator#you-need-to-use-voice).
 

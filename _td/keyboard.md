@@ -157,7 +157,7 @@ The factory side keys send Ctrl+A, Ctrl+C and Ctrl+X, which are useless on a Mac
 | M4  | Enter                    | Enter                                                |
 | M5  | Right Cmd + Right Option | Wispr push-to-talk: hold to talk                     |
 
-Wispr Flow only hears M3 if Right Ctrl + PageDown is bound in its settings, and a fresh install hasn't bound it. So [Karabiner](https://github.com/idvorkin/Settings/blob/a7f25ce/mac/karabiner.json#L64-L84) catches the combo from this keyboard and calls Wispr's start/stop URLs instead, using the same script as my [voice ring](/ai-cockpit#a-button-for-the-voice).
+[Karabiner](https://github.com/idvorkin/Settings/blob/a7f25ce/mac/karabiner.json#L64-L84) turns M3's Right Ctrl + PageDown into Wispr's start/stop hands-free URLs, using the same script as my [voice ring](/ai-cockpit#a-button-for-the-voice), so nothing needs binding in Wispr.
 
 The trick is sending combos no app will grab. My first try at undo sent Ctrl+Z, which the terminal swallowed before Wispr ever saw it.
 
