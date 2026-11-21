@@ -92,6 +92,17 @@ Wiring it up on a new Mac, once it's paired:
 
 Nothing needs binding in Wispr. If Wispr stops on its own (silence, or Esc), the script doesn't know, so the next tap is a dud and the one after starts listening again.
 
+The ring's model is the **D06 Pro** (ZTYTO is the seller brand); its [user manual](https://fccid.io/2A66I-D06/User-Manual/User-manual-7870474.pdf) is in the FCC filing.
+
+<details markdown="1">
+<summary>Pairing it with a Mac</summary>
+
+- **On:** hold the scroll wheel 1 s. Fast blue flash = Bluetooth pairing; red and blue flashing together = 2.4G (USB receiver) mode. Press the two keys together for 1 s to switch modes.
+- **Pair:** on power-up it reconnects to the last device, so first forget "D06 Pro" on the old phone or Mac, then add "D06 Pro" in the Mac's Bluetooth settings.
+- **Off:** hold the wheel 5 s. It also turns itself off after 5 minutes unconnected.
+
+</details>
+
 For the full deep dive on why voice changes how you work with AI, see [You Need to Use Voice](/ai-operator#you-need-to-use-voice).
 
 ### Tmux on Super Steroids - The Multiplexer
