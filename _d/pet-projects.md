@@ -46,6 +46,7 @@ GitHub orgs to check:
 
 - [Self Reflection](#self-reflection)
 - [Personal Productivity Tools](#personal-productivity-tools)
+- [Self-Hosted Apps](#self-hosted-apps)
 - [CLI Tools](#cli-tools)
 - [Computer Vision & Motion](#computer-vision--motion)
 - [Dev Tools & Infrastructure](#dev-tools--infrastructure)
@@ -79,6 +80,29 @@ GitHub orgs to check:
 | [MathFlash](https://github.com/idvorkin/mathflash)                             | Math flashcard trainer for kids.                                                                                                                                                                           |
 | [World Happiness Report](https://github.com/idvorkin/world-happiness-report)   | Interactive data visualization of global happiness data.                                                                                                                                                   |
 | [Donut Profit Calculator](https://github.com/idvorkin/donut-profit-calculator) | Calculate donut shop profitability.                                                                                                                                                                        |
+
+## Self-Hosted Apps
+
+Apps I build from source and run on my own Mac and iPhone, with no App Store or Homebrew in between. A new Mac gets all of them from [`install_repos.py`](https://github.com/idvorkin/Settings/blob/master/py/install_repos.py), the second step of setup after the Homebrew packages: it clones each repo into `~/gits`, pulls the ones already there, and rebuilds whatever changed. [`brew_check.py`](https://github.com/idvorkin/Settings/blob/master/py/brew_check.py) shows the repos as the Git Repos categories, next to the brew formulae and casks, so one picker covers both.
+
+| App                                                                  | What it is                                                                                                                                                                                                                                       |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Mac**                                                              |                                                                                                                                                                                                                                                  |
+| [Audio Debugger](https://github.com/idvorkin/audio-debugger)         | See and hear how a mic actually sounds: waveform, spectrum, levels, and always-on replay of the last 20 seconds with noise reduction and voice boost. Also on iPhone. [<i class="fa fa-github"></i>](https://github.com/idvorkin/audio-debugger) |
+| [LCD Timer](https://github.com/idvorkin/lcd-timer)                   | A countdown drawn like a gym's LED wall clock. [<i class="fa fa-github"></i>](https://github.com/idvorkin/lcd-timer)                                                                                                                             |
+| Magic Monitor (native)                                               | The [Magic Monitor](https://magic-monitor.surge.sh) practice mirror as a Mac app: camera with instant replay.                                                                                                                                    |
+| [IgSnap](https://github.com/idvorkin/igsnap)                         | Screenshot app: region, window snap, annotate, copy. [Writing it beat installing one](/ai-journal#igsnap-writing-my-own-screenshot-app-was-faster-than-installing-one). [<i class="fa fa-github"></i>](https://github.com/idvorkin/igsnap)       |
+| [Window Sweaters](https://github.com/idvorkin/window-sweaters)       | Knitted borders around windows (my fork adds Focused Window Only). [<i class="fa fa-github"></i>](https://github.com/idvorkin/window-sweaters)                                                                                                   |
+| **iPhone and Watch**                                                 |                                                                                                                                                                                                                                                  |
+| [Context Grabber](https://github.com/idvorkin/context-grabber)       | A humane mirror of the week: health, places, a gym timer, box breathing, a call to [Larry](/larry). [<i class="fa fa-github"></i>](https://github.com/idvorkin/context-grabber)                                                                  |
+| [Exercise Analyzer](https://github.com/idvorkin/exercise-analyzer)   | iPhone and Watch exercise analyzer. [<i class="fa fa-github"></i>](https://github.com/idvorkin/exercise-analyzer)                                                                                                                                |
+| Think a Card Trainer                                                 | iPhone and Watch trainer for a card-memory routine.                                                                                                                                                                                              |
+| **The Mac itself**                                                   |                                                                                                                                                                                                                                                  |
+| [yabai](https://github.com/idvorkin/yabai) (fork)                    | Tiling window manager, with my macOS 27 fixes. [<i class="fa fa-github"></i>](https://github.com/idvorkin/yabai)                                                                                                                                 |
+| Igor Tools                                                           | My Alfred workflows, including `y` for windows.                                                                                                                                                                                                  |
+| [Browser Tab Helper](https://github.com/idvorkin/browser-tab-helper) | Edge extension and native host: browser tabs from the command line. [<i class="fa fa-github"></i>](https://github.com/idvorkin/browser-tab-helper)                                                                                               |
+| `larry`                                                              | CLI that sends to an AI agent from Alfred.                                                                                                                                                                                                       |
+| [BugKit](https://github.com/idvorkin/bug-kit)                        | Shared Swift package behind the native apps' in-app bug reports and "what's new". [<i class="fa fa-github"></i>](https://github.com/idvorkin/bug-kit)                                                                                            |
 
 ## CLI Tools
 
