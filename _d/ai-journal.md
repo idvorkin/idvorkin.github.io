@@ -23,6 +23,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-11-21](#2026-11-21)
+    - [Fresh Machine, Old Fear of Losing Branches](#fresh-machine-old-fear-of-losing-branches)
   - [2026-11-14](#2026-11-14)
     - [Muse Bought My Magic Supplies](#muse-bought-my-magic-supplies)
     - [My Agents Each Kept a To-Do List, and I Was the Message Bus](#my-agents-each-kept-a-to-do-list-and-i-was-the-message-bus)
@@ -277,6 +279,16 @@ let's see if we can simulate him, step #1, let's bring the site down into markdo
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-11-21
+
+#### Fresh Machine, Old Fear of Losing Branches
+
+{% include local_image_float_right.html src="raccoon-fresh-machine.webp" %}
+
+- **TOP Takeaway**: I flattened my machine and switched to a new one, and I'm still afraid I'm going to lose some old branches. That fear comes from the world of scarcity, before AI agents made code nearly free.
+- **So much faster**: the new machine is so much faster. I wonder how much of that is the hardware, and how much is just a fresh machine without 3 years of cruft.
+- **Why the fear is out of date**: a half-done branch used to be hours of my own work, so losing one cost me. Now an agent can redo it. [Code is cattle, not pets](#code-as-cattle-not-pets), and old branches are code. I know that, and I'm still afraid.
 
 ### 2026-11-14
 
