@@ -520,9 +520,10 @@ describe("#larry-cockpit= fragment", () => {
     loadAnnotate();
   }
 
-  it("saves the origin and strips itself, even for a reader without the flag", () => {
+  it("saves the origin and strips itself in the owner's browser", () => {
     const calls = stubFetch(() => json({}));
     const strip = vi.spyOn(history, "replaceState");
+    localStorage.setItem("blogAnnotateOwner", "1");
     visit(`#larry-cockpit=${encodeURIComponent(`${COCKPIT}/x`)}`);
     expect(localStorage.getItem("blogLarryCockpit")).toBe(COCKPIT);
     expect(strip).toHaveBeenCalledWith(null, "", "/foo");
@@ -530,10 +531,21 @@ describe("#larry-cockpit= fragment", () => {
     expect(calls).toHaveLength(0);
   });
 
-  it("accepts the address unencoded too", () => {
-    vi.spyOn(history, "replaceState");
+  it("strips itself but saves nothing in a reader's browser (a crafted link can't route their notes)", () => {
+    const strip = vi.spyOn(history, "replaceState");
     visit(`#larry-cockpit=${COCKPIT}`);
+    expect(localStorage.getItem("blogLarryCockpit")).toBeNull();
+    expect(strip).toHaveBeenCalledWith(null, "", "/foo");
+  });
+
+  it("accepts the address unencoded too, with ?annotate=1 on a new device", () => {
+    stubFetch(() => json({ state: "idle" }));
+    vi.spyOn(history, "replaceState");
+    window.location.search = "?annotate=1";
+    visit(`#larry-cockpit=${COCKPIT}`);
+    window.location.search = "";
     expect(localStorage.getItem("blogLarryCockpit")).toBe(COCKPIT);
+    expect(localStorage.getItem("blogAnnotateOwner")).toBe("1");
   });
 
   it("rejects an invalid address but still strips it, silently for a reader", () => {

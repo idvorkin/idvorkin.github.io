@@ -77,8 +77,8 @@
         $("#main-content img").not(".float-right-img").addClass("img-fluid");
       </script>
       <!--
-        Private annotation tool. Inert unless localStorage blogAnnotate=1
-        (set via ?annotate=1 or Cmd/Ctrl+Shift+A). Readers see nothing.
+        Annotation tool: every reader gets a 💬 Comments toggle and a GitHub
+        source link (no network until used); owner setup via ?annotate=1.
       -->
       {% include annotate.html %}
     </span>
