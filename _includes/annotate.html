@@ -110,7 +110,9 @@
       prompt on the first Send or by opening any page with the fragment
       `#larry-cockpit=<origin>` (a fragment, never a query, so it stays out
       of server logs; it strips itself, and asks before replacing a
-      different saved address). Only an https origin on a tailnet name or
+      different saved address). The fragment is saved only in the owner's
+      browser (see OWNER vs READER); on a new device open
+      `?annotate=1#larry-cockpit=<origin>`. Only an https origin on a tailnet name or
       localhost is accepted, origin only, re-checked on every read. A POST
       that fails, errors or hangs past COCKPIT_TIMEOUT_MS sends that batch
       and the rest of the Send to gists below (token asked for only then).
