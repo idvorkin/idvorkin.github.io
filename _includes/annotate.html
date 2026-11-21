@@ -1,15 +1,34 @@
 <!--
   annotate.html — Igor's private blog annotation tool.
 
-  INERT BY DEFAULT. Readers get no UI, no network calls, and (aside from
-  this tiny script parse) no cost. Everything below is guarded by a
-  localStorage flag that only Igor ever sets. The one exception is a
-  `#larry-cockpit=` fragment (see SEND TO LARRY): it saves an address to
-  localStorage and strips itself, with no network call.
+  KEEP IN SYNC (Igor 2026-11-21): this file is the spec for the explainer
+  sites' copy, idvorkin-ai-tools.github.io/assets/annotate.js. A fix or
+  feature here is ported there in the same change, or filed the same day.
 
-  Enable  : visit any post with ?annotate=1  (persists via localStorage)
+  NO NETWORK UNTIL USED. Every reader gets a 💬 toggle (Igor 2026-11-21:
+  "everyone can see the chat box") that turns Comments mode on and off live
+  (no reload; aria-pressed and a blue fill say it is on; the tooltip names
+  the page path). Here it sits in the navbar right after the navbar's own
+  GitHub link to this post's source; a layout without that link gets the
+  explainers' floating top-right pair instead (GitHub link from
+  `page.path` + toggle, placed under any header band). Building it is DOM
+  only: no request until the reader sends something, and none ever to a
+  Cockpit this browser has not saved.
+
+  OWNER vs READER. The setup prompts (Cockpit address, GitHub token), the
+  `#larry-cockpit=` fragment, the status dot and the open-PR badge are the
+  owner's alone. A browser is the owner's once ?annotate=1 or the shortcut
+  has been used there (localStorage `blogAnnotateOwner`), or it has a saved
+  token or Cockpit address, or it is on localhost or the tailnet, or it
+  already had Comments on before the toggle shipped (`blogAnnotate=1` with
+  no `blogAnnotateToggleSeen`, which the first toggle click writes). A
+  reader without Larry can still comment; Send opens the review card with
+  "Copy for Igor" (readable text led by the page URL), plus "Upload to
+  gist" only when a token is saved.
+
+  Enable  : visit any post with ?annotate=1  (persists; marks owner)
   Disable : visit any post with ?annotate=0
-  Toggle  : Cmd/Ctrl+Shift+A on desktop
+  Toggle  : the 💬 button, or Cmd/Ctrl+Shift+A on desktop (marks owner)
   Banner  : "💬 Comments" in the local dev banner toggles it live (no reload)
 
   Once enabled: select text -> a small "Comment" bubble appears near the
@@ -204,7 +223,40 @@
       }
     }
 
+    function lsGet(k) {
+      try {
+        return localStorage.getItem(k);
+      } catch (e) {
+        return null;
+      }
+    }
+    function lsSet(k, v) {
+      try {
+        localStorage.setItem(k, v);
+      } catch (e) {
+        /* private mode */
+      }
+    }
+
+    // See OWNER vs READER. TOGGLE_SEEN_KEY is written on the first toggle
+    // click, so a flag set before the toggle existed (only the owner could)
+    // still counts, and one set by a reader's click does not.
+    var OWNER_KEY = "blogAnnotateOwner";
+    var TOGGLE_SEEN_KEY = "blogAnnotateToggleSeen";
+    function owner() {
+      var h = String(window.location.hostname || "").toLowerCase();
+      return (
+        lsGet(OWNER_KEY) === "1" ||
+        (enabled() && lsGet(TOGGLE_SEEN_KEY) === null) ||
+        !!lsGet(TOKEN_KEY) ||
+        !!savedCockpit() ||
+        h === "localhost" ||
+        /\.ts\.net$/.test(h)
+      );
+    }
+
     var q = readQueryFlag();
+    if (q === true) lsSet(OWNER_KEY, "1");
     if (q !== null) setEnabled(q);
 
     // ------------------------------------------------- saved Cockpit address
@@ -265,9 +317,12 @@
       } catch (e) {
         /* the address is still read; the hash just stays visible */
       }
+      // A reader's browser never takes an address from a link: anyone can
+      // own a tailnet name, and a crafted link must not route their notes.
+      if (!owner()) return;
       var origin = cockpitOrigin(raw);
       if (!origin) {
-        // Fixed text, never the link's: a reader without the flag sees nothing.
+        // Fixed text, never the link's.
         if (enabled())
           window.alert("That is not a Cockpit address, so nothing was saved.");
         return;
@@ -290,6 +345,7 @@
       var key = e.key || "";
       if ((e.metaKey || e.ctrlKey) && e.shiftKey && key.toLowerCase() === "a") {
         e.preventDefault();
+        lsSet(OWNER_KEY, "1");
         var next = !enabled();
         setEnabled(next);
         window.location.reload();
@@ -314,6 +370,7 @@
         live = !!on;
         setEnabled(live);
         document.documentElement.classList.toggle("blog-annot-off", !live);
+        renderBar();
         if (live && !started) {
           started = true;
           start();
@@ -321,6 +378,138 @@
         if (!live && stop) stop();
       },
     };
+
+    // ----------------------------------------------- toggle + source link
+    // Shown to every reader; DOM only, no request. Kept out of the
+    // .blog-annot-off rule so it stays visible when Comments are off.
+    var bar = null;
+    var GITHUB_SVG =
+      '<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="currentColor">' +
+      '<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>';
+
+    // This post's markdown on GitHub, from Jekyll's page.path.
+    function sourceUrl() {
+      var meta = document.getElementById("blog-annot-meta");
+      var path = String((meta && meta.dataset.sourcePath) || "").replace(
+        /^\.?\//,
+        ""
+      );
+      if (!path) return "";
+      return (
+        "https://github.com/idvorkin/idvorkin.github.io/blob/main/" +
+        path.split("/").map(encodeURIComponent).join("/")
+      );
+    }
+
+    function renderBar() {
+      if (!bar) return;
+      var t = document.getElementById("blog-annot-toggle");
+      t.setAttribute("aria-pressed", String(live));
+      t.title =
+        (live
+          ? "Comments on: select text to comment. Click to turn off."
+          : "Comments off: click to comment on this page.") +
+        "\n" +
+        window.location.pathname;
+    }
+
+    // The header band under (right edge, y), or null: anything fixed or
+    // sticky, or a <nav>/<header> (the blog's navbar scrolls with the page).
+    function headerAt(y) {
+      var el = document.elementFromPoint(window.innerWidth - 24, y);
+      for (
+        ;
+        el && el !== document.body && el !== document.documentElement;
+        el = el.parentElement
+      ) {
+        var pos = window.getComputedStyle(el).position;
+        var band = el.tagName === "NAV" || el.tagName === "HEADER";
+        if (pos !== "fixed" && pos !== "sticky" && !band) continue;
+        var r = el.getBoundingClientRect();
+        if (r.top <= y && r.bottom > y && r.bottom < window.innerHeight / 3)
+          return r;
+      }
+      return null;
+    }
+
+    // Top right, but under the page's own fixed headers (navbar, then the
+    // dev banner below it), so the buttons never sit on a title or a link.
+    function placeBar() {
+      bar.style.display = "none";
+      var bottom = 0;
+      for (var i = 0, r; i < 3 && (r = headerAt(bottom + 4)); i++)
+        bottom = r.bottom;
+      bar.style.display = "";
+      bar.style.top = bottom ? Math.round(bottom + 6) + "px" : "";
+    }
+
+    function mountBar() {
+      if (bar || !document.body) return;
+      var css = document.createElement("style");
+      css.textContent = [
+        "#blog-annot-bar{position:fixed;z-index:99998;display:flex;gap:6px;",
+        "top:calc(8px + env(safe-area-inset-top,0px));",
+        "right:calc(8px + env(safe-area-inset-right,0px));opacity:.7}",
+        "#blog-annot-bar:hover,#blog-annot-bar:focus-within{opacity:1}",
+        "#blog-annot-bar>*{box-sizing:border-box;width:30px;height:30px;padding:0;",
+        "display:inline-flex;align-items:center;justify-content:center;",
+        "border-radius:50%;border:1px solid rgba(128,128,128,.45);",
+        "background:rgba(128,128,128,.18);color:inherit;cursor:pointer;",
+        "font:14px/1 system-ui,sans-serif;text-decoration:none;",
+        "-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}",
+        "#blog-annot-toggle[aria-pressed='true']{background:#0b5ed7;",
+        "border-color:#0b5ed7;box-shadow:0 0 0 2px rgba(11,94,215,.35)}",
+        "@media print{#blog-annot-bar{display:none}}",
+        ".navbar .blog-annot-navtoggle{background:none;border:0;padding:0;",
+        "font-size:22px;line-height:1;border-radius:50%;cursor:pointer}",
+        ".navbar .blog-annot-navtoggle[aria-pressed='true']{background:#0b5ed7;",
+        "box-shadow:0 0 0 3px #0b5ed7}",
+      ].join("");
+      document.head.appendChild(css);
+      // The blog's navbar already links this post's source on GitHub, so the
+      // toggle joins the header right after that link. The floating bar is
+      // only the fallback for a layout without it.
+      var ghNav = document.querySelector(
+        '.navbar a[href*="github.com/idvorkin/idvorkin.github.io/blob/"]'
+      );
+      if (ghNav) {
+        bar = document.createElement("button");
+        bar.type = "button";
+        bar.id = "blog-annot-toggle";
+        bar.className = "nav-fa-icon blog-annot-navtoggle";
+        bar.setAttribute("aria-label", "Comments");
+        bar.textContent = "💬";
+        ghNav.parentNode.insertBefore(bar, ghNav.nextSibling);
+        bar.onclick = toggleClick;
+        renderBar();
+        return;
+      }
+      bar = document.createElement("div");
+      bar.id = "blog-annot-bar";
+      var href = sourceUrl();
+      bar.innerHTML =
+        (href
+          ? '<a id="blog-annot-src" target="_blank" rel="noopener" ' +
+            'aria-label="This page on GitHub" title="This page\'s source on GitHub">' +
+            GITHUB_SVG +
+            "</a>"
+          : "") +
+        '<button type="button" id="blog-annot-toggle" aria-label="Comments">💬</button>';
+      if (href) bar.firstChild.href = href;
+      document.body.appendChild(bar);
+      placeBar();
+      window.addEventListener("resize", placeBar);
+      document.getElementById("blog-annot-toggle").onclick = toggleClick;
+      renderBar();
+    }
+
+    function toggleClick() {
+      if (owner()) lsSet(OWNER_KEY, "1");
+      lsSet(TOGGLE_SEEN_KEY, "1");
+      window.blogAnnotate.set(!live);
+    }
+    if (document.body) mountBar();
+    else document.addEventListener("DOMContentLoaded", mountBar);
 
     if (enabled()) window.blogAnnotate.set(true); // <-- readers stop here
     return;
@@ -781,6 +970,59 @@
       };
 
       // ---------------------------------------------------------- review flow
+      var OWNER = owner();
+
+      // Clipboard write with the execCommand fallback; resolves or rejects.
+      function copyText(text) {
+        function fallback() {
+          var ta = document.createElement("textarea");
+          ta.value = text;
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.select();
+          var ok = false;
+          try {
+            ok = document.execCommand("copy");
+          } catch (e) {
+            ok = false;
+          }
+          document.body.removeChild(ta);
+          return ok
+            ? Promise.resolve()
+            : Promise.reject(new Error("copy failed"));
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText)
+          return navigator.clipboard.writeText(text).then(null, fallback);
+        return fallback();
+      }
+
+      // The buffer as a reader pastes it to Igor: page link first, then each
+      // note under its quote, one block per page.
+      function readableNotes(list) {
+        return reviewBatches(list)
+          .map(function (batch) {
+            var head =
+              "Comments on " +
+              batch.body.page_url +
+              (batch.body.title ? " (" + batch.body.title + ")" : "");
+            var lines = batch.items.map(function (a, i) {
+              return (
+                i +
+                1 +
+                ". [" +
+                (a.intent || DEFAULT_INTENT) +
+                '] "' +
+                a.quote +
+                '"' +
+                (a.comment ? "\n   " + a.comment : "")
+              );
+            });
+            return head + "\n\n" + lines.join("\n");
+          })
+          .join("\n\n");
+      }
+
       document.getElementById("blog-annot-open").onclick = openReview;
 
       function openReview() {
@@ -813,8 +1055,12 @@
             "</ul>" +
             '<div class="row">' +
             '<button type="button" class="ghost" id="blog-annot-clear">Clear all</button>' +
-            '<button type="button" class="ghost" id="blog-annot-copy">Copy to clipboard</button>' +
-            '<button type="button" class="primary" id="blog-annot-gist">Upload to gist</button>' +
+            (OWNER
+              ? '<button type="button" class="ghost" id="blog-annot-copy">Copy to clipboard</button>'
+              : '<button type="button" class="primary" id="blog-annot-copy">Copy for Igor</button>') +
+            (OWNER || lsGet(TOKEN_KEY)
+              ? '<button type="button" class="primary" id="blog-annot-gist">Upload to gist</button>'
+              : "") +
             '<button type="button" class="ghost" id="blog-annot-close">Close</button>' +
             "</div>" +
             '<div id="blog-annot-note"></div>'
@@ -831,38 +1077,29 @@
         };
 
         document.getElementById("blog-annot-copy").onclick = function () {
-          var json = payloadJson(list);
-          function fallback() {
-            var ta = document.createElement("textarea");
-            ta.value = json;
-            ta.style.position = "fixed";
-            ta.style.opacity = "0";
-            document.body.appendChild(ta);
-            ta.select();
-            try {
-              document.execCommand("copy");
-              note.textContent = "Copied " + list.length + " annotations.";
-            } catch (e) {
-              note.textContent = "Copy failed — select the JSON manually.";
+          copyText(OWNER ? payloadJson(list) : readableNotes(list)).then(
+            function () {
+              note.textContent = OWNER
+                ? "Copied " + list.length + " annotations."
+                : "Copied " +
+                  list.length +
+                  " notes with the page link. Paste them to Igor.";
+            },
+            function () {
+              note.textContent = "Copy failed. Select the text by hand.";
             }
-            document.body.removeChild(ta);
-          }
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(json).then(function () {
-              note.textContent = "Copied " + list.length + " annotations.";
-            }, fallback);
-          } else {
-            fallback();
-          }
+          );
         };
 
-        document.getElementById("blog-annot-gist").onclick = function () {
-          if (!list.length) {
-            note.textContent = "Nothing to upload.";
-            return;
-          }
-          uploadGist(list, note);
-        };
+        var gistBtn = document.getElementById("blog-annot-gist");
+        if (gistBtn)
+          gistBtn.onclick = function () {
+            if (!list.length) {
+              note.textContent = "Nothing to upload.";
+              return;
+            }
+            uploadGist(list, note);
+          };
       }
 
       // ------------------------------------------------------ send to Larry
@@ -957,7 +1194,15 @@
         }
         // Off the tailnet with no saved address, ask for one once. Cancel
         // means "use the gist"; a bad address sends nothing.
-        if (!LARRY && !SAME_HOST) {
+        // A reader with no Larry and no token: nothing to send to, so the
+        // review card with Copy for Igor.
+        if (!LARRY && !OWNER && !lsGet(TOKEN_KEY)) {
+          openReview();
+          document.getElementById("blog-annot-note").textContent =
+            "Larry isn't connected in this browser. Copy your notes and send them to Igor.";
+          return Promise.resolve();
+        }
+        if (!LARRY && !SAME_HOST && OWNER) {
           var typed = window.prompt(
             "Cockpit address for Send to Larry (https://…), saved in this " +
               "browser. Cancel to send to a secret gist instead."
@@ -983,7 +1228,7 @@
         function gist(batch, why) {
           if (!asked) {
             asked = true;
-            token = getToken();
+            token = OWNER ? getToken() : lsGet(TOKEN_KEY);
           }
           if (!token)
             return Promise.reject(
@@ -1217,7 +1462,7 @@
 
       // Fails silent: a rate limit or offline page shows no badge, nothing else.
       function refreshOpenPrs() {
-        if (!SOURCE_PATH) return Promise.resolve();
+        if (!SOURCE_PATH || !OWNER) return Promise.resolve();
         return loadOpenPrs().then(showOpenPrs, function () {
           writePrCache([]); // don't retry on every page load while limited
         });
