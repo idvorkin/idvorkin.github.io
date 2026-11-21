@@ -148,6 +148,31 @@ describe("Chat panel", () => {
     expect(document.getElementById("blog-annot-chat-status")?.textContent).toContain("no page chat yet");
   });
 
+  it("an unreachable Cockpit keeps the text, and the resend reuses the message's id", async () => {
+    let down = true;
+    const calls = stubFetch((url, init) => {
+      if (init?.method === "POST" && down) return Promise.reject(new TypeError("Failed to fetch"));
+      return json({ ok: true, messages: [] });
+    });
+    boot(TAILNET);
+    await api().chat.open();
+    const ta = document.getElementById("blog-annot-chat-text") as HTMLTextAreaElement;
+    ta.value = "hello";
+    await api().chat.send();
+    expect(ta.value).toBe("hello");
+    expect(document.getElementById("blog-annot-chat-status")?.textContent).toContain(
+      "can't reach the Cockpit, or it has no page chat yet",
+    );
+    down = false;
+    await api().chat.send();
+    const ids = chatCalls(calls)
+      .filter((c) => c.init?.method === "POST")
+      .map((c) => JSON.parse(String(c.init?.body)).id);
+    expect(ids).toHaveLength(2);
+    expect(ids[1]).toBe(ids[0]);
+    expect(bubbles()).toEqual([["igor", "hello"]]);
+  });
+
   it("stops polling when closed or when comment mode is turned off", async () => {
     const calls = stubFetch(() => json({ ok: true, messages: [] }));
     boot(TAILNET);
