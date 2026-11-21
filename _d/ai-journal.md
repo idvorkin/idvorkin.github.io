@@ -288,7 +288,7 @@ let's see if we can simulate him, step #1, let's bring the site down into markdo
 
 - **TOP Takeaway**: I flattened my machine and switched to a new one, and I'm still afraid I'm going to lose some old branches. That fear comes from the world of scarcity, before AI agents made code nearly free.
 - **So much faster**: the new machine is so much faster. I wonder how much of that is the hardware, and how much is just a fresh machine without 3 years of cruft.
-- **Why the fear is out of date**: a half-done branch used to be hours of my own work, so losing one cost me. Now an agent can redo it. [Code is cattle, not pets](#code-as-cattle-not-pets), and old branches are code. I know that, and I'm still afraid.
+- **Why the fear is out of date**: a half-done branch used to be hours of my own work, so losing one meant losing those hours. Now an agent can redo it. [Code is cattle, not pets](#code-as-cattle-not-pets), and old branches are code. I know that, and I'm still afraid.
 
 ### 2026-11-14
 
