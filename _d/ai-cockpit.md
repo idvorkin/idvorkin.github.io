@@ -84,12 +84,11 @@ I use the Hollyland Lark M2S Mini Combo — wireless lavalier, 7g, USB-C plus a 
 
 A $36 [ZTYTO scrolling ring](https://www.amazon.com/dp/B0DYCN3G9W?tag=ighe-20), a touchpad ring sold for scrolling TikTok. I remapped it in Karabiner so a tap toggles Wispr Flow and the right button hits Enter. Now I can dictate and send a prompt from the couch or the treadmill without touching the keyboard.
 
-Setting it up on a new Mac:
+Wiring it up on a new Mac, once it's paired:
 
-1. **Pair it.** It's a Bluetooth mouse that shows up as **D06 Pro** in System Settings → Bluetooth. Its 2.4G USB receiver works too, but reports a different product ID (1025 instead of 257), so Karabiner needs both.
-2. **Let Karabiner modify it.** Karabiner leaves mice alone by default. Turn on "Modify events" for the D06 Pro under Devices, which writes [these entries](https://github.com/idvorkin/Settings/blob/671d776/mac/karabiner.json#L2961-L2978).
-3. **Add the rule.** [The rule](https://github.com/idvorkin/Settings/blob/671d776/mac/karabiner.json#L6-L63) only matches the ring, so my other mice keep working: tap runs a script, right click sends Enter, middle click becomes a left click.
-4. **Toggle Wispr from the script.** Wispr Flow has no toggle you can call, but the app registers `wispr-flow://start-hands-free` and `wispr-flow://stop-hands-free`. They're undocumented; I found them in version 1.6.1583. [A short script](https://github.com/idvorkin/Settings/blob/671d776/mac/wispr_hands_free.sh) remembers which one comes next.
+1. **Let Karabiner modify it.** Karabiner leaves mice alone by default. Turn on "Modify events" for the D06 Pro under Devices, which writes [these entries](https://github.com/idvorkin/Settings/blob/671d776/mac/karabiner.json#L2961-L2978). Over the 2.4G USB receiver it reports a different product ID (1025 instead of 257), so the config lists both.
+2. **Add the rule.** [The rule](https://github.com/idvorkin/Settings/blob/671d776/mac/karabiner.json#L6-L63) only matches the ring, so my other mice keep working: tap runs a script, right click sends Enter, middle click becomes a left click.
+3. **Toggle Wispr from the script.** Wispr Flow has no toggle you can call, but the app registers `wispr-flow://start-hands-free` and `wispr-flow://stop-hands-free`. They're undocumented; I found them in version 1.6.1583. [A short script](https://github.com/idvorkin/Settings/blob/671d776/mac/wispr_hands_free.sh) remembers which one comes next.
 
 The first version sent a keyboard shortcut, which only works once you bind that shortcut in Wispr's settings. On a fresh Mac I hadn't, so the tap did nothing. The URLs need no Wispr setup. The cost: if Wispr stops on its own (silence, or Esc), the script doesn't know, so the next tap is a dud and the one after starts listening again.
 
