@@ -77,6 +77,24 @@
   only adds the query string and fragment, which here means `?annotate=1` and
   whatever heading you last clicked — tool state, not page identity.
 
+  CHAT PANEL: "Chat" in the pill opens a small panel (bottom right) for
+  talking to Larry about this page, typed or dictated (Enter sends,
+  Shift+Enter is a line break, two trailing newlines also send). Each
+  message goes to `<Cockpit>/page-chat` (Cockpit story 171), the page's own
+  Cockpit thread keyed by the permalink and made on its first message, so
+  the same conversation is in the Cockpit; his replies there show in the
+  panel, polled every CHAT_POLL_MS while it is open and the tab is visible.
+  Same Cockpit address as SEND TO LARRY. A Cockpit that predates the
+  route looks the same as one out of reach (its 404 has no CORS header):
+  the panel says "can't reach the Cockpit, or it has no page chat yet"
+  and keeps the text; a resend of the same text reuses its id. The inline
+  comments are unchanged by it. URLs in messages render as links (built as
+  nodes, never innerHTML). After the first send on a brand-new thread the
+  panel re-reads it from the start, so the Cockpit's page-details opener
+  sits above that message. Copy puts the message and the page URL on the
+  clipboard, for a reader without Larry (Send needs a Cockpit; a reader is
+  never prompted for one).
+
   SECURITY: the GitHub PAT lives ONLY in this browser's localStorage under
   `blogAnnotateToken`. It is never committed, never sent anywhere except
   api.github.com. Use a fine-grained/classic token with the `gist` scope
@@ -703,8 +721,44 @@
         "#blog-annot-list li{padding:6px 0;border-top:1px solid #e9ecef}",
         "#blog-annot-note{margin-top:10px;font-size:12px;color:#495057;",
         "word-break:break-all}",
+        "#blog-annot-chat{position:fixed;right:14px;bottom:72px;z-index:99999;",
+        "width:360px;max-width:calc(100vw - 28px);max-height:min(60vh,480px);",
+        "display:flex;flex-direction:column;box-sizing:border-box;background:#fff;",
+        "color:#111;border:1px solid #dee2e6;border-radius:12px;text-align:left;",
+        "box-shadow:0 4px 18px rgba(0,0,0,.25);font:14px/1.4 system-ui,sans-serif}",
+        "#blog-annot-chat[hidden]{display:none}",
+        "#blog-annot-chat .bac-head{display:flex;align-items:center;",
+        "justify-content:space-between;padding:8px 12px;border-bottom:1px solid #dee2e6}",
+        "#blog-annot-chat .bac-head button{border:0;background:none;color:inherit;",
+        "font-size:20px;line-height:1;cursor:pointer;padding:0 4px}",
+        "#blog-annot-chat-log{flex:1;overflow-y:auto;padding:8px 12px;min-height:60px;",
+        "display:flex;flex-direction:column;gap:6px}",
+        "#blog-annot-chat-log:empty::before{content:'Larry answers here and on this page\\'s Cockpit thread.';",
+        "color:#868e96;font-size:12px}",
+        "#blog-annot-chat .bac-msg{max-width:85%;padding:6px 10px;border-radius:12px;",
+        "white-space:pre-wrap;overflow-wrap:anywhere}",
+        "#blog-annot-chat .bac-msg[data-who='igor']{align-self:flex-end;background:#0b5ed7;color:#fff}",
+        "#blog-annot-chat .bac-msg[data-who='larry']{align-self:flex-start;background:#f1f3f5;color:#111}",
+        "#blog-annot-chat .bac-msg[data-state='sending']{opacity:.6}",
+        "#blog-annot-chat-status{padding:0 12px 4px;font-size:12px;color:#868e96}",
+        "#blog-annot-chat-status:empty{display:none}",
+        "#blog-annot-chat .bac-row{display:flex;gap:6px;padding:8px 12px;",
+        "border-top:1px solid #dee2e6}",
+        "#blog-annot-chat textarea{flex:1;min-width:0;resize:none;padding:6px 8px;",
+        "font:16px/1.35 system-ui,sans-serif;border:1px solid #ced4da;border-radius:8px;",
+        "background:#fff;color:#111;box-sizing:border-box}",
+        "#blog-annot-chat .bac-row button{padding:6px 12px;border:0;border-radius:8px;",
+        "background:#0b5ed7;color:#fff;font:600 13px/1.2 system-ui,sans-serif;cursor:pointer}",
+        "#blog-annot-chat .bac-row button:disabled{opacity:.5;cursor:default}",
+        "#blog-annot-chat #blog-annot-chat-copy{background:#495057}",
+        "#blog-annot-chat .bac-msg a{color:inherit;text-decoration:underline}",
+        "@media (prefers-color-scheme:dark){#blog-annot-chat{background:#1e1f22;",
+        "color:#e9ecef;border-color:#3a3d42}",
+        "#blog-annot-chat .bac-head,#blog-annot-chat .bac-row{border-color:#3a3d42}",
+        "#blog-annot-chat .bac-msg[data-who='larry']{background:#2c2f33;color:#e9ecef}",
+        "#blog-annot-chat textarea{background:#2c2f33;color:#e9ecef;border-color:#495057}}",
         ".blog-annot-off #blog-annot-btn,.blog-annot-off #blog-annot-pill,",
-        ".blog-annot-off #blog-annot-modal{display:none!important}",
+        ".blog-annot-off #blog-annot-modal,.blog-annot-off #blog-annot-chat{display:none!important}",
       ].join("");
       document.head.appendChild(style);
 
@@ -723,6 +777,7 @@
           ? '<span id="blog-annot-larry-dot" data-state="unknown" title="Larry: checking…"></span>'
           : "") +
         '<button type="button" id="blog-annot-send">Send to Larry</button>' +
+        '<button type="button" id="blog-annot-chat-toggle">Chat</button>' +
         '<span id="blog-annot-prs" hidden></span>';
       document.body.appendChild(pill);
 
@@ -819,6 +874,11 @@
         if (!sel || sel.isCollapsed || sel.rangeCount === 0) return hideBtn();
         var range = sel.getRangeAt(0);
         if (!range.toString().trim()) return hideBtn();
+        // a selection in the chat panel is not a quote from the page
+        var where = range.commonAncestorContainer;
+        if (where.nodeType !== 1) where = where.parentNode;
+        if (where && where.closest && where.closest("#blog-annot-chat"))
+          return hideBtn();
         var sel_info = selectorFromRange(range);
         if (!sel_info) return hideBtn();
         pending = sel_info;
@@ -1354,6 +1414,319 @@
         setInterval(refreshLarry, 60000);
         window.blogAnnotate.refreshLarry = refreshLarry;
       }
+
+      // The page as the chat names it (see CHAT PANEL): the permalink
+      // (site.url + page.url, as Send to Larry sends it) is the thread's
+      // identity. `jekyll serve` rewrites site.url to the local server, so a
+      // preview gets a thread of its own, apart from the live post's.
+      var CHAT_PAGE = {
+        page_url: ORIGIN + PERMALINK,
+        permalink: SITE_URL ? SITE_URL + PERMALINK : "",
+        title: TITLE,
+        source_repo: SOURCE_PATH ? "idvorkin/idvorkin.github.io" : "",
+        source_path: SOURCE_PATH,
+      };
+
+      // ------------------------------------------------------------ chat panel
+      // A small panel for talking to Larry about THIS page (Cockpit story 171):
+      // each message goes to POST /page-chat, lands on the page's own Cockpit
+      // thread and wakes him like any chat; his replies on that thread show here
+      // by polling GET /page-chat. Polls only while the panel is open and the
+      // tab is visible; stop() closes it, so it is as inert as the rest. The
+      // inline comments above are untouched by it.
+      var CHAT_POLL_MS = 4000;
+      var chatTimer = null;
+      var chatLastId = null; // the newest message id the panel has from a poll
+      var chatSeen = {}; // message id -> its bubble
+      var chatBusy = false;
+
+      var chatPanel = document.createElement("div");
+      chatPanel.id = "blog-annot-chat";
+      chatPanel.setAttribute("role", "dialog");
+      chatPanel.setAttribute("aria-label", "Chat with Larry about this page");
+      chatPanel.hidden = true;
+      chatPanel.innerHTML =
+        '<div class="bac-head"><b>Larry · this page</b>' +
+        '<button type="button" id="blog-annot-chat-close" aria-label="Close chat">×</button></div>' +
+        '<div id="blog-annot-chat-log" aria-live="polite"></div>' +
+        '<div id="blog-annot-chat-status"></div>' +
+        '<div class="bac-row"><textarea id="blog-annot-chat-text" rows="2" ' +
+        'placeholder="Talk to Larry about this page…"></textarea>' +
+        '<button type="button" id="blog-annot-chat-copy">Copy</button>' +
+        '<button type="button" id="blog-annot-chat-send">Send</button></div>';
+      document.body.appendChild(chatPanel);
+      var chatLog = document.getElementById("blog-annot-chat-log");
+      var chatTa = document.getElementById("blog-annot-chat-text");
+      var chatSendBtn = document.getElementById("blog-annot-chat-send");
+
+      function chatStatus(text) {
+        document.getElementById("blog-annot-chat-status").textContent =
+          text || "";
+      }
+
+      function chatFetch(path, init) {
+        init = init || {};
+        if (!SAME_HOST && window.AbortSignal && AbortSignal.timeout)
+          init.signal = AbortSignal.timeout(COCKPIT_TIMEOUT_MS);
+        return fetch(LARRY + path, init).then(
+          function (res) {
+            if (res.status === 404)
+              throw new Error("this Cockpit has no page chat yet");
+            if (!res.ok) throw new Error("Cockpit returned " + res.status);
+            return res.json();
+          },
+          function () {
+            // An older Cockpit answers 404 with no CORS header, which the browser
+            // reports as a failed fetch, the same as being off the tailnet.
+            throw new Error(
+              "can't reach the Cockpit, or it has no page chat yet"
+            );
+          }
+        );
+      }
+
+      // A message's text with its http(s) URLs as links, built as nodes:
+      // message text never goes through innerHTML.
+      var URL_RE = /https?:\/\/[^\s<>"']+/g;
+      function chatSetText(el, text) {
+        el.textContent = "";
+        var at = 0;
+        text.replace(URL_RE, function (raw, i) {
+          var url = raw.replace(/[.,;:!?)\]]+$/, "");
+          var ok = false;
+          try {
+            ok = /^https?:$/.test(new URL(url).protocol);
+          } catch (e) {
+            ok = false;
+          }
+          if (!ok) return raw;
+          el.appendChild(document.createTextNode(text.slice(at, i)));
+          var a = document.createElement("a");
+          a.href = url;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          a.textContent = url;
+          el.appendChild(a);
+          at = i + url.length;
+          return raw;
+        });
+        el.appendChild(document.createTextNode(text.slice(at)));
+      }
+
+      // One bubble per message id, text only (never HTML).
+      function chatAdd(m, state) {
+        var el = m.id ? chatSeen[m.id] : null;
+        if (!el) {
+          el = document.createElement("div");
+          el.className = "bac-msg";
+          chatLog.appendChild(el);
+          if (m.id) chatSeen[m.id] = el;
+        }
+        el.setAttribute("data-who", m.who === "larry" ? "larry" : "igor");
+        chatSetText(el, String(m.text || ""));
+        if (state) el.setAttribute("data-state", state);
+        else el.removeAttribute("data-state");
+        chatLog.scrollTop = chatLog.scrollHeight;
+        return el;
+      }
+
+      // fromId re-reads the whole thread and, when it holds that message,
+      // redraws it in the Cockpit's order: after the first send makes a thread,
+      // the Cockpit's opener goes above Igor's message, not below it.
+      function chatPoll(fromId) {
+        if (!LARRY || chatPanel.hidden || !live) return Promise.resolve();
+        var q =
+          "/page-chat?page=" +
+          encodeURIComponent(CHAT_PAGE.permalink || CHAT_PAGE.page_url) +
+          (chatLastId && !fromId
+            ? "&after=" + encodeURIComponent(chatLastId)
+            : "");
+        return chatFetch(q, { cache: "no-store" })
+          .then(function (out) {
+            var msgs = out.messages || [];
+            if (fromId) {
+              var has = msgs.some(function (x) {
+                return x.id === fromId;
+              });
+              if (!has) return;
+              chatLog.textContent = "";
+              chatSeen = {};
+              chatLastId = null;
+            }
+            msgs.forEach(function (m) {
+              chatAdd(m);
+              if (m.id) chatLastId = m.id;
+            });
+            if (!chatBusy) chatStatus("");
+          })
+          .catch(function (err) {
+            chatStatus("Can't reach Larry: " + (err.message || err));
+          });
+      }
+
+      function chatSchedule() {
+        clearTimeout(chatTimer);
+        chatTimer = null;
+        if (chatPanel.hidden || !live) return;
+        chatTimer = setTimeout(function () {
+          (document.hidden ? Promise.resolve() : chatPoll()).then(chatSchedule);
+        }, CHAT_POLL_MS);
+      }
+
+      function chatOpen() {
+        if (!LARRY && !SAME_HOST && OWNER) {
+          var origin = cockpitOrigin(
+            window.prompt(
+              "Cockpit address for the chat (https://…), saved in this browser."
+            )
+          );
+          if (origin) {
+            saveCockpit(origin);
+            LARRY = origin;
+          }
+        }
+        chatPanel.hidden = false;
+        chatSendBtn.disabled = !LARRY;
+        if (!LARRY) {
+          chatStatus(
+            OWNER
+              ? "No Cockpit address, so the chat is off. Open it again to set one."
+              : "Larry isn't connected in this browser. Write here, then Copy and send it to Igor."
+          );
+          chatTa.focus();
+          return Promise.resolve();
+        }
+        chatTa.focus();
+        return chatPoll().then(chatSchedule);
+      }
+
+      function chatClose() {
+        chatPanel.hidden = true;
+        clearTimeout(chatTimer);
+        chatTimer = null;
+      }
+
+      var chatPrev = "";
+      var chatEnterAt = null;
+      var chatFailed = null; // {text, id} of the last send that failed
+
+      function chatSend() {
+        var text = chatTa.value.trim();
+        if (!text || chatBusy || !LARRY) return Promise.resolve();
+        chatBusy = true;
+        chatSendBtn.disabled = true;
+        // a retry of the same text keeps its id: if the first try landed after
+        // all (a timeout), the Cockpit sees a duplicate and wakes nobody twice
+        var id =
+          chatFailed && chatFailed.text === text
+            ? chatFailed.id
+            : "pc-" +
+              Date.now().toString(36) +
+              Math.random().toString(36).slice(2, 10);
+        chatFailed = null;
+        var fresh = chatLastId === null; // no message seen yet: a new thread
+        var el = chatAdd({ id: id, who: "igor", text: text }, "sending");
+        chatTa.value = "";
+        chatPrev = "";
+        var body = { id: id, text: text, page_url: CHAT_PAGE.page_url };
+        if (CHAT_PAGE.permalink) body.permalink = CHAT_PAGE.permalink;
+        if (CHAT_PAGE.title) body.title = CHAT_PAGE.title;
+        if (CHAT_PAGE.source_repo) body.source_repo = CHAT_PAGE.source_repo;
+        if (CHAT_PAGE.source_repo && CHAT_PAGE.source_path)
+          body.source_path = CHAT_PAGE.source_path;
+        return chatFetch("/page-chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        })
+          .then(function () {
+            // chatLastId stays put: a reply that landed before this message
+            // still comes in on the next poll, and this one is not shown twice.
+            chatAdd({ id: id, who: "igor", text: text });
+            chatStatus("");
+            if (fresh) return chatPoll(id);
+          })
+          .catch(function (err) {
+            if (el.parentNode) el.parentNode.removeChild(el);
+            delete chatSeen[id];
+            chatFailed = { text: text, id: id };
+            if (!chatTa.value) chatTa.value = chatPrev = text;
+            chatStatus(
+              "Not sent (" +
+                (err.message || err) +
+                "). Your text is kept: retry, or Copy it for Igor."
+            );
+          })
+          .then(function () {
+            chatBusy = false;
+            chatSendBtn.disabled = !LARRY;
+          });
+      }
+
+      document.getElementById("blog-annot-chat-toggle").onclick = function () {
+        if (chatPanel.hidden) chatOpen();
+        else chatClose();
+      };
+      document.getElementById("blog-annot-chat-close").onclick = chatClose;
+      chatSendBtn.onclick = chatSend;
+      // Copy works with or without Larry: the message with the page link,
+      // to paste to Igor anywhere.
+      document.getElementById("blog-annot-chat-copy").onclick = function () {
+        var text = chatTa.value.trim();
+        if (!text) return;
+        copyText("About " + CHAT_PAGE.page_url + "\n\n" + text).then(
+          function () {
+            chatStatus("Copied with the page link. Paste it to Igor.");
+          },
+          function () {
+            chatStatus("Copy failed. Select the text by hand.");
+          }
+        );
+      };
+      chatTa.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" || e.key === "Esc") {
+          chatClose();
+          return;
+        }
+        if (
+          (e.key === "Enter" || e.keyCode === 13) &&
+          !e.shiftKey &&
+          !e.isComposing
+        ) {
+          e.preventDefault();
+          chatSend();
+        }
+      });
+      // Keyboards and dictation that send no usable Enter key insert newlines
+      // instead: two at the end send, as the note composer saves.
+      chatTa.addEventListener("input", function () {
+        var next = chatTa.value;
+        var atEnd =
+          chatTa.selectionStart === next.length &&
+          chatTa.selectionEnd === next.length;
+        var step = noteEnterStep(
+          chatPrev,
+          next,
+          atEnd,
+          chatEnterAt,
+          Date.now()
+        );
+        chatPrev = next;
+        chatEnterAt = step.lastAt;
+        if (step.save) chatSend();
+      });
+
+      var stopCapture = stop;
+      stop = function () {
+        stopCapture();
+        chatClose();
+      };
+      window.blogAnnotate.chat = {
+        open: chatOpen,
+        close: chatClose,
+        send: chatSend,
+        poll: chatPoll,
+      };
 
       // ------------------------------------------------------------ open PRs
       function readPrCache() {
