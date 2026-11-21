@@ -150,7 +150,7 @@ NOTE: Things I want my boss to do **that do not feel like** a lack of autonomy f
 
 ### Purpose
 
-**H2'26:** Keep Muse from screwing over Grandma through malice or incompetence.
+**H2'26:** Keep Muse from screwing over Grandma through malice and/or incompetence.
 
 - People Axis: Grow team + Help org + Mentor others
 - Product Impact: Well-being, reduce loneliness, build relationships
