@@ -153,9 +153,11 @@ The factory side keys send Ctrl+A, Ctrl+C and Ctrl+X, which are useless on a Mac
 | --- | ------------------------ | ---------------------------------------------------- |
 | M1  | Esc                      | Escape, which also cancels a Wispr recording         |
 | M2  | Right Cmd + F18          | Wispr undo (bind it in Wispr's Settings → Shortcuts) |
-| M3  | Right Ctrl + PageDown    | Wispr hands-free toggle                              |
+| M3  | Right Ctrl + PageDown    | Wispr hands-free toggle; no app sees the key         |
 | M4  | Enter                    | Enter                                                |
 | M5  | Right Cmd + Right Option | Wispr push-to-talk: hold to talk                     |
+
+M3 still sends Right Ctrl + PageDown, but [Karabiner](https://github.com/idvorkin/Settings/blob/a7f25ce/mac/karabiner.json#L64-L84) swallows it and runs the toggle script from my [voice ring](/ai-cockpit#a-button-for-the-voice) instead, so nothing needs binding in Wispr.
 
 The trick is sending combos no app will grab. My first try at undo sent Ctrl+Z, which the terminal swallowed before Wispr ever saw it.
 

@@ -82,7 +82,15 @@ I use the Hollyland Lark M2S Mini Combo — wireless lavalier, 7g, USB-C plus a 
 
 ##### A button for the voice
 
-A $36 [ZTYTO scrolling ring](https://www.amazon.com/dp/B0DYCN3G9W?tag=ighe-20), a touchpad ring sold for scrolling TikTok. I [remapped it in Karabiner](https://github.com/idvorkin/Settings/blob/main/mac/karabiner.json#L7) so a tap toggles Wispr Flow and the right button hits Enter. Now I can dictate and send a prompt from the couch or the treadmill without touching the keyboard.
+A $36 [ZTYTO scrolling ring](https://www.amazon.com/dp/B0DYCN3G9W?tag=ighe-20), a touchpad ring sold for scrolling TikTok. I remapped it in Karabiner so a tap toggles Wispr Flow and the right button hits Enter. Now I can dictate and send a prompt from the couch or the treadmill without touching the keyboard.
+
+Wiring it up on a new Mac, once it's paired:
+
+1. **Let Karabiner modify it.** Karabiner leaves mice alone by default. Turn on "Modify events" for the D06 Pro under Devices, which writes [these entries](https://github.com/idvorkin/Settings/blob/671d776/mac/karabiner.json#L2961-L2978). Over the 2.4G USB receiver it reports a different product ID (1025 instead of 257), so the config lists both.
+2. **Add the rule.** [The rule](https://github.com/idvorkin/Settings/blob/671d776/mac/karabiner.json#L6-L63) only matches the ring, so my other mice keep working: tap runs a script, right click sends Enter, middle click becomes a left click.
+3. **Toggle Wispr from the script.** Wispr Flow has no toggle you can call, but the app registers `wispr-flow://start-hands-free` and `wispr-flow://stop-hands-free`. They're undocumented; I found them in version 1.6.1583. [A short script](https://github.com/idvorkin/Settings/blob/671d776/mac/wispr_hands_free.sh) remembers which one comes next.
+
+Nothing needs binding in Wispr. If Wispr stops on its own (silence, or Esc), the script doesn't know, so the next tap is a dud and the one after starts listening again.
 
 For the full deep dive on why voice changes how you work with AI, see [You Need to Use Voice](/ai-operator#you-need-to-use-voice).
 
