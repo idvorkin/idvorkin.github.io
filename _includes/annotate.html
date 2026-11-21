@@ -740,6 +740,8 @@
         "#blog-annot-chat .bac-msg[data-who='igor']{align-self:flex-end;background:#0b5ed7;color:#fff}",
         "#blog-annot-chat .bac-msg[data-who='larry']{align-self:flex-start;background:#f1f3f5;color:#111}",
         "#blog-annot-chat .bac-msg[data-state='sending']{opacity:.6}",
+        "#blog-annot-chat .bac-msg[data-mark]::after{content:attr(data-mark);display:block;",
+        "text-align:right;font-size:11px;line-height:1;margin-top:3px}",
         "#blog-annot-chat-status{padding:0 12px 4px;font-size:12px;color:#868e96}",
         "#blog-annot-chat-status:empty{display:none}",
         "#blog-annot-chat .bac-row{display:flex;gap:6px;padding:8px 12px;",
@@ -1440,6 +1442,18 @@
       var chatSeen = {}; // message id -> its bubble
       var chatBusy = false;
 
+      // The receipt on each of Igor's messages, the Cockpit's own ladder
+      // (cockpit-0gp, story 195): 👀 the Cockpit has it, 🫡 Larry has seen it,
+      // 🏆 done; nothing while only sent. GET /page-chat carries `receipts`
+      // on every poll (the `after` read never returns a drawn message again);
+      // a Cockpit without them sends none, and no mark is drawn.
+      var CHAT_RECEIPT = {
+        received: ["👀", "Received"],
+        seen: ["🫡", "Seen by Larry"],
+        done: ["🏆", "Done"],
+      };
+      var CHAT_RECEIPT_RANK = { received: 1, seen: 2, done: 3 };
+
       var chatPanel = document.createElement("div");
       chatPanel.id = "blog-annot-chat";
       chatPanel.setAttribute("role", "dialog");
@@ -1526,8 +1540,22 @@
         chatSetText(el, String(m.text || ""));
         if (state) el.setAttribute("data-state", state);
         else el.removeAttribute("data-state");
+        chatMark(el, m.receipt);
         chatLog.scrollTop = chatLog.scrollHeight;
         return el;
+      }
+
+      // An attribute, drawn by CSS: chatSetText empties the bubble's children.
+      // Only forward, as in the Cockpit; never on Larry's or a sending bubble.
+      function chatMark(el, receipt) {
+        var mark = CHAT_RECEIPT[receipt];
+        if (!mark || el.getAttribute("data-who") !== "igor") return;
+        if (el.getAttribute("data-state")) return;
+        var had = CHAT_RECEIPT_RANK[el.getAttribute("data-receipt")] || 0;
+        if (CHAT_RECEIPT_RANK[receipt] <= had) return;
+        el.setAttribute("data-receipt", receipt);
+        el.setAttribute("data-mark", mark[0]);
+        el.title = mark[1];
       }
 
       // fromId re-reads the whole thread and, when it holds that message,
@@ -1556,6 +1584,10 @@
             msgs.forEach(function (m) {
               chatAdd(m);
               if (m.id) chatLastId = m.id;
+            });
+            var receipts = out.receipts || {};
+            Object.keys(receipts).forEach(function (id) {
+              if (chatSeen[id]) chatMark(chatSeen[id], receipts[id]);
             });
             if (!chatBusy) chatStatus("");
           })
@@ -1639,10 +1671,11 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
         })
-          .then(function () {
+          .then(function (out) {
             // chatLastId stays put: a reply that landed before this message
             // still comes in on the next poll, and this one is not shown twice.
-            chatAdd({ id: id, who: "igor", text: text });
+            var sent = (out && out.messages && out.messages[0]) || {};
+            chatAdd({ id: id, who: "igor", text: text, receipt: sent.receipt });
             chatStatus("");
             if (fresh) return chatPoll(id);
           })

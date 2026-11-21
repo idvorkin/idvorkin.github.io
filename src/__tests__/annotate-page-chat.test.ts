@@ -205,6 +205,95 @@ describe("Chat panel", () => {
   });
 });
 
+describe("Chat panel: receipt marks (Cockpit story 195)", () => {
+  beforeEach(() => {
+    vi.useFakeTimers({ toFake: ["setTimeout", "clearTimeout", "setInterval", "clearInterval"] });
+    localStorage.clear();
+  });
+
+  afterEach(() => {
+    vi.clearAllTimers();
+    vi.useRealTimers();
+    vi.unstubAllGlobals();
+    localStorage.clear();
+    (window as any).blogAnnotate = undefined;
+    document.documentElement.classList.remove("blog-annot-off");
+    document.head.innerHTML = "";
+    document.body.innerHTML = "";
+    window.location.hostname = "localhost";
+    window.location.pathname = "/";
+  });
+
+  const marks = () =>
+    Array.from(document.querySelectorAll("#blog-annot-chat .bac-msg")).map((el) => [
+      el.getAttribute("data-who"),
+      el.getAttribute("data-mark"),
+    ]);
+
+  it("moves the mark on a drawn message 👀 → 🫡 → 🏆 from the poll's receipts, never on Larry's", async () => {
+    const thread: { id: string; who: string; text: string }[] = [];
+    const receipts: Record<string, string> = {};
+    let withReceipts = true;
+    stubFetch((url, init) => {
+      if (!url.includes("/page-chat")) return json({ state: "idle" });
+      if (init?.method === "POST") {
+        const body = JSON.parse(String(init.body));
+        thread.push({ id: body.id, who: "igor", text: body.text });
+        receipts[body.id] = "received";
+        return json({ ok: true, messages: [{ ...thread[thread.length - 1], receipt: "received" }] });
+      }
+      const after = new URL(url).searchParams.get("after");
+      const i = after ? thread.findIndex((m) => m.id === after) + 1 : 0;
+      return json(
+        withReceipts ? { ok: true, messages: thread.slice(i), receipts } : { ok: true, messages: thread.slice(i) },
+      );
+    });
+    boot(TAILNET);
+    thread.push({ id: "m0", who: "larry", text: "Page: Foo" });
+    await api().chat.open();
+    const ta = document.getElementById("blog-annot-chat-text") as HTMLTextAreaElement;
+    ta.value = "Is this right?";
+    await api().chat.send();
+    const mine = thread[1].id;
+    expect(marks()).toEqual([
+      ["larry", null],
+      ["igor", "👀"],
+    ]);
+    thread.push({ id: "m2", who: "larry", text: "Looking." });
+    await vi.advanceTimersByTimeAsync(4000);
+    receipts[mine] = "seen";
+    await vi.advanceTimersByTimeAsync(4000);
+    expect(marks()).toEqual([
+      ["larry", null],
+      ["igor", "🫡"],
+      ["larry", null],
+    ]);
+    // a stale "received" never moves it back
+    receipts[mine] = "received";
+    await vi.advanceTimersByTimeAsync(4000);
+    expect(marks()[1]).toEqual(["igor", "🫡"]);
+    receipts[mine] = "done";
+    await vi.advanceTimersByTimeAsync(4000);
+    expect(marks()[1]).toEqual(["igor", "🏆"]);
+    expect(document.querySelectorAll("#blog-annot-chat .bac-msg")[1].getAttribute("title")).toBe("Done");
+    expect(document.querySelectorAll("#blog-annot-chat .bac-msg")[1].textContent).toBe("Is this right?");
+    // an older Cockpit sends no receipts: the mark stays, nothing errors
+    withReceipts = false;
+    await vi.advanceTimersByTimeAsync(4000);
+    expect(marks()[1]).toEqual(["igor", "🏆"]);
+    expect(document.getElementById("blog-annot-chat-status")?.textContent).toBe("");
+  });
+
+  it("draws no mark when the Cockpit sends no receipt state", async () => {
+    const thread: { id: string; who: string; text: string }[] = [{ id: "m1", who: "igor", text: "hi" }];
+    stubFetch((url) => (url.includes("/page-chat") ? json({ ok: true, messages: thread }) : json({ state: "idle" })));
+    boot(TAILNET);
+    await api().chat.open();
+    expect(marks()).toEqual([["igor", null]]);
+    expect(document.querySelector("#blog-annot-chat [data-mark]")).toBeNull();
+  });
+});
+
 describe("Chat panel: links, a new thread's opener, and a reader without Larry", () => {
   beforeEach(() => {
     vi.useFakeTimers({ toFake: ["setTimeout", "clearTimeout", "setInterval", "clearInterval"] });
