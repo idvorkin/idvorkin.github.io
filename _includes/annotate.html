@@ -88,7 +88,12 @@
   route looks the same as one out of reach (its 404 has no CORS header):
   the panel says "can't reach the Cockpit, or it has no page chat yet"
   and keeps the text; a resend of the same text reuses its id. The inline
-  comments are unchanged by it.
+  comments are unchanged by it. URLs in messages render as links (built as
+  nodes, never innerHTML). After the first send on a brand-new thread the
+  panel re-reads it from the start, so the Cockpit's page-details opener
+  sits above that message. Copy puts the message and the page URL on the
+  clipboard, for a reader without Larry (Send needs a Cockpit; a reader is
+  never prompted for one).
 
   SECURITY: the GitHub PAT lives ONLY in this browser's localStorage under
   `blogAnnotateToken`. It is never committed, never sent anywhere except
@@ -742,6 +747,8 @@
         "#blog-annot-chat .bac-row button{padding:6px 12px;border:0;border-radius:8px;",
         "background:#0b5ed7;color:#fff;font:600 13px/1.2 system-ui,sans-serif;cursor:pointer}",
         "#blog-annot-chat .bac-row button:disabled{opacity:.5;cursor:default}",
+        "#blog-annot-chat #blog-annot-chat-copy{background:#495057}",
+        "#blog-annot-chat .bac-msg a{color:inherit;text-decoration:underline}",
         "@media (prefers-color-scheme:dark){#blog-annot-chat{background:#1e1f22;",
         "color:#e9ecef;border-color:#3a3d42}",
         "#blog-annot-chat .bac-head,#blog-annot-chat .bac-row{border-color:#3a3d42}",
@@ -1442,6 +1449,7 @@
         '<div id="blog-annot-chat-status"></div>' +
         '<div class="bac-row"><textarea id="blog-annot-chat-text" rows="2" ' +
         'placeholder="Talk to Larry about this page…"></textarea>' +
+        '<button type="button" id="blog-annot-chat-copy">Copy</button>' +
         '<button type="button" id="blog-annot-chat-send">Send</button></div>';
       document.body.appendChild(chatPanel);
       var chatLog = document.getElementById("blog-annot-chat-log");
@@ -1474,6 +1482,34 @@
         );
       }
 
+      // A message's text with its http(s) URLs as links, built as nodes:
+      // message text never goes through innerHTML.
+      var URL_RE = /https?:\/\/[^\s<>"']+/g;
+      function chatSetText(el, text) {
+        el.textContent = "";
+        var at = 0;
+        text.replace(URL_RE, function (raw, i) {
+          var url = raw.replace(/[.,;:!?)\]]+$/, "");
+          var ok = false;
+          try {
+            ok = /^https?:$/.test(new URL(url).protocol);
+          } catch (e) {
+            ok = false;
+          }
+          if (!ok) return raw;
+          el.appendChild(document.createTextNode(text.slice(at, i)));
+          var a = document.createElement("a");
+          a.href = url;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          a.textContent = url;
+          el.appendChild(a);
+          at = i + url.length;
+          return raw;
+        });
+        el.appendChild(document.createTextNode(text.slice(at)));
+      }
+
       // One bubble per message id, text only (never HTML).
       function chatAdd(m, state) {
         var el = m.id ? chatSeen[m.id] : null;
@@ -1484,22 +1520,37 @@
           if (m.id) chatSeen[m.id] = el;
         }
         el.setAttribute("data-who", m.who === "larry" ? "larry" : "igor");
-        el.textContent = m.text || "";
+        chatSetText(el, String(m.text || ""));
         if (state) el.setAttribute("data-state", state);
         else el.removeAttribute("data-state");
         chatLog.scrollTop = chatLog.scrollHeight;
         return el;
       }
 
-      function chatPoll() {
+      // fromId re-reads the whole thread and, when it holds that message,
+      // redraws it in the Cockpit's order: after the first send makes a thread,
+      // the Cockpit's opener goes above Igor's message, not below it.
+      function chatPoll(fromId) {
         if (!LARRY || chatPanel.hidden || !live) return Promise.resolve();
         var q =
           "/page-chat?page=" +
           encodeURIComponent(CHAT_PAGE.permalink || CHAT_PAGE.page_url) +
-          (chatLastId ? "&after=" + encodeURIComponent(chatLastId) : "");
+          (chatLastId && !fromId
+            ? "&after=" + encodeURIComponent(chatLastId)
+            : "");
         return chatFetch(q, { cache: "no-store" })
           .then(function (out) {
-            (out.messages || []).forEach(function (m) {
+            var msgs = out.messages || [];
+            if (fromId) {
+              var has = msgs.some(function (x) {
+                return x.id === fromId;
+              });
+              if (!has) return;
+              chatLog.textContent = "";
+              chatSeen = {};
+              chatLastId = null;
+            }
+            msgs.forEach(function (m) {
               chatAdd(m);
               if (m.id) chatLastId = m.id;
             });
@@ -1520,7 +1571,7 @@
       }
 
       function chatOpen() {
-        if (!LARRY && !SAME_HOST) {
+        if (!LARRY && !SAME_HOST && OWNER) {
           var origin = cockpitOrigin(
             window.prompt(
               "Cockpit address for the chat (https://…), saved in this browser."
@@ -1532,10 +1583,14 @@
           }
         }
         chatPanel.hidden = false;
+        chatSendBtn.disabled = !LARRY;
         if (!LARRY) {
           chatStatus(
-            "No Cockpit address, so the chat is off. Open it again to set one."
+            OWNER
+              ? "No Cockpit address, so the chat is off. Open it again to set one."
+              : "Larry isn't connected in this browser. Write here, then Copy and send it to Igor."
           );
+          chatTa.focus();
           return Promise.resolve();
         }
         chatTa.focus();
@@ -1566,6 +1621,7 @@
               Date.now().toString(36) +
               Math.random().toString(36).slice(2, 10);
         chatFailed = null;
+        var fresh = chatLastId === null; // no message seen yet: a new thread
         var el = chatAdd({ id: id, who: "igor", text: text }, "sending");
         chatTa.value = "";
         chatPrev = "";
@@ -1585,6 +1641,7 @@
             // still comes in on the next poll, and this one is not shown twice.
             chatAdd({ id: id, who: "igor", text: text });
             chatStatus("");
+            if (fresh) return chatPoll(id);
           })
           .catch(function (err) {
             if (el.parentNode) el.parentNode.removeChild(el);
@@ -1592,12 +1649,14 @@
             chatFailed = { text: text, id: id };
             if (!chatTa.value) chatTa.value = chatPrev = text;
             chatStatus(
-              "Not sent (" + (err.message || err) + "). Your text is kept."
+              "Not sent (" +
+                (err.message || err) +
+                "). Your text is kept: retry, or Copy it for Igor."
             );
           })
           .then(function () {
             chatBusy = false;
-            chatSendBtn.disabled = false;
+            chatSendBtn.disabled = !LARRY;
           });
       }
 
@@ -1607,6 +1666,20 @@
       };
       document.getElementById("blog-annot-chat-close").onclick = chatClose;
       chatSendBtn.onclick = chatSend;
+      // Copy works with or without Larry: the message with the page link,
+      // to paste to Igor anywhere.
+      document.getElementById("blog-annot-chat-copy").onclick = function () {
+        var text = chatTa.value.trim();
+        if (!text) return;
+        copyText("About " + CHAT_PAGE.page_url + "\n\n" + text).then(
+          function () {
+            chatStatus("Copied with the page link. Paste it to Igor.");
+          },
+          function () {
+            chatStatus("Copy failed. Select the text by hand.");
+          }
+        );
+      };
       chatTa.addEventListener("keydown", function (e) {
         if (e.key === "Escape" || e.key === "Esc") {
           chatClose();

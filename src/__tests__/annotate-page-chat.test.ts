@@ -204,3 +204,73 @@ describe("Chat panel", () => {
     expect(calls).toHaveLength(0);
   });
 });
+
+describe("Chat panel: links, a new thread's opener, and a reader without Larry", () => {
+  beforeEach(() => {
+    vi.useFakeTimers({ toFake: ["setTimeout", "clearTimeout", "setInterval", "clearInterval"] });
+    localStorage.clear();
+  });
+
+  afterEach(() => {
+    vi.clearAllTimers();
+    vi.useRealTimers();
+    vi.unstubAllGlobals();
+    localStorage.clear();
+    (window as any).blogAnnotate = undefined;
+    document.documentElement.classList.remove("blog-annot-off");
+    document.head.innerHTML = "";
+    document.body.innerHTML = "";
+    window.location.hostname = "localhost";
+    window.location.pathname = "/";
+  });
+
+  it("puts the Cockpit's opener above the first message on a new thread, with its URL as a link", async () => {
+    const thread: { id: string; who: string; text: string }[] = [];
+    stubFetch((url, init) => {
+      if (init?.method === "POST") {
+        const body = JSON.parse(String(init.body));
+        if (!thread.length) thread.push({ id: "m0", who: "larry", text: `Page: Foo\nURL: ${body.page_url}` });
+        thread.push({ id: body.id, who: "igor", text: body.text });
+        return json({ ok: true });
+      }
+      if (url.includes("/page-chat")) {
+        const after = new URL(url).searchParams.get("after");
+        const i = after ? thread.findIndex((m) => m.id === after) + 1 : 0;
+        return json({ ok: true, messages: thread.slice(i) });
+      }
+      return json({ ok: true, state: "idle" });
+    });
+    boot(TAILNET);
+    await api().chat.open();
+    const ta = document.getElementById("blog-annot-chat-text") as HTMLTextAreaElement;
+    ta.value = "see https://example.com/x. <b>bold</b>";
+    await api().chat.send();
+    expect(bubbles().map((b) => b[0])).toEqual(["larry", "igor"]);
+    const links = Array.from(document.querySelectorAll("#blog-annot-chat .bac-msg a")).map((a) =>
+      a.getAttribute("href"),
+    );
+    expect(links).toHaveLength(2); // the opener's page URL, then the one in the message
+    expect(links[0]).toMatch(/^https?:\/\//);
+    expect(links[1]).toBe("https://example.com/x"); // trailing "." left out
+    expect(document.querySelector("#blog-annot-chat .bac-msg b")).toBeNull();
+  });
+
+  it("gives a reader without Larry no prompt and no request, only Copy", async () => {
+    const calls = stubFetch(() => json({ ok: true }));
+    const prompted = vi.fn(() => null);
+    vi.stubGlobal("prompt", prompted);
+    window.location.hostname = "idvork.in";
+    window.location.port = "";
+    window.location.pathname = "/foo";
+    document.body.innerHTML =
+      '<div id="blog-annot-meta" data-permalink="/foo" data-title="Foo" data-site-url="https://idvork.in" data-source-path="_d/foo.md" hidden></div><p>x</p>';
+    loadAnnotate();
+    (document.getElementById("blog-annot-toggle") as HTMLButtonElement).click();
+    await api().chat.open();
+    expect(prompted).not.toHaveBeenCalled();
+    expect((document.getElementById("blog-annot-chat-send") as HTMLButtonElement).disabled).toBe(true);
+    expect(document.getElementById("blog-annot-chat-copy")).not.toBeNull();
+    expect(document.getElementById("blog-annot-chat-status")?.textContent).toContain("Copy and send it to Igor");
+    expect(calls).toHaveLength(0);
+  });
+});
