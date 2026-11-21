@@ -382,6 +382,7 @@ _2 commits this week_
 
 - **[audio-debugger](https://github.com/idvorkin/audio-debugger)** - The Mac mic scope [comes to iPhone and iPad](https://github.com/idvorkin/audio-debugger/commit/d4f3b8c0e), [prefers a wired headset mic](https://github.com/idvorkin/audio-debugger/commit/4645d9339), and [gets an app icon](https://github.com/idvorkin/audio-debugger/commit/12d285f4e).
 - **[The Pain Axis](https://idvorkin-ai-tools.github.io/pain-axis-field-map/)** (new) - [A field map of the paper on how LLMs represent self-directed harm](https://github.com/idvorkin-ai-tools/pain-axis-field-map/commit/a18d93c2b), [added to the explainer index](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io/commit/e3f8ef93f).
+- **[Claude's Constitution](https://idvorkin-ai-tools.github.io/claude-constitution-field-map/)** (new) - [The 2026 constitution as a ladder from least to most understanding](https://github.com/idvorkin-ai-tools/claude-constitution-field-map/commit/7d1e6eaf0): 18 parts, 6 explorables.
 
 ## Week of 2026-10-25
 
@@ -415,6 +416,10 @@ _12 commits this week_
 
 - **[idvorkin-ai-tools.github.io](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io)** - A [Safety and alignment hub](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io/commit/ee48092ff) whose [diagram links every box and line](https://github.com/idvorkin-ai-tools/idvorkin-ai-tools.github.io/commit/f686fb883).
 - **[kludge-cli](https://github.com/idvorkin/kludge-cli)** - [rkkb apply sets a keyboard to exactly a checked-in TOML keymap](https://github.com/idvorkin/kludge-cli/commit/c1b3993dc).
+- **[Agentic Privacy](https://idvorkin-ai-tools.github.io/agentic-privacy-field-map/)** (new) - [A field map of the CAPS workshop report](https://github.com/idvorkin-ai-tools/agentic-privacy-field-map/commit/60c85a0ea): contextual integrity, [policy engines](https://github.com/idvorkin-ai-tools/agentic-privacy-field-map/commit/c38f712b3) and 51 open problems.
+- **[CIMemories](https://idvorkin-ai-tools.github.io/cimemories-field-map/)** (new) - [Nine parts on whether LLM memory leaks across contexts](https://github.com/idvorkin-ai-tools/cimemories-field-map/commit/888990d52), with [figures for the core concepts](https://github.com/idvorkin-ai-tools/cimemories-field-map/commit/cab954a43).
+- **[Constitutional AI](https://idvorkin-ai-tools.github.io/constitutional-ai-field-map/)** (new) - [The 2022 paper page by page](https://github.com/idvorkin-ai-tools/constitutional-ai-field-map/commit/de02e91cd), [bridged to Claude's 2026 constitution](https://github.com/idvorkin-ai-tools/constitutional-ai-field-map/commit/295e6d246).
+- **[Instruction Hierarchy](https://idvorkin-ai-tools.github.io/instruction-hierarchy-field-map/)** (new) - [Four papers compared](https://github.com/idvorkin-ai-tools/instruction-hierarchy-field-map/commit/955f144cc), plus [a privilege ladder you drag instructions across](https://github.com/idvorkin-ai-tools/instruction-hierarchy-field-map/commit/9f6c8d2e7).
 
 ## Week of 2026-10-18
 
