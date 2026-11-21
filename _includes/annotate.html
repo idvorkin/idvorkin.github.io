@@ -1157,8 +1157,10 @@
         window.blogAnnotate.refreshLarry = refreshLarry;
       }
 
-      // The page as the chat names it (see CHAT PANEL): the permalink is the
-      // thread's identity, so a preview and the live post share one thread.
+      // The page as the chat names it (see CHAT PANEL): the permalink
+      // (site.url + page.url, as Send to Larry sends it) is the thread's
+      // identity. `jekyll serve` rewrites site.url to the local server, so a
+      // preview gets a thread of its own, apart from the live post's.
       var CHAT_PAGE = {
         page_url: ORIGIN + PERMALINK,
         permalink: SITE_URL ? SITE_URL + PERMALINK : "",
