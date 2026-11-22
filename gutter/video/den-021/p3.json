@@ -1,0 +1,14 @@
+{
+  "clip": "voiced/p3.mp4",
+  "panel": "src/p3.png",
+  "out": "reveal/p3.mp4",
+  "panel_box": [140, 0, 360],
+  "bubbles": [
+    {
+      "rect": [32, 16, 348, 210],
+      "text": "AND YOU NEED TO BE ABLE TO DELETE.",
+      "window": [1, 2.9],
+      "first": 1.08
+    }
+  ]
+}

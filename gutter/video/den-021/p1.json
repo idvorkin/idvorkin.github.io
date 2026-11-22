@@ -1,0 +1,14 @@
+{
+  "clip": "voiced/p1.mp4",
+  "panel": "src/p1.png",
+  "out": "reveal/p1.mp4",
+  "panel_box": [140, 0, 360],
+  "bubbles": [
+    {
+      "rect": [22, 22, 330, 218],
+      "text": "YOUR TURN ON THE BOARD.",
+      "window": [1.8, 3.3],
+      "first": 1.85
+    }
+  ]
+}

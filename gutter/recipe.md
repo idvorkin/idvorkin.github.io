@@ -322,6 +322,9 @@ each weight. A felt luggage tag is too small at page scale for a label like
 
 ## Video: Gemini Omni
 
+The step-by-step commands, plus every prompt and spec of a real run, are in
+`gutter/video/README.md`. This section is the why.
+
 A new medium, not a new house image model: stills stay on Muse. Video animates
 **a finished, shipped panel**; it never designs one. First job: Den #15 "Direct
 Line" (2026-11-08), four clips, 20 s, $0.46.

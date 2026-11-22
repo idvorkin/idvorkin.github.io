@@ -1,0 +1,17 @@
+{
+  "clip": "voiced/p2.mp4",
+  "panel": "src/p2.png",
+  "out": "reveal/p2.mp4",
+  "panel_box": [140, 0, 360],
+  "bubbles": [
+    {
+      "rect": [[12, 8, 318, 166], [100, 160, 200, 212]],
+      "text": "TOO THICK. THINNER!",
+      "window": [0.5, 2.5],
+      "first": 0.55,
+      "pins": {
+        "2": 1.59
+      }
+    }
+  ]
+}
