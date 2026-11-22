@@ -32,7 +32,7 @@
   Banner  : "💬 Comments" in the local dev banner toggles it live (no reload)
 
   Once enabled: select text -> a small "Comment" bubble appears near the
-  selection -> tap it -> type a note -> pick an intent -> Save
+  selection -> tap it (or press Enter) -> type a note -> pick an intent -> Save
   (or Cmd/Ctrl+Enter; Escape cancels). Notes buffer in localStorage.
   Enter-Enter also saves, for hands-free dictation: at the END of a
   non-empty note, a second trailing newline within ENTER_SAVE_MS (400 ms) of
@@ -201,6 +201,23 @@
         return { save: true, lastAt: null };
       }
       return { save: false, lastAt: now };
+    }
+
+    // Should this keydown open the composer for the selection's bubble?
+    // Plain Enter only, bubble showing, composer shut, focus not in a field,
+    // button or link (Igor 2026-11-21: "when I have selected text and the
+    // comment button is up, and I hit Enter, I want to open the comment box").
+    function enterOpensComposer(e, isLive, composerOpen, bubbleShown) {
+      if (!isLive || composerOpen || !bubbleShown) return false;
+      if (e.key !== "Enter" || e.repeat || e.isComposing || e.defaultPrevented)
+        return false;
+      if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return false;
+      var t = e.target;
+      if (t && t.nodeType === 1) {
+        if (t.isContentEditable) return false;
+        if (/^(INPUT|TEXTAREA|SELECT|BUTTON|A)$/.test(t.tagName)) return false;
+      }
+      return true;
     }
 
     // The open PRs (from loadOpenPrs) whose changed files include this page's
@@ -384,6 +401,7 @@
       },
       ENTER_SAVE_MS: ENTER_SAVE_MS,
       noteEnterStep: noteEnterStep,
+      enterOpensComposer: enterOpensComposer,
       prsTouchingPath: prsTouchingPath,
       cockpitOrigin: cockpitOrigin,
       set: function (on) {
@@ -822,6 +840,14 @@
           e.preventDefault();
           composerKeys.save();
         }
+      });
+
+      // Enter with the Comment bubble up opens the composer, as a tap would.
+      document.addEventListener("keydown", function (e) {
+        var shown = btn.style.display === "block";
+        if (!enterOpensComposer(e, live, !!composerKeys, shown)) return;
+        e.preventDefault();
+        if (pending) openComposer(pending);
       });
 
       // The pill's Send is greyed out with nothing buffered or mid-send.
