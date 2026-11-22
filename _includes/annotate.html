@@ -185,6 +185,7 @@
     var TOKEN_KEY = "blogAnnotateToken";
     var BUF_KEY = "blogAnnotateBuffer";
     var COCKPIT_KEY = "blogLarryCockpit"; // saved Cockpit origin, off-tailnet
+    var TO_CHAT_KEY = "blogAnnotateToChat"; // "0": notes wait on the Review list
     // The Cockpit Connect pairs with, published with Igor's OK (2026-11-22,
     // Cockpit story 196): pairing is only a challenge and a number. Only a click on
     // Connect sends to it; Send and Chat use the saved address alone.
@@ -993,6 +994,12 @@
             '<div id="blog-annot-intents">' +
             chips +
             "</div>" +
+            (LARRY
+              ? '<label id="blog-annot-tochat-row" class="hint">' +
+                '<input type="checkbox" id="blog-annot-tochat"' +
+                (lsGet(TO_CHAT_KEY) === "0" ? "" : " checked") +
+                "> Send straight to chat</label>"
+              : "") +
             '<div class="row">' +
             '<span class="hint">' +
             (IS_MAC ? "⌘" : "Ctrl") +
@@ -1004,6 +1011,11 @@
 
         var ta = document.getElementById("blog-annot-text");
         ta.focus();
+        var toChatBox = document.getElementById("blog-annot-tochat");
+        if (toChatBox)
+          toChatBox.onchange = function () {
+            lsSet(TO_CHAT_KEY, toChatBox.checked ? "1" : "0");
+          };
 
         var intent = DEFAULT_INTENT;
         var chipBox = document.getElementById("blog-annot-intents");
@@ -1041,10 +1053,21 @@
             version: pageVersion(),
           };
           if (sel_info.diff) entry.diff = sel_info.diff;
+          if (toChatBox && toChatBox.checked) entry.toChat = true;
           list.push(entry);
           saveBuffer(list);
           refreshPill();
           hideModal();
+          // Saved first, so a failed send leaves it on the Review list.
+          if (entry.toChat)
+            flushToCockpit().then(function (ok) {
+              if (ok) return;
+              var b = document.getElementById("blog-annot-send");
+              b.textContent = "Chat unreachable: saved to Review";
+              setTimeout(function () {
+                if (!sending) b.textContent = "Send to Larry";
+              }, 4000);
+            });
           var s = window.getSelection();
           if (s && s.removeAllRanges) s.removeAllRanges();
         }
@@ -1249,6 +1272,7 @@
           .then(function (s) {
             setDot(s && s.state ? s.state : "down", s);
             offerConnect(false);
+            return flushToCockpit();
           })
           .catch(function () {
             setDot("unreachable");
@@ -1299,6 +1323,7 @@
       }
 
       function sendToLarry() {
+        if (sending) return Promise.resolve();
         var list = loadBuffer();
         var sendBtn = document.getElementById("blog-annot-send");
         if (!list.length) {
@@ -1374,9 +1399,6 @@
         var sent = {};
         var failed = [];
         var errors = [];
-        var noteKey = function (a) {
-          return a.ts + "|" + a.quote;
-        };
         return reviewBatches(list)
           .reduce(function (chain, batch) {
             return chain.then(function () {
@@ -1418,6 +1440,70 @@
               "). Your notes are kept: upload a gist or copy them instead.";
           });
       }
+
+      function noteKey(a) {
+        return a.ts + "|" + a.quote;
+      }
+
+      // NOTES GO STRAIGHT TO CHAT (Igor 2026-11-22: "If there's no chat, it
+      // should just save to the list. Otherwise it should go straight to
+      // chat", then "that check box and default checked"): with a Cockpit the
+      // note box has "Send straight to chat", checked unless this browser
+      // unticked it (TO_CHAT_KEY). A ticked note is saved with toChat and
+      // posted at once to the page's thread, the one the chat panel shows; an
+      // unticked one waits on the Review list for Send to Larry, as before.
+      // A toChat note that could not go stays listed and goes when the
+      // Cockpit answers again (status or chat poll). Quiet: no gist, no card,
+      // no prompt.
+      function flushToCockpit() {
+        if (!LARRY || sending || !live) return Promise.resolve(false);
+        var list = loadBuffer().filter(function (a) {
+          return a.toChat;
+        });
+        if (!list.length) return Promise.resolve(true);
+        var sendBtn = document.getElementById("blog-annot-send");
+        sending = true;
+        refreshPill();
+        sendBtn.textContent = "Sending…";
+        var sent = {};
+        var ok = true;
+        return reviewBatches(list)
+          .reduce(function (chain, batch) {
+            return chain.then(function () {
+              return deliverToCockpit(batch).then(
+                function () {
+                  batch.items.forEach(function (a) {
+                    sent[noteKey(a)] = true;
+                  });
+                },
+                function () {
+                  ok = false;
+                }
+              );
+            });
+          }, Promise.resolve())
+          .then(function () {
+            saveBuffer(
+              loadBuffer().filter(function (a) {
+                return !sent[noteKey(a)];
+              })
+            );
+            sending = false;
+            refreshPill();
+            sendBtn.textContent = ok ? "Sent to chat ✓" : "Send to Larry";
+            if (!ok) {
+              offerConnect(true);
+              return false;
+            }
+            setTimeout(function () {
+              if (!sending) sendBtn.textContent = "Send to Larry";
+            }, 2000);
+            offerConnect(false);
+            if (!chatPanel.hidden) chatPoll();
+            return true;
+          });
+      }
+      window.blogAnnotate.flushToCockpit = flushToCockpit;
 
       function deliverToCockpit(batch) {
         var init = {
@@ -1815,6 +1901,7 @@
             });
             if (!chatBusy) chatStatus("");
             offerConnect(false);
+            flushToCockpit();
           })
           .catch(function (err) {
             chatStatus("Can't reach Larry: " + (err.message || err));

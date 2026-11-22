@@ -169,6 +169,7 @@ describe("annotate.html in the diff view", () => {
     vi.useFakeTimers({ toFake: ["setTimeout", "clearTimeout"] });
     localStorage.clear();
     localStorage.setItem("blogAnnotate", "1");
+    localStorage.setItem("blogAnnotateToChat", "0"); // keep notes on the Review list to read them back
     window.location.pathname = "/foo";
     window.scrollTo = vi.fn() as typeof window.scrollTo;
     window.scrollBy = vi.fn() as typeof window.scrollBy;
