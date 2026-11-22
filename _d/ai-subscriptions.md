@@ -65,20 +65,20 @@ A subscription is flat rate. A key is a meter. When I'm typing, I'm the rate lim
 
 <div class="table-responsive small sortable-table" markdown="1">
 
-| Plan                        | Model · tool                | Price/mo | ≈ API value/mo | Multiple | Measured      |
-| --------------------------- | --------------------------- | -------- | -------------- | -------- | ------------- |
-| Claude Max                  | Opus 5.5 · Claude Code      | \$100    | \$4,640        | 46.4×    | 2026-11-19    |
-| Claude Max                  | Fable 5.2 · Claude Code     | \$100    | \$1,360\*      | 27.3×    | 2026-11-19–20 |
-| Google AI Ultra             | Gemini 4 Neon · Antigravity | \$99.99  | \$2,580        | 25.8×    | 2026-11-19–20 |
-| The X Subscription, Premium | Grok 4.7 · Grok Build       | \$30     | \$610          | 20.3×    | 2026-11-19–20 |
-| ChatGPT Pro                 | GPT-6.1 Sol · Codex CLI     | \$100    | \$1,025        | 10.25×   | 2026-10-01    |
-| Muse Code High Usage        | Muse Spark 1.3 · Muse Code  | \$15     | \$140          | 9.3×     | 2026-10-01    |
+| Plan                                 | Measured      | Multiple |
+| ------------------------------------ | ------------- | -------- |
+| Claude Max, Opus 5.5                 | 2026-11-19    | 46.4×    |
+| Claude Max, Fable 5.2                | 2026-11-19–20 | 27.3×    |
+| Google AI Ultra, Gemini 4 Neon       | 2026-11-19–20 | 25.8×    |
+| X Premium, Grok 4.7                  | 2026-11-19–20 | 20.3×    |
+| ChatGPT Pro, GPT-6.1 Sol             | 2026-10-01    | 10.25×   |
+| Muse Code High Usage, Muse Spark 1.3 | 2026-10-01    | 9.3×     |
 
 </div>
 
 {% include sortable-table.html %}
 
-<small>Click a header to sort. Source: [Paweł Huryn on X, Nov 20, 2026](https://x.com/pawelhuryn/status/2123650574373605874) (his chart, as a table): a month of each plan's allowance at the vendor's public API rates, divided by the price, assuming the whole week is usable. \*His Fable dollar figure counts Fable alone, which he notes may get only half the week (13.6×).</small>
+<small>Click a header to sort. Source: [Paweł Huryn on X, Nov 20, 2026](https://x.com/pawelhuryn/status/2123650574373605874): a month of each plan's allowance at the vendor's public API rates, divided by the plan's price, assuming the whole week is usable. He notes Fable may get only half the week, which would make it 13.6×.</small>
 
 So Claude Code, Codex CLI and Grok CLI each run on their subscription, and I scrub the API keys out of their environment on purpose. The windows are use-it-or-lose-it; which one pays for which job is [how I manage AI tokens](/token-management).
 
