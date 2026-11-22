@@ -63,6 +63,23 @@ The rule: anything agentic runs on a subscription, never on a pay-per-token key.
 
 A subscription is flat rate. A key is a meter. When I'm typing, I'm the rate limiter. When agents run unattended, nobody is, and the meter spins. [The \$230 week](/ai-journal#the-230-week-when-cheap-coding-isnt) taught me that: an API key inherited from my shell silently switched Claude Code from my subscription to per-token billing, and a twelve-hour session plus background agents cost \$230 I never needed to spend. The flip side is how much the flat rate buys: [Paweł Huryn priced a month of each plan's allowance at the vendor's own API rates](https://x.com/pawelhuryn/status/2123650574373605874), and \$100 of Claude Max bought about \$4,640 of Opus 5.5 (46×), against 20× for Grok on X Premium and 10× for ChatGPT Pro, if you can use the whole week.
 
+<div class="table-responsive small sortable-table" markdown="1">
+
+| Plan                        | Model · tool                | Price/mo | ≈ API value/mo | Multiple | Measured      |
+| --------------------------- | --------------------------- | -------- | -------------- | -------- | ------------- |
+| Claude Max                  | Opus 5.5 · Claude Code      | \$100    | \$4,640        | 46.4×    | 2026-11-19    |
+| Claude Max                  | Fable 5.2 · Claude Code     | \$100    | \$1,360\*      | 27.3×    | 2026-11-19–20 |
+| Google AI Ultra             | Gemini 4 Neon · Antigravity | \$99.99  | \$2,580        | 25.8×    | 2026-11-19–20 |
+| The X Subscription, Premium | Grok 4.7 · Grok Build       | \$30     | \$610          | 20.3×    | 2026-11-19–20 |
+| ChatGPT Pro                 | GPT-6.1 Sol · Codex CLI     | \$100    | \$1,025        | 10.25×   | 2026-10-01    |
+| Muse Code High Usage        | Muse Spark 1.3 · Muse Code  | \$15     | \$140          | 9.3×     | 2026-10-01    |
+
+</div>
+
+{% include sortable-table.html %}
+
+<small>Click a header to sort. Source: [Paweł Huryn on X, Nov 20, 2026](https://x.com/pawelhuryn/status/2123650574373605874) (his chart, as a table): a month of each plan's allowance at the vendor's public API rates, divided by the price, assuming the whole week is usable. \*His Fable dollar figure counts Fable alone, which he notes may get only half the week (13.6×).</small>
+
 So Claude Code, Codex CLI and Grok CLI each run on their subscription, and I scrub the API keys out of their environment on purpose. The windows are use-it-or-lose-it; which one pays for which job is [how I manage AI tokens](/token-management).
 
 ## Claude: Where I Live

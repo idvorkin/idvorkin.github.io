@@ -1,0 +1,79 @@
+<!--
+  Makes every table inside a `.sortable-table` wrapper sortable by clicking a header.
+  Usage in a post:
+    <div class="table-responsive small sortable-table" markdown="1">
+    | markdown table |
+    </div>
+    then include this file once, after the table.
+  Cells sort as numbers when they are a number once $ , × ≈ * and spaces are stripped; otherwise as text.
+  Include once per page (the script guards against double-binding).
+-->
+<style>
+  .sortable-table th {
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  .sortable-table th::after {
+    content: " ↕";
+    opacity: 0.35;
+  }
+  .sortable-table th[aria-sort="ascending"]::after {
+    content: " ▲";
+    opacity: 1;
+  }
+  .sortable-table th[aria-sort="descending"]::after {
+    content: " ▼";
+    opacity: 1;
+  }
+</style>
+<script>
+  (() => {
+    const key = cell => {
+      const text = cell.textContent.trim();
+      const stripped = text.replace(/[$,×≈*\s]/g, "");
+      const num = Number(stripped);
+      return stripped !== "" && !Number.isNaN(num) ? num : text.toLowerCase();
+    };
+    const bind = () => {
+      document.querySelectorAll(".sortable-table table").forEach(table => {
+        if (table.dataset.sortableBound) return;
+        table.dataset.sortableBound = "1";
+        const headers = table.querySelectorAll("thead th");
+        headers.forEach((th, col) => {
+          th.tabIndex = 0;
+          const sort = () => {
+            const dir =
+              th.getAttribute("aria-sort") === "descending"
+                ? "ascending"
+                : "descending";
+            headers.forEach(h => h.removeAttribute("aria-sort"));
+            th.setAttribute("aria-sort", dir);
+            const body = table.tBodies[0];
+            const rows = Array.from(body.rows);
+            rows.sort((a, b) => {
+              const x = key(a.cells[col]);
+              const y = key(b.cells[col]);
+              const cmp =
+                typeof x === "number" && typeof y === "number"
+                  ? x - y
+                  : String(x).localeCompare(String(y));
+              return dir === "ascending" ? cmp : -cmp;
+            });
+            rows.forEach(r => body.appendChild(r));
+          };
+          th.addEventListener("click", sort);
+          th.addEventListener("keydown", e => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              sort();
+            }
+          });
+        });
+      });
+    };
+    if (document.readyState === "loading")
+      document.addEventListener("DOMContentLoaded", bind);
+    else bind();
+  })();
+</script>
