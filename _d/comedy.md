@@ -116,3 +116,4 @@ The same checks run on magic patter, where the laugh has a second job: it [disar
 - [Storytelling](/storytelling): the narrative half; a joke is a very short story with a turn
 - [The Performer's Playbook](/performer-playbook): where the laugh is a tool for wonder, not the point
 - [Made to Stick](/made-to-stick#2-unexpected--break-the-guessing-machine-then-fix-it): Unexpected is the same move as a punchline, aimed at memory instead of a laugh
+- [Jimmy Carr](/jimmy-carr): his books, the self-help one and the one on how jokes work
