@@ -41,7 +41,7 @@ Pre-training is where a model reads the internet, and it's where the money used 
 
 ## The one intuition
 
-**Pre-training installs knowledge; post-training shapes behavior.** A base model has read the internet but isn't an assistant — ask it a question and it autocompletes ten more questions. Post-training teaches it little that's new; it changes what the model _does_ with what it knows. That's why it was cheap next to pre-training, and why most of a chat model's personality comes from it. Reasoning RL flipped the cost: in [Nathan Lambert's Cornell talk](https://natolambert.com/slides/2026/cornell-post-training/talk#13), DeepSeek R1's RL took about 5% of its pre-training GPU-hours, while two models released in late 2026 spent more GPU-hours on RL than on pre-training (over 1.7× and about 4×). Where it sits in the pipeline is in the parent post:
+**Pre-training installs knowledge; post-training shapes behavior.** A base model has read the internet but isn't an assistant — ask it a question and it autocompletes ten more questions. Post-training teaches it little that's new; it changes what the model _does_ with what it knows. That's why it was cheap next to pre-training, and why most of a chat model's personality comes from it. Reasoning RL flipped that: by late 2026 some models spent about 4× more GPU-hours on RL than on pre-training ([Nathan Lambert](https://natolambert.com/slides/2026/cornell-post-training/talk#13)). Where it sits in the pipeline is in the parent post:
 
 {% include summarize-page.html src="/ai-training" %}
 
