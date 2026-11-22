@@ -61,7 +61,24 @@ Prices as of October 2026, US, billed monthly:
 
 The rule: anything agentic runs on a subscription, never on a pay-per-token key.
 
-A subscription is flat rate. A key is a meter. When I'm typing, I'm the rate limiter. When agents run unattended, nobody is, and the meter spins. [The \$230 week](/ai-journal#the-230-week-when-cheap-coding-isnt) taught me that: an API key inherited from my shell silently switched Claude Code from my subscription to per-token billing, and a twelve-hour session plus background agents cost \$230 I never needed to spend.
+A subscription is flat rate. A key is a meter. When I'm typing, I'm the rate limiter. When agents run unattended, nobody is, and the meter spins. [The \$230 week](/ai-journal#the-230-week-when-cheap-coding-isnt) taught me that: an API key inherited from my shell silently switched Claude Code from my subscription to per-token billing, and a twelve-hour session plus background agents cost \$230 I never needed to spend. And the flat rate buys far more than it costs at API prices:
+
+<div class="table-responsive small sortable-table" markdown="1">
+
+| Plan                                 | Measured      | Multiple |
+| ------------------------------------ | ------------- | -------- |
+| Claude Max, Opus 5.5                 | 2026-11-19    | 46.4×    |
+| Claude Max, Fable 5.2                | 2026-11-19–20 | 27.3×    |
+| Google AI Ultra, Gemini 4 Neon       | 2026-11-19–20 | 25.8×    |
+| X Premium, Grok 4.7                  | 2026-11-19–20 | 20.3×    |
+| ChatGPT Pro, GPT-6.1 Sol             | 2026-10-01    | 10.25×   |
+| Muse Code High Usage, Muse Spark 1.3 | 2026-10-01    | 9.3×     |
+
+</div>
+
+{% include sortable-table.html %}
+
+<small>Multiple = a month of the plan's usage at API list prices ÷ the plan's price. Source: [Paweł Huryn on X, Nov 20, 2026](https://x.com/pawelhuryn/status/2123650574373605874).</small>
 
 So Claude Code, Codex CLI and Grok CLI each run on their subscription, and I scrub the API keys out of their environment on purpose. The windows are use-it-or-lose-it; which one pays for which job is [how I manage AI tokens](/token-management).
 
