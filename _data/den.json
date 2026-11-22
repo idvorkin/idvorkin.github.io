@@ -1,5 +1,18 @@
 [
   {
+    "num": 21,
+    "title": "Thinner",
+    "date": "November 22, 2026",
+    "img": "/images/den/den-021.webp",
+    "alt": "The Den #21: Thinner — four panels in the plush-render house style, all in the lamp-lit attic den. 1: Igor, a raccoon in rainbow glasses, a green TECHNOLOGIST tee, denim shorts and one blue and one yellow croc, stands with a marker beside a whiteboard on an easel that carries his small line drawing of a house: 'YOUR TURN ON THE BOARD.' Larry — the grey-bearded raccoon in wire-rim spectacles and a tweed waistcoat, one arm ending in a giant red lobster claw — holds up a paint roller dripping blue. 2: One fat blue stripe now runs across the whole board, over the house. Igor throws his paws up: 'TOO THICK. THINNER!' Larry still has the roller on the board. 3: Larry is gone; his roller lies on the floor beside the open stair hatch. Igor, alone, paw at his chin, points his marker at the striped board: 'AND YOU NEED TO BE ABLE TO DELETE.' 4: The board is wiped bare and dripping, the house gone along with the stripe, and a clear puddle spreads round Igor's crocs. Larry holds out a dripping tin of paint thinner, labeled THINNER: 'IT DOES BOTH.'",
+    "panels": [
+      "/images/den/den-021-p1.webp",
+      "/images/den/den-021-p2.webp",
+      "/images/den/den-021-p3.webp",
+      "/images/den/den-021-p4.webp"
+    ]
+  },
+  {
     "num": 20,
     "title": "No Change",
     "date": "November 15, 2026",
