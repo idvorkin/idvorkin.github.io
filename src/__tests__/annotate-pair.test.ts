@@ -70,7 +70,10 @@ async function connectWith(code: string) {
 }
 
 describe("Connect to Larry", () => {
-  beforeEach(() => localStorage.clear());
+  beforeEach(() => {
+    localStorage.clear();
+    (window.location as any).reload = vi.fn();
+  });
 
   afterEach(() => {
     vi.unstubAllGlobals();
@@ -94,7 +97,7 @@ describe("Connect to Larry", () => {
     boot("blog.example");
     await connectWith("482 913");
     expect(localStorage.getItem("blogLarryCockpit")).toBe(COCKPIT);
-    expect($("blog-annot-connect")).toBeNull();
+    expect(window.location.reload).toHaveBeenCalledTimes(1);
     const redeem = calls.find((c) => c.url.endsWith("/pair/redeem"));
     expect(redeem?.url).not.toContain("482913");
     expect(JSON.parse(String(redeem?.init?.body))).toEqual({ challenge: "K7QX", code: "482913" });
@@ -106,6 +109,6 @@ describe("Connect to Larry", () => {
     await connectWith("111111");
     expect(localStorage.getItem("blogLarryCockpit")).toBeNull();
     expect($("blog-annot-note").textContent).toMatch(/Wrong or expired/);
-    expect($("blog-annot-connect")).not.toBeNull();
+    expect(window.location.reload).not.toHaveBeenCalled();
   });
 });
