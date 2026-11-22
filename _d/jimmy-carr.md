@@ -9,7 +9,7 @@ tags:
   - communication
 ---
 
-Jimmy Carr is a British stand-up comedian, the one with the one-liners and the laugh, and he also writes books on how to live. I like his self-help, so this page is where I keep his books and clips.
+Jimmy Carr is a stand-up comedian, known for his one-liners and as host of _8 Out of 10 Cats_, and he also wrote a self-help book. I like his self-help, so this page is where I keep his books and clips.
 
 {% include ai-slop.html percent="90" %}
 
