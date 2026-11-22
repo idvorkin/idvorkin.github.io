@@ -134,8 +134,9 @@
       localhost is accepted, origin only, re-checked on every read. A POST
       that fails, errors or hangs past COCKPIT_TIMEOUT_MS sends that batch
       and the rest of the Send to gists below (token asked for only then).
-    * Connect (Cockpit story 196): with no saved address, the pill shows
-      "Connect to Larry". It gets a challenge from `<Cockpit>/pair/start`
+    * Connect (Cockpit story 196): with no saved address, or a saved one
+      whose status or chat fetch just failed (igor2-88g.1652), the pill and
+      the chat panel show "Connect to Larry". It gets a challenge from `<Cockpit>/pair/start`
       (bound to this origin), Igor types it into the Cockpit's "Pair a
       page" and types the 6-digit number it shows back here
       (`/pair/redeem`; 5 min, single use). Then the address is saved as the
@@ -775,6 +776,10 @@
         "text-align:right;font-size:11px;line-height:1;margin-top:3px}",
         "#blog-annot-chat-status{padding:0 12px 4px;font-size:12px;color:#868e96}",
         "#blog-annot-chat-status:empty{display:none}",
+        "#blog-annot-chat-connect{align-self:flex-start;margin:0 12px 6px;",
+        "padding:6px 12px;border:0;border-radius:8px;background:#0b5ed7;color:#fff;",
+        "font:600 13px/1.2 system-ui,sans-serif;cursor:pointer}",
+        "#blog-annot-chat-connect[hidden]{display:none}",
         "#blog-annot-chat .bac-row{display:flex;gap:6px;padding:8px 12px;",
         "border-top:1px solid #dee2e6}",
         "#blog-annot-chat textarea{flex:1;min-width:0;resize:none;padding:6px 8px;",
@@ -811,9 +816,11 @@
           : "") +
         '<button type="button" id="blog-annot-send">Send to Larry</button>' +
         '<button type="button" id="blog-annot-chat-toggle">Chat</button>' +
-        (LARRY || SAME_HOST
+        (SAME_HOST
           ? ""
-          : '<button type="button" id="blog-annot-connect">Connect to Larry</button>') +
+          : '<button type="button" id="blog-annot-connect"' +
+            (LARRY ? " hidden" : "") +
+            ">Connect to Larry</button>") +
         '<span id="blog-annot-prs" hidden></span>';
       document.body.appendChild(pill);
 
@@ -1241,9 +1248,11 @@
           })
           .then(function (s) {
             setDot(s && s.state ? s.state : "down", s);
+            offerConnect(false);
           })
           .catch(function () {
             setDot("unreachable");
+            offerConnect(true);
           });
       }
 
@@ -1602,10 +1611,29 @@
             }
           });
         });
-        var preset = LARRY || cockpitOrigin(DEFAULT_COCKPIT);
+        // A saved address that doesn't answer falls back to the published one.
+        var fallback = cockpitOrigin(DEFAULT_COCKPIT);
+        var preset = LARRY || fallback;
         addr.value = preset;
-        if (preset) start(preset);
-        else addr.focus();
+        if (!preset) return addr.focus();
+        start(preset).then(function () {
+          if (challenge || preset === fallback || !fallback) return;
+          addr.value = fallback;
+          start(fallback);
+        });
+      }
+
+      // Connect shows with no Cockpit, and comes back when the saved one stops
+      // answering (igor2-88g.1652): otherwise a stale address leaves only a red
+      // dot and no way to pair. Never on the tailnet, where the Cockpit is this host.
+      function offerConnect(on) {
+        if (SAME_HOST) return;
+        ["blog-annot-connect", "blog-annot-chat-connect"].forEach(
+          function (id) {
+            var el = document.getElementById(id);
+            if (el) el.hidden = !(on || !LARRY);
+          }
+        );
       }
 
       var connectBtn = document.getElementById("blog-annot-connect");
@@ -1659,6 +1687,7 @@
         '<button type="button" id="blog-annot-chat-close" aria-label="Close chat">×</button></div>' +
         '<div id="blog-annot-chat-log" aria-live="polite"></div>' +
         '<div id="blog-annot-chat-status"></div>' +
+        '<button type="button" id="blog-annot-chat-connect" hidden>Connect to Larry</button>' +
         '<div class="bac-row"><textarea id="blog-annot-chat-text" rows="2" ' +
         'placeholder="Talk to Larry about this page…"></textarea>' +
         '<button type="button" id="blog-annot-chat-copy">Copy</button>' +
@@ -1785,9 +1814,11 @@
               if (chatSeen[id]) chatMark(chatSeen[id], receipts[id]);
             });
             if (!chatBusy) chatStatus("");
+            offerConnect(false);
           })
           .catch(function (err) {
             chatStatus("Can't reach Larry: " + (err.message || err));
+            offerConnect(true);
           });
       }
 
@@ -1816,6 +1847,7 @@
         chatPanel.hidden = false;
         chatSendBtn.disabled = !LARRY;
         if (!LARRY) {
+          offerConnect(true);
           chatStatus(
             OWNER
               ? "No Cockpit address, so the chat is off. Open it again to set one."
@@ -1885,6 +1917,7 @@
                 (err.message || err) +
                 "). Your text is kept: retry, or Copy it for Igor."
             );
+            offerConnect(true);
           })
           .then(function () {
             chatBusy = false;
@@ -1898,6 +1931,7 @@
       };
       document.getElementById("blog-annot-chat-close").onclick = chatClose;
       chatSendBtn.onclick = chatSend;
+      document.getElementById("blog-annot-chat-connect").onclick = connectOpen;
       // Copy works with or without Larry: the message with the page link,
       // to paste to Igor anywhere.
       document.getElementById("blog-annot-chat-copy").onclick = function () {

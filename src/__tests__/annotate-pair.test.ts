@@ -121,4 +121,65 @@ describe("Connect to Larry", () => {
     expect($("blog-annot-note").textContent).toMatch(/Wrong or expired/);
     expect(window.location.reload).not.toHaveBeenCalled();
   });
+
+  // igor2-88g.1652: a phone with a saved address that no longer answers showed a red dot and
+  // "can't reach the Cockpit", with Connect hidden because an address was saved.
+  describe("with a saved Cockpit that doesn't answer", () => {
+    const DEAD = "https://old-box.example-tail.ts.net";
+    const deadThenPairing = () =>
+      stubFetch((url) => {
+        if (url.startsWith(DEAD)) throw new TypeError("Load failed"); // Safari's failed fetch
+        if (url === `${COCKPIT}/pair/start`) return json({ ok: true, challenge: "K7QX" });
+        if (url === `${COCKPIT}/pair/redeem`) return json({ ok: true, cockpit: COCKPIT });
+        return json({}, 404);
+      });
+
+    it("brings Connect back in the pill and pairs with the published Cockpit", async () => {
+      deadThenPairing();
+      localStorage.setItem("blogLarryCockpit", DEAD);
+      boot("blog.example");
+      await flush();
+      expect($("blog-annot-connect").hidden).toBe(false);
+      $("blog-annot-connect").click();
+      await flush();
+      expect($("blog-annot-pair-ch").textContent).toBe("K7QX");
+      $("blog-annot-pair-code").value = "482913";
+      $("blog-annot-pair-go").click();
+      await flush();
+      expect(localStorage.getItem("blogLarryCockpit")).toBe(COCKPIT);
+    });
+
+    it("offers Connect in the chat panel when the chat can't reach it", async () => {
+      deadThenPairing();
+      localStorage.setItem("blogLarryCockpit", DEAD);
+      boot("blog.example");
+      await flush();
+      await (window as any).blogAnnotate.chat.open();
+      await flush();
+      expect($("blog-annot-chat-status").textContent).toMatch(/can't reach the Cockpit/);
+      expect($("blog-annot-chat-connect").hidden).toBe(false);
+      $("blog-annot-chat-connect").click();
+      await flush();
+      expect($("blog-annot-pair-ch").textContent).toBe("K7QX");
+    });
+  });
+
+  it("keeps Connect hidden while the saved Cockpit answers", async () => {
+    stubFetch(() => json({ ok: true, state: "idle", messages: [] }));
+    localStorage.setItem("blogLarryCockpit", COCKPIT);
+    boot("blog.example");
+    await flush();
+    expect($("blog-annot-connect").hidden).toBe(true);
+    await (window as any).blogAnnotate.chat.open();
+    await flush();
+    expect($("blog-annot-chat-connect").hidden).toBe(true);
+  });
+
+  it("offers Connect in the chat panel with no Cockpit at all", async () => {
+    stubFetch(() => json({}, 404));
+    boot("blog.example");
+    vi.stubGlobal("prompt", () => null); // the owner's address prompt, cancelled
+    await (window as any).blogAnnotate.chat.open();
+    expect($("blog-annot-chat-connect").hidden).toBe(false);
+  });
 });
