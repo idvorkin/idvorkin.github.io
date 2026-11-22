@@ -5,7 +5,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 
-const COCKPIT = "https://box.example-tail.ts.net";
+const COCKPIT = "https://c-5004.squeaker-teeth.ts.net"; // DEFAULT_COCKPIT, published
 
 const loadAnnotate = () => {
   const include = readFileSync(resolve(__dirname, "../../_includes/annotate.html"), "utf8");
@@ -59,9 +59,8 @@ function pairingCockpit(code = "482913") {
 }
 
 async function connectWith(code: string) {
+  // The published address starts pairing on the click: no address to type.
   $("blog-annot-connect").click();
-  $("blog-annot-pair-origin").value = "box.example-tail.ts.net";
-  $("blog-annot-pair-go").click();
   await flush();
   expect($("blog-annot-pair-ch").textContent).toBe("K7QX");
   $("blog-annot-pair-code").value = code;
@@ -101,6 +100,17 @@ describe("Connect to Larry", () => {
     const redeem = calls.find((c) => c.url.endsWith("/pair/redeem"));
     expect(redeem?.url).not.toContain("482913");
     expect(JSON.parse(String(redeem?.init?.body))).toEqual({ challenge: "K7QX", code: "482913" });
+  });
+
+  it("off the tailnet says so instead of hanging", async () => {
+    stubFetch(() => {
+      throw new TypeError("Failed to fetch");
+    });
+    boot("blog.example");
+    $("blog-annot-connect").click();
+    await flush();
+    expect($("blog-annot-note").textContent).toMatch(/Tailscale/);
+    expect(localStorage.getItem("blogLarryCockpit")).toBeNull();
   });
 
   it("saves nothing on a wrong number", async () => {

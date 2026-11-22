@@ -13,7 +13,7 @@
   explainers' floating top-right pair instead (GitHub link from
   `page.path` + toggle, placed under any header band). Building it is DOM
   only: no request until the reader sends something, and none ever to a
-  Cockpit this browser has not saved.
+  Cockpit this browser has not saved, except when the reader clicks Connect.
 
   OWNER vs READER. The setup prompts (Cockpit address, GitHub token), the
   `#larry-cockpit=` fragment, the status dot and the open-PR badge are the
@@ -129,8 +129,8 @@
       `#larry-cockpit=<origin>` (a fragment, never a query, so it stays out
       of server logs; it strips itself, and asks before replacing a
       different saved address). The fragment is saved only in the owner's
-      browser (see OWNER vs READER); on a new device open
-      `?annotate=1#larry-cockpit=<origin>`. Only an https origin on a tailnet name or
+      browser (see OWNER vs READER); on a new device use Connect (below)
+      or open `?annotate=1#larry-cockpit=<origin>`. Only an https origin on a tailnet name or
       localhost is accepted, origin only, re-checked on every read. A POST
       that fails, errors or hangs past COCKPIT_TIMEOUT_MS sends that batch
       and the rest of the Send to gists below (token asked for only then).
@@ -139,8 +139,9 @@
       (bound to this origin), Igor types it into the Cockpit's "Pair a
       page" and types the 6-digit number it shows back here
       (`/pair/redeem`; 5 min, single use). Then the address is saved as the
-      fragment saves it. DEFAULT_COCKPIT presets which Cockpit; empty, it
-      asks for the address once. The Cockpit's box also offers one-click
+      fragment saves it. DEFAULT_COCKPIT is the Cockpit it pairs with
+      (published with Igor's OK); the address box shows it and takes another
+      if that one can't be reached. The Cockpit's box also offers one-click
       `#larry-cockpit=` links for a browser with the Cockpit open.
     * Fallback, or a Send whose address prompt was cancelled: one SECRET
       gist per batch, through the same gist write and token as "Upload to
@@ -183,10 +184,10 @@
     var TOKEN_KEY = "blogAnnotateToken";
     var BUF_KEY = "blogAnnotateBuffer";
     var COCKPIT_KEY = "blogLarryCockpit"; // saved Cockpit origin, off-tailnet
-    // The Cockpit Connect pairs with. Set, pairing is only a challenge and a
-    // number; "" makes Connect ask for the address once. Only a click on
+    // The Cockpit Connect pairs with, published with Igor's OK (2026-11-22,
+    // Cockpit story 196): pairing is only a challenge and a number. Only a click on
     // Connect sends to it; Send and Chat use the saved address alone.
-    var DEFAULT_COCKPIT = "";
+    var DEFAULT_COCKPIT = "https://c-5004.squeaker-teeth.ts.net";
     var COCKPIT_TIMEOUT_MS = 8000; // a hung POST off the tailnet falls back
     var PR_CACHE_KEY = "blogAnnotateOpenPrs"; // sessionStorage
     var PR_CACHE_MS = 10 * 60 * 1000;
@@ -1311,7 +1312,8 @@
         if (!LARRY && !SAME_HOST && OWNER) {
           var typed = window.prompt(
             "Cockpit address for Send to Larry (https://…), saved in this " +
-              "browser. Cancel to send to a secret gist instead."
+              "browser. Cancel to send to a secret gist instead.",
+            DEFAULT_COCKPIT
           );
           if (typed && typed.trim()) {
             var origin = cockpitOrigin(typed);
@@ -1464,21 +1466,35 @@
       // and types the 6-digit number it shows back here. The number goes only
       // in a POST body; on success the address is saved as the fragment saves it.
       function pairPost(base, path, body) {
+        // Off the tailnet the Cockpit never answers: give up after
+        // COCKPIT_TIMEOUT_MS rather than hang the card.
+        var ctl =
+          typeof AbortController === "function" ? new AbortController() : null;
+        var timer = ctl
+          ? setTimeout(function () {
+              ctl.abort();
+            }, COCKPIT_TIMEOUT_MS)
+          : null;
         return fetch(base + path, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
           cache: "no-store",
-        }).then(function (res) {
-          return res.json().then(
-            function (j) {
-              return { status: res.status, body: j || {} };
-            },
-            function () {
-              return { status: res.status, body: {} };
-            }
-          );
-        });
+          signal: ctl ? ctl.signal : undefined,
+        })
+          .then(function (res) {
+            return res.json().then(
+              function (j) {
+                return { status: res.status, body: j || {} };
+              },
+              function () {
+                return { status: res.status, body: {} };
+              }
+            );
+          })
+          .finally(function () {
+            clearTimeout(timer);
+          });
       }
 
       function connectNote(text) {
@@ -1530,7 +1546,7 @@
               codeIn.focus();
             })
             .catch(function () {
-              connectNote("Can't reach that Cockpit, or it can't pair yet.");
+              connectNote("Can't reach the Cockpit. Are you on Tailscale?");
             })
             .then(function () {
               busy = false;
@@ -1561,7 +1577,7 @@
               );
             })
             .catch(function () {
-              connectNote("Can't reach the Cockpit.");
+              connectNote("Can't reach the Cockpit. Are you on Tailscale?");
             })
             .then(function () {
               busy = false;
@@ -1788,7 +1804,8 @@
         if (!LARRY && !SAME_HOST && OWNER) {
           var origin = cockpitOrigin(
             window.prompt(
-              "Cockpit address for the chat (https://…), saved in this browser."
+              "Cockpit address for the chat (https://…), saved in this browser.",
+              DEFAULT_COCKPIT
             )
           );
           if (origin) {
