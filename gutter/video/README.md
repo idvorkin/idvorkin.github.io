@@ -24,6 +24,8 @@ scratch run dir; `G` is this repo's `gutter/`.
 4. **Igor's lines first**: `$G/revoice.py say xBlr6Er6jnVgPIGgNJFO "line" lines/pK.wav`.
    Split a line with a pause into two files. Run every line through Parakeet on
    a silence-padded copy before mixing; one-word lines come back wrong.
+   ElevenLabs speaks faster than Omni's mouths: after step 6, if a line ends
+   well before the model's speech does, re-make it with `--speed=0.75`–`0.8`.
 5. **Omni**, one clip per panel, in parallel:
    `$G/omni.py plate/pK.png prompts/pK.txt --duration 4 --seed NN --out-dir clips --name pK`.
    Prompts follow the skeleton in `recipe.md`; pin the gag's props and say who
@@ -40,9 +42,16 @@ scratch run dir; `G` is this repo's `gutter/`.
 9. **Loudness**: `ffmpeg -i reveal/pK.mp4 -af volumedetect -vn -f null -`. Omni's
    Larry ran 7 dB under the ElevenLabs lines on Den #21; lift it with
    `-c:v copy -af "volume=6dB,alimiter=limit=0.95"`.
-10. **Stitch**: `$G/video/stitch.sh final/den-0NN-<slug>-voiced-360p.mp4 reveal/p*.mp4`,
-    then a frame montage and Parakeet on the final file.
-11. **Ship**: the mp4 goes to idvorkin/blob `blog/den/` by PR from the
+10. **Stitch**, trimming each clip to its line:
+    `$G/video/stitch.sh final/den-0NN-<slug>-voiced-360p.mp4 reveal/p1.mp4@1.4:3.6 …`.
+    Omni pads every clip with silence; untrimmed, Den #21 opened on 1.8 s of
+    nothing and had 3 s gaps between panels (18 s cut to 11 s).
+11. **Watch it** before shipping: `$G/video/watch.sh final/….mp4 watch/`, then
+    Read `watch/sheet-*.png` (a time-stamped frame every 0.5 s) and
+    `watch/timeline.txt` (loudness, words and cuts per 0.5 s). Look for dead air,
+    a bubble up long before its words, voices more than ~4 LU apart, and
+    blinks that fill a lens. For lips, crop the face from the clip at 5 fps.
+12. **Ship**: the mp4 goes to idvorkin/blob `blog/den/` by PR from the
     idvorkin-ai-tools fork; then a blog PR adds `video` and `video_poster` to the
     strip in `_data/den.json`, the poster being panel 1 pillarboxed:
     `magick -size 1280x720 xc:'#F7F0D4' \( den-0NN-p1.webp -resize 720x720 \) -gravity center -composite -quality 82 den-0NN-video-poster.webp`.
