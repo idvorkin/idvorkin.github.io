@@ -1,6 +1,8 @@
 // ABOUTME: Controls the full-screen panel reader used by Den comic strips and other panel sets.
 // ABOUTME: Steps through one entry's panels, then its full composite when the entry has one.
 
+export { setupDenVideos } from "./den-video";
+
 export interface DenStripEntry {
   num: number | string;
   title: string;

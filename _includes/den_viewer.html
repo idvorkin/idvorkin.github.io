@@ -2,8 +2,9 @@
 openers. Entries come from _data/den.json by default; pass data="NAME" to read
 _data/NAME.json instead (same shape: num, title, panels, and optional img, date,
 receipts_url, label, captions). Openers are den_strip.html hit zones, or any
-element with data-den-open="NUM" data-den-panel="N". {%- endcomment -%} {%-
-assign _den_data_key = include.data | default: "den" -%}
+element with data-den-open="NUM" data-den-panel="N". Also wires video Share
+buttons and #play-N links (src/den-video.ts). {%- endcomment -%} {%- assign
+_den_data_key = include.data | default: "den" -%}
 <style>
   .den-strip {
     --den-bg: rgba(255, 255, 255, 0.92);
@@ -69,6 +70,57 @@ assign _den_data_key = include.data | default: "den" -%}
   .den-hit[data-den-panel="4"] {
     left: 51%;
     top: 51%;
+  }
+
+  .den-video {
+    margin-top: 0.5em;
+  }
+
+  .den-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    scroll-margin-top: 1em;
+  }
+
+  .den-video__share {
+    display: block;
+    margin: 0.4em 0 0 auto;
+    padding: 0.3em 0.9em;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    background: transparent;
+    color: inherit;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
+
+  .den-video__share:focus-visible {
+    outline: 3px solid var(--den-ring);
+    outline-offset: 2px;
+  }
+
+  .den-video-toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    z-index: 2147483641;
+    padding: 0.5em 1.2em;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-size: 0.95em;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 8px);
+    transition:
+      opacity 160ms ease,
+      transform 160ms ease;
+  }
+
+  .den-video-toast.is-visible {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 
   .den-hit:focus-visible {
@@ -408,7 +460,8 @@ assign _den_data_key = include.data | default: "den" -%}
 
   @media (prefers-reduced-motion: reduce) {
     .den-lightbox,
-    .den-lightbox__image {
+    .den-lightbox__image,
+    .den-video-toast {
       transition: none;
     }
   }
@@ -482,7 +535,8 @@ assign _den_data_key = include.data | default: "den" -%}
   {{ site.data[_den_data_key] | jsonify }}
 </script>
 <script type="module">
-  import { setupDenViewer } from "/assets/js/den-viewer.js";
+  import { setupDenVideos, setupDenViewer } from "/assets/js/den-viewer.js";
 
   setupDenViewer();
+  setupDenVideos();
 </script>
