@@ -3,11 +3,16 @@
 # requires-python = ">=3.11"
 # dependencies = []
 # ///
-"""Animate one finished panel with Gemini Omni on OpenRouter: submit, poll, download.
+"""Animate one finished panel on OpenRouter's video API: submit, poll, download.
 
     gutter/omni.py PANEL PROMPT_FILE --duration 5 --out-dir tmp/x --name p1 \
         [--last LAST_PANEL] [--resolution 360p] [--seed 15] [--aspect 16:9] \
-        [--no-pillarbox] [--no-audio]
+        [--no-pillarbox] [--no-audio] [--model ID]
+
+The model defaults to Gemini Omni. In-between clips (recipe.md, "In-betweens")
+use --model kwaivgi/kling-v3.0-std or google/veo-3.1-lite with --last and
+--resolution 720p; any model with first_frame/last_frame in
+`GET /api/v1/videos/models` takes the same call.
 
 PANEL is a local image (sent as a data URI) or a public https URL. Local square
 panels are pillarboxed onto the contract cream (#F7F0D4) at 1280x720 (or
@@ -129,6 +134,9 @@ def main() -> None:
         "--resolution", default="360p", choices=["360p", "720p", "1080p", "4K"]
     )
     p.add_argument("--seed", type=int, default=15)
+    p.add_argument(
+        "--model", default=MODEL, help=f"OpenRouter video model (default {MODEL})"
+    )
     p.add_argument("--aspect", default="16:9", choices=["16:9", "9:16"])
     p.add_argument("--no-pillarbox", action="store_true")
     p.add_argument(
@@ -170,7 +178,7 @@ def main() -> None:
             }
         )
     body = {
-        "model": MODEL,
+        "model": a.model,
         "prompt": Path(a.prompt_file).read_text().strip(),
         "duration": a.duration,
         "resolution": a.resolution,
@@ -191,7 +199,7 @@ def main() -> None:
         job = call(key, f"{API}/videos", body)
         (out / "logs" / f"{name}-submit.json").write_text(json.dumps(job, indent=2))
     print(
-        f"[{name}] model={MODEL} id={job.get('id')} status={job.get('status')}",
+        f"[{name}] model={a.model} id={job.get('id')} status={job.get('status')}",
         flush=True,
     )
     for _ in range(90):  # 30 min cap at 20 s

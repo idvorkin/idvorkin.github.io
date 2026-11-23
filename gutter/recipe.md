@@ -540,6 +540,72 @@ clips then came back verbatim. Budget about 3 s per 10 spoken words, plus 1 s.
   on every clip (`--model large-v3` when a line looks wrong). It caught the
   flipped order and the babble, and a contact sheet would have passed both.
 
+### In-betweens: the shot list
+
+Igor, 2026-11-22, on the first Den videos: "there needs to be some
+animations between the frames, thought through", and "the frames are the end
+of the action". Each panel clip above starts on its own panel and only
+wiggles, so the gag's actual action (the paint stroke, the pour) happened in
+the gutter, behind a hard cut.
+
+**The rule: a panel is where an action lands.** Before any video call, read
+each panel and ask what action produced this picture. Then animate that
+action so it ends exactly on the panel. Make it legible: a splash, a smear,
+drips, a prop arriving. A viewer should understand the picture by watching
+it happen.
+
+**Write the shot list first, at high effort.** It's the cartoonist's job, not
+the model's. Write one block per transition into the run dir as `shot-list.md`
+(Den #21's is `video/den-021/shot-list.md`):
+
+```text
+TRANSITION   P1 → P2
+IN THE PICTURE (P2)  what the next panel shows that P1 doesn't
+ACTION THAT MADE IT  the physical action, start to finish, who does what
+LEGIBILITY           what must read: direction of the stroke, where the paint goes
+BEATS                wind-up · the action · the reaction · land on the panel
+CAMERA               locked, or "moves to the next panel's framing" (see below)
+SPEECH               none in the in-between: balloons pop only on panel clips
+SOUND                the action's sound effects; "No words. No music."
+RENDER               one clip, or midpoint keyframe + two clips; which model
+NO-BRIDGE CASE       no physical action (a reaction, a beat)? hard cut. Don't pad.
+```
+
+**Which tool for what:**
+
+- **Panel clips stay** as above: one Omni clip per panel carries the dialogue,
+  the re-voice and the bubble reveal.
+- **In-between clips only for a physical action**, made by an image-to-video
+  model with a **first and a last frame**:
+  `omni.py START.png prompt.txt --last END.png --no-pillarbox --model … --resolution 720p --duration 4`.
+  START is a bubble-free frame from `voiced/pK.mp4` at the trim END of the
+  outgoing panel clip; END is the same from `voiced/pK+1.mp4` at its trim
+  start. Grab them with `ffmpeg -ss T -i voiced/pK.mp4 -frames:v 1 -vf scale=1280:720`.
+- **A Muse midpoint keyframe when START and END differ a lot**, i.e. a new
+  framing or a big change on the board. Make one Muse edit ($0.01) of the END
+  panel's clean plate: "Reproduce reference 1 EXACTLY… change ONLY this, it is
+  the moment halfway through an action:" plus the half-done state. Pillarbox it
+  onto 1280x720 cream and make two chained clips, START→MID and MID→END.
+  Without a midpoint, every model "solves" a big change with a cross-dissolve.
+- **ffmpeg for camera moves and joins**: `video/stitch.sh`. Put `+0.25` from a
+  panel clip into its in-between clip; that crossfade also fades the
+  panel's balloon away. Hard cut from in-between to panel clip. In-betweens
+  are 720p and the stitch scales everything to 640x360.
+
+**Models** (OpenRouter `/api/v1/videos`, same key). Measured on Den #21, 2026-11-22:
+
+| Model                          | Price                            | First+last | Verdict                                                                                                                      |
+| ------------------------------ | -------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `kwaivgi/kling-v3.0-std`       | $0.63 per 4 s clip with audio    | yes        | **Default for a framing change.** Real camera moves and walks, no dissolves; one take gave Larry dark glasses, so re-ran it. |
+| `google/veo-3.1-lite`          | $0.20 per 4 s at 720p with audio | yes        | Good inside one framing (the roller stroke). Across a framing change it cross-dissolves, and once drew two claws.            |
+| `google/gemini-omni-1.2-flash` | $0.023/s at 360p                 | listed     | Failed twice ("Video generation failed", unbilled) with two _different_ frames. Keep it for panel clips.                     |
+
+Check each in-between for cheats with `video/watch.sh`: a dissolve (two
+pictures at once), a second claw, Larry's spectacles going dark, a character
+moving backwards (Larry climbed back _up_ the hatch in one take). Regenerate
+any of those; don't ship it. Every in-between has to be silent of words: check
+the timeline for words in the bridge spans.
+
 ## Per-panel exports
 
 After Igor picks, cut the four panels:

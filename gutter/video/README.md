@@ -42,16 +42,31 @@ scratch run dir; `G` is this repo's `gutter/`.
 9. **Loudness**: `ffmpeg -i reveal/pK.mp4 -af volumedetect -vn -f null -`. Omni's
    Larry ran 7 dB under the ElevenLabs lines on Den #21; lift it with
    `-c:v copy -af "volume=6dB,alimiter=limit=0.95"`.
-10. **Stitch**, trimming each clip to its line:
+10. **In-betweens** (recipe.md, "In-betweens: the shot list"). Write
+    `shot-list.md` first (template: `den-021/shot-list.md`). For each transition
+    with a physical action:
+    `ffmpeg -ss T -i voiced/pK.mp4 -frames:v 1 -vf scale=1280:720 ends/bKKs.png` at
+    the outgoing clip's trim end, and the same from `voiced/pK+1.mp4` at its trim
+    start. When the two differ a lot, make a Muse midpoint (`den-021/prompts/mid-*.txt`,
+    `--ref plate/pK+1.png` plus Larry's anchor sheet and claw ref), pillarboxed with
+    `magick -size 1280x720 xc:'#F7F0D4' \( mid-sq.png -resize 720x720 \) -gravity center -composite mid.png`.
+    Then, in parallel:
+    `$G/omni.py ends/b12s.png prompts/b12a.txt --last mid/m12.png --no-pillarbox --model kwaivgi/kling-v3.0-std --resolution 720p --duration 4 --out-dir bridges --name b12a`.
+    Watch each one (`$G/video/watch.sh`). Regenerate dissolves, extra claws and
+    dark spectacles.
+11. **Stitch**, trimming each clip to its line:
     `$G/video/stitch.sh final/den-0NN-<slug>-voiced-360p.mp4 reveal/p1.mp4@1.4:3.6 …`.
+    With in-betweens, `+0.25` crossfades a panel clip into its in-between and
+    fades its balloon away. Den #21:
+    `stitch.sh final/den-021-thinner-inbetweens-360p.mp4 reveal/p1.mp4@1.417:3.625 +0.25 bridges/b12a.mp4@0.3:4.04 bridges/b12b.mp4@0:3.5 reveal/p2.mp4@0.125:3.042 +0.25 bridges/b23a.mp4 bridges/b23b.mp4@0:2.6 +0.15 reveal/p3.mp4@0.625:3.458 +0.25 bridges/b34a.mp4 bridges/b34b.mp4@0:3.4 +0.15 reveal/p4.mp4@0.5:3.917`
     Omni pads every clip with silence; untrimmed, Den #21 opened on 1.8 s of
     nothing and had 3 s gaps between panels (18 s cut to 11 s).
-11. **Watch it** before shipping: `$G/video/watch.sh final/….mp4 watch/`, then
+12. **Watch it** before shipping: `$G/video/watch.sh final/….mp4 watch/`, then
     Read `watch/sheet-*.png` (a time-stamped frame every 0.5 s) and
     `watch/timeline.txt` (loudness, words and cuts per 0.5 s). Look for dead air,
     a bubble up long before its words, voices more than ~4 LU apart, and
     blinks that fill a lens. For lips, crop the face from the clip at 5 fps.
-12. **Ship**: the mp4 goes to idvorkin/blob `blog/den/` by PR from the
+13. **Ship**: the mp4 goes to idvorkin/blob `blog/den/` by PR from the
     idvorkin-ai-tools fork; then a blog PR adds `video` and `video_poster` to the
     strip in `_data/den.json`, the poster being panel 1 pillarboxed:
     `magick -size 1280x720 xc:'#F7F0D4' \( den-0NN-p1.webp -resize 720x720 \) -gravity center -composite -quality 82 den-0NN-video-poster.webp`.

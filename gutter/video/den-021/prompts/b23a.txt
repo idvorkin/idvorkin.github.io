@@ -1,0 +1,12 @@
+Animate the in-between of a comic strip. The FIRST frame and the LAST frame are given; travel from the first to the last with continuous physical motion and land on the last frame exactly. Never dissolve, cross-fade or morph between the two pictures: every change must be something moving. The picture is a square comic panel with a black border, centered on a plain warm cream page; the cream page and the border stay perfectly still, all motion happens INSIDE the square.
+
+STYLE (most important): a high-end 3D stop-motion render of handmade NEEDLE-FELTED plush toys: felt fiber texture, soft-vinyl toy volume, warm practical lighting. Keep exactly the look of the frames. Never flat 2D.
+
+IGOR: a raccoon in round RAINBOW glasses, a green TECHNOLOGIST t-shirt, denim shorts, one blue and one yellow croc; exactly on-model.
+LARRY: the grey-bearded raccoon in wire-rim spectacles, a white shirt and a tweed waistcoat; his other arm ALWAYS ends in exactly ONE giant red lobster claw. Never two claws, never zero. Exactly on-model.
+
+There are NO speech balloons in this clip. Never draw a balloon, caption or any new text.
+
+CAMERA: the camera moves smoothly to the framing of the last frame (closer on Igor, the easel moves to the right of the picture, the open stair hatch comes into view in the floor at the bottom right).
+ACTION (4 seconds): Larry DROPS the roller, which clatters to the floor leaving a blue splat, then he scurries to the open stair hatch in the floor and climbs down into it until only his head, shoulders and raised claw show. Igor turns his head to watch him go. The board keeps exactly its diagonal blue stripe over the house.
+AUDIO: a roller clattering on wooden floorboards, quick little footsteps, a wooden hatch creak. No words. No music.
