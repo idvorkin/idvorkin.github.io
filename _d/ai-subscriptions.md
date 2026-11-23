@@ -22,7 +22,7 @@ INSTRUCTIONS FOR CLAUDE — do not render
 
 I pay about \$350 a month for AI, across four subscriptions. Is that worth it? One heavy week of agent work at API prices cost me \$230; the subscription that covers every week of the month costs \$200. And the \$200 doesn't buy a chatbot, it buys brilliant collaborators who force multiply everything I do and train me up while they're at it. The other \$150 buys a second and third coding agent for when the first one's window runs dry, and a voice for my life coach.
 
-{% include alert.html style="warning" content="**Beware the dark side.** The flat rate has a flip side, and Graham Dumpleton [noticed it on himself](https://grahamdumpleton.me/posts/2026/11/ai-as-a-lifestyle-choice/): on the \$20 plan he rationed for fear of running out, and on the \$200 plan he overused it to get his money's worth. Neither is how you want to do something that's meant to be fun. I know the second one well. A window about to reset with allowance unspent pulls me back to the keyboard, and that's the meter running my evening instead of me. Use-it-or-lose-it is a fine rule for picking which agent does the job, and a bad reason to start one." %}
+{% include alert.html style="warning" content="**Beware the dark side.** Graham Dumpleton [called this out](https://grahamdumpleton.me/posts/2026/11/ai-as-a-lifestyle-choice/): on the \$20 plan he held back so he wouldn't run out, and on the \$200 plan he used it more just to get his money's worth. Neither one is much fun. I'm guilty of the second. When a window is about to reset and I haven't used it up, I feel the pull to go start something. Use-it-or-lose-it is a good way to pick which agent gets a job. It's a lousy reason to start one." %}
 
 {% include ai-slop.html percent="90" %}
 
