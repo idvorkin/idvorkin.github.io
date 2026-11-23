@@ -2,8 +2,8 @@
 openers. Entries come from _data/den.json by default; pass data="NAME" to read
 _data/NAME.json instead (same shape: num, title, panels, and optional img, date,
 receipts_url, label, captions). Openers are den_strip.html hit zones, or any
-element with data-den-open="NUM" data-den-panel="N". Also wires video Share
-buttons and #play-N links (src/den-video.ts). {%- endcomment -%} {%- assign
+element with data-den-open="NUM" data-den-panel="N". Also wires the video share
+icons and #play-N links (src/den-video.ts). {%- endcomment -%} {%- assign
 _den_data_key = include.data | default: "den" -%}
 <style>
   .den-strip {
@@ -72,7 +72,14 @@ _den_data_key = include.data | default: "den" -%}
     top: 51%;
   }
 
+  .den-strip__blurb {
+    margin: -0.4em 0 0.6em;
+    font-style: italic;
+    opacity: 0.8;
+  }
+
   .den-video {
+    position: relative;
     margin-top: 0.5em;
   }
 
@@ -83,21 +90,55 @@ _den_data_key = include.data | default: "den" -%}
     scroll-margin-top: 1em;
   }
 
+  /* Share icon in the player's top-right corner, clear of the bottom controls. */
   .den-video__share {
-    display: block;
-    margin: 0.4em 0 0 auto;
-    padding: 0.3em 0.9em;
-    border: 1px solid currentColor;
-    border-radius: 999px;
-    background: transparent;
-    color: inherit;
-    font-size: 0.9em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
     cursor: pointer;
+    transition:
+      opacity 160ms ease,
+      background-color 160ms ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .den-video__share:hover {
+    background: rgba(0, 0, 0, 0.8);
   }
 
   .den-video__share:focus-visible {
     outline: 3px solid var(--den-ring);
     outline-offset: 2px;
+  }
+
+  /* Mouse: show the icon with the player's own controls, on hover or focus. */
+  @media (hover: hover) and (pointer: fine) {
+    .den-video__share {
+      opacity: 0;
+    }
+
+    .den-video:hover .den-video__share,
+    .den-video:focus-within .den-video__share {
+      opacity: 1;
+    }
+  }
+
+  /* Touch: always visible, and dropped below iOS Safari's top-right mute button. */
+  @media (hover: none) {
+    .den-video__share {
+      top: 56px;
+    }
   }
 
   .den-video-toast {
@@ -461,6 +502,7 @@ _den_data_key = include.data | default: "den" -%}
   @media (prefers-reduced-motion: reduce) {
     .den-lightbox,
     .den-lightbox__image,
+    .den-video__share,
     .den-video-toast {
       transition: none;
     }

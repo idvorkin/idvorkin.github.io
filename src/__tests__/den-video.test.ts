@@ -1,5 +1,5 @@
-// ABOUTME: Verifies the Den video Share button and #play-N deep links.
-// ABOUTME: Covers the link shape, share-sheet vs clipboard choice, the Copied toast, and muted autoplay retry.
+// ABOUTME: Verifies the Den video share icon and #play-N deep links.
+// ABOUTME: Covers the link shape, share-sheet vs clipboard choice, the blurb as share text, the toast, and muted autoplay retry.
 
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
@@ -18,8 +18,8 @@ function installMarkup(): HTMLVideoElement {
   document.body.innerHTML = `
     <figure class="den-strip" data-num="21">
       <div class="den-video">
-        <video id="play-21" data-den-video data-den-title="The Den #21 — Thinner" src="/v.mp4"></video>
-        <button type="button" class="den-video__share" data-den-video-share="play-21">Share</button>
+        <video id="play-21" data-den-video data-den-title="The Den #21 — Thinner" data-den-blurb="Igor wants thinner lines." src="/v.mp4"></video>
+        <button type="button" class="den-video__share" data-den-video-share="play-21" aria-label="Share"></button>
       </div>
     </figure>
     <h2 id="21--thinner">#21 — Thinner</h2>`;
@@ -114,6 +114,19 @@ describe("shareDenVideo", () => {
     await expect(shareDenVideo(video)).resolves.toBe("shared");
     expect(share).toHaveBeenCalledWith({
       title: "The Den #21 — Thinner",
+      text: "Igor wants thinner lines.",
+      url: `${window.location.origin}/the-den#play-21`,
+    });
+  });
+
+  it("leaves the share text off when the strip has no blurb", async () => {
+    const video = installMarkup();
+    delete video.dataset.denBlurb;
+    const share = vi.fn().mockResolvedValue(undefined);
+    stubNavigator({ userAgent: IPHONE_UA, share });
+    await shareDenVideo(video);
+    expect(share).toHaveBeenCalledWith({
+      title: "The Den #21 — Thinner",
       url: `${window.location.origin}/the-den#play-21`,
     });
   });
@@ -130,7 +143,7 @@ describe("shareDenVideo", () => {
     expect(writeText).not.toHaveBeenCalled();
   });
 
-  it("copies on desktop even where navigator.share exists, and says Copied", async () => {
+  it("copies on desktop even where navigator.share exists, and says Link copied", async () => {
     const video = installMarkup();
     const share = vi.fn();
     const writeText = vi.fn().mockResolvedValue(undefined);
@@ -140,11 +153,11 @@ describe("shareDenVideo", () => {
     expect(share).not.toHaveBeenCalled();
     expect(writeText).toHaveBeenCalledWith(`${window.location.origin}/the-den#play-21`);
     const toast = document.querySelector(".den-video-toast");
-    expect(toast?.textContent).toBe("Copied");
+    expect(toast?.textContent).toBe("Link copied");
     expect(toast?.classList.contains("is-visible")).toBe(true);
   });
 
-  it("wires the Share button", async () => {
+  it("wires the share icon", async () => {
     installMarkup();
     const writeText = vi.fn().mockResolvedValue(undefined);
     stubNavigator({ userAgent: DESKTOP_UA, clipboard: { writeText } });
