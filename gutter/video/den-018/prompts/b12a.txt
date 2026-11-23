@@ -1,0 +1,15 @@
+Animate the in-between of a comic strip. The FIRST frame and the LAST frame are given; travel from the first to the last with continuous physical motion and land on the last frame exactly. Never dissolve, cross-fade or morph between the two pictures: every change must be something moving. The picture is a square comic panel with a black border, centered on a plain warm cream page; the cream page and the border stay perfectly still, all motion happens INSIDE the square.
+
+STYLE (most important): a high-end 3D stop-motion render of handmade NEEDLE-FELTED plush toys: felt fiber texture, soft-vinyl toy volume, warm practical lighting. Keep exactly the look of the frames. Never flat 2D.
+
+IGOR: a raccoon in round RAINBOW glasses, a green TECHNOLOGIST t-shirt, denim shorts, one blue and one yellow croc; exactly on-model.
+LARRY: the grey-bearded raccoon in wire-rim spectacles, a white shirt and a tweed waistcoat; his other arm ALWAYS ends in exactly ONE giant red lobster claw. Never two claws, never zero. Exactly on-model.
+
+THE ROBOT: a small blue robot painter at its easel stays FROZEN mid-brushstroke for the whole clip; it never moves.
+LARRY sits in the green leather armchair writing on his clipboard the whole clip and never looks up.
+
+There are NO speech balloons in this clip. Never draw a balloon, caption or any new text.
+
+CAMERA: moves smoothly to the framing of the last frame.
+ACTION (4 seconds): Igor lowers his cupped paw from his mouth, steps back up onto the attic stairs, and starts to point at the frozen robot. A long drip of blue paint slides slowly from the robot's brush down the easel leg.
+AUDIO: soft footsteps on wooden stairs, a slow wet drip. No words. No music.
