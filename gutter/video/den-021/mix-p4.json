@@ -1,0 +1,7 @@
+{
+  "clip": "clips/p4.mp4",
+  "out": "voiced/p4.mp4",
+  "lead": 0.3,
+  "keep": [[0, 4.04]],
+  "lines": []
+}

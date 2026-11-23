@@ -5,7 +5,7 @@
 # ///
 """Re-voice an Omni clip: ElevenLabs lines over the clip's own ambience.
 
-    gutter/revoice.py say VOICE_ID "the line" OUT.wav [--inner]
+    gutter/revoice.py say VOICE_ID "the line" OUT.wav [--inner] [--speed=0.8]
         One ElevenLabs line (eleven_multilingual_v2). Prints its length and the
         characters billed. --inner makes it a quiet thought voice (closer, softer,
         a touch of room) for thought bubbles.
@@ -93,12 +93,10 @@ def duration(path: Path) -> float:
     )
 
 
-def say(voice: str, text: str, out: Path, inner: bool) -> None:
-    body = {
-        "text": text,
-        "model_id": MODEL,
-        "voice_settings": INNER if inner else SPOKEN,
-    }
+def say(voice: str, text: str, out: Path, inner: bool, speed: float = 1.0) -> None:
+    # speed 0.7-1.2: slow a short line to fill the model's mouth movement
+    settings = {**(INNER if inner else SPOKEN), "speed": speed}
+    body = {"text": text, "model_id": MODEL, "voice_settings": settings}
     req = urllib.request.Request(
         f"https://api.elevenlabs.io/v1/text-to-speech/{voice}?output_format=mp3_44100_128",
         data=json.dumps(body).encode(),
@@ -244,7 +242,9 @@ def mix(spec_path: Path) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) >= 5 and sys.argv[1] == "say":
-        say(sys.argv[2], sys.argv[3], Path(sys.argv[4]), "--inner" in sys.argv[5:])
+        flags = sys.argv[5:]
+        speed = next((float(a[8:]) for a in flags if a.startswith("--speed=")), 1.0)
+        say(sys.argv[2], sys.argv[3], Path(sys.argv[4]), "--inner" in flags, speed)
     elif len(sys.argv) == 3 and sys.argv[1] == "mix":
         mix(Path(sys.argv[2]).resolve())
     else:

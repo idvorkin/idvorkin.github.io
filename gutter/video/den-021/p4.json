@@ -1,0 +1,14 @@
+{
+  "clip": "voiced/p4.mp4",
+  "panel": "src/p4.png",
+  "out": "reveal/p4.mp4",
+  "panel_box": [140, 0, 360],
+  "bubbles": [
+    {
+      "rect": [[522, 20, 738, 182], [595, 178, 650, 214]],
+      "text": "IT DOES BOTH.",
+      "window": [0.9, 2.3],
+      "first": 0.97
+    }
+  ]
+}

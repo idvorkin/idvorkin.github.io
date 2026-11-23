@@ -1,0 +1,11 @@
+{
+  "clip": "clips/p1.mp4",
+  "out": "voiced/p1.mp4",
+  "lead": 0.3,
+  "lines": [
+    {
+      "file": "lines/p1s.wav",
+      "at": 1.55
+    }
+  ]
+}
