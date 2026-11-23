@@ -22,6 +22,7 @@ Security is super interesting, AI is super interesting, the combination, is supe
   - [Leaked System Prompts](#leaked-system-prompts)
   - [Prompt Obfuscation for all attacks](#prompt-obfuscation-for-all-attacks)
   - [Jail Breaking](#jail-breaking)
+  - [Abliteration](#abliteration)
   - [Exfiltration Attacks](#exfiltration-attacks)
   - [Visual Prompt Injection](#visual-prompt-injection)
   - [Flow Jacking](#flow-jacking)
@@ -66,6 +67,10 @@ You can obfuscate the prompts to get past system prompts, and trick users into p
 ### Jail Breaking
 
 Any time you make the AI do something it isn't intended to do. Most attacks are some form of jail breaking.
+
+### Abliteration
+
+Jailbreaks talk a model out of refusing; abliteration cuts the refusal out of open weights. In many chat models refusal runs through a single direction in the activations, and subtracting it from the weights stops the refusals while benchmark scores barely move. Tools such as Pliny's OBLITERATUS make it a one-command job, and his self-reported "Vocab Surgery" post claims to strip refusals by editing just a few embedding and output rows; more in my [abliteration explainer](https://idvorkin-ai-tools.github.io/bridge-ablations.html#abliteration).
 
 ### Exfiltration Attacks
 
