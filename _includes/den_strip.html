@@ -14,11 +14,14 @@
                     entirely rather than rendered as a dead link.
     note         - optional extra markdown rendered between the image and
                     the receipts (e.g. a link to an alternate style)
+    blurb        - optional one-line summary shown under the heading and
+                    used as the share text for the strip's video
 
-  When num exists in _data/den.json, that manifest supplies the title, date,
-  image, alt text, receipts URL, and panel files, plus an optional animated
-  version: "video" (an mp4 URL) and "video_poster" (its poster image; defaults
-  to the strip image). The video gets id "play-N" and a Share button; a link
+  When num exists in _data/den.json, that manifest supplies the title, blurb,
+  date, image, alt text, receipts URL, and panel files, plus an optional
+  animated version: "video" (an mp4 URL) and "video_poster" (its poster image;
+  defaults to the strip image). The video gets id "play-N" and a share icon
+  overlaid in its corner; a link
   ending #play-N scrolls to it and plays it (see src/den-video.ts). The
   include arguments remain fallbacks so standalone uses keep working.
 
@@ -38,12 +41,14 @@
   {%- endif -%}
 {%- endfor -%}
 {%- assign _title = include.title -%}
+{%- assign _blurb = include.blurb -%}
 {%- assign _date = include.date -%}
 {%- assign _img = include.img -%}
 {%- assign _alt = include.alt -%}
 {%- assign _receipts_url = include.receipts_url -%}
 {%- if _entry -%}
   {%- assign _title = _entry.title -%}
+  {%- assign _blurb = _entry.blurb | default: include.blurb -%}
   {%- assign _date = _entry.date -%}
   {%- assign _img = _entry.img -%}
   {%- assign _alt = _entry.alt -%}
@@ -52,7 +57,9 @@
 {%- assign _label = "#" | append: include.num | append: " — " | append: _title -%}
 
 ## {{ _label }}
-
+{% if _blurb %}
+<p class="den-strip__blurb">{{ _blurb | escape }}</p>
+{% endif %}
 <figure class="den-strip" data-num="{{ include.num }}"{% if _entry and _entry.panels %} data-den-strip{% endif %}>
 <div class="den-frame">
 <img src="{{ _img }}" alt="{{ _alt | escape }}" width="1600" height="1600" loading="lazy" decoding="async" />
@@ -64,8 +71,8 @@
 </div>
 {%- if _entry and _entry.video %}
 <div class="den-video">
-<video id="play-{{ include.num }}" data-den-video data-den-title="The Den {{ _label | escape }}" src="{{ _entry.video }}" poster="{{ _entry.video_poster | default: _img }}" controls playsinline preload="metadata" width="640" height="360"></video>
-<button type="button" class="den-video__share" data-den-video-share="play-{{ include.num }}" aria-label="Share a link to the strip #{{ include.num }} video">Share ↗</button>
+<video id="play-{{ include.num }}" data-den-video data-den-title="The Den {{ _label | escape }}"{% if _blurb %} data-den-blurb="{{ _blurb | escape }}"{% endif %} src="{{ _entry.video }}" poster="{{ _entry.video_poster | default: _img }}" controls playsinline preload="metadata" width="640" height="360"></video>
+<button type="button" class="den-video__share" data-den-video-share="play-{{ include.num }}" aria-label="Share a link to the strip #{{ include.num }} video" title="Share"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
 </div>
 {%- endif %}
 <figcaption><small><em>{{ _label }}</em> · {{ _date }}</small></figcaption>

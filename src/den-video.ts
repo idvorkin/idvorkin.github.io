@@ -1,4 +1,4 @@
-// ABOUTME: Share button and deep links for the animated Den strips' videos.
+// ABOUTME: Share icon and deep links for the animated Den strips' videos.
 // ABOUTME: A link whose #fragment names a strip video scrolls to it and starts it playing.
 
 const TOAST_MS = 1800;
@@ -76,13 +76,19 @@ function showToast(doc: Document, message: string): void {
   toast.dataset.timer = String(win.setTimeout(() => toast?.classList.remove("is-visible"), TOAST_MS));
 }
 
-/** Shares the video's link: the share sheet on mobile, else copy and say "Copied". */
+/** The share sheet payload: the strip's title, its one-line blurb when it has one, and the link. */
+export function denVideoShareData(video: HTMLVideoElement, url: string, doc: Document = document): ShareData {
+  const blurb = video.dataset.denBlurb?.trim();
+  return { title: video.dataset.denTitle || doc.title, ...(blurb ? { text: blurb } : {}), url };
+}
+
+/** Shares the video's link: the share sheet on mobile, else copy and say "Link copied". */
 export async function shareDenVideo(video: HTMLVideoElement, doc: Document = document): Promise<"shared" | "copied"> {
   const win = doc.defaultView ?? window;
   const url = denVideoShareUrl(video, win.location);
   if (prefersNativeShare(win.navigator)) {
     try {
-      await win.navigator.share({ title: video.dataset.denTitle || doc.title, url });
+      await win.navigator.share(denVideoShareData(video, url, doc));
       return "shared";
     } catch (error) {
       // The reader closed the sheet: that's an answer, not a failure.
@@ -92,7 +98,7 @@ export async function shareDenVideo(video: HTMLVideoElement, doc: Document = doc
   }
   try {
     await copyText(url, doc);
-    showToast(doc, "Copied");
+    showToast(doc, "Link copied");
   } catch (error) {
     console.error("📋 Couldn't copy the Den video link", error);
     showToast(doc, "Couldn't copy the link");
@@ -100,7 +106,7 @@ export async function shareDenVideo(video: HTMLVideoElement, doc: Document = doc
   return "copied";
 }
 
-/** Wires every strip video's Share button and plays the video the URL links to. */
+/** Wires every strip video's share icon and plays the video the URL links to. */
 export function setupDenVideos(doc: Document = document, win: Window = window): void {
   doc.querySelectorAll<HTMLButtonElement>("[data-den-video-share]").forEach((button) => {
     const video = doc.getElementById(button.dataset.denVideoShare ?? "");

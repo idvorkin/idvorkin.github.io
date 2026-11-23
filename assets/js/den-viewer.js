@@ -39,27 +39,31 @@ function b(s, e) {
   const i = s.defaultView ?? window;
   i.clearTimeout(Number(t.dataset.timer)), t.dataset.timer = String(i.setTimeout(() => t?.classList.remove("is-visible"), 1800));
 }
-async function _(s, e = document) {
+function _(s, e, t = document) {
+  const i = s.dataset.denBlurb?.trim();
+  return { title: s.dataset.denTitle || t.title, ...i ? { text: i } : {}, url: e };
+}
+async function A(s, e = document) {
   const t = e.defaultView ?? window, i = x(s, t.location);
   if (E(t.navigator))
     try {
-      return await t.navigator.share({ title: s.dataset.denTitle || e.title, url: i }), "shared";
+      return await t.navigator.share(_(s, i, e)), "shared";
     } catch (n) {
       if (n?.name === "AbortError") return "shared";
       console.log("📱 Share sheet failed, copying the link instead", n);
     }
   try {
-    await L(i, e), b(e, "Copied");
+    await L(i, e), b(e, "Link copied");
   } catch (n) {
     console.error("📋 Couldn't copy the Den video link", n), b(e, "Couldn't copy the link");
   }
   return "copied";
 }
-function k(s = document, e = window) {
+function D(s = document, e = window) {
   s.querySelectorAll("[data-den-video-share]").forEach((i) => {
     const n = s.getElementById(i.dataset.denVideoShare ?? "");
     n instanceof HTMLVideoElement && i.addEventListener("click", () => {
-      _(n, s);
+      A(n, s);
     });
   });
   const t = () => {
@@ -68,7 +72,7 @@ function k(s = document, e = window) {
   };
   e.addEventListener("hashchange", t), t();
 }
-const A = 40;
+const k = 40;
 function w(s) {
   return !!s.img;
 }
@@ -164,7 +168,7 @@ class T {
       if (!c) return;
       c = !1;
       const d = o.clientX - h, f = o.clientY - u;
-      Math.abs(d) <= A || Math.abs(d) <= Math.abs(f) || (a = Date.now() + 400, this.step(d < 0 ? 1 : -1));
+      Math.abs(d) <= k || Math.abs(d) <= Math.abs(f) || (a = Date.now() + 400, this.step(d < 0 ? 1 : -1));
     }), this.elements.lightbox.addEventListener("click", (o) => {
       (o.target === this.elements?.lightbox || o.target === this.elements?.dialog || o.target === this.elements?.stage) && this.close();
     }), this.doc.addEventListener("keydown", (o) => this.handleKeydown(o));
@@ -261,7 +265,7 @@ function q(s = document, e = window) {
 }
 export {
   T as DenViewerManager,
-  k as setupDenVideos,
+  D as setupDenVideos,
   q as setupDenViewer
 };
 //# sourceMappingURL=den-viewer.js.map

@@ -1,4 +1,4 @@
-// ABOUTME: Verifies the Den strip videos' Share button and #play-N deep links on /the-den.
+// ABOUTME: Verifies the Den strip videos' share icon and #play-N deep links on /the-den.
 // ABOUTME: Real strip mp4s are swapped for a tiny WebM fixture because Playwright's Chromium can't decode H.264.
 
 import { readFileSync } from "node:fs";
@@ -47,15 +47,29 @@ test.describe("The Den video share links", () => {
     expect(box.bottom).toBeLessThanOrEqual(box.viewport);
   });
 
-  test("Share on desktop copies the strip's video link and says Copied", async ({ page, context, baseURL }) => {
+  test("the share icon on desktop copies the strip's video link and says Link copied", async ({
+    page,
+    context,
+    baseURL,
+  }) => {
     await serveTestClip(page);
     await context.grantPermissions(["clipboard-read", "clipboard-write"], { origin: baseURL });
     await page.goto("/the-den");
 
-    await page.locator('[data-den-video-share="play-21"]').click();
+    const icon = page.locator('[data-den-video-share="play-21"]');
+    await page.locator("video#play-21").scrollIntoViewIfNeeded();
+    await page.mouse.move(0, 0);
+    await expect(icon).toHaveCSS("opacity", "0");
+    await page.locator("video#play-21").hover();
+    await expect(icon).toHaveCSS("opacity", "1");
+    // The icon sits inside the player, over the video's top-right corner.
+    const [iconBox, videoBox] = await Promise.all([icon.boundingBox(), page.locator("video#play-21").boundingBox()]);
+    expect(iconBox && videoBox && iconBox.x + iconBox.width <= videoBox.x + videoBox.width).toBe(true);
+    expect(iconBox && videoBox && iconBox.y >= videoBox.y && iconBox.y < videoBox.y + videoBox.height / 2).toBe(true);
+    await icon.click();
 
     const toast = page.locator(".den-video-toast");
-    await expect(toast).toHaveText("Copied");
+    await expect(toast).toHaveText("Link copied");
     await expect(toast).toHaveClass(/is-visible/);
     expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(`${baseURL}/the-den#play-21`);
     await expect(toast).not.toHaveClass(/is-visible/, { timeout: 4000 });
@@ -67,7 +81,7 @@ test.describe("The Den video share links", () => {
       viewport: { width: 390, height: 844 },
     });
 
-    test("Share opens the share sheet with the strip's video link", async ({ page, baseURL }) => {
+    test("the share icon opens the share sheet with the strip's blurb and video link", async ({ page, baseURL }) => {
       await serveTestClip(page);
       await page.addInitScript(() => {
         const shared: ShareData[] = [];
@@ -86,7 +100,13 @@ test.describe("The Den video share links", () => {
 
       await expect
         .poll(() => page.evaluate(() => (window as unknown as { __shared: ShareData[] }).__shared))
-        .toEqual([{ title: "The Den #18 — Marco", url: `${baseURL}/the-den#play-18` }]);
+        .toEqual([
+          {
+            title: "The Den #18 — Marco",
+            text: "A robot has been frozen at its easel for hours, and nobody's job is to notice.",
+            url: `${baseURL}/the-den#play-18`,
+          },
+        ]);
       await expect(page.locator(".den-video-toast")).toHaveCount(0);
     });
   });
