@@ -407,8 +407,8 @@ def main() -> None:
             b["starts"] = starts[i : i + len(b["words"])]
             if b["first"] is not None:  # a pause after the first word fools the cap
                 b["starts"][0] = b["first"]
-            for k, t in b["pins"].items():  # a pause mid-bubble: pin that word
-                b["starts"][int(k)] = t
+            for wi, t in b["pins"].items():  # a pause mid-bubble: pin that word
+                b["starts"][int(wi)] = t
             for (w, sp, _), t, sc in zip(
                 b["words"], b["starts"], scores[i : i + len(b["words"])]
             ):
