@@ -82,7 +82,7 @@ A subscription is flat rate. A key is a meter. When I'm typing, I'm the rate lim
 
 So Claude Code, Codex CLI and Grok CLI each run on their subscription, and I scrub the API keys out of their environment on purpose. The windows are use-it-or-lose-it; which one pays for which job is [how I manage AI tokens](/token-management).
 
-{% include alert.html style="warning" content="**Beware the dark side.** Graham Dumpleton [noticed it on himself](https://grahamdumpleton.me/posts/2026/11/ai-as-a-lifestyle-choice/): on the \$20 plan he rationed for fear of running out, and on the \$200 plan he overused it to get his money's worth. Neither is how you want to do something that's meant to be fun. I know the second one well. A window about to reset with allowance unspent pulls me back to the keyboard, and that's the meter running my evening instead of me. Use-it-or-lose-it is a fine rule for picking which agent does the job, and a bad reason to start one." %}
+{% include alert.html style="warning" content="**Beware the dark side.** The flat rate has a flip side, and Graham Dumpleton [noticed it on himself](https://grahamdumpleton.me/posts/2026/11/ai-as-a-lifestyle-choice/): on the \$20 plan he rationed for fear of running out, and on the \$200 plan he overused it to get his money's worth. Neither is how you want to do something that's meant to be fun. I know the second one well. A window about to reset with allowance unspent pulls me back to the keyboard, and that's the meter running my evening instead of me. Use-it-or-lose-it is a fine rule for picking which agent does the job, and a bad reason to start one." %}
 
 ## Claude: Where I Live
 
