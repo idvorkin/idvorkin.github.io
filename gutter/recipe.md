@@ -575,9 +575,10 @@ NO-BRIDGE CASE       no physical action (a reaction, a beat)? hard cut. Don't pa
 
 - **Panel clips stay** as above: one Omni clip per panel carries the dialogue,
   the re-voice and the bubble reveal.
-- **In-between clips only for a physical action**, made by an image-to-video
-  model with a **first and a last frame**:
-  `omni.py START.png prompt.txt --last END.png --no-pillarbox --model … --resolution 720p --duration 4`.
+- **In-between clips only for a physical action**, made by **Gemini Omni with
+  a first and a last frame, called direct on the Gemini API**. Omni matches the
+  panel clips' look:
+  `omni_direct.py START.png END.png prompt.txt bridges/b12a.mp4 --duration 4`.
   START is a bubble-free frame from `voiced/pK.mp4` at the trim END of the
   outgoing panel clip; END is the same from `voiced/pK+1.mp4` at its trim
   start. Grab them with `ffmpeg -ss T -i voiced/pK.mp4 -frames:v 1 -vf scale=1280:720`.
@@ -585,26 +586,47 @@ NO-BRIDGE CASE       no physical action (a reaction, a beat)? hard cut. Don't pa
   framing or a big change on the board. Make one Muse edit ($0.01) of the END
   panel's clean plate: "Reproduce reference 1 EXACTLY… change ONLY this, it is
   the moment halfway through an action:" plus the half-done state. Pillarbox it
-  onto 1280x720 cream and make two chained clips, START→MID and MID→END.
-  Without a midpoint, every model "solves" a big change with a cross-dissolve.
-- **ffmpeg for camera moves and joins**: `video/stitch.sh`. Put `+0.25` from a
-  panel clip into its in-between clip; that crossfade also fades the
-  panel's balloon away. Hard cut from in-between to panel clip. In-betweens
-  are 720p and the stitch scales everything to 640x360.
+  onto 1280x720 cream and make two chained clips, START→MID and MID→END. It
+  pins the action's middle (the stripe's direction, Larry halfway down the
+  hatch), which the model otherwise invents.
+- **Kling when Omni cheats.** When an Omni take cross-dissolves (most often
+  on START→MID across a framing change), re-make that one clip with
+  `omni.py START.png prompt.txt --last END.png --no-pillarbox --model kwaivgi/kling-v3.0-std --resolution 720p --duration 4`.
+  Kling moves the camera and walks the characters instead of dissolving.
+- **ffmpeg only joins**: `video/stitch.sh`. Camera moves come from the model.
+  Put `+0.25` from a panel clip into its in-between clip, which also fades the
+  panel's balloon away. Cut hard or use `+0.15` from the in-between into the
+  next panel clip. Don't crossfade into a line that starts in the first 0.4 s:
+  it eats the word. The stitch scales everything to 640x360.
 
-**Models** (OpenRouter `/api/v1/videos`, same key). Measured on Den #21, 2026-11-22:
+**Why Omni has to be called direct.** On OpenRouter, `POST /api/v1/videos`
+with `google/gemini-omni-1.2-flash` and `frame_images` [`first_frame`,
+`last_frame`] failed every time with two _different_ frames: status
+`failed`, error `"Video generation failed"`, after about 25 s, not billed
+(3 of 3 on 2026-11-22, at 360p, from 1280x720 and 640x360 frames). The same
+call with `google/gemini-omni-1.1-flash` worked ($0.135 for 4 s at 360p) but
+dissolved. Single-frame Omni on OpenRouter works as before, and so does
+`--last` set to the same panel. Google's own API takes 1.2 with both images
+in `input` and returns in about 35 s; that's `omni_direct.py`.
 
-| Model                          | Price                            | First+last | Verdict                                                                                                                      |
-| ------------------------------ | -------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `kwaivgi/kling-v3.0-std`       | $0.63 per 4 s clip with audio    | yes        | **Default for a framing change.** Real camera moves and walks, no dissolves; one take gave Larry dark glasses, so re-ran it. |
-| `google/veo-3.1-lite`          | $0.20 per 4 s at 720p with audio | yes        | Good inside one framing (the roller stroke). Across a framing change it cross-dissolves, and once drew two claws.            |
-| `google/gemini-omni-1.2-flash` | $0.023/s at 360p                 | listed     | Failed twice ("Video generation failed", unbilled) with two _different_ frames. Keep it for panel clips.                     |
+**Models measured on Den #21 and #18, 2026-11-22:**
 
-Check each in-between for cheats with `video/watch.sh`: a dissolve (two
-pictures at once), a second claw, Larry's spectacles going dark, a character
-moving backwards (Larry climbed back _up_ the hatch in one take). Regenerate
-any of those; don't ship it. Every in-between has to be silent of words: check
-the timeline for words in the bridge spans.
+| Model                          | How                           | Price per 4 s                                              | Verdict                                                                                                                             |
+| ------------------------------ | ----------------------------- | ---------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| Gemini Omni 1.2 Flash          | Gemini API, `omni_direct.py`  | not returned (tokens only); OpenRouter lists $0.09 at 360p | **Default.** Same look as the panel clips. 8 of 12 takes kept: dissolves on 2 framing changes, one cut-on-action.                   |
+| `kwaivgi/kling-v3.0-std`       | OpenRouter, `omni.py --model` | $0.63 billed                                               | **Fallback** for a take Omni dissolves. Real camera moves. Watch for dark spectacles, a morph mid-move, and a lobster claw on Igor. |
+| `google/veo-3.1-lite`          | OpenRouter, `omni.py --model` | $0.20 at 720p                                              | Fine inside one framing; dissolves across one and once drew two claws. Not used.                                                    |
+| `google/gemini-omni-1.2-flash` | OpenRouter, first+last        | —                                                          | Fails, see above.                                                                                                                   |
+
+Check each in-between for cheats with `video/watch.sh` before stitching, and
+pull the suspect half-second at 12 fps full size: a contact sheet at 6 fps
+hides a short dissolve. Cheats to look for: a dissolve (two pictures at once),
+a second claw, a claw on the wrong character, Larry's spectacles going dark, a
+character moving backwards (Larry climbed back _up_ the hatch in one take), a
+character walking out one side and back in the other. Regenerate any of those;
+don't ship it. No in-between may contain words: check the timeline for words
+in the bridge spans. Keep the effects under the dialogue; a splash louder than
+the punchline gets `-af volume=-6dB` before the stitch.
 
 ## Per-panel exports
 

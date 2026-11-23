@@ -9,10 +9,9 @@
         [--last LAST_PANEL] [--resolution 360p] [--seed 15] [--aspect 16:9] \
         [--no-pillarbox] [--no-audio] [--model ID]
 
-The model defaults to Gemini Omni. In-between clips (recipe.md, "In-betweens")
-use --model kwaivgi/kling-v3.0-std or google/veo-3.1-lite with --last and
---resolution 720p; any model with first_frame/last_frame in
-`GET /api/v1/videos/models` takes the same call.
+The model defaults to Gemini Omni. In-between clips use omni_direct.py (Omni on
+the Gemini API: this endpoint fails Omni first+last); a take Omni dissolves is
+re-made here with --model kwaivgi/kling-v3.0-std --last END --resolution 720p.
 
 PANEL is a local image (sent as a data URI) or a public https URL. Local square
 panels are pillarboxed onto the contract cream (#F7F0D4) at 1280x720 (or

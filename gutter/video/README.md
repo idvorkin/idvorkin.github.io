@@ -51,14 +51,15 @@ scratch run dir; `G` is this repo's `gutter/`.
     `--ref plate/pK+1.png` plus Larry's anchor sheet and claw ref), pillarboxed with
     `magick -size 1280x720 xc:'#F7F0D4' \( mid-sq.png -resize 720x720 \) -gravity center -composite mid.png`.
     Then, in parallel:
+    `$G/omni_direct.py ends/b12s.png mid/m12.png prompts/b12a.txt bridges/b12a.mp4 --duration 4`
+    (Gemini Omni on the Gemini API; OpenRouter's Omni fails first+last). Watch
+    each one. Re-make a take that dissolves with Kling:
     `$G/omni.py ends/b12s.png prompts/b12a.txt --last mid/m12.png --no-pillarbox --model kwaivgi/kling-v3.0-std --resolution 720p --duration 4 --out-dir bridges --name b12a`.
-    Watch each one (`$G/video/watch.sh`). Regenerate dissolves, extra claws and
-    dark spectacles.
 11. **Stitch**, trimming each clip to its line:
     `$G/video/stitch.sh final/den-0NN-<slug>-voiced-360p.mp4 reveal/p1.mp4@1.4:3.6 …`.
     With in-betweens, `+0.25` crossfades a panel clip into its in-between and
     fades its balloon away. Den #21:
-    `stitch.sh final/den-021-thinner-inbetweens-360p.mp4 reveal/p1.mp4@1.417:3.625 +0.25 bridges/b12a.mp4@0.3:4.04 bridges/b12b.mp4@0:3.5 reveal/p2.mp4@0.125:3.042 +0.25 bridges/b23a.mp4 bridges/b23b.mp4@0:2.6 +0.15 reveal/p3.mp4@0.625:3.458 +0.25 bridges/b34a.mp4 bridges/b34b.mp4@0:3.4 +0.15 reveal/p4.mp4@0.5:3.917`
+    `stitch.sh final/den-021-thinner-inbetweens-360p.mp4 reveal/p1.mp4@1.417:3.625 +0.25 bridges/b12a.mp4@0.3:4.04 bridges/b12b.mp4@0:3.0 +0.15 reveal/p2.mp4@0.125:3.042 +0.25 bridges/b23a.mp4 bridges/b23b.mp4@0:2.2 +0.15 reveal/p3.mp4@0.625:3.458 +0.25 bridges/b34a.mp4 bridges/b34b.mp4@0:3.4 +0.15 reveal/p4.mp4@0.5:3.917`
     Omni pads every clip with silence; untrimmed, Den #21 opened on 1.8 s of
     nothing and had 3 s gaps between panels (18 s cut to 11 s).
 12. **Watch it** before shipping: `$G/video/watch.sh final/….mp4 watch/`, then
