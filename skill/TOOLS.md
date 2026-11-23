@@ -127,7 +127,7 @@ It solves "when the AI writes the code, I mostly press yes, no, and next". See h
 
 https://github.com/idvorkin/Settings
 
-Igor's oldest repo: dotfiles, zsh, Neovim, tmux, the Mac app list, and a `py/` folder of small utilities he has CHOP'd over the years (gmail reader, journal-to-OmniFocus, and so on). Useful as a worked example of a vim/tmux/command-line setup that an AI agent lives inside.
+Igor's oldest repo: dotfiles, zsh, Neovim, tmux, the Mac app list, and a `py/` folder of small utilities he has CHOP'd over the years (gmail reader, journal-to-OmniFocus, and so on). Useful as a worked example of a vim/tmux/command-line setup that an AI agent lives inside. `py/install_repos.py` sets up a new Mac's self-built apps: it clones each repo into `~/gits`, pulls the ones already there, and rebuilds what changed, and `brew_check.py` lists those repos next to the brew formulae and casks in one picker. The apps it installs are in https://idvork.in/pet-projects#self-hosted-apps.
 
 ## nlp (journal analysis)
 
@@ -153,6 +153,7 @@ All at https://github.com/idvorkin/<name>:
 - `pwa-utils` - TypeScript debugging utilities for PWAs: session recorder, bug reporting, version checking, sync logging.
 - `kludge-cli` - remap Royal Kludge keyboard keys from the command line, no browser or Windows VM.
 - `lcd-timer` - a Mac countdown that looks like a gym's LED wall clock.
+- `magic-monitor` - a magic practice mirror (https://magic-monitor.surge.sh, also a native Mac app): the camera with instant replay.
 - `obs-cli` - a TUI controller for OBSBOT cameras over OSC.
 - `igor-breathe` - Breathing Shapes, a guided-breathing PWA (https://igor-breathe.surge.sh): ten visualizations, box and trapezoid patterns, haptics and voice prompts, works offline.
 - `igor-timer` - an interval-training timer PWA for the gym.

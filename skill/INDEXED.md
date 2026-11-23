@@ -4,10 +4,10 @@ The refresh job reads this file, distills only what changed since these marks in
 
 | Source | Indexed through                                                                    |
 | ------ | ---------------------------------------------------------------------------------- |
-| Blog   | commit `56b268b89f78f68b06bbe36d2259296437fb860a`, 2026-11-14 19:55 -08:00         |
-| X      | posts up to 2026-11-15 08:57 -08:00 (account: [@idvorkin](https://x.com/idvorkin)) |
+| Blog   | commit `fde311c81fefcb50d82c78d75e1530c57021c915`, 2026-11-22 08:33 -08:00         |
+| X      | posts up to 2026-11-22 08:57 -08:00 (account: [@idvorkin](https://x.com/idvorkin)) |
 
-Indexed at: 2026-11-15 08:57 -08:00
+Indexed at: 2026-11-22 08:57 -08:00
 
 Times are Pacific with their UTC offset. The refresh writes the new commit's own commit time for the blog, and its own start time for X and "Indexed at", so a post that lands mid-run is picked up next week.
 
