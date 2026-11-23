@@ -18,8 +18,9 @@
   When num exists in _data/den.json, that manifest supplies the title, date,
   image, alt text, receipts URL, and panel files, plus an optional animated
   version: "video" (an mp4 URL) and "video_poster" (its poster image; defaults
-  to the strip image). The include arguments remain
-  fallbacks so standalone uses keep working.
+  to the strip image). The video gets id "play-N" and a Share button; a link
+  ending #play-N scrolls to it and plays it (see src/den-video.ts). The
+  include arguments remain fallbacks so standalone uses keep working.
 
   Example:
     {% include den_strip.html num="3" title="The Secret Almost Shipped"
@@ -62,7 +63,10 @@
 {%- endif %}
 </div>
 {%- if _entry and _entry.video %}
-<video src="{{ _entry.video }}" poster="{{ _entry.video_poster | default: _img }}" controls playsinline preload="metadata" width="640" height="360" style="display:block;width:100%;height:auto;margin-top:0.5em;"></video>
+<div class="den-video">
+<video id="play-{{ include.num }}" data-den-video data-den-title="The Den {{ _label | escape }}" src="{{ _entry.video }}" poster="{{ _entry.video_poster | default: _img }}" controls playsinline preload="metadata" width="640" height="360"></video>
+<button type="button" class="den-video__share" data-den-video-share="play-{{ include.num }}" aria-label="Share a link to the strip #{{ include.num }} video">Share ↗</button>
+</div>
 {%- endif %}
 <figcaption><small><em>{{ _label }}</em> · {{ _date }}</small></figcaption>
 </figure>
