@@ -354,7 +354,7 @@ SPAN_IAL = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)\{:\s*([^}]*?)\s*\}")
 # line would be wrapped in <p>. Split after the open tag and it is an HTML
 # block (CommonMark start condition 7: a line holding one complete tag).
 LONE_ELEMENT = re.compile(
-    r"^(<(canvas|audio|video|[a-z]+-[a-z-]+)\b[^>]*>)(</\2>)\s*$", re.M
+    r"^(<(canvas|audio|video|[a-z]+-[a-z-]+)\b[^>]*>)(</\2>)[ \t]*$", re.M
 )
 
 
@@ -378,7 +378,7 @@ def kramdownisms(text: str, notes: dict) -> str:
     text, n = SPAN_IAL.subn(span_ial, text)
     if n:
         notes["span_ial"] = notes.get("span_ial", 0) + n
-    text = LONE_ELEMENT.sub(r"\1\n\3", text)
+    text = LONE_ELEMENT.sub(r"\1\n\3\n", text)
     # A lone <img> between blank lines: a paragraph to kramdown, a bare HTML
     # block to CommonMark.
     text = re.sub(
@@ -550,9 +550,25 @@ def place_tokens(body: str, incs: list[Inc], notes: dict) -> str:
             notes["indented_calls"] = notes.get("indented_calls", 0) + 1
             return text.replace("\n", "\n" + " " * len(prefix))
         notes["inline_calls"] = notes.get("inline_calls", 0) + 1
+
+        # Joined into a paragraph, a <script> would be inline text: // comments
+        # swallow the joined lines and smart quotes rewrite its strings. Move
+        # scripts and styles to just after the paragraph.
+        def defer(sm: re.Match) -> str:
+            deferred.append(sm.group(0))
+            return f"\x00{len(deferred) - 1}\x00"
+
+        text = re.sub(r"<(script|style)\b.*?</\1>", defer, text, flags=re.S)
         return text.replace("\n", " ")
 
-    return TOKEN.sub(one, body)
+    deferred: list[str] = []
+    body = TOKEN.sub(one, body)
+    while m := re.search(r"\x00(\d+)\x00", body):
+        body = body[: m.start()] + body[m.end() :]
+        end = body.find("\n\n", m.start())
+        end = len(body) if end < 0 else end
+        body = body[:end] + "\n\n" + deferred[int(m.group(1))] + body[end:]
+    return body
 
 
 def site_context() -> dict:

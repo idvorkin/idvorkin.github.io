@@ -79,6 +79,10 @@ for site in now:
 hash_file.write_text(json.dumps(old))
 PY
 
+# Cheap checks first: an inline script the conversion broke fails the run
+# before any screenshot is taken.
+node "$HERE/jscheck.cjs" "$JEKYLL" "$ZOUT"
+
 pids=()
 python3 "$HERE/../serve.py" "$JEKYLL" "$JP" & pids+=($!)
 python3 "$HERE/../serve.py" "$ZOUT" "$ZP" & pids+=($!)

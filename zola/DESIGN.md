@@ -4,9 +4,16 @@ Bead `blog-pzp`. Written 2026-11-24, when the port was refreshed onto main.
 
 ## What this is for
 
-Preview builds first. A `jekyll serve` holds 227–357 MB and takes about 8 s
-to rebuild; the Zola preview holds about 20 MB and rebuilds in about 3 s. The
-VM runs many previews at once, so that is the win to collect now.
+Preview builds first, for memory. A `jekyll serve` holds 227–357 MB per
+worktree; a Zola preview holds about 23 MB (a static file server and a shell
+loop). The VM runs many previews at once, so that is the win to collect now.
+
+Rebuild speed is mixed today. Saving a file to a rebuilt site took 4.5–6.4 s
+here (measured three times, VM load around 10). Jekyll's incremental rebuild
+of one post was 1.1 s and its full rebuild 8.8 s (`blog-045`). So the Zola
+preview is faster after a layout, include or data change and slower after a
+one-post edit, until the converter stops redoing every page (tier list,
+Opus 3).
 
 Replacing Jekyll on idvork.in is a later, separate decision. Nothing here
 touches upstream `main` or its Pages settings.
@@ -110,15 +117,29 @@ Jekyll `_site`, serves both, and:
    section, so one extra line costs one section, not everything below it.
    Pages are ranked and gated on aligned.
 3. **Diffs the DOM**: visible text, link set, element ids, images that
-   loaded, backlink count, new JS errors. `diff_sites.py` adds the static
-   checks: URL inventory, heading ids, broken links and anchors, redirects.
+   loaded, backlink count, new JS errors. Three checks need no browser and
+   run in seconds, so they are the inner loop for converter work:
+   `diff_sites.py` (URL inventory, text, heading ids, broken links and
+   anchors, redirects), `verify/skeleton.py` (tag structure of every page,
+   and the most common structural difference across the site) and
+   `verify/jscheck.cjs` (inline scripts that parse in Jekyll's build but not
+   in Zola's).
 4. **Reports** a page ranked by aligned difference, with the worst section's
    heading (the place a fixer starts) and a Jekyll / Zola / difference image
    for the worst 80 pages.
 5. **Gates** as a ratchet. `verify/baseline.json` holds each page's aligned
    percentage. A run fails when a page is more than 0.25 points worse than
-   its baseline, or a page with no baseline is above 1%. Fixes lower the
-   baseline; nothing drifts back up.
+   its baseline, a page with no baseline is above 1%, or a page did not
+   render. Updating the baseline only lowers numbers, so a partial run cannot
+   shrink it and a regression cannot be blessed by accident.
+
+After a converter change, `verify.sh` re-shoots only the pages whose HTML
+changed.
+
+Limits of the pixel check: a page taller than 12,000 px is compared over its
+first 12,000 px only; video and iframes are hidden on both sides; both sides
+are served the same `back-links.json`; and the two legacy stylesheets that
+`head.html` loads by absolute URL come from live idvork.in on both sides.
 
 ### Numbers, 2026-11-24, upstream main `b5a9884c7`
 
@@ -177,7 +198,7 @@ Triage the report so Sonnet starts from causes, not pixels. One call per
 page above 0.1%: the difference image, the text sample and the worst
 section's source go in; a label from a fixed list comes out (list spacing,
 quotes, footnote, attribute list, code block, include output, table, image
-size, other). Direct API calls through the batches endpoint with the advisor
+size, other). Direct `client.beta.messages.create` calls with the advisor
 tool, per igor2 `AGENTS.md`: executor `claude-haiku-5-5`, advisor
 `claude-opus-5-5`, beta `advisor-tool-2026-03-01`. No agent SDK. The output
 is a count per label, which orders the Opus rule work.
