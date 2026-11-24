@@ -81,7 +81,7 @@ Put in your numbers. Leave measured max blank to use Tanaka.
 <label>Measured max HR (optional)<input id="z2-max" type="number" inputmode="numeric" min="100" max="230" placeholder="blank = Tanaka"></label>
 <label>Years of steady training<input id="z2-years" type="number" inputmode="decimal" min="0" max="80" step="0.5" value="1"></label>
 </div>
-<p class="z2-hint">Maffetone adjustment from years: under 1 → −5 · 1 to 2 → 0 · over 2 → +5</p>
+<p class="z2-hint">This calculator's cut-offs for Maffetone's categories: under 1 year → −5 · 1 to 2 → 0 · over 2 → +5</p>
 <div class="z2-cards">
 <div class="z2-card z2-card-a"><div class="z2-name">% of max</div><div class="z2-num" id="z2-pct">–</div><div class="z2-sub" id="z2-pct-sub"></div></div>
 <div class="z2-card z2-card-b"><div class="z2-name">Maffetone</div><div class="z2-num" id="z2-maf">–</div><div class="z2-sub" id="z2-maf-sub"></div></div>
