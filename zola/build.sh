@@ -42,4 +42,7 @@ if [ -n "${BACKLINKS:-}" ]; then "$HERE/backlinks.sh"; fi
 if [ -n "${PAGEFIND:-}" ]; then
   npx --yes pagefind@1.5.2 --site "$OUT" > "$WORK/pagefind.log" 2>&1 || { tail -20 "$WORK/pagefind.log"; exit 1; }
 fi
+# A project Pages site lives under /<repo>/: make the root-absolute links carry it.
+base_path=$(printf %s "$BASE_URL" | sed -E 's|^https?://[^/]*||; s|/+$||')
+[ -z "$base_path" ] || python3 "$HERE/prefix_paths.py" "$OUT" "$base_path"
 echo "built $SRC ($branch) -> $OUT"
