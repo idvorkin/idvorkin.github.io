@@ -32,8 +32,18 @@ trap 'kill $server 2>/dev/null' EXIT
 echo "preview: $BASE_URL  (pid $$, server $server, source $SRC)"
 # ponytail: polls mtimes once a second and rebuilds everything (~3 s). The
 # upgrade is inotify plus converting only the changed file; no live reload yet.
+changed() {
+  # Only what a build reads: the collections, includes, layouts, data, assets
+  # and the root-level pages (not worktrees, node_modules or build output).
+  local dirs=()
+  for d in _d _td _posts _ig66 _test _includes _layouts _data assets images; do
+    [ -d "$SRC/$d" ] && dirs+=("$SRC/$d")
+  done
+  [ -n "$(find "${dirs[@]}" -type f -newer "$stamp" -print -quit)" ] ||
+    [ -n "$(find "$SRC" -maxdepth 1 -type f -newer "$stamp" -print -quit)" ]
+}
 while sleep 1; do
-  if [ -n "$(find "$SRC" -path "$SRC/.git" -prune -o -path "$SRC/_site" -prune -o -path "$SRC/node_modules" -prune -o -path "$SRC/zola/.work" -prune -o -type f -newer "$stamp" -print -quit)" ]; then
+  if changed; then
     build || echo "build failed; still serving the last good build"
   fi
 done
