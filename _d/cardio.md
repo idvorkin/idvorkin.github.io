@@ -79,7 +79,7 @@ Put in your numbers. Leave measured max blank to use Tanaka.
 .z2-zones th:first-child,.z2-zones td:first-child{text-align:left}
 .z2-zones td small{display:block;font-size:.68rem;opacity:.75}
 .z2-zones .z2-hero td{background:rgba(52,168,83,.16);font-weight:700}
-.z2-zones .z2-wide{color:#b3261e;font-weight:700}
+.z2-zones td.z2-wide{color:#b3261e !important;font-weight:700}
 .z2-talk{margin:10px 0 0;font-size:.85rem}
 .z2-warn{margin:6px 0 0;font-size:.8rem;color:#b3261e}
 </style>
