@@ -74,7 +74,7 @@ jobs:
           printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
           rm -f _site/CNAME # the blog's own CNAME (idvork.in) must never ride along
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
@@ -89,4 +89,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

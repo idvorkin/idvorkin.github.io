@@ -1,6 +1,6 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# dependencies = ["pyyaml", "python-liquid==3.0.0", "markdown-it-py"]
+# dependencies = ["pyyaml", "python-liquid==3.0.0", "markdown-it-py", "typer", "rich"]
 # ///
 """Convert every Jekyll page into Zola content (bead blog-pzp).
 
