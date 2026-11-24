@@ -44,6 +44,8 @@ edited include, layout or data file needs no port work.
 What can still drift, and what catches it:
 
 - A Liquid construct the engine rejects fails the build with file and line.
+  One exception, as in Jekyll: a filter the engine does not know passes its
+  value through. That is a warning in previews and a failure with `STRICT=1`.
 - The five listing pages (`tags`, `categories`, `all-posts`, `_d/index`,
   `_ig66/index`) plus `feed.xml` and the search JSON loop over `site.posts`
   and friends. Each page's Jekyll source is hashed in `ported.lock`; a changed
@@ -94,7 +96,7 @@ mirror: `https://<vm>.<tailnet>.ts.net:8448` (the exact URL is on the bead).
 | `BASE_URL`    | becomes `site.url`, as `jekyll serve` does                   |
 | `BACKLINKS=1` | run `build_back_links.py` over the output                    |
 | `PAGEFIND=1`  | build the search index                                       |
-| `STRICT=1`    | fail on a stale hand port                                    |
+| `STRICT=1`    | fail on a stale hand port or an unknown Liquid filter        |
 
 The toolchain lives on `zola-port` in the fork until Igor decides to merge
 `zola/` into main. That merge is safe for Jekyll (`zola` is in `exclude:`)
@@ -138,8 +140,10 @@ changed.
 
 Limits of the pixel check: a page taller than 12,000 px is compared over its
 first 12,000 px only; video and iframes are hidden on both sides; both sides
-are served the same `back-links.json`; and the two legacy stylesheets that
-`head.html` loads by absolute URL come from live idvork.in on both sides.
+are served the same `back-links.json`; the two legacy stylesheets that
+`head.html` loads by absolute URL come from live idvork.in on both sides; and
+Jekyll is shot first, so it fills the request cache from the network while
+Zola replays it.
 
 ### Numbers, 2026-11-24, upstream main `b5a9884c7`
 
@@ -172,6 +176,13 @@ failed):
 | Same page height                     | 427      | 433       |
 | Taller than the 12,000 px cap        | 90       | 39        |
 | Identical and compared top to bottom | 314      | 374       |
+
+In the browser (984 page-and-width pairs): visible text identical on 796,
+links lost on 58, element ids lost on 15, images that loaded differ on 2, new
+JS errors on 4. `/vim` is a real one (a literal `<space>` in the post, which
+kramdown closes and CommonMark does not). `/` and `/random` throw on HTML
+that is byte-identical to Jekyll's; the cause is not established.
+`/emotional-lives` was not investigated.
 
 368 pages are identical at both widths and 450 are under 1% at both. The
 first sweep, before the three converter rules this session added, had 348

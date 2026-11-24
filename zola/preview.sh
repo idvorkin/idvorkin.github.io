@@ -41,13 +41,14 @@ echo "preview: $BASE_URL  (pid $$, server $server, source $SRC)"
 # upgrade is inotify plus converting only the changed file; no live reload yet.
 changed() {
   # Only what a build reads: the collections, includes, layouts, data, assets
-  # and the root-level pages (not worktrees, node_modules or build output).
+  # and the root-level pages (not worktrees, node_modules, build output or
+  # dotfiles such as lock files other tools touch).
   local dirs=()
   for d in _d _td _posts _ig66 _test _includes _layouts _data assets images; do
     [ -d "$SRC/$d" ] && dirs+=("$SRC/$d")
   done
   [ -n "$(find "${dirs[@]}" -type f -newer "$stamp" -print -quit)" ] ||
-    [ -n "$(find "$SRC" -maxdepth 1 -type f -newer "$stamp" -print -quit)" ]
+    [ -n "$(find "$SRC" -maxdepth 1 -type f ! -name '.*' -newer "$stamp" -print -quit)" ]
 }
 while sleep 1; do
   if changed; then
