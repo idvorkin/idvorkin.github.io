@@ -9,9 +9,11 @@ usage: serve.py <dir> <port> [--reload <stamp file>]
 Also serves /x from x.html, as Pages does, so it can serve a Jekyll _site
 for side-by-side screenshots too.
 
---reload (previews only): every HTML response gets a small script that
-long-polls /__reload, which answers when the stamp file's text changes
-(watch.py rewrites it after each rebuild), and the page reloads. It is added
+--reload (previews only): every HTML response gets a small script that asks
+/__reload for the stamp file's text once a second (watch.py rewrites it after
+each rebuild) and reloads the page when it changes. A short poll, not a long
+one: a held request per tab would eat HTTP/1.1's six connections per host
+and keep Playwright's networkidle from ever settling. It is added
 as the page is served, so the files on disk stay the build's own and the
 verify gate sees no difference.
 """
@@ -20,24 +22,19 @@ import functools
 import http.server
 import io
 import sys
-import time
-from urllib.parse import unquote
 from pathlib import Path
 
 root, port = Path(sys.argv[1]).resolve(), int(sys.argv[2])
 stamp = Path(sys.argv[4]) if sys.argv[3:4] == ["--reload"] else None
-RELOAD = b"""<script>(async () => {
+RELOAD = b"""<script>(() => {
   let seen = null;
-  for (;;) {
+  setInterval(async () => {
     try {
-      const r = await fetch("/__reload?seen=" + encodeURIComponent(seen ?? ""));
-      const now = await r.text();
-      if (seen !== null && now !== seen) return location.reload();
+      const now = await (await fetch("/__reload", { cache: "no-store" })).text();
+      if (seen !== null && now !== seen) location.reload();
       seen = now;
-    } catch (e) {
-      await new Promise((ok) => setTimeout(ok, 2000));
-    }
-  }
+    } catch (e) {}
+  }, 1000);
 })();</script>"""
 
 
@@ -58,13 +55,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
     def do_GET(self):
         if stamp and self.path.startswith("/__reload"):
-            seen = self.path.partition("seen=")[2]
-            # Long poll: answer at once if the build moved on, else wait for
-            # it (up to 25 s, then the page asks again).
-            for _ in range(250):
-                if not seen or build_id() != unquote(seen):
-                    break
-                time.sleep(0.1)
             body = build_id().encode()
             self.send_response(200)
             self.send_header("Content-Type", "text/plain")

@@ -133,9 +133,12 @@ cache, so there is one code path and nothing to keep in sync.
   after 30 ms of quiet; events that land during a build start the next one.
 - **Live reload.** After each build (and back-links and the overlay),
   `watch.py` rewrites `$WORK/.built`. `serve.py --reload` adds a small script
-  to each HTML response that long-polls `/__reload`, which answers when that
-  stamp changes, and the page reloads. It is added as the page is served, so
-  the files on disk are the build's own and the verify gate sees nothing.
+  to each HTML response that fetches `/__reload` once a second and reloads
+  the page when the stamp changes. A short poll, not a long one: a held
+  request per tab would use up HTTP/1.1's six connections per host on a
+  local preview and keep Playwright's `networkidle` from settling. It is
+  added as the page is served, so the files on disk are the build's own and
+  the verify gate sees nothing.
 
 Correctness check (bench worktree of upstream main `07da02a29`, one preview
 running): after each of a post body edit, an include edit
@@ -164,6 +167,12 @@ worktree, preview at nice 19, VM load 0.7–1.0:
 The rebuild itself took 0.53–0.56 s of that: stage 0.08, convert 0.04 (one
 page), Zola 0.17, finish 0.24–0.28. An include or layout edit took 3.0–3.3 s
 end to end. Earlier, at VM load around 10, the old loop took 4.5–6.4 s.
+
+The main checkout (757 pages, what :8448 serves) has the same fixed costs a
+little higher: a cold build there spends 0.03 s staging, 0.2 s in Zola and
+0.37 s in finish, so a one-post rebuild there should land around 0.7 s. That
+is an estimate from those steps; the touch timing was not run on Igor's own
+checkout. Nothing was measured under heavy VM load.
 
 ## (d) Verification
 

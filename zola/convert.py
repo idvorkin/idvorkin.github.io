@@ -955,10 +955,11 @@ def convert(cache: Cache) -> dict:
 
     gkey = global_key()
     if cache.key != gkey:
-        cache.key, cache.pages = gkey, {}
+        cache.key, cache.pages = None, {}  # set last: a YAML error must not stick
         cache.site = site_context()
         cache.env = jekyll_liquid.make_env(REPO, cache.site)
         cache.env.on_include = on_include
+        cache.key = gkey
     site, env = cache.site, cache.env
 
     srcs = sources()
