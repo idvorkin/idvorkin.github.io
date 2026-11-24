@@ -28,9 +28,9 @@ permissions:
 
 env:
   ZOLA_VERSION: 0.23.6
-  # Root-absolute links (/assets/..., /magic) need the site at the root of a
-  # host, so the mirror is served on its own subdomain, not at /blog-zola/.
-  BASE_URL: https://zola.idvork.in
+  # Root-absolute links (/assets/..., /magic) are rewritten under /blog-zola/ by
+  # zola/prefix_paths.py, which build.sh runs when BASE_URL has a path.
+  BASE_URL: https://idvorkin-ai-tools.github.io/blog-zola
 
 jobs:
   build:

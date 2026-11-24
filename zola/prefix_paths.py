@@ -55,6 +55,15 @@ def html(t: str) -> str:
     t = re.sub(r"""(\bsrcset\s*=\s*")([^"]*)(")""", srcset, t)
     t = re.sub(rf"""(url\(\s*['"]?)({PATH})""", add("css-url"), t)
     t = re.sub(rf"""(location(?:\.href)?\s*=\s*["'])({PATH})""", add("location"), t)
+    t = re.sub(
+        rf"""(\bfrom\s*["'])({PATH})""", add("import"), t
+    )  # inline module imports
+    t = re.sub(
+        rf"""("\s*:\s*")({PATH})""", add("inline-json"), t
+    )  # {"img": "/images/x.webp"}
+    t = re.sub(
+        rf"""([\[,]\s*")({PATH})""", add("inline-array"), t
+    )  # ["/a.webp", "/b.webp"]
     return t
 
 
@@ -66,7 +75,11 @@ def strings(t: str, kind: str) -> str:
 
 for f in sorted(out.rglob("*")):
     parts = f.relative_to(out).parts
-    if not f.is_file() or "pagefind" in parts or "vendor" in parts:
+    if (
+        not f.is_file()
+        or "pagefind" in parts
+        or ("vendor" in parts and f.suffix != ".css")
+    ):
         continue
     suf = f.suffix
     if suf not in (".html", ".css", ".js", ".json", ".webmanifest"):
