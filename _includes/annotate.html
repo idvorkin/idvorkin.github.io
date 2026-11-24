@@ -1597,6 +1597,20 @@
         if (n) n.textContent = text;
       }
 
+      // What Copy puts on the clipboard: the code plus what to do with it, so a
+      // paste into chat explains itself.
+      function pairInstructions(host, code) {
+        return (
+          "Pair " +
+          host +
+          " with Larry: code " +
+          code +
+          ". In the Cockpit, open Pair a page (footer link) and type " +
+          code +
+          ", then type the number it shows back on the page."
+        );
+      }
+
       function connectOpen() {
         showModal(
           "<b>Connect to Larry</b>" +
@@ -1604,11 +1618,14 @@
             '<input id="blog-annot-pair-origin" type="url" autocomplete="off" ' +
             'spellcheck="false" placeholder="https://…" style="width:100%;' +
             'box-sizing:border-box;padding:8px;font:inherit"></div>' +
-            '<div id="blog-annot-pair-step" hidden><p>In the Cockpit, Pair a page, type:</p>' +
-            '<p id="blog-annot-pair-ch" style="font:700 28px ui-monospace,monospace;' +
-            'letter-spacing:.2em;margin:4px 0 10px"></p>' +
+            '<div id="blog-annot-pair-step" hidden><p>In the Cockpit, open Pair a page and enter:</p>' +
+            '<div style="display:flex;align-items:center;gap:12px;margin:4px 0 10px">' +
+            '<span id="blog-annot-pair-ch" style="font:700 28px ui-monospace,monospace;' +
+            'letter-spacing:.2em"></span>' +
+            '<button type="button" class="blog-annot-ghost" id="blog-annot-pair-copy" ' +
+            'aria-label="Copy code with instructions">Copy</button></div>' +
             '<input id="blog-annot-pair-code" inputmode="numeric" autocomplete="one-time-code" ' +
-            'maxlength="6" placeholder="Number" style="width:100%;box-sizing:border-box;' +
+            'pattern="[0-9 ]*" placeholder="Number from the Cockpit" style="width:100%;box-sizing:border-box;' +
             'padding:8px;font:600 20px ui-monospace,monospace;letter-spacing:.2em"></div>' +
             '<div class="blog-annot-row">' +
             '<button type="button" class="blog-annot-ghost" id="blog-annot-pair-cancel">Cancel</button>' +
@@ -1623,6 +1640,17 @@
         var addr = document.getElementById("blog-annot-pair-origin");
         var codeIn = document.getElementById("blog-annot-pair-code");
         document.getElementById("blog-annot-pair-cancel").onclick = hideModal;
+        document.getElementById("blog-annot-pair-copy").onclick = function () {
+          var b = document.getElementById("blog-annot-pair-copy");
+          copyText(pairInstructions(location.hostname, challenge)).then(
+            function () {
+              b.textContent = "Copied";
+            },
+            function () {
+              connectNote("Couldn't copy. Select the code instead.");
+            }
+          );
+        };
 
         function start(origin) {
           busy = true;
