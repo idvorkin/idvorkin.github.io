@@ -55,39 +55,46 @@ def code_blocks(html: str) -> str:
     )
 
 
-work, out, site_url = Path(sys.argv[1]), Path(sys.argv[2]), sys.argv[3].rstrip("/")
-plan = json.loads((work / "finish.json").read_text())
-flat = set(plan["flat"])
-for url in sorted(flat | set(plan["wraps"])):
-    d = out / url.strip("/")
-    src = d / "index.html"
-    if not src.exists():
-        sys.exit(f"finish: {url} has no index.html in the Zola output")
-    # Zola writes a same-page link [x](#y) as <permalink>/#y, and its
-    # permalink is the /x/ this page no longer lives at.
-    html = src.read_text().replace(f'href="{site_url}{url.rstrip("/")}/#', 'href="#')
-    html = code_blocks(html)
-    if url in plan["wraps"]:
-        html = (
-            (work / "wrap" / plan["wraps"][url]).read_text().replace(plan["mark"], html)
+def finish(work: Path, out: Path, site_url: str) -> str:
+    site_url = site_url.rstrip("/")
+    plan = json.loads((work / "finish.json").read_text())
+    flat = set(plan["flat"])
+    for url in sorted(flat | set(plan["wraps"])):
+        d = out / url.strip("/")
+        src = d / "index.html"
+        if not src.exists():
+            raise SystemExit(f"finish: {url} has no index.html in the Zola output")
+        # Zola writes a same-page link [x](#y) as <permalink>/#y, and its
+        # permalink is the /x/ this page no longer lives at.
+        html = src.read_text().replace(
+            f'href="{site_url}{url.rstrip("/")}/#', 'href="#'
         )
-    src.write_text(html)
-    if url in flat:
-        src.rename(d.with_name(d.name + ".html"))
-        if not any(d.iterdir()):
-            d.rmdir()
-for alias, target in plan["stubs"].items():
-    rel = alias.strip("/")
-    if alias in plan["dir_stubs"]:
-        dest = out / rel / "index.html"
-    elif rel.endswith((".html", ".htm")):
-        dest = out / rel
-    else:
-        dest = out / (rel + ".html")
-    if dest.exists():
-        continue  # a real page owns the URL, as on Jekyll
-    dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(STUB.format(u=target if "://" in target else site_url + target))
-print(
-    f"finish: {len(plan['flat'])} pages flattened, {len(plan['stubs'])} redirect stubs"
-)
+        html = code_blocks(html)
+        if url in plan["wraps"]:
+            html = (
+                (work / "wrap" / plan["wraps"][url])
+                .read_text()
+                .replace(plan["mark"], html)
+            )
+        src.write_text(html)
+        if url in flat:
+            src.rename(d.with_name(d.name + ".html"))
+            if not any(d.iterdir()):
+                d.rmdir()
+    for alias, target in plan["stubs"].items():
+        rel = alias.strip("/")
+        if alias in plan["dir_stubs"]:
+            dest = out / rel / "index.html"
+        elif rel.endswith((".html", ".htm")):
+            dest = out / rel
+        else:
+            dest = out / (rel + ".html")
+        if dest.exists():
+            continue  # a real page owns the URL, as on Jekyll
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(STUB.format(u=target if "://" in target else site_url + target))
+    return f"finish: {len(plan['flat'])} pages flattened, {len(plan['stubs'])} redirect stubs"
+
+
+if __name__ == "__main__":
+    print(finish(Path(sys.argv[1]), Path(sys.argv[2]), sys.argv[3]))

@@ -198,7 +198,20 @@ def make_env(repo: Path, site: dict) -> Environment:
 def render(env: Environment, src: str, data: dict) -> str:
     """Render, treating an unknown filter the way Jekyll does (the value
     passes through) but on the record: each one is added to
-    env.unknown_filters, and the caller decides whether that fails the build."""
+    env.unknown_filters, and the caller decides whether that fails the build.
+
+    The page's own quoted include values are dropped afterwards (the
+    includes' ones, added by make_env, stay), so a long-lived preview process
+    does not grow with every render."""
+    keep = len(env.literals)
+    try:
+        return _render(env, src, data)
+    finally:
+        for i in range(keep, len(env.literals)):
+            del env.literals[f"_jl{i}"]
+
+
+def _render(env: Environment, src: str, data: dict) -> str:
     while True:
         try:
             template = env.parse(rewrite_includes(src, env.literals))

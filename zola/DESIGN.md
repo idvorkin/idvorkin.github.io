@@ -4,16 +4,15 @@ Bead `blog-pzp`. Written 2026-11-24, when the port was refreshed onto main.
 
 ## What this is for
 
-Preview builds first, for memory. A `jekyll serve` holds 227–357 MB per
-worktree; a Zola preview holds about 23 MB (a static file server and a shell
-loop). The VM runs many previews at once, so that is the win to collect now.
+Preview builds first, for memory and speed. A `jekyll serve` holds 227–357 MB
+per worktree; a Zola preview holds about 100 MB (the watch process with its
+page cache, 82 MB, and the static server, 20 MB). The VM runs many previews
+at once, so that is the win to collect now.
 
-Rebuild speed is mixed today. Saving a file to a rebuilt site took 4.5–6.4 s
-here (measured three times, VM load around 10). Jekyll's incremental rebuild
-of one post was 1.1 s and its full rebuild 8.8 s (`blog-045`). So the Zola
-preview is faster after a layout, include or data change and slower after a
-one-post edit, until the converter stops redoing every page (tier list,
-Opus 3).
+A one-post edit is served 0.5–0.75 s after the save, against Jekyll's 1.1 s
+incremental rebuild (`blog-045`) and 3–4 s for this preview before it cached
+pages. A layout, include or data edit rebuilds every page in about 3 s,
+against Jekyll's 8.8 s full rebuild. Numbers and method in (c).
 
 Replacing Jekyll on idvork.in is a later, separate decision. Nothing here
 touches upstream `main` or its Pages settings.
@@ -61,10 +60,11 @@ Jekyll's `exclude:` list.
 ## (b) Mirror, and previews for any branch
 
 **Previews (working today).** `zola/preview.sh <checkout> <port>` builds that
-checkout, serves it, and rebuilds when a source file changes. The checkout
-needs no `zola/` directory, so any branch or PR worktree previews with the
-current toolchain. `TS_PORT=<n>` makes links use the tailnet URL. A PR is
-`git worktree add` of `refs/pull/N/head`, then the same command.
+checkout, serves it, rebuilds when a source file changes and reloads open
+pages. The checkout needs no `zola/` directory, so any branch or PR worktree
+previews with the current toolchain. `TS_PORT=<n>` makes links use the
+tailnet URL. A PR is `git worktree add` of `refs/pull/N/head`, then the same
+command.
 
 **Mirror (designed, not created).** A new repo `idvorkin-ai-tools/blog-zola`
 whose only content is `zola/mirror/pages.yml`. On a 30-minute cron and on
@@ -83,10 +83,12 @@ absolute path, so that is not planned.
 Until the CNAME exists, the tailnet preview of the main checkout is the
 mirror: `https://<vm>.<tailnet>.ts.net:8448` (the exact URL is on the bead).
 
-## (c) Shared build
+## (c) Shared build, incremental preview
 
-`zola/build.sh` is the one entry point. The mirror workflow, `preview.sh` and
-`verify.sh` all call it with different environment:
+`zola/build.sh` is the one entry point for a build. The mirror workflow and
+`verify.sh` call it with different environment; it runs `build.py` (stage
+static files, data, convert, Zola, finish) and then `backlinks.sh` and
+Pagefind when asked:
 
 | Variable      | Meaning                                                      |
 | ------------- | ------------------------------------------------------------ |
@@ -101,6 +103,67 @@ mirror: `https://<vm>.<tailnet>.ts.net:8448` (the exact URL is on the bead).
 The toolchain lives on `zola-port` in the fork until Igor decides to merge
 `zola/` into main. That merge is safe for Jekyll (`zola` is in `exclude:`)
 and would put the toolchain in every checkout.
+
+**The preview** (`preview.sh`, which execs `watch.py`) is one long-lived
+process that imports `build.py` and calls the same `build()` on every change,
+with a `convert.Cache` kept between calls. A cold `build.sh` passes an empty
+cache, so there is one code path and nothing to keep in sync.
+
+- **What is cached.** Each page's conversion (Liquid, the kramdown fixes, its
+  layout), reused while three keys match: the page's source bytes; a global
+  key over `_config.yml`, `_data/`, `_includes/`, `_layouts/`, `git.json` and
+  `BASE_URL`; and a structure key over every page's URL and `redirect_from`
+  owner, which `post_url`, collisions and alias stubs read. So a body,
+  title or tag edit converts one page; an include, layout, data, permalink
+  or redirect edit, or a new or deleted page, converts all of them. Front
+  matter parses and the Liquid environment are cached too. The converted
+  text stays on disk in `WORK` (`content/`, `wrap/`, `templates/generated/`);
+  RAM holds keys and the small per-page facts the site-wide files are
+  rebuilt from (tags, stubs, wraps, report). Zola (0.17 s) and `finish.py`
+  (0.2–0.3 s) still run over the whole site: Zola has no partial build, and
+  the two together are under half a second.
+- **Not cached:** the toolchain. A running preview has `zola/*.py` loaded,
+  so restart it after editing them. Static staging is not skipped either: it
+  takes 0.05–0.09 s, and telling a static file from a page needs each file's
+  first line, so a skip rule would be easy to get wrong for little.
+- **Watching.** inotify through libc (`watch.py`, no dependency, Linux only):
+  the collections, `_includes`, `_layouts`, `_data`, `assets` and `images`
+  recursively, and the checkout's root files, not its directories (a main
+  checkout holds `.worktrees` and `node_modules`). A burst of events ends
+  after 30 ms of quiet; events that land during a build start the next one.
+- **Live reload.** After each build (and back-links and the overlay),
+  `watch.py` rewrites `$WORK/.built`. `serve.py --reload` adds a small script
+  to each HTML response that long-polls `/__reload`, which answers when that
+  stamp changes, and the page reloads. It is added as the page is served, so
+  the files on disk are the build's own and the verify gate sees nothing.
+
+Correctness check (bench worktree of upstream main `07da02a29`, one preview
+running): after each of a post body edit, an include edit
+(`blob_image.html`), a layout edit (`post.html`), adding a post with a
+`redirect_from` and a tag, changing its permalink, deleting it and reverting
+everything, the preview's output was byte-identical to a cold `build.sh` of
+the same tree (every file but `back-links.json`, which the preview reuses on
+purpose). On the reverted preview output, after an include and layout edit
+and back, the static checks give the numbers in (d): 426 pages with
+identical text, 494 at 99.5% or better, 13 of 6,654 heading ids lost, 74
+pages with a different tag structure, 0 broken links or anchors the port
+made, 0 inline scripts broken.
+
+Touch-to-served, 2026-11-24: append a line to
+`_d/2015-11-11-mind-monsters.md` and time until `/mind-monsters` serves the
+finished page with the line (the build's stamp is newer than the save and the
+response is not a redirect to the half-built `/x/index.html`). Bench
+worktree, preview at nice 19, VM load 0.7–1.0:
+
+| Run | Before (poll, full rebuild) | After (cache, inotify) |
+| --- | --------------------------- | ---------------------- |
+| 1   | 3.39 s                      | 0.61 s                 |
+| 2   | 2.92 s                      | 0.70 s                 |
+| 3   | 3.15 s                      | 0.74 s                 |
+
+The rebuild itself took 0.53–0.56 s of that: stage 0.08, convert 0.04 (one
+page), Zola 0.17, finish 0.24–0.28. An include or layout edit took 3.0–3.3 s
+end to end. Earlier, at VM load around 10, the old loop took 4.5–6.4 s.
 
 ## (d) Verification
 
@@ -216,7 +279,7 @@ October's plan; it no longer exists.
 2. Each _class_ of kramdown-versus-CommonMark difference, as a rule in
    `convert.py`: attribute lists (`{: ...}`), footnote ids, list looseness,
    smart-quote direction, rouge token spans.
-3. Incremental preview: convert only the changed file, inotify, live reload.
+3. ~~Incremental preview~~: done (`blog-pzp.3`), see (c).
 4. The cutover plan, when Igor wants one.
 
 **Sonnet (bounded fixes against the report)**

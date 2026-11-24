@@ -15,10 +15,11 @@
 # WORK  scratch Zola site dir (default: zola/.work, or a per-SRC cache dir).
 # OUT   output dir, shaped like Jekyll's _site (default: $WORK/public).
 #
-# Steps: stage the files Jekyll copies verbatim, copy _data, write the dev
-# banner's git.json (Jekyll's _plugins/git_data_generator.rb did this), render
-# Liquid and convert kramdown -> CommonMark, zola build, then reshape the
-# output to Jekyll's URL layout and write the redirect stubs.
+# Steps (build.py): stage the files Jekyll copies verbatim, copy _data, write
+# the dev banner's git.json (Jekyll's _plugins/git_data_generator.rb did
+# this), render Liquid and convert kramdown -> CommonMark, zola build, then
+# reshape the output to Jekyll's URL layout and write the redirect stubs.
+# Then backlinks.sh and Pagefind, when asked for.
 set -euo pipefail
 HERE=$(cd "$(dirname "$0")" && pwd)
 ZOLA=${ZOLA:-$(command -v zola || echo "$HOME/tmp/agent/skill/zola/zola")}
@@ -33,42 +34,11 @@ OUT=${OUT:-$WORK/public}
 BASE_URL=${BASE_URL:-https://idvork.in}
 export SRC WORK BASE_URL
 
-rm -rf "$WORK/templates" "$WORK/data" "$WORK/content"
-mkdir -p "$WORK/data"
-cp -r "$HERE/templates" "$WORK/templates"
-cp "$HERE/config.toml" "$WORK/config.toml"
-"$HERE/stage_static.py" > "$WORK/static-report.json"
-cp "$SRC"/_data/*.json "$SRC"/_data/*.yml "$WORK/data/"
 branch=${BRANCH:-$(git -C "$SRC" rev-parse --abbrev-ref HEAD 2>/dev/null || echo unknown)}
-printf '{"branch":"%s","pr_number":%s,"changed_pages":[]}\n' "$branch" "${PR_NUMBER:-null}" > "$WORK/data/git.json"
-"$HERE/convert.py" > "$WORK/convert-report.json"
-(cd "$WORK" && "$ZOLA" build -o "$OUT" --force --base-url "$BASE_URL")
-python3 "$HERE/finish.py" "$WORK" "$OUT" "$BASE_URL"
+export ZOLA OUT BRANCH=$branch
+"$HERE/build.py"
 
-if [ "${BACKLINKS:-}" = cached ] && [ -f "$WORK/bbl/back-links.json" ]; then
-  # A preview rebuild: the index from the first build is close enough (what
-  # `just ensure-backlinks` does for jekyll serve), and it costs 10 s to redo.
-  rm -f "$OUT/back-links.json" && cp "$WORK/bbl/back-links.json" "$OUT/back-links.json"
-elif [ -n "${BACKLINKS:-}" ]; then
-  # ponytail: build_back_links.py hardcodes ./_site and must run inside the
-  # checkout (it asks git about each source file). So run a copy of it that
-  # says _zsite instead, with _zsite a short-lived symlink to our
-  # output. Upgrade path: a --site-dir option on build_back_links.py upstream.
-  mkdir -p "$WORK/bbl"
-  # It also only knows how to strip localhost and idvork.in from URLs, so a
-  # preview on another host needs its BASE_URL stripped as well.
-  sed -e 's/_site/_zsite/g' \
-    -e "s|url = url.replace(\"https://idvork.in\", \"\")|url = url.replace(\"https://idvork.in\", \"\").replace(\"$BASE_URL\", \"\")|" \
-    "$SRC/build_back_links.py" > "$WORK/bbl/build_back_links.py"
-  grep -qF "replace(\"$BASE_URL\"" "$WORK/bbl/build_back_links.py" || { echo "build_back_links.py changed: the BASE_URL patch no longer applies" >&2; exit 1; }
-  ln -sfn "$OUT" "$SRC/_zsite"
-  (cd "$SRC" && PYTHONPATH="$SRC" uv run "$WORK/bbl/build_back_links.py" build --output-file "$WORK/bbl/back-links.json" > "$WORK/backlinks.log" 2>&1) \
-    || { rm -f "$SRC/_zsite"; tail -20 "$WORK/backlinks.log"; exit 1; }
-  rm -f "$SRC/_zsite"
-  sed -i 's|"_zsite/|"_site/|g' "$WORK/bbl/back-links.json"
-  # rm first: the staged copy is a hard link to the source checkout's file.
-  rm -f "$OUT/back-links.json" && cp "$WORK/bbl/back-links.json" "$OUT/back-links.json"
-fi
+if [ -n "${BACKLINKS:-}" ]; then "$HERE/backlinks.sh"; fi
 if [ -n "${PAGEFIND:-}" ]; then
   npx --yes pagefind@1.5.2 --site "$OUT" > "$WORK/pagefind.log" 2>&1 || { tail -20 "$WORK/pagefind.log"; exit 1; }
 fi

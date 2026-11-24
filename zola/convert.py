@@ -36,7 +36,6 @@ import datetime
 import hashlib
 import html
 import json
-import shutil
 import re
 import sys
 from pathlib import Path
@@ -733,30 +732,248 @@ def sources() -> list[str]:
     return out
 
 
-def main() -> None:
-    CONTENT.mkdir(exist_ok=True)
-    GENERATED.mkdir(parents=True, exist_ok=True)
-    if WRAP.exists():
-        shutil.rmtree(WRAP)
-    WRAP.mkdir()
-    for old in list(CONTENT.glob("*.md")) + list(GENERATED.glob("*.html")):
-        old.unlink()
+def digest(*parts) -> str:
+    h = hashlib.sha1()
+    for p in parts:
+        h.update(p if isinstance(p, bytes) else str(p).encode())
+        h.update(b"\0")
+    return h.hexdigest()
 
-    site = site_context()
-    env = jekyll_liquid.make_env(REPO, site)
 
-    def on_include(name: str, params: dict, text: str) -> str:
-        INCS.append(Inc(Path(name).stem.replace("-", "_"), text))
-        return f"{{{{<inc {len(INCS) - 1} />}}}}"
+def global_key() -> str:
+    """Everything a page's output reads besides its own source and the
+    cross-page maps: config, data, includes, layouts, git.json, BASE_URL."""
+    files = [REPO / "_config.yml", WORK / "data" / "git.json"]
+    for d in ("_data", "_includes", "_layouts"):
+        files += sorted(p for p in (REPO / d).iterdir() if p.is_file())
+    return digest(
+        os.environ.get("BASE_URL", ""),
+        *((f.name, f.read_bytes() if f.exists() else b"") for f in files),
+    )
 
-    env.on_include = on_include
+
+class Cache:
+    """What a long-lived preview process (watch.py) keeps between builds, so
+    a one-post edit converts one page. A cold build passes a fresh Cache and
+    converts everything, through the same code.
+
+    A page's entry is valid while three things match: its source bytes, the
+    global key (config, data, includes, layouts, git.json, BASE_URL) and the
+    structure key (every page's URL and redirect_from owner, which post_url,
+    collisions and alias stubs read). So an include or layout edit
+    reconverts every page and a permalink edit too; a body, title or tag edit
+    reconverts that page alone. The converted text lives on disk in WORK
+    (content/, wrap/, templates/generated/), not here: RAM holds keys and the
+    small per-page facts the site-wide files are rebuilt from.
+
+    The toolchain itself is not in a key: a running process has it loaded,
+    so restart the preview after editing zola/*.py.
+    """
+
+    def __init__(self):
+        self.key = None  # global key the env and entries were made under
+        self.site: dict = {}
+        self.env = None
+        self.fm: dict[
+            str, tuple[str, dict | None]
+        ] = {}  # src -> (digest, front matter)
+        self.pages: dict[str, tuple[tuple, dict]] = {}  # src -> (key, result)
+        self.converted = 0  # pages converted (not reused) by the last build
+
+
+def on_include(name: str, params: dict, text: str) -> str:
+    INCS.append(Inc(Path(name).stem.replace("-", "_"), text))
+    return f"{{{{<inc {len(INCS) - 1} />}}}}"
+
+
+def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
+    """Convert one page and write its files. Returns what the site-wide
+    outputs need from it (report entry, stubs, tags, wrap, files written)."""
+    env, site, urls = ctx["env"], ctx["site"], ctx["urls"]
+    url = urls[src]
+    r: dict = {"files": []}
+    notes: dict = {}
+    try:
+        body = POST_URL.sub(lambda m: ctx["post_urls"][m.group(1)], body)
+        base = jekyll_base(src, fm, url)
+        hand = TEMPLATE_PAGES.get(src)
+        is_template = src in TEMPLATE_PAGES or src.endswith(".html")
+        INCS.clear()
+        if hand in (None, "generated"):
+            page = {**fm, "url": url, "path": src, "title": fm.get("title")}
+            if is_doc(src):
+                page["collection"] = LABELS.get(Path(src).parts[0])
+            body = jekyll_liquid.render(env, body, {"site": site, "page": page})
+        for inc in INCS:
+            notes.setdefault("includes", {}).setdefault(inc.name, 0)
+            notes["includes"][inc.name] += 1
+        if not is_template:
+            parts = []
+            for code, chunk in split_fences(body):
+                if not code:
+                    chunk = kramdownisms(tighten_lists(chunk, notes), notes)
+                    chunk = absolutize(chunk, base, notes)
+                parts.append(chunk)
+            for inc in INCS:
+                # An include's Markdown links are relative to the page too.
+                inc.text = absolutize(inc.text, base, notes)
+            body = place_tokens("\n".join(parts), INCS, notes)
+            seen: dict = {}
+            body = "\n".join(
+                chunk if code else pin_heading_ids(chunk, seen)
+                for code, chunk in split_fences(body)
+            )
+            if "{% endraw" in body or "{%- endraw" in body:
+                raise ValueError("body contains a literal endraw tag")
+            body = "{% raw %}" + body + "{% endraw %}"
+    except Exception as e:  # noqa: BLE001 — collected and fails the build in convert()
+        r["error"] = str(e)
+        return r
+
+    kept, r["alias_dropped"] = [], []
+    for a in aliases_of(fm):
+        if ctx["alias_owner"].get(a) != src:
+            r["alias_dropped"].append(
+                f"{a} on {src}: Jekyll wrote {ctx['alias_owner'].get(a)}'s"
+            )
+        elif re.sub(r"\.html$", "", a) in ctx["doc_urls"] or a == url:
+            r["alias_dropped"].append(f"{a} on {src}: a document has this URL")
+        else:
+            kept.append(a)
+
+    # Jekyll's Utils.pluralized_array_from_hash: a singular `tag:` wins,
+    # a string is split on whitespace.
+    tag = fm.get("tag")
+    tags = (tag if isinstance(tag, list) else [tag]) if tag else (fm.get("tags") or [])
+    tags = tags.split() if isinstance(tags, str) else [str(t) for t in tags if t]
+    r["doc_tags"] = tags if is_doc(src) else []
+    layout = str(fm.get("layout") or "")
+    first_para = body.removeprefix("{% raw %}").strip().split("\n\n")[0]
+    extra = jsonable(dict(fm))
+    extra.update(
+        source_path=src,
+        permalink=url,
+        tags_list=tags,
+        # kramdown's id for a "### [title](url)" heading on listing pages.
+        title_slug=slugify(str(fm.get("title") or "")),
+        collection=LABELS.get(Path(src).parts[0]) if is_doc(src) else None,
+        # Jekyll's Document#<=>: date (front matter, else the filename's
+        # YYYY-M-D- prefix, else site.time, i.e. last), then path;
+        # collections iterate in label order (posts newest-first is the
+        # template's job).
+        sort_key=f"{LABELS.get(Path(src).parts[0], '~')}|{doc_date(fm, src)}|{src}",
+        jekyll_date=str(fm["date"]) if fm.get("date") else None,
+        # Jekyll pages (root files) have no excerpt; documents do.
+        excerpt=plain(first_para) if is_doc(src) and first_para else None,
+    )
+    for k in ("aliases", "redirect_from", "permalink_raw"):
+        extra.pop(k, None)
+    zfm = {"title": str(fm.get("title") or "")}
+    date = zola_date(fm, src)
+    if date:
+        zfm["date"] = date
+    r["stubs"] = {a: url for a in kept}
+    if fm.get("redirect_to"):
+        # jekyll-redirect-from replaces the page with its stub.
+        r["stubs"][url] = str(fm["redirect_to"])
+        r["report"] = {"url": url, "redirect_to": r["stubs"][url]}
+        return r
+    if tags:
+        zfm["taxonomies"] = {"tags": tags}
+
+    name = "home" if src == "index.md" else url.strip("/").replace("/", "__") or "root"
+    if is_template and hand in (None, "generated"):
+        # Jekyll ran no Markdown over these (.html, or pure-HTML .md), so
+        # they become templates and CommonMark never sees them.
+        body = TOKEN.sub(lambda m: INCS[int(m.group(1))].raw, body)
+        if "{% endraw" in body:
+            raise SystemExit(f"{src}: body contains a literal endraw tag")
+        gen = GENERATED / f"{name}.html"
+        gen.write_text("{% raw %}" + body + "{% endraw %}")
+        r["files"].append(gen)
+        hand = f"generated/{name}.html"
+    zfm["template"] = hand or "content.html"
+    # The layout is Jekyll's own, rendered by Liquid with a marker where
+    # {{ content }} goes; finish.py puts Zola's HTML there. So head, menu,
+    # scripts and the annotate tool are never ported and cannot drift.
+    layout_file = REPO / "_layouts" / f"{layout}.html"
+    if layout and layout_file.exists():
+        page_ctx = {
+            **fm,
+            "url": url,
+            "path": src,
+            "title": fm.get("title"),
+            "tags": tags or None,
+            # Jekyll: the first block, rendered (head.html strip_html's it).
+            "excerpt": jekyll_liquid.MD.render(re.sub(r"\{#[^}]*\}", "", first_para))
+            + "\n"
+            if extra["excerpt"]
+            else None,
+            "date": extra["jekyll_date"],
+            "collection": extra["collection"],
+        }
+        env.on_include = None
+        try:
+            wrapped = jekyll_liquid.render(
+                env,
+                layout_file.read_text(),
+                {"site": site, "page": page_ctx, "content": CONTENT_MARK},
+            )
+        finally:
+            env.on_include = on_include
+        (WRAP / f"{name}.html").write_text(wrapped)
+        r["files"].append(WRAP / f"{name}.html")
+        r["wrap"] = f"{name}.html"
+    if src == "index.md":
+        target = CONTENT / "_index.md"
+        zfm["sort_by"] = "none"
+        zfm.pop("date", None)
+        zfm.pop("taxonomies", None)
+    else:
+        target = CONTENT / ((url.strip("/").replace("/", "__") or "root") + ".md")
+        zfm["path"] = url
+    zfm["extra"] = jsonable(extra)
+    text = "" if is_template else body
+    target.write_text(
+        "---\n"
+        + yaml.safe_dump(zfm, allow_unicode=True, sort_keys=False)
+        + "---\n"
+        + text
+    )
+    r["files"].append(target)
+    notes.pop("base", None)
+    r["report"] = {"url": url, **notes}
+    return r
+
+
+def convert(cache: Cache) -> dict:
+    """Convert every page, reusing the cache's still-valid pages. Returns the
+    report; files go to WORK (content/, wrap/, templates/generated/,
+    finish.json, data/tags.json, static/redirects.json)."""
+    for d in (CONTENT, GENERATED, WRAP):
+        d.mkdir(parents=True, exist_ok=True)
+
+    gkey = global_key()
+    if cache.key != gkey:
+        cache.key, cache.pages = gkey, {}
+        cache.site = site_context()
+        cache.env = jekyll_liquid.make_env(REPO, cache.site)
+        cache.env.on_include = on_include
+    site, env = cache.site, cache.env
+
     srcs = sources()
-    parsed = {}
+    parsed, hashes, fm_cache = {}, {}, {}
     for src in srcs:
-        m = FM.match((REPO / src).read_text())
+        text = (REPO / src).read_text()
+        m = FM.match(text)
         if not m:
             continue
-        parsed[src] = (yaml.safe_load(m.group(1)) or {}, m.group(2))
+        h = digest(text)
+        old = cache.fm.get(src)
+        fm = old[1] if old and old[0] == h else (yaml.safe_load(m.group(1)) or {})
+        fm_cache[src] = (h, fm)
+        parsed[src], hashes[src] = (fm, m.group(2)), h
+    cache.fm = fm_cache  # deleted sources drop out
 
     urls = {src: jekyll_url(src, fm) for src, (fm, _) in parsed.items()}
     post_urls = {Path(s).stem: u for s, u in urls.items() if s.startswith("_posts/")}
@@ -789,170 +1006,48 @@ def main() -> None:
         for s_, u in urls.items()
         if not is_doc(s_) and u in {re.sub(r"\.html$", "", a) for a in alias_owner}
     }
+    skey = digest(json.dumps([sorted(urls.items()), sorted(alias_owner.items())]))
+    ctx = {
+        "env": env,
+        "site": site,
+        "urls": urls,
+        "post_urls": post_urls,
+        "alias_owner": alias_owner,
+        "doc_urls": doc_urls,
+    }
 
+    entries, cache.converted = {}, 0
     for src, (fm, body) in parsed.items():
         if taken[urls[src]] != src:
             continue
         if src in shadowed:
             report["shadowed_by_alias"] = report.get("shadowed_by_alias", []) + [src]
             continue
-        url = urls[src]
-        notes: dict = {}
-        try:
-            body = POST_URL.sub(lambda m: post_urls[m.group(1)], body)
-            base = jekyll_base(src, fm, url)
-            hand = TEMPLATE_PAGES.get(src)
-            is_template = src in TEMPLATE_PAGES or src.endswith(".html")
-            INCS.clear()
-            if hand in (None, "generated"):
-                page = {**fm, "url": url, "path": src, "title": fm.get("title")}
-                if is_doc(src):
-                    page["collection"] = LABELS.get(Path(src).parts[0])
-                body = jekyll_liquid.render(env, body, {"site": site, "page": page})
-            for inc in INCS:
-                notes.setdefault("includes", {}).setdefault(inc.name, 0)
-                notes["includes"][inc.name] += 1
-            if not is_template:
-                parts = []
-                for code, chunk in split_fences(body):
-                    if not code:
-                        chunk = kramdownisms(tighten_lists(chunk, notes), notes)
-                        chunk = absolutize(chunk, base, notes)
-                    parts.append(chunk)
-                for inc in INCS:
-                    # An include's Markdown links are relative to the page too.
-                    inc.text = absolutize(inc.text, base, notes)
-                body = place_tokens("\n".join(parts), INCS, notes)
-                seen: dict = {}
-                body = "\n".join(
-                    chunk if code else pin_heading_ids(chunk, seen)
-                    for code, chunk in split_fences(body)
-                )
-                if "{% endraw" in body or "{%- endraw" in body:
-                    raise ValueError("body contains a literal endraw tag")
-                body = "{% raw %}" + body + "{% endraw %}"
-        except Exception as e:  # noqa: BLE001 — collected and fails the build below
-            report["errors"][src] = str(e)
-            continue
-
-        kept = []
-        for a in aliases_of(fm):
-            if alias_owner.get(a) != src:
-                report["alias_dropped"].append(
-                    f"{a} on {src}: Jekyll wrote {alias_owner.get(a)}'s"
-                )
-            elif re.sub(r"\.html$", "", a) in doc_urls or a == url:
-                report["alias_dropped"].append(f"{a} on {src}: a document has this URL")
-            else:
-                kept.append(a)
-
-        # Jekyll's Utils.pluralized_array_from_hash: a singular `tag:` wins,
-        # a string is split on whitespace.
-        tag = fm.get("tag")
-        tags = (
-            (tag if isinstance(tag, list) else [tag]) if tag else (fm.get("tags") or [])
-        )
-        tags = tags.split() if isinstance(tags, str) else [str(t) for t in tags if t]
-        if is_doc(src):
-            for t in tags:
-                tag_docs.setdefault(t, set()).add(src)
-        layout = str(fm.get("layout") or "")
-        first_para = body.removeprefix("{% raw %}").strip().split("\n\n")[0]
-        extra = jsonable(dict(fm))
-        extra.update(
-            source_path=src,
-            permalink=url,
-            tags_list=tags,
-            # kramdown's id for a "### [title](url)" heading on listing pages.
-            title_slug=slugify(str(fm.get("title") or "")),
-            collection=LABELS.get(Path(src).parts[0]) if is_doc(src) else None,
-            # Jekyll's Document#<=>: date (front matter, else the filename's
-            # YYYY-M-D- prefix, else site.time, i.e. last), then path;
-            # collections iterate in label order (posts newest-first is the
-            # template's job).
-            sort_key=f"{LABELS.get(Path(src).parts[0], '~')}|{doc_date(fm, src)}|{src}",
-            jekyll_date=str(fm["date"]) if fm.get("date") else None,
-            # Jekyll pages (root files) have no excerpt; documents do.
-            excerpt=plain(first_para) if is_doc(src) and first_para else None,
-        )
-        for k in ("aliases", "redirect_from", "permalink_raw"):
-            extra.pop(k, None)
-        zfm = {"title": str(fm.get("title") or "")}
-        date = zola_date(fm, src)
-        if date:
-            zfm["date"] = date
-        for a in kept:
-            stubs[a] = url
-        if fm.get("redirect_to"):
-            # jekyll-redirect-from replaces the page with its stub.
-            stubs[url] = str(fm["redirect_to"])
-            report["pages"][src] = {"url": url, "redirect_to": stubs[url]}
-            continue
-        if tags:
-            zfm["taxonomies"] = {"tags": tags}
-
-        name = (
-            "home" if src == "index.md" else url.strip("/").replace("/", "__") or "root"
-        )
-        if is_template and hand in (None, "generated"):
-            # Jekyll ran no Markdown over these (.html, or pure-HTML .md), so
-            # they become templates and CommonMark never sees them.
-            body = TOKEN.sub(lambda m: INCS[int(m.group(1))].raw, body)
-            if "{% endraw" in body:
-                raise SystemExit(f"{src}: body contains a literal endraw tag")
-            (GENERATED / f"{name}.html").write_text("{% raw %}" + body + "{% endraw %}")
-            hand = f"generated/{name}.html"
-        zfm["template"] = hand or "content.html"
-        # The layout is Jekyll's own, rendered by Liquid with a marker where
-        # {{ content }} goes; finish.py puts Zola's HTML there. So head, menu,
-        # scripts and the annotate tool are never ported and cannot drift.
-        layout_file = REPO / "_layouts" / f"{layout}.html"
-        if layout and layout_file.exists():
-            page_ctx = {
-                **fm,
-                "url": url,
-                "path": src,
-                "title": fm.get("title"),
-                "tags": tags or None,
-                # Jekyll: the first block, rendered (head.html strip_html's it).
-                "excerpt": jekyll_liquid.MD.render(
-                    re.sub(r"\{#[^}]*\}", "", first_para)
-                )
-                + "\n"
-                if extra["excerpt"]
-                else None,
-                "date": extra["jekyll_date"],
-                "collection": extra["collection"],
-            }
-            env.on_include = None
-            try:
-                wrapped = jekyll_liquid.render(
-                    env,
-                    layout_file.read_text(),
-                    {"site": site, "page": page_ctx, "content": CONTENT_MARK},
-                )
-            finally:
-                env.on_include = on_include
-            (WRAP / f"{name}.html").write_text(wrapped)
-            wraps[url] = f"{name}.html"
-        if src == "index.md":
-            target = CONTENT / "_index.md"
-            zfm["sort_by"] = "none"
-            zfm.pop("date", None)
-            zfm.pop("taxonomies", None)
+        key = (skey, hashes[src])
+        old = cache.pages.get(src)
+        if old and old[0] == key and all(f.exists() for f in old[1]["files"]):
+            r = old[1]
         else:
-            target = CONTENT / ((url.strip("/").replace("/", "__") or "root") + ".md")
-            zfm["path"] = url
-        zfm["extra"] = jsonable(extra)
-        text = "" if is_template else body
-        target.write_text(
-            "---\n"
-            + yaml.safe_dump(zfm, allow_unicode=True, sort_keys=False)
-            + "---\n"
-            + text
-        )
-        notes.pop("base", None)
-        report["pages"][src] = {"url": url, **notes}
+            r = convert_page(src, fm, body, ctx)
+            cache.converted += 1
+        entries[src] = (key, r)
+        if "error" in r:
+            report["errors"][src] = r["error"]
+            continue
+        report["alias_dropped"] += r["alias_dropped"]
+        for t in r["doc_tags"]:
+            tag_docs.setdefault(t, set()).add(src)
+        stubs.update(r["stubs"])
+        if "wrap" in r:
+            wraps[urls[src]] = r["wrap"]
+        report["pages"][src] = r["report"]
+    cache.pages = entries
+
+    # Files no current page wrote (a deleted or renamed source) go.
+    owned = {f for _, r in entries.values() for f in r["files"]}
+    for old in [*CONTENT.glob("*.md"), *GENERATED.glob("*.html"), *WRAP.iterdir()]:
+        if old not in owned:
+            old.unlink()
 
     # finish.py reshapes Zola's /x/index.html output into Jekyll's /x.html
     # (so URLs, relative links and every tool that reads _site work unchanged)
@@ -1012,12 +1107,27 @@ def main() -> None:
         if os.environ.get("STRICT"):
             sys.exit(msg)
         print("WARNING: " + msg, file=sys.stderr)
+    if report["errors"]:
+        raise ConvertError(report)
+    return report
+
+
+class ConvertError(Exception):
+    def __init__(self, report: dict):
+        errs = report["errors"]
+        super().__init__(f"{len(errs)} pages failed to convert: {list(errs)[:5]}")
+        self.report = report
+
+
+def main() -> None:
+    try:
+        report = convert(Cache())
+    except ConvertError as e:
+        json.dump(e.report, sys.stdout, indent=1, default=str)
+        print()
+        sys.exit(str(e))
     json.dump(report, sys.stdout, indent=1, default=str)
     print()
-    if report["errors"]:
-        sys.exit(
-            f"{len(report['errors'])} pages failed to convert: {list(report['errors'])[:5]}"
-        )
 
 
 if __name__ == "__main__":

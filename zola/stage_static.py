@@ -39,7 +39,7 @@ def has_front_matter(p: Path) -> bool:
         return False
 
 
-def main() -> None:
+def stage() -> dict:
     cfg = yaml.safe_load((REPO / "_config.yml").read_text())
     excludes = list(cfg.get("exclude") or []) + ["zola"]
     includes = set(cfg.get("include") or [])
@@ -107,11 +107,9 @@ def main() -> None:
                 continue
             link(p, f"{coll}/{rel.as_posix()}")
 
-    json.dump(
-        {"static_files": copied, "root_pages": sorted(pages)}, sys.stdout, indent=1
-    )
-    print()
+    return {"static_files": copied, "root_pages": sorted(pages)}
 
 
 if __name__ == "__main__":
-    main()
+    json.dump(stage(), sys.stdout, indent=1)
+    print()
