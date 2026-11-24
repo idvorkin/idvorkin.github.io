@@ -8,6 +8,7 @@ title = ""
 description = "Imagination Executed Sustainably"
 compile_sass = false
 build_search_index = false
+generate_robots_txt = false
 
 # Root-level non-HTML outputs. Each name renders the template of the same name
 # (templates/feed.xml, templates/search.json, ...), which pull the full page

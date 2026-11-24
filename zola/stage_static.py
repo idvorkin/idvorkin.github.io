@@ -25,8 +25,9 @@ from pathlib import Path
 import yaml
 
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
-OUT = HERE / "static"
+# SRC: the Jekyll checkout to build; WORK: where generated files go.
+REPO = Path(os.environ.get("SRC") or HERE.parent).resolve()
+OUT = Path(os.environ.get("WORK") or HERE).resolve() / "static"
 COLLECTIONS = {"_d": "d", "_td": "td", "_ig66": "ig66", "_test": "test"}
 
 
@@ -85,9 +86,10 @@ def main() -> None:
         for n in filenames:
             rel = f"{rel_dir}/{n}" if rel_dir else n
             p = d / n
-            # File symlinks (CLAUDE.md -> AGENTS.md) are followed, as Jekyll
-            # does outside safe mode; directory symlinks are skipped above.
-            if skip_name(n) or excluded(rel) or (p.is_symlink() and not p.is_file()):
+            # Symlinks are skipped, files and directories alike: the
+            # github-pages gem builds in safe mode (CLAUDE.md -> AGENTS.md is
+            # not in _site).
+            if skip_name(n) or excluded(rel) or p.is_symlink():
                 continue
             if has_front_matter(p):
                 pages.append(rel)

@@ -1,6 +1,6 @@
 #!/usr/bin/env -S uv run --script
 # /// script
-# dependencies = ["pyyaml", "typer"]
+# dependencies = ["pyyaml", "python-liquid==3.0.0", "markdown-it-py"]
 # ///
 """Convert every Jekyll page into Zola content (bead blog-pzp).
 
@@ -14,8 +14,12 @@ Per page:
 - Front matter -> YAML front matter Zola accepts: title, path, date, aliases
   (from redirect_from), taxonomies.tags, template (from layout), and the whole
   original front matter under extra (keys with '-' get '_').
-- {% include x.html k="v" %} -> {{<x k="v" />}} (Tera 2 component call).
-- {% post_url %} -> the target's path; {% comment %} blocks dropped.
+- Liquid is rendered by a real Liquid engine (jekyll_liquid.py), as Jekyll
+  does before kramdown: includes, assigns, loops, site.data. A new or edited
+  _includes/ file needs no port work. Each include's output is normalized for
+  CommonMark (norm_include) and rides through the Markdown fixes as one
+  opaque token.
+- {% post_url %} -> the target's path.
 - Heading ids pinned to the kramdown/GFM slug ({#id}) so deep links survive.
 - Relative links resolved against the page's Jekyll URL, because /x and /x/
   resolve "y" differently.
@@ -25,7 +29,7 @@ Per page:
 - .html sources (no Markdown in Jekyll either) and pages listed in
   TEMPLATE_PAGES become templates, so CommonMark never sees their HTML.
 
-Anything Liquid left over fails the conversion, so nothing ships silently.
+A Liquid error fails the conversion, so nothing ships silently.
 """
 
 import datetime
@@ -38,13 +42,22 @@ from urllib.parse import urljoin
 
 import yaml
 
+import os
+
 HERE = Path(__file__).resolve().parent
-REPO = HERE.parent
-sys.path.insert(0, str(REPO / ".claude/skills/toc"))
+# SRC: the Jekyll checkout to build (any worktree or ref); defaults to the
+# one this toolchain sits in. The toolchain never needs to be on that branch.
+REPO = Path(os.environ.get("SRC") or HERE.parent).resolve()
+sys.path.insert(0, str(HERE))
+sys.path.insert(0, str(HERE.parent / ".claude/skills/toc"))
+import jekyll_liquid  # noqa: E402
 from toc import slugify as toc_slugify  # noqa: E402  the GFM slug rule kramdown's GFM parser uses
 
-CONTENT = HERE / "content"
-GENERATED = HERE / "templates" / "generated"
+# WORK: the Zola site dir being assembled (build.sh makes one per source
+# checkout, so one toolchain can build many worktrees at once).
+WORK = Path(os.environ.get("WORK") or HERE).resolve()
+CONTENT = WORK / "content"
+GENERATED = WORK / "templates" / "generated"
 COLLECTIONS = {"_d": "d", "_td": "td", "_ig66": "ig66", "_test": "test", "_posts": None}
 # Root files rendered by a template of their own name (feeds/json) — skipped here.
 FEED_FILES = {
@@ -66,18 +79,6 @@ TEMPLATE_PAGES = {
     "_d/weeks.md": "pages/weeks.html",
     "_ig66/index.md": "pages/ig66_index.html",
 }
-# Pure-HTML pages with one small Liquid loop: fix the loop, keep the page.
-FEATURED_LOOP = (
-    r"\{%\s*for url in site\.data\.featured\.featured_posts\s*%\}(.*?)\{%\s*unless forloop\.last\s*%\},\{%\s*endunless\s*%\}(.*?)\{%\s*endfor\s*%\}",
-    r'{% set featured = load_data(path="data/featured.yml") %}{% for url in featured.featured_posts %}\1{% if not loop.last %},{% endif %}\2{% endfor %}',
-)
-LIQUID_FIXES = {
-    "index.md": [FEATURED_LOOP],
-    "featured.html": [FEATURED_LOOP],
-    "linkedin.html": [
-        (r"\{\{\s*site\.google_analytics\s*\}\}", "{{ config.extra.google_analytics }}")
-    ],
-}
 LAYOUTS = {"post": "post", "page": "page"}
 LABELS = {
     "_d": "d",
@@ -88,62 +89,21 @@ LABELS = {
 }  # anything else -> empty
 
 FM = re.compile(r"\A---\s*\n(.*?)\n---[ \t]*\n?(.*)\Z", re.S)
-INCLUDE = re.compile(
-    r"\{%-?\s*include\s+([\w.-]+?)(?:\.html|\.md)?\s+(.*?)\s*-?%\}|\{%-?\s*include\s+([\w.-]+?)(?:\.html|\.md)?\s*-?%\}",
-    re.S,
-)
-# Jekyll's include arg syntax: quoted values allow backslash escapes.
-ARG = re.compile(
-    r"""([\w-]+)\s*=\s*(?:"((?:[^"\\]|\\.)*)"|'((?:[^'\\]|\\.)*)'|(\S+))""", re.S
-)
 COMMENT = re.compile(r"\{%-?\s*comment\s*-?%\}.*?\{%-?\s*endcomment\s*-?%\}", re.S)
 POST_URL = re.compile(r"\{%-?\s*post_url\s+([\w./-]+)\s*-?%\}")
-# Includes whose output needs page state Jekyll handed them implicitly.
-# Include arguments that are URLs, resolved like the page's own links.
-URL_ARGS = {
-    "summarize_page": ("src",),
-    "image_float_right": ("link",),
-    "quote": ("url",),
-    "ai_voice": ("link",),
-}
-# (Components that need page state declare an @page parameter instead.)
-PAGE_ARGS: dict[str, dict[str, str]] = {}
-# Liquid emitted these assets once per page via a global flag; components are
-# stateless, so every call after the page's first gets assets=false.
-ONCE_PER_PAGE = {"orchestrator_viewer", "orchestrator_stack"}
 # Layout partials some template pages include directly.
-PARTIALS = {
-    "head",
-    "site_menu",
-    "toc",
-    "scripts",
-    "tags",
-    "pagefind_attrs",
-    "annotate",
-    "mermaid",
+PARTIAL_FILES = {
+    "head.html",
+    "site-menu.html",
+    "toc.html",
+    "scripts.html",
+    "tags.html",
+    "pagefind-attrs.html",
+    "annotate.html",
+    "mermaid.html",
 }
-
-
-def component_params() -> dict[str, set[str]]:
-    """Declared parameters per component; Liquid ignored unknown include args,
-    a Tera 2 component call errors on them, so the converter drops (and logs)
-    any argument the component does not declare."""
-    out = {}
-    for f in (HERE / "templates" / "components").glob("*.html"):
-        m = re.search(
-            r"\{%-?\s*component\s+(\w+)\((.*?)\)\s*-?%\}", f.read_text(), re.S
-        )
-        if m:
-            out[m.group(1)] = {
-                a.split("=")[0].strip()
-                for a in m.group(2).split(",")
-                if a.strip() and not a.strip().startswith("@")
-            }
-    return out
-
-
-PARAMS = component_params()
-DEN = {str(e["num"]): e for e in json.loads((REPO / "_data/den.json").read_text())}
+# The current page's include outputs, indexed by token number.
+INCS: list = []
 
 
 def slugify(text: str, seen: dict | None = None) -> str:
@@ -157,12 +117,9 @@ def slugify(text: str, seen: dict | None = None) -> str:
     return toc_slugify(text, seen)
 
 
-def tera_str(v: str) -> str:
-    """Tera string literals have no escapes: pick a delimiter the value lacks."""
-    for q in ('"', "'", "`"):
-        if q not in v:
-            return f"{q}{v}{q}"
-    raise ValueError(f"value contains all three quote kinds: {v[:60]}")
+def is_doc(src: str) -> bool:
+    """A collection document, as opposed to a Jekyll page (root or nested)."""
+    return Path(src).parts[0] in COLLECTIONS
 
 
 def jekyll_url(src: str, fm: dict) -> str:
@@ -198,76 +155,6 @@ def jekyll_base(src: str, fm: dict, url: str) -> str:
     return url
 
 
-def include_to_component(m: re.Match, notes: dict) -> str:
-    raw_name = m.group(1) or m.group(3)
-    argstr = m.group(2) or ""
-    name = raw_name.replace("-", "_")
-    if name in PARTIALS:
-        return f'{{% include "partials/{name}.html" %}}'
-    args = []
-    if name not in PARAMS:
-        raise ValueError(f"no component for include {raw_name}")
-    for k, dq, sq, bare in ARG.findall(argstr):
-        k = k.replace("-", "_")
-        if k not in PARAMS[name]:
-            notes.setdefault("dropped_args", []).append(f"{name}.{k}")
-            continue
-        if bare:
-            if bare.startswith("page."):
-                args.append(f"{k}={{page.extra.{bare[5:].replace('-', '_')}}}")
-                continue
-            if not re.fullmatch(r"[\w./:-]+", bare):
-                raise ValueError(f"include {raw_name}: bare arg {k}={bare}")
-            val = bare
-        else:
-            val = dq if dq or not sq else sq
-            val = val.replace('\\"', '"').replace("\\'", "'")
-        if k in URL_ARGS.get(name, ()) and not re.match(
-            r"[a-z][a-z0-9+.-]*:|/|#", val, re.I
-        ):
-            new = urljoin("https://idvork.in" + notes["base"], val).removeprefix(
-                "https://idvork.in"
-            )
-            notes.setdefault("relative_links", []).append(f"{val} -> {new}")
-            val = new
-        args.append(f"{k}={tera_str(val)}")
-    for k, expr in PAGE_ARGS.get(name, {}).items():
-        args.append(f"{k}={expr}")
-    if name in ONCE_PER_PAGE:
-        if notes.get("assets_done"):
-            args.append("assets={false}")
-        notes["assets_done"] = True
-    if name == "den_strip":
-        kv = dict((k, dq or sq or bare) for k, dq, sq, bare in ARG.findall(argstr))
-        title = DEN.get(kv["num"], {}).get("title") or kv.get("title", "")
-        args.append(f"anchor={tera_str(slugify('#' + kv['num'] + ' — ' + title))}")
-    notes.setdefault("includes", {}).setdefault(name, 0)
-    notes["includes"][name] += 1
-    return "{{<" + " ".join([name, *args]) + " />}}"
-
-
-def place(m: re.Match, body: str, call: str, notes: dict) -> str:
-    """Keep a component's multi-line output inside the Markdown block it sits in.
-
-    kramdown kept an include's output inside a list item or a paragraph;
-    CommonMark lets a flattened HTML line at column 0 open a new HTML block
-    that swallows everything to the next blank line. So a call indented under
-    a list item gets its output indented to match, and a call in the middle of
-    a line gets its output joined onto that line.
-    """
-    if call.startswith("{%"):
-        return call
-    line_start = body.rfind("\n", 0, m.start()) + 1
-    prefix = body[line_start : m.start()]
-    if not prefix:
-        return call
-    if not prefix.strip():
-        notes["indented_calls"] = notes.get("indented_calls", 0) + 1
-        return f"{{% set _inc %}}{call}{{% endset %}}{{{{ _inc | indent(width={len(prefix)}) }}}}"
-    notes["inline_calls"] = notes.get("inline_calls", 0) + 1
-    return f'{{% set _inc %}}{call}{{% endset %}}{{{{ _inc | replace(from="\n", to=" ") }}}}'
-
-
 def split_fences(body: str):
     """Yield (is_code, chunk) so rewrites skip fenced and indented code."""
     out, buf, fence = [], [], None
@@ -291,7 +178,18 @@ def split_fences(body: str):
 def pin_heading_ids(text: str, seen: dict) -> str:
     lines = text.split("\n")
     out = []
+    raw = None  # inside <script>/<style>/<pre>: a "# x" line is not a heading
     for i, line in enumerate(lines):
+        if raw:
+            if f"</{raw}>" in line:
+                raw = None
+            out.append(line)
+            continue
+        r = re.match(r"\s*<(script|style|pre|textarea)\b", line)
+        if r and f"</{r.group(1)}>" not in line:
+            raw = r.group(1)
+            out.append(line)
+            continue
         m = re.match(r"^(#{1,6})\s+(.*?)(?:\s+#+)?\s*$", line)
         if m and not re.search(r"\{#[^}]*\}\s*$", m.group(2)):
             line = f"{m.group(1)} {m.group(2)} {{#{slugify(m.group(2), seen)}}}"
@@ -482,7 +380,7 @@ def kramdownisms(text: str, notes: dict) -> str:
         nxt = lines[i + 1] if i + 1 < len(lines) else ""
         call = CALL_LINE.fullmatch(line)
         if call and nxt.strip() and not CALL_LINE.fullmatch(nxt):
-            if call.group(1) in INLINE_COMPONENTS and not (
+            if INCS[int(call.group(1))].inline and not (
                 MD_START.match(nxt) or nxt.lstrip().startswith("<")
             ):
                 # An <img> alone on a line opens a CommonMark HTML block that
@@ -491,7 +389,7 @@ def kramdownisms(text: str, notes: dict) -> str:
                 lines[i + 1] = line.rstrip() + " " + nxt
                 notes["joined_img_calls"] = notes.get("joined_img_calls", 0) + 1
                 continue
-            if call.group(1) not in MARKDOWN_COMPONENTS:
+            if not INCS[int(call.group(1))].markdown:
                 out += [line, ""]
                 notes["blank_after_call"] = notes.get("blank_after_call", 0) + 1
                 continue
@@ -512,25 +410,134 @@ def kramdownisms(text: str, notes: dict) -> str:
     return "\n".join(out)
 
 
-CALL_LINE = re.compile(r"\{\{<(\w+)\b.*/>\}\}\s*")
-# Components whose whole output is one inline <img> (float-right pictures).
-INLINE_COMPONENTS = {
-    "local_image_float_right",
-    "blob_image_float_right",
-    "image_float_right",
-    "repo_image_float_right",
-    "ipaste_image_float_right",
-    "blob_image_float_right_w25",
-    "mpl_render_float_right",
-}
-# Components that emit Markdown, which flows into the paragraph as kramdown did.
-MARKDOWN_COMPONENTS = {
-    "blob_image",
-    "repo_image",
-    "mpl_render",
-    "this_is_part_of_saas",
-    "link_blog_montage",
-}
+# ---- includes: Liquid output -> CommonMark-safe, carried as opaque tokens ----
+
+BLOCK_TAG = re.compile(
+    r"<(div|p|details|table|figure|section|center|aside|nav|blockquote|ul|ol|dl|form|iframe|script|style|svg|pre|template|dialog|button|video|canvas|h[1-6])\b"
+)
+INLINE_TAG = re.compile(r"<(img|a|span|em|strong|small|code|sup|sub)\b")
+TOKEN = re.compile(r"\{\{<inc (\d+) />\}\}")
+CALL_LINE = re.compile(r"\{\{<inc (\d+) />\}\}\s*")
+
+
+def flatten(src: str) -> str:
+    """One HTML block that survives CommonMark.
+
+    kramdown reads an HTML block to its matching close tag; CommonMark ends it
+    at the first blank line, and 4-space-indented lines after that become an
+    escaped code block. So: dedent every line and drop blank lines, except
+    inside <pre>/<textarea>, whose content is kept verbatim.
+    """
+    out, raw = [], None
+    for line in src.split("\n"):
+        t = line.strip()
+        m = re.match(r"<(style|script|pre|textarea)\b", t)
+        if m and not re.search(rf"</{m.group(1)}>", t):
+            raw = m.group(1)
+            if raw in ("pre", "textarea") and out and out[-1].strip():
+                out.append("")
+            out.append(t)
+            continue
+        if raw:
+            if t or raw in ("pre", "textarea"):
+                out.append(line)
+            if re.search(rf"</{raw}>", t):
+                raw = None
+            continue
+        if t:
+            out.append(t)
+    return "\n".join(out)
+
+
+class Inc:
+    """One include call's output, normalized.
+
+    An include can emit Markdown around its HTML (den_strip's heading and
+    note, the image includes' ![]()), so the output is split the way kramdown
+    read it: an HTML block runs from a block-level open tag at the start of a
+    line to its matching close tag and is flattened; the lines between blocks
+    stay Markdown, with a blank line on each side of a block.
+    """
+
+    def __init__(self, name: str, text: str):
+        self.name = name
+        lines = text.strip("\n").split("\n")
+        parts: list[tuple[bool, str]] = []  # (is_html, text)
+        i = 0
+        while i < len(lines):
+            m = BLOCK_TAG.match(lines[i].lstrip())
+            if not m:
+                parts.append((False, lines[i]))
+                i += 1
+                continue
+            tag, depth, j = m.group(1), 0, i
+            while j < len(lines):
+                depth += len(re.findall(rf"<{tag}\b", lines[j])) - len(
+                    re.findall(rf"</{tag}>", lines[j])
+                )
+                if depth <= 0:
+                    break
+                j += 1
+            parts.append((True, flatten("\n".join(lines[i : j + 1]))))
+            i = j + 1
+        out: list[str] = []
+        for k, (is_html, t) in enumerate(parts):
+            if is_html:
+                if out and out[-1].strip() and not parts[k - 1][0]:
+                    out.append("")
+                out.append(t)
+                if k + 1 < len(parts) and parts[k + 1][1].strip():
+                    out.append("")
+            else:
+                out.append(t.strip() if INLINE_TAG.match(t.lstrip()) else t)
+        self.text = re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip("\n")
+        one_line = "\n" not in self.text
+        # A lone inline element (the float-right images): kramdown kept it in
+        # the paragraph; alone on a line CommonMark opens an HTML block.
+        self.inline = one_line and bool(INLINE_TAG.match(self.text))
+        # Ends in Markdown: flows into what follows, as kramdown read it.
+        self.markdown = bool(parts) and not parts[-1][0] and not self.inline
+
+
+def place_tokens(body: str, incs: list[Inc], notes: dict) -> str:
+    """Put each include's output back where its token sits.
+
+    kramdown kept an include's output inside the list item or paragraph it was
+    called from. So a token indented under a list item gets its output
+    indented to match, and a token in the middle of a line gets its output
+    joined onto that line.
+    """
+
+    def one(m: re.Match) -> str:
+        text = incs[int(m.group(1))].text
+        line_start = body.rfind("\n", 0, m.start()) + 1
+        prefix = body[line_start : m.start()]
+        if not prefix:
+            return text
+        if not prefix.strip():
+            notes["indented_calls"] = notes.get("indented_calls", 0) + 1
+            return text.replace("\n", "\n" + " " * len(prefix))
+        notes["inline_calls"] = notes.get("inline_calls", 0) + 1
+        return text.replace("\n", " ")
+
+    return TOKEN.sub(one, body)
+
+
+def site_context() -> dict:
+    site = yaml.safe_load((REPO / "_config.yml").read_text()) or {}
+    data = {}
+    for f in sorted((REPO / "_data").iterdir()):
+        if f.suffix in (".yml", ".yaml"):
+            data[f.stem] = yaml.safe_load(f.read_text())
+        elif f.suffix == ".json":
+            data[f.stem] = json.loads(f.read_text())
+    # _plugins/git_data_generator.rb writes site.data.git; build.sh writes ours.
+    git = WORK / "data" / "git.json"
+    if git.exists():
+        data["git"] = json.loads(git.read_text())
+    site["data"] = data
+    site["github"] = {}
+    return site
 
 
 LINK_MD = re.compile(r"(\]\()(\s*<?)([^)\s>]+)")
@@ -646,7 +653,7 @@ def sources() -> list[str]:
             ):
                 if p.read_bytes().startswith(b"---"):
                     out.append(rel.as_posix())
-    staged = json.loads((HERE / "static-report.json").read_text())["root_pages"]
+    staged = json.loads((WORK / "static-report.json").read_text())["root_pages"]
     out += [p for p in staged if p not in FEED_FILES]
     return out
 
@@ -657,6 +664,18 @@ def main() -> None:
     for old in list(CONTENT.glob("*.md")) + list(GENERATED.glob("*.html")):
         old.unlink()
 
+    site = site_context()
+    env = jekyll_liquid.make_env(REPO, site)
+    env.passthrough = {
+        n: f'{{% endraw %}}{{% include "partials/{n.split(".")[0].replace("-", "_")}.html" %}}{{% raw %}}'
+        for n in PARTIAL_FILES
+    }
+
+    def on_include(name: str, params: dict, text: str) -> str:
+        INCS.append(Inc(Path(name).stem.replace("-", "_"), text))
+        return f"{{{{<inc {len(INCS) - 1} />}}}}"
+
+    env.on_include = on_include
     srcs = sources()
     parsed = {}
     for src in srcs:
@@ -669,6 +688,7 @@ def main() -> None:
     post_urls = {Path(s).stem: u for s, u in urls.items() if s.startswith("_posts/")}
     report = {"pages": {}, "collisions": [], "alias_dropped": [], "errors": {}}
     tag_docs: dict[str, set] = {}
+    stubs: dict[str, str] = {}  # alias path -> the page URL it redirects to
     taken: dict[str, str] = {}
     for src, url in urls.items():
         if url in taken:
@@ -681,19 +701,18 @@ def main() -> None:
     # URL wins. So an alias beats a root page, a document beats an alias, and
     # of two pages claiming one alias the later one wins.
     def jekyll_order(src: str):
-        top = Path(src).parts[0] if len(Path(src).parts) > 1 else ""
+        top = Path(src).parts[0] if is_doc(src) else ""
         return (["", "_posts", "_d", "_td", "_ig66", "_test"].index(top), src)
 
     alias_owner: dict[str, str] = {}
     for src in sorted(parsed, key=jekyll_order):
         for a in aliases_of(parsed[src][0]):
             alias_owner[a] = src
-    doc_urls = {u for s_, u in urls.items() if len(Path(s_).parts) > 1}
+    doc_urls = {u for s_, u in urls.items() if is_doc(s_)}
     shadowed = {
         s_
         for s_, u in urls.items()
-        if len(Path(s_).parts) == 1
-        and u in {re.sub(r"\.html$", "", a) for a in alias_owner}
+        if not is_doc(s_) and u in {re.sub(r"\.html$", "", a) for a in alias_owner}
     }
 
     for src, (fm, body) in parsed.items():
@@ -705,30 +724,35 @@ def main() -> None:
         url = urls[src]
         notes: dict = {}
         try:
-            body = COMMENT.sub("", body)
             body = POST_URL.sub(lambda m: post_urls[m.group(1)], body)
-            notes["base"] = jekyll_base(src, fm, url)
-            body = INCLUDE.sub(
-                lambda m: place(m, body, include_to_component(m, notes), notes), body
-            )
+            base = jekyll_base(src, fm, url)
+            hand = TEMPLATE_PAGES.get(src)
             is_template = src in TEMPLATE_PAGES or src.endswith(".html")
+            INCS.clear()
+            if hand in (None, "generated"):
+                page = {**fm, "url": url, "path": src, "title": fm.get("title")}
+                if is_doc(src):
+                    page["collection"] = LABELS.get(Path(src).parts[0])
+                body = jekyll_liquid.render(env, body, {"site": site, "page": page})
+            for inc in INCS:
+                notes.setdefault("includes", {}).setdefault(inc.name, 0)
+                notes["includes"][inc.name] += 1
             if not is_template:
-                seen: dict = {}
                 parts = []
                 for code, chunk in split_fences(body):
                     if not code:
                         chunk = kramdownisms(tighten_lists(chunk, notes), notes)
-                        chunk = absolutize(chunk, jekyll_base(src, fm, url), notes)
-                        chunk = pin_heading_ids(chunk, seen)
+                        chunk = absolutize(chunk, base, notes)
                     parts.append(chunk)
-                body = "\n".join(parts)
-                left = re.findall(
-                    r"\{%(?!\s*-?\s*(?:raw|endraw|set _inc|endset)\b).*?%\}|\{\{(?!<|\s*_inc\b).*?\}\}",
-                    body,
-                    flags=re.S,
+                body = place_tokens("\n".join(parts), INCS, notes)
+                seen: dict = {}
+                body = "\n".join(
+                    chunk if code else pin_heading_ids(chunk, seen)
+                    for code, chunk in split_fences(body)
                 )
-                if left:
-                    raise ValueError(f"unconverted liquid {left[:3]}")
+                if "{% endraw" in body or "{%- endraw" in body:
+                    raise ValueError("body contains a literal endraw tag")
+                body = "{% raw %}" + body + "{% endraw %}"
         except Exception as e:  # noqa: BLE001 — collected and fails the build below
             report["errors"][src] = str(e)
             continue
@@ -751,7 +775,7 @@ def main() -> None:
             (tag if isinstance(tag, list) else [tag]) if tag else (fm.get("tags") or [])
         )
         tags = tags.split() if isinstance(tags, str) else [str(t) for t in tags if t]
-        if len(Path(src).parts) > 1:
+        if is_doc(src):
             for t in tags:
                 tag_docs.setdefault(t, set()).add(src)
         layout = str(fm.get("layout") or "")
@@ -763,9 +787,7 @@ def main() -> None:
             # kramdown's id for a "### [title](url)" heading on listing pages.
             title_slug=slugify(str(fm.get("title") or "")),
             layout=LAYOUTS.get(layout, "empty"),
-            collection=LABELS.get(Path(src).parts[0])
-            if len(Path(src).parts) > 1
-            else None,
+            collection=LABELS.get(Path(src).parts[0]) if is_doc(src) else None,
             # Jekyll's Document#<=>: date (front matter, else the filename's
             # YYYY-M-D- prefix, else site.time, i.e. last), then path;
             # collections iterate in label order (posts newest-first is the
@@ -774,7 +796,7 @@ def main() -> None:
             jekyll_date=str(fm["date"]) if fm.get("date") else None,
             # Jekyll pages (root files) have no excerpt; documents do.
             excerpt=plain(body.strip().split("\n\n")[0])
-            if len(Path(src).parts) > 1 and body.strip()
+            if is_doc(src) and body.strip()
             else None,
         )
         for k in ("aliases", "redirect_from", "permalink_raw"):
@@ -783,19 +805,19 @@ def main() -> None:
         date = zola_date(fm, src)
         if date:
             zfm["date"] = date
-        if kept:
-            zfm["aliases"] = kept
+        for a in kept:
+            stubs[a] = url
         if tags:
             zfm["taxonomies"] = {"tags": tags}
 
-        hand = TEMPLATE_PAGES.get(src)
         if is_template and hand in (None, "generated"):
             # Jekyll ran no Markdown over these (.html, or pure-HTML .md), so
             # they become templates and CommonMark never sees them.
-            for pat, repl in LIQUID_FIXES.get(src, []):
-                body, n = re.subn(pat, repl, body, flags=re.S)
-                if not n:
-                    raise SystemExit(f"{src}: Liquid fix no longer matches: {pat[:50]}")
+            body = (
+                "{% raw %}"
+                + TOKEN.sub(lambda m: INCS[int(m.group(1))].text, body)
+                + "{% endraw %}"
+            )
             name = "home" if src == "index.md" else url.strip("/").replace("/", "__")
             (GENERATED / f"{name}.html").write_text(
                 f'{{% extends "layouts/{extra["layout"]}.html" %}}\n'
@@ -824,6 +846,29 @@ def main() -> None:
         notes.pop("base", None)
         report["pages"][src] = {"url": url, **notes}
 
+    # finish.py reshapes Zola's /x/index.html output into Jekyll's /x.html
+    # (so URLs, relative links and every tool that reads _site work unchanged)
+    # and writes jekyll-redirect-from's stubs.
+    flat = [
+        u
+        for s_, u in urls.items()
+        if s_ in report["pages"]
+        and u != "/"
+        and not jekyll_base(s_, parsed[s_][0], u).endswith("/")
+    ]
+    dir_alias = {
+        "/" + str(x).strip().strip("/")
+        for fm_, _ in parsed.values()
+        for x in (
+            [fm_.get("redirect_from")]
+            if isinstance(fm_.get("redirect_from"), str)
+            else fm_.get("redirect_from") or []
+        )
+        if str(x).strip().endswith("/")
+    }
+    (WORK / "finish.json").write_text(
+        json.dumps({"flat": flat, "stubs": stubs, "dir_stubs": sorted(dir_alias)})
+    )
     # jekyll-redirect-from's /redirects.json: every redirect, source -> target
     # (Jekyll URL shape, as the old site published it).
     redirects = {}
@@ -836,11 +881,11 @@ def main() -> None:
             redirects[urls[src_]] = (
                 t if t.startswith("http") else "https://idvork.in" + t
             )
-    (HERE / "static" / "redirects.json").write_text(json.dumps(redirects))
+    (WORK / "static" / "redirects.json").write_text(json.dumps(redirects))
     report["redirects"] = len(redirects)
     # /tags lists every tag a collection document uses, sorted like Liquid's
     # `sort` (case-sensitive), with its document count.
-    (HERE / "data" / "tags.json").write_text(
+    (WORK / "data" / "tags.json").write_text(
         json.dumps([{"tag": t, "count": len(tag_docs[t])} for t in sorted(tag_docs)])
     )
     json.dump(report, sys.stdout, indent=1, default=str)

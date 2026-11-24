@@ -53,7 +53,7 @@
 {%- endif %}
 <meta property="og:image" content="{{ image_url }}" />
 
-<link rel="canonical" href="{{ p.permalink }}" />
+<link rel="canonical" href="{{ config.base_url }}{{ x.permalink or '/' }}" />
 <link
   href="{{ config.base_url }}/feed.xml"
   type="application/atom+xml"
