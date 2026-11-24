@@ -28,7 +28,7 @@ build() { mkdir -p "$WORK"; touch "$stamp.next"; "$HERE/build.sh" | tail -1 && m
 build
 python3 "$HERE/serve.py" "$OUT" "$PORT" &
 server=$!
-trap 'kill $server 2>/dev/null' EXIT
+trap 'kill $server 2>/dev/null; exit' EXIT INT TERM
 echo "preview: $BASE_URL  (pid $$, server $server, source $SRC)"
 # ponytail: polls mtimes once a second and rebuilds everything (~3 s). The
 # upgrade is inotify plus converting only the changed file; no live reload yet.
