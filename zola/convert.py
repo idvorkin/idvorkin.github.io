@@ -35,6 +35,7 @@ A Liquid error fails the conversion, so nothing ships silently.
 import datetime
 import html
 import json
+import shutil
 import re
 import sys
 from pathlib import Path
@@ -58,6 +59,8 @@ from toc import slugify as toc_slugify  # noqa: E402  the GFM slug rule kramdown
 WORK = Path(os.environ.get("WORK") or HERE).resolve()
 CONTENT = WORK / "content"
 GENERATED = WORK / "templates" / "generated"
+WRAP = WORK / "wrap"
+CONTENT_MARK = "<!--zola-port:content-->"
 COLLECTIONS = {"_d": "d", "_td": "td", "_ig66": "ig66", "_test": "test", "_posts": None}
 # Root files rendered by a template of their own name (feeds/json) — skipped here.
 FEED_FILES = {
@@ -79,7 +82,6 @@ TEMPLATE_PAGES = {
     "_d/weeks.md": "pages/weeks.html",
     "_ig66/index.md": "pages/ig66_index.html",
 }
-LAYOUTS = {"post": "post", "page": "page"}
 LABELS = {
     "_d": "d",
     "_td": "td",
@@ -91,17 +93,6 @@ LABELS = {
 FM = re.compile(r"\A---\s*\n(.*?)\n---[ \t]*\n?(.*)\Z", re.S)
 COMMENT = re.compile(r"\{%-?\s*comment\s*-?%\}.*?\{%-?\s*endcomment\s*-?%\}", re.S)
 POST_URL = re.compile(r"\{%-?\s*post_url\s+([\w./-]+)\s*-?%\}")
-# Layout partials some template pages include directly.
-PARTIAL_FILES = {
-    "head.html",
-    "site-menu.html",
-    "toc.html",
-    "scripts.html",
-    "tags.html",
-    "pagefind-attrs.html",
-    "annotate.html",
-    "mermaid.html",
-}
 # The current page's include outputs, indexed by token number.
 INCS: list = []
 
@@ -461,6 +452,7 @@ class Inc:
 
     def __init__(self, name: str, text: str):
         self.name = name
+        self.raw = text
         lines = text.strip("\n").split("\n")
         parts: list[tuple[bool, str]] = []  # (is_html, text)
         i = 0
@@ -661,15 +653,14 @@ def sources() -> list[str]:
 def main() -> None:
     CONTENT.mkdir(exist_ok=True)
     GENERATED.mkdir(parents=True, exist_ok=True)
+    if WRAP.exists():
+        shutil.rmtree(WRAP)
+    WRAP.mkdir()
     for old in list(CONTENT.glob("*.md")) + list(GENERATED.glob("*.html")):
         old.unlink()
 
     site = site_context()
     env = jekyll_liquid.make_env(REPO, site)
-    env.passthrough = {
-        n: f'{{% endraw %}}{{% include "partials/{n.split(".")[0].replace("-", "_")}.html" %}}{{% raw %}}'
-        for n in PARTIAL_FILES
-    }
 
     def on_include(name: str, params: dict, text: str) -> str:
         INCS.append(Inc(Path(name).stem.replace("-", "_"), text))
@@ -689,6 +680,7 @@ def main() -> None:
     report = {"pages": {}, "collisions": [], "alias_dropped": [], "errors": {}}
     tag_docs: dict[str, set] = {}
     stubs: dict[str, str] = {}  # alias path -> the page URL it redirects to
+    wraps: dict[str, str] = {}  # page URL -> its rendered layout in WORK/wrap
     taken: dict[str, str] = {}
     for src, url in urls.items():
         if url in taken:
@@ -744,6 +736,9 @@ def main() -> None:
                         chunk = kramdownisms(tighten_lists(chunk, notes), notes)
                         chunk = absolutize(chunk, base, notes)
                     parts.append(chunk)
+                for inc in INCS:
+                    # An include's Markdown links are relative to the page too.
+                    inc.text = absolutize(inc.text, base, notes)
                 body = place_tokens("\n".join(parts), INCS, notes)
                 seen: dict = {}
                 body = "\n".join(
@@ -779,6 +774,7 @@ def main() -> None:
             for t in tags:
                 tag_docs.setdefault(t, set()).add(src)
         layout = str(fm.get("layout") or "")
+        first_para = body.removeprefix("{% raw %}").strip().split("\n\n")[0]
         extra = jsonable(dict(fm))
         extra.update(
             source_path=src,
@@ -786,7 +782,6 @@ def main() -> None:
             tags_list=tags,
             # kramdown's id for a "### [title](url)" heading on listing pages.
             title_slug=slugify(str(fm.get("title") or "")),
-            layout=LAYOUTS.get(layout, "empty"),
             collection=LABELS.get(Path(src).parts[0]) if is_doc(src) else None,
             # Jekyll's Document#<=>: date (front matter, else the filename's
             # YYYY-M-D- prefix, else site.time, i.e. last), then path;
@@ -795,9 +790,7 @@ def main() -> None:
             sort_key=f"{LABELS.get(Path(src).parts[0], '~')}|{doc_date(fm, src)}|{src}",
             jekyll_date=str(fm["date"]) if fm.get("date") else None,
             # Jekyll pages (root files) have no excerpt; documents do.
-            excerpt=plain(body.strip().split("\n\n")[0])
-            if is_doc(src) and body.strip()
-            else None,
+            excerpt=plain(first_para) if is_doc(src) and first_para else None,
         )
         for k in ("aliases", "redirect_from", "permalink_raw"):
             extra.pop(k, None)
@@ -810,21 +803,49 @@ def main() -> None:
         if tags:
             zfm["taxonomies"] = {"tags": tags}
 
+        name = (
+            "home" if src == "index.md" else url.strip("/").replace("/", "__") or "root"
+        )
         if is_template and hand in (None, "generated"):
             # Jekyll ran no Markdown over these (.html, or pure-HTML .md), so
             # they become templates and CommonMark never sees them.
-            body = (
-                "{% raw %}"
-                + TOKEN.sub(lambda m: INCS[int(m.group(1))].text, body)
-                + "{% endraw %}"
-            )
-            name = "home" if src == "index.md" else url.strip("/").replace("/", "__")
-            (GENERATED / f"{name}.html").write_text(
-                f'{{% extends "layouts/{extra["layout"]}.html" %}}\n'
-                f"{{% block content %}}{body}{{% endblock content %}}\n"
-            )
+            body = TOKEN.sub(lambda m: INCS[int(m.group(1))].raw, body)
+            if "{% endraw" in body:
+                raise SystemExit(f"{src}: body contains a literal endraw tag")
+            (GENERATED / f"{name}.html").write_text("{% raw %}" + body + "{% endraw %}")
             hand = f"generated/{name}.html"
-        zfm["template"] = hand or f"{extra['layout']}.html"
+        zfm["template"] = hand or "content.html"
+        # The layout is Jekyll's own, rendered by Liquid with a marker where
+        # {{ content }} goes; finish.py puts Zola's HTML there. So head, menu,
+        # scripts and the annotate tool are never ported and cannot drift.
+        layout_file = REPO / "_layouts" / f"{layout}.html"
+        if layout and layout_file.exists() and not fm.get("redirect_to"):
+            page_ctx = {
+                **fm,
+                "url": url,
+                "path": src,
+                "title": fm.get("title"),
+                "tags": tags or None,
+                # Jekyll: the first block, rendered (head.html strip_html's it).
+                "excerpt": jekyll_liquid.MD.render(
+                    re.sub(r"\{#[^}]*\}", "", first_para)
+                )
+                if extra["excerpt"]
+                else None,
+                "date": extra["jekyll_date"],
+                "collection": extra["collection"],
+            }
+            env.on_include = None
+            try:
+                wrapped = jekyll_liquid.render(
+                    env,
+                    layout_file.read_text(),
+                    {"site": site, "page": page_ctx, "content": CONTENT_MARK},
+                )
+            finally:
+                env.on_include = on_include
+            (WRAP / f"{name}.html").write_text(wrapped)
+            wraps[url] = f"{name}.html"
         if fm.get("redirect_to"):
             zfm["template"] = "redirect.html"
         if src == "index.md":
@@ -867,7 +888,15 @@ def main() -> None:
         if str(x).strip().endswith("/")
     }
     (WORK / "finish.json").write_text(
-        json.dumps({"flat": flat, "stubs": stubs, "dir_stubs": sorted(dir_alias)})
+        json.dumps(
+            {
+                "flat": flat,
+                "stubs": stubs,
+                "dir_stubs": sorted(dir_alias),
+                "wraps": wraps,
+                "mark": CONTENT_MARK,
+            }
+        )
     )
     # jekyll-redirect-from's /redirects.json: every redirect, source -> target
     # (Jekyll URL shape, as the old site published it).

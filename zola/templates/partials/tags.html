@@ -1,9 +1,0 @@
-{%- set tags = p.taxonomies?.tags or [] %}{% for tag in tags %}
-<a
-  href="{{ config.base_url }}/tags#{{ tag | urlencode }}"
-  data-toggle="tooltip"
-  title="Posts tagged with {{ tag }}"
->
-  {{ tag }}
-</a>
-{% if not loop.last %}&comma; {% endif %}{% endfor %}

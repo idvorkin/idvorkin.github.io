@@ -1,7 +1,5 @@
-{% extends "layouts/page.html" %}
 {#- Port of all-posts.md (/all/). Jekyll stamps undated documents with the
     build time; Zola only shows dates the front matter really has. -#}
-{% block content %}
 {%- set root = get_section(path="_index.md") -%}{%- set all = root.pages -%}
 <h1 id="all-blog-posts">All Blog Posts</h1>
 <p>This page lists all blog posts for link checking purposes.</p>
@@ -47,4 +45,3 @@
 .github-link { margin-left: 10px; color: #666; text-decoration: none; }
 .github-link:hover { color: #333; }
 </style>
-{% endblock content %}

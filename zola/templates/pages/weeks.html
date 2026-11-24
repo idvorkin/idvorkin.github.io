@@ -1,9 +1,7 @@
-{% extends "layouts/post.html" %}
 {#- Port of _d/weeks.md (Life in Weeks): one box per week from start_date to
     end_year, events from _data/<datafile>.yml. Liquid's date math (epoch +
     n*604800 through the date filter) carried over as-is, in UTC like CI.
     Dropped: a debug console.log of the whole site.data hash. -#}
-{% block content %}
 <style>
 .life-in-weeks h2 {
 	margin-top: 0;
@@ -93,4 +91,3 @@ style="height: 2em; max-height: 2em; padding: 2px 5px; margin: 2px;">
 	});
 </script>
 
-{% endblock content %}

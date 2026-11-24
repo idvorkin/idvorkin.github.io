@@ -1,6 +1,4 @@
-{% extends "layouts/page.html" %}
 {#- Port of _d/index.html: every _d document and every post, by title. -#}
-{% block content %}
 {%- set root = get_section(path="_index.md") -%}{%- set all = root.pages -%}
 <h1>My drafts</h1>
 {% for item in [d for d in all if d.extra.collection == "d"] | sort(attribute="title") %}
@@ -19,4 +17,3 @@
   >] [{{ item.extra.source_path }}]
 </p>
 {% endfor %}
-{% endblock content %}

@@ -1,7 +1,5 @@
-{% extends "layouts/post.html" %}
 {#- Port of _ig66/index.md: the two newest family-journal weeks, then the next
     six, each as Markdown (rendered here, as Liquid-then-kramdown did). -#}
-{% block content %}
 {%- set root = get_section(path="_index.md") -%}{%- set weeks = [d for d in root.pages if d.extra.collection == "ig66"] | sort(attribute="extra.sort_key") | reverse -%}
 <script type=module>
     import { defer, load_ig66 } from '/assets/js/index.js'
@@ -33,4 +31,3 @@
 {{ item.extra.excerpt or "" }}
 {% endif %}{% endfor %}
 {% endset %}{{ md | markdown | safe }}
-{% endblock content %}

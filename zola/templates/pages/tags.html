@@ -1,8 +1,6 @@
-{% extends "layouts/post.html" %}
 {#- Port of tags.html: every tag used by a collection document (posts
     included), sorted, with counts, then the posts under each tag in Jekyll's
     collection order. -#}
-{% block content %}
 {%- set root = get_section(path="_index.md") -%}{%- set all = root.pages | sort(attribute="extra.sort_key") -%}
 {%- set docs = [d for d in all if d.extra.collection] -%}
 {#- convert.py writes data/tags.json: Jekyll's tag list (collection
@@ -26,4 +24,3 @@
   {%- endif %}{% endfor %}
 </ul>
 {% endfor %}
-{% endblock content %}

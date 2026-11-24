@@ -9,8 +9,10 @@ Jekyll specifics on top of stock Liquid:
 - {% include name.html k="v" k2=var %}: args land in `include.*`, the include
   shares the page's scope (an `assign` inside it leaks out, which the
   emit-once flags rely on), and quoted values take backslash escapes.
-- filters: jsonify, markdownify, cgi_encode, uri_escape, xml_escape,
-  relative_url, absolute_url.
+- filters: jsonify, markdownify, cgi_escape, uri_escape, xml_escape,
+  relative_url, absolute_url. An unknown filter is a no-op, as in Liquid 4's
+  lax mode: the site's `cgi_encode` and `strip_slash` are not real filters,
+  and its tag links rely on that.
 """
 
 import json
@@ -158,7 +160,7 @@ def make_env(repo: Path, site: dict) -> Environment:
     for f in (repo / "_includes").iterdir():
         if f.is_file():
             sources[f.name] = rewrite_includes(f.read_text(), literals)
-    env = Environment(loader=CachingDictLoader(sources), strict_filters=True)
+    env = Environment(loader=CachingDictLoader(sources), strict_filters=False)
     env.tags["jinclude"] = JInclude
     env.include_depth = 0
     env.on_include = None
@@ -169,7 +171,7 @@ def make_env(repo: Path, site: dict) -> Environment:
     f = env.filters
     f["jsonify"] = lambda _c, v: json.dumps(_plain(v), ensure_ascii=False)
     f["markdownify"] = lambda _c, v: MD.render(_s(v))
-    f["cgi_encode"] = lambda _c, v: urllib.parse.quote_plus(_s(v))
+    f["cgi_escape"] = lambda _c, v: urllib.parse.quote_plus(_s(v))
     f["uri_escape"] = lambda _c, v: urllib.parse.quote(
         _s(v), safe="/:?#[]@!$&'()*+,;=%"
     )

@@ -14,6 +14,7 @@ Also writes jekyll-redirect-from's stubs, byte-for-byte: /old.html for
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -30,16 +31,51 @@ STUB = """<!DOCTYPE html>
 </html>
 """
 
+ROUGE_UNKNOWN = {"mermaid", "ascii", "plantuml"}
+
+
+def code_blocks(html: str) -> str:
+    """Zola (highlighting off) writes <pre><code data-lang="x">; kramdown+rouge
+    wrapped every block in div.language-x.highlighter-rouge > div.highlight >
+    pre.highlight, except languages rouge does not know, which stayed
+    <pre><code class="language-x">. Same structure, so the same CSS and JS
+    (hljs, mermaid) find the same things. Token colors are not reproduced."""
+
+    def one(m: re.Match) -> str:
+        lang = (m.group(1) or "plaintext").split()[0]
+        if lang in ROUGE_UNKNOWN:
+            return f'<pre><code class="language-{lang}">{m.group(2)}</code></pre>'
+        return (
+            f'<div class="language-{lang} highlighter-rouge"><div class="highlight">'
+            f'<pre class="highlight"><code>{m.group(2)}</code></pre></div></div>'
+        )
+
+    return re.sub(
+        r'<pre><code(?: data-lang="([^"]*)")?>(.*?)</code></pre>', one, html, flags=re.S
+    )
+
+
 work, out, site_url = Path(sys.argv[1]), Path(sys.argv[2]), sys.argv[3].rstrip("/")
 plan = json.loads((work / "finish.json").read_text())
-for url in plan["flat"]:
+flat = set(plan["flat"])
+for url in sorted(flat | set(plan["wraps"])):
     d = out / url.strip("/")
     src = d / "index.html"
     if not src.exists():
         sys.exit(f"finish: {url} has no index.html in the Zola output")
-    src.rename(d.with_name(d.name + ".html"))
-    if not any(d.iterdir()):
-        d.rmdir()
+    # Zola writes a same-page link [x](#y) as <permalink>/#y, and its
+    # permalink is the /x/ this page no longer lives at.
+    html = src.read_text().replace(f'href="{site_url}{url.rstrip("/")}/#', 'href="#')
+    html = code_blocks(html)
+    if url in plan["wraps"]:
+        html = (
+            (work / "wrap" / plan["wraps"][url]).read_text().replace(plan["mark"], html)
+        )
+    src.write_text(html)
+    if url in flat:
+        src.rename(d.with_name(d.name + ".html"))
+        if not any(d.iterdir()):
+            d.rmdir()
 for alias, target in plan["stubs"].items():
     rel = alias.strip("/")
     if alias in plan["dir_stubs"]:

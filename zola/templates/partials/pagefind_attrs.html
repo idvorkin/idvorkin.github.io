@@ -1,6 +1,0 @@
-{#- Port of _includes/pagefind-attrs.html: index-time exclusion of the family
-    journal (fj / the ig66 collection / tag), per-page search_exclude, the
-    site-wide permalink list, and untitled pages. -#}
-{%- set x = p.extra or {} -%}
-{%- set tags = p.taxonomies?.tags or [] -%}
-{%- if x.fj or x.collection == "ig66" or "family-journal" in tags or x.search_exclude or x.permalink in config.extra.search_exclude_permalinks or not p.title -%}data-pagefind-ignore{%- else -%}data-pagefind-body data-pagefind-meta="title:{{ p.title }}"{%- endif -%}
