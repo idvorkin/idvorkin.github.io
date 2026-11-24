@@ -26,7 +26,12 @@ export SRC WORK OUT BASE_URL
 rm -f "$WORK/bbl/back-links.json" # first build makes a fresh index; rebuilds reuse it
 export BACKLINKS=cached
 stamp=$WORK/.built
-build() { mkdir -p "$WORK"; touch "$stamp.next"; "$HERE/build.sh" | tail -1 && mv "$stamp.next" "$stamp"; }
+# $WORK/overlay/ is copied over every build (the verify report lives there as _port/).
+build() {
+  mkdir -p "$WORK" && touch "$stamp.next"
+  "$HERE/build.sh" | tail -1 && mv "$stamp.next" "$stamp"
+  if [ -d "$WORK/overlay" ]; then cp -r "$WORK/overlay/." "$OUT/"; fi
+}
 build
 python3 "$HERE/serve.py" "$OUT" "$PORT" &
 server=$!

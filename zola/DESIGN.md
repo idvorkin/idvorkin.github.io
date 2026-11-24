@@ -143,23 +143,53 @@ are served the same `back-links.json`; and the two legacy stylesheets that
 
 ### Numbers, 2026-11-24, upstream main `b5a9884c7`
 
-Static diff (`diff_sites.py`, 500 page pairs):
+Static (`diff_sites.py`, `skeleton.py`, `jscheck.cjs`; 500 page pairs):
 
 | Check                                 | Result                                                    |
 | ------------------------------------- | --------------------------------------------------------- |
 | Output files                          | 1,422 of 1,423 present (`links.jsonp` dropped on purpose) |
 | Pages / redirects                     | 500 of 500 / 428 of 428                                   |
-| Visible text identical                | 425                                                       |
-| Text at least 99.5% the same          | 493                                                       |
+| Visible text identical                | 426                                                       |
+| Text at least 99.5% the same          | 494                                                       |
 | Text under 95%                        | 2 (`/all` build dates, `/asciinema` quotes)               |
+| Pages whose tag structure differs     | 74 (153 before this session's three converter rules)      |
 | Heading ids kept                      | 6,641 of 6,654                                            |
 | Broken links or anchors the port made | 0 (116 are broken in Jekyll too)                          |
+| Inline scripts the conversion broke   | 0                                                         |
 | `back-links.json` from Zola output    | 387 of 387 URLs; 12 pages differ in outgoing links        |
+| Feeds and search JSON                 | differ (hand-ported templates; `blog-pzp.1`)              |
+
+Pixels (492 pages that are not byte-identical copies, 1,968 screenshots, none
+failed):
+
+| Aligned difference                   | 390 wide | 1200 wide |
+| ------------------------------------ | -------- | --------- |
+| Identical, every pixel               | 376      | 399       |
+| Under 0.1%                           | 54       | 27        |
+| 0.1% to 1%                           | 23       | 44        |
+| 1% to 5%                             | 25       | 15        |
+| 5% and over                          | 14       | 7         |
+| Same page height                     | 427      | 433       |
+| Taller than the 12,000 px cap        | 90       | 39        |
+| Identical and compared top to bottom | 314      | 374       |
+
+368 pages are identical at both widths and 450 are under 1% at both. The
+first sweep, before the three converter rules this session added, had 348
+identical at both widths. The worst page is a test page
+(`/test/orchestrator-viewer-options`, 49%); the worst real ones are
+`/ig66/`, `/side-quests`, `/all` and `/ai-orchestrator` (10–25%).
+
+Noise floor: Jekyll rendered twice, 40 pages, came out identical on 79 of 80
+screenshots and 0.017% on the other. The gate's 0.25-point slack is far above
+that.
+
+The full sweep took about 100 minutes at nice 19 with two pages at a time on
+a VM at load 15–40. A re-run after a converter change re-shot 102 pages in
+about 10 minutes.
 
 Build time on this VM under load: 3.0 s for 491 pages (Liquid and Markdown
-fixes 2.4 s, Zola 0.3 s), against 8–13 s for Jekyll.
-
-Pixel diff: PIXEL_NUMBERS_PENDING
+fixes 2.4 s, Zola 0.3 s), against 8–13 s for Jekyll. With `BACKLINKS=1`,
+11–14 s.
 
 ## (e) Work split by model tier
 

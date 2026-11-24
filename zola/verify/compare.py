@@ -37,6 +37,7 @@ import argparse
 import difflib
 import html
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -135,7 +136,11 @@ def dom_diff(sa: dict, sb: dict) -> dict:
                 [" ".join(wa[i1:i2])[:80], " ".join(wb[j1:j2])[:80]]
                 for _, i1, i2, j1, j2 in ops
             ]
-    la, lb = set(sa["links"]), set(sb["links"])
+    # image-zoom.ts links an image to its own absolute src: drop the two
+    # local servers' origins or every such link reads as lost and new.
+    local = re.compile(r"^https?://(127\.0\.0\.1|localhost)(:\d+)?")
+    la = {local.sub("", x) for x in sa["links"]}
+    lb = {local.sub("", x) for x in sb["links"]}
     if la - lb:
         d["links_lost"] = sorted(la - lb)[:8]
     if lb - la:
