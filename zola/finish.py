@@ -87,7 +87,7 @@ for alias, target in plan["stubs"].items():
     if dest.exists():
         continue  # a real page owns the URL, as on Jekyll
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_text(STUB.format(u=site_url + target))
+    dest.write_text(STUB.format(u=target if "://" in target else site_url + target))
 print(
     f"finish: {len(plan['flat'])} pages flattened, {len(plan['stubs'])} redirect stubs"
 )

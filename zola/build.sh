@@ -30,7 +30,7 @@ fi
 mkdir -p "$WORK" && WORK=$(cd "$WORK" && pwd)
 OUT=${OUT:-$WORK/public}
 BASE_URL=${BASE_URL:-https://idvork.in}
-export SRC WORK
+export SRC WORK BASE_URL
 
 rm -rf "$WORK/templates" "$WORK/data" "$WORK/content"
 mkdir -p "$WORK/data"
@@ -45,13 +45,19 @@ printf '{"branch":"%s","pr_number":%s,"changed_pages":[]}\n' "$branch" "${PR_NUM
 python3 "$HERE/finish.py" "$WORK" "$OUT" "$BASE_URL"
 
 if [ -n "${BACKLINKS:-}" ]; then
-  # build_back_links.py reads ./_site and asks git for each source file's
-  # last-modified date, so give it a scratch cwd whose _site is our output
-  # and point git at the source checkout.
-  mkdir -p "$WORK/bbl" && ln -sfn "$OUT" "$WORK/bbl/_site"
-  (cd "$WORK/bbl" && GIT_DIR=$(git -C "$SRC" rev-parse --absolute-git-dir) GIT_WORK_TREE=$SRC \
-    uv run "$SRC/build_back_links.py" build > "$WORK/backlinks.log" 2>&1) || { tail -20 "$WORK/backlinks.log"; exit 1; }
-  cp "$WORK/bbl/back-links.json" "$OUT/back-links.json"
+  # ponytail: build_back_links.py hardcodes ./_site and must run inside the
+  # checkout (it asks git about each source file). So run a copy of it that
+  # says _zsite instead, with _zsite a short-lived symlink to our
+  # output. Upgrade path: a --site-dir option on build_back_links.py upstream.
+  mkdir -p "$WORK/bbl"
+  sed 's/_site/_zsite/g' "$SRC/build_back_links.py" > "$WORK/bbl/build_back_links.py"
+  ln -sfn "$OUT" "$SRC/_zsite"
+  (cd "$SRC" && PYTHONPATH="$SRC" uv run "$WORK/bbl/build_back_links.py" build --output-file "$WORK/bbl/back-links.json" > "$WORK/backlinks.log" 2>&1) \
+    || { rm -f "$SRC/_zsite"; tail -20 "$WORK/backlinks.log"; exit 1; }
+  rm -f "$SRC/_zsite"
+  sed -i 's|"_zsite/|"_site/|g' "$WORK/bbl/back-links.json"
+  # rm first: the staged copy is a hard link to the source checkout's file.
+  rm -f "$OUT/back-links.json" && cp "$WORK/bbl/back-links.json" "$OUT/back-links.json"
 fi
 if [ -n "${PAGEFIND:-}" ]; then
   npx --yes pagefind@1.5.2 --site "$OUT" > "$WORK/pagefind.log" 2>&1 || { tail -20 "$WORK/pagefind.log"; exit 1; }

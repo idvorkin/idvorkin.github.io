@@ -1,0 +1,92 @@
+# The mirror's workflow. Lives in the MIRROR repo (idvorkin-ai-tools/blog-zola)
+# as .github/workflows/pages.yml; kept here so the toolchain and the workflow
+# that runs it are reviewed together. See zola/DESIGN.md, "Mirror".
+#
+# Builds idvorkin/idvorkin.github.io with the Zola toolchain and deploys it to
+# this repo's Pages site. It never writes to the blog repo.
+name: Zola mirror
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: "Blog ref to build: a branch, a SHA, or refs/pull/N/head"
+        default: main
+  # A later, optional step in the blog's own pages.yml can fire this so the
+  # mirror follows main within a minute instead of within thirty.
+  repository_dispatch:
+    types: [blog-push]
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  ZOLA_VERSION: 0.23.6
+  # Root-absolute links (/assets/..., /magic) need the site at the root of a
+  # host, so the mirror is served on its own subdomain, not at /blog-zola/.
+  BASE_URL: https://zola.idvork.in
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Blog sources
+        uses: actions/checkout@v6
+        with:
+          repository: idvorkin/idvorkin.github.io
+          ref: ${{ inputs.ref || 'main' }}
+          path: src
+          persist-credentials: false
+          fetch-depth: 0 # build_back_links.py reads each file's last commit date
+
+      - name: Zola toolchain
+        uses: actions/checkout@v6
+        with:
+          repository: idvorkin-ai-tools/blog7
+          ref: zola-port
+          path: tool
+          persist-credentials: false
+          sparse-checkout: |
+            zola
+            .claude/skills/toc
+
+      - name: Install Zola
+        run: |
+          curl -sSL "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" | tar -xz -C /usr/local/bin zola
+          zola --version
+
+      - uses: astral-sh/setup-uv@v7
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build
+        run: SRC=src OUT="$PWD/_site" WORK="$PWD/work" STRICT=1 BACKLINKS=1 PAGEFIND=1 tool/zola/build.sh
+
+      - name: Keep the mirror out of search engines
+        run: |
+          printf 'User-agent: *\nDisallow: /\n' > _site/robots.txt
+          rm -f _site/CNAME # the blog's own CNAME (idvork.in) must never ride along
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

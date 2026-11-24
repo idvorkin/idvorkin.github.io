@@ -33,6 +33,7 @@ A Liquid error fails the conversion, so nothing ships silently.
 """
 
 import datetime
+import hashlib
 import html
 import json
 import shutil
@@ -79,7 +80,6 @@ TEMPLATE_PAGES = {
     "categories.html": "pages/categories.html",
     "all-posts.md": "pages/all_posts.html",
     "_d/index.html": "pages/d_index.html",
-    "_d/weeks.md": "pages/weeks.html",
     "_ig66/index.md": "pages/ig66_index.html",
 }
 LABELS = {
@@ -529,7 +529,34 @@ def site_context() -> dict:
         data["git"] = json.loads(git.read_text())
     site["data"] = data
     site["github"] = {}
+    # jekyll serve points site.url at the server it started; a preview build
+    # does the same, so CSS and canonical links stay on the preview.
+    if os.environ.get("BASE_URL"):
+        site["url"] = os.environ["BASE_URL"].rstrip("/")
     return site
+
+
+def check_ported(report: dict) -> None:
+    """The listing pages are the only hand ports left (templates/pages/). Each
+    one's Jekyll source is pinned by hash in ported.lock: when the source
+    changes, the port is stale until someone re-syncs it and re-pins."""
+    lock_file = HERE / "ported.lock"
+    lock = json.loads(lock_file.read_text())
+    now = {
+        src: hashlib.sha1((REPO / src).read_bytes()).hexdigest()
+        for src, t in TEMPLATE_PAGES.items()
+        if t != "generated"
+    }
+    if os.environ.get("PIN_PORTED"):
+        lock_file.write_text(json.dumps(now, indent=1, sort_keys=True) + "\n")
+        return
+    drift = sorted(s for s in now if lock.get(s) != now[s])
+    report["ported_drift"] = drift
+    if drift:
+        msg = f"hand-ported pages changed in Jekyll, re-sync templates/pages/ then PIN_PORTED=1: {drift}"
+        if os.environ.get("STRICT"):
+            sys.exit(msg)
+        print("WARNING: " + msg, file=sys.stderr)
 
 
 LINK_MD = re.compile(r"(\]\()(\s*<?)([^)\s>]+)")
@@ -800,6 +827,11 @@ def main() -> None:
             zfm["date"] = date
         for a in kept:
             stubs[a] = url
+        if fm.get("redirect_to"):
+            # jekyll-redirect-from replaces the page with its stub.
+            stubs[url] = str(fm["redirect_to"])
+            report["pages"][src] = {"url": url, "redirect_to": stubs[url]}
+            continue
         if tags:
             zfm["taxonomies"] = {"tags": tags}
 
@@ -819,7 +851,7 @@ def main() -> None:
         # {{ content }} goes; finish.py puts Zola's HTML there. So head, menu,
         # scripts and the annotate tool are never ported and cannot drift.
         layout_file = REPO / "_layouts" / f"{layout}.html"
-        if layout and layout_file.exists() and not fm.get("redirect_to"):
+        if layout and layout_file.exists():
             page_ctx = {
                 **fm,
                 "url": url,
@@ -830,6 +862,7 @@ def main() -> None:
                 "excerpt": jekyll_liquid.MD.render(
                     re.sub(r"\{#[^}]*\}", "", first_para)
                 )
+                + "\n"
                 if extra["excerpt"]
                 else None,
                 "date": extra["jekyll_date"],
@@ -846,8 +879,6 @@ def main() -> None:
                 env.on_include = on_include
             (WRAP / f"{name}.html").write_text(wrapped)
             wraps[url] = f"{name}.html"
-        if fm.get("redirect_to"):
-            zfm["template"] = "redirect.html"
         if src == "index.md":
             target = CONTENT / "_index.md"
             zfm["sort_by"] = "none"
@@ -874,6 +905,7 @@ def main() -> None:
         u
         for s_, u in urls.items()
         if s_ in report["pages"]
+        and "redirect_to" not in report["pages"][s_]
         and u != "/"
         and not jekyll_base(s_, parsed[s_][0], u).endswith("/")
     ]
@@ -917,6 +949,7 @@ def main() -> None:
     (WORK / "data" / "tags.json").write_text(
         json.dumps([{"tag": t, "count": len(tag_docs[t])} for t in sorted(tag_docs)])
     )
+    check_ported(report)
     json.dump(report, sys.stdout, indent=1, default=str)
     print()
     if report["errors"]:
