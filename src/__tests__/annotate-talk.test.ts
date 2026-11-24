@@ -216,6 +216,45 @@ describe("Talk while pointing", () => {
     expect(body.trace[0]).toMatchObject({ i: 0, w: "brown", x: 10, y: 20 });
   });
 
+  it("a touch scroll is not pointing: after the browser cancels the touch, scrolling resolves nothing", async () => {
+    const calls = stubFetch((url) => (url.endsWith("/point-review") ? json({ ok: true }) : json({ state: "idle" })));
+    boot();
+    const under = vi.spyOn(document, "elementFromPoint").mockReturnValue(byId("chart"));
+    try {
+      await api().talk.start();
+      point("fox", "pointerdown", "touch");
+      point("fox", "pointercancel", "touch");
+      for (let n = 0; n < 5; n++) window.dispatchEvent(new Event("scroll"));
+      expect(byId("fox").classList.contains("blog-annot-pointing")).toBe(true);
+      talkBtn().click();
+      await flush();
+    } finally {
+      under.mockRestore();
+    }
+    const body = JSON.parse(String(posts(calls)[0].init?.body));
+    expect(body.trace.map((s: any) => [s.k, s.i])).toEqual([["down", 0]]);
+  });
+
+  it("a mouse left still re-resolves on scroll", async () => {
+    const calls = stubFetch((url) => (url.endsWith("/point-review") ? json({ ok: true }) : json({ state: "idle" })));
+    boot();
+    const under = vi.spyOn(document, "elementFromPoint").mockReturnValue(byId("chart"));
+    try {
+      await api().talk.start();
+      point("fox", "pointermove", "mouse");
+      window.dispatchEvent(new Event("scroll"));
+      talkBtn().click();
+      await flush();
+    } finally {
+      under.mockRestore();
+    }
+    const body = JSON.parse(String(posts(calls)[0].init?.body));
+    expect(body.trace.slice(0, 2).map((s: any) => [s.k, s.i])).toEqual([
+      ["move", 0],
+      ["scroll", 1],
+    ]);
+  });
+
   it("listens to nothing once stopped", async () => {
     stubFetch(() => json({ ok: true }));
     boot();
@@ -302,6 +341,18 @@ describe("pointTrace", () => {
       [400, 0, "fox"],
       [500, null, ""],
     ]);
+    vi.unstubAllGlobals();
+  });
+
+  it("a burst of scrolls over one block is one sample, so the cap is not spent on scrolling", () => {
+    vi.stubGlobal(
+      "fetch",
+      vi.fn(async () => json({ state: "idle" })),
+    );
+    boot();
+    const tr = api().pointTrace();
+    for (let n = 0; n < 100; n++) tr.add("scroll", "mouse", 5, 5, n * 2, byId("fox"), "");
+    expect(tr.samples).toHaveLength(1);
     vi.unstubAllGlobals();
   });
 
