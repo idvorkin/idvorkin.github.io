@@ -349,9 +349,41 @@ def tighten_lists(text: str, notes: dict) -> str:
     return "\n".join(x for k, x in enumerate(lines) if k not in drop)
 
 
+SPAN_IAL = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)\{:\s*([^}]*?)\s*\}")
+# Block-level to kramdown, inline to CommonMark: <canvas></canvas> alone on a
+# line would be wrapped in <p>. Split after the open tag and it is an HTML
+# block (CommonMark start condition 7: a line holding one complete tag).
+LONE_ELEMENT = re.compile(
+    r"^(<(canvas|audio|video|[a-z]+-[a-z-]+)\b[^>]*>)(</\2>)\s*$", re.M
+)
+
+
+def span_ial(m: re.Match) -> str:
+    """![alt](src){: k="v" .c #i} -> <img>: kramdown's attribute list on an image."""
+    attrs = []
+    for tok in re.findall(r'[\w-]+="[^"]*"|[.#][\w-]+', m.group(3)):
+        if tok[0] == ".":
+            attrs.append(f'class="{tok[1:]}"')
+        elif tok[0] == "#":
+            attrs.append(f'id="{tok[1:]}"')
+        else:
+            attrs.append(tok)
+    alt = html.escape(m.group(1), quote=True)
+    return f'<img src="{m.group(2)}" alt="{alt}" {" ".join(attrs)} />'
+
+
 def kramdownisms(text: str, notes: dict) -> str:
     lines = kramdown_tables(raw_html_blocks(text.split("\n"), notes), notes)
     text = re.sub(r'\s+markdown="(1|block|span)"', "", "\n".join(lines))
+    text, n = SPAN_IAL.subn(span_ial, text)
+    if n:
+        notes["span_ial"] = notes.get("span_ial", 0) + n
+    text = LONE_ELEMENT.sub(r"\1\n\3", text)
+    # A lone <img> between blank lines: a paragraph to kramdown, a bare HTML
+    # block to CommonMark.
+    text = re.sub(
+        r"(?m)(?:(?<=\n\n)|\A)(<img\b[^>\n]*>)[ \t]*(?=\n\n|\n?\Z)", r"<p>\1</p>", text
+    )
     lines = text.split("\n")
     out = []
     for i, line in enumerate(lines):
@@ -501,9 +533,17 @@ def place_tokens(body: str, incs: list[Inc], notes: dict) -> str:
     """
 
     def one(m: re.Match) -> str:
-        text = incs[int(m.group(1))].text
+        inc = incs[int(m.group(1))]
+        text = inc.text
         line_start = body.rfind("\n", 0, m.start()) + 1
         prefix = body[line_start : m.start()]
+        line_end = body.find("\n", m.end())
+        rest = body[m.end() : line_end if line_end >= 0 else len(body)]
+        if inc.inline and not prefix.strip() and not rest.strip():
+            # Alone on its line kramdown made it a paragraph; CommonMark would
+            # pass the bare tag through as an HTML block, with no <p>.
+            notes["inline_paragraphs"] = notes.get("inline_paragraphs", 0) + 1
+            return f"<p>{text}</p>"
         if not prefix:
             return text
         if not prefix.strip():

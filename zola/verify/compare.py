@@ -117,7 +117,9 @@ def compare_pair(root: Path, sa: dict, sb: dict) -> dict:
 
 def dom_diff(sa: dict, sb: dict) -> dict:
     d = {}
-    if sa["text"] != sb["text"]:
+    # textContent runs table cells together differently per renderer; only a
+    # difference that survives removing all whitespace is a text difference.
+    if "".join(sa["text"].split()) != "".join(sb["text"].split()):
         wa, wb = sa["text"].split(), sb["text"].split()
         sm = (
             difflib.SequenceMatcher(None, wa, wb, autojunk=False)

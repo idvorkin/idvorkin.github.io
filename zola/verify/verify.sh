@@ -29,8 +29,8 @@ SRC=$SRC OUT=$ZOUT "$HERE/../build.sh" > "$SHOTS/build.log"
 # Same back-links.json on both sides: this compares renderers, not indexes.
 [ -f "$SRC/back-links.json" ] && cp "$SRC/back-links.json" "$JEKYLL/back-links.json" && cp "$SRC/back-links.json" "$ZOUT/back-links.json"
 
-python3 - "$JEKYLL" "$ZOUT" > "$SHOTS/urls.json" <<'PY'
-import json, os, sys
+SHOTS=$SHOTS python3 - "$JEKYLL" "$ZOUT" > "$SHOTS/urls.json" <<'PY'
+import hashlib, json, os, sys
 from pathlib import Path
 j, z = Path(sys.argv[1]), Path(sys.argv[2])
 urls = []
@@ -53,6 +53,29 @@ if only:
 if limit:
     urls = urls[:: max(1, len(urls) // int(limit))][: int(limit)]
 json.dump(urls, sys.stdout)
+
+# Re-shoot only what changed: a page whose HTML differs from the HTML its
+# screenshot was taken of loses that screenshot. So after a converter fix the
+# second run costs minutes, not the full sweep.
+shots_dir = Path(os.environ["SHOTS"])
+hash_file, shots_file = shots_dir / "html-hash.json", shots_dir / "shots.json"
+old = json.loads(hash_file.read_text()) if hash_file.exists() else {}
+now = {"jekyll": {}, "zola": {}}
+for site, root in (("jekyll", j), ("zola", z)):
+    for u in urls:
+        rel = "index.html" if u == "/" else u.strip("/") + ("/index.html" if u.endswith("/") else ".html")
+        f = root / rel
+        now[site][u] = hashlib.sha1(f.read_bytes()).hexdigest() if f.exists() else None
+if shots_file.exists() and old:
+    shots = json.loads(shots_file.read_text())
+    stale = [k for k in shots if (lambda u, w, s: s in now and u in now[s] and old.get(s, {}).get(u) != now[s][u])(*k.split("|"))]
+    for k in stale:
+        del shots[k]
+    shots_file.write_text(json.dumps(shots))
+    print(f"{len(stale)} stale screenshots dropped", file=sys.stderr)
+for site in now:
+    old.setdefault(site, {}).update(now[site])
+hash_file.write_text(json.dumps(old))
 PY
 
 pids=()
