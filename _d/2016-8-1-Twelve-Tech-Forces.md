@@ -49,7 +49,7 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 
 - Personalization
   - Change the movie to have more of what I like in it.
-  - Watching with Family make it 'G Rated'
+  - Watching with Family makes it 'G Rated'
   - Some time to talk with the author. (Kick starter)
 
 - Interpretation (Consulting/Coaching)
@@ -68,9 +68,9 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
   - Physical assets as a service (Uber)
   - Production tool as a service (Creative Cloud)
   - My owned content as a service (Flickr)
-  - I could own the copy, but storage provide value add.
+  - I could own the copy, but storage provider value add.
   - Digital books can be copied, but Amazon Kindle stores my highlights. Gives me flash cards.
-  - My photo provide - Google Photos/Flickr
+  - My photo provider - Google Photos/Flickr
 
 - Embodiment (The physical experience/scarcity value add)
   - People really value this - music concerts/live theatre/physical book
@@ -122,9 +122,9 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
 
 - Technology is now a service, and self upgrading.
 - You'll always be a newbie, since software is self updating, and changing quickly.
-- Life span most phone apps is 30 days - everything is displaced before you can figure it out.
-- Today's problems caused by yesterday's success - so pain causes a a steady accumulation of small benefits.
-- Protopyia - (Process and Progress): Every day is a bit better than yesterday, and really adds up.
+- Life span of most phone apps is 30 days - everything is displaced before you can figure it out.
+- Today's problems caused by yesterday's success - so pain causes a steady accumulation of small benefits.
+- Protopia - (Process and Progress): Every day is a bit better than yesterday, and really adds up.
 - When making new tech, always start by cloning old tech - web sites clones of desktop apps. Office clone of 'physical office'
 - Original idea of web -> TV, but with infinite channels.
   - This model is blocked by who can afford to create so much content?
@@ -160,7 +160,7 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
     - Lodging -
     - Grocery Delivery - Dash buttons, amazon fresh
     - Shopping - Amazon
-    - Telphone - slightly different
+    - Telephone - slightly different
     - Software - always a service constantly upgrading.
   - On Demand
 
@@ -173,7 +173,7 @@ The digital revolution has gone through 3 changes: the copy of the industrial ag
   - Top Skills: memorization, recitation and rhetoric
   - Audience Valued: Reverence for the past, ambiguous, ornate and subjective.
   - Truth: The thing you remember (likely the best story)
-- The Book - Uptil we got screens
+- The Book - Until we got screens
   - Copy Tech: Cheap mass copies of words on paper
   - Top Skills: Precision (ink on paper), Linear Logic (sentences), objectivity (printed fact), authority (fixed in a book).
   - Societal Impacts - 50K - 1M english words. Culture of experts. Roots are the written document (lawg

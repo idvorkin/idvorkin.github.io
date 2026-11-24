@@ -177,12 +177,10 @@ I found a lighthouse passport thing! I assumed it was a stamp book (A book with 
 ### Health and Habits
 
 - **Diet** - I should be pretty close to steady state goal (165 ish). I guess don't go up more than 5 lbs
-
   - Go to grocery store and load up on healthy food
   - Bring my travel scale
 
 - **Sleep** - Up every day at 5.
-
   - When drifting cut caffeine
   - Bring earplugs and sleep mask
   - Nap while charging the Tesla
@@ -231,7 +229,7 @@ Things to do:
 
 - ☐ Practice Daily
 - ☐ Find a place to practice card to ceiling
-- ☐ Find a place to work on Tamiriz
+- ☐ Find a place to work on Tamariz
 
 ### Biking
 
@@ -249,17 +247,17 @@ Things to do:
 - ☑ Quickly setup mason, need to review all those damn tools
 - ☑ Fixed my slow zsh thing (was pomodoro) [/td/slow](/td/slow_zsh). Still didn't get to the bottom of it, curious
 - ☑ Figured out uv (replaces pip), and pipxu (replaces global pip install)
-- ☑ Switch to Atuin from Mcly (no diff)
-- ☑ Add third and half to yabi
+- ☑ Switch to Atuin from McFly (no diff)
+- ☑ Add third and half to yabai
 - ☑ HOORAY - Got Caps-><space> mapping to alfred in iterm (OMG - this has been a huge paper cut for months)
-- ☑ Started using url shortner via [tinyurl and web link](https://chromewebstore.google.com/detail/url-shortener/godoifjoiadanijplaghmhgfeffnblib)
+- ☑ Started using url shortener via [tinyurl and web link](https://chromewebstore.google.com/detail/url-shortener/godoifjoiadanijplaghmhgfeffnblib)
 - Figured out how to include pasting (Inspired by imgclip). [Code](https://github.com/idvorkin/settings/blob/237111421f313df54c48f31b4d8697237e3787c8/py/y.py?plain=1#L258)
 
 ![Demo the paste](https://raw.githubusercontent.com/idvorkin/ipaste/main/20240831_102419.webp)
 
 ### Tony
 
-- ☐ Update toni to include memory/todo tracking
+- ☐ Update Tony to include memory/todo tracking
 - ☑ Implement Search via Perplexity
 - ☑ Callable on cli via bestie
 
@@ -285,7 +283,7 @@ Using alfred and yabai:
 
 {%include youtube.html src="_isNIAuHnEg" %}
 
-OK, yabai is cool, I think aerospace will end up better, but I need to [support resizing splits](https://github.com/nikitabobko/AeroSpace/issues/266), which yabaio does very nicely as I like to switch from halves to thirds.
+OK, yabai is cool, I think aerospace will end up better, but I need to [support resizing splits](https://github.com/nikitabobko/AeroSpace/issues/266), which yabai does very nicely as I like to switch from halves to thirds.
 
 Using think.py:
 
@@ -297,7 +295,7 @@ Using think.py:
 
 ### CUT
 
-- Outline my talk for GPT, likely based on on Langchain tools
+- Outline my talk for GPT, likely based on Langchain tools
 
 ## Cognitive Health (X/5)
 
@@ -343,7 +341,7 @@ Gym Days: -
 ### Exercise
 
 - Tried bringing KBs in the car with me. Adjustable KB broke. Worried about them rolling around
-- Kettleback rack 1 sided squats feel good, and don't need to flip into the goblet position
+- Kettlebell rack 1 sided squats feel good, and don't need to flip into the goblet position
 - Got 5lbs indian clubs - super heavy
 - 1 arm swings work well
 - Need to be happy with partial work out.
@@ -361,7 +359,7 @@ Gym Days: -
 
 ### Family
 
-- Lets focus on compassion and the sublime states
+- Let's focus on compassion and the sublime states
 
 ## House and goods
 

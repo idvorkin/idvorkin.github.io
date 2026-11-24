@@ -136,7 +136,7 @@ I checked this out briefly as it's a place I have little context, I think I'll w
 
 ### Meditation
 
-I've been doing daily 20 minute breathe meditation for 3 months and it is now a habit. I also "catch my breath" throughout the day, catching my monkey mind.
+I've been doing daily 20 minute breath meditation for 3 months and it is now a habit. I also "catch my breath" throughout the day, catching my monkey mind.
 
 I'm considering my next steps here, perhaps doing it in the hottub, and or trying to include joy meditation and contemplative meditation.
 
@@ -177,7 +177,7 @@ My diet discipline has been weak. I'll take some structural "additive" attempts 
 
 ## House and goods
 
-I think the hero of my good is my hot-tub - get in there every day, and come up with good ideas for maximizing my pleasure by doing things in the hottub to get twofers:
+I think the hero of my goods is my hot-tub - get in there every day, and come up with good ideas for maximizing my pleasure by doing things in the hottub to get twofers:
 
 - ☑ Read in the hottub
 - ☑ Meditate in the hottub

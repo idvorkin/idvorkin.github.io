@@ -1,18 +1,44 @@
 <!--
   annotate.html — Igor's private blog annotation tool.
 
-  INERT BY DEFAULT. Readers get no UI, no network calls, and (aside from
-  this tiny script parse) no cost. Everything below is guarded by a
-  localStorage flag that only Igor ever sets.
+  KEEP IN SYNC (Igor 2026-11-21): this file is the spec for the explainer
+  sites' copy, idvorkin-ai-tools.github.io/assets/annotate.js. A fix or
+  feature here is ported there in the same change, or filed the same day.
 
-  Enable  : visit any post with ?annotate=1  (persists via localStorage)
+  NO NETWORK UNTIL USED. Every reader gets a 💬 toggle (Igor 2026-11-21:
+  "everyone can see the chat box") that turns Comments mode on and off live
+  (no reload; aria-pressed and a blue fill say it is on; the tooltip names
+  the page path). Here it sits in the navbar right after the navbar's own
+  GitHub link to this post's source; a layout without that link gets the
+  explainers' floating top-right pair instead (GitHub link from
+  `page.path` + toggle, placed under any header band). Building it is DOM
+  only: no request until the reader sends something, and none ever to a
+  Cockpit this browser has not saved, except when the reader clicks Connect.
+
+  OWNER vs READER. The setup prompts (Cockpit address, GitHub token), the
+  `#larry-cockpit=` fragment, the status dot and the open-PR badge are the
+  owner's alone. A browser is the owner's once ?annotate=1 or the shortcut
+  has been used there (localStorage `blogAnnotateOwner`), or it has a saved
+  token or Cockpit address, or it is on localhost or the tailnet, or it
+  already had Comments on before the toggle shipped (`blogAnnotate=1` with
+  no `blogAnnotateToggleSeen`, which the first toggle click writes). A
+  reader without Larry can still comment; Send opens the review card with
+  "Copy for Igor" (readable text led by the page URL), plus "Upload to
+  gist" only when a token is saved.
+
+  Enable  : visit any post with ?annotate=1  (persists; marks owner)
   Disable : visit any post with ?annotate=0
-  Toggle  : Cmd/Ctrl+Shift+A on desktop
+  Toggle  : the 💬 button, or Cmd/Ctrl+Shift+A on desktop (marks owner)
   Banner  : "💬 Comments" in the local dev banner toggles it live (no reload)
 
   Once enabled: select text -> a small "Comment" bubble appears near the
-  selection -> tap it -> type a note -> pick an intent -> Save
+  selection -> tap it (or press Enter) -> type a note -> pick an intent -> Save
   (or Cmd/Ctrl+Enter; Escape cancels). Notes buffer in localStorage.
+  Enter-Enter also saves, for hands-free dictation: at the END of a
+  non-empty note, a second trailing newline within ENTER_SAVE_MS (400 ms) of
+  the first, or one change that appends two or more trailing newlines,
+  trims the trailing whitespace and saves with the selected intent. Slow
+  Enters and Enters mid-text stay line breaks (see noteEnterStep).
   The "Review (N)" pill uploads the batch to a SECRET gist (description
   `blog-review: <permalink>`) or copies it to the clipboard.
 
@@ -45,11 +71,29 @@
   reading — a note taken against the local Jekyll preview and one taken
   against the live site are byte-identical without it. `location.origin` is
   scheme + host + port, so `https://idvork.in` and
-  `http://c-5004.squeaker-teeth.ts.net:4000` are distinguishable.
+  `http://<machine>.<tailnet>.ts.net:4000` are distinguishable.
 
   `location.href` is deliberately NOT recorded: beyond origin + permalink it
   only adds the query string and fragment, which here means `?annotate=1` and
   whatever heading you last clicked — tool state, not page identity.
+
+  CHAT PANEL: "Chat" in the pill opens a small panel (bottom right) for
+  talking to Larry about this page, typed or dictated (Enter sends,
+  Shift+Enter is a line break, two trailing newlines also send). Each
+  message goes to `<Cockpit>/page-chat` (Cockpit story 171), the page's own
+  Cockpit thread keyed by the permalink and made on its first message, so
+  the same conversation is in the Cockpit; his replies there show in the
+  panel, polled every CHAT_POLL_MS while it is open and the tab is visible.
+  Same Cockpit address as SEND TO LARRY. A Cockpit that predates the
+  route looks the same as one out of reach (its 404 has no CORS header):
+  the panel says "can't reach the Cockpit, or it has no page chat yet"
+  and keeps the text; a resend of the same text reuses its id. The inline
+  comments are unchanged by it. URLs in messages render as links (built as
+  nodes, never innerHTML). After the first send on a brand-new thread the
+  panel re-reads it from the start, so the Cockpit's page-details opener
+  sits above that message. Copy puts the message and the page URL on the
+  clipboard, for a reader without Larry (Send needs a Cockpit; a reader is
+  never prompted for one).
 
   SECURITY: the GitHub PAT lives ONLY in this browser's localStorage under
   `blogAnnotateToken`. It is never committed, never sent anywhere except
@@ -65,6 +109,58 @@
   version is always measured on the real article, never the diff DOM.
 
   Larry reads the batches back with scripts/blog_review.py.
+
+  SEND TO LARRY: the pill always has a "Send to Larry" button next to Open,
+  greyed out while nothing is buffered or a send is in flight. Send groups
+  the buffer into one batch per page and clears only the batches that were
+  delivered; on any failure the buffer stays and the review card opens with
+  the gist/clipboard fallback. Where a batch goes depends on the host:
+
+    * Tailnet host (`location.hostname` ends in `.ts.net`) or localhost: to
+      the Cockpit on the SAME hostname over https at the default port
+      (`/blog-review`); no host is written here. Only these hosts get the
+      status dot (`/larry/status`): green when Larry is idle, amber when
+      busy, red when down or unreachable (off the tailnet).
+    * Anywhere else (idvork.in) with a saved Cockpit address: the same POST
+      and status dot, against the origin in localStorage `blogLarryCockpit`
+      (that Cockpit must allow CORS from this site, plus the
+      Private-Network preflight). The address is saved once, either by the
+      prompt on the first Send or by opening any page with the fragment
+      `#larry-cockpit=<origin>` (a fragment, never a query, so it stays out
+      of server logs; it strips itself, and asks before replacing a
+      different saved address). The fragment is saved only in the owner's
+      browser (see OWNER vs READER); on a new device use Connect (below)
+      or open `?annotate=1#larry-cockpit=<origin>`. Only an https origin on a tailnet name or
+      localhost is accepted, origin only, re-checked on every read. A POST
+      that fails, errors or hangs past COCKPIT_TIMEOUT_MS sends that batch
+      and the rest of the Send to gists below (token asked for only then).
+    * Connect (Cockpit story 196): with no saved address, or a saved one
+      whose status or chat fetch just failed (igor2-88g.1652), the pill and
+      the chat panel show "Connect to Larry". It gets a challenge from `<Cockpit>/pair/start`
+      (bound to this origin), Igor types it into the Cockpit's "Pair a
+      page" and types the 6-digit number it shows back here
+      (`/pair/redeem`; 5 min, single use). Then the address is saved as the
+      fragment saves it. DEFAULT_COCKPIT is the Cockpit it pairs with
+      (published with Igor's OK); the address box shows it and takes another
+      if that one can't be reached. The Cockpit's box also offers one-click
+      `#larry-cockpit=` links for a browser with the Cockpit open.
+    * Fallback, or a Send whose address prompt was cancelled: one SECRET
+      gist per batch, through the same gist write and token as "Upload to
+      gist". Description
+      `blog-review: <permalink>`, one file `review.json`: the upload's shape
+      plus `schema: "blog-review-batch/1"`, `batch_id`, `via: "send"`,
+      `page_url`, `site_url` and `source_path`. A watcher lists the token
+      owner's gists (`GET /gists?since=…`), takes those with the
+      description prefix it has not seen, and dedupes resends on `batch_id`.
+      No gist id is written here: every batch makes its own gist.
+
+  OPEN PRS: in comment mode the pill also says "This page has N open PR(s)"
+  with links, when an open PR on idvorkin/idvorkin.github.io changes this
+  page's source file (`page.path`, e.g. `_d/whats-left.md`). It reads
+  GitHub's public API unauthenticated (60 requests/hour per IP): one list of
+  open PRs plus one file list per PR, cached in sessionStorage for
+  PR_CACHE_MS, and any failure shows nothing. The gist token is never sent
+  there. Readers never trigger it: it runs only after the flag check.
 -->
 
 <!--
@@ -76,6 +172,8 @@
   id="blog-annot-meta"
   data-permalink="{{ page.url }}"
   data-title="{{ page.title | default: '' | escape }}"
+  data-site-url="{{ site.url }}"
+  data-source-path="{{ page.path }}"
   hidden
 ></div>
 
@@ -86,7 +184,66 @@
     var FLAG_KEY = "blogAnnotate";
     var TOKEN_KEY = "blogAnnotateToken";
     var BUF_KEY = "blogAnnotateBuffer";
+    var COCKPIT_KEY = "blogLarryCockpit"; // saved Cockpit origin, off-tailnet
+    var TO_CHAT_KEY = "blogAnnotateToChat"; // "0": notes wait on the Review list
+    // The Cockpit Connect pairs with, published with Igor's OK (2026-11-22,
+    // Cockpit story 196): pairing is only a challenge and a number. Only a click on
+    // Connect sends to it; Send and Chat use the saved address alone.
+    var DEFAULT_COCKPIT = "https://c-5004.squeaker-teeth.ts.net";
+    var COCKPIT_TIMEOUT_MS = 8000; // a hung POST off the tailnet falls back
+    var PR_CACHE_KEY = "blogAnnotateOpenPrs"; // sessionStorage
+    var PR_CACHE_MS = 10 * 60 * 1000;
+    var REPO_API = "https://api.github.com/repos/idvorkin/idvorkin.github.io";
     var CTX = 30; // chars of prefix/suffix context (W3C TextQuoteSelector)
+    var ENTER_SAVE_MS = 400; // two trailing Enters this close together save the note
+
+    // Enter-Enter save rule, decided from the textarea's value before and
+    // after one input event (not keydown: dictation and phone keyboards
+    // often send no usable Enter key). `lastAt` is when the previous event
+    // appended a lone trailing newline, or null. A change counts only when
+    // it appends to the old value with the caret at the end; its trailing
+    // whitespace run gives the number of Enters it added.
+    function noteEnterStep(prev, next, caretAtEnd, lastAt, now) {
+      if (!caretAtEnd || next.slice(0, prev.length) !== prev) {
+        return { save: false, lastAt: null };
+      }
+      var tail = /\s*$/.exec(next.slice(prev.length))[0];
+      var enters = tail.split("\n").length - 1;
+      var hasText = next.trim() !== "";
+      if (enters >= 2) return { save: hasText, lastAt: null };
+      if (enters === 0) return { save: false, lastAt: null };
+      if (hasText && lastAt !== null && now - lastAt <= ENTER_SAVE_MS) {
+        return { save: true, lastAt: null };
+      }
+      return { save: false, lastAt: now };
+    }
+
+    // Should this keydown open the composer for the selection's bubble?
+    // Plain Enter only, bubble showing, composer shut, focus not in a field,
+    // button or link (Igor 2026-11-21: "when I have selected text and the
+    // comment button is up, and I hit Enter, I want to open the comment box").
+    function enterOpensComposer(e, isLive, composerOpen, bubbleShown) {
+      if (!isLive || composerOpen || !bubbleShown) return false;
+      if (e.key !== "Enter" || e.repeat || e.isComposing || e.defaultPrevented)
+        return false;
+      if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return false;
+      var t = e.target;
+      if (t && t.nodeType === 1) {
+        if (t.isContentEditable) return false;
+        if (/^(INPUT|TEXTAREA|SELECT|BUTTON|A)$/.test(t.tagName)) return false;
+      }
+      return true;
+    }
+
+    // The open PRs (from loadOpenPrs) whose changed files include this page's
+    // source file. `path` is Jekyll's `page.path`, relative to the repo root.
+    function prsTouchingPath(prs, path) {
+      var want = String(path || "").replace(/^\.?\//, "");
+      if (!want || !Array.isArray(prs)) return [];
+      return prs.filter(function (pr) {
+        return (pr.files || []).indexOf(want) !== -1;
+      });
+    }
 
     // ---------------------------------------------------------------- flag
     // Read the query string first so ?annotate=1 can turn the tool on for a
@@ -118,8 +275,121 @@
       }
     }
 
+    function lsGet(k) {
+      try {
+        return localStorage.getItem(k);
+      } catch (e) {
+        return null;
+      }
+    }
+    function lsSet(k, v) {
+      try {
+        localStorage.setItem(k, v);
+      } catch (e) {
+        /* private mode */
+      }
+    }
+
+    // See OWNER vs READER. TOGGLE_SEEN_KEY is written on the first toggle
+    // click, so a flag set before the toggle existed (only the owner could)
+    // still counts, and one set by a reader's click does not.
+    var OWNER_KEY = "blogAnnotateOwner";
+    var TOGGLE_SEEN_KEY = "blogAnnotateToggleSeen";
+    function owner() {
+      var h = String(window.location.hostname || "").toLowerCase();
+      return (
+        lsGet(OWNER_KEY) === "1" ||
+        (enabled() && lsGet(TOGGLE_SEEN_KEY) === null) ||
+        !!lsGet(TOKEN_KEY) ||
+        !!savedCockpit() ||
+        h === "localhost" ||
+        /\.ts\.net$/.test(h)
+      );
+    }
+
     var q = readQueryFlag();
+    if (q === true) lsSet(OWNER_KEY, "1");
     if (q !== null) setEnabled(q);
+
+    // ------------------------------------------------- saved Cockpit address
+    // See SEND TO LARRY. One validator for the prompt, the fragment and every
+    // read: an https origin on a tailnet name or localhost, origin only.
+    function cockpitOrigin(raw) {
+      var s = String(raw || "").trim();
+      if (!s) return "";
+      if (s.indexOf("://") < 0) s = "https://" + s;
+      var u;
+      try {
+        u = new URL(s);
+      } catch (e) {
+        return "";
+      }
+      var h = u.hostname.toLowerCase();
+      if (u.protocol !== "https:") return "";
+      if (h !== "localhost" && !/\.ts\.net$/.test(h)) return "";
+      return u.origin;
+    }
+
+    function savedCockpit() {
+      try {
+        return cockpitOrigin(localStorage.getItem(COCKPIT_KEY));
+      } catch (e) {
+        return "";
+      }
+    }
+
+    function saveCockpit(origin) {
+      try {
+        localStorage.setItem(COCKPIT_KEY, origin);
+      } catch (e) {
+        /* private mode: used for this page load only */
+      }
+    }
+
+    // #larry-cockpit=<origin> saves the address and strips itself. A fragment
+    // never reaches a server log. Replacing a DIFFERENT saved address asks
+    // first: anyone can own a tailnet name, so a crafted link must not
+    // silently redirect the notes.
+    (function readCockpitFragment() {
+      var hash = String(window.location.hash || "");
+      var prefix = "#larry-cockpit=";
+      if (hash.indexOf(prefix) !== 0) return;
+      var raw = hash.slice(prefix.length);
+      try {
+        raw = decodeURIComponent(raw);
+      } catch (e) {
+        /* keep it raw; the validator rejects junk */
+      }
+      try {
+        history.replaceState(
+          null,
+          "",
+          window.location.pathname + window.location.search
+        );
+      } catch (e) {
+        /* the address is still read; the hash just stays visible */
+      }
+      // A reader's browser never takes an address from a link: anyone can
+      // own a tailnet name, and a crafted link must not route their notes.
+      if (!owner()) return;
+      var origin = cockpitOrigin(raw);
+      if (!origin) {
+        // Fixed text, never the link's.
+        if (enabled())
+          window.alert("That is not a Cockpit address, so nothing was saved.");
+        return;
+      }
+      var prev = savedCockpit();
+      if (
+        prev &&
+        prev !== origin &&
+        !window.confirm(
+          "Send to Larry now posts to " + prev + ". Switch to " + origin + "?"
+        )
+      )
+        return;
+      saveCockpit(origin);
+    })();
 
     // The keyboard toggle is the only listener a normal reader ever pays for.
     // It is a single keydown handler; cost is indistinguishable from zero.
@@ -127,6 +397,7 @@
       var key = e.key || "";
       if ((e.metaKey || e.ctrlKey) && e.shiftKey && key.toLowerCase() === "a") {
         e.preventDefault();
+        lsSet(OWNER_KEY, "1");
         var next = !enabled();
         setEnabled(next);
         window.location.reload();
@@ -143,10 +414,16 @@
       enabled: function () {
         return live;
       },
+      ENTER_SAVE_MS: ENTER_SAVE_MS,
+      noteEnterStep: noteEnterStep,
+      enterOpensComposer: enterOpensComposer,
+      prsTouchingPath: prsTouchingPath,
+      cockpitOrigin: cockpitOrigin,
       set: function (on) {
         live = !!on;
         setEnabled(live);
         document.documentElement.classList.toggle("blog-annot-off", !live);
+        renderBar();
         if (live && !started) {
           started = true;
           start();
@@ -154,6 +431,139 @@
         if (!live && stop) stop();
       },
     };
+
+    // ----------------------------------------------- toggle + source link
+    // Shown to every reader; DOM only, no request. Kept out of the
+    // .blog-annot-off rule so it stays visible when Comments are off.
+    var bar = null;
+    var GITHUB_SVG =
+      '<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="currentColor">' +
+      '<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>';
+
+    // This post's markdown on GitHub, from Jekyll's page.path.
+    function sourceUrl() {
+      var meta = document.getElementById("blog-annot-meta");
+      var path = String((meta && meta.dataset.sourcePath) || "").replace(
+        /^\.?\//,
+        ""
+      );
+      if (!path) return "";
+      return (
+        "https://github.com/idvorkin/idvorkin.github.io/blob/main/" +
+        path.split("/").map(encodeURIComponent).join("/")
+      );
+    }
+
+    function renderBar() {
+      if (!bar) return;
+      var t = document.getElementById("blog-annot-toggle");
+      t.setAttribute("aria-pressed", String(live));
+      t.title =
+        (live
+          ? "Comments on: select text to comment. Click to turn off."
+          : "Comments off: click to comment on this page.") +
+        "\n" +
+        window.location.pathname;
+    }
+
+    // The header band under (right edge, y), or null: anything fixed or
+    // sticky, or a <nav>/<header> (the blog's navbar scrolls with the page).
+    function headerAt(y) {
+      var el = document.elementFromPoint(window.innerWidth - 24, y);
+      var best = null; // the outermost band, so a nav inside a header counts as the header
+      for (
+        ;
+        el && el !== document.body && el !== document.documentElement;
+        el = el.parentElement
+      ) {
+        var pos = window.getComputedStyle(el).position;
+        var band = el.tagName === "NAV" || el.tagName === "HEADER";
+        if (pos !== "fixed" && pos !== "sticky" && !band) continue;
+        var r = el.getBoundingClientRect();
+        if (r.top <= y && r.bottom > y && r.bottom < window.innerHeight / 3)
+          best = r;
+      }
+      return best;
+    }
+
+    // Top right, but under the page's own fixed headers (navbar, then the
+    // dev banner below it), so the buttons never sit on a title or a link.
+    function placeBar() {
+      bar.style.display = "none";
+      var bottom = 0;
+      for (var i = 0, r; i < 3 && (r = headerAt(bottom + 16)); i++)
+        bottom = r.bottom;
+      bar.style.display = "";
+      bar.style.top = bottom ? Math.round(bottom + 6) + "px" : "";
+    }
+
+    function mountBar() {
+      if (bar || !document.body) return;
+      var css = document.createElement("style");
+      css.textContent = [
+        "#blog-annot-bar{position:fixed;z-index:99998;display:flex;gap:6px;",
+        "top:calc(8px + env(safe-area-inset-top,0px));",
+        "right:calc(8px + env(safe-area-inset-right,0px));opacity:.7}",
+        "#blog-annot-bar:hover,#blog-annot-bar:focus-within{opacity:1}",
+        "#blog-annot-bar>*{box-sizing:border-box;width:30px;height:30px;padding:0;",
+        "display:inline-flex;align-items:center;justify-content:center;",
+        "border-radius:50%;border:1px solid rgba(128,128,128,.45);",
+        "background:rgba(128,128,128,.18);color:inherit;cursor:pointer;",
+        "font:14px/1 system-ui,sans-serif;text-decoration:none;",
+        "-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}",
+        "#blog-annot-toggle[aria-pressed='true']{background:#0b5ed7;",
+        "border-color:#0b5ed7;box-shadow:0 0 0 2px rgba(11,94,215,.35)}",
+        "@media print{#blog-annot-bar{display:none}}",
+        ".navbar .blog-annot-navtoggle{background:none;border:0;padding:0;",
+        "font-size:22px;line-height:1;border-radius:50%;cursor:pointer}",
+        ".navbar .blog-annot-navtoggle[aria-pressed='true']{background:#0b5ed7;",
+        "box-shadow:0 0 0 3px #0b5ed7}",
+      ].join("");
+      document.head.appendChild(css);
+      // The blog's navbar already links this post's source on GitHub, so the
+      // toggle joins the header right after that link. The floating bar is
+      // only the fallback for a layout without it.
+      var ghNav = document.querySelector(
+        '.navbar a[href*="github.com/idvorkin/idvorkin.github.io/blob/"]'
+      );
+      if (ghNav) {
+        bar = document.createElement("button");
+        bar.type = "button";
+        bar.id = "blog-annot-toggle";
+        bar.className = "nav-fa-icon blog-annot-navtoggle";
+        bar.setAttribute("aria-label", "Comments");
+        bar.textContent = "💬";
+        ghNav.parentNode.insertBefore(bar, ghNav.nextSibling);
+        bar.onclick = toggleClick;
+        renderBar();
+        return;
+      }
+      bar = document.createElement("div");
+      bar.id = "blog-annot-bar";
+      var href = sourceUrl();
+      bar.innerHTML =
+        (href
+          ? '<a id="blog-annot-src" target="_blank" rel="noopener" ' +
+            'aria-label="This page on GitHub" title="This page\'s source on GitHub">' +
+            GITHUB_SVG +
+            "</a>"
+          : "") +
+        '<button type="button" id="blog-annot-toggle" aria-label="Comments">💬</button>';
+      if (href) bar.firstChild.href = href;
+      document.body.appendChild(bar);
+      placeBar();
+      window.addEventListener("resize", placeBar);
+      document.getElementById("blog-annot-toggle").onclick = toggleClick;
+      renderBar();
+    }
+
+    function toggleClick() {
+      if (owner()) lsSet(OWNER_KEY, "1");
+      lsSet(TOGGLE_SEEN_KEY, "1");
+      window.blogAnnotate.set(!live);
+    }
+    if (document.body) mountBar();
+    else document.addEventListener("DOMContentLoaded", mountBar);
 
     if (enabled()) window.blogAnnotate.set(true); // <-- readers stop here
     return;
@@ -170,6 +580,13 @@
       var ORIGIN =
         window.location.origin ||
         window.location.protocol + "//" + window.location.host;
+      var SITE_URL = ((meta && meta.dataset.siteUrl) || "").replace(/\/$/, "");
+      var SOURCE_PATH = (meta && meta.dataset.sourcePath) || "";
+      // The Cockpit (see SEND TO LARRY): on this same host for a tailnet or
+      // localhost page, else the saved address, else "" until a Send asks.
+      var HOST = String(window.location.hostname || "").toLowerCase();
+      var SAME_HOST = HOST === "localhost" || /\.ts\.net$/.test(HOST);
+      var LARRY = SAME_HOST ? "https://" + HOST : savedCockpit();
 
       // ------------------------------------------------------------- storage
       function loadBuffer() {
@@ -292,13 +709,20 @@
         "#blog-annot-pill{position:fixed;right:14px;bottom:14px;z-index:99999;",
         "display:flex;gap:6px;align-items:center;padding:8px 12px;",
         "font:600 13px/1.2 system-ui,sans-serif;color:#fff;background:#212529;",
-        "border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.35)}",
+        "border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.35);",
+        "flex-wrap:wrap;max-width:calc(100vw - 28px);box-sizing:border-box}",
+        "#blog-annot-prs a{color:#a5d8ff}",
         // Sit above the rich diff's change navigator (#rd-nav) instead of over it.
         "body:has(#rd-nav) #blog-annot-pill{bottom:70px}",
         "#blog-annot-pill button{font:600 12px/1.2 system-ui,sans-serif;",
         "padding:5px 9px;border:0;border-radius:12px;cursor:pointer;",
         "background:#495057;color:#fff}",
         "#blog-annot-pill button:disabled{opacity:.45;cursor:default}",
+        "#blog-annot-larry-dot{width:10px;height:10px;border-radius:50%;",
+        "background:#868e96;display:inline-block}",
+        "#blog-annot-larry-dot[data-state='idle']{background:#2f9e44}",
+        "#blog-annot-larry-dot[data-state='busy']{background:#f59f00}",
+        "#blog-annot-larry-dot[data-state='down']{background:#e03131}",
         "#blog-annot-modal{position:fixed;inset:0;z-index:100000;display:none;",
         "align-items:center;justify-content:center;background:rgba(0,0,0,.45);",
         "padding:16px}",
@@ -330,8 +754,50 @@
         "#blog-annot-list li{padding:6px 0;border-top:1px solid #e9ecef}",
         "#blog-annot-note{margin-top:10px;font-size:12px;color:#495057;",
         "word-break:break-all}",
+        "#blog-annot-chat{position:fixed;right:14px;bottom:72px;z-index:99999;",
+        "width:360px;max-width:calc(100vw - 28px);max-height:min(60vh,480px);",
+        "display:flex;flex-direction:column;box-sizing:border-box;background:#fff;",
+        "color:#111;border:1px solid #dee2e6;border-radius:12px;text-align:left;",
+        "box-shadow:0 4px 18px rgba(0,0,0,.25);font:14px/1.4 system-ui,sans-serif}",
+        "#blog-annot-chat[hidden]{display:none}",
+        "#blog-annot-chat .bac-head{display:flex;align-items:center;",
+        "justify-content:space-between;padding:8px 12px;border-bottom:1px solid #dee2e6}",
+        "#blog-annot-chat .bac-head button{border:0;background:none;color:inherit;",
+        "font-size:20px;line-height:1;cursor:pointer;padding:0 4px}",
+        "#blog-annot-chat-log{flex:1;overflow-y:auto;padding:8px 12px;min-height:60px;",
+        "display:flex;flex-direction:column;gap:6px}",
+        "#blog-annot-chat-log:empty::before{content:'Larry answers here and on this page\\'s Cockpit thread.';",
+        "color:#868e96;font-size:12px}",
+        "#blog-annot-chat .bac-msg{max-width:85%;padding:6px 10px;border-radius:12px;",
+        "white-space:pre-wrap;overflow-wrap:anywhere}",
+        "#blog-annot-chat .bac-msg[data-who='igor']{align-self:flex-end;background:#0b5ed7;color:#fff}",
+        "#blog-annot-chat .bac-msg[data-who='larry']{align-self:flex-start;background:#f1f3f5;color:#111}",
+        "#blog-annot-chat .bac-msg[data-state='sending']{opacity:.6}",
+        "#blog-annot-chat .bac-msg[data-mark]::after{content:attr(data-mark);display:block;",
+        "text-align:right;font-size:11px;line-height:1;margin-top:3px}",
+        "#blog-annot-chat-status{padding:0 12px 4px;font-size:12px;color:#868e96}",
+        "#blog-annot-chat-status:empty{display:none}",
+        "#blog-annot-chat-connect{align-self:flex-start;margin:0 12px 6px;",
+        "padding:6px 12px;border:0;border-radius:8px;background:#0b5ed7;color:#fff;",
+        "font:600 13px/1.2 system-ui,sans-serif;cursor:pointer}",
+        "#blog-annot-chat-connect[hidden]{display:none}",
+        "#blog-annot-chat .bac-row{display:flex;gap:6px;padding:8px 12px;",
+        "border-top:1px solid #dee2e6}",
+        "#blog-annot-chat textarea{flex:1;min-width:0;resize:none;padding:6px 8px;",
+        "font:16px/1.35 system-ui,sans-serif;border:1px solid #ced4da;border-radius:8px;",
+        "background:#fff;color:#111;box-sizing:border-box}",
+        "#blog-annot-chat .bac-row button{padding:6px 12px;border:0;border-radius:8px;",
+        "background:#0b5ed7;color:#fff;font:600 13px/1.2 system-ui,sans-serif;cursor:pointer}",
+        "#blog-annot-chat .bac-row button:disabled{opacity:.5;cursor:default}",
+        "#blog-annot-chat #blog-annot-chat-copy{background:#495057}",
+        "#blog-annot-chat .bac-msg a{color:inherit;text-decoration:underline}",
+        "@media (prefers-color-scheme:dark){#blog-annot-chat{background:#1e1f22;",
+        "color:#e9ecef;border-color:#3a3d42}",
+        "#blog-annot-chat .bac-head,#blog-annot-chat .bac-row{border-color:#3a3d42}",
+        "#blog-annot-chat .bac-msg[data-who='larry']{background:#2c2f33;color:#e9ecef}",
+        "#blog-annot-chat textarea{background:#2c2f33;color:#e9ecef;border-color:#495057}}",
         ".blog-annot-off #blog-annot-btn,.blog-annot-off #blog-annot-pill,",
-        ".blog-annot-off #blog-annot-modal{display:none!important}",
+        ".blog-annot-off #blog-annot-modal,.blog-annot-off #blog-annot-chat{display:none!important}",
       ].join("");
       document.head.appendChild(style);
 
@@ -345,7 +811,18 @@
       pill.id = "blog-annot-pill";
       pill.innerHTML =
         '<span id="blog-annot-count">Review (0)</span>' +
-        '<button type="button" id="blog-annot-open">Open</button>';
+        '<button type="button" id="blog-annot-open">Open</button>' +
+        (LARRY
+          ? '<span id="blog-annot-larry-dot" data-state="unknown" title="Larry: checking…"></span>'
+          : "") +
+        '<button type="button" id="blog-annot-send">Send to Larry</button>' +
+        '<button type="button" id="blog-annot-chat-toggle">Chat</button>' +
+        (SAME_HOST
+          ? ""
+          : '<button type="button" id="blog-annot-connect"' +
+            (LARRY ? " hidden" : "") +
+            ">Connect to Larry</button>") +
+        '<span id="blog-annot-prs" hidden></span>';
       document.body.appendChild(pill);
 
       var modal = document.createElement("div");
@@ -389,9 +866,21 @@
         }
       });
 
+      // Enter with the Comment bubble up opens the composer, as a tap would.
+      document.addEventListener("keydown", function (e) {
+        var shown = btn.style.display === "block";
+        if (!enterOpensComposer(e, live, !!composerKeys, shown)) return;
+        e.preventDefault();
+        if (pending) openComposer(pending);
+      });
+
+      // The pill's Send is greyed out with nothing buffered or mid-send.
+      var sending = false;
       function refreshPill() {
+        var n = loadBuffer().length;
         document.getElementById("blog-annot-count").textContent =
-          "Review (" + loadBuffer().length + ")";
+          "Review (" + n + ")";
+        document.getElementById("blog-annot-send").disabled = sending || !n;
       }
       refreshPill();
 
@@ -437,6 +926,11 @@
         if (!sel || sel.isCollapsed || sel.rangeCount === 0) return hideBtn();
         var range = sel.getRangeAt(0);
         if (!range.toString().trim()) return hideBtn();
+        // a selection in the chat panel is not a quote from the page
+        var where = range.commonAncestorContainer;
+        if (where.nodeType !== 1) where = where.parentNode;
+        if (where && where.closest && where.closest("#blog-annot-chat"))
+          return hideBtn();
         var sel_info = selectorFromRange(range);
         if (!sel_info) return hideBtn();
         pending = sel_info;
@@ -500,10 +994,16 @@
             '<div id="blog-annot-intents">' +
             chips +
             "</div>" +
+            (LARRY
+              ? '<label id="blog-annot-tochat-row" class="hint">' +
+                '<input type="checkbox" id="blog-annot-tochat"' +
+                (lsGet(TO_CHAT_KEY) === "0" ? "" : " checked") +
+                "> Send straight to chat</label>"
+              : "") +
             '<div class="row">' +
             '<span class="hint">' +
             (IS_MAC ? "⌘" : "Ctrl") +
-            "+Enter saves · Esc cancels</span>" +
+            "+Enter or Enter twice saves · Esc cancels</span>" +
             '<button type="button" class="ghost" id="blog-annot-cancel">Cancel</button>' +
             '<button type="button" class="primary" id="blog-annot-save">Save</button>' +
             "</div>"
@@ -511,6 +1011,11 @@
 
         var ta = document.getElementById("blog-annot-text");
         ta.focus();
+        var toChatBox = document.getElementById("blog-annot-tochat");
+        if (toChatBox)
+          toChatBox.onchange = function () {
+            lsSet(TO_CHAT_KEY, toChatBox.checked ? "1" : "0");
+          };
 
         var intent = DEFAULT_INTENT;
         var chipBox = document.getElementById("blog-annot-intents");
@@ -538,6 +1043,7 @@
             permalink: PERMALINK,
             origin: ORIGIN,
             title: TITLE,
+            source: SOURCE_PATH,
             quote: sel_info.quote,
             prefix: sel_info.prefix,
             suffix: sel_info.suffix,
@@ -547,10 +1053,21 @@
             version: pageVersion(),
           };
           if (sel_info.diff) entry.diff = sel_info.diff;
+          if (toChatBox && toChatBox.checked) entry.toChat = true;
           list.push(entry);
           saveBuffer(list);
           refreshPill();
           hideModal();
+          // Saved first, so a failed send leaves it on the Review list.
+          if (entry.toChat)
+            flushToCockpit().then(function (ok) {
+              if (ok) return;
+              var b = document.getElementById("blog-annot-send");
+              b.textContent = "Chat unreachable: saved to Review";
+              setTimeout(function () {
+                if (!sending) b.textContent = "Send to Larry";
+              }, 4000);
+            });
           var s = window.getSelection();
           if (s && s.removeAllRanges) s.removeAllRanges();
         }
@@ -558,6 +1075,30 @@
         document.getElementById("blog-annot-cancel").onclick = hideModal;
         document.getElementById("blog-annot-save").onclick = save;
         composerKeys = { save: save, cancel: hideModal };
+
+        var prevText = ta.value;
+        var lastEnterAt = null;
+        // Composing input (phone keyboards, some dictation) is judged too: it
+        // can only trigger a save by appending trailing newlines.
+        ta.addEventListener("input", function () {
+          var next = ta.value;
+          var atEnd =
+            ta.selectionStart === next.length &&
+            ta.selectionEnd === next.length;
+          var step = noteEnterStep(
+            prevText,
+            next,
+            atEnd,
+            lastEnterAt,
+            Date.now()
+          );
+          prevText = next;
+          lastEnterAt = step.lastAt;
+          if (step.save) {
+            ta.value = next.replace(/\s+$/, "");
+            save();
+          }
+        });
       }
 
       stop = function () {
@@ -566,6 +1107,59 @@
       };
 
       // ---------------------------------------------------------- review flow
+      var OWNER = owner();
+
+      // Clipboard write with the execCommand fallback; resolves or rejects.
+      function copyText(text) {
+        function fallback() {
+          var ta = document.createElement("textarea");
+          ta.value = text;
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.select();
+          var ok = false;
+          try {
+            ok = document.execCommand("copy");
+          } catch (e) {
+            ok = false;
+          }
+          document.body.removeChild(ta);
+          return ok
+            ? Promise.resolve()
+            : Promise.reject(new Error("copy failed"));
+        }
+        if (navigator.clipboard && navigator.clipboard.writeText)
+          return navigator.clipboard.writeText(text).then(null, fallback);
+        return fallback();
+      }
+
+      // The buffer as a reader pastes it to Igor: page link first, then each
+      // note under its quote, one block per page.
+      function readableNotes(list) {
+        return reviewBatches(list)
+          .map(function (batch) {
+            var head =
+              "Comments on " +
+              batch.body.page_url +
+              (batch.body.title ? " (" + batch.body.title + ")" : "");
+            var lines = batch.items.map(function (a, i) {
+              return (
+                i +
+                1 +
+                ". [" +
+                (a.intent || DEFAULT_INTENT) +
+                '] "' +
+                a.quote +
+                '"' +
+                (a.comment ? "\n   " + a.comment : "")
+              );
+            });
+            return head + "\n\n" + lines.join("\n");
+          })
+          .join("\n\n");
+      }
+
       document.getElementById("blog-annot-open").onclick = openReview;
 
       function openReview() {
@@ -598,8 +1192,12 @@
             "</ul>" +
             '<div class="row">' +
             '<button type="button" class="ghost" id="blog-annot-clear">Clear all</button>' +
-            '<button type="button" class="ghost" id="blog-annot-copy">Copy to clipboard</button>' +
-            '<button type="button" class="primary" id="blog-annot-gist">Upload to gist</button>' +
+            (OWNER
+              ? '<button type="button" class="ghost" id="blog-annot-copy">Copy to clipboard</button>'
+              : '<button type="button" class="primary" id="blog-annot-copy">Copy for Igor</button>') +
+            (OWNER || lsGet(TOKEN_KEY)
+              ? '<button type="button" class="primary" id="blog-annot-gist">Upload to gist</button>'
+              : "") +
             '<button type="button" class="ghost" id="blog-annot-close">Close</button>' +
             "</div>" +
             '<div id="blog-annot-note"></div>'
@@ -616,39 +1214,987 @@
         };
 
         document.getElementById("blog-annot-copy").onclick = function () {
-          var json = payloadJson(list);
-          function fallback() {
-            var ta = document.createElement("textarea");
-            ta.value = json;
-            ta.style.position = "fixed";
-            ta.style.opacity = "0";
-            document.body.appendChild(ta);
-            ta.select();
-            try {
-              document.execCommand("copy");
-              note.textContent = "Copied " + list.length + " annotations.";
-            } catch (e) {
-              note.textContent = "Copy failed — select the JSON manually.";
+          copyText(OWNER ? payloadJson(list) : readableNotes(list)).then(
+            function () {
+              note.textContent = OWNER
+                ? "Copied " + list.length + " annotations."
+                : "Copied " +
+                  list.length +
+                  " notes with the page link. Paste them to Igor.";
+            },
+            function () {
+              note.textContent = "Copy failed. Select the text by hand.";
             }
-            document.body.removeChild(ta);
-          }
-          if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(json).then(function () {
-              note.textContent = "Copied " + list.length + " annotations.";
-            }, fallback);
-          } else {
-            fallback();
-          }
+          );
         };
 
-        document.getElementById("blog-annot-gist").onclick = function () {
-          if (!list.length) {
-            note.textContent = "Nothing to upload.";
+        var gistBtn = document.getElementById("blog-annot-gist");
+        if (gistBtn)
+          gistBtn.onclick = function () {
+            if (!list.length) {
+              note.textContent = "Nothing to upload.";
+              return;
+            }
+            uploadGist(list, note);
+          };
+      }
+
+      // ------------------------------------------------------ send to Larry
+      var LARRY_TITLES = {
+        idle: "Larry: idle, ready",
+        busy: "Larry: busy",
+        down: "Larry: down",
+        unreachable: "Larry: unreachable (not on the tailnet?)",
+      };
+
+      function setDot(state, status) {
+        var dot = document.getElementById("blog-annot-larry-dot");
+        if (!dot) return;
+        dot.setAttribute(
+          "data-state",
+          state === "unreachable" ? "down" : state
+        );
+        var t = LARRY_TITLES[state] || "Larry: " + state;
+        if (state === "busy" && status && status.queued)
+          t += ", " + status.queued + " queued";
+        if (state === "down" && status && status.why)
+          t += " (" + status.why + ")";
+        dot.title = t;
+      }
+
+      function refreshLarry() {
+        if (!LARRY || !live) return Promise.resolve();
+        return fetch(LARRY + "/larry/status", { cache: "no-store" })
+          .then(function (res) {
+            if (!res.ok) throw new Error("status " + res.status);
+            return res.json();
+          })
+          .then(function (s) {
+            setDot(s && s.state ? s.state : "down", s);
+            offerConnect(false);
+            return flushToCockpit();
+          })
+          .catch(function () {
+            setDot("unreachable");
+            offerConnect(true);
+          });
+      }
+
+      // One POST per page: the buffer can span pages, and each review lands on
+      // its own page's thread. An id derived from the batch lets the Cockpit
+      // recognize a resend whose first answer was lost.
+      function reviewBatches(list) {
+        var groups = {};
+        var order = [];
+        list.forEach(function (a) {
+          var key = (a.origin || ORIGIN) + "|" + (a.permalink || PERMALINK);
+          if (!groups[key]) {
+            groups[key] = [];
+            order.push(key);
+          }
+          groups[key].push(a);
+        });
+        return order.map(function (key) {
+          var items = groups[key];
+          var first = items[0];
+          var path = first.permalink || PERMALINK;
+          var annotations = items.map(function (a) {
+            return {
+              quote: a.quote || "",
+              prefix: a.prefix || "",
+              suffix: a.suffix || "",
+              intent: a.intent || DEFAULT_INTENT,
+              note: a.comment || "",
+            };
+          });
+          return {
+            items: items,
+            path: path,
+            body: {
+              id: "blog-" + fnv1a(key + JSON.stringify(annotations)),
+              permalink: SITE_URL ? SITE_URL + path : "",
+              page_url: (first.origin || ORIGIN) + path,
+              branch: String(window.__GIT_BRANCH__ || ""),
+              title: first.title || "",
+              annotations: annotations,
+            },
+          };
+        });
+      }
+
+      function sendToLarry() {
+        if (sending) return Promise.resolve();
+        var list = loadBuffer();
+        var sendBtn = document.getElementById("blog-annot-send");
+        if (!list.length) {
+          sendBtn.textContent = "Nothing to send";
+          setTimeout(function () {
+            sendBtn.textContent = "Send to Larry";
+          }, 1500);
+          return Promise.resolve();
+        }
+        // Off the tailnet with no saved address, ask for one once. Cancel
+        // means "use the gist"; a bad address sends nothing.
+        // A reader with no Larry and no token: nothing to send to, so the
+        // review card with Copy for Igor.
+        if (!LARRY && !OWNER && !lsGet(TOKEN_KEY)) {
+          openReview();
+          document.getElementById("blog-annot-note").textContent =
+            "Larry isn't connected in this browser. Copy your notes and send them to Igor.";
+          return Promise.resolve();
+        }
+        if (!LARRY && !SAME_HOST && OWNER) {
+          var typed = window.prompt(
+            "Cockpit address for Send to Larry (https://…), saved in this " +
+              "browser. Cancel to send to a secret gist instead.",
+            DEFAULT_COCKPIT
+          );
+          if (typed && typed.trim()) {
+            var origin = cockpitOrigin(typed);
+            if (!origin) {
+              openReview();
+              document.getElementById("blog-annot-note").textContent =
+                "Not a Cockpit address, so nothing was sent. Your notes are kept.";
+              return Promise.resolve();
+            }
+            saveCockpit(origin);
+            LARRY = origin;
+          }
+        }
+        // Gists only off the tailnet, and only once the Cockpit fails: the
+        // token is asked for then, at most once per Send.
+        var token = null;
+        var asked = false;
+        var cockpitDown = !LARRY;
+        var why = "";
+        function gist(batch, why) {
+          if (!asked) {
+            asked = true;
+            token = OWNER ? getToken() : lsGet(TOKEN_KEY);
+          }
+          if (!token)
+            return Promise.reject(
+              new Error(
+                (why ? why + ", and no" : "No") +
+                  " GitHub token, so nothing was sent"
+              )
+            );
+          return postGist(token, batch.path, reviewBatchJson(batch));
+        }
+        var deliver = SAME_HOST
+          ? deliverToCockpit
+          : function (batch) {
+              if (cockpitDown) return gist(batch, why);
+              return deliverToCockpit(batch).catch(function (err) {
+                // Unreachable, CORS, timeout or an error reply: stop trying
+                // the Cockpit for this Send and use the gist for the rest.
+                cockpitDown = true;
+                why = err.message || String(err);
+                return gist(batch, why);
+              });
+            };
+        sending = true;
+        sendBtn.disabled = true;
+        sendBtn.textContent = "Sending…";
+        var sent = {};
+        var failed = [];
+        var errors = [];
+        return reviewBatches(list)
+          .reduce(function (chain, batch) {
+            return chain.then(function () {
+              return deliver(batch)
+                .then(function () {
+                  batch.items.forEach(function (a) {
+                    sent[noteKey(a)] = true;
+                  });
+                })
+                .catch(function (err) {
+                  failed = failed.concat(batch.items);
+                  errors.push(err.message || String(err));
+                });
+            });
+          }, Promise.resolve())
+          .then(function () {
+            // Only what was delivered leaves the buffer; a note saved
+            // while the send was in flight stays too.
+            saveBuffer(
+              loadBuffer().filter(function (a) {
+                return !sent[noteKey(a)];
+              })
+            );
+            sending = false;
+            refreshPill();
+            sendBtn.textContent = "Send to Larry";
+            refreshLarry();
+            if (!failed.length) {
+              sendBtn.textContent = "Sent ✓";
+              setTimeout(function () {
+                sendBtn.textContent = "Send to Larry";
+              }, 2000);
+              return;
+            }
+            openReview();
+            document.getElementById("blog-annot-note").textContent =
+              "Send to Larry failed (" +
+              errors.join("; ") +
+              "). Your notes are kept: upload a gist or copy them instead.";
+          });
+      }
+
+      function noteKey(a) {
+        return a.ts + "|" + a.quote;
+      }
+
+      // NOTES GO STRAIGHT TO CHAT (Igor 2026-11-22: "If there's no chat, it
+      // should just save to the list. Otherwise it should go straight to
+      // chat", then "that check box and default checked"): with a Cockpit the
+      // note box has "Send straight to chat", checked unless this browser
+      // unticked it (TO_CHAT_KEY). A ticked note is saved with toChat and
+      // posted at once to the page's thread, the one the chat panel shows; an
+      // unticked one waits on the Review list for Send to Larry, as before.
+      // A toChat note that could not go stays listed and goes when the
+      // Cockpit answers again (status or chat poll). Quiet: no gist, no card,
+      // no prompt.
+      function flushToCockpit() {
+        if (!LARRY || sending || !live) return Promise.resolve(false);
+        var list = loadBuffer().filter(function (a) {
+          return a.toChat;
+        });
+        if (!list.length) return Promise.resolve(true);
+        var sendBtn = document.getElementById("blog-annot-send");
+        sending = true;
+        refreshPill();
+        sendBtn.textContent = "Sending…";
+        var sent = {};
+        var ok = true;
+        return reviewBatches(list)
+          .reduce(function (chain, batch) {
+            return chain.then(function () {
+              return deliverToCockpit(batch).then(
+                function () {
+                  batch.items.forEach(function (a) {
+                    sent[noteKey(a)] = true;
+                  });
+                },
+                function () {
+                  ok = false;
+                }
+              );
+            });
+          }, Promise.resolve())
+          .then(function () {
+            saveBuffer(
+              loadBuffer().filter(function (a) {
+                return !sent[noteKey(a)];
+              })
+            );
+            sending = false;
+            refreshPill();
+            sendBtn.textContent = ok ? "Sent to chat ✓" : "Send to Larry";
+            if (!ok) {
+              offerConnect(true);
+              return false;
+            }
+            setTimeout(function () {
+              if (!sending) sendBtn.textContent = "Send to Larry";
+            }, 2000);
+            offerConnect(false);
+            if (!chatPanel.hidden) chatPoll();
+            return true;
+          });
+      }
+      window.blogAnnotate.flushToCockpit = flushToCockpit;
+
+      function deliverToCockpit(batch) {
+        var init = {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(batch.body),
+        };
+        // Off the tailnet a saved address can hang instead of failing; cap
+        // it so the gist fallback still runs.
+        if (!SAME_HOST && window.AbortSignal && AbortSignal.timeout)
+          init.signal = AbortSignal.timeout(COCKPIT_TIMEOUT_MS);
+        return fetch(LARRY + "/blog-review", init).then(function (res) {
+          if (!res.ok) throw new Error("Cockpit returned " + res.status);
+        });
+      }
+
+      // One page's batch as the review.json a Send writes to its own gist:
+      // the "Upload to gist" shape (so scripts/blog_review.py reads it as is)
+      // plus the fields a watcher needs. See SEND TO LARRY above.
+      function reviewBatchJson(batch) {
+        var first = batch.items[0];
+        var sentAt = new Date().toISOString();
+        return JSON.stringify(
+          {
+            schema: "blog-review-batch/1",
+            batch_id: batch.body.id,
+            via: "send",
+            permalink: batch.path,
+            origin: first.origin || ORIGIN,
+            title: first.title || "",
+            url: batch.body.page_url,
+            page_url: batch.body.page_url,
+            site_url: batch.body.permalink,
+            source_path: first.source || "",
+            created: sentAt,
+            version: first.version || null,
+            annotations: batch.items,
+          },
+          null,
+          2
+        );
+      }
+
+      document.getElementById("blog-annot-send").onclick = sendToLarry;
+      window.blogAnnotate.sendToLarry = sendToLarry;
+      if (LARRY) {
+        refreshLarry();
+        setInterval(refreshLarry, 60000);
+        window.blogAnnotate.refreshLarry = refreshLarry;
+      }
+
+      // ------------------------------------------------------------- connect
+      // Pairing (Cockpit story 196): the page asks the Cockpit for a challenge
+      // (bound to this origin), Igor types it into the Cockpit's "Pair a page"
+      // and types the 6-digit number it shows back here. The number goes only
+      // in a POST body; on success the address is saved as the fragment saves it.
+      function pairPost(base, path, body) {
+        // Off the tailnet the Cockpit never answers: give up after
+        // COCKPIT_TIMEOUT_MS rather than hang the card.
+        var ctl =
+          typeof AbortController === "function" ? new AbortController() : null;
+        var timer = ctl
+          ? setTimeout(function () {
+              ctl.abort();
+            }, COCKPIT_TIMEOUT_MS)
+          : null;
+        return fetch(base + path, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+          cache: "no-store",
+          signal: ctl ? ctl.signal : undefined,
+        })
+          .then(function (res) {
+            return res.json().then(
+              function (j) {
+                return { status: res.status, body: j || {} };
+              },
+              function () {
+                return { status: res.status, body: {} };
+              }
+            );
+          })
+          .finally(function () {
+            clearTimeout(timer);
+          });
+      }
+
+      function connectNote(text) {
+        var n = document.getElementById("blog-annot-note");
+        if (n) n.textContent = text;
+      }
+
+      function connectOpen() {
+        showModal(
+          "<b>Connect to Larry</b>" +
+            '<div id="blog-annot-pair-addr"><p>Cockpit address:</p>' +
+            '<input id="blog-annot-pair-origin" type="url" autocomplete="off" ' +
+            'spellcheck="false" placeholder="https://…" style="width:100%;' +
+            'box-sizing:border-box;padding:8px;font:inherit"></div>' +
+            '<div id="blog-annot-pair-step" hidden><p>In the Cockpit, Pair a page, type:</p>' +
+            '<p id="blog-annot-pair-ch" style="font:700 28px ui-monospace,monospace;' +
+            'letter-spacing:.2em;margin:4px 0 10px"></p>' +
+            '<input id="blog-annot-pair-code" inputmode="numeric" autocomplete="one-time-code" ' +
+            'maxlength="6" placeholder="Number" style="width:100%;box-sizing:border-box;' +
+            'padding:8px;font:600 20px ui-monospace,monospace;letter-spacing:.2em"></div>' +
+            '<div class="blog-annot-row">' +
+            '<button type="button" class="blog-annot-ghost" id="blog-annot-pair-cancel">Cancel</button>' +
+            '<button type="button" class="blog-annot-primary" id="blog-annot-pair-go">Next</button>' +
+            "</div>" +
+            '<div id="blog-annot-note" aria-live="polite"></div>'
+        );
+        var base = "";
+        var challenge = "";
+        var busy = false;
+        var go = document.getElementById("blog-annot-pair-go");
+        var addr = document.getElementById("blog-annot-pair-origin");
+        var codeIn = document.getElementById("blog-annot-pair-code");
+        document.getElementById("blog-annot-pair-cancel").onclick = hideModal;
+
+        function start(origin) {
+          busy = true;
+          connectNote("…");
+          return pairPost(origin, "/pair/start", {})
+            .then(function (r) {
+              if (r.status !== 200 || !r.body.challenge) throw new Error();
+              base = origin;
+              challenge = String(r.body.challenge);
+              document.getElementById("blog-annot-pair-addr").hidden = true;
+              document.getElementById("blog-annot-pair-step").hidden = false;
+              document.getElementById("blog-annot-pair-ch").textContent =
+                challenge;
+              go.textContent = "Pair";
+              connectNote("");
+              codeIn.focus();
+            })
+            .catch(function () {
+              connectNote("Can't reach the Cockpit. Are you on Tailscale?");
+            })
+            .then(function () {
+              busy = false;
+            });
+        }
+
+        function redeem() {
+          var code = String(codeIn.value || "").replace(/\D/g, "");
+          if (code.length !== 6) {
+            connectNote("Type the 6-digit number.");
             return;
           }
-          uploadGist(list, note);
+          busy = true;
+          connectNote("…");
+          pairPost(base, "/pair/redeem", { challenge: challenge, code: code })
+            .then(function (r) {
+              if (r.status === 200 && r.body.ok) {
+                saveCockpit(base);
+                lsSet(OWNER_KEY, "1");
+                // Reload so the status dot, Send and an open chat all pick it up.
+                window.location.reload();
+                return;
+              }
+              connectNote(
+                r.status === 429
+                  ? "Too many tries. Wait a minute."
+                  : "Wrong or expired number. Connect again for a new challenge."
+              );
+            })
+            .catch(function () {
+              connectNote("Can't reach the Cockpit. Are you on Tailscale?");
+            })
+            .then(function () {
+              busy = false;
+            });
+        }
+
+        go.onclick = function () {
+          if (busy) return;
+          if (challenge) return redeem();
+          var origin = cockpitOrigin(addr.value);
+          if (!origin) {
+            connectNote("Not a Cockpit address (https on a tailnet name).");
+            return;
+          }
+          start(origin);
         };
+        [addr, codeIn].forEach(function (el) {
+          el.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" && !e.isComposing) {
+              e.preventDefault();
+              go.onclick();
+            }
+          });
+        });
+        // A saved address that doesn't answer falls back to the published one.
+        var fallback = cockpitOrigin(DEFAULT_COCKPIT);
+        var preset = LARRY || fallback;
+        addr.value = preset;
+        if (!preset) return addr.focus();
+        start(preset).then(function () {
+          if (challenge || preset === fallback || !fallback) return;
+          addr.value = fallback;
+          start(fallback);
+        });
       }
+
+      // Connect shows with no Cockpit, and comes back when the saved one stops
+      // answering (igor2-88g.1652): otherwise a stale address leaves only a red
+      // dot and no way to pair. Never on the tailnet, where the Cockpit is this host.
+      function offerConnect(on) {
+        if (SAME_HOST) return;
+        ["blog-annot-connect", "blog-annot-chat-connect"].forEach(
+          function (id) {
+            var el = document.getElementById(id);
+            if (el) el.hidden = !(on || !LARRY);
+          }
+        );
+      }
+
+      var connectBtn = document.getElementById("blog-annot-connect");
+      if (connectBtn) connectBtn.onclick = connectOpen;
+      window.blogAnnotate.connect = connectOpen;
+
+      // The page as the chat names it (see CHAT PANEL): the permalink
+      // (site.url + page.url, as Send to Larry sends it) is the thread's
+      // identity. `jekyll serve` rewrites site.url to the local server, so a
+      // preview gets a thread of its own, apart from the live post's.
+      var CHAT_PAGE = {
+        page_url: ORIGIN + PERMALINK,
+        permalink: SITE_URL ? SITE_URL + PERMALINK : "",
+        title: TITLE,
+        source_repo: SOURCE_PATH ? "idvorkin/idvorkin.github.io" : "",
+        source_path: SOURCE_PATH,
+      };
+
+      // ------------------------------------------------------------ chat panel
+      // A small panel for talking to Larry about THIS page (Cockpit story 171):
+      // each message goes to POST /page-chat, lands on the page's own Cockpit
+      // thread and wakes him like any chat; his replies on that thread show here
+      // by polling GET /page-chat. Polls only while the panel is open and the
+      // tab is visible; stop() closes it, so it is as inert as the rest. The
+      // inline comments above are untouched by it.
+      var CHAT_POLL_MS = 4000;
+      var chatTimer = null;
+      var chatLastId = null; // the newest message id the panel has from a poll
+      var chatSeen = {}; // message id -> its bubble
+      var chatBusy = false;
+
+      // The receipt on each of Igor's messages, the Cockpit's own ladder
+      // (cockpit-0gp, story 195): 👀 the Cockpit has it, 🫡 Larry has seen it,
+      // 🏆 done; nothing while only sent. GET /page-chat carries `receipts`
+      // on every poll (the `after` read never returns a drawn message again);
+      // a Cockpit without them sends none, and no mark is drawn.
+      var CHAT_RECEIPT = {
+        received: ["👀", "Received"],
+        seen: ["🫡", "Seen by Larry"],
+        done: ["🏆", "Done"],
+      };
+      var CHAT_RECEIPT_RANK = { received: 1, seen: 2, done: 3 };
+
+      var chatPanel = document.createElement("div");
+      chatPanel.id = "blog-annot-chat";
+      chatPanel.setAttribute("role", "dialog");
+      chatPanel.setAttribute("aria-label", "Chat with Larry about this page");
+      chatPanel.hidden = true;
+      chatPanel.innerHTML =
+        '<div class="bac-head"><b>Larry · this page</b>' +
+        '<button type="button" id="blog-annot-chat-close" aria-label="Close chat">×</button></div>' +
+        '<div id="blog-annot-chat-log" aria-live="polite"></div>' +
+        '<div id="blog-annot-chat-status"></div>' +
+        '<button type="button" id="blog-annot-chat-connect" hidden>Connect to Larry</button>' +
+        '<div class="bac-row"><textarea id="blog-annot-chat-text" rows="2" ' +
+        'placeholder="Talk to Larry about this page…"></textarea>' +
+        '<button type="button" id="blog-annot-chat-copy">Copy</button>' +
+        '<button type="button" id="blog-annot-chat-send">Send</button></div>';
+      document.body.appendChild(chatPanel);
+      var chatLog = document.getElementById("blog-annot-chat-log");
+      var chatTa = document.getElementById("blog-annot-chat-text");
+      var chatSendBtn = document.getElementById("blog-annot-chat-send");
+
+      function chatStatus(text) {
+        document.getElementById("blog-annot-chat-status").textContent =
+          text || "";
+      }
+
+      function chatFetch(path, init) {
+        init = init || {};
+        if (!SAME_HOST && window.AbortSignal && AbortSignal.timeout)
+          init.signal = AbortSignal.timeout(COCKPIT_TIMEOUT_MS);
+        return fetch(LARRY + path, init).then(
+          function (res) {
+            if (res.status === 404)
+              throw new Error("this Cockpit has no page chat yet");
+            if (!res.ok) throw new Error("Cockpit returned " + res.status);
+            return res.json();
+          },
+          function () {
+            // An older Cockpit answers 404 with no CORS header, which the browser
+            // reports as a failed fetch, the same as being off the tailnet.
+            throw new Error(
+              "can't reach the Cockpit, or it has no page chat yet"
+            );
+          }
+        );
+      }
+
+      // A message's text with its http(s) URLs as links, built as nodes:
+      // message text never goes through innerHTML.
+      var URL_RE = /https?:\/\/[^\s<>"']+/g;
+      function chatSetText(el, text) {
+        el.textContent = "";
+        var at = 0;
+        text.replace(URL_RE, function (raw, i) {
+          var url = raw.replace(/[.,;:!?)\]]+$/, "");
+          var ok = false;
+          try {
+            ok = /^https?:$/.test(new URL(url).protocol);
+          } catch (e) {
+            ok = false;
+          }
+          if (!ok) return raw;
+          el.appendChild(document.createTextNode(text.slice(at, i)));
+          var a = document.createElement("a");
+          a.href = url;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          a.textContent = url;
+          el.appendChild(a);
+          at = i + url.length;
+          return raw;
+        });
+        el.appendChild(document.createTextNode(text.slice(at)));
+      }
+
+      // One bubble per message id, text only (never HTML).
+      function chatAdd(m, state) {
+        var el = m.id ? chatSeen[m.id] : null;
+        if (!el) {
+          el = document.createElement("div");
+          el.className = "bac-msg";
+          chatLog.appendChild(el);
+          if (m.id) chatSeen[m.id] = el;
+        }
+        el.setAttribute("data-who", m.who === "larry" ? "larry" : "igor");
+        chatSetText(el, String(m.text || ""));
+        if (state) el.setAttribute("data-state", state);
+        else el.removeAttribute("data-state");
+        chatMark(el, m.receipt);
+        chatLog.scrollTop = chatLog.scrollHeight;
+        return el;
+      }
+
+      // An attribute, drawn by CSS: chatSetText empties the bubble's children.
+      // Only forward, as in the Cockpit; never on Larry's or a sending bubble.
+      function chatMark(el, receipt) {
+        var mark = CHAT_RECEIPT[receipt];
+        if (!mark || el.getAttribute("data-who") !== "igor") return;
+        if (el.getAttribute("data-state")) return;
+        var had = CHAT_RECEIPT_RANK[el.getAttribute("data-receipt")] || 0;
+        if (CHAT_RECEIPT_RANK[receipt] <= had) return;
+        el.setAttribute("data-receipt", receipt);
+        el.setAttribute("data-mark", mark[0]);
+        el.title = mark[1];
+      }
+
+      // fromId re-reads the whole thread and, when it holds that message,
+      // redraws it in the Cockpit's order: after the first send makes a thread,
+      // the Cockpit's opener goes above Igor's message, not below it.
+      function chatPoll(fromId) {
+        if (!LARRY || chatPanel.hidden || !live) return Promise.resolve();
+        var q =
+          "/page-chat?page=" +
+          encodeURIComponent(CHAT_PAGE.permalink || CHAT_PAGE.page_url) +
+          (chatLastId && !fromId
+            ? "&after=" + encodeURIComponent(chatLastId)
+            : "");
+        return chatFetch(q, { cache: "no-store" })
+          .then(function (out) {
+            var msgs = out.messages || [];
+            if (fromId) {
+              var has = msgs.some(function (x) {
+                return x.id === fromId;
+              });
+              if (!has) return;
+              chatLog.textContent = "";
+              chatSeen = {};
+              chatLastId = null;
+            }
+            msgs.forEach(function (m) {
+              chatAdd(m);
+              if (m.id) chatLastId = m.id;
+            });
+            var receipts = out.receipts || {};
+            Object.keys(receipts).forEach(function (id) {
+              if (chatSeen[id]) chatMark(chatSeen[id], receipts[id]);
+            });
+            if (!chatBusy) chatStatus("");
+            offerConnect(false);
+            flushToCockpit();
+          })
+          .catch(function (err) {
+            chatStatus("Can't reach Larry: " + (err.message || err));
+            offerConnect(true);
+          });
+      }
+
+      function chatSchedule() {
+        clearTimeout(chatTimer);
+        chatTimer = null;
+        if (chatPanel.hidden || !live) return;
+        chatTimer = setTimeout(function () {
+          (document.hidden ? Promise.resolve() : chatPoll()).then(chatSchedule);
+        }, CHAT_POLL_MS);
+      }
+
+      function chatOpen() {
+        if (!LARRY && !SAME_HOST && OWNER) {
+          var origin = cockpitOrigin(
+            window.prompt(
+              "Cockpit address for the chat (https://…), saved in this browser.",
+              DEFAULT_COCKPIT
+            )
+          );
+          if (origin) {
+            saveCockpit(origin);
+            LARRY = origin;
+          }
+        }
+        chatPanel.hidden = false;
+        chatSendBtn.disabled = !LARRY;
+        if (!LARRY) {
+          offerConnect(true);
+          chatStatus(
+            OWNER
+              ? "No Cockpit address, so the chat is off. Open it again to set one."
+              : "Larry isn't connected in this browser. Write here, then Copy and send it to Igor."
+          );
+          chatTa.focus();
+          return Promise.resolve();
+        }
+        chatTa.focus();
+        return chatPoll().then(chatSchedule);
+      }
+
+      function chatClose() {
+        chatPanel.hidden = true;
+        clearTimeout(chatTimer);
+        chatTimer = null;
+      }
+
+      var chatPrev = "";
+      var chatEnterAt = null;
+      var chatFailed = null; // {text, id} of the last send that failed
+
+      function chatSend() {
+        var text = chatTa.value.trim();
+        if (!text || chatBusy || !LARRY) return Promise.resolve();
+        chatBusy = true;
+        chatSendBtn.disabled = true;
+        // a retry of the same text keeps its id: if the first try landed after
+        // all (a timeout), the Cockpit sees a duplicate and wakes nobody twice
+        var id =
+          chatFailed && chatFailed.text === text
+            ? chatFailed.id
+            : "pc-" +
+              Date.now().toString(36) +
+              Math.random().toString(36).slice(2, 10);
+        chatFailed = null;
+        var fresh = chatLastId === null; // no message seen yet: a new thread
+        var el = chatAdd({ id: id, who: "igor", text: text }, "sending");
+        chatTa.value = "";
+        chatPrev = "";
+        var body = { id: id, text: text, page_url: CHAT_PAGE.page_url };
+        if (CHAT_PAGE.permalink) body.permalink = CHAT_PAGE.permalink;
+        if (CHAT_PAGE.title) body.title = CHAT_PAGE.title;
+        if (CHAT_PAGE.source_repo) body.source_repo = CHAT_PAGE.source_repo;
+        if (CHAT_PAGE.source_repo && CHAT_PAGE.source_path)
+          body.source_path = CHAT_PAGE.source_path;
+        return chatFetch("/page-chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        })
+          .then(function (out) {
+            // chatLastId stays put: a reply that landed before this message
+            // still comes in on the next poll, and this one is not shown twice.
+            var sent = (out && out.messages && out.messages[0]) || {};
+            chatAdd({ id: id, who: "igor", text: text, receipt: sent.receipt });
+            chatStatus("");
+            if (fresh) return chatPoll(id);
+          })
+          .catch(function (err) {
+            if (el.parentNode) el.parentNode.removeChild(el);
+            delete chatSeen[id];
+            chatFailed = { text: text, id: id };
+            if (!chatTa.value) chatTa.value = chatPrev = text;
+            chatStatus(
+              "Not sent (" +
+                (err.message || err) +
+                "). Your text is kept: retry, or Copy it for Igor."
+            );
+            offerConnect(true);
+          })
+          .then(function () {
+            chatBusy = false;
+            chatSendBtn.disabled = !LARRY;
+          });
+      }
+
+      document.getElementById("blog-annot-chat-toggle").onclick = function () {
+        if (chatPanel.hidden) chatOpen();
+        else chatClose();
+      };
+      document.getElementById("blog-annot-chat-close").onclick = chatClose;
+      chatSendBtn.onclick = chatSend;
+      document.getElementById("blog-annot-chat-connect").onclick = connectOpen;
+      // Copy works with or without Larry: the message with the page link,
+      // to paste to Igor anywhere.
+      document.getElementById("blog-annot-chat-copy").onclick = function () {
+        var text = chatTa.value.trim();
+        if (!text) return;
+        copyText("About " + CHAT_PAGE.page_url + "\n\n" + text).then(
+          function () {
+            chatStatus("Copied with the page link. Paste it to Igor.");
+          },
+          function () {
+            chatStatus("Copy failed. Select the text by hand.");
+          }
+        );
+      };
+      chatTa.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" || e.key === "Esc") {
+          chatClose();
+          return;
+        }
+        if (
+          (e.key === "Enter" || e.keyCode === 13) &&
+          !e.shiftKey &&
+          !e.isComposing
+        ) {
+          e.preventDefault();
+          chatSend();
+        }
+      });
+      // Keyboards and dictation that send no usable Enter key insert newlines
+      // instead: two at the end send, as the note composer saves.
+      chatTa.addEventListener("input", function () {
+        var next = chatTa.value;
+        var atEnd =
+          chatTa.selectionStart === next.length &&
+          chatTa.selectionEnd === next.length;
+        var step = noteEnterStep(
+          chatPrev,
+          next,
+          atEnd,
+          chatEnterAt,
+          Date.now()
+        );
+        chatPrev = next;
+        chatEnterAt = step.lastAt;
+        if (step.save) chatSend();
+      });
+
+      var stopCapture = stop;
+      stop = function () {
+        stopCapture();
+        chatClose();
+      };
+      window.blogAnnotate.chat = {
+        open: chatOpen,
+        close: chatClose,
+        send: chatSend,
+        poll: chatPoll,
+      };
+
+      // ------------------------------------------------------------ open PRs
+      function readPrCache() {
+        try {
+          var c = JSON.parse(sessionStorage.getItem(PR_CACHE_KEY) || "null");
+          if (c && Array.isArray(c.prs) && Date.now() - c.at < PR_CACHE_MS)
+            return c.prs;
+        } catch (e) {
+          /* no cache */
+        }
+        return null;
+      }
+
+      function writePrCache(prs) {
+        try {
+          sessionStorage.setItem(
+            PR_CACHE_KEY,
+            JSON.stringify({ at: Date.now(), prs: prs })
+          );
+        } catch (e) {
+          /* private mode: refetch next page load */
+        }
+      }
+
+      function githubJson(url) {
+        return fetch(url, {
+          headers: { Accept: "application/vnd.github+json" },
+        }).then(function (res) {
+          if (!res.ok) throw new Error("GitHub returned " + res.status);
+          return res.json();
+        });
+      }
+
+      // [{number, title, url, files: [repo-relative paths]}] for every open PR.
+      // ponytail: first 100 PRs and first 100 files per PR only; a bigger PR
+      // (an image bot) can miss a page. Upgrade: follow the Link header.
+      var prsInFlight = null;
+      function loadOpenPrs() {
+        var cached = readPrCache();
+        if (cached) return Promise.resolve(cached);
+        if (prsInFlight) return prsInFlight;
+        prsInFlight = githubJson(REPO_API + "/pulls?state=open&per_page=100")
+          .then(function (pulls) {
+            return Promise.all(
+              pulls.map(function (p) {
+                return githubJson(
+                  REPO_API + "/pulls/" + p.number + "/files?per_page=100"
+                ).then(function (files) {
+                  return {
+                    number: p.number,
+                    title: p.title || "",
+                    url: p.html_url || "",
+                    files: files.map(function (f) {
+                      return f.filename;
+                    }),
+                  };
+                });
+              })
+            );
+          })
+          .then(function (prs) {
+            writePrCache(prs);
+            return prs;
+          });
+        prsInFlight.then(
+          function () {
+            prsInFlight = null;
+          },
+          function () {
+            prsInFlight = null;
+          }
+        );
+        return prsInFlight;
+      }
+
+      function showOpenPrs(prs) {
+        var el = document.getElementById("blog-annot-prs");
+        if (!el) return; // pill gone (page torn down) before GitHub answered
+        var mine = prsTouchingPath(prs, SOURCE_PATH);
+        if (!mine.length) {
+          el.hidden = true;
+          el.innerHTML = "";
+          return;
+        }
+        var links = mine.map(function (pr) {
+          var n = Number(pr.number);
+          var href = /^https:\/\/github\.com\//.test(pr.url)
+            ? pr.url
+            : "https://github.com/idvorkin/idvorkin.github.io/pull/" + n;
+          return (
+            '<a href="' +
+            escapeHtml(href) +
+            '" target="_blank" rel="noopener" title="' +
+            escapeHtml(pr.title) +
+            '">#' +
+            n +
+            "</a>"
+          );
+        });
+        el.innerHTML =
+          "This page has " +
+          mine.length +
+          " open PR" +
+          (mine.length === 1 ? "" : "s") +
+          ": " +
+          links.join(" ");
+        el.hidden = false;
+      }
+
+      // Fails silent: a rate limit or offline page shows no badge, nothing else.
+      function refreshOpenPrs() {
+        if (!SOURCE_PATH || !OWNER) return Promise.resolve();
+        return loadOpenPrs().then(showOpenPrs, function () {
+          writePrCache([]); // don't retry on every page load while limited
+        });
+      }
+      window.blogAnnotate.refreshOpenPrs = refreshOpenPrs;
+      refreshOpenPrs();
 
       function payloadJson(list) {
         return JSON.stringify(
@@ -694,6 +2240,44 @@
         return t;
       }
 
+      // Create one secret gist holding `content` as review.json; resolves to
+      // the gist. A rejected token is cleared so the next try re-prompts.
+      function postGist(token, permalink, content) {
+        var body = {
+          // SECRET gist. `public: false` is the whole point — these are private
+          // notes on unpublished thinking.
+          public: false,
+          // Larry greps for exactly this prefix. Do not reformat.
+          description: "blog-review: " + permalink,
+          files: { "review.json": { content: content } },
+        };
+
+        return fetch("https://api.github.com/gists", {
+          method: "POST",
+          headers: {
+            Accept: "application/vnd.github+json",
+            Authorization: "Bearer " + token,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(body),
+        }).then(function (res) {
+          if (res.status === 401 || res.status === 403) {
+            try {
+              localStorage.removeItem(TOKEN_KEY);
+            } catch (e) {
+              /* ignore */
+            }
+            throw new Error(
+              "GitHub rejected the token (" +
+                res.status +
+                "). It has been cleared — retry to re-enter one with `gist` scope."
+            );
+          }
+          if (!res.ok) throw new Error("GitHub returned " + res.status);
+          return res.json();
+        });
+      }
+
       function uploadGist(list, note) {
         var token = getToken();
         if (!token) {
@@ -702,40 +2286,7 @@
         }
         note.textContent = "Uploading…";
 
-        var body = {
-          // SECRET gist. `public: false` is the whole point — these are private
-          // notes on unpublished thinking.
-          public: false,
-          // Larry greps for exactly this prefix. Do not reformat.
-          description: "blog-review: " + PERMALINK,
-          files: { "review.json": { content: payloadJson(list) } },
-        };
-
-        fetch("https://api.github.com/gists", {
-          method: "POST",
-          headers: {
-            Accept: "application/vnd.github+json",
-            Authorization: "Bearer " + token,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(body),
-        })
-          .then(function (res) {
-            if (res.status === 401 || res.status === 403) {
-              try {
-                localStorage.removeItem(TOKEN_KEY);
-              } catch (e) {
-                /* ignore */
-              }
-              throw new Error(
-                "GitHub rejected the token (" +
-                  res.status +
-                  "). It has been cleared — retry to re-enter one with `gist` scope."
-              );
-            }
-            if (!res.ok) throw new Error("GitHub returned " + res.status);
-            return res.json();
-          })
+        postGist(token, PERMALINK, payloadJson(list))
           .then(function (gist) {
             saveBuffer([]);
             refreshPill();

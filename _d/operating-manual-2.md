@@ -93,7 +93,7 @@ Rituals create a virtuous cycle: by treating something as important, it becomes 
 
 Regardless of your preferences, practice makes permanent, and ritual will be created. This will either be by your conscious design, or by the resistance. You choose explicitly, or implicitly by not thinking about it. By designing your rituals, you can maximize your life, with minimal energy.
 
-Rituals is an instantiation of practice makes permanent.
+Rituals are an instantiation of practice makes permanent.
 
 {%include summarize-page.html src="/new-skills"%}
 
@@ -113,7 +113,7 @@ And That’s Exactly How Habits Should Work
 
 Too many people build habits like free soloists—no backup, no safety. It’s “do it every day” or “fail completely.” But that’s not sustainable.
 
-Real habit-building is like climbing with anchors. Expect you’ll miss a few days, lose motivation, get busy. So you build in habit anchors—small, strategic commitments that keep you from falling all the way off the wall. What are you anchor and clips
+Real habit-building is like climbing with anchors. Expect you’ll miss a few days, lose motivation, get busy. So you build in habit anchors—small, strategic commitments that keep you from falling all the way off the wall. What are your anchors and clips
 
 ## Calendar - 2024 H2
 

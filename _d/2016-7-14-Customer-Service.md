@@ -8,7 +8,7 @@ tags:
   - strategy
 ---
 
-Customer obsession, manifest in customer service, can be a key differentiator. This post explores the benefits, and business model impact of a customer obsessed organization.
+Amex charges high fees and is taken in fewer places than Visa. T-Mobile has worse coverage than AT&T. Starbucks, REI and Apple charge more for equivalent products. All of them make up for it with customer obsession. My notes on what that buys a company and what it does to the business model.
 
 Customers hooked by customer obsession provide benefits to the company. First the customer retention goes up, second current customers become fans, and provide free highly genuine advertising.
 

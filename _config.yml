@@ -108,6 +108,7 @@ exclude:
     ".playwright-cli",
     "__pycache__",
     "zola",
+    "skill",
   ]
 
 permalink: /:title

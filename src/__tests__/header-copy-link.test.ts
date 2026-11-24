@@ -1057,6 +1057,51 @@ describe("Header Copy Link", () => {
     });
   });
 
+  describe("Hover and copied tooltip", () => {
+    function initOneHeader() {
+      const mockHeader = createMockHeader("hover-section", "Hover Section");
+      mockDocument.querySelectorAll.mockReturnValue([mockHeader]);
+      mockDocument.querySelector.mockReturnValue(null);
+      initHeaderCopyLinks();
+      const [copyIcon, githubIcon] = mockHeader.appendChild.mock.calls.map((call) => call[0]);
+      const handler = (type: string) => mockHeader.addEventListener.mock.calls.find((call) => call[0] === type)?.[1];
+      return { copyIcon, githubIcon, handler };
+    }
+
+    it("shows both icons while the header is hovered and hides them on leave", () => {
+      const { copyIcon, githubIcon, handler } = initOneHeader();
+      expect(copyIcon.style.opacity).toBe("0");
+      expect(githubIcon.style.opacity).toBe("0");
+
+      handler("mouseenter")();
+      expect(copyIcon.style.opacity).toBe("1");
+      expect(githubIcon.style.opacity).toBe("1");
+
+      handler("mouseleave")();
+      expect(copyIcon.style.opacity).toBe("0");
+      expect(githubIcon.style.opacity).toBe("0");
+    });
+
+    it("shows a 'Copied!' tooltip after copying and removes it after the tooltip duration", async () => {
+      (
+        globalThis as unknown as { navigator: { clipboard: { writeText: () => Promise<void> } } }
+      ).navigator.clipboard.writeText = vi.fn(() => Promise.resolve());
+      const { copyIcon } = initOneHeader();
+      const clickHandler = copyIcon.addEventListener.mock.calls.find((call: unknown[]) => call[0] === "click")?.[1];
+
+      await clickHandler({ preventDefault: vi.fn(), stopPropagation: vi.fn() });
+
+      const appended = copyIcon.parentElement.appendChild.mock.calls.map((call: unknown[]) => call[0]);
+      const tooltip = appended.find((el: { className: string }) => el.className === "copy-link-tooltip");
+      expect(tooltip).toBeDefined();
+      expect(tooltip.textContent).toBe("Copied!");
+      expect(tooltip.remove).not.toHaveBeenCalled();
+
+      vi.advanceTimersByTime(2000);
+      expect(tooltip.remove).toHaveBeenCalled();
+    });
+  });
+
   describe("GitHub Issue Creation", () => {
     it("should add GitHub issue icon alongside copy link icon", () => {
       const mockHeader = createMockHeader("test-header", "Test Header");

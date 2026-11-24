@@ -2,7 +2,7 @@
 title: "Walking with God: A Daily Devotional Journey"
 layout: post
 permalink: /walking-with-god
-imagefeatureblob: blog/raccoon-religion.webp
+imagefeatureblob: blog/raccoon-religion-divine.webp
 ---
 
 Someone important to me has been reading a daily devotional. Even though I'm not religious, I'm studying with them to be able to have conversations about the insights - whether in a secular or religious context. This is my attempt to bridge two worlds: honoring the spiritual wisdom they're finding while translating it into language that works for my engineer brain.
@@ -11,7 +11,7 @@ Someone important to me has been reading a daily devotional. Even though I'm not
 
 {% include amazon.html asin="1414316615" %}
 
-{% include blob_image_float_right.html src="blog/raccoon-religion.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-religion-divine.webp" alt="Felt raccoon in rainbow glasses sitting cross-legged, wearing a tallit over his head and shoulders and tefillin on his forehead, holding an open prayer book in one hand and a small glowing light in the other, with books titled Wisdom, Scriptures and Gratitude in front of him" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -583,7 +583,7 @@ My favorite line from the passage: **"~~Asa~~ You twice made a foolish mistake. 
 
 _Here's how I translate this:_
 
-King Asa had proven track record with God - he'd seen it work. But when trouble came, he defaulted to what felt more tangible: military alliances and doctors. He treated his values as a backup plan, not his foundation.
+King Asa had a proven track record with God - he'd seen it work. But when trouble came, he defaulted to what felt more tangible: military alliances and doctors. He treated his values as a backup plan, not his foundation.
 
 In secular terms: **What do you actually turn to first when things get hard?**
 

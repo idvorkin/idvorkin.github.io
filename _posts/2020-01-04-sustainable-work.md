@@ -14,7 +14,7 @@ tags:
   - job-hunt
 ---
 
-I don't want to die knowing I spent too much time at work and I bet you don't either. As a result I want to work with people who value a culture encouraging them to balance their family, health, hobbies, and work - aka work-life balance. To make a culture real leaders needs to walk the talk, and I'll describe how I model a work-life balance, and the mechanisms I use to help team members achieve their own balance.
+I don't want to die knowing I spent too much time at work and I bet you don't either. As a result I want to work with people who value a culture encouraging them to balance their family, health, hobbies, and work - aka work-life balance. To make a culture real leaders need to walk the talk, and I'll describe how I model a work-life balance, and the mechanisms I use to help team members achieve their own balance.
 
 _This is a re-post of my talk on [LinkedIn](http://bit.ly/igor-wlb-manifesto)_
 
@@ -26,7 +26,7 @@ Organizations reflect their leaders, and I strive to model work-life balance.
 
 **I leave at 4 pm, 4 days a week** My watch alarm goes off every day at 3:45pm reminding me to wrap up for the day. It goes off a second time at 4:05, at which point I drop what I'm doing, grab my bag and leave. I do this 4 days a week like clockwork. One day a week I stay late, usually with an open schedule. I do this because many people prefer to socialize around 4-6, and I want to be around for that - aka happy hour!
 
-**I don't work evenings and weekends** I love my job when it's going well, and I have a huge sense of responsibility when it's going poorly. If I don't force myself to stop working, I won't. Thus, I have a rule - don't work evening and weekends. There are exceptions when I want/need to work an evening or weekend. When that happens, I'm religious about using delayed send to avoid sending my employees e-mails out of business hours.
+**I don't work evenings and weekends** I love my job when it's going well, and I have a huge sense of responsibility when it's going poorly. If I don't force myself to stop working, I won't. Thus, I have a rule - don't work evenings and weekends. There are exceptions when I want/need to work an evening or weekend. When that happens, I'm religious about using delayed send to avoid sending my employees e-mails out of business hours.
 
 **I don't have work e-mail on my phone** When I say I don't work on evenings and weekends, I mean I don't work evenings and weekends, and e-mail is work. When I have work e-mail on my phone, I check it when I'm idle, so I don't have work e-mail on my phone. I do have Chime (aka Slack/Teams) in case my team needs anything from me.
 

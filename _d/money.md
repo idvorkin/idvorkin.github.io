@@ -5,7 +5,7 @@ author: "Igor Dvorkin"
 inprogress: true
 comments: true
 permalink: /money
-imagefeaturelocal: raccoon-money.webp
+imagefeaturelocal: raccoon-tax-desk-felt.webp
 redirect_from:
   - /saving
   - /savings
@@ -13,7 +13,7 @@ redirect_from:
 
 Most of the tax information on the web is a mess. It's confusing as it tries to apply to everyone, with varying situations, and is often written by non-engineers for non-engineers. I think my tax situation is common to people who have been in software engineering companies for most of their careers, and here are my notes.
 
-{% include local_image_float_right.html src="raccoon-money.webp" %}
+{% include local_image_float_right.html src="raccoon-tax-desk-felt.webp" alt="Felt raccoon in rainbow glasses, a grey suit and a tie, signing a TAX form at a desk with two calculators and stacks of gold coins" %}
 
 For the tax-only slice — capital gains, Washington State cap-gains mechanics, step-up in basis, QSBS, plus IRAs, 401(k)s, Roth mechanics, and 529s — see the companion [taxes post](/taxes).
 
@@ -220,13 +220,13 @@ You guarantee to "buy at a particular price". You will be given a low amount of 
 
 Imagine you sell a put for 1$, for a strike price of 100$.
 
-If the stock goes to 90$ in 30 days, the "put will be exercised", and you'll need to buy the stock for 100$. As a result, you'll end buying the stock for 100$ instead of 90$ which is the market price. This means you bought stock for an extra 10$ (recall the stock is worth 90$ today), but since you were paid 1$ for the put it ended up \*\*costing you 9$\*\*.
+If the stock goes to 90$ in 30 days, the "put will be exercised", and you'll need to buy the stock for 100$. As a result, you'll end up buying the stock for 100$ instead of 90$ which is the market price. This means you bought stock for an extra 10$ (recall the stock is worth 90$ today), but since you were paid 1$ for the put it ended up \*\*costing you 9$\*\*.
 
 If the stock goes up to 120$, the buyer won't want to sell you the stock at 100$ (they'd lose 20$), so they let the put expire. This lets you **gain 1$\*\* over the price of the stock.
 
 #### Buy a Put Option
 
-Allow you to "sell at a particular price". You spend a low amount of money to be able to sell at a price. This protects you from a price drop.
+Allows you to "sell at a particular price". You spend a low amount of money to be able to sell at a price. This protects you from a price drop.
 
 Imagine you buy a put for 1$, for a strike price of 100$.
 
@@ -242,7 +242,7 @@ As with buying a put option, you don't need to own the stock to sell the option 
 
 #### Selling your options early
 
-You don't need hold a put or call option for the entire duration, you can sell it early. This lets you tune your risk for reward early.
+You don't need to hold a put or call option for the entire duration, you can sell it early. This lets you tune your risk for reward early.
 
 #### Put vs Call
 
@@ -250,11 +250,11 @@ Call is the inverse of puts, where you buy the right to "buy", and sell the righ
 
 #### Play safe - Guaranteed minimum value of unvested stock awards - buy a put
 
-Imagine you have an grant of 100 stock awards, vesting in a year, for which you had a 10$ strike price - you then have 1000$ in paper money. You'll need that money for your kids education, so you need to guarantee you don't lose money, in that case, but a put.
+Imagine you have a grant of 100 stock awards, vesting in a year, for which you had a 10$ strike price - you then have 1000$ in paper money. You'll need that money for your kids education, so you need to guarantee you don't lose money, in that case, buy a put.
 
 #### The company can't go up that high - sell a put
 
-Imagine you have an grant of 100 stock awards, vesting in a year, for which you had a 10$ strike price - you then have 1000$ in paper money. You know the CEO and even though you think the stock will go up, you're sure it won't go up above 15$, in that case you can sell a put at 15$, and take some profit.
+Imagine you have a grant of 100 stock awards, vesting in a year, for which you had a 10$ strike price - you then have 1000$ in paper money. You know the CEO and even though you think the stock will go up, you're sure it won't go up above 15$, in that case you can sell a put at 15$, and take some profit.
 
 #### Summary
 
@@ -517,7 +517,7 @@ Above that. Buying crap won't make you happy
 
 ### The unquenchable thirst
 
-For the philisophicaly minded, from the [Prophet](https://poets.org/poem/giving-0):
+For the philosophically minded, from the [Prophet](https://poets.org/poem/giving-0):
 
 _For what are your possessions but things you keep and guard for fear you may need them tomorrow?_
 

@@ -4,53 +4,25 @@ permalink: /screencast
 layout: post
 ---
 
-I record my screen with the built-in macOS recorder, capture my facecam as a separate track, and edit it all together in CapCut. I landed on this pipeline after Loom kept stalling on capture (while costing $20/month) and one-take OBS recordings ate my time. Here's the setup, plus the tips I picked up along the way.
+I record with [Cap](https://cap.so) and edit in CapCut. One press of Record captures my screen and my facecam as two separate files, already in sync, so I can still cut, resize and background-remove the facecam on its own. I landed here after Loom kept stalling on capture (while costing \$20/month), one-take OBS recordings ate my time, and juggling two recorders got old. Here's the setup, plus the tips I picked up along the way.
 
-### Screen Recording
+### Recording: Cap
 
-For screen recording, use the built-in macOS screen recorder:
+[Cap](https://cap.so) is an open source ([GitHub](https://github.com/CapSoftware/Cap)) Loom alternative:
 
-- Press Cmd+Shift+5 to open screen recording controls
-- Select window or portion of screen
-- Choose microphone input if needed
-- Simple and reliable
+```bash
+brew install --cask cap
+```
 
-### Facecam
+The key is **Studio Mode**. Each take writes the screen and the webcam as separate files, `display.mp4` and `camera.mp4`. They live inside the `.cap` package: right-click it, Show Package Contents, then `content/segments/...`. Drop both into CapCut as two tracks.
 
-Record facecam as a separate track for maximum flexibility:
+- Use Studio Mode, not Instant Mode. Instant Mode bakes the camera into the screen video.
+- Cap's editor has no camera-only export yet, so grab the raw files from the package.
+- For a live preview of my face while recording, I position Hand Mirror out of the way:
 
-1. Record facecam independently:
-
-   ```bash
-   # Using QuickTime Player from CLI
-   open -a "QuickTime Player" --args -record
-   ```
-
-   or
-
-   ```bash
-   # Using ffmpeg with webcam and audio
-   ffmpeg -f avfoundation -framerate 30 -i "0:0" -c:v h264 -c:a aac facecam_$(date +%Y%m%d_%H%M%S).mp4
-   ```
-
-2. Benefits of separate recording:
-   - Easier to reshoot just the facecam portion
-   - Can record multiple takes without redoing screen capture
-   - Better control over camera settings
-   - No performance impact on screen recording
-
-3. Post-production in CapCut:
-   - Import facecam as separate track
-   - Use AI background removal
-   - Easily position and resize
-   - Add transitions or effects
-   - Perfect sync with main content
-
-4. Position scripts (for live preview while recording):
-   ```bash
-   # Example script to position Hand Mirror window
-   osascript -e 'tell application "Hand Mirror" to set bounds of window 1 to {1600, 50, 1850, 300}'
-   ```
+  ```bash
+  osascript -e 'tell application "Hand Mirror" to set bounds of window 1 to {1600, 50, 1850, 300}'
+  ```
 
 ### Microphone cleanup
 
@@ -66,7 +38,7 @@ TBD if I need this.
 
 - Free and powerful video editor
 - Easy trimming and multi-take management
-- Built-in background removal for facecam
+- Built-in background removal for facecam, positioned and resized as its own track
 - Text-to-speech and auto-captions
 - Cross-platform (web, desktop, mobile)
 - Export directly to YouTube
@@ -81,6 +53,20 @@ ChatGPT prompts
 - Mouse - TBD
 
 ### CUT: Previous approaches
+
+#### Two recorders: Cmd+Shift+5 plus a separate facecam
+
+I used to record the screen with the built-in macOS recorder (Cmd+Shift+5) and the facecam separately with QuickTime or ffmpeg:
+
+```bash
+ffmpeg -f avfoundation -framerate 30 -i "0:0" -c:v h264 -c:a aac facecam_$(date +%Y%m%d_%H%M%S).mp4
+```
+
+Separate tracks were the right idea, but two recorders meant two starts, two stops and syncing in CapCut. Cap gives me both streams from one Record press, already in sync.
+
+#### OBS Source Record plugin
+
+The [Source Record](https://obsproject.com/forum/resources/source-record.1285/) plugin can write each OBS source to its own file. I considered it, but forum users report it hanging on stop and garbling screen files on Apple Silicon, and it keeps all the OBS setup pain.
 
 #### QuickRecorder
 
@@ -123,5 +109,5 @@ While Loom seemed promising, I ultimately cut it from my workflow:
 2. Deal-breaking issues:
    - Screen capture performance issues (slow, stopping fails)
    - Happens on multiple computers
-   - Expensive ($20/month)
+   - Expensive (\$20/month)
    - Better to use dedicated tools for each function

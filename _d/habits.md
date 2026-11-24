@@ -44,7 +44,7 @@ Let's go back to that other idea: How a habit is formed.
 
 | State    | Description                      | Negative          | Positive                            |
 | -------- | -------------------------------- | ----------------- | ----------------------------------- |
-| Cue      | Thing that kicks off the thought | Hang with friends | Sit on Mediation Bench              |
+| Cue      | Thing that kicks off the thought | Hang with friends | Sit on Meditation Bench             |
 | Craving  | The desired state                | Relaxed Buzz      | Calm mind/being a meditator         |
 | Response | The action, aka habit            | Drinking the beer | Meditating                          |
 | Reward   | Achieving the desired state      | Being Buzzed      | Being Calm/Feeling like a meditator |

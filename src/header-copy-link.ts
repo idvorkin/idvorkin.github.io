@@ -274,11 +274,7 @@ function buildBreadcrumbFrom(header: HTMLElement | null): string {
 
   // Get the page name from URL
   const pathname = window.location.pathname;
-  const pageName =
-    pathname
-      .replace(/^\//, "")
-      .replace(/\.html$/, "")
-      .replace(/\/$/, "") || "index";
+  const pageName = pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
 
   // Convert page name to readable format (replace hyphens with spaces)
   const readablePageName = pageName.replace(/-/g, " ");
@@ -368,11 +364,7 @@ function transformUrl(url: string, options: CopyLinkOptions): string {
 
   // Extract just the path and anchor
   const urlObj = new URL(transformedUrl);
-  const pathname =
-    urlObj.pathname
-      .replace(/^\//, "")
-      .replace(/\.html$/, "")
-      .replace(/\/$/, "") || "index";
+  const pathname = urlObj.pathname.replace(/^\//, "").replace(/\.html$/, "") || "index";
   const anchor = urlObj.hash.replace("#", "");
 
   // Return path#anchor format for tinyurl
@@ -816,10 +808,7 @@ function createGitHubIssueUrl(
   // Get the current page path from the URL
   const pathname = window.location.pathname;
   // Remove leading slash and .html extension if present
-  const pagePath = pathname
-    .replace(/^\//, "")
-    .replace(/\.html$/, "")
-    .replace(/\/$/, "");
+  const pagePath = pathname.replace(/^\//, "").replace(/\.html$/, "");
 
   // Get the actual source file path from the meta tag (set by Jekyll)
   const metaTag = document.querySelector('meta[property="markdown-path"]');

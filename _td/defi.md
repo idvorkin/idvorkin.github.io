@@ -5,7 +5,7 @@ title: Decentralized Finance
 permalink: /defi
 ---
 
-Finance has existed for as long as civilization. And like most things before the Internet age was based on the trust of centralized law and authority (like banks and governments). Decentralized Finance (DeFi) is the movement that asks could we perform our financial transaction with out centralized trust. Finance has evolved many instruments to meet the needs of civilization, all of which are based on trust (store of value, currency, loans), de-fi will search for equivalences of each of these.
+Finance has existed for as long as civilization. And like most things before the Internet age was based on the trust of centralized law and authority (like banks and governments). Decentralized Finance (DeFi) is the movement that asks could we perform our financial transaction without centralized trust. Finance has evolved many instruments to meet the needs of civilization, all of which are based on trust (store of value, currency, loans), de-fi will search for equivalences of each of these.
 
 <!-- prettier-ignore-start -->
 
@@ -80,7 +80,7 @@ Finance has existed for as long as civilization. And like most things before the
 
 ## The jobs of finance
 
-I spent some time thinking about finance. I'm guessig there's some truth here, but a finance guy would probably help me get a better grip on it.
+I spent some time thinking about finance. I'm guessing there's some truth here, but a finance guy would probably help me get a better grip on it.
 
 ### Representing and storing value
 
@@ -130,9 +130,9 @@ I spent some time thinking about finance. I'm guessig there's some truth here, b
 | Liquidity                                  | When is the market open, and who is there? | Uniswap             |
 | Compensating Risk                          | Interest                                   |                     |
 | Compensating For use of an entity          | Rent                                       | Rent                |
-| Hedging                                    | Derivatives                               | dx/dy               |
-| Speculation                                | Derivatives                               | dx/dy               |
-| Loans w/Collatoratal                       | Mortgage                                   | BlockFi             |
+| Hedging                                    | Derivatives                                | dx/dy               |
+| Speculation                                | Derivatives                                | dx/dy               |
+| Loans w/Collateral                         | Mortgage                                   | BlockFi             |
 | Loans w/o Collateral                       | Bookie; Mafia (bodily harm is collateral)  | Flashloans ERC 3156 |
 | Reducing Risk                              | Insurance                                  |                     |
 
@@ -160,13 +160,13 @@ At this point if we look at the ledger we know Alice has 80$ and Bob has 20$
 
 ### What is the actual trust model here?
 
-Easy to say we don't trust anyone, but we must trust something. Here is our requirements to have a trust worthy system.
+Easy to say we don't trust anyone, but we must trust something. Here are our requirements to have a trust worthy system.
 
-Lets start with the bitcoin model which is easier:
+Let's start with the bitcoin model which is easier:
 
 1. There is one public ledger and it is the source of truth.
 1. The ledger can only be updated with valid transactions
-1. Valid transactions imply the sender and receiver both both consent to the transaction.
+1. Valid transactions imply the sender and receiver both consent to the transaction.
 
 ## Ethereum and Smart Contracts
 
@@ -227,7 +227,7 @@ Team decided to create a new currency, Yam, with several good properties. Elasti
 - August 11th - Currency launches
 - August 11th - 150M in funding for initial offering
 - August 12th - 500M in funding for second round.
-- August 12th - Bug found, requiring majority of community to vote on govenrance before 8am
+- August 12th - Bug found, requiring majority of community to vote on governance before 8am
 - August 13th 7am - Enough people voted, but found a bug, so the protocol could not be used.
 - August 14th - Protocol worthless. Many people got their money out of the protocol, but 25%?? did not?
 
@@ -264,13 +264,13 @@ Arguably, the different blockchains are the equivalent of major entities, with t
 
 For example:
 
-| Nation                                                                           | Capabilities                 | Montery Policy | Governance | Proof Of Work |
-| -------------------------------------------------------------------------------- | ---------------------------- | -------------- | ---------- | ------------- |
-| BitCoin                                                                          | Ledger                       |                |            |               |
-| Etherium                                                                         | Virtual Machine - Solidatary |                |            |               |
-| Etherium 2.0                                                                     | Virtual Machine              |                |            |               |
-| Polygon                                                                          |                              |                |            |               |
-| [Chia](https://www.chia.net/assets/Chia-Business-Whitepaper-2021-02-09-v1.0.pdf) | VirtualMachine ChiaLisp      |                |            |               |
+| Nation                                                                           | Capabilities                 | Monetary Policy | Governance | Proof Of Work |
+| -------------------------------------------------------------------------------- | ---------------------------- | --------------- | ---------- | ------------- |
+| BitCoin                                                                          | Ledger                       |                 |            |               |
+| Ethereum                                                                         | Virtual Machine - Solidatary |                 |            |               |
+| Ethereum 2.0                                                                     | Virtual Machine              |                 |            |               |
+| Polygon                                                                          |                              |                 |            |               |
+| [Chia](https://www.chia.net/assets/Chia-Business-Whitepaper-2021-02-09-v1.0.pdf) | VirtualMachine ChiaLisp      |                 |            |               |
 
 ### Capabilities
 
@@ -282,7 +282,7 @@ For example:
 
 ### Poof of Work
 
-Within each of these "Defi Nations" there are different currencies and Defi Systems, and forieng exchanges
+Within each of these "Defi Nations" there are different currencies and Defi Systems, and foreign exchanges
 
 ## Policy Questions
 

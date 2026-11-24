@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sleeping bag sacrifices"
-tag:
+tags:
   - "software as a story"
   - "early career"
 ---
@@ -18,7 +18,7 @@ Another interesting thing about Jay was he kept a sleeping bag at work and often
 
 "Dude, imagine if you were sleeping at home, would you want to be woken up? Of course not, let Jay sleep!" – Colin scolded. Armed with Colin's advice, I let Jay sleep in peace.
 
-Several weeks later, I was 12 consecutive hours into fixing a tough bug and needing a break. I grabbed an IPA and decided to shoot the shit with Jay, who was wide awake with me at 2 a.m. We talked for a while about cloud computing and esoteric coding convention when Jay paused a few moments longer than usual. He tried to start his sentence a couple times, but was unable to find the right words or the right tone. Eventually, he looked down at the label he had been peeling off of his beer and in a more withdrawn tone than usual, began to answer the question I should have asked HIM directly weeks ago.
+Several weeks later, I was 12 consecutive hours into fixing a tough bug and needing a break. I grabbed an IPA and decided to shoot the shit with Jay, who was wide awake with me at 2 a.m. We talked for a while about cloud computing and esoteric coding conventions when Jay paused a few moments longer than usual. He tried to start his sentence a couple times, but was unable to find the right words or the right tone. Eventually, he looked down at the label he had been peeling off of his beer and in a more withdrawn tone than usual, began to answer the question I should have asked HIM directly weeks ago.
 
 "Hey, I take my mentorship responsibilities very seriously, and I noticed you've never woken me up. You know if I wasn't your mentor, I'd be at home sleeping in my comfortable bed."
 

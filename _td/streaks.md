@@ -8,7 +8,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 # Update
 
-Turns out the apps streaks built this perfectly - and that's what i use. This could be a good "template project" if I want to learn a new language/library, etc.
+Turns out the apps streaks built this perfectly - and that's what I use. This could be a good "template project" if I want to learn a new language/library, etc.
 
 # Habit tracking app
 

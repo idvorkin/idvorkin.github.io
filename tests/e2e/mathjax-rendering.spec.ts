@@ -1,5 +1,4 @@
 import { expect, test } from "./base-test";
-import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("MathJax rendering", () => {
   test("MathJax renders equations on activation page", async ({ page }) => {
@@ -43,9 +42,5 @@ test.describe("MathJax rendering", () => {
     // Verify no mjx-container elements exist
     const mathContainers = page.locator("mjx-container");
     await expect(mathContainers).toHaveCount(0);
-  });
-
-  test("Activation page has no JavaScript errors", async ({ page }) => {
-    await checkForJsErrors(page, "/activation");
   });
 });

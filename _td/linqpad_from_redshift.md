@@ -8,9 +8,9 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 # Make linqpad work with redshift.
 
-Sounds easy there is already a [linqpad driver for postrgres SQL](https://github.com/fknx/linqpad-postgresql-driver) which wraps a C# driver for postrgres SQL which support redshift [ngpsql](https://blog.rthand.com/post/2016/09/19/linqpad-llblgenpro-and-npgsql.aspx).
+Sounds easy there is already a [linqpad driver for postgres SQL](https://github.com/fknx/linqpad-postgresql-driver) which wraps a C# driver for postgres SQL which support redshift [npgsql](https://blog.rthand.com/post/2016/09/19/linqpad-llblgenpro-and-npgsql.aspx).
 
-But hold your horses, reshift support for ngpsql was added after the linqpad driver was last compiled, so we'll need to update it to avoid software rot.
+But hold your horses, redshift support for npgsql was added after the linqpad driver was last compiled, so we'll need to update it to avoid software rot.
 
 To build linqpad-driver need to start by setting \$env:LINQPAD_HOME before launch the sln file.
 

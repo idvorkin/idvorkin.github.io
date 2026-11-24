@@ -84,12 +84,12 @@ _Huh, this is true for all who moved my cheese situations_
 
 The word _vanaprastha_ comes from two Sanskrit words meaning "retiring" and "into the forest." In the Hindu tradition, life is lived in four stages (_ashramas_), ideally ~25 years each:
 
-| Stage              | Age   | Focus                                                                    |
-| ------------------ | ----- | ------------------------------------------------------------------------ |
-| **Brahmacharya**   | 0-25  | Youth dedicated to learning                                              |
-| **Grihastha**      | 25-50 | Career building, wealth accumulation, family                             |
-| **Vanaprastha**    | 50-75 | Pulling back from professional duties; spirituality, wisdom, teaching    |
-| **Sannyasa**       | 75+   | Total dedication to enlightenment                                        |
+| Stage            | Age   | Focus                                                                 |
+| ---------------- | ----- | --------------------------------------------------------------------- |
+| **Brahmacharya** | 0-25  | Youth dedicated to learning                                           |
+| **Grihastha**    | 25-50 | Career building, wealth accumulation, family                          |
+| **Vanaprastha**  | 50-75 | Pulling back from professional duties; spirituality, wisdom, teaching |
+| **Sannyasa**     | 75+   | Total dedication to enlightenment                                     |
 
 **The Grihastha Trap**
 
@@ -225,7 +225,6 @@ Book: Learning to love in midlife
 - U-shaped happiness curve - dip at 47, comes back up the other side
 - What is good about the other side of life
 - Middlessence
-
   - Adolescence - invented in 1900s before that, just children and adults
   - Sets expectations
   - Includes Rituals
@@ -234,7 +233,6 @@ Book: Learning to love in midlife
 - Same for midlife
 
 - Old Stage:
-
   - Learn
   - Work
   - Retire
@@ -326,7 +324,7 @@ The name - I think it comes from a line in the book: people think doggy style is
   - The man vs woman's drop in hormones
   - The point where women stop being attractive, but remain sexual beings
 - Affairs
-  - Saving something only for th wife
+  - Saving something only for the wife
   - Not wanting to say I love you
   - Non sexual intimacy
   - The impact of eye contact

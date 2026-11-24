@@ -71,7 +71,7 @@ This is the simplest in layman's terms
 <https://statisticsbyjim.com/hypothesis-testing/interpreting-p-values/>
 <https://statisticsbyjim.com/hypothesis-testing/p-value-tips-false-positives-misleading-results/>
 
-**RANT:** P-Values are confusing because they answer an easy question, not the one you want, and are phrased in super confusing terms. P-Values are much like the story of the man looking for his keys under a street lamp. A woman comes to him and asks if she can help find the keys, and where the man lost him. The man answer's over there. The woman says, over there - well why are you looking under the street light!? The man responds, well because it's dark over there.
+**RANT:** P-Values are confusing because they answer an easy question, not the one you want, and are phrased in super confusing terms. P-Values are much like the story of the man looking for his keys under a street lamp. A woman comes to him and asks if she can help find the keys, and where the man lost them. The man answers over there. The woman says, over there - well why are you looking under the street light!? The man responds, well because it's dark over there.
 
 You want to know the probability the metric change is caused by our treatment. Aka not a false positive (Type 1 error).
 
@@ -99,7 +99,7 @@ How does Facebook Deltoid tool handle this?
 
 In [ML](/machine-learning), we talk about precision and recall:
 
-- **Precision (Exactness)** - Likely hood a result is a true positive. TP / (TP + FP). % of things you say are true, are actually true.
+- **Precision (Exactness)** - Likelihood a result is a true positive. TP / (TP + FP). % of things you say are true, are actually true.
 
 - **Recall (Completeness)** - Likely a true positive. TP / (TP + FN). % of true things you identify in the entire space
 
@@ -110,7 +110,7 @@ In measurement we talk about accuracy and precision
 Imagine a target on a bullseye, and firing multiple bullets:
 
 - Accuracy = How close to the bullseye are the bullets. Arguably this is difference of median from bullseye
-- Precision = How must variance is the "spray" of bullets. Arguably this is the standard deviation.
+- Precision = How much variance is the "spray" of bullets. Arguably this is the standard deviation.
 
 ## Multi Arm Bandits
 
@@ -136,7 +136,7 @@ When we have a dataset, we need to reason about it, and reason about the changes
 
 ## Other Resources
 
-- Bandit Algorithoms
+- Bandit Algorithms
 - Computer Age Statistical Inference
 - Python for Data Analysis
 - R CookBook

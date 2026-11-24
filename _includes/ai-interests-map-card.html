@@ -1,0 +1,22 @@
+{% comment %} One card for _includes/ai-interests-map.html. Params: node (a node
+from _data/ai_interests_map.yml), branch (top-level branch id, for color), path
+(breadcrumb text). {% endcomment %} {%- assign n = include.node -%}
+<div class="aim-card" data-card="{{ n.id }}" data-branch="{{ include.branch }}">
+  <div class="aim-card-head">
+    <p class="aim-title">{{ n.full | default: n.label }}</p>
+    <button type="button" class="aim-close" aria-label="Close card">×</button>
+  </div>
+  <p class="aim-path">{{ include.path }}</p>
+  <p>{{ n.what }}</p>
+  <p><strong>Why it interests me:</strong> {{ n.why }}</p>
+  {%- if n.links %}
+  <ul>
+    {%- for l in n.links %}
+    <li>
+      <a href="{{ l.url }}">{{ l.title }}</a>{% if l.url contains "://" %} ↗{%
+      endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+</div>

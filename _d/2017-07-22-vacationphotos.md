@@ -20,7 +20,7 @@ The camera I always have on me - I love it. The only thing I'd recommend more wo
 - You can take pictures by pressing the hardware volume buttons.
 - Using a deep 3d touch on the camera app, you can launch camera into selfie mode.
 - You can take really nice photos underwater (you need to use the hardware buttons as the screen won't work)
-- In setting you can set camera to always start in live-photo, photo mode.
+- In settings you can set camera to always start in live-photo, photo mode.
 - In settings you can turn on a grid so you know the framing of your photo.
 
 ### Google timelines

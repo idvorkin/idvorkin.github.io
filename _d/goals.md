@@ -10,7 +10,7 @@ redirect_from:
   - /objective
 ---
 
-Goals are critical, there are multiple goal systems and they have consequences. They are mechanisms to deliver without micro management.
+A goal answers what, why, and how you'll know you're there. But you don't rise to the level of your goals, you fall to the level of your systems, so the value of a goal is in helping you build and assess the system. My notes on measuring goals (input vs output metrics), the common systems (SMART, OKRs) and the pitfalls.
 
 <!-- prettier-ignore-start -->
 

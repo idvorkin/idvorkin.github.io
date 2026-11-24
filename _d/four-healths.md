@@ -9,7 +9,7 @@ tags:
   - how igor ticks
 ---
 
-Health isn't one-dimensional. You can be physically fit but emotionally exhausted. You can be cognitively sharp but spiritually adrift. True well-being requires attending to all four dimensions of health: physical, emotional, spiritual, and cognitive. Each dimension serves a different purpose, requires different practices, and neglecting any one creates vulnerabilities that ripple across your entire life.
+Health is rented, and rent is due every day. That's true of all four kinds, not just the body: physical, emotional, spiritual and cognitive. None is a state you reach and keep, so for each one I use a test I can answer today instead of a definition.
 
 {% include ai-slop.html percent="85" %}
 
@@ -44,7 +44,7 @@ This framework draws heavily from two foundational books on energy and happiness
 
 ## The Tests
 
-Health is rented, and rent is due every day. Gosh I like saying that, because it's so true — and it's true of all four, not just the body. None of these is a state you reach and keep. You're fit while you're fit, and when you're not, you train.
+You're fit while you're fit, and when you're not, you train.
 
 Which is why the useful thing for each dimension isn't a definition. It's a test you can answer today.
 
@@ -75,7 +75,7 @@ Physical health is your body's capacity to generate and sustain energy. Without 
 **Core components:**
 
 - Strength and stability
-- Cardiovascular fitness (aerobic and anaerobic)
+- [Cardiovascular fitness](/cardio) (aerobic and anaerobic)
 - Sleep and recovery
 - Nutrition and metabolic health
 

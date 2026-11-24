@@ -3,14 +3,14 @@ layout: post
 no-render-title: true
 title: The thoughts that pain us
 permalink: mental-pain
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-mental-pain.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-mental-pain-felt.webp
 redirect_from:
   - pain
 ---
 
 Pain is in the brain as they say, which is especially true for mental pains. Pain isn't the enemy though, pain is a signal. The pain system, when working properly draws our attention to a problem so that we can deal with it. However, our pain can evolve into unnecessary suffering, be phantom pain, meaning it is being applied when it should not be, or chronic pain, which flares up even though it is no longer providing value.
 
-{% include blob_image_float_right.html src="blog/raccoon-mental-pain.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-mental-pain-felt.webp" alt="Sad felt raccoon in rainbow glasses sitting on a small chair under a dark rain cloud, a tear on his cheek, wearing a green shirt that reads PAIN GOOD! TAKE ACTION!" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -394,7 +394,7 @@ The correct responses to boredom:
 
 - “What would it take to make this moment matter?”
 - “What could I care about here?”
-- Is there a way I can serve, create, or connect?”
+- “Is there a way I can serve, create, or connect?”
 
 Use boredom as a trigger for redirection—not suppression. It invites deliberate design: re-engaging attention, crafting purpose, or revisiting your aspirations.
 

@@ -110,7 +110,7 @@ See a [detailed description of the tools](https://medium.com/analytics-and-data/
 
 When I did an informational with FB, the interviewer asked me how I "support my team"? I didn't understand what the question meant. At FB, servant leadership is so ingrained in the culture that when managers introduce themselves, they don't say I'm the manager for "team name", they say I support "team name".
 
-This will be an area I write lots as it's this is some of Facebook's unique value, and I'm excited to internalize it. Some early examples:
+This will be an area I write lots as this is some of Facebook's unique value, and I'm excited to internalize it. Some early examples:
 
 ### Managers don't tell employees what to work on
 
@@ -352,7 +352,7 @@ Before we discuss that, I suggest reading this [post](https://www.seangoedecke.c
 
 _For most of the last decade, being a software engineer has been a lot of fun. Every company offered lots of perks, layoffs and firings were almost unheard of, and in general we were treated as special little geniuses who needed to be pampered so we could work our magic. That’s changed in the last two years. The first round of tech layoffs in 2023 came as a shock, but at least companies were falling over themselves to offer generous severance and teary CEO letters regretting the necessity. Two years later, Meta is explicitly branding its layoffs as “these were our lowest performers”. What the hell happened? What does it mean for us?_
 
-In absolute terms, Meta felt safer and had more benefits then it does today. However, that's likely true of the entire industry. I don't have a good way to measure, but I'm guessing while in absolute terms meta is "worse", likely in relative terms it is on the same spot on the curve (making up a random number - P90 of benefits). As an example, our daily waffles have been reduced to Wednesday only, our fresh grilled daily chicken is gone, but we still have prime rib, and we still get smoked salmon on Friday's.
+In absolute terms, Meta felt safer and had more benefits than it does today. However, that's likely true of the entire industry. I don't have a good way to measure, but I'm guessing while in absolute terms meta is "worse", likely in relative terms it is on the same spot on the curve (making up a random number - P90 of benefits). As an example, our daily waffles have been reduced to Wednesday only, our fresh grilled daily chicken is gone, but we still have prime rib, and we still get smoked salmon on Fridays.
 
 I got my job offer while the gravy was flowing smoothly, but didn't start until mid-COVID when benefits reduced (no more take out meals or free ubers to work), but safety was super high (everyone got an exceeds expectation rating regardless of performance).
 

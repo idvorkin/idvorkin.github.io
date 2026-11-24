@@ -22,6 +22,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import re
+import zoneinfo
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Annotated
@@ -30,6 +31,7 @@ import typer
 from rich.console import Console
 
 CHANGELOG_DEFAULT = Path("_d/changelog.md")
+PACIFIC = zoneinfo.ZoneInfo("America/Los_Angeles")
 
 stderr = Console(stderr=True)
 
@@ -51,6 +53,9 @@ class Report:
     should_merge: bool
     start_date: str | None
     reason: str
+    # Resume point from the newest entry's `_Checked through YYYY-MM-DD HH:MM PT_`
+    # line, as ISO 8601 with the Pacific offset (None when the line is absent).
+    checked_through: str | None = None
 
 
 def parse_recent_entry(text: str) -> dt.date | None:
@@ -58,10 +63,31 @@ def parse_recent_entry(text: str) -> dt.date | None:
     return dt.date.fromisoformat(match.group(1)) if match else None
 
 
+def parse_checked_through(text: str) -> str | None:
+    """`_Checked through 2026-10-11 14:05 PT_` in the newest entry -> ISO 8601."""
+    weeks = re.split(r"^## Week of ", text, flags=re.MULTILINE)
+    if len(weeks) < 2:
+        return None
+    match = re.search(
+        r"^_Checked through (\d{4}-\d{2}-\d{2}) (\d{2}:\d{2}) PT",
+        weeks[1],
+        re.MULTILINE,
+    )
+    if not match:
+        return None
+    stamp = dt.datetime.fromisoformat(f"{match.group(1)} {match.group(2)}")
+    return stamp.replace(tzinfo=PACIFIC).isoformat()
+
+
 def analyze(changelog_path: Path, today: dt.date) -> Report:
     weekday = today.isoweekday()
     this_monday = today - dt.timedelta(days=weekday - 1)
     this_sunday = this_monday + dt.timedelta(days=6)
+
+    text = changelog_path.read_text(encoding="utf-8") if changelog_path.exists() else ""
+    # Reported on every path, Monday included: the Monday rollup is the run
+    # most likely to miss Sunday-afternoon merges after the last check.
+    checked = parse_checked_through(text)
 
     def build(
         most_recent_entry: str | None,
@@ -79,6 +105,7 @@ def analyze(changelog_path: Path, today: dt.date) -> Report:
             should_merge=should_merge,
             start_date=start_date,
             reason=reason,
+            checked_through=checked,
         )
 
     if weekday == 1:
@@ -87,7 +114,7 @@ def analyze(changelog_path: Path, today: dt.date) -> Report:
     if not changelog_path.exists():
         return build(None, False, None, f"Changelog not found: {changelog_path}")
 
-    recent = parse_recent_entry(changelog_path.read_text(encoding="utf-8"))
+    recent = parse_recent_entry(text)
     if recent is None:
         return build(None, False, None, "No existing week entries")
 

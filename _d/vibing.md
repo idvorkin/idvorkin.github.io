@@ -72,11 +72,11 @@ It has the same shape as a long deep talk with an old friend — or the flow you
 
 ### Tools matter — the mic especially
 
-Quality of voice transcription is gear-bottlenecked, not model-bottlenecked. A real lapel mic close to your mouth beats laptop and phone built-ins by a country mile. Full deep dive on the cockpit and the specific mic in [ai-cockpit](/ai-cockpit#the-mic-matters-more-than-i-thought).
+Quality of voice transcription is gear-bottlenecked, not model-bottlenecked. The mic I use, and the ring that starts and sends a dictation, are in [Custom hardware for voice](/ai-cockpit#custom-hardware-for-voice).
 
 ### No more gaps between contexts
 
-Self-driving plus a lapel mic erases the natural breaks. The [Tesla](/tesla) drives, the lav captures, and I just go from point to point — vibing in the car, vibing on the walk between meetings, vibing while making coffee. The transitions used to be where my brain rested. Now they're just more session. Worth knowing whether that's what you want.
+Self-driving plus a lapel mic erases the natural breaks. The [Tesla](/tesla) drives, the lav captures, and I just go from point to point — vibing in the car, vibing on the walk between meetings, vibing while making coffee. The transitions used to be where my brain rested. Now they're just more session. Worth knowing whether that's what you want. Graham Dumpleton runs the same tools the other way: he sets an agent going, heads out for a walk or does some gardening, and comes back to see how it went. He calls it [AI as a lifestyle choice](https://grahamdumpleton.me/posts/2026/11/ai-as-a-lifestyle-choice/). The agent's working time can fill the gaps or give them back.
 
 ## Dark Sides
 

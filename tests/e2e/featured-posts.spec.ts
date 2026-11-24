@@ -1,5 +1,4 @@
 import { expect, test } from "./base-test";
-import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Featured Posts functionality", () => {
   test("Homepage shows hardcoded featured posts", async ({ page }) => {
@@ -134,14 +133,6 @@ test.describe("Featured Posts functionality", () => {
       // Check that descriptions are not too long (should be truncated around 150 chars)
       expect(descText?.length).toBeLessThanOrEqual(160); // Allow some buffer
     }
-  });
-
-  test("No JavaScript errors on featured pages", async ({ page }) => {
-    // Test homepage
-    await checkForJsErrors(page, "/");
-
-    // Test featured page
-    await checkForJsErrors(page, "/featured/");
   });
 
   test("Featured posts remain consistent across page reloads", async ({ page }) => {

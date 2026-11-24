@@ -3,7 +3,7 @@ layout: post
 title: "Training the sublime states"
 tags:
   - emotional intelligence
-imagefeaturelocal: raccoon-meditate.webp
+imagefeaturelocal: raccoon-meditate-felt.webp
 redirect_from:
   - /sublime-states
   - /sublime-state
@@ -16,7 +16,7 @@ Emotional health is pretty important. Western folks don't have a lot of words to
 
 Tools of the trade (Sublime states):
 
-{% include local_image_float_right.html src="raccoon-meditate.webp" %}
+{% include local_image_float_right.html src="raccoon-meditate-felt.webp" %}
 
 | State           | Definition                                                   |
 | --------------- | ------------------------------------------------------------ |

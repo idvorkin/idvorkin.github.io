@@ -106,6 +106,8 @@ export interface IURLInfo {
   redirect_url: string;
   doc_size: number;
   last_modified: string;
+  /** Which /random?topic= rolls can land here; build_back_links.py derives it from the page's tags. */
+  topics?: string[];
 }
 
 let cached_link_info: IURLInfoMap = null;
@@ -161,7 +163,12 @@ export async function get_link_info(_url?: string): Promise<IURLInfoMap> {
   }
 }
 
-export async function get_random_page_url(): Promise<string> {
+/**
+ * Picks a random content page, from one topic's posts when a topic is given.
+ * A topic with no posts (unknown, empty, or an index built without topics) rolls
+ * from everything instead, so a bad link still lands somewhere.
+ */
+export async function get_random_page_url(topic?: string | null): Promise<string> {
   try {
     const linkInfo = await get_link_info();
     const urls = Object.keys(linkInfo).filter((url) => {
@@ -181,12 +188,22 @@ export async function get_random_page_url(): Promise<string> {
       return !isExcluded && !hasExcludedPattern;
     });
 
-    if (urls.length === 0) {
+    let candidates = urls;
+    if (topic) {
+      const inTopic = urls.filter((url) => linkInfo[url].topics?.includes(topic));
+      if (inTopic.length > 0) {
+        candidates = inTopic;
+      } else {
+        console.warn(`🎲 No posts for topic "${topic}", rolling from everything`);
+      }
+    }
+
+    if (candidates.length === 0) {
       // Fallback to home if no pages found
       return "/";
     }
 
-    const randomUrl = random_from_list(urls);
+    const randomUrl = random_from_list(candidates);
     return randomUrl || "/"; // Handle undefined case from random_from_list
   } catch (error) {
     console.error("🚨 Error getting random page URL:", error);

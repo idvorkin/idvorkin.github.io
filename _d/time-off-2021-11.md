@@ -125,7 +125,7 @@ Meditated once, but otherwise let this slide
 
 ### 750 words
 
-Started doing this on a e-book handwriting again, spotty 2/10 days.
+Started doing this on an e-book handwriting again, spotty 2/10 days.
 
 ## Physical Health
 

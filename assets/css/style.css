@@ -124,6 +124,37 @@ https://css-tricks.com/line-clampin/
   margin-right: 0.5rem;
 }
 
+/* Header dice: an emoji, so pull it down a touch to match the icon glyphs */
+.navbar .nav-random-dice {
+  font-size: 26px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+/* Phone: shrink header icons a little so the dice fits on one row */
+@media (max-width: 576px) {
+  .navbar .nav-fa-icon {
+    font-size: 26px;
+    width: 26px;
+    height: 26px;
+  }
+
+  .navbar .nav-random-dice {
+    font-size: 22px;
+  }
+
+  .navbar .nav-link,
+  .navbar .nav-fa-icon,
+  .navbar button,
+  .navbar span {
+    margin-right: 0.35rem;
+  }
+
+  .navbar .navbar-toggler {
+    padding: 0.2rem 0.45rem;
+  }
+}
+
 #user-info {
   display: flex;
   align-items: center;

@@ -51,7 +51,7 @@ There is an analogy here with physical devices, like cars have a starter motor w
 
 ### We can go into energy debt, but you need to always pay the piper
 
-Let's say I'd naturally have 4 hours of energy today. Let's say I drink a ton of coffee and add an extra 1 hours. That gives me 5 hours of energy! w00t! But then, since I'm jacked up on caffeine, I sleep poorly, and am slogging through tomorrow, and operating at 50% efficiency for most of the 4 hours the next day, basically losing 1 hour. So, now I'm actually down an hour over 2 days. Ugh. And worse, I'm in debt as that energy was probably allocated to something else.
+Let's say I'd naturally have 4 hours of energy today. Let's say I drink a ton of coffee and add an extra 1 hour. That gives me 5 hours of energy! w00t! But then, since I'm jacked up on caffeine, I sleep poorly, and am slogging through tomorrow, and operating at 50% efficiency for most of the 4 hours the next day, basically losing 1 hour. So, now I'm actually down an hour over 2 days. Ugh. And worse, I'm in debt as that energy was probably allocated to something else.
 
 ### Sometimes less energy is more
 

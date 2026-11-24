@@ -2,9 +2,10 @@
 layout: post
 title: "Creator Monetization: From Dreams to Reality"
 permalink: /monetize
+imagefeatureblob: techtips2020-revenue.png
 ---
 
-Let's talk money. Whether you're a content creator dreaming of YouTube riches or a brand trying to understand the advertising landscape, this guide breaks down the reality of monetization - spoiler alert: it's harder than you think, but not impossible.
+Making money as a creator is harder than you think. These are my notes on how much the ad platforms make and on the creator models: ad revenue share, affiliates, sponsorships, fan support, digital products and merch. It ends with how much I've made.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

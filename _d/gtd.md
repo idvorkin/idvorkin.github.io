@@ -53,7 +53,7 @@ Your brain is terrible at remembering stuff, often forgetting the important, and
 
 ### Triage - Drop; Do; Delegate; Defer
 
-All incoming tasks should handled by one of the four workflows and ignored from that point forward:
+All incoming tasks should be handled by one of the four workflows and ignored from that point forward:
 
 - Drop - Best case :) See [Essentialism](/essentialism) and [the dip](/dip)
 - Do - If it takes less than 2 minutes, [get it done](/frog). Otherwise the overhead is too high.

@@ -5,7 +5,7 @@ title: The Case of the Cert Validation Error
 permalink: /cert-error
 ---
 
-Dad the website isn't secure! You're the security expert fix it! Zach, my 10 year old at the time son, runs a web site, and it got an occasional this website is not secure message. I tried to debug, but couldn't get a consistent enough repro to debug, so had to move on. It stayed in this state for 6 months, at which point Zach told me the certificate had expired. Now i had a 100% repro so went to work.
+Dad the website isn't secure! You're the security expert fix it! Zach, my 10 year old at the time son, runs a web site, and it got an occasional this website is not secure message. I tried to debug, but couldn't get a consistent enough repro to debug, so had to move on. It stayed in this state for 6 months, at which point Zach told me the certificate had expired. Now I had a 100% repro so went to work.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -34,7 +34,7 @@ Imagine Zach has a friend named Amelia, and she's got the phone number 206-890-1
 
 When you want to call her, you don't enter the phone number every time. You add her phone number to a contact, and then call the name on the contact card.
 
-So lets look at what happens when Zach wants to phone Amelia:
+So let's look at what happens when Zach wants to phone Amelia:
 
 **When Zach and Amelia meet**
 
@@ -49,7 +49,7 @@ So lets look at what happens when Zach wants to phone Amelia:
 - iPhone: (Dialing 206-890-1111)
 - Zach: Hi Amelia!
 
-Now, lets look at how this works on the internet.
+Now, let's look at how this works on the internet.
 
 On the internet, phone numbers are called IP Addresses, and they look like 112.143.122.11. To simplify we'll just imagine they are a single number, like 10.
 
@@ -66,7 +66,7 @@ But, there's some magic required here. How does chrome know the number for zacoo
 - Chrome: (Connecting to 10)
 - Zach: Sweet - I'm gonna play a fun game.
 
-Hymn, you think, OK, well how does DNS know? It turns out just like above when Zach meets Amelia, there's a place where the owner of Zacookiegames, tells DNS.
+Hmm, you think, OK, well how does DNS know? It turns out just like above when Zach meets Amelia, there's a place where the owner of Zacookiegames, tells DNS.
 
 **When Zacookie games is setup**
 
@@ -75,7 +75,7 @@ Hymn, you think, OK, well how does DNS know? It turns out just like above when Z
 
 ### But waits, can't a hacker lie about the address? (Certificates and Authorities)
 
-If you're sneaky like a hacker, you might notice, that someone evil could like to DNS.
+If you're sneaky like a hacker, you might notice, that someone evil could lie to DNS.
 
 - Owner of Hacker'r'us - Hey DNS, I own zacookiegames.com - set my number to 89.
 - DNS - OK, done. I'll tell others you're at 89.
@@ -91,12 +91,12 @@ Turns out there's something that doesn't exist on your phone, someone, like the 
 - Dad - Sure!
 - Police, OK, here's your proof.
 
-In computer lingo, that proof is called a certificate, and the the police is called the "certificate authority" or CA. Just like people trust the police, people trust the CA too. So now, to stop hackers, here's what chrome actually does.
+In computer lingo, that proof is called a certificate, and the police is called the "certificate authority" or CA. Just like people trust the police, people trust the CA too. So now, to stop hackers, here's what chrome actually does.
 
 - Zach: I want to go to zacookiegames.com
 - _Chrome: Yo DNS- What number is zacookiegames.com at?_
 - _DNS: 10_
-- Chrome: He Zacookie - can I see the proof you own 10?
+- Chrome: Hey Zacookie - can I see the proof you own 10?
 - Zacookiegames: Sure, here's my proof!
 - Chrome: Looks good - keep going!
 - Chrome: (Connecting to 10)
@@ -104,14 +104,14 @@ In computer lingo, that proof is called a certificate, and the the police is cal
 
 ### The problem
 
-Turns out, instead of a single phone number, on the internet stuff breaks so you need more then 1 phone number. In this case, Zacookie phone numbers were, 10,11,12,13, and we got a certificate for 10,11,12,13.
+Turns out, instead of a single phone number, on the internet stuff breaks so you need more than 1 phone number. In this case, Zacookie phone numbers were, 10,11,12,13, and we got a certificate for 10,11,12,13.
 
 BUT, when we told DNS, we actually told DNS the phone numbers were 10,**110**,12, 13. As a result if the phone number DNS ever gave back was **110**, then we'd connect to **110**, but chrome, would say, hey, you're not 110. Sorry.
 
 - Zach: I want to go to zacookiegames.com
 - _Chrome: Yo DNS- What number is zacookiegames.com at?_
 - _DNS: 110_
-- Chrome: He Zacookie - can I see the proof you own 110?
+- Chrome: Hey Zacookie - can I see the proof you own 110?
 - Zacookiegames: Sure, here's my proof - (zacookiegames is at 10,11,12,13)!
 - Chrome: Whoa, you should only be at 10, 11,12,13.
 - Chrome: (ALERT - HACKER in Play).

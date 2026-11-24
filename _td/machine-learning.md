@@ -9,7 +9,7 @@ redirect_from:
   - /td/machine-learning
 ---
 
-It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can't articulate your intuition as it built through countless experiences, but it mostly works (E.g. you never put a banana in your stirfry).
+It used to be that software was eating the world. Now ML is eating software. ML is computers building algorithms by only looking at the data. This is powerful as the computer can find patterns in large data sets that are too complicated for humans to find and express via algorithms. In human terms programming is following a check list which someone else provided (E.g. bake a cake by following the recipe). ML is following your intuition. (E.g making a stir fry from stuff in the fridge). As with ML, you can't articulate your intuition as it's built through countless experiences, but it mostly works (E.g. you never put a banana in your stirfry).
 
 _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/master/machine-learning.md)_
 
@@ -109,13 +109,13 @@ I highly recommend: [Machine learning is like sex in high school](https://vas3k.
 
 ## Hierarchy of Abstraction in the ML space
 
-Before we get started, the term "model" is very overloaded, lets use these definitions.
+Before we get started, the term "model" is very overloaded, let's use these definitions.
 
 ### Disambiguating the word Model
 
-The word model is overloaded - Wickhan describes the following terms ( but I haven't yet re-written the article):
+The word model is overloaded - Wickham describes the following terms ( but I haven't yet re-written the article):
 
-- **Model Family** - The class of ML algorithm being used e.g. Linear Regression, Recurrant Neural Network.
+- **Model Family** - The class of ML algorithm being used e.g. Linear Regression, Recurrent Neural Network.
 - **Model Form** - The model family, the features and the hyper parameters
 - **Fitted Model** - Model form fit to data and able to perform estimates.
 
@@ -137,7 +137,7 @@ Because the model is inferred implicitly, we need to provide data to build the m
 
 Models are relatively simple to describe but require data to train.
 
-To train a model on a reasonable sized dataset, use a tool like sci-kit. To train a model on a large data set, model use a cloud provider like Amazon SageMaker or Azure ML Studio.
+To train a model on a reasonable sized dataset, use a tool like sci-kit. To train a model on a large data set, use a cloud provider like Amazon SageMaker or Azure ML Studio.
 
 ### Implementing ML Algorithm
 
@@ -174,7 +174,7 @@ See my repository here: <https://github.com/idvorkin/video-edit>
 
 Given a sample, classify into a discrete set of known values. Mathematically F(sample):Enum. Find F. Training data must be labeled, into a discrete set of data.
 
-Classification can be binary (spam detection), or categorical (image recognition, sentiment analysis, speech recognition). Many classifier provide a confidence score (I'm 90% sure this is a cat, but 20% sure it's dog).
+Classification can be binary (spam detection), or categorical (image recognition, sentiment analysis, speech recognition). Many classifiers provide a confidence score (I'm 90% sure this is a cat, but 20% sure it's dog).
 
 Algorithms used include decision trees, and Baseyian classifiers.
 
@@ -202,7 +202,7 @@ Algorithms used include decision trees, and Baseyian classifiers.
 
 ### Supervised vs Unsupervised vs Semi Supervised
 
-Supervised leraning means the a trainer provides 'ground truth' via labeled data. Getting labeled data is often the hardest part of ML. Regression is a supervisedalgorithom. Unsupervised learning means no labels are provided and the computer figures out the relationships - clustering is an example of this. Semi-supervised learning uses algortithoms to take a a small amount labeled data to mix with unlabbelled data creating more 'synthetic labeled' data. This is domain specific. As an example, imagine doing speech recognition. Take labeled audio files, and mix them with background noise to generate 'synthetic data'.
+Supervised learning means a trainer provides 'ground truth' via labeled data. Getting labeled data is often the hardest part of ML. Regression is a supervised algorithm. Unsupervised learning means no labels are provided and the computer figures out the relationships - clustering is an example of this. Semi-supervised learning uses algorithms to take a small amount of labeled data to mix with unlabeled data creating more 'synthetic labeled' data. This is domain specific. As an example, imagine doing speech recognition. Take labeled audio files, and mix them with background noise to generate 'synthetic data'.
 
 ### Batch vs Online
 
@@ -215,7 +215,7 @@ In online learning (better called incremental learning) an initial model is depl
 ## How to measure the effectiveness of ML by problem category
 
 Because programming tends not to be probabilistic, we tend not to measure effectiveness. In programming we often care about performance, and for that we need a standard benchmark. Various benchmarks exist for various measures, E.g. crystal mark for disk, and battery burner for power utilization.
-Similarly to measure effectiveness you need to use a standard data set. Also "good values" is a function of the data set and domain. E.g. a precision of 99% is OK on the MINST data set, but 50% fantastic good on a handwriting recognition dataset.
+Similarly to measure effectiveness you need to use a standard data set. Also "good values" is a function of the data set and domain. E.g. a precision of 99% is OK on the MNIST data set, but 50% fantastic good on a handwriting recognition dataset.
 
 The class of problem being solved determines the effectiveness of ML. To measure effectiveness, you must do so over a dataset.
 
@@ -227,7 +227,7 @@ The class of problem being solved determines the effectiveness of ML. To measure
 
 ### Classification - Precision and Recall
 
-- **Precision (Exactness)** - Likely hood a result is a true positive. TP / (TP + FP). % of things you say are true, are actually true.
+- **Precision (Exactness)** - Likelihood a result is a true positive. TP / (TP + FP). % of things you say are true, are actually true.
 
 - **Recall (Completeness)** - Likely a true positive. TP / (TP + FN). % of true things you identify in the entire space
 
@@ -279,7 +279,7 @@ I've been an engineer for a long time, and always struggled to understand what p
   - What is good in a customers mind?
   - How does it change person to person?
   - How do you know if someone got what they wanted
-  - Someones context/state of mind matter.
+  - Someone's context/state of mind matter.
   - What people want changes over time relative to the rest of the world.
   - How hard is it to self motivate
 - Even if you had perfect ML, your domain understanding is wrong (think how hard PMF is)
@@ -295,7 +295,7 @@ I've been an engineer for a long time, and always struggled to understand what p
 - You need to map IRL concepts to imprecise math functions
   - How should you model the words, pictures to numbers?
   - Each math function has biases, weight outliers?
-  - Lots of subtelties
+  - Lots of subtleties
   - Not clear how it performs on many things.
 - Hard to verify
   - Models are opaque
@@ -344,7 +344,7 @@ Google attempted to fix the algorithm, but ultimately removed the gorilla label 
 
 ### Clever Hans - the horse that could count
 
-Using opaque features isnt just a problem for ML systems. There was a horse that [could count](https://en.wikipedia.org/wiki/Clever_Hans), but it didn't work by counting, it worked by understanding human emotions. I guess that's one of our first fails of machine learnings.
+Using opaque features isn't just a problem for ML systems. There was a horse that [could count](https://en.wikipedia.org/wiki/Clever_Hans), but it didn't work by counting, it worked by understanding human emotions. I guess that's one of our first fails of machine learnings.
 
 ### Likelihood of death from Pneumonia given asthma
 
@@ -355,7 +355,7 @@ asthma was predictive of lower risk.
 
 This was a true correlation in the data, but it owed to the more aggressive treatment such co-morbid patients received.
 
-Put simply, a researcher taking actions based on this information would be mistaking correlation for causation. And if a hospital used the risk score for triage, they would actually recklessly put the asthma patients at risk, thus invalidating the learned model model.
+Put simply, a researcher taking actions based on this information would be mistaking correlation for causation. And if a hospital used the risk score for triage, they would actually recklessly put the asthma patients at risk, thus invalidating the learned model.
 
 ## Computing Power, Hardware
 
@@ -484,9 +484,9 @@ That's what's happening in ML today. The issue is the field is nascent and tools
 
 A good way to think about this is to simplify the problem. Imagine we had a 'compression' and 'decompression' program for an individual person's face E.g compress_igor(image)-> state, decompress_igor(state)->image. Imagine if it compressed to 2 bits (left eye open, right eye open). Even though the state is very small, we can create high quality (though low variance) output. The decompression doesn't need to be given all the face details, just the details of eye-open and eyes closed.
 
-Now, lets use ML to create this algorithm, instead of humans defining the latent space (e.g. compressed-state) the ML model will. And it can do this with unsupervised learning, connecting compress_igor(igor_image_1) -> decompress_igor() -> igor_image_2 , and minimizing differences between igor_image_1 and igor_image_2. At the end of this process, we have a ML generated compression and decompression function for a users face.
+Now, let's use ML to create this algorithm, instead of humans defining the latent space (e.g. compressed-state) the ML model will. And it can do this with unsupervised learning, connecting compress_igor(igor_image_1) -> decompress_igor() -> igor_image_2 , and minimizing differences between igor_image_1 and igor_image_2. At the end of this process, we have a ML generated compression and decompression function for a users face.
 
-So using this we have create compress_igor(image)->small_state and decompress_igor(small_state)-> image. If we did the same process on a second person, say Bob, we'd create compress_bob(image), and decompress_bob(small_state). So we can do a deep fake by connecting compress_igor -> decompress_bob Tada!
+So using this we have created compress_igor(image)->small_state and decompress_igor(small_state)-> image. If we did the same process on a second person, say Bob, we'd create compress_bob(image), and decompress_bob(small_state). So we can do a deep fake by connecting compress_igor -> decompress_bob Tada!
 
 ### Time Series Analysis
 
@@ -494,7 +494,7 @@ Check out [prophet](https://towardsml.com/2018/05/23/time-series-forecasting-the
 
 ## Neural Networks
 
-A laymens introduction to neural networks and deep learning. What's interesting here is that many of the stes of model selection and training is "semi random". This [post](https://ahgamut.github.io/2020/11/20/netpicking-1/) Does a great job discussing how to assess models using semi-random model creation.
+A laymen's introduction to neural networks and deep learning. What's interesting here is that many of the steps of model selection and training is "semi random". This [post](https://ahgamut.github.io/2020/11/20/netpicking-1/) Does a great job discussing how to assess models using semi-random model creation.
 
 {% include youtube.html src="BR9h47Jtqyw" %}
 
@@ -512,7 +512,7 @@ A neural network that includes history (e.g. t-1,t-2) as input features, great f
 
 ### GAN: Generate Associative Networs
 
-GANs are used train a lossy compression/decompression pair without human knowledge. Essentially saying, computer make a compression and decompression pair which turns the image back into itself with a much smaller representation . This can be used for deep fakes, by connecting the trained compression of one image, into the trained decompression of another image. Letting you go from person 1->person 2, with 0 training data.
+GANs are used to train a lossy compression/decompression pair without human knowledge. Essentially saying, computer make a compression and decompression pair which turns the image back into itself with a much smaller representation . This can be used for deep fakes, by connecting the trained compression of one image, into the trained decompression of another image. Letting you go from person 1->person 2, with 0 training data.
 
 Good explanation:
 
@@ -526,4 +526,4 @@ Good explanation:
 
 {%include amazon.html asin="1491962291;1617294438" %}
 
-- Neural network easier to grock [lectures](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)
+- Neural network easier to grok [lectures](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)

@@ -1,9 +1,19 @@
 ---
 layout: post
-title: Testing AI
+title: AI Testing and Evals
 permalink: /ai-testing
+redirect_from:
+  - /ai-evals
+  - /evals
+  - /ai-eval
 ai_default_image: true
+tags:
+  - ai
+  - machine-learning
+imagefeaturelocal: raccoon-ai-testing-grading.webp
 ---
+
+_How to measure AI: what to test, how to score it, how to read the results, and my own benchmarks. Which software to run it with is [AI Eval Tools](/ai-eval-tools)._
 
 Testing math is easy, it's right or wrong. Testing spelling is easy too, but testing if a joke is funny - now that's tough. Let's talk about how to test AI.
 
@@ -11,12 +21,17 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
 >
 > — [Pydantic Evals docs](https://ai.pydantic.dev/evals/)
 
+{% include repo_image_float_right.html src="raccoon-ai-testing-grading.webp" alt="The felt raccoon in a green GRADE t-shirt, pencil behind his ear, frowning between two papers, one reading 2+2=4 with a green check mark and one a smiley face with a red question mark, as a small robot waits at a school desk" %}
+
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [Concepts](#concepts)
   - [Tracing](#tracing)
+  - [Read the failures before picking metrics](#read-the-failures-before-picking-metrics)
   - [LLM as Judge](#llm-as-judge)
+  - [Humans don't agree either](#humans-dont-agree-either)
+  - [Scoring rules I trust](#scoring-rules-i-trust)
   - [Testing across prompts](#testing-across-prompts)
   - [Testing across models](#testing-across-models)
   - [Testing the model bound to its harness](#testing-the-model-bound-to-its-harness)
@@ -28,7 +43,10 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
 - [Eval Systems](#eval-systems)
   - [Human-based blind taste tests Chatbot arena](#human-based-blind-taste-tests-chatbot-arena)
   - [Eval Data Sets](#eval-data-sets)
+  - [Confusion matrix, precision, and recall](#confusion-matrix-precision-and-recall)
+- [My benchmark evals](#my-benchmark-evals)
   - [Grading the agent with smevals](#grading-the-agent-with-smevals)
+  - [Raccoon generator](#raccoon-generator)
 - [Testing Theory](#testing-theory)
   - [Good books](#good-books)
   - [Simplest form of testing](#simplest-form-of-testing)
@@ -45,11 +63,53 @@ Testing math is easy, it's right or wrong. Testing spelling is easy too, but tes
 
 I started by using LangSmith, but now I use ell, which has it built in.
 
+### Read the failures before picking metrics
+
+The metrics I'd invent at my desk are rarely the ones that matter. So before writing any, I read 100 or so traces and jot a note on each one that went wrong, in my own words, no categories yet. Then I group the notes (qualitative researchers call these two passes open and axial coding), and the three biggest piles become my first evals. When I need more inputs, I generate them along axes I name up front (persona × intent × difficulty × edge case) so coverage is a choice, not luck. The resulting golden set lives in git next to the prompts, because a score is meaningless without the version of the data it came from.
+
+The set never stops growing: every failure I see in production becomes a test case. That's the part that compounds. Prompts and models get swapped every few months; a pile of real failures with checks attached keeps paying.
+
 ### LLM as Judge
 
 Fantastic post on using an [LLM as a judge](https://hamel.dev/blog/posts/llm-judge/).
 
 This is the future, also [promptfoo supports this well](https://www.promptfoo.dev/docs/configuration/expected-outputs/model-graded/llm-rubric/).
+
+### Humans don't agree either
+
+Before I ask whether a judge is right, I should ask how often two people give the same answer. Less often than I'd guess:
+
+- **Peer review:** NeurIPS sent 10% of submissions to two independent committees. In 2021 they split on [203 of 882 papers](https://arxiv.org/abs/2306.03262), and about half the accepted list would change on a rerun, same as [in 2014](https://arxiv.org/abs/2109.09774).
+- **Mammograms:** ten radiologists reading the same 150 films [agreed 78% of the time](https://doi.org/10.1056/NEJM199412013312206), which is a weighted kappa of only 0.47 once chance is taken out.
+- **Breast biopsies:** 115 pathologists matched the expert reference on [48% of atypia cases](https://doi.org/10.1001/jama.2015.1405), and the three experts who set that reference agreed unanimously on 75% of cases.
+- **Summaries:** on [SummEval](https://arxiv.org/abs/2007.12626), crowd workers reached Krippendorff's alpha 0.49 and experts 0.41, until a second round got the experts to 0.71.
+- **Preference labels:** [InstructGPT's labelers](https://arxiv.org/abs/2203.02155) agreed on the better output 72.6% of the time, the raw material of RLHF.
+
+Percent agreement flatters. Two raters guessing agree half the time on a yes/no, and more when the label is rare and both mostly say "no". Cohen's kappa (two raters), Fleiss' kappa and Krippendorff's alpha (more raters) subtract what chance would give, and Krippendorff wants alpha ≥ 0.8 before relying on the data.
+
+So the bar: **trust a judge when it agrees with humans about as well as humans agree with each other**, measured the same way on the same items. GPT-4 cleared it on [MT-Bench](https://arxiv.org/abs/2306.05685), 66% with humans against 63% between humans (ties counted, where chance is 33%). Easy tasks raise the bar: people grading TriviaQA answers hit Scott's pi ~96, and the [best judges landed in the high 80s](https://arxiv.org/abs/2406.12624) while their percent agreement looked fine.
+
+How I'd run one:
+
+- **Label 50–100 outputs myself first** and write down why each fails. The rubric comes from those notes and from the items two of us split on. Shreya Shankar calls this [criteria drift](https://arxiv.org/abs/2404.12272): you need criteria to grade, and grading is how you find them.
+- **Treat the judge like a classifier you're training.** Split my labels into train (few-shot examples), dev (tuning the prompt) and a test set I only look at once. Report its true-positive and true-negative rates separately, next to the human number, because a judge that passes everything scores well when failures are rare. Have it write its critique before a binary verdict, and pin the judge model's version so last month's scores still mean something.
+- **Swap positions** and count only wins that survive both orders. On MT-Bench, GPT-4 kept its verdict after a swap 65% of the time, Claude-v1 24%. And don't reward padding: repeating a list's items in new words fooled GPT-3.5 and Claude-v1 91% of the time.
+- **Route on confidence.** Code takes what it can settle ([rule one](#scoring-rules-i-trust)), a cheap decision model that returns a calibrated 0–1 score takes the clear calls, and only the uncertain middle goes to a big model or a person. [Hightouch audited merged customer identities](https://hightouch.com/blog/llm-judges-identity-resolution) this way, on a synthetic benchmark: anything Jev scored between 30% and 90% went to Claude Opus. That sent 22% up and scored 98.8% against Opus-alone's 99.0%, at $0.88 instead of $3.86 per thousand. Calibration is the catch: GPT-6 Luna beat Jev out of the box, but it's overconfident, so on harder data its hybrid fell to 91.6% while Jev's held 95.3%.
+
+My [pr-checks skill](https://github.com/idvorkin/idvorkin.github.io/tree/main/.claude/skills/pr-checks) is the small version. Regexes settle the structural checks, Jev scores headers, voice and ai-patterns, and the raw score prints next to each threshold so a near-miss shows. Grading the judge is what kept it honest: only ai-patterns separates (pre-LLM posts ≤ 2.38, AI-patterned fixtures ≥ 3.99). Injecting an "I"→"we" switch moved the voice score by as little as +0.03, inside the range clean posts already sit, so voice and headers never block. Their flags come to me as "worth a look", never as a verdict.
+
+### Scoring rules I trust
+
+- **Deterministic checks first.** String matches, git diffs, and my own tools as oracles (toc.py decides whether a TOC is right). They're cheap and give the same answer twice. An LLM judge is opt-in, for the quality the checks can't see, never the default gate.
+- **A judge confirms yes/no assertions, not a 1–5 score.** Hand it specific claims ("the new heading is in the TOC") and have it cite the step it's judging. When it has to rank, make it pairwise, [not a scale](#wrinkle---no-known-answer).
+- **Run each task k times; report pass^k next to pass@k.** pass@k (passed at least once) says the agent can do it; pass^k (passed every time) says I can rely on it. The gap is flakiness, and it compounds: an agent that succeeds 80% of the time passes five runs in a row only 33% of the time.
+- **Score the parts, not just the answer.** For RAG, grade retrieval (did the right documents come back, and how high) apart from whether the answer stayed faithful to them, or I can't tell which half broke. For agents, grade the trajectory: right tools called, wrong ones avoided, step count, recovery after an error.
+- **Cost per successful task and p95 latency are scores too.** A model that's 2 points better at three times the price per success usually loses.
+- **Check the difference is real.** At n=100 and an 80% pass rate, the 95% interval is about ±8 points, so a 3-point gain between prompts is noise. Run both versions on the same items and use a paired test or a bootstrap before believing it.
+- **Count harness failures apart from agent failures.** A run that died on a blocked command or a sandbox that wouldn't start isn't the model getting it wrong. Mix them and the leaderboard measures my setup.
+- **Test the graders.** A known-good run must pass and a deliberately sloppy one must fail. If your checkers have never failed a bad run on purpose, you don't know that they work.
+
+The assertion, pass^k, and harness rules come from [Yesha Shah's Agentic Evals guide](https://www.linkedin.com/pulse/agentic-evals-software-engineers-guide-part-1-yesha-shah-sdjle/). The error-analysis-first habit, the judge-as-classifier rules and the statistics come from [a 15-point eval playbook](https://x.com/divaagurlxw/status/2115418017891020888), which ends where I would: gate deploys in CI with a threshold per failure category, keep sampling live traffic, and treat the eval suite as the asset.
 
 ### Testing across prompts
 
@@ -165,11 +225,40 @@ Building good "generic" eval data sets is hard, here are some:
 
 - [Big Bench](https://github.com/suzgunmirac/BIG-Bench-Hard/tree/main) - a bunch of hard question prompts
 
+### Confusion matrix, precision, and recall
+
+A single pass rate hides the question I care about: which mistakes, and what do they cost? When the thing under test is a classifier (route this ticket, pick this intent), the tool is a confusion matrix. The idea comes from Steve Yegge's [The Counting House](https://steve-yegge.medium.com/the-counting-house-steve-yegge-83f5145cc35b) ([my notes](https://idvorkin-ai-tools.github.io/yegge-field-map/ai/the-counting-house.html)). The example below is a made-up chest-pain triage model, and its numbers and costs are invented, not clinical data. 1,000 patients, four diagnoses:
+
+| Actual ↓ / Picked → | Heart attack | Reflux  | Muscle strain | Anxiety | Recall |
+| ------------------- | ------------ | ------- | ------------- | ------- | ------ |
+| Heart attack        | **30**       | 16      | 2             | 2       | 60%    |
+| Reflux              | 1            | **344** | 10            | 45      | 86%    |
+| Muscle strain       | 1            | 45      | **200**       | 4       | 80%    |
+| Anxiety             | 0            | 4       | 1             | **295** | 98%    |
+| **Precision**       | 94%          | 84%     | 94%           | 85%     |        |
+
+Rows are what the patient really had; columns are what the model picked. The diagonal is right, and every other cell is one specific mistake.
+
+- **Precision** reads down a column: when the model says heart attack, how often is that true? 30 of 32.
+- **Recall** reads across a row: of the real heart attacks, how many got called heart attacks? 30 of 50.
+
+You can max out either by cheating at the other: answer once and be right, or answer everything and miss nothing. Yegge's version of that:
+
+> In short, high recall means you hit all the ducks, whereas high precision means you _only_ hit ducks.
+>
+> — [Steve Yegge, The Counting House](https://steve-yegge.medium.com/the-counting-house-steve-yegge-83f5145cc35b)
+
+Each class fails its own way. Heart attack is cautious: 94% precision, but 2 in 5 heart attacks slip past, 16 of them into reflux. Anxiety is greedy: it catches 98% of anxiety, and takes 51 other patients with it. Reflux is the junk drawer: 65 of the 409 patients it gets belong somewhere else.
+
+Overall accuracy is 86.9%, and it hides the point: errors don't cost the same. Say a missed heart attack costs \$100,000, a false alarm (a cardiac work-up for nothing) \$5,000, a real problem sent home as anxiety \$500, and any other mix-up \$100. The 20 missed heart attacks cost \$2M; the other 111 mistakes together cost \$40,500. So I pick the metric per class: recall near 100% on heart attacks, even at the price of more work-ups, and precision on anxiety, because whoever gets that label goes home. The bar isn't a fixed number either: Yegge scores the humans on the same gold set, and the model passes only if its error cost plus inference beats theirs plus labor.
+
+## My benchmark evals
+
+The honest way to feel out an eval tool is to build the same evals in each, so these two get rebuilt in [every tool I try](/ai-eval-tools).
+
 ### Grading the agent with smevals
 
-Most eval tools, PromptFoo included, treat the unit under test as prompt in, completion out. That stops working once the thing I'm testing is an agent mutating a repo. [smevals](https://github.com/prime-radiant-inc/smevals) — Simon Willison's eval framework — handles this case: the Runner is any executable (so it can drive Claude Code or Codex in a working directory), and grading is decoupled from running (Runs are immutable records on disk, so I can re-grade old runs with a new Grader without paying for the runs again). Checkers are also just executables that share a workspace, so a check can run git diff or the project's own tooling instead of asking an LLM judge.
-
-My first one: [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals). Every post on this blog keeps a generated table of contents, and what I actually care about when an agent edits a page is: did it make the change, did it regenerate the TOC, and did it leave everything else alone. Three deterministic checkers, no judge required:
+**Blog page edit**, built with [smevals](/ai-eval-tools#smevals-020) in [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals). Every post on this blog keeps a generated table of contents, and what I actually care about when an agent edits a page is: did it make the change, did it regenerate the TOC, and did it leave everything else alone. Three deterministic checkers, no judge required:
 
 - **expected-content** — the requested change landed in the file, not just in the chat reply
 - **toc-correct** — regenerating the TOC with my own toc.py must be a byte-level no-op (the repo's tool is the oracle)
@@ -190,9 +279,11 @@ Both Claude configs pass everything, including zero TOC churn on the trap task. 
 
 The judge column is a second grader — an LLM judge scoring correctness, voice match, and scope from the diff — layered on after the fact, since decoupled grading re-scores old runs for free. It found the daylight the deterministic checks can't see: sonnet 0.99 vs haiku 0.96 (haiku gets docked for details like unspaced em-dashes on a page that uses spaced hyphens), while an empty diff short-circuits to 0 with no LLM call. Deterministic graders stay the gate; the judge adds the quality axis. Next variants: drop the CLAUDE.md hints, use full-size pages, make edits that span files.
 
-The graders themselves get tested with a pair of mock runners — a known-good one that must always pass, and a sloppy one (skips the TOC regen, leaves a scratch file behind) that must always fail. If your checkers have never failed a bad run on purpose, you don't know that they work.
+The graders themselves get tested with a pair of mock runners — a known-good one that must always pass, and a sloppy one (skips the TOC regen, leaves a scratch file behind) that must always fail. That's [the last scoring rule](#scoring-rules-i-trust) in practice.
 
-For a survey of the wider tool field — PromptFoo, Pydantic Evals, Inspect AI, and the SaaS tier — see [AI Eval Tools](/ai-eval-tools).
+### Raccoon generator
+
+My recurring real need: a raccoon illustration in the blog's house style. Deterministic checks first (file exists, right format, transparent background, sane dimensions), then a vision judge for what only a judge can see: is it a raccoon, and does it match the style. Not built yet. It's next, and it forces the multimodal-judge question the blog-edit eval dodges.
 
 ## Testing Theory
 
@@ -235,9 +326,13 @@ Eval Time:
 
 Have a judge grade it.
 
-Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews. The catch: averaging only helps if the judges actually disagree. Ask five judges the same question five different ways and you've bought one opinion at five times the price, so check that their scores diverge before you trust the average.
+Judges are subjective, so we can have multiple judges and average their answers - like we do in boxing matches or work performance reviews. The catch: averaging only helps if the judges actually disagree. Ask five judges the same question five different ways and you've bought one opinion at five times the price, so check that their scores diverge before you trust the average. Mixing model families is the cheap way to get real disagreement: a [panel of three small models](https://arxiv.org/abs/2404.18796) from three families out-agreed a lone GPT-4 with humans, at a seventh of the cost.
 
-And when every score comes back in the same narrow band, the fix is usually the question, not the judge. A judge answers _which of these two is better_ far more reliably than an abstract zero-to-ten scale - the same reason [Chatbot Arena](#human-based-blind-taste-tests-chatbot-arena) is pairwise. Trading absolute scores for a head-to-head against known-good references is what [unstuck an RL run on watercolour paintings](https://surya.website/rling-qwen-to-paint-with-code) that had flatlined.
+And when every score comes back in the same narrow band (asked for 1–100, GPT-4 [piles onto 90 and 95](https://arxiv.org/abs/2405.01724) and barely touches anything under 60), the fix is usually the question, not the judge. A judge answers _which of these two is better_ far more reliably than an abstract zero-to-ten scale - the same reason [Chatbot Arena](#human-based-blind-taste-tests-chatbot-arena) is pairwise. Trading absolute scores for a head-to-head against known-good references is what [unstuck an RL run on watercolor paintings](https://surya.website/rling-qwen-to-paint-with-code) that had flatlined.
+
+The full recipe for this wrinkle, from Cameron Wolfe's talk on how Netflix evaluates agents with no right answer, has its own page: [Evals With No Right Answer](/subjective-evals).
+
+{% include youtube.html src="zLc8zeGeNaY" %}
 
 ### Wrinkle - No clear questions
 

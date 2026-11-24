@@ -2,7 +2,6 @@
 layout: post
 title: "Fortune Cookies"
 permalink: /fortune-cookies
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-fortune-cookie.webp
 ---
 
 Life wisdom in bite-sized pieces. Some from actual fortune cookies, some from conversations, some from that moment at 3am when something finally clicks. These are the breadcrumbs I'm leaving for my kids—and anyone else who finds value in them.
@@ -53,7 +52,7 @@ Cannibals prefer those without spines. This is a little grim, but there's a real
 
 {% include youtube_float_left.html src="B0Yw6ueIuTM" %}
 
-Failure is not disaster. It's data. Look, we beat ourselves up so quickly when something doesn't go the way we want. But failure, it's not a verdict on who you are. It's just data about what happened. It's the universe saying, "Try a little different." If you're going to look at your failures without shame, you can use them. You can adjust. You can improve. They're an opportunity. You can steer in a better direction next time. So, whatever went wrong today, don't label it a disaster.
+Failure is not disaster. It's data. Look, we beat ourselves up so quickly when something doesn't go the way we want. But failure, it's not a verdict on who you are. It's just data about what happened. It's the universe saying, "Try a little different." If you can look at your failures without shame, you can use them. You can adjust. You can improve. They're an opportunity. You can steer in a better direction next time. So, whatever went wrong today, don't label it a disaster.
 
 <div style="clear:both"></div>
 
@@ -85,7 +84,7 @@ Your shoes feel uncomfortable until you meet the man with no feet. It's life in 
 
 {% include youtube_float_left.html src="ew6FNxCOVJk" %}
 
-You are going to rust out before you wear out. What does this mean? So, if you're from a state where it snows, you know they put salt on the roads and that salt, it rusts the car and eventually the whole body falls out. In human terms, you croak. So, that's what it means to rust out. You're done. People hold back. They think, "I'm too old. What if I get hurt?" But here's the truth. It's not enough time long before you rust away from doing too much. You still have to do it safely, but do it. Keep moving. Keep living.
+You are going to rust out before you wear out. What does this mean? So, if you're from a state where it snows, you know they put salt on the roads and that salt, it rusts the car and eventually the whole body falls apart. In human terms, you croak. So, that's what it means to rust out. You're done. People hold back. They think, "I'm too old. What if I get hurt?" But here's the truth. You'll rust out from doing too little long before you wear out from doing too much. You still have to do it safely, but do it. Keep moving. Keep living.
 
 <div style="clear:both"></div>
 

@@ -9,7 +9,7 @@ redirect_from:
   - /pm
 ---
 
-From creating a vision that inspires to laying out the strategies to get there, product work requires a range of skills—and a good dose of creativity. Putting the puzzle pieces together is essential to creating a product that appeals to its customers. With the right combination of vision, strategy, product design and execution, anyone can create something truly remarkable. With this in mind, let's start building the future we want to create!
+My notes on product work: the vision (the future you want to create), the strategy (the path to get there), discovery (solving the big risks first) and working with design. Then concepts like stated vs revealed preferences and engagement vs growth.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -199,6 +199,7 @@ Michigan State University's campus designers made a brilliant choice: they built
 Contrast this with campuses where designers drew "logical" paths on a map, paved them, then had to install fences and signs saying "Keep off the grass" because students refused to take the inefficient routes.
 
 **Physical desire paths teach us:**
+
 - Ignore the intended design; watch actual behavior
 - The shortest path isn't always the preferred path (people value shade, views, avoiding mud)
 - Users vote with their feet, not their words
@@ -207,6 +208,7 @@ Contrast this with campuses where designers drew "logical" paths on a map, paved
 **Classic software example: Twitter's @ and #**
 
 Twitter didn't design @mentions or #hashtags. Users invented them organically:
+
 - Users started typing "@username" to reference other users
 - Users started typing "#topic" to group conversations
 - Twitter watched these patterns emerge in failed searches and awkward workarounds
@@ -223,12 +225,14 @@ In his [Software Survival 3.0](https://steve-yegge.medium.com/software-survival-
 Like domain squatting, but for features: when users/agents try to use something that doesn't exist, you "squat" on that desire by implementing it before someone else does.
 
 His methodology:
-1. Watch what users (or AI) *try* to do—even when they fail
+
+1. Watch what users (or AI) _try_ to do—even when they fail
 2. Implement what they tried
 3. Repeat until their natural attempts actually work
 4. The tool now matches their mental model, not your intended design
 
 **Why this works:**
+
 - Users reveal their mental model through failed attempts
 - What they hallucinate or guess shows what feels natural
 - Repeated patterns indicate universal expectations
@@ -236,22 +240,23 @@ His methodology:
 
 **Applying desire paths to product development:**
 
-| Traditional Approach              | Desire Paths Approach                               |
-| --------------------------------- | --------------------------------------------------- |
-| Design the "right" interface      | Watch what users actually try                       |
-| Train users on your system        | Make their natural attempts work                    |
-| Force users to your mental model  | Adapt your system to their mental model             |
-| Fight "incorrect" usage           | Pave the paths users are already walking            |
-| Rely on documentation             | Make intuitive guesses succeed                      |
+| Traditional Approach             | Desire Paths Approach                    |
+| -------------------------------- | ---------------------------------------- |
+| Design the "right" interface     | Watch what users actually try            |
+| Train users on your system       | Make their natural attempts work         |
+| Force users to your mental model | Adapt your system to their mental model  |
+| Fight "incorrect" usage          | Pave the paths users are already walking |
+| Rely on documentation            | Make intuitive guesses succeed           |
 
 **In practice:**
+
 - Instrument failed attempts, not just successes
 - Look for patterns in support tickets (what are users trying to do?)
 - Watch session recordings for "struggle patterns"
 - Test by asking users to complete tasks without documentation
 - When everyone makes the same "mistake," it's not a mistake—it's a desire path
 
-The desire paths principle is revealed preferences in action: rather than asking what users want (stated preferences) or even what they do (behavioral data), observe what they *try* to do—their attempts reveal their deepest expectations.
+The desire paths principle is revealed preferences in action: rather than asking what users want (stated preferences) or even what they do (behavioral data), observe what they _try_ to do—their attempts reveal their deepest expectations.
 
 ### Engagement vs Growth
 

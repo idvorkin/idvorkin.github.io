@@ -6,203 +6,108 @@ permalink: /like-switch
 
 The Like Switch, written by an ex-FBI agent, goes into detail on how to make friends and influence people in a much more modern form. It covers the friendship formula (proximity, frequency, duration, intensity), the nonverbal friend and foe signals we broadcast constantly, and the golden rule of friendship: make others feel good about themselves. These are my notes on the book.
 
+{% include ai-slop.html percent="80" %}
+
 {% include amazon.html asin="1476754489" %}
 
 <!-- prettier-ignore-start -->
-
 <!-- vim-markdown-toc-start -->
 
-- [The friendship formula: Proximity, Frequency, Duration, Intensity](#the-friendship-formula-proximity-frequency-duration-intensity)
-- [Friend Signals](#friend-signals)
-  - [The eyebrow flash](#the-eyebrow-flash)
-  - [The head tilt](#the-head-tilt)
-  - [The smile](#the-smile)
-  - [Touching](#touching)
-  - [Mirroring](#mirroring)
-  - [Whispering](#whispering)
-  - [Food forking](#food-forking)
-  - [Head nodding](#head-nodding)
-  - [Verbal Nudges](#verbal-nudges)
-  - [Focused Attention](#focused-attention)
+- [The friendship formula](#the-friendship-formula)
+- [Friend signals](#friend-signals)
   - [More tips for fun and profit](#more-tips-for-fun-and-profit)
-  - [Make a mitake to make folks more comfortable](#make-a-mitake-to-make-folks-more-comfortable)
 - [Foe signals](#foe-signals)
-  - [Elongated stare](#elongated-stare)
-  - [Elevator Eyes](#elevator-eyes)
-  - [Intimidating your daughters new boyfriend](#intimidating-your-daughters-new-boyfriend)
-  - [Eye Rolls](#eye-rolls)
-  - [Squinting](#squinting)
-  - [Furrowed Eyebrows](#furrowed-eyebrows)
-  - [Facial Tension](#facial-tension)
-  - [Aggressive Stance](#aggressive-stance)
-  - [Scrunched Nose](#scrunched-nose)
-- [Feet Position](#feet-position)
+  - [Intimidating your daughter's new boyfriend](#intimidating-your-daughters-new-boyfriend)
+- [Feet position](#feet-position)
 - [Gauge depth of a relationship](#gauge-depth-of-a-relationship)
-- [Golden rule of friendship - Make others feel good about themselves](#golden-rule-of-friendship---make-others-feel-good-about-themselves)
-  - [Empathic Statements](#empathic-statements)
-  - [Compliments vs Flattery](#compliments-vs-flattery)
-  - [Third party compliments](#third-party-compliments)
-  - [Third party compliments and positioning.](#third-party-compliments-and-positioning)
-  - [Favors](#favors)
-- [The book](#the-book)
+- [Golden rule of friendship: make others feel good about themselves](#golden-rule-of-friendship-make-others-feel-good-about-themselves)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-## The friendship formula: Proximity, Frequency, Duration, Intensity
+## The friendship formula
 
-Friendship doesn't happen instantly—it's built through four variables that combine over time:
+Friendship = Proximity + Frequency + Duration + Intensity. It builds over time:
 
-- **Proximity** - Being physically near someone regularly. The more you're around someone, the more familiar and comfortable they become with you.
-- **Frequency** - How often you interact. Multiple brief encounters build familiarity faster than rare lengthy ones.
-- **Duration** - Time spent together per interaction. As relationships develop, duration naturally increases.
-- **Intensity** - How well you satisfy the other person's psychological needs (feeling valued, understood). This is the accelerator that can compensate for lower proximity/frequency.
+- **Proximity**: being physically near someone regularly. Familiarity breeds comfort.
+- **Frequency**: how often you interact. Many short encounters beat a few long ones.
+- **Duration**: time per interaction. It grows naturally as the relationship does.
+- **Intensity**: how well you meet the other person's needs to feel valued and understood. This is the accelerator; it can make up for low proximity or frequency.
 
-The formula explains why coworkers become friends, why neighbors wave, and why you can fast-track relationships by focusing on intensity.
+That's why coworkers become friends and neighbors wave, and why focusing on intensity fast-tracks a relationship.
 
-## Friend Signals
+## Friend signals
 
-### The eyebrow flash
+Signals that say "I'm not a threat, I like you":
 
-A quick up-and-down movement of the eyebrows lasting about 1/6th of a second. It's a universal "I'm not a threat" signal that we send unconsciously when we see someone we like. Use it deliberately when approaching strangers to signal friendly intent.
-
-### The head tilt
-
-Exposing your neck (a vulnerable area) signals trust and non-threat. People who tilt their head during conversation are perceived as more attractive, trustworthy, and friendly. It's a powerful rapport-builder, especially when combined with a smile.
-
-### The smile
-
-Real smiles (Duchenne smiles) involve the muscles around the eyes, creating crow's feet. Fake smiles only use mouth muscles. People unconsciously detect the difference. A genuine smile signals openness and makes others want to engage with you.
-
-### Touching
-
-Light, brief touches on the arm or shoulder release oxytocin and build connection. The key is keeping it brief (under 3 seconds) and appropriate to context. Even accidental-seeming touches during conversation increase rapport.
-
-### Mirroring
-
-Subtly matching someone's posture, gestures, and speech patterns creates unconscious rapport. When people like each other, they naturally mirror. You can intentionally mirror to build connection, but keep it subtle—obvious mimicking feels creepy.
-
-### Whispering
-
-Leaning in and lowering your voice creates intimacy and signals "you're special—this is just for you." It draws people in and makes them feel like confidants.
-
-### Food forking
-
-Sharing food or eating from each other's plates signals trust and intimacy. It's why sharing appetizers on dates works—it creates a bonding moment. The more intimate the food sharing, the closer the relationship signal.
-
-### Head nodding
-
-Nodding while someone speaks encourages them to continue and signals agreement/understanding. Triple nods are especially effective at getting people to talk more. It's a simple way to make people feel heard.
-
-### Verbal Nudges
-
-Short phrases like "I see," "Go on," "Really?" that encourage continued talking without interrupting. They signal active listening and make speakers feel valued. Combined with head nods, they're powerful rapport tools.
-
-### Focused Attention
-
-Putting away your phone, maintaining eye contact, and orienting your body toward someone. In a distracted world, giving someone your full attention is rare and appreciated. It satisfies the deep need to feel important.
+- **Eyebrow flash**: a quick raise of the eyebrows, about 1/6th of a second. We do it unconsciously when we see someone we like; do it on purpose when approaching a stranger.
+- **Head tilt**: exposing the neck signals trust. People who tilt their head read as more attractive, trustworthy and friendly, especially with a smile.
+- **Smile**: real (Duchenne) smiles reach the eyes and make crow's feet; fake ones are mouth-only, and people can tell.
+- **Touching**: a light, brief touch on the arm or shoulder builds connection. Keep it short and appropriate to context.
+- **Mirroring**: people who like each other match posture, gestures and speech. You can do it on purpose, but keep it subtle; obvious mimicry is creepy.
+- **Whispering**: leaning in and lowering your voice says "this is just for you."
+- **Food forking**: eating off each other's plates signals trust and closeness; it's why shared appetizers work on dates.
+- **Head nodding**: encourages the speaker to keep going. Triple nods are especially effective.
+- **Verbal nudges**: "I see," "Go on," "Really?" keep people talking without interrupting. Pair them with nods.
+- **Focused attention**: phone away, eye contact, body turned toward them. Full attention is rare, so it lands.
 
 ### More tips for fun and profit
 
-### Make a mitake to make folks more comfortable
-
+- Make a mistake to make folks more comfortable
 - Light touch
-- Girls - wear something in your hair
+- Girls: wear something in your hair
 - Introduce yourself by name
 - Give something
   - Even a smiley face on your receipt
   - Give mints
-- Reath the customers order
+- Repeat the customer's order <!-- original note read "Reath"; repeat is my best guess -->
 - Provide good service
-- Apply
+- Apply <!-- original note; meaning unclear -->
 
 ## Foe signals
 
-These are the opposite of friend signals—they communicate hostility, dominance, or dismissal. Learn to recognize them in others, and avoid sending them accidentally.
+The opposite of friend signals: they communicate hostility, dominance or dismissal. Spot them in others and don't send them by accident.
 
-### Elongated stare
+- **Elongated stare**: holding eye contact past a comfortable 1–2 seconds reads as a challenge. Break eye contact to de-escalate.
+- **Elevator eyes**: scanning someone up and down signals judgment or objectification.
+- **Eye roll**: contempt (one of John Gottman's "Four Horsemen" of relationship failure).
+- **Squinting**: reads as suspicion or displeasure, even when it's just bright light.
+- **Furrowed eyebrows**: reads as anger even when you're just thinking hard. Relax your forehead.
+- **Facial tension**: tight jaw, pressed lips. Tension is contagious.
+- **Aggressive stance**: squared shoulders, hands on hips, chin up, feet wide. Angle your body and keep your hands visible instead.
+- **Scrunched nose**: the disgust micro-expression; brief, hard to hide, easy to spot.
 
-Holding eye contact beyond the comfortable 1-2 seconds signals aggression or dominance. It's a primal threat display. If someone stares too long, they're either challenging you or socially unaware. Break eye contact to de-escalate.
+### Intimidating your daughter's new boyfriend
 
-### Elevator Eyes
+The classic deliberate use of foe signals: elongated stare, aggressive stance, delayed greeting, crowding his space. Useful when you mean it, but know you're triggering his threat response.
 
-Scanning someone up and down, as if sizing them up. It communicates judgment, disapproval, or sexual objectification. Especially insulting when done slowly or with a dismissive expression.
+## Feet position
 
-### Intimidating your daughters new boyfriend
+Feet are the most honest part of the body because people rarely control them:
 
-Classic foe signal deployment: elongated stare, aggressive stance, delayed greeting, invasion of personal space. The author notes fathers do this instinctively—useful for protective purposes, but recognize you're activating someone's threat response.
+- **Toward you**: interested and engaged.
+- **Away from you**: they want to leave, even if face and torso are engaged.
+- **Toward the door**: they've mentally left.
+- **One toward, one away**: ambivalent or half-attending.
 
-### Eye Rolls
-
-A powerful dismissal signal that communicates contempt. One of John Gottman's "Four Horsemen" predicting relationship failure. If you catch yourself doing this, you're broadcasting "I think you're beneath me."
-
-### Squinting
-
-Narrowing the eyes signals suspicion, disagreement, or displeasure. Even if unintentional (bright light, thinking hard), others read it as hostility. Be aware of your face in important conversations.
-
-### Furrowed Eyebrows
-
-Drawing eyebrows together signals anger, confusion, or intense concentration. Can be misread as hostility even when you're just thinking hard. Consciously relax your forehead in friendly interactions.
-
-### Facial Tension
-
-Tight jaw, pressed lips, clenched facial muscles—all signal stress or aggression. Tension is contagious; your tight face makes others tense. Practice relaxing your face, especially before difficult conversations.
-
-### Aggressive Stance
-
-Squared shoulders facing someone directly, hands on hips, chin up, feet wide apart. This is dominance posturing. It triggers defensive responses in others. Angle your body slightly and keep hands visible to reduce threat signals.
-
-### Scrunched Nose
-
-The disgust micro-expression. Even brief nose scrunching signals "something smells bad here"—metaphorically, disapproval of what someone said or did. Very hard to hide and very easy to spot.
-
-## Feet Position
-
-Feet are the most honest part of the body because people rarely consciously control them. Key signals:
-
-- **Feet pointing toward you** - Interest and engagement. They want to be in this conversation.
-- **Feet pointing away** - They want to leave, even if their torso and face are engaged.
-- **Feet pointing toward the door** - They're mentally already leaving.
-- **One foot toward you, one away** - Ambivalence or partial attention.
-
-In groups, watch whose feet point toward whom—it reveals actual attention regardless of who's speaking.
+In a group, whose feet point at whom shows where the attention really is, regardless of who's talking.
 
 ## Gauge depth of a relationship
 
-You can test relationship depth by gradually increasing intimacy and watching responses:
+Increase intimacy a little at a time and watch the response:
 
-- **Personal space** - Move slightly closer. Do they move back, hold, or move in?
-- **Touch escalation** - Brief arm touch → longer touch → more personal area. Note reactions.
-- **Self-disclosure** - Share something personal. Do they reciprocate at the same level?
-- **Favors** - Ask for small favors, then slightly larger ones. Willingness indicates investment.
+- **Personal space**: move slightly closer. Do they back off, hold, or lean in?
+- **Touch**: a brief touch, then a slightly longer one.
+- **Self-disclosure**: share something personal. Do they match it?
+- **Favors**: small, then slightly larger. Willingness signals investment.
 
-The key is incremental testing. Jump too fast and you'll trigger discomfort. Move too slowly and interest may fade.
+Go too fast and you trigger discomfort; too slow and interest fades.
 
-## Golden rule of friendship - Make others feel good about themselves
+## Golden rule of friendship: make others feel good about themselves
 
-The fundamental principle: people will like you if you make them feel good about themselves. This isn't manipulation—it's recognizing that everyone has a deep need to feel valued. Satisfy that need authentically.
+People like you when you make them feel good about themselves. It isn't manipulation if it's sincere; everyone needs to feel valued.
 
-### Empathic Statements
-
-Statements that reflect the other person's emotional state back to them: "You seem really excited about this" or "That sounds frustrating." They signal understanding without judgment. People feel heard and validated, which builds trust.
-
-### Compliments vs Flattery
-
-Compliments are sincere and specific: "Your presentation was clear—I finally understand that concept." Flattery is insincere and generic: "You're amazing!" People detect the difference. Flattery backfires; genuine compliments build connection.
-
-### Third party compliments
-
-Complimenting someone to a third party, knowing it will get back to them. "Did you know Sarah stayed late three nights to finish that project?" More credible than direct compliments because you had no reason to say it except that you meant it.
-
-### Third party compliments and positioning.
-
-Strategic use: position yourself where the subject will "accidentally" overhear you complimenting them to someone else. The overheard compliment feels more authentic than a direct one—you weren't performing for them.
-
-### Favors
-
-Counterintuitively, asking someone for a small favor increases their liking of you (Ben Franklin effect). By doing you a favor, they subconsciously justify it by deciding they must like you. Also: do unexpected small favors for others without expecting return.
-
-## The book
-
-- [The like switch](https://www.amazon.com/Like-Switch-Influencing-Attracting-Winning/dp/1476754489)
-  {%include amazon.html asin="1476754489" %}
+- **Empathic statements**: reflect their emotional state back: "You seem really excited about this," "That sounds frustrating." They feel heard without being judged.
+- **Compliments, not flattery**: a compliment is sincere and specific ("Your presentation was clear; I finally get that concept"). Flattery is generic ("You're amazing!") and backfires.
+- **Third-party compliments**: praise someone to a person who will pass it on ("Did you know Sarah stayed late three nights to finish that?"). Better still, let them "accidentally" overhear it. It's more credible because you weren't performing for them.
+- **Favors**: asking for a small favor makes people like you more (the Ben Franklin effect), because they justify the favor by deciding they like you. Also do small unexpected favors for others.

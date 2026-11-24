@@ -16,7 +16,7 @@ ML Engineer is a hot new job. It's the boys and girls who train and deploy model
 - [The 10 Commandments of the AI Developer](#the-10-commandments-of-the-ai-developer)
   - [1. The Bitter Lesson: Scale beats clever algorithms](#1-the-bitter-lesson-scale-beats-clever-algorithms)
   - [2. AI can replace a well-defined role, it cannot replace an unbounded problem](#2-ai-can-replace-a-well-defined-role-it-cannot-replace-an-unbounded-problem)
-  - [3. Your secret sauce is the evals, then the training data - your prompt has no economic value](#3-your-secret-sauce-is-the-evals-then-the-training-data---your-prompt-has-no-economic-value)
+  - [3. Your secret sauce is the evals, then the training data - your prompt has no economic value.](#3-your-secret-sauce-is-the-evals-then-the-training-data---your-prompt-has-no-economic-value)
   - [4. Use the most expensive model you can as you prove you can solve the problem](#4-use-the-most-expensive-model-you-can-as-you-prove-you-can-solve-the-problem)
   - [5. Additional Commandment Ideas](#5-additional-commandment-ideas)
 - [Programs, Human Code, AI](#programs-human-code-ai)
@@ -64,6 +64,10 @@ An AI developer would instead do:
 - Be the PM, nail the use case.
 - Figure out how much of it AI can do.
 - Close the gap.
+
+Laurie Voss (Arize AI, and before that a co-founder of npm) argues this is coming for every engineer, not only the ones building AI apps. Agents made code nearly free, so the bottleneck moved to review ([8x more code, only 30% faster shipping](https://youtu.be/kspZP5BgkEU?t=184)), and it will keep moving until it lands on the part agents can't pull from training data: what this customer means and what "good" looks like for them. He calls the job that's left the product engineer, the 1960s systems analyst and today's PM folded back into one person, and his advice for right now is to get your best people's judgment out of their heads and into specs, rubrics and evals ([what to do now](https://youtu.be/kspZP5BgkEU?t=1511)).
+
+{% include youtube.html src="kspZP5BgkEU" %}
 
 ## The 10 Commandments of the AI Developer
 

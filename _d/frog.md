@@ -66,7 +66,7 @@ Procrastination is the success killer, a powerful manifestation of the resistanc
 
 **12.** **Identify your key constraints:** Determine the bottlenecks or choke points, internal or external, that set the speed at which you achieve your most important goals, and focus on alleviating them.
 
-**6.** **Use the [urgent and import](/first-things-first) matrix, and ABCDE framework continually:** Before you begin work on a list of tasks, take a few moments to organize them by value and priority so you can be sure of working on your most important activities. Do items in alphabetical order.
+**6.** **Use the [urgent and important](/first-things-first) matrix, and ABCDE framework continually:** Before you begin work on a list of tasks, take a few moments to organize them by value and priority so you can be sure of working on your most important activities. Do items in alphabetical order.
 
 ### Execution
 

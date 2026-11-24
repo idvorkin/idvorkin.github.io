@@ -89,11 +89,22 @@ Most of what an agent does for a person has no test: research this, plan that, r
 
 The other move is to have the model grade itself. One open model's recipe uses an answer key wherever one exists (code, math, checkable instructions) and for everything else a **self-critique** step, "where the model evaluates its own outputs to generate preference signals" — pairwise, against written principles, with the answer-key tasks keeping the self-critic honest. The judge's blind spots become the model's, as always; a rubric at least writes the blind spots down where you can read them.
 
+Xiaomi open-sourced the environments behind MiMo-V2.6's agent RL, and they show that mix one task set at a time: about 7,800 tasks, each a Docker sandbox with its own checker, running from tests to a judge model as the task gets fuzzier.
+
+| Task set        | The task                                      | The checker                                                                                                                                           |
+| --------------- | --------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Code (2,698)    | fix a real GitHub issue                       | the repo's tests, run on the patch                                                                                                                    |
+| Cyber (1,000)   | write an input that triggers a known bug      | the program must crash in the named function, with the named bug type                                                                                 |
+| Music (1,000)   | compose a piece, in text notation, to a brief | a script plays it as MIDI and scores how far its rhythm, harmony and structure sit from human-written music                                           |
+| General (989)   | office and terminal chores                    | a rubric of yes/no items per task: code checks what it can, a judge model the rest                                                                    |
+| Web dev (2,093) | build a website from a one-line brief         | a judge model compares screenshots across the group and picks the better and worse sites — once code has zeroed any site whose JavaScript doesn't run |
+
 <details markdown="1">
 <summary>Prior work</summary>
 
 - Per-prompt checklists as reward: [Rubrics as Rewards](https://arxiv.org/abs/2507.17746) — "we treat them as checklist-style supervision that produces reward signals for on-policy RL"; "relative improvements of up to 31% on HealthBench … over popular LLM-as-judge baselines that rely on direct Likert-based rewards."
 - Self-critique against a rubric, alongside verifiable rewards: [Kimi K2 technical report](https://arxiv.org/abs/2507.20534) — "a Self-Critique Rubric Reward mechanism, where the model evaluates its own outputs to generate preference signals."
+- One checker per task set, released: MiMo-V2.6 (Xiaomi, 2026) — the [environments](https://huggingface.co/datasets/XiaomiMiMo/MiMo-V2.6-RL-oss) (Apache-2.0; checkers listed as "Executable tests", "Rule checks", "Rubric-based judging", "Visual grading"), the [Docker images](https://hub.docker.com/r/xiaomimimo/mimo-v2.6-rl-oss), the [training code](https://github.com/XiaomiMiMo/verl) with each checker in it, and the [agent harness](https://github.com/XiaomiMiMo/mimoagent). The [technical report](https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/main/MiMo_V2_6_technical_report.pdf) (§4.2, §7; [blog](https://mimo.xiaomi.com/mimo-v2-6)): general tasks use "atomic, binary rubric items: code-based checks verify deterministic properties … while LLM-based checks assess more open-ended content"; the group average on these environments, from a 9B distilled model, moved SWE-bench Verified from 61.1 to 66.2. The web-dev judge votes good or bad over eight rounds of screenshots, their order rotated each round; the music scorer is "human-likeness scoring based on deviation from human music distributions." A community [conversion to the Harbor format](https://huggingface.co/collections/FineEnvs/mimo-v26-rl-in-harbor) has a [browser](https://huggingface.co/spaces/FineEnvs/MiMo-RL-Envs-Explorer) for reading individual tasks.
 
 </details>
 

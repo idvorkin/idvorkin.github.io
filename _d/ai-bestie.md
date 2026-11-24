@@ -52,7 +52,7 @@ Prompts didn't work that well. Still sounded like GPT
 
 ### Attempt #2: Use that data to do the training
 
-- Style transfer success! But then answer were too concise.
+- Style transfer success! But then answers were too concise.
   - TBD -- add several examples
 - Next use a prompt to make the responses longer
   - TBD -- add several examples
@@ -81,7 +81,7 @@ I think part of the problem with 1, as fine tuning doesn't have a sense of "cont
   - This is probably good, but maybe not as the key is reflection
 - What bestie knows I want to accomplish and care about
   - Being explicit here is probably good
-  - Having bestie know my goals, and my things i get caught up in.
+  - Having bestie know my goals, and my things I get caught up in.
 
 ### Models
 
@@ -129,7 +129,7 @@ Not exactly related, but let me merge some of these concepts in.
 
 ### Habit Tracking
 
-I have daily and weekly habits. I use an app called streaks for that. But I could probably have an agent do this, especially for the ones I've done or not done. Lets try that.
+I have daily and weekly habits. I use an app called streaks for that. But I could probably have an agent do this, especially for the ones I've done or not done. Let's try that.
 
 ## Embodiment
 

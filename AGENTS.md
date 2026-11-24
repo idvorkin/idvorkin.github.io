@@ -178,6 +178,8 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
 | Fetch web content         | `/web-browse`                     | Fallback chain: Lightpanda, Playwright CLI, WebFetch                 |
 | Process YouTube videos    | `youtube-content-processor` agent | Subtitle extraction, conversion, analysis                            |
 
+**Post restructures** (split, merge, reorder or modernize a post): build the outline page with the `outline-editor` skill (chop-conventions `skills/outline-editor/`) and let the reviewer drag sections into place, rather than listing proposed moves in chat.
+
 ## AI Slop Label
 
 Posts with significant AI-generated content need an ai-slop label. **Place it after the first paragraph** — putting it before or inside the first paragraph breaks page previews/excerpts.
@@ -199,6 +201,12 @@ When adding content to an existing post, first think about how to distill and in
 - Does this really want a new section, or a single sharpened sentence?
 
 Long-and-loose is the default drift. Short-and-tight is the move. A post that grows should mostly grow sharper, not fatter. Every addition earns its place.
+
+**No slop** (Igor, 2026-11-22: "Writing is getting kind of long and slop like"):
+
+- An addition to a post is a sentence or two unless Igor asks for more. Link the source rather than retelling it.
+- Say it once, in the reader's words. No restating, no summary paragraph, no signposting ("Here's the thing", "It's worth noting").
+- Cut any caveat or explanation that doesn't change what the reader concludes. A table or chart needs only a one-line dated source caption.
 
 ## Internal Link Guidelines
 

@@ -9,7 +9,7 @@ redirect_from:
 
 It's spring break 2024 and I've got a week off. The last few weeks have been a bit crazy at work trying to get some big features launched and into public testing, so very excited for the time off. I usually try to avoid too much tech, but I'm looking forward to making some tech investments as it's been a while.
 
-I kind of miss doing lots of technical and blogging - so I'm looking forward to both of those.
+I kind of miss doing lots of technical and blogging - so I'm looking forward to both of those. For why I take time off, and the rules I try to follow, see [/timeoff](/timeoff).
 
 I've got several tailwinds going into this break:
 
@@ -94,7 +94,7 @@ New Learnings
 
 - ☐ Practice Daily
 - ☐ Find a place to practice card to ceiling
-- ☐ Find a place to work on Tamiriz
+- ☐ Find a place to work on Tamariz
 
 ### Biking
 
@@ -128,7 +128,7 @@ New Learnings
 - ☐ Write up most valuable stuff you can do as a senior eng
 - ☐ Write up "Sustainable Work"
 - ☐ Do TikTok on the variants of "See Something/Say Something"
-- ☑ Met a neat guy who also blogs, does tech, and is bipolar. Scary story about his [bipolar getting out of control](https://breckyunits.com/a-manic-startup.html).
+- ☑ Met a neat guy who also blogs, does tech, and is bipolar. Scary story about his [bipolar getting out of control](https://breck.lol/a-manic-startup.html).
 
 ### Meditation
 
@@ -155,7 +155,7 @@ Gym Days:
 
 ### Diet
 
-- I'm doing [terzepatide](/terzepatide), so this is no longer a concern
+- I'm doing [tirzepatide](/terzepatide), so this is no longer a concern
 - Try to bound down to 179
 
 ### Sleep

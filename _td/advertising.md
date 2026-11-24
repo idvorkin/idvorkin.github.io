@@ -7,7 +7,7 @@ redirect_from:
   - /td/advertising
 ---
 
-Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are invest ing in video to capture the TV spend. This post captures my understanding of that world.
+Advertising is 155 billion business in the USA. Of that 155B, 85B is Digital and 70B is TV(digital platforms are investing in video to capture the TV spend. This post captures my understanding of that world.
 
 <!-- prettier-ignore-start -->
 
@@ -78,7 +78,7 @@ Advertising both of these.
 
 ### How much should a brand spend Customer Acquisition Cost (CAC) and Customer Life Time Value (CLTV)
 
-Once a customer is subscribed to something, they likely won't switch. This means you can compute the CLTV of a customer and so long as the CAC is greater then CLTV, it's worth spending.
+Once a customer is subscribed to something, they likely won't switch. This means you can compute the CLTV of a customer and so long as the CAC is greater than CLTV, it's worth spending.
 
 ### How much do companies spend
 
@@ -134,7 +134,7 @@ The number of eyeballs that see your site.
 
 The number of sellable eyeballs. The ad load x ad supply.
 
-Creators generate "Ad Inventory", and the social media platform "sell" the inventory buy showing Ads (aka, using their Ad Supply)
+Creators generate "Ad Inventory", and the social media platform "sell" the inventory by showing Ads (aka, using their Ad Supply)
 
 ### Retargeting
 
@@ -188,13 +188,13 @@ A lens in a geofenced area
 
 ### Sponsored in feed
 
-When watching video/TicTo/Stories you get a video that iss sold from a brand,
+When watching video/TikTok/Stories you get a video that is sold from a brand,
 
 ## Case study monetizing SnapChat
 
 ### No room in the camera
 
-I'm not sure if this accurate, making it up. Snap had a challenge when it started life, because it was a camera company and there was no where to place ad inventory.
+I'm not sure if this is accurate, making it up. Snap had a challenge when it started life, because it was a camera company and there was nowhere to place ad inventory.
 
 ### Sponsored Lenses where a novel ad product, which they added.
 
@@ -204,7 +204,7 @@ I'm not sure if this accurate, making it up. Snap had a challenge when it starte
 
 ### Gorilla Marketing
 
-Guerrilla techniques mostly play on the element of surprise. It sets out to create highly unconventional campaigns that catch people unexpectedly in the course of their day-to-day routines. You’ll see what that looks like in some the examples below.
+Guerrilla techniques mostly play on the element of surprise. It sets out to create highly unconventional campaigns that catch people unexpectedly in the course of their day-to-day routines. You’ll see what that looks like in some of the examples below.
 
 https://blog.hubspot.com/marketing/guerilla-marketing-examples
 

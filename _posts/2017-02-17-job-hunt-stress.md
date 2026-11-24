@@ -57,8 +57,8 @@ Before we get started, skim [decisive](/decisive) and listen to [switching jobs 
 The job hunting process is slow, with lots of unexpected and uncontrollable wait times. It takes time to schedule informational, then interviews, then getting news on the offer then negotiating with multiple companies. At each of these steps managers and recruiters are busy, on vacation, etc, etc. If you're being thorough from your first informational to your final offer I'd allocate 3 months.
 
 - Know your "must be done by" date - don't get stressed over your own fake deadlines.
-- Your "must be done by" date is usually much farther in the future then you think.
-- Your time it takes to get through the process is usually longer then you think (expect 3 months)
+- Your "must be done by" date is usually much farther in the future than you think.
+- Your time it takes to get through the process is usually longer than you think (expect 3 months)
 - Space your early interviews wider apart so you have time to correct major interviewing gaps.
 - To speed things up study, and get through your informationals in parallel.
 
@@ -101,7 +101,7 @@ During the job hunting process - Avoid making up stories in your head.
 
 During the job hunting process - You own your schedule
 
-- Feel free to to say let's interview first, and then based on timelines lock team (helps get good offers)
+- Feel free to say let's interview first, and then based on timelines lock team (helps get good offers)
 - Interview at your non-ideal companies, who knows, you might find it's the most interesting job.
 - Interview at high paying companies even if you won't go there, who knows, maybe you will, and if you won't it helps you negotiate.
 - Some recruiters use pressure tactics, be respectful, but do what's right for you. (I'm not a fan of this recruiting strategy, but it works)
@@ -126,7 +126,7 @@ After your interview - You just spent a whole day in the spotlight.
 - Do post interview retros to remove "step into jail" answers
 - The more delays in hearing back from the company, the more likely there is stuff going on that's bad for you - like offers to other candidates.
 
-After your have all your offers:
+After you have all your offers:
 
 - Congrats - your hard work paid off! You made it.
 - Now your stress is FOMO (Fear of missing out)!
@@ -137,10 +137,10 @@ After your have all your offers:
 
 During your day job - your lowest priority
 
-- You need to be OK doing a worse job at work then normal, even though it’s going to be painful, that’s the correct priority.
+- You need to be OK doing a worse job at work than normal, even though it’s going to be painful, that’s the correct priority.
 - Tell your boss (and if needed co-workers) you have some personal stuff you need to be taking care of so may need to reduce output and get extra support.
 
-During your the whole process - cut yourself some slack.
+During the whole process - cut yourself some slack.
 
 {%include summarize-page.html src="/interviewsarehard" %}
 

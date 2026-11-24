@@ -67,7 +67,7 @@ What if in 10 years:
 - My health and cognitive abilities have declined
   - 100% probable (unless we get some awesome new drugs)
 - I have serious health problems
-  - 30% probable (hymn, I should look for actual probability)
+  - 30% probable (hmm, I should look for actual probability)
 - I am no longer alive
   - Hopefully very low possibility, but see [Chasing Daylight](/chasing-daylight) and [On Being Mortal](/on-being-mortal)
 
@@ -482,7 +482,7 @@ When tamed, the Entropy Dragon becomes your personal trainer and life coach, for
 
 ---
 
-> **Dragon:** "You are an Uber drive. You've been sitting here waiting for 20 to give the kids a 15-minute drive home."
+> **Dragon:** "You are an Uber driver. You've been sitting here waiting for 20 minutes to give the kids a 15-minute drive home."
 >
 > **Me:** "Yup - Big Shot FAANG Engineering Manager to cab driver"
 >
@@ -515,7 +515,7 @@ The key is creating tangible artifacts that prove the year was invested, not was
 
 **The it's gonna be OK Reframe**
 
-I was discussing the squander risk with a friend and they said, "Oh yeah, I'm totally cool if I squander it, I deserve it". I think that would result in a regret for me, but it's an intersesting thought in compassion. (Aside: It is so hard to differentiate cutting yourself self slack vs slackign off)
+I was discussing the squander risk with a friend and they said, "Oh yeah, I'm totally cool if I squander it, I deserve it". I think that would result in a regret for me, but it's an interesting thought in compassion. (Aside: It is so hard to differentiate cutting yourself slack vs slacking off)
 
 {%include summarize-page.html src="/regret"%}
 
@@ -800,7 +800,7 @@ And there's another layer: Work provides tonnes of support for that "Professiona
 
 By virtue of accomplishing things, having impact, providing value, you actively fight entropy.
 
-You are the average of your peers (Or Proverbs 27:17 - Iron sharpens iron for our biblical friends)- One day I was at the coffee shop in the middle of the day and I looked around and the only people there were these 3 old men just stairing off into space. We become the average of our peers, and if our peers are all just sitting there stairing off into space, we'll likely soon follow.
+You are the average of your peers (Or Proverbs 27:17 - Iron sharpens iron for our biblical friends)- One day I was at the coffee shop in the middle of the day and I looked around and the only people there were these 3 old men just staring off into space. We become the average of our peers, and if our peers are all just sitting there staring off into space, we'll likely soon follow.
 
 ## Appendix: The Dragon Spawn - How Each Ancient Manifests
 

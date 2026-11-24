@@ -84,7 +84,7 @@ In March 2020, I took a 2 month sabbatical between leaving Amazon and joining Fa
 
 #### Physical because my body is the only one I've got
 
-- I will weight 200 by May 1st (205 by April 1st).
+- I will weigh 200 by May 1st (205 by April 1st).
 - I go to a personal trainer once a week.
 - I go to gym 5 days a week.
 - I wake up daily at 5 am.
@@ -182,7 +182,7 @@ Too early, waiting for someone to make fine tuning easier/web service
 
 - ☐ Read Chris T Magic Book
 - ☐ Track Christopher T Magician
-- ☐ Listen to Chris. T. Magician Show and Notes form Last conference
+- ☐ Listen to Chris. T. Magician Show and Notes from Last conference
 
 #### ☐ Silly Billy
 
@@ -222,7 +222,7 @@ Too early, waiting for someone to make fine tuning easier/web service
 ### Inspirations
 
 - Clown Philosopher - [Slava Polunin](https://www.youtube.com/watch?v=k4uT3ergY04)
-- Dude who wire walked the world trade towners [Phillipe Petit](https://en.wikipedia.org/wiki/Philippe_Petit)
+- Dude who wire walked the world trade towers [Philippe Petit](https://en.wikipedia.org/wiki/Philippe_Petit)
 
 ### iOS
 
@@ -237,7 +237,7 @@ Ideas:
 Chapter 1:
 
 Don't solve a problem, share a theory and give an example.
-Theory is more important then data, as theory is predictive (Assuming correct theory), test of theory is its predictive power.
+Theory is more important than data, as theory is predictive (Assuming correct theory), test of theory is its predictive power.
 
 Funny story about data "everything that flies has wings", not predictive power.
 
@@ -252,15 +252,15 @@ Money, annoying boss, nice office. !Hygiene does not equals Sat.
 
 Chapter 3:
 
-Strategy is deliberate and emmirgent, e.g. what you discover is more important then what you think. Flexibility and seeing what's most important matters.
+Strategy is deliberate and emergent, e.g. what you discover is more important than what you think. Flexibility and seeing what's most important matters.
 
-- Test core strategies assumptions (Irridium cell phone)
+- Test core strategies assumptions (Iridium cell phone)
 
-Chapter 4: How you spend your enegy is your actual strategy, and invest early.
+Chapter 4: How you spend your energy is your actual strategy, and invest early.
 
-Elilogue:
+Epilogue:
 
-Being 100% committed easier then 98%.
+Being 100% committed easier than 98%.
 
 98% means always need to think about it, and easy to give in. Juicing vs dieting
 
@@ -314,11 +314,11 @@ Business Model of the company well laid out (customer value, franchises), and a 
 1. SMB owners
    1. Web Seminars
    1. Personal Coaching
-   1. IN person seminars
+   1. In person seminars
 1. Medium Business owners
    1. Internal culture, business problems.
 1. Coaches as franchises
-   1. Training Selling to independnat franchisees who sell the method
+   1. Training Selling to independent franchisees who sell the method
 
 Also an interesting business model for the book
 
@@ -352,7 +352,7 @@ I think in modern terms:
 
 #### ☐ Creativity
 
-Meh book from the Phillipe Petit who walked the tightrope across the world trade center and had other great adventures. Pretty meh book designed to inspire through "poetry", pretty meh.
+Meh book from the Philippe Petit who walked the tightrope across the world trade center and had other great adventures. Pretty meh book designed to inspire through "poetry", pretty meh.
 
 ### Family
 
@@ -404,7 +404,7 @@ Digraphs let you use completion without needing GHFM which only works in lists.
 
 ☑ FZF super powers
 
-Have C-O open interesting files across my repros and move there
+Have C-O open interesting files across my repos and move there
 
 ☑ tags
 

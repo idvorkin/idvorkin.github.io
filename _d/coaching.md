@@ -53,7 +53,7 @@ Coaching is like midwifery. A midwife can not give birth to the baby, she facili
 
 {%include blob_image_float_right.html src="icon-birth.png" %}
 
-Real understanding comes from within, and is not imparted by someone else. Ask questions, guide, and encourage. When you 'tell the solution' at best the solution is forgotten, at worst it offends and shutdowns down the coachee, damaging the relationship.
+Real understanding comes from within, and is not imparted by someone else. Ask questions, guide, and encourage. When you 'tell the solution' at best the solution is forgotten, at worst it offends and shuts down the coachee, damaging the relationship.
 
 When being a coach maintain the following mindset.
 
@@ -132,7 +132,7 @@ Depending on what insights you want to provide, you need to use different questi
 This request often comes in as the wrong question, need to deep dive into where the problem is coming from.
 
 1. Find the right thing:
-   - The top optimization is spending zero time on the wrong thing. How often do you feel your spending time on the wrong thing?
+   - The top optimization is spending zero time on the wrong thing. How often do you feel you're spending time on the wrong thing?
    - Taking time to explore is important, how are you splitting time between, learning, exploring and doing?
    - What does success look like, how is your work supporting that success?
 
@@ -177,7 +177,7 @@ _More details in [Search inside yourself - Leadership and social skills](/search
 
 - **Status:** Where am I in the pecking order
   - **BUILD:** Give credit, and feedback, ups peoples status
-- **Certainty:** Do I know what what's going on.
+- **Certainty:** Do I know what's going on.
   - **Build:** removing ambiguity, and giving people certainty on things that matter.
 - **Autonomy:** Do I have control over the situation?
   - **Build:** making clear it's people's choice, not yours.
@@ -203,7 +203,7 @@ Great question, I have some ideas, but first, how would you tackle this? What el
 
 - Why are you asking me?
 - Whom else have you asked?
-- What you say urgent what do you mean?
+- When you say urgent what do you mean?
 - What does done mean?
 - If I could only do one part, what part would you have me do?
 - What do you recommend I take off my plate to get this done?
@@ -316,7 +316,7 @@ Below are some other good coaching tools I need to write more details on:
 
 - Using a scale question for relative improvement not for calibration. E.g. on a scale of 1 to 10, how do you rank yourself on X! Great, why do you say that?, Great - what would you need to do to move up a point on the scale?
 
-- Imagery cards - Use cards with images on them to illicit from people what picture represents what concept, then have a discussion. E.g. which of these pictures represents leadership to you? OK, help me see how that shows a leader to you.
+- Imagery cards - Use cards with images on them to elicit from people what picture represents what concept, then have a discussion. E.g. which of these pictures represents leadership to you? OK, help me see how that shows a leader to you.
 
 - [Prompts](/prompts)
 

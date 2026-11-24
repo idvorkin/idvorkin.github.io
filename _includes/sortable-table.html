@@ -1,0 +1,71 @@
+<!--
+  Makes every table inside a `.sortable-table` wrapper sortable by clicking a header.
+  Usage in a post:
+    <div class="table-responsive small sortable-table" markdown="1">
+    | markdown table |
+    </div>
+    then include this file once, after the table.
+  Cells sort as numbers when they are a number once $ , × ≈ * and spaces are stripped; otherwise as text.
+  Including it more than once is harmless.
+-->
+<style>
+  .sortable-table th {
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  .sortable-table th::after {
+    content: " ↕";
+    opacity: 0.35;
+  }
+  .sortable-table th[aria-sort="ascending"]::after {
+    content: " ▲";
+    opacity: 1;
+  }
+  .sortable-table th[aria-sort="descending"]::after {
+    content: " ▼";
+    opacity: 1;
+  }
+</style>
+<script>
+  // Delegated on document so it keeps working when the page's DOM is
+  // re-rendered (e.g. the ?diff=1 preview view rebuilds the content).
+  (() => {
+    if (window.__sortableTableBound) return;
+    window.__sortableTableBound = true;
+    const key = cell => {
+      const text = cell.textContent.trim();
+      const stripped = text.replace(/[$,×≈*\s]/g, "");
+      const num = Number(stripped);
+      return stripped !== "" && !Number.isNaN(num) ? num : text.toLowerCase();
+    };
+    const sort = th => {
+      const table = th.closest("table");
+      const col = th.cellIndex;
+      const dir =
+        th.getAttribute("aria-sort") === "descending"
+          ? "ascending"
+          : "descending";
+      table
+        .querySelectorAll("thead th")
+        .forEach(h => h.removeAttribute("aria-sort"));
+      th.setAttribute("aria-sort", dir);
+      const body = table.tBodies[0];
+      const rows = Array.from(body.rows);
+      rows.sort((a, b) => {
+        const x = key(a.cells[col]);
+        const y = key(b.cells[col]);
+        const cmp =
+          typeof x === "number" && typeof y === "number"
+            ? x - y
+            : String(x).localeCompare(String(y));
+        return dir === "ascending" ? cmp : -cmp;
+      });
+      rows.forEach(r => body.appendChild(r));
+    };
+    document.addEventListener("click", e => {
+      const th = e.target.closest(".sortable-table thead th");
+      if (th) sort(th);
+    });
+  })();
+</script>

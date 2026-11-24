@@ -11,7 +11,7 @@ tags:
   - how igor ticks
 ---
 
-A guide to my favorite spots in British Columbia, focusing on Vancouver and Chilliwack. Whether you're planning a quick weekend getaway or a longer adventure, here's what you need to know. These recommendations come from my personal experiences over multiple trips - you can read about some of them in my [summer 2024 adventures](/ig66/749), [Yellow Deli expedition](/ig66/718), and various time off adventures:
+My favorite spots in British Columbia: Vancouver, Victoria and Chilliwack. The hotels I like, the food (including what I order at the [Yellow Deli](/ig66/718)), and the parks, suspension bridges and waterfalls. All from our family trips.
 
 {% include summarize-page.html src="/timeoff-2024-02" %}
 

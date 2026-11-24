@@ -5,7 +5,7 @@ permalink: /grateful
 alias: /grateful
 ---
 
-Gratefulness exercises work - here's somethings to help.
+Gratefulness exercises work - here are some things to help.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->

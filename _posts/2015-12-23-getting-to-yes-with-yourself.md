@@ -34,7 +34,7 @@ Before you can negotiate with others, you need to be in sync with yourself. This
 - **Seek first to understand yourself (7H)**
 - **When you judge yourself, you shutdown and can't find what you really want**
 - **Acceptance induces safety, and only from safety can you find what you really want**
-- See yourself form the balcony
+- See yourself from the balcony
   - Respond instead of reacting.
   - Going to Balcony == Be Mindful, Self Aware and Objective
   - Choose your response, but it's a two sided stick and you get the consequences.
@@ -58,13 +58,13 @@ Before you can negotiate with others, you need to be in sync with yourself. This
   - This is an opportunity to learn physical self awareness, to help notice your emotions.
   - Huge benefit, your mind is more clear, and you silence the self to concentrate and get into flow.
 - Uncover your needs
-  - Your elephant is non-verbal, negative emotions are it's mode of communicating your needs.
-  - Dig hard for your needs, don't settle for a position, but why, what do you really want. What is done. (XREF: Essentialisim)
+  - Your elephant is non-verbal, negative emotions are its mode of communicating your needs.
+  - Dig hard for your needs, don't settle for a position, but why, what do you really want. What is done. (XREF: Essentialism)
   - Magic Question Why? Why? Why?
   - Deepest needs: Happiness: Protection/Safety and Love/Connection
 - From Self Judgment to Self Understanding
   - Before fighting with others, need to make sure you TRULY know what you want.
-  - Accepting yourself for who you are is NOT a cop out. Acceptance produces safety, which lets us digg deater.
+  - Accepting yourself for who you are is NOT a cop out. Acceptance produces safety, which lets us dig deeper.
 
 ### 2) Develop your inner BATNA &#x2611;
 
@@ -79,10 +79,9 @@ _The ideas in this chapter are great, but I think connecting the concepts to inn
 - Take responsibility for what you've got, and make the most of it - DO NOT BLAME Life ([welcome to Holland](/welcome-to-holland)).
 - Focus on what you can do to make things better, NOT the fact that you screwed something up in the past.
 - In a relationship, focus on what YOU CAN DO going forward in the relationship, not on blaming the other person. Doing this:
-
   - Gives clarity to your needs in the relationships.
   - Gives "psychic space" for other party in relationship
-  - Lets you be objectives about your needs, and your expectations from other party.
+  - Lets you be objective about your needs, and your expectations from other party.
 
 - Own your life
   - Need self-understanding and self-responsibility
@@ -104,14 +103,14 @@ _The ideas in this chapter are great, but I think connecting the concepts to inn
 - From blame to responsibility
   - Touching story about author's dying daughter Gabi, and how hard it was to deal with doctors.
   - Two top changes:
-    - Needed to stop expecting things from doctor's they could provide for themselves, and let dr's bring only what they needed to bring, their expertise.
+    - Needed to stop expecting things from doctors they could provide for themselves, and let dr's bring only what they needed to bring, their expertise.
     - Needed to stop blaming life for a bum deal, and instead take responsibility for making the most out of what they had.
 
 ### 3) Reframe your picture &#x2610;
 
 **Abundance not Scarcity: A rising tide raises all boats**
 
-**Expectations are a self fulling prophecy. Believe the world good or bad, and that's how you'll interpret it, and that's how it will become**
+**Expectations are a self fulfilling prophecy. Believe the world good or bad, and that's how you'll interpret it, and that's how it will become**
 
 - Remember your connection to life
 - Make your own happiness

@@ -19,7 +19,7 @@ redirect_from:
   - /nonjudgment
 ---
 
-Lead with curiosity, not judgment. This applies to yourself and to others. Think of a grandmother - a grandmother is full of love and compassion for her grandchildren. She loves them without conditions, no strings attached. She takes care of her grandchildren without needing anything in return. She cares selflessly and she has only the children’s best interest in mind. As she loves her grandchildren, she won’t allow self-destructive behavior and will step in when necessary. But she will always do this with the utmost care and love.
+Lead with curiosity, not judgment, toward yourself and toward others. My model is a grandmother: she loves her grandchildren with no strings attached, and because she loves them she steps in when they're being self-destructive. These are my notes on compassion and on swapping judgment for curious questions.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -46,7 +46,7 @@ Lead with curiosity, not judgment. This applies to yourself and to others. Think
 
 ### My journey to compassion
 
-Kept ignoring it, took a few stabs. But honest compassion to reduce the suffering of others not till re-reading the [Joy Of Happiness](/siy) and the sublime states. Some how it really clicked.
+Kept ignoring it, took a few stabs. But honest compassion to reduce the suffering of others not till re-reading the [Joy Of Happiness](/siy) and the sublime states. Somehow it really clicked.
 
 ### Compassion
 
@@ -65,7 +65,7 @@ Compassion can be broken down with a time dimension.
 - When people behave poorly (in your mind), it is due to their suffering.
 - Compassion clarifies the person’s suffering, not the person, is the source of the problem. Suffering is unacceptable. The person is acceptable (see [getting to yes, hard on problems soft on people](/gty)).
 - Love, especially as applied to children, is the highest form of compassion an 11/10.
-- Sounds like the fundamental attribution error: When you do something wrong, you attribute to circumstance, when others do thing wrong you attribute to malice/incompetence/personality.
+- Sounds like the fundamental attribution error: When you do something wrong, you attribute to circumstance, when others do things wrong you attribute to malice/incompetence/personality.
 - Being compassionate takes the focus off the ego, which is super important as the ego brings you very little.
 
 ### Judgment vs Curiosity

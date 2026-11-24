@@ -4,7 +4,7 @@ no-render-title: true
 title: iOS Software Engineer Nomad How-To
 ---
 
-So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I'm not sure why you'd want to be such a character, in fact, I'm not sure why I want to be such a character, but I do, and here's how I do it. To be a developer nomad, you better already be a command line wiz. If you're not at an expert at the terminal, vim or Emacs and TMUX - don't even try.
+So you want to be an iPad Developer Nomad. A person who can do all their development on the iPad. I'm not sure why you'd want to be such a character, in fact, I'm not sure why I want to be such a character, but I do, and here's how I do it. To be a developer nomad, you better already be a command line wiz. If you're not an expert at the terminal, vim or Emacs and TMUX - don't even try.
 
 There are three paths - remote development, local development, and hybrid. For all of these you'll need an external keyboard, which I'll also discuss.
 
@@ -85,7 +85,7 @@ Remote development is perfect, except of course when you have no and or slow net
 
 The holy grail. [iSH](https://iSH.app) takes a very impressive approach. And [tbodt](https://github.com/tbodt/) the author of iSH is incredibly cool, I have the utmost respect for his project and his style, and I even have his user name memorized.
 
-iSH Creates an x86 emulated machine (e.g. simulate execution), and run alpine Linux in it. I love this but it has two big gaps. A) Compatibility B) Speed. There are still CPU instructions and system calls that aren't supported so large swaths of applications don't work - E.g. NPM, Rust. B) Because it's emulated it's slow, so I need to use trimmed down versions of all my configurations.
+iSH creates an x86 emulated machine (e.g. simulate execution), and run alpine Linux in it. I love this but it has two big gaps. A) Compatibility B) Speed. There are still CPU instructions and system calls that aren't supported so large swaths of applications don't work - E.g. NPM, Rust. B) Because it's emulated it's slow, so I need to use trimmed down versions of all my configurations.
 
 When your software can run iSH, and is fast enough, you're done. However because of the compatibility and speed concerns, you'll often need other solutions to augment iSH. Here are the ones I use
 
@@ -110,11 +110,11 @@ A cousin to Working Copy is Git Hawk this tool allows you to monitor your GitHub
 
 #### Run Vim - iVIM
 
-[iVIM](https://github.com/terrychou/iVim) does a great job being VIM, but you tend not to use VIM in isolation, you need Git and Plugins and often some command line integration. There are workarounds, some of which painful, but I'll describe them here.
+[iVIM](https://github.com/terrychou/iVim) does a great job being VIM, but you tend not to use VIM in isolation, you need Git and Plugins and often some command line integration. There are workarounds, some of which are painful, but I'll describe them here.
 
 OK - this stuff is now pretty stale, be sure to use ivim to look at the ios specific help.
 
-iVIM now support:
+iVIM now supports:
 
 - Some plugin integration
 - Nice font upgrade
@@ -144,7 +144,7 @@ Pythonista used to be the bomb, but now Pyto looks like it's actively updated
 
 #### Edit markdown
 
-- Editorial - Markdown editor that can interact with Working Copy (seems nicer then Byword)
+- Editorial - Markdown editor that can interact with Working Copy (seems nicer than Byword)
 - Byword - Markdown editor that can interact with Working Copy
 - MWeb - Markdown editor that can interact with Working Copy
 
@@ -162,7 +162,7 @@ The two gaps here are merge conflicts (which I handle manually), and not syncing
 
 #### The keyboard I use
 
-I'm a huge fan of ergo keyboards. iClever makes a [cheap folding ergo Bluetooth keyboard](https://www.amazon.com/dp/B01JA6HG88/) that support up to 3 devices. I prefer this to all my laptop keyboards.
+I'm a huge fan of ergo keyboards. iClever makes a [cheap folding ergo Bluetooth keyboard](https://www.amazon.com/dp/B01JA6HG88/) that supports up to 3 devices. I prefer this to all my laptop keyboards.
 
 See more details at
 {%include summarize-page.html src="/irl" %}

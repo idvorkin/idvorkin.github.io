@@ -9,6 +9,7 @@ tags:
 redirect_from:
   - /explorable-explanations
   - /interactive-explanations
+ai_default_image: true
 ---
 
 You don't really understand something until you can play with it. That's the premise behind explainers — interactive experiences that let you _do_ the thing, not just read about it. Instead of reading that monitors come in 16:9 and 21:9 aspect ratios, you drag them around and see them side by side. Instead of reading that religions evolved from shared roots, you click through a timeline and discover the connections yourself.
@@ -63,7 +64,7 @@ Explainers are the antidote. The same AI that creates the debt can pay it down: 
 
 There's a close cousin to explainers that matters just as much: **proof of work**. Explainers help you _understand_ what AI built. Proof artifacts help you _verify_ that AI actually did what it claimed.
 
-When [CHOPing](/chop), AI loves to tell you "Done! I fixed the bug and added the feature." But did it? AI lies — not maliciously, but confidently. The [testing/evals](/chop#what-matters-most-is-testingevals) mindset says: make AI prove it. Screenshots, before/after comparisons, interactive demos that show the change actually happened. Tools like [Showboat](https://github.com/idvorkin/chop-conventions/tree/main/skills/showboat) generate executable demo documents with screenshots — visual evidence that the code does what it claims.
+When [CHOPing](/chop), AI loves to tell you "Done! I fixed the bug and added the feature." But did it? AI lies — not maliciously, but confidently. The [testing/evals](/chop#verification-is-the-job) mindset says: make AI prove it. Screenshots, before/after comparisons, interactive demos that show the change actually happened. Tools like [Showboat](https://github.com/idvorkin/chop-conventions/tree/main/skills/showboat) generate executable demo documents with screenshots — visual evidence that the code does what it claims.
 
 The spectrum runs from understanding to verification:
 
@@ -87,12 +88,13 @@ In [CHOW](/chow) (Chat-Oriented Writing), the written artifact is a side effect 
 
 ## Explainers I've Built
 
-| Explainer                                                                    | What It Does                                                                 | Instead Of                        |                                                                                         |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------- |
-| [Monitor Explainer](https://monitor-explorer.surge.sh/)                      | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion     | Reading spec sheets               | [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)           |
-| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/)            | Track time since AI milestones — ChatGPT, GPT-4, Claude, Gemini              | Searching for release dates       | [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)           |
-| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other      | Reading history books             | [<i class="fa fa-github"></i>](https://github.com/idvorkin/religion-evolution-explorer) |
-| [Dolt Explainer](https://idvorkin-ai-tools.github.io/dolt-explainer/)        | How beads task state and git code share one GitHub repo via `refs/dolt/data` | Staring at `git ls-remote` output | [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/dolt-explainer)     |
+| Explainer                                                                    | What It Does                                                                                                                                | Instead Of                        |                                                                                                           |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| [Monitor Explainer](https://monitor-explorer.surge.sh/)                      | Explains monitor dimensions, aspect ratios, and the "p" vs "K" confusion                                                                    | Reading spec sheets               | [<i class="fa fa-github"></i>](https://github.com/idvorkin/monitor-explainer)                             |
+| [How Long Since AI](https://idvorkin-how-long-since-ai.surge.sh/)            | Track time since AI milestones — ChatGPT, GPT-4, Claude, Gemini                                                                             | Searching for release dates       | [<i class="fa fa-github"></i>](https://github.com/idvorkin/how-long-since-ai)                             |
+| [Religion Evolution Explorer](https://religion-evolution-explorer.surge.sh/) | Interactive timeline of how religions evolved and influenced each other                                                                     | Reading history books             | [<i class="fa fa-github"></i>](https://github.com/idvorkin/religion-evolution-explorer)                   |
+| [Dolt Explainer](https://idvorkin-ai-tools.github.io/dolt-explainer/)        | How beads task state and git code share one GitHub repo via `refs/dolt/data`                                                                | Staring at `git ls-remote` output | [<i class="fa fa-github"></i>](https://github.com/idvorkin-ai-tools/dolt-explainer)                       |
+| [Staying Afloat](/staying-afloat)                                            | A felt raccoon floats on balloons (sleep, friends) and sinks on weights (pain, debt); hold, drag and snip to see how much you can cope with | Reading about coping and ACT      | [<i class="fa fa-github"></i>](https://github.com/idvorkin/idvorkin.github.io/tree/main/floating-zooming) |
 
 The pattern is the same every time: take something that's hard to grasp as text, ask AI to build an interactive version, and suddenly it makes sense. These aren't prettier presentations — they're fundamentally different experiences. You explore at your own pace, discover things the author didn't explicitly write, and actually retain what you learned.
 
@@ -118,6 +120,7 @@ See also: [my pet projects](/pet-projects) for the full list of things I build.
   - It really is a fun game
   - Has a lesson
   - What makes [Nicky Case's](https://ncase.me/) work exceptional: each piece has a **narrative arc** — it doesn't just present data, it walks you through a story with emotional stakes and reveals. You _feel_ the concept, not just see it.
+  - That arc is storytelling; an explorable explanation is a [story the reader plays](/storytelling#stories-in-other-forms).
 
 ### I Need to Review
 
@@ -154,5 +157,6 @@ My explainer workflow is built on top of the [CHOP](/chop) stack. The key tools:
 - **gen-image** — AI image generation skill for raccoon illustrations and visual assets
 - **[Showboat](https://github.com/idvorkin/chop-conventions/tree/main/skills/showboat)** — Creates executable demo documents with screenshots, the proof-of-work cousin to explainers
 - **image-explore** — Brainstorm multiple visual directions, generate in parallel, build comparison pages
+- **[pixelfx](https://patch-gg.github.io/pixelfx/)** ([repo](https://github.com/patch-gg/pixelfx)) — Not mine, tracking it for later: 244 pixel-art effects drawn entirely in code (no image assets), exportable as sprite sheets, plus a Claude Code skill. The skill's loop is the transferable idea: render the frames to a contact-sheet image, have the agent look at its own output, fix the worst thing, render again.
 
 The dream: a skill that takes a concept from your blog and proposes an explainer for it — what it would visualize, how users would interact with it, and what they'd understand afterward that they didn't before.

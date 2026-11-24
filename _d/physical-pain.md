@@ -36,6 +36,8 @@ Physical pain has been a recurring teacher in my life. Each injury forced me to 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
+{% include pain-body-map.html %}
+
 ## Places I've Had Pain
 
 ### Shoulder Pain

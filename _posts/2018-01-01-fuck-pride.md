@@ -64,7 +64,7 @@ _Important Side Bar: Being effective often requires negotiation. The bible for n
 
 **Antidote:** Remember, the only fair thing in life is that it is completely unfair. Compare your "life is unfair" narrative to folks with bigger problems. Getting a fast acting random cancer, beating it, and getting it again ([founder of apple](https://en.wikipedia.org/wiki/Steve_Jobs#Death)), freak accidents ( [Super Man Actor](https://en.wikipedia.org/wiki/Christopher_Reeve) ) and crippling diseases ([Smartest guy on earth](https://en.wikipedia.org/wiki/Stephen_Hawking)). Even better - if you're a parent imagine any of those things happening to your kids. Yeah, maybe be glad something worse didn't happen.
 
-_Important Side Bar: Don't let "life being unfair" be an excuse to avoid learning or skirt responsibility. Each challenge we get is a precious learning opportunity - make this most of it._
+_Important Side Bar: Don't let "life being unfair" be an excuse to avoid learning or skirt responsibility. Each challenge we get is a precious learning opportunity - make the most of it._
 
 #### Other examples
 
@@ -81,6 +81,6 @@ I'll continue to add examples to this post over time (likely when I need to remi
 
 To be dramatic, I'm using the word pride as an alternative to arrogance and hubris. Those words are probably more precise.
 
-Pride is a usually a justified positive judgment over an accomplishment relative to our ability. "E.g. Did I learn to read when I really struggle reading?".
+Pride is usually a justified positive judgment over an accomplishment relative to our ability. "E.g. Did I learn to read when I really struggle reading?".
 
 Arrogance and hubris, are an assessment of self, often manifesting as entitlement, which is 1) feeling you are cosmically unique or 2) that you should have a positive outcome exceeding your effort or value.

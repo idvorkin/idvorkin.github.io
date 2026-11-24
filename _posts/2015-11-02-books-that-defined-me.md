@@ -46,7 +46,7 @@ _And whenever anybody visited Mr. Plumbean's house, the very next day that perso
 
 **The Flinch** The [resistance](/resistance) is the voice in your head that makes you afraid. F#\$ the resistance! This is such an important lesson, I invented, and annually celebrate [jump in the lake day](https://ig66.blogspot.com/search/label/jump_in_lake_day)!
 
-**The Dip** Quit everything that doesn't get you were you want to be.
+**The Dip** Quit everything that doesn't get you where you want to be.
 
 **V is for Vulnerable** Life is scary, hard, and totally worth it.
 

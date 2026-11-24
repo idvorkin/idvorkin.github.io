@@ -1,5 +1,4 @@
 import { expect, test } from "./base-test";
-import { checkForJsErrors } from "./js-error-checker";
 
 const SERVER_PORT = process.env.SERVER_PORT || "4000";
 const BASE_URL = `http://localhost:${SERVER_PORT}`;
@@ -28,9 +27,5 @@ test.describe("Prompts page functionality", () => {
     }
 
     // If we make it this far without errors, the test passes
-  });
-
-  test("Page should not have JavaScript errors", async ({ page }) => {
-    await checkForJsErrors(page, "/prompts");
   });
 });

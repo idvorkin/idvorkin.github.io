@@ -60,7 +60,6 @@ tbd
 ### 6) Look: See what matters ☑
 
 - Lead - The essence of the story.
-
   - Journalism Concept
   - Anecdote: Find the lead in high school:
     - Mr Black, principal of school announced all teachers will go to a conference on new topic, by famed anthropologist, blah blah blah.
@@ -83,7 +82,7 @@ tbd
   - Connect the dots into trends ...
   - Focus on what matters instead of reacting to minutia.
 - Keep a journal
-  - Faintest pencil better then strongest memory
+  - Faintest pencil better than strongest memory
   - Every 90 days review journal entries.
   - Look for the headlines in your journal, what matters most.
   - Daily view, very different from monthly view.
@@ -96,7 +95,7 @@ tbd
     - First blush, 200\$ electric incubator.
     - Team went to Nepal, saw home birth no electricity.
     - Built wax that could be warmed in boiling water and put in sleeping bags.
-- Key your eyes peeled for abnormal or weird
+- Keep your eyes peeled for abnormal or weird
   - Find the key that has been missed.
   - See story as a spider web you can jump around to find the key.
   - See the problem from others perspectives
@@ -108,7 +107,7 @@ tbd
 ### 7) Play: Embrace your inner child &#x2611;
 
 - Play doesn't help us explore essential, it is the essential.
-- Anything we do simply for the joy of doing it, rather then a means to the end (xref: hobbies)
+- Anything we do simply for the joy of doing it, rather than a means to the end (xref: hobbies)
 - A mind invited to play
   - Nothing fires up the brain like play.
   - Don't forget to do at work as well as home
@@ -160,10 +159,10 @@ tbd
   - **Clarity:** shared purpose, motivation, collaboration.
 - Ambiguity Pattern 1: Playing Politics
   - At work, when no idea what matters, you'll try to look good to the boss.
-    - Don't know what matters? Try to show yourself better then peers, since it's arbitrary.
+    - Don't know what matters? Try to show yourself better than peers, since it's arbitrary.
     - Probably provides no value to the company.
   - At home, when no idea what matters, try to look good to peers.
-    - Don't know what matters? Try to show better then your peers since it's arbitrary.
+    - Don't know what matters? Try to show better than your peers since it's arbitrary.
     - But it probably doesn't matter to you.
 - Ambiguity Pattern 2: It's all good (aka. bad)
   - TEAM: Everyone does what's best for them in the moment, but it doesn't add up to anything.
@@ -180,7 +179,7 @@ tbd
 
 - Vision/Mission - Sounds like inspiration, but so vague ignored.
 - Values - So generic, doesn't inspire passion
-- Quartely Objectives - a specific tactic/how, not inspiring.
+- Quarterly Objectives - a specific tactic/how, not inspiring.
 - Intent - Strategy that is Concrete, Inspiring, Memorable and says what NOT doing.
 
 - Answer the question, do not wordsmith.
@@ -195,9 +194,9 @@ tbd
 ### 11) DARE: Say No gracefully &#x2611;
 
 - **SAYING NO IS A CRITICAL LEADERSHIP SKILL**
-- **Say no firmly, resoloutely, and gracefully**
+- **Say no firmly, resolutely, and gracefully**
 - **LIFELONG MEMORY FOR KID:**
-  - Covery, Plan to spend time with his daughter, ran into friend asking over for dinner.
+  - Covey, Plan to spend time with his daughter, ran into friend asking over for dinner.
   - Daughter sad, since she was so excited about date with daD.
   - But, Covey said yes, but not today. I Have a date with my daughter.
   - Daughter recalled this story at Covey's funeral.
@@ -229,7 +228,6 @@ tbd
 The tricksters:
 
 - **Sunk Cost bias** - Already put so much in, will be a win with just a bit more.
-
   - **Antidote:** Realize waste is OK (especially since it's already happened).
   - Anecdote:
     - Realize waste is OK. Remember this story.
@@ -239,8 +237,7 @@ The tricksters:
     - Many pick A, because they'd waste less money.
     - BUT WRONG CHOICE.
 
-- **Endowment affect (divestiture aversion) bias** - You over value what you own
-
+- **Endowment effect (divestiture aversion) bias** - You over value what you own
   - **Antidote:** Pretend you don't own it yet
   - Examples
     - No one washed a rental car.
@@ -259,7 +256,7 @@ The tricksters:
     - It'll give you "permission" to let it go.
 - Status quo bias
   - Do something just because you've always done it.
-  - Antidote: Apply zero based budgetting
+  - Antidote: Apply zero based budgeting
     - Don't re-evaluate from history.
     - Re-evaluate from scratch
     - What would you pay for TODAY, not delta from yesterday.
@@ -271,7 +268,7 @@ The tricksters:
   - Antidote: Reverse Pilot
     - Try to stop doing it for a while, and see if anyone notices.
 - Meta: It's hard
-  - Uncommitting harder then not committing but worth it.
+  - Uncommitting harder than not committing but worth it.
   - Feel guilt to reneg - but it's worth it.
   - Grandmother mind on this.
 
@@ -309,7 +306,7 @@ The tricksters:
   - Talk last, and only if needed
   - Minimize times of change.
 - Edit continuously - Avoid big bangs
-  - Make more, but smaller correction
+  - Make more, but smaller corrections
   - Frequent feedback.
   - Make cut/condense/correct a common part of our lives.
 
@@ -321,7 +318,7 @@ The tricksters:
 - Boundaries are liberating
   - Anecdote: School on busy road. Kids afraid to play near road. Add fence, now can get close to road.
 - Don't let them put their monkeys on your back.
-- Tell other your boundaries so they can respect them.
+- Tell others your boundaries so they can respect them.
 
 ### 15) Buffer: Because, it'll go wrong &#x2611;
 
@@ -339,7 +336,7 @@ The tricksters:
 ### 16) Subtract: Can only ship by cutting &#x2611;
 
 - Shipping is blocked by constraints/obstacles on the long pole.
-- Produce by removing constraints/obstacles on the long pole, not be doing more work on other things.
+- Produce by removing constraints/obstacles on the long pole, not by doing more work on other things.
 - **You ship by cutting features, not by adding features**
 - **Mythical Man Month** - Ignoring the constraints, adding more production capacity.
 - Example, Boy scout hike, make the slowest hiker more efficient, put him at front of line, and help him.
@@ -350,7 +347,7 @@ The tricksters:
       - List+Rank: What obstacle, if removed, would make the majority of other obstacles disappear?
       - Focus on top of list.
   3.  **Remove Top Problem**
-      - Too high a quality? Change perspective - done is better then perfect.
+      - Too high a quality? Change perspective - done is better than perfect.
       - Blocked on person? Ask them slowest hiker, and what you can do to help.
 - Grandmother mind again - it's hard, but the first step makes a difference.
 
@@ -364,7 +361,7 @@ The tricksters:
 - Focus on small wins till done, forcing a big win much harder.
 - Do the minimal viable progress
   - Easy to know you're tackling a small chunk.
-  - Done is better then perfect
+  - Done is better than perfect
   - Leave state where it's much easier to start (aka. Call Susan @ 206-925-3219, as opposed to call susan)
   - Pixar: We don't actually finish our films, we ship them.
 - Start minimum viable preparation as early as you can.
@@ -374,7 +371,7 @@ The tricksters:
 - The more clear progress, the better - put things on your wall, add check marks
   - Bonus, seeing success makes us enjoy and have satisfaction the process.
 - TODO: Figure out systems that make this easier:
-  - Book summary - start with chapter outline, then section out line per section, the flesh out. Progress helps.
+  - Book summary - start with chapter outline, then section outline per section, then flesh out. Progress helps.
   - Scrum and Kanban.
   - Bug Burn down charts.
 
@@ -402,7 +399,7 @@ The tricksters:
   - Beaten - external factors outside your control (better competition/external forces)
   - Lose - Lost focus, didn't do the best you could given the situation.
 - Figure out what is important now
-  - List 1) What do I need to do know so I can sleep well tonight
+  - List 1) What do I need to do now so I can sleep well tonight
   - When stressed, ask what is important now.
 - Get the future out of your head
   - List 2) What will I do someday (get it out of your head so you don't stress or forget it).
@@ -430,7 +427,7 @@ The tricksters:
 
 - Essentialist teams
 - Leading as an essentialist
-- Ridciously selective
+- Ridiculously selective
 - Debate until you have a crystal clear intent
 - Go for extreme empowerment
 - Communicate right things, to right people, at right time

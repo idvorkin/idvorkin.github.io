@@ -1,14 +1,11 @@
 ---
 layout: post
-
 title: "Seattle"
-
 permalink: /seattle
-
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-seattle.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-seattle-tourist-felt.webp
 ---
 
-Seattle is my home, I want to die here, though not soon. If you're visiting, here's a list of fun things you can try. But here's the deal, give me feedback on stuff to add/remove from this list
+Seattle is my home, I want to die here, though not soon. If you're visiting, here's a list of fun things you can try. But here's the deal, give me feedback on stuff to add or remove from this list.
 
 ### Igor's list:
 
@@ -18,7 +15,7 @@ Seattle is my home, I want to die here, though not soon. If you're visiting, her
 4. Fremont: Troll/Lenin
 5. Ride a ferry, Bremerton and Bainbridge leave from downtown. Take them there and stay on to come back
 
-{% include blob_image_float_right.html src="blog/raccoon-seattle.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-seattle-tourist-felt.webp" alt="Felt raccoon in rainbow glasses, an orange sun hat and a green TOURIST shirt, holding a camera and a map beside a SEATTLE street sign, with the Space Needle and the skyline behind him" %}
 
 ### By Neighborhood:
 
@@ -30,10 +27,8 @@ Seattle is my home, I want to die here, though not soon. If you're visiting, her
 1. Capitol Hill
    - Favorite Coffee shop: Victrola on 15th
    - Crazy bar: [The Unicorn](https://www.unicornseattle.com/)
-1. Ballard
-   - I don't get there often enough to make a recommendation
 1. Bellevue
-   - I tend not to be on the east side, but if you're downtown Bellevue
+   - I'm rarely on the east side, but if you're in downtown Bellevue:
    - Favorite Coffee shop: [Cafe Cesura](https://www.cafecesura.com/)
 
 ### Hikes:
@@ -53,7 +48,7 @@ If you have a free day, a car, and a desire to do something amazing outside
 ### Restaurants
 
 1. Palace Kitchen (Amazing Burgers)
-2. Tai Tongue (Good Chinese)
+2. Tai Tung (Good Chinese)
 3. Beth's (Giant Breakfast)
 4. Cafe Flora (Vegetarian)
 5. Tanoor (Middle Eastern) - Best Meat

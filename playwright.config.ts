@@ -6,8 +6,9 @@ const BASE_URL = `http://localhost:${SERVER_PORT}`;
 
 export default defineConfig({
   testDir: "./tests",
-  // Explicitly exclude unit tests that use Vitest
-  testIgnore: "**/unit/**",
+  // Exclude Vitest unit tests, and the Lightpanda specs: those connect to a Lightpanda CDP
+  // server on :9222 and run only under playwright.lightpanda.config.ts (just pw-test-lightpanda).
+  testIgnore: ["**/unit/**", "**/lightpanda-*.spec.ts"],
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
   retries: 0,

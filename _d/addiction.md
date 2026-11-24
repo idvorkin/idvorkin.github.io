@@ -123,7 +123,7 @@ There's a proxy from LinkedIn friend count to hiring, but checking your friend c
 
 ## The silly things I have watched on Vertical Short Form (TikTok, Reels, Shorts)
 
-VSF is the worst because it has such low starting energy, and such high [stopping energy](/activation). Here are some of the silly things i've gotten sucked into
+VSF is the worst because it has such low starting energy, and such high [stopping energy](/activation). Here are some of the silly things I've gotten sucked into
 
 ### Lifting Videos
 
@@ -171,7 +171,7 @@ I didn't really have a hard time stopping this. It's empty calories, but even wo
 
 #### "Zero proof" drinks
 
-I accidentally discovered these, which really came out of nowhere in the min 2020s? At first I was thrilled, felt so good, but then I pondered, is this just a Pavlovian response where I imagine I'm gonna get a hit of mild euphoria and thus I'm really enjoying it? Turns out, yes, I was waiting for that. After a few days of this I found out that since I don't get my euphoric hit, I am no longer interested in this.
+I accidentally discovered these, which really came out of nowhere in the mid 2020s? At first I was thrilled, felt so good, but then I pondered, is this just a Pavlovian response where I imagine I'm gonna get a hit of mild euphoria and thus I'm really enjoying it? Turns out, yes, I was waiting for that. After a few days of this I found out that since I don't get my euphoric hit, I am no longer interested in this.
 
 ### Thinking about work while at home
 
@@ -211,7 +211,7 @@ Success addiction is particularly insidious because it's culturally rewarded. Th
 - Success => Having more than others
 - Failure => Having Less
 
-A few problems of course: 1. You change your definition of others 1. It gets hard and harder as you get into midlife
+A few problems of course: 1. You change your definition of others 1. It gets harder and harder as you get into midlife
 
 This becomes addiction when you're not pursuing success because you want it, but because you can't stand the feeling of "falling behind" or "not measuring up." You're running from inadequacy, not toward achievement.
 

@@ -420,3 +420,4 @@ docs/superpowers/specs/private/
 # just be guaranteed-stale noise, and it caused merge conflicts between every
 # pair of concurrent content PRs.
 /back-links.json
+.build_stats_cache/

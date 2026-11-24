@@ -2,7 +2,7 @@
 layout: post
 title: Prompts, your guide to starting a conversation
 permalink: /prompts
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-prompt.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-prompts-vending-felt.webp
 ---
 
 A prompt will kick start a great conversation, a great insight, and a great relationship. Here are lots of prompts. For fun, pick a prompt at random and ask it to someone else, or answer it yourself. However, it takes a lot of trust and vulnerability to answer these questions, so make sure the person feels very empowered to not answer a question.
@@ -11,7 +11,7 @@ A prompt will kick start a great conversation, a great insight, and a great rela
     Too many choices? Pick a category and then ask the question in the blue box!
 </div>
 
-{% include blob_image_float_right.html src="blog/raccoon-prompt.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-prompts-vending-felt.webp" alt="Felt raccoon in rainbow glasses and a green CURIOUS shirt pressing a button on an orange PROMPTS vending machine with choices WEIRD, FUNNY, DEEP and MYSTERY, as a paper slip reading WRITE ABOUT.. rolls out" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -78,7 +78,7 @@ _From the [awkward 1:1](https://medium.com/@mrabkin/the-art-of-the-awkward-1-1-f
 
 ### Receive extra honest feedback
 
-Remember skip the fluffy answer and ask again until you get something real.
+Remember to skip the fluffy answer and ask again until you get something real.
 
 - Tell them a growth area you're working on currently. Tell them why you picked it (even if it was one of those "not-really-optional" ones!).
 - Ask for advice.
@@ -359,7 +359,7 @@ Spend 15 minutes on Safe, then Deep, and then on Vulnerable prompts
 
 ### Fun
 
-You can probably ask these to grown ups as well, but I suspect kids will be more opening to discussing.
+You can probably ask these to grown ups as well, but I suspect kids will be more open to discussing.
 
 - What is something that made you laugh today
 - If you wrote a book, what would you name the main character and where would he go?

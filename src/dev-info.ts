@@ -36,9 +36,9 @@ export function isChangedPage(path: string, changed: string[]): boolean {
   return changed.some((p) => trimSlash(p) === trimSlash(path));
 }
 
-// Icon names must exist in Font Awesome 5: the site's kit (_includes/head.html) is FA5, so FA6-only
-// names (fa-code-compare, fa-file-pen, fa-xmark) render as nothing. Tooltips go on a wrapper, never on
-// the <i>: the kit turns an icon's title into a <span class="sr-only">, which copied banner text includes.
+// Icon names must be in the self-hosted Font Awesome 5 subset (assets/css/vendor/font-awesome-subset.css):
+// any other name, including FA6-only ones (fa-code-compare, fa-file-pen, fa-xmark), renders as nothing.
+// Tooltips go on a wrapper, never on the <i>, so the icon stays decorative.
 const icon = (name: string) => `<i class="fas ${name}"></i>`;
 
 /** Icon-only button that toggles the rendered diff; the diff code loads only on first click. */
@@ -92,6 +92,11 @@ export function commentsButton(api: AnnotateApi): HTMLButtonElement {
   return btn;
 }
 
+/** `?diff=1` or `#diff` on a preview URL opens the page with the rich diff already on. */
+export function wantsDiffOnLoad(loc: Pick<Location, "search" | "hash">): boolean {
+  return new URLSearchParams(loc.search || "").get("diff") === "1" || loc.hash === "#diff";
+}
+
 export function isDevServer(): boolean {
   return window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 }
@@ -141,11 +146,6 @@ export function initDevInfo(): void {
       infoContent += `<a href="${prUrl}" title="Pull request" target="_blank" style="color: #58a6ff; text-decoration: none;"><i class="fab fa-github"></i></a> <a href="${prUrl}" target="_blank" style="color: #58a6ff; text-decoration: none;"><code style="background: black; color: #58a6ff; padding: 2px 6px; border-radius: 3px;">#${pr}</code></a>`;
     }
 
-    if ((branch || pr) && port) {
-      infoContent += " | ";
-    }
-    infoContent += `<span title="Port">${icon("fa-plug")} <code style="background: black; color: white; padding: 2px 6px; border-radius: 3px;">${port}</code></span>`;
-
     const changed = getChangedPages();
     if (changed.length) {
       const links = changed
@@ -158,11 +158,11 @@ export function initDevInfo(): void {
     }
 
     devInfoElement.innerHTML = infoContent;
+    let diffBtn: HTMLButtonElement | undefined;
     if (isChangedPage(window.location.pathname, changed)) {
+      diffBtn = diffButton(pr ? `https://github.com/idvorkin/idvorkin.github.io/pull/${pr}` : undefined);
       devInfoElement.appendChild(document.createTextNode(" | "));
-      devInfoElement.appendChild(
-        diffButton(pr ? `https://github.com/idvorkin/idvorkin.github.io/pull/${pr}` : undefined),
-      );
+      devInfoElement.appendChild(diffBtn);
     }
     const annotate = annotateApi();
     if (annotate) {
@@ -170,6 +170,8 @@ export function initDevInfo(): void {
       devInfoElement.appendChild(commentsButton(annotate));
     }
     document.body.appendChild(devInfoElement);
+    // Same path as a click, so the button's pressed state stays in sync.
+    if (diffBtn && wantsDiffOnLoad(window.location)) diffBtn.click();
 
     // Adjust body padding to account for the banner
     const currentPaddingTop = Number.parseInt(window.getComputedStyle(document.body).paddingTop) || 0;

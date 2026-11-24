@@ -31,7 +31,13 @@ FOR EVERY NEW FEATURE OR BUGFIX, follow TDD:
 - Unit tests (Vitest): Located in `src/__tests__/`
 - E2E tests (Playwright): Located in `tests/e2e/`
 
-When adding new features or fixing bugs, **always add both unit tests and e2e tests**.
+Logic lives in `src/` modules with Vitest tests. Pages and `_includes/` stay thin: they call a module and keep no decisions of their own (humble object, as `src/den-viewer.ts` and `src/featured-collapse.ts` do). Every new feature or bugfix gets a unit test.
+
+E2E only checks what needs a real browser:
+
+- `tests/e2e/smoke.spec.ts` is the one data-driven "loads, no JS errors" check. A new page gets a row there, not its own "loads correctly" or "no JavaScript errors" test.
+- Other e2e tests cover real interactions and boundaries: clicks, keys, focus and gestures, the clipboard and popups, cross-origin tabs and storage, layout and pixels, animation, real Pagefind search, and third-party widgets.
+- Don't re-check in e2e what a unit test already pins (state, strings, URL building). If logic is only reachable from a browser, move it into `src/` first.
 
 ## Code Style Guidelines
 

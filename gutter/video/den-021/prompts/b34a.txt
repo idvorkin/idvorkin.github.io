@@ -1,0 +1,13 @@
+Animate the in-between of a comic strip. The FIRST frame and the LAST frame are given; travel from the first to the last with continuous physical motion and land on the last frame exactly. Never dissolve, cross-fade or morph between the two pictures: every change must be something moving. The picture is a square comic panel with a black border, centered on a plain warm cream page; the cream page and the border stay perfectly still, all motion happens INSIDE the square.
+
+STYLE (most important): a high-end 3D stop-motion render of handmade NEEDLE-FELTED plush toys: felt fiber texture, soft-vinyl toy volume, warm practical lighting. Keep exactly the look of the frames. Never flat 2D.
+
+IGOR: a raccoon in round RAINBOW glasses, a green TECHNOLOGIST t-shirt, denim shorts, one blue and one yellow croc; exactly on-model.
+LARRY: the grey-bearded raccoon in wire-rim spectacles, a white shirt and a tweed waistcoat; his other arm ALWAYS ends in exactly ONE giant red lobster claw. Never two claws, never zero. Exactly on-model.
+
+There are NO speech balloons in this clip. Never draw a balloon, caption or any new text.
+
+CAMERA: the camera moves smoothly to the framing of the last frame (the board moves to the center, Larry's space opens on the right).
+ACTION (4 seconds): Larry pops back up out of the floor hatch holding a silver tin of paint thinner, hurries to the board and tips the tin: a big clear splash hits the top of the board and the blue diagonal stripe starts to melt into blue-grey streaks running straight down. Igor leans back, startled.
+AUDIO: quick footsteps up wooden stairs, a big liquid splash, dripping. No words. No music.
+LARRY'S FACE stays exactly on-model the whole clip: grey beard, CLEAR wire-rim spectacles with his eyes visible through them (never sunglasses, never dark lenses). He carries the tin in his furry PAW; his ONE red lobster claw is on his other arm (a lobster claw, never a boxing glove).

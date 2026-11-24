@@ -4,7 +4,7 @@ permalink: /structure
 layout: post
 ---
 
-What if structure could be kind? You already know what you want to do. You know exercise is good for you. You know journaling helps. You know you should call your mom more often. The problem isn't knowing—it's the gap between intention and action, especially when life gets messy. Most of us recoil from the word "structure" because we've only experienced harsh management-style systems that treat humans like machines. But there's another way: **humane structure** that works with your nature, not against it. Humane structure starts with a core assumption: **You're not broken, you just need better support.** You don't need more willpower, discipline, or motivation. You need systems that help you remember what you care about and make it easier to act on those values, especially when you're struggling.
+You already know exercise is good for you, journaling helps, and you should call your mom more often. The trouble is the gap between knowing and doing, especially when life gets messy. Humane structure starts from one assumption: you're not broken, you just need better support. That means systems that remind you what you care about and make it easier to act on, most of all when you're struggling.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -259,13 +259,13 @@ Learning becomes a curious conversation with yourself about what you're discover
 
 ### High performance mode vs humane mode
 
-Sometimes you go from I just want to get better to I want to hyper optimize, then you need different eviews
+Sometimes you go from I just want to get better to I want to hyper optimize, then you need different reviews
 
 ## Humane Tracker Technical Architecture
 
 ### Data Model
 
-Classicly this would be a rigid data model, with rows and columns, and trending over date. But since we have LLMs we can everything in a like with links from the "unstructured data" to structure, which is good for other stuff.
+Classically this would be a rigid data model, with rows and columns, and trending over date. But since we have LLMs we can everything in a like with links from the "unstructured data" to structure, which is good for other stuff.
 
 ## Thoughts to merge
 

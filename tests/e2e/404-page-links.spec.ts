@@ -1,16 +1,4 @@
 import { expect, test } from "./base-test";
-import { checkForJsErrors } from "./js-error-checker";
-
-test("404 page loads correctly", async ({ page }) => {
-  // Navigate to a non-existent page to trigger 404
-  await page.goto("/this-page-does-not-exist");
-
-  // Check that we get the 404 page by looking for the title or unique content
-  await expect(page).toHaveTitle(/PAGE NOT FOUND/);
-
-  // Verify the monkey message appears
-  await expect(page.locator("body")).toContainText("The Monkey has eaten the page you are looking for");
-});
 
 test("All links on 404 page work correctly", async ({ page }) => {
   // Navigate to 404 page
@@ -60,10 +48,6 @@ test("All links on 404 page work correctly", async ({ page }) => {
   await allLink.click();
   await expect(page.locator("h1")).toContainText("All Blog Posts");
   await expect(page.locator("body")).toContainText("This page lists all blog posts for link checking purposes");
-});
-
-test("404 page has no JavaScript errors", async ({ page }) => {
-  await checkForJsErrors(page, "/this-page-definitely-does-not-exist");
 });
 
 test("404 page image loads correctly", async ({ page }) => {

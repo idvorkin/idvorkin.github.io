@@ -3,7 +3,7 @@ layout: post
 title: Slow ZSH prompts
 ---
 
-All of the sudden, hititng enter in zsh took seconds - took me a while, but I realized if I kiled tmux (not just a window), then it would be fast again (well, that's better then a reboot I guess. **Sigh, this drove me nuts and I just switched to Atuin instead**
+All of the sudden, hitting enter in zsh took seconds - took me a while, but I realized if I killed tmux (not just a window), then it would be fast again (well, that's better than a reboot I guess. **Sigh, this drove me nuts and I just switched to Atuin instead**
 
 Groan, looks like Atuin is hitting the same problem, but has an error message about it being slow to write to disk:
 
@@ -13,7 +13,7 @@ Hymn, looks a lot like this tmux slow issue:
 
 [https://github.com/tmux/tmux/issues/2551](https://github.com/tmux/tmux/issues/2551)
 
-Ah, looks like my tmux plugins where still getting loaded (and pomodoro was still in memory - lets see if he was the culprit)
+Ah, looks like my tmux plugins were still getting loaded (and pomodoro was still in memory - let's see if he was the culprit)
 
 Profiling Zsh
 
@@ -60,7 +60,7 @@ return ${exit_code} # Restore the original exit code by returning it.
 
 Tailing the history file - what else could be taking time
 
-Lets see if it's that add call that's slow. Must be. Then I need to debug why that might be
+Let's see if it's that add call that's slow. Must be. Then I need to debug why that might be
 
     $MCFLY_PATH --history_format $MCFLY_HISTORY_FORMAT add --exit ${exit_code}
 

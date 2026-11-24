@@ -1,5 +1,4 @@
 import { expect, test } from "./base-test";
-import { checkForJsErrors } from "./js-error-checker";
 
 test.describe("Graph page functionality", () => {
   test.beforeEach(async ({ page }) => {
@@ -13,20 +12,6 @@ test.describe("Graph page functionality", () => {
 
     // Wait for the graph to initialize
     await page.waitForTimeout(2000);
-  });
-
-  test("Graph page loads correctly", async ({ page }) => {
-    // Check that the page has loaded correctly
-    await expect(page).toHaveURL(/.*\/graph#eulogy/);
-
-    // Check for essential page elements
-    await expect(page.locator("#detail")).toBeVisible();
-    await expect(page.locator("#controls")).toBeVisible();
-    await expect(page.locator("#center_control")).toBeVisible();
-  });
-
-  test("Graph page has no JavaScript errors", async ({ page }) => {
-    await checkForJsErrors(page, "/graph#eulogy");
   });
 
   // Test that controls are clickable

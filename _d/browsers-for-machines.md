@@ -11,6 +11,7 @@ redirect_from:
   - /lightpanda
   - /playwright-cli
   - /ai-browsers
+ai_default_image: true
 ---
 
 Chrome was built for humans and retrofitted for automation. That era is ending. A new generation of tools is purpose-built for AI agents — and the tradeoffs are fascinating.

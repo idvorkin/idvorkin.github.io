@@ -408,7 +408,7 @@ The 365 negative commandments - things you _should NOT_ do. According to traditi
 
 [Leviticus 7:20](https://www.sefaria.org/Leviticus.7.20): "But the person who, in a state of impurity, eats flesh from יהוה's sacrifices of well-being, that person shall be cut off from kin."
 
-93\. **Priest don't eat first-fruits outside Temple**
+93\. **Priest doesn't eat first-fruits outside Temple**
 
 [Deuteronomy 12:17](https://www.sefaria.org/Deuteronomy.12.17): "You may not partake in your settlements of the tithes of your new grain or wine or oil, or of the firstlings of your herds and flocks, or of any of the votive offerings that you vow, or of your freewill offerings, or of your contributions."
 

@@ -7,23 +7,24 @@ redirect_from:
   - /td/design
 ---
 
-Software is measured in two dimensions: use cases (end user behavior) and malleability. End user behavior is the delivery of use cases, while malleability is the ease with which the software can modify the existing use cases, or add new ones. Software malleability is the evaluation function for an architecture. Malleability is the more important of these dimensions because over time there will be far more changes to the software then the original use case (e.g. the cost of maintenance far exceeds the software writing cost). A key property of software architecture is it's obvious there is one place to make changes, and where that place is.
+Software is measured in two dimensions: use cases (end user behavior) and malleability. End user behavior is the delivery of use cases, while malleability is the ease with which the software can modify the existing use cases, or add new ones. Software malleability is the evaluation function for an architecture. Malleability is the more important of these dimensions because over time there will be far more changes to the software than the original use case (e.g. the cost of maintenance far exceeds the software writing cost). A key property of software architecture is it's obvious there is one place to make changes, and where that place is.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
 - [Design and architecture](#design-and-architecture)
-    - [Software - Use cases and Malleability](#software---use-cases-and-malleability)
-    - [Business Logic, Platforms and Goop](#business-logic-platforms-and-goop)
-    - [Minimize your investment in goop.](#minimize-your-investment-in-goop)
-    - [Picking the right level of abstraction for your business logic.](#picking-the-right-level-of-abstraction-for-your-business-logic)
-    - [Is Fault Free possible](#is-fault-free-possible)
-    - [Paradigms: Structured, Object Oriented, Functional](#paradigms-structured-object-oriented-functional)
-    - [DRY vs WET vs MOIST Programming](#dry-vs-wet-vs-moist-programming)
+  - [Software - Use cases and Malleability](#software---use-cases-and-malleability)
+  - [Business Logic, Platforms and Goop](#business-logic-platforms-and-goop)
+  - [Minimize your investment in goop](#minimize-your-investment-in-goop)
+  - [Frameworks vs Libraries: who calls whom](#frameworks-vs-libraries-who-calls-whom)
+  - [Picking the right level of abstraction for your business logic](#picking-the-right-level-of-abstraction-for-your-business-logic)
+  - [Is Fault Free possible](#is-fault-free-possible)
+  - [Paradigms: Structured, Object Oriented, Functional](#paradigms-structured-object-oriented-functional)
+  - [DRY vs WET vs MOIST Programming](#dry-vs-wet-vs-moist-programming)
 - [Testing](#testing)
 - [Design Patterns](#design-patterns)
-    - [Architecture Patterns](#architecture-patterns)
-    - [OO Patterns](#oo-patterns)
+  - [Architecture Patterns](#architecture-patterns)
+  - [OO Patterns](#oo-patterns)
 - [Other Resources](#other-resources)
 
 <!-- vim-markdown-toc-end -->
@@ -35,21 +36,44 @@ Software is measured in two dimensions: use cases (end user behavior) and mallea
 
 Product managers generally don't understand software enough to understand the notion of malleability, and thus don't have the ability to prioritize architecture. It's the role of the software engineers (and software architects) to continually prioritize the architecture.
 
+With agents doing the writing, these two dimensions are the two jobs an engineer has left - see [What's Left in Engineering?](/whats-left)
+
 > On the topic of architecture, the software industry's use of the word architect is confusing. The construction analog of a "software architect" is a "structural engineer" and the software equivalent of a "construction architect" is a product manager.
 
 ### Business Logic, Platforms and Goop
 
+{% include local_image_float_right.html src="design-goop-layers.svg" link="design-goop-layers-full.webp" alt="Software architecture: Business Logic on top, Platforms at the bottom, and Goop in between binding the two. Goop covers the gap between business logic and platforms; it fits your use cases exactly, but you build and maintain it." %}
+
 **Business logic** is stuff your business would do even if we didn't have computers. "E.g. Pay the employees, keep track of library books that have been rented out".
 
-**Implementation details** is stuff that is created to achieve the business logic. Implementation details, are composed of building blocks, the lowest of level of which are composable platforms.
+{% include local_image_float_right.html src="raccoon-goop.webp" alt="Three stacked layers: a thin Business Logic slab of flowchart blocks and gears on top, a huge middle layer of Goop where a raccoon stands knee-deep in tangled cables and duct tape wiring things together, and a machine-like Platforms base of gears and glowing blocks at the bottom" %}
+
+**Implementation details** is stuff that is created to achieve the business logic. Implementation details, are composed of building blocks, the lowest level of which are composable platforms.
 
 **Platforms** are pre-existing building blocks from which you can assemble with goop to implement your business logic.
 
-**Goop** You need goop to cover the gap between the business logic and the platforms you use. The advantage of goop is that it perfectly matches your use cases. However, the downside is 1) you need to build and maintain it and you are resource constrained 2) once the platform does your goop, it'll do a better job of it then you would because 1) they are the domain expects 2) you can't afford to make awesome goop.
+**Goop** You need goop to cover the gap between the business logic and the platforms you use. The advantage of goop is that it perfectly matches your use cases. However, the downside is 1) you need to build and maintain it and you are resource constrained 2) once the platform does your goop, it'll do a better job of it than you would because 1) they are the domain experts 2) you can't afford to make awesome goop.
+
+<div style="clear:both"></div>
 
 ### Minimize your investment in goop
 
 Developers love building complex technically challenging systems - makes them feel like they're doing hard things.
+
+### Frameworks vs Libraries: who calls whom
+
+{% include local_image_float_right.html src="design-call-direction.svg" link="design-call-direction-full.webp" alt="Who calls whom. Library: your code calls the library, and you own main. Framework: the framework calls your code, in the slots it gives you (controller, component, hook), and it owns main." %}
+
+A library is a platform you call. A framework is a platform that calls you. That flip is [inversion of control](https://martinfowler.com/bliki/InversionOfControl.html), the "Hollywood principle": don't call us, we'll call you.
+
+Whoever owns the control flow decides where your business logic lives. With libraries, your goop owns `main` and calls platforms when it needs them, so the business logic goes wherever you put it. With a framework, the framework owns `main`, and your business logic goes in the slots it hands you: the controller, the component, the lifecycle hook.
+
+- **Frameworks** are fast to start, because they ship most of the goop. They're hard to leave: your business logic takes the framework's shape, so leaving means a rewrite, and you ride its upgrade treadmill whether or not the new version helps your use cases.
+- **Libraries** mean more goop, but you keep control. Swapping one is a change behind an interface, not a rewrite.
+
+Either way, keep the business logic from depending on framework types ([Dependency Inversion](#oo-patterns)). Then if you do leave, you rewrite goop, not the business.
+
+<div style="clear:both"></div>
 
 ### Picking the right level of abstraction for your business logic
 
@@ -61,15 +85,15 @@ Nope, you already need an "apology workflow".
 
 ### Paradigms: Structured, Object Oriented, Functional
 
-Software has evolved from unstructured, to structured, to object-oriented to functional paradigms. Each paradigm, adds constraints, improving productivity. Paradigms are programming models, more then language constraints as each paradigm can be implemented in assembly code (which is what compilers do)
+Software has evolved from unstructured, to structured, to object-oriented to functional paradigms. Each paradigm, adds constraints, improving productivity. Paradigms are programming models, more than language constraints as each paradigm can be implemented in assembly code (which is what compilers do)
 
-Structured program provide functional decomposition and constrained flow control, e.g. decomposable functions with constrained flow control (if/for/foreach) are the lowest level of our software systems. A key value of functions is 1) Letting the programmer understand the program at a high level without knowing all the details and 2) allowing a small unit which can be tested independently.
+Structured programs provide functional decomposition and constrained flow control, e.g. decomposable functions with constrained flow control (if/for/foreach) are the lowest level of our software systems. A key value of functions is 1) Letting the programmer understand the program at a high level without knowing all the details and 2) allowing a small unit which can be tested independently.
 
 Object oriented provides encapsulation (bundling data with functions - e.g. classes and objects), and polymorphism (interfaces which can be instantiated with various types).
 
 Polymorphism gives programmers the most power, decoupling the source code dependency from the flow of control dependency. E.g. main only depends on the plugin interfaces, where modules must implement those interfaces (often with a simple adapter or facade). This is such a powerful difference from structured programming that it's called the dependency inversion principle (DIP). This power enables the programmer to understand much more complex programs at a high level without knowing all the details. These low level details can be developed and deployed independently.
 
-Functional programming provides functions with no side effects, functional composition and currying. These tools reduce error, remove concurrency errors, and transform problems to be embarrassingly parallel. Some mutation is always required, but it should be isolated as much as possible. However, less mutation is required then you think. In [event sourcing](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing) use store transaction records instead of updates and compute current state from the sum of previous updates we can remove mutation even from storage (e.g. CRUD becomes CR). If this sounds crazy you already use it daily when using source control, and is becoming very popular in react-redux applications and time travel debugging.
+Functional programming provides functions with no side effects, functional composition and currying. These tools reduce error, remove concurrency errors, and transform problems to be embarrassingly parallel. Some mutation is always required, but it should be isolated as much as possible. However, less mutation is required than you think. In [event sourcing](https://docs.microsoft.com/en-us/azure/architecture/patterns/event-sourcing) use store transaction records instead of updates and compute current state from the sum of previous updates we can remove mutation even from storage (e.g. CRUD becomes CR). If this sounds crazy you already use it daily when using source control, and is becoming very popular in react-redux applications and time travel debugging.
 
 ### DRY vs WET vs MOIST Programming
 
@@ -128,12 +152,12 @@ Good list [here](https://orkhanscience.medium.com/software-architecture-patterns
 
 ### OO Patterns
 
-- Single Responsibliity Principle - Classes Should Only Do 1 thing.
+- Single Responsibility Principle - Classes Should Only Do 1 thing.
 - Open Closed Principle - Classes should be open to extension but closed to modification.
 - Liskov Substitution Principle - Any instantiation of an interface should work properly
 - Interface Segregation Principle - Break up complex Interfaces
-- Dependency Inversion Principle - A class should not depend on it's implementation details
-  - Business Logic should not have a dependency on goop/platform, but should interfaces to them.
+- Dependency Inversion Principle - A class should not depend on its implementation details
+  - Business Logic should not have a dependency on goop/platform, but should use interfaces to them.
   - Goop should implement the binding between the Business Logic Interfaces and the platform.
   - Ideally handled by a Dependency Injection (DI) system
 

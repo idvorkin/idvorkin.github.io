@@ -5,6 +5,8 @@ permalink: /ai-eval-tools
 ai_default_image: true
 ---
 
+_Which software to run evals with: what I need from a tool, the parts every tool shares, and tool-by-tool reviews. How to measure (what to test, how to score, my benchmarks) is [AI Testing and Evals](/ai-testing)._
+
 Every time I want to compare models, prompts, or agent harnesses I trip over the same question: which eval tool? Strip the branding and they are all the same eight parts. They split on two questions: does the tool run the agent somewhere and look at what it did, or call a function and look at what it returned? And are runs saved so I can re-grade them without paying for them again? For agent work that leaves smevals (my own weekend evals) and Terminal-Bench (standard harness benchmarks). This is a quick survey, not a considered review: I've only used two of these in anger, and the versions move fast.
 
 {% include ai-slop.html percent="95" %}
@@ -13,7 +15,6 @@ Every time I want to compare models, prompts, or agent harnesses I trip over the
 <!-- vim-markdown-toc-start -->
 
 - [What I want from an eval tool](#what-i-want-from-an-eval-tool)
-- [Our benchmark evals](#our-benchmark-evals)
 - [The shared anatomy: same concepts, different names](#the-shared-anatomy-same-concepts-different-names)
 - [Where the tools split](#where-the-tools-split)
 - [The tools](#the-tools)
@@ -33,20 +34,14 @@ Every time I want to compare models, prompts, or agent harnesses I trip over the
 
 Criteria, learned while building [my first real eval](/ai-testing#grading-the-agent-with-smevals):
 
-1. Agent in a workdir. The thing under test is an agent changing files through a harness (Claude Code, Codex), not prompt in, completion out.
-2. Deterministic checkers first: string matches, git diffs, my own tools as oracles. LLM judges are opt-in for quality, never the default gate.
+1. Agent in a workdir. The thing under test is an agent changing files through a harness (Claude Code, Codex), not prompt in, completion out. Models are now trained with their harness and bound to it, so the model-plus-harness score is the one that matters. Same as with people: I judge someone working in their environment, not alone in an interview room.
+2. Deterministic checkers built in, with an LLM judge as an opt-in that takes a list of yes/no assertions ([why](/ai-testing#scoring-rules-i-trust)).
 3. Decoupled grading. Runs are immutable records on disk, so a new grader re-scores old runs without re-paying for them.
 4. Local-first: plain files in a repo, no SaaS account before hello world.
 5. Cheap authoring: YAML plus small scripts.
-6. A leaderboard by config × model, with per-task splits.
+6. A leaderboard by config × model, with per-task splits: k runs per task, pass^k next to pass@k, and harness failures counted apart from agent failures ([why](/ai-testing#scoring-rules-i-trust)). For a classifier, a per-class confusion matrix with a cost on each cell ([worked example](/ai-testing#confusion-matrix-precision-and-recall)).
 
-## Our benchmark evals
-
-The honest way to feel out a tool is to build the same evals in each. Every tool I try gets its example in a repo named after the tool, so the examples don't get lost behind generic names.
-
-**Blog page edit.** Can an agent make a scoped edit to a page, keep the generated TOC byte-identical to toc.py's output, and touch nothing else? Built with smevals in [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals); results in [Testing AI](/ai-testing#grading-the-agent-with-smevals).
-
-**Raccoon generator.** My recurring real need: a raccoon illustration in the blog's house style. Deterministic checks first (file exists, right format, transparent background, sane dimensions), then a vision judge for what only a judge can see: is it a raccoon, and does it match the style. Not built yet. It's next, and it forces the multimodal-judge question the blog-edit eval dodges.
+Every tool I try gets built against the same [benchmark evals](/ai-testing#my-benchmark-evals), in a repo named after the tool so the examples don't get lost behind generic names.
 
 ## The shared anatomy: same concepts, different names
 
@@ -91,7 +86,7 @@ Versions as of 2026-08, as a rough signal of how alive each project is.
 
 ### smevals (0.2.0)
 
-[smevals](https://github.com/prime-radiant-inc/smevals), from Simon Willison and Prime Radiant, is the only tool here built for agent-harness evals out of the box. An eval is a directory of YAML, the Runner and Checkers are any executables, and runs are immutable, so new graders re-score old runs for free. It's young: the released version lags its own README (`-n` isn't shipped, and runs where the harness failed still get graded), there are no built-in judge helpers, and it's single-machine. My example, [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals), has three tasks, three deterministic checkers, mock runners that validate the graders, and an LLM-judge grader added afterwards.
+[smevals](https://github.com/prime-radiant-inc/smevals), from Simon Willison and Prime Radiant, is the only tool here built for agent-harness evals out of the box. An eval is a directory of YAML, and the Runner and Checkers are any executables: the Runner can drive Claude Code or Codex in a working directory, and Checkers share that workspace, so a check can run git diff or the project's own tools instead of asking a judge. Runs are immutable records on disk, so new graders re-score old runs for free. It's young: the released version lags its own README (`-n` isn't shipped, and runs where the harness failed still get graded), there are no built-in judge helpers, and it's single-machine. My example, [smevals-blog-edit-evals](https://github.com/idvorkin-ai-tools/smevals-blog-edit-evals), has three tasks, three deterministic checkers, mock runners that validate the graders, and an LLM-judge grader added afterwards.
 
 ### PromptFoo (0.121.x)
 
@@ -117,11 +112,19 @@ More scanner than eval harness: it probes an LLM app for injection, leakage, and
 
 This tier runs agents inside containers, which buys isolation (the agent can safely get full permissions, the sandbox fight I lost on my [codex runs](/ai-testing#grading-the-agent-with-smevals)), reproducible task images, and parallelism.
 
-- **Terminal-Bench** is my blog-edit eval, professionalized: each task is a Docker container with setup plus a verifier, and it benchmarks the real CLI harnesses (Claude Code, Codex) on terminal tasks. Since Nov 2025 the harness is **Harbor**; the `tb` CLI is the legacy 1.x path.
+- **[Terminal-Bench](https://www.tbench.ai/)** is my blog-edit eval, professionalized: each task is a Docker container with setup plus a verifier, and its leaderboard ranks each model inside a real CLI harness (Opus in Claude Code, GPT in Codex). Since Nov 2025 the harness is **Harbor**; the `tb` CLI is the legacy 1.x path.
 - **SWE-bench** builds a Docker image per issue and grades on whether the repo's tests pass. The agent (SWE-agent, now mostly mini-SWE-agent) is a separate layer on top.
 - **METR Vivaria** runs METR's dangerous-capability evals: agents in containers against their Task Standard.
 
+{% include repo_image.html src="terminal-bench.webp" %}
+
 Both benchmarks containerize, but not the same thing, which is what I went looking for. Terminal-Bench puts _the agent_ in the box: it gets a shell, the tests are copied in after its clock stops, and only the final container state is graded ("they do not test the agent's commands or console output," per the [Terminal-Bench 2.0 paper](https://arxiv.org/abs/2601.11868)). SWE-bench puts only _the grading_ in the box: it takes a finished patch, applies it, runs the tests, and tears down. There is no agent code in the benchmark repo. The vocabularies show it: Terminal-Bench's unit is a **trial**, "a rollout that produces a reward," run by an **agent**; SWE-bench's is a **task instance**, and the thing under test is a field called `model_name_or_path`, from when the subject was a model emitting a diff. Neither is a security boundary: both leave the network open.
+
+[OpenRouter Benchmarks](https://openrouter.ai/benchmarks) is the other end: no box and no harness, just public benchmarks (τ²-Bench, GPQA Diamond, BrowseComp, image, video, speech) run against OpenRouter API requests, with quality, cost, and speed for each model and config. It's the table I'd use to pick a model for a raw API call. It can't tell me how that model does inside Claude Code.
+
+{% include repo_image.html src="openrouter-benchmarks.webp" %}
+
+[EQ-Bench 4](https://eqbench.com/) is the people-skills version: each model holds an eight-turn roleplay with a simulated user persona, and a panel of three LLM judges compares the transcripts pairwise on rapport, attunement, and repairing trust, reported with confidence intervals. Its sibling [Spiral-Bench](https://eqbench.com/spiral-bench.html) uses the same simulated-user trick to score whether a model pushes back on a user's delusional spiral or feeds it.
 
 The catch is that these are benchmark-first; custom tasks mean adopting their image conventions. smevals stays out of it: its Runner can `docker run` when a container runtime exists, but manages none of it.
 

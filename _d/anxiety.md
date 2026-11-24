@@ -62,13 +62,13 @@ So increasing your perspective. When it comes to the remodel stress, expand. Sur
 
 A way to automatically increase perspective is humor, it breaks us out of our reverie, and lets us laugh (TBD, positive vs negative stress). A flip side of this is, if you notice you're not laughing, nor enjoying other parts of life, you need to expand your perspective.
 
-Interesting, I picked up a mantra, "This too shall pass", with the idea of smoothing out the highs and the lows, the Psychiatrist observed this is the Buddhist impermanence idea, which BTW is not apathy. So this is helpful as it reducing suffering, which is attachment, to cut attachment, the good isn't as valuable, and the bad isn't as concerning. Yup, I wonder if switching my mantra from this too shall pass to more, how does this look in a larger time frame?
+Interesting, I picked up a mantra, "This too shall pass", with the idea of smoothing out the highs and the lows, the Psychiatrist observed this is the Buddhist impermanence idea, which BTW is not apathy. So this is helpful as it reduces suffering, which is attachment, to cut attachment, the good isn't as valuable, and the bad isn't as concerning. Yup, I wonder if switching my mantra from this too shall pass to more, how does this look in a larger time frame?
 
 ### Perspective
 
 Perspective can be imagined in two dimensions - X=time and Y=Co(t).
 
-**Co(t)** The amount of things being considered. This can be from a single insult to your life. The units on this are unclear, for now, lets normalize from 0 to all the things you can be considering across all aspects of your life.
+**Co(t)** The amount of things being considered. This can be from a single insult to your life. The units on this are unclear, for now, let's normalize from 0 to all the things you can be considering across all aspects of your life.
 
 **SIDEBAR: Mu(t)** is a concept I [explored long ago](http://ig2600.blogspot.com/2015/05/measuring-in-moment-happiness-with.html) Measuring in the moment happiness (InMoHap). It's not the perfect measure, but might be more useful than Co. for this convo.
 

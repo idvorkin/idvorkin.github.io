@@ -34,7 +34,7 @@ So there's this guy who measures his nightly erections, doesn't go out into the 
 
 - Doesn't go out in the sun during the day, bad for the skin
 - Measures everything he can including evening erections
-- (I can relate) Hates seeing grey hair, but also hates dying his hair (I took some stabs at [dying my beard](/ig66/663))
+- (I can relate) Hates seeing grey hair, but also hates dyeing his hair (I took some stabs at [dyeing my beard](/ig66/663))
 
 ## Don't Die - Voices in his head
 

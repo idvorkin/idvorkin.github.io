@@ -7,7 +7,7 @@ tags:
   - mental health
   - how igor ticks
 permalink: /psychic-shadows
-imagefeature: https://github.com/idvorkin/blob/raw/master/blog/racoon-power-word.webp
+imagefeature: https://github.com/idvorkin/blob/raw/master/blog/raccoon-psychic-shadows-resilient-felt.webp
 redirect_from:
   - /shadows
   - /thought-spells
@@ -15,7 +15,7 @@ redirect_from:
 
 It's 3am and my brain is replaying a conversation from six months ago, calculating worst-case financial scenarios, or rehearsing all the ways I'll fail at something I haven't even started. These aren't ordinary worries - they're psychic shadows, specific thought patterns that loop endlessly like restless spirits. My way out is crafting spells: single words that name the shadow and break the loop the moment it appears. Here's how I craft them.
 
-{% include blob_image_float_right.html src="blog/racoon-power-word.webp" %}
+{% include blob_image_float_right.html src="blog/raccoon-psychic-shadows-resilient-felt.webp" alt="Felt raccoon in rainbow glasses and striped rainbow pajamas sitting up in bed with one fist raised under a glowing RESILIENT halo, while shadow ghosts whisper What if you fail? and What if the market crashes?" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -142,7 +142,7 @@ Good spells get stronger with practice. The neural pathway from shadow-recogniti
 
 ### Financial Shadows
 
-These shadows whisper about scarcity, loss, and financial ruin. They love to catastrophe market conditions and imagine worst-case scenarios.
+These shadows whisper about scarcity, loss, and financial ruin. They love to catastrophize market conditions and imagine worst-case scenarios.
 
 **Common patterns**:
 

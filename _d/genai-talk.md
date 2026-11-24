@@ -156,13 +156,13 @@ Conventional Programming vs Delegating to an Intern
   - Thus the prompt must be the program and the input
   - So think of the prompt as the resolution of PromptTemplate(UserInput)
 - In classical coding, there are variables, and control flow,
-  - In LLMs there are only the prompt
+  - In LLMs there is only the prompt
   - We can simulate state/control flow by keeping the history of the previous prompts/response in the current prompt
   - This is why the prompt format of messages has evolved.
 - In classical coding you can access storage, and have lots of RAM.
   - In LLMs you can access no storage beyond the prompt (think of it as RAM)
   - In LLMs you have limited RAM, so you need to be efficient with it.
-  - In LLMs use need to efficiently use the RAM, by deciding which data to place in it.
+  - In LLMs you need to efficiently use the RAM, by deciding which data to place in it.
 
 ### Natural Language and reasoning as state
 
@@ -373,7 +373,7 @@ _Cons:_
 ## Re-thinking prompts
 
 - Prompt+LLM is not the equivalent of an app running on an iPhone
-- Prompt+LLM is the equivalent of assembly language running on an CPU that can only perform operations and output
+- Prompt+LLM is the equivalent of assembly language running on a CPU that can only perform operations and output
 
 The Prompt:
 

@@ -7,51 +7,69 @@ tags:
   - health
   - pain management
   - physical health
+imagefeaturelocal: raccoon-side-plank-card.webp
 ---
 
 For years my back was stiff every morning until I stretched it out, and kettlebell swings are what finally loosened it. Stuart McGill's research changed how I think about back pain: the spine should stay stiff while motion comes from the hips and shoulders.
 
-{% include ai-slop.html percent="35" %}
+{% include ai-slop.html percent="40" %}
+
+{% include local_image_float_right.html src="raccoon-side-plank.webp" alt="Felt raccoon in rainbow glasses and a STIFF SPINE t-shirt holding a straight-arm side plank on a purple mat, top arm reaching up, a stopwatch beside it reading 0:10" %}
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
 
-- [Stuart McGill And the Big 3](#stuart-mcgill-and-the-big-3)
-- [The Big 3 Exercises](#the-big-3-exercises)
+- [Who Is Stuart McGill?](#who-is-stuart-mcgill)
 - [Spine Stiffness Requires Hip and Shoulder Mobility](#spine-stiffness-requires-hip-and-shoulder-mobility)
+- [Why Endurance Beats Strength: The 5 Whys](#why-endurance-beats-strength-the-5-whys)
+- [The Big 3 Exercises](#the-big-3-exercises)
 - [Weak Hips Make a Banana Back](#weak-hips-make-a-banana-back)
 - [The Neck Poke](#the-neck-poke)
 - [Backpacks: Latch It Down](#backpacks-latch-it-down)
-- [The 5 Whys Applied to Back Pain](#the-5-whys-applied-to-back-pain)
-- [Books](#books)
+- [McGill's Books](#mcgills-books)
 - [See Also](#see-also)
 
 <!-- vim-markdown-toc-end -->
 <!-- prettier-ignore-end -->
 
-### Stuart McGill And the Big 3
+### Who Is Stuart McGill?
 
-If you've heard of the McGill Big 3, that's this guy. Trivia tidbits:
+He's the spine researcher behind the McGill Big 3. Some trivia:
 
-1. He did self experimentation by sticking a needle into every muscle and zapping it with electricity to improve diagnosis
+1. He experimented on himself, sticking needles into his own muscles and zapping them with electricity to improve diagnosis
 2. He broke his cervical spine
-3. He is Canadian, and a professor at Waterloo (my Alma Mater)
-
-### The Big 3 Exercises
-
-The McGill Big 3 are isometric exercises that build muscular endurance with minimal spinal load:
-
-1. **Curl-up** - NOT a crunch. One leg bent, hands under lower back, lift head and shoulders slightly
-2. **Side plank** - Modified version on knees if needed. Focus on endurance, not duration
-3. **Bird dog** - On hands and knees, extend opposite arm and leg while keeping spine neutral
-
-The key insight: these build **endurance**, not strength. Your stabilizer muscles need to work all day, not just lift heavy once.
+3. He's Canadian, and a professor (now emeritus) at Waterloo, my alma mater
 
 ### Spine Stiffness Requires Hip and Shoulder Mobility
 
-Your back is supposed to stay straight (especially your lower back), and your motion is supposed to come from your hips and shoulders (ball and socket joints).
+Your back, especially your lower back, is supposed to stay still. Motion is supposed to come from your hips and shoulders, the ball-and-socket joints built for it.
 
-If your hips or shoulders are stiff, your back will compensate by moving - and that's where injuries happen.
+When your hips or shoulders are stiff, your back moves to make up the difference, and that's where injuries happen.
+
+### Why Endurance Beats Strength: The 5 Whys
+
+The 5 Whys is the root-cause tool from the Correction of Errors process I use at work, and it works surprisingly well on back pain:
+
+- Why pain? Tightness.
+- Why tightness? The body is protecting itself from injury.
+- Why protect? It feels instability in the joints.
+- Why unstable? The muscles around the spine lack endurance.
+
+So the fix isn't stretching the tightness away or lifting heavier. It's endurance: stabilizers that can hold the spine steady all day, trained with as little load on the back as possible, since load is what aggravates the injury.
+
+{%include summarize-page.html src="/coe"%}
+
+### The Big 3 Exercises
+
+The Big 3 are McGill's answer: three isometric holds that build endurance around a neutral spine without loading it. Before each one, brace lightly, as if someone were about to poke you in the stomach. Don't suck your belly in.
+
+1. **Curl-up** (not a crunch). Lie on your back with one knee bent and the other leg straight, and slide your hands, palms down, under the small of your back to keep its natural curve. Lift your head and shoulders an inch or two off the floor as one piece, without tucking your chin, and hold. Switch which knee is bent halfway through.
+2. **Side plank** (side bridge). Lie on your side propped on your elbow, elbow under your shoulder. Lift your hips until your body is a straight line from head to feet, and hold. Too hard? Bend your knees and bridge from the knees instead.
+3. **Bird dog**. On hands and knees, reach one arm forward and the opposite leg back until both are level with your torso, and hold. Your back shouldn't arch and your hips shouldn't hike or twist; imagine a glass of water balanced on your lower back.
+
+**Dose:** McGill builds endurance with reps of short holds, not one long hold (the version below is from Back Mechanic). Each hold is about 10 seconds, done as a descending pyramid: for example 6 holds, then 4, then 2, per side, with a short rest between sets. If 10 seconds gets easy, add reps rather than seconds.
+
+If any of these hurt, stop. The goal is a spine that stays quiet, not one you push through pain.
 
 ### Weak Hips Make a Banana Back
 
@@ -83,32 +101,17 @@ Push the weight up with the straps loose, then hit Latched:
 
 How sure am I? The direction is solid; the sizes aren't. The degrees and centimeters in the figure come from a one-line torque balance, not a measurement. "Wear it high" is common advice, but the studies split: [one found fewer head and neck changes with the load low](https://pubmed.ncbi.nlm.nih.gov/19369727/), [another found a low load disturbed walking more](https://pubmed.ncbi.nlm.nih.gov/18667319/). So the part I trust is _close_, not _high_. The hip belt made people [feel steadier](https://pubmed.ncbi.nlm.nih.gov/25265931/) without measurably changing their sway. And the famous "no more than 10–15% of body weight": a [review](https://pubmed.ncbi.nlm.nih.gov/15864169/) found the data supports that range, but recommendations run [from 5% to 20%](https://pubmed.ncbi.nlm.nih.gov/23517005/), and the prospective studies [haven't found that heavier school bags cause back pain](https://pubmed.ncbi.nlm.nih.gov/29720469/). Nearly all of it is on kids. I read 10–15% as where posture starts to give, not a line where injury starts.
 
-### The 5 Whys Applied to Back Pain
+### McGill's Books
 
-The 5 Whys is the root-cause tool from the Correction of Errors process I use at work - it applies surprisingly well to back pain:
-
-{%include summarize-page.html src="/coe"%}
-
-- Why Pain?
-  - Tightness
-- Why Tightness?
-  - Body protecting from injury
-- Why Protecting From Injury?
-  - Body feels instability in joints
-- Why unstable?
-  - Lack of muscular endurance
-
-This is what's great about the McGill Big 3 - it's isometrics to build endurance, as opposed to strength. And it does so with minimal back load (which would worsen the injury).
-
-### Books
+Start with Back Mechanic; it walks you through testing your own back and doing the Big 3.
 
 {% include amazon.html asin="B0BL3DFDS2;0973501839;B01BIB1PHQ" %}
 
-| Book                         | Audience                                  |
-| ---------------------------- | ----------------------------------------- |
-| Back Mechanic                | Laymans Guide                             |
-| Back Fitness and Performance | Pretty complex, trainer/physio Therapist  |
-| Low Back Disorders           | Super Technical Doctors/Physio Therapists |
+| Book                                  | Audience                         |
+| ------------------------------------- | -------------------------------- |
+| Back Mechanic                         | Laypeople: start here            |
+| Ultimate Back Fitness and Performance | Trainers and physical therapists |
+| Low Back Disorders                    | Doctors and physical therapists  |
 
 ### See Also
 

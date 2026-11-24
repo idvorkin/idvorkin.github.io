@@ -345,7 +345,7 @@ assure yourself a lifetime of wealth and power.
 
 ### 24. Play the Perfect Courtier
 
-The courtier wields power through discrete avenues. By flattering and
+The courtier wields power through discreet avenues. By flattering and
 yielding to their superiors and only enforcing their power through charm
 and grace, they gradually accumulate an ever-increasing amount of power.
 There are several steps one can take to become the perfect courtier, and
@@ -543,7 +543,7 @@ will appear. This will reduce their power.
 
 Never trust anything that comes for free. Anything of worth is worth
 paying for. Most things that come for free come with a burdensome
-psychological price task. By paying, you avoid falling into the trap of
+psychological price tag. By paying, you avoid falling into the trap of
 having to be grateful, guilty, or deceitful. Further, being lavish with
 your money is a sign of power. Generosity softens up your opponents into
 being deceived.

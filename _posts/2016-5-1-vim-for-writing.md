@@ -80,7 +80,7 @@ Use prettier to make your markdown consistent. I execute it as a git [precommit 
 
 ### Table of Contents
 
-Use vim-markdown-toc-end and prettier gaurds as prettier messes with it. See the markdown headers. I also do a ToC sidebar on the viewer (make this page).
+Use vim-markdown-toc-end and prettier guards as prettier messes with it. See the markdown headers. I also do a ToC sidebar on the viewer (make this page).
 
 ### Quick switchting via FZF on files, tags and history
 
@@ -88,7 +88,7 @@ See my .vimrc
 
 ### Tags and tagbar while writing, better then Toc
 
-Super cool - use tagbar and mdctags (see vimrc), way better then :Toc
+Super cool - use tagbar and mdctags (see vimrc), way better than :Toc
 
 ### Installation
 

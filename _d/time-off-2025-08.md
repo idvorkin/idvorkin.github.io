@@ -8,7 +8,7 @@ redirect_from:
   - /time-off-2025-08
 ---
 
-I'm incredibly fortunate to be able to take 6 weeks off this summer! After 5 years of service at Meta, you get 30 days (about 5 week) off!
+I'm incredibly fortunate to be able to take 6 weeks off this summer! After 5 years of service at Meta, you get 30 days (about 5 weeks) off!
 
 It's a special year since Zach will be going into grade 10, and Amelia into Middle school
 
@@ -184,9 +184,9 @@ AGENT: Make this image right aligned
   - They were selling cherries that they were loading into bag right off the back of the cherry truck
   - We took 821 which was cool winding river roads, if it wasn't 100 degrees, I should have gone rafting.
 
-- Bend Orgeon
+- Bend Oregon
   - Wow, so much beauty
-  - Tried to book wizard island book tour, sold out in in like 2 minutes
+  - Tried to book wizard island book tour, sold out in like 2 minutes
   - Restarted giving out balloons!!
   - Very Yummy Mexican Food
 
@@ -201,7 +201,7 @@ AGENT: Make this image right aligned
 - Grants Pass
   - Beautiful, but I didn't spend it well. I just spent like 6 hours trying to setup a vibe coding environment.
 
-- Thor's Hammer/Cooks Casm
+- Thor's Hammer/Cooks Chasm
   - Amazing as usual
 
 - The great alsi hotel - The weirdest hotel ever
@@ -215,7 +215,7 @@ AGENT: Make this image right aligned
 - Final Leg home - Tony forgot how to drive
   - Igor had to drive instead.
   - BUT, Igor forgot how to drive!
-  - Took the 405 as i5 was closed, but then forgot I need to follow directions and didn't take 520 exist,
+  - Took the 405 as i5 was closed, but then forgot I need to follow directions and didn't take 520 exit,
   - Driving is a lost skill for me.
   - But on the bright side, I learned about the service menu, pretty cool to see all the backup systems and monitoring in there.
     ![](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250818_084632.webp)
@@ -449,14 +449,14 @@ Gym Days: -
 
 - Lets focus on compassion and the sublime states
 - I can get angry, but I need to apologize after I'm done.
-- I get really triggered when kids copy parent behvior that I don't love.
+- I get really triggered when kids copy parent behavior that I don't love.
 
 ## House and goods
 
 - ☐ Deal with AC recall
 - ☑ Return AC that was supposed to replace the recalled AC but was actually the same recalled model
 - Use CSScanner to scan all my old paper journals and chuck them.
-  - ☑ First ones dones
+  - ☑ First ones done
   - ☑ Mr. Plumbbean done
   - Do the rest of my 750 words
   - Do my next journals

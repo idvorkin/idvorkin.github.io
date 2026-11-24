@@ -6,9 +6,10 @@ redirect_from:
   - /visualizations
   - /data-viz
   - /diagrams
+imagefeatureblob: blog/data-story.jpg
 ---
 
-Good visualizations transform data into insights and stories into understanding. They serve as a universal language that can communicate complex ideas quickly and clearly. Whether you're creating diagrams for technical documentation or charts for business presentations, the key is matching your visual vocabulary to your message.
+The key to a good visualization is matching your visual vocabulary to your message. My notes on diagrams as a vocabulary, telling a story instead of just showing data, and choosing the right chart type, plus resources and tools.
 
 <!-- prettier-ignore-start -->
 <!-- vim-markdown-toc-start -->
@@ -37,6 +38,8 @@ For more detailed exploration of visual vocabulary concepts, see my [technical n
 ## Stories and Actions, Not Just Data
 
 The most powerful visualizations don't just present data—they tell a story that leads to action. Raw numbers are ingredients; insights are the finished meal.
+
+For the story half, see [Storytelling](/storytelling).
 
 {%include blob_image.html src="blog/data-story.jpg" %}
 

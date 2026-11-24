@@ -1,6 +1,10 @@
-{%- comment -%} Full-screen Den comic reader. Include once after all
-den_strip.html instances. Strip metadata and panel file paths come from
-_data/den.json. {%- endcomment -%}
+{%- comment -%} Full-screen panel reader. Include once per page, after all
+openers. Entries come from _data/den.json by default; pass data="NAME" to read
+_data/NAME.json instead (same shape: num, title, panels, and optional img, date,
+receipts_url, label, captions). Openers are den_strip.html hit zones, or any
+element with data-den-open="NUM" data-den-panel="N". Also wires the video share
+icons and #play-N links (src/den-video.ts). {%- endcomment -%} {%- assign
+_den_data_key = include.data | default: "den" -%}
 <style>
   .den-strip {
     --den-bg: rgba(255, 255, 255, 0.92);
@@ -66,6 +70,98 @@ _data/den.json. {%- endcomment -%}
   .den-hit[data-den-panel="4"] {
     left: 51%;
     top: 51%;
+  }
+
+  .den-strip__blurb {
+    margin: -0.4em 0 0.6em;
+    font-style: italic;
+    opacity: 0.8;
+  }
+
+  .den-video {
+    position: relative;
+    margin-top: 0.5em;
+  }
+
+  .den-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    scroll-margin-top: 1em;
+  }
+
+  /* Share icon in the player's top-right corner, clear of the bottom controls. */
+  .den-video__share {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    cursor: pointer;
+    transition:
+      opacity 160ms ease,
+      background-color 160ms ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .den-video__share:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .den-video__share:focus-visible {
+    outline: 3px solid var(--den-ring);
+    outline-offset: 2px;
+  }
+
+  /* Mouse: show the icon with the player's own controls, on hover or focus. */
+  @media (hover: hover) and (pointer: fine) {
+    .den-video__share {
+      opacity: 0;
+    }
+
+    .den-video:hover .den-video__share,
+    .den-video:focus-within .den-video__share {
+      opacity: 1;
+    }
+  }
+
+  /* Touch: always visible, and dropped below iOS Safari's top-right mute button. */
+  @media (hover: none) {
+    .den-video__share {
+      top: 56px;
+    }
+  }
+
+  .den-video-toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    z-index: 2147483641;
+    padding: 0.5em 1.2em;
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    font-size: 0.95em;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, 8px);
+    transition:
+      opacity 160ms ease,
+      transform 160ms ease;
+  }
+
+  .den-video-toast.is-visible {
+    opacity: 1;
+    transform: translate(-50%, 0);
   }
 
   .den-hit:focus-visible {
@@ -140,13 +236,14 @@ _data/den.json. {%- endcomment -%}
   }
 
   .den-lightbox__title {
+    display: -webkit-box;
     overflow: hidden;
     min-width: 0;
     font-size: 0.94rem;
     font-weight: 600;
     line-height: 1.25;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   .den-lightbox button,
@@ -296,8 +393,10 @@ _data/den.json. {%- endcomment -%}
 
   .den-lightbox__dots {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0;
+    min-width: 0;
   }
 
   .den-lightbox__dot {
@@ -402,7 +501,9 @@ _data/den.json. {%- endcomment -%}
 
   @media (prefers-reduced-motion: reduce) {
     .den-lightbox,
-    .den-lightbox__image {
+    .den-lightbox__image,
+    .den-video__share,
+    .den-video-toast {
       transition: none;
     }
   }
@@ -473,10 +574,11 @@ _data/den.json. {%- endcomment -%}
 </div>
 
 <script type="application/json" id="den-manifest">
-  {{ site.data.den | jsonify }}
+  {{ site.data[_den_data_key] | jsonify }}
 </script>
 <script type="module">
-  import { setupDenViewer } from "/assets/js/den-viewer.js";
+  import { setupDenVideos, setupDenViewer } from "/assets/js/den-viewer.js";
 
   setupDenViewer();
+  setupDenVideos();
 </script>

@@ -10,6 +10,7 @@ tags:
   - tools
   - how
   - explainer
+ai_default_image: true
 ---
 
 Agents scale the same two ways people do. Scale **up**: make one agent more capable with a tuned `CLAUDE.md`, a library of skills, custom CLIs it already knows how to drive. That's the whole of [how I chop](/how-igor-chops). Scale **out**: run many agents that coordinate. Scaling out is where you need orchestration, and [Steve Yegge's Gas City](https://steve-yegge.medium.com/welcome-to-gas-city-57f564bb3607) is one filling of [the bricks every orchestrator ends up with](/ai-orchestrator). I already rent [the most expensive brain I can get](/how-igor-chops), so the question I get isn't how a city works but why bother. The short answer: a city isn't a smarter agent. It's the layer that turns _work_ into something durable that many agents can pick up, run, and hand off without me babysitting any of them.

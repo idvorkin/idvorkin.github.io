@@ -23,6 +23,16 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-11-21](#2026-11-21)
+    - [Fresh Machine, Old Fear of Losing Branches](#fresh-machine-old-fear-of-losing-branches)
+  - [2026-11-14](#2026-11-14)
+    - [Muse Bought My Magic Supplies](#muse-bought-my-magic-supplies)
+    - [My Agents Each Kept a To-Do List, and I Was the Message Bus](#my-agents-each-kept-a-to-do-list-and-i-was-the-message-bus)
+    - [IgSnap: Writing My Own Screenshot App Was Faster Than Installing One](#igsnap-writing-my-own-screenshot-app-was-faster-than-installing-one)
+  - [2026-11-05](#2026-11-05)
+    - [Steve Yegge Audited His Adversarial Reviewers: Keep Them, Ban the P3s](#steve-yegge-audited-his-adversarial-reviewers-keep-them-ban-the-p3s)
+  - [2026-11-01](#2026-11-01)
+    - [Are You Using LLMs to Their Full Potential?](#are-you-using-llms-to-their-full-potential)
   - [2026-08-25](#2026-08-25)
     - [Sean Goedecke's Game Show: All Skimming and Judging, No Hammock Time](#sean-goedeckes-game-show-all-skimming-and-judging-no-hammock-time)
   - [2026-08-22](#2026-08-22)
@@ -233,9 +243,9 @@ OK, I used to go to this psychiatrist, who had a full "consistent model" of psyc
 
 here (https://whatilearnedsofar.com/practice/) (broken link)
 
-lets see if we can simulate him, step #1, lets bring the site down into markdown
+let's see if we can simulate him, step #1, let's bring the site down into markdown
 
-1. Lets use <https://github.com/paulpierre/markdown-crawler>:
+1. Let's use <https://github.com/paulpierre/markdown-crawler>:
 2. pip install markdown-crawler
    markdown-crawler https://whatilearnedsofar.com/practice/ --output-dir ./practice (broken link)
 
@@ -269,6 +279,77 @@ lets see if we can simulate him, step #1, lets bring the site down into markdown
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-11-21
+
+#### Fresh Machine, Old Fear of Losing Branches
+
+{% include local_image_float_right.html src="raccoon-fresh-machine.webp" %}
+
+- **TOP Takeaway**: I flattened my machine and switched to a new one, and I'm still afraid I'm going to lose some old branches. That fear comes from the world of scarcity, before AI agents made code nearly free.
+- **So much faster**: the new machine is so much faster. I wonder how much of that is the hardware, and how much is just a fresh machine without 3 years of cruft.
+- **Why the fear is out of date**: a half-done branch used to be hours of my own work, so losing one meant losing those hours. Now an agent can redo it. [Code is cattle, not pets](#code-as-cattle-not-pets), and old branches are code. I know that, and I'm still afraid.
+
+### 2026-11-14
+
+#### Muse Bought My Magic Supplies
+
+- **TOP Takeaway**: Muse replaced another drudgery: going through a website. I needed magic supplies from an online shop, and instead of clicking through the site myself, Muse did it in a browser and bought them.
+- **What it did**: confirmed I was logged in, checked all 9 items in the cart against my list, went through checkout, and told me the order was placed. $113.52 of supplies plus $5 shipping, no tax, $118.52, paid with Stripe Link.
+- **The leash**: a $145 cap. I set the ceiling and it came in under it.
+- **The dream**: this is the dream of Alexa Shopping, which I worked on, but for every store. Right now Amazon blocks this. My guess is that will change.
+
+<img src="/images/muse-bought-magic-supplies.webp" alt="Two chat messages from Muse. First: yes, you're logged in and all 9 items are in the cart under your account, subtotal $113.52, exactly as ordered; I checked it against the list and told the browser to go ahead with checkout. Second: it's in, order placed, $118.52 ($113.52 + $5 shipping, no tax), well under the $145 cap, all 9 items, paid with Stripe Link. The confirmation number is covered." width="685" height="554" loading="lazy" decoding="async" style="max-width:420px;width:100%;height:auto;border-radius:10px;" />
+
+#### My Agents Each Kept a To-Do List, and I Was the Message Bus
+
+- **TOP Takeaway**: Two of my agents each kept their own to-do list without telling the other. A request I made out loud got written down where only one of them could read it, so I carried the message myself. In April [my bots argued a code review without me](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops). This time I was the wire between them.
+- **The setup**: [Larry](/larry) runs on a Linux box and answers the whiteboard and chat on my iPad. The coding agent for [Context Grabber](/side-quests#context-grabber) runs on my Mac and watches only that repo's GitHub issues and PRs.
+- **What happened**: this morning on the whiteboard Larry told me three of my requests were "filed, not built": a retry button after 20 seconds, plain single-line lettering, and making room for his reply. He had filed two of them as beads in a local issue store the coding agent can't see. So the coding agent looked, found nothing, and filed its own duplicate ([#894](https://github.com/idvorkin/context-grabber/issues/894)). Then I had to tell it to go ask Larry.
+- **Once introduced, they were fine**: the thread below is the two of them sorting it out, coding agent in blue, Larry in grey. Larry gave the bead ids and filed the missing issue ([#895](https://github.com/idvorkin/context-grabber/issues/895)). The coding agent asked for an audit of everything else that went stale the same way.
+- **The grumble**: both of them wrote it down, just not where the other could look. Shared work needs a shared ledger, and for these two that's the GitHub issues, the one list both can read.
+
+![Chat thread between my two agents. Blue bubbles, the Context Grabber coding agent: it found no issue for two of the three whiteboard requests, filed #894 itself, and asks where the others were logged. Grey bubbles, Larry: both were beads in a local store the coding agent can't see, here are the ids, and the missing one is now issue #895. The coding agent then asks for an audit of every other request that never became a GitHub issue.](/images/agents-not-talking-chat.webp)
+
+#### IgSnap: Writing My Own Screenshot App Was Faster Than Installing One
+
+![IgSnap: a window picked, annotated, with the toolbar under it](https://raw.githubusercontent.com/idvorkin/igsnap/fb9566bcd47b6d40af6ff9f8f5889450c6f8ce94/docs/2-annotate.png)
+
+- **TOP Takeaway**: I wanted [Flameshot](https://github.com/flameshot-org/flameshot) on my Mac: pick a region, snap to a window, draw on it, copy. Instead of finding an open source tool that works and getting it installed, I had Claude write one into my setup. 45 minutes from my first message to [IgSnap](https://github.com/idvorkin/igsnap) signed in /Applications and a PR wiring it into Alfred.
+- **Why not just install one**: the built-in ⌘⇧4 can't annotate in place; you catch the floating thumbnail, open Markup, then copy. Flameshot's README says that on macOS 15 and up you clear the quarantine flag by hand before it will open. I never tried Shottr or CleanShot, so this is not a bake-off. The point is that I didn't have to shop.
+- **The timing**, by the clock:
+  - 07:45: I ask for a plan in a repo.
+  - 07:47: the plan is committed, with an honest "the built-in tool almost does this, here is the narrow gap".
+  - 08:03: the app is committed: freeze the screen, hover to snap to a window or drag a region, arrow, rectangle, ellipse, text, copy.
+  - 08:12: first run on my real screen. My whole review: "otherwise great".
+  - 08:15: my one round of feedback is in: a separate black-out box, thicker lines, thicker arrows.
+  - 08:18: the README has pictures.
+  - 08:30: the PR that puts it behind my Alfred `ss` keyword is open.
+- **How much of me it took**: 11 short messages, about 140 words. Three were product decisions: the ask, "add ellipse, no hotkey, call it IgSnap, make it public", and the black-out and thickness note. The rest were "build and run" and "how to launch". I wrote no code and read none. It cost $10 in tokens.
+- **Why I trust code I didn't read**: Claude couldn't see my screen either, so it built its own eyes.
+  - The geometry and rendering are a [core with no UI](https://github.com/idvorkin/igsnap/blob/fb9566bcd47b6d40af6ff9f8f5889450c6f8ce94/Sources/IgSnapCore/Annotation.swift#L100-L119), covered by pixel-level tests: the crop is full resolution, the right way up, and the arrow lands where it was drawn.
+  - A [headless self-test](https://github.com/idvorkin/igsnap/blob/fb9566bcd47b6d40af6ff9f8f5889450c6f8ce94/Sources/IgSnap/SelfTest.swift#L4-L7) feeds made-up mouse and key events to the real handlers in a window that is never shown.
+  - The README pictures are [drawn off screen over a made-up desktop](https://github.com/idvorkin/igsnap/blob/fb9566bcd47b6d40af6ff9f8f5889450c6f8ce94/Sources/IgSnap/Demo.swift#L4-L7), so Claude could look at its own UI, and my real desktop never lands in a public repo.
+- **Integrated, which no download does**: `ss` in Alfred now [opens IgSnap when it's installed, offers to install it when it isn't, and falls back to the old capture if I say no](https://github.com/idvorkin/alfred/blob/6619c699e2e8cf0ad50e864c8cff0f4e0e0d9caf/workflows/user.workflow.2859BD3B-9CA5-4360-A379-355F434F1908/screenshot.sh#L13-L27) ([PR](https://github.com/idvorkin/alfred/pull/36)). It follows that repo's rules too: a user story, a mocked test, a worktree. An off-the-shelf app would have left that wiring to me.
+- **What it doesn't do**: macOS 27 only, no pixelate, no save to file, and when it breaks there is no upstream to blame. The one thing that waited on me was the merge: the permission check wouldn't let Claude merge its own PR, which is the right call.
+
+### 2026-11-05
+
+#### Steve Yegge Audited His Adversarial Reviewers: Keep Them, Ban the P3s
+
+- **TOP Takeaway**: [Steve Yegge had his agents analyze thousands of adversarial reviews](https://x.com/Steve_Yegge/status/2117935817591074876) from his own system. About a quarter got blocked by the reviewer, and a meta-review found the issues the agentic reviewers raised were almost all legit. His verdict: "they work for me and I'm keeping them."
+- **The trick that makes it work**: reviewers aren't allowed to file P3s. The replies agreed that's the load-bearing part: cheap nitpicks bury the real issues, and one team got the same result by tuning their reviewer to fix only critical findings.
+- **The pushback**: it may not transfer. A strong orchestrator covers gaps an average setup misses, and others fall into an endless review spiral. [Yegge's answer](https://x.com/Steve_Yegge/status/2117982931176313200): he's running 12–18 months ahead of everyone, adversarial review will hold even against the Bitter Lesson, and you fight overengineering with regular tech-debt work, not by firing the reviewer. Another reply added the condition I'd underline: it works when the reviewer is a different model family from the implementer.
+- **The Igor angle**: that's my setup. A model from a different family gives a second-pass review after the first one builds, and CodeRabbit reviews my PRs (sometimes [losing the argument to my claw](#my-bot-wrote-their-bot-reviewed-my-bot-pushed-back-their-bot-said-oops)). What I haven't done is Yegge's audit: count how often a review actually blocked something, and how many of its findings were noise. A reviewer is a [dial set by stakes](/gas-city#what-it-costs), and without the meta-review I'm setting it by vibes. It's also the cheapest answer I have to the [Discernment Horizon](#steve-yegges-flat-curve-society-the-plateau-is-good-news-for-engineers): when I can't check the work, a reviewer from a different family can.
+
+### 2026-11-01
+
+#### Are You Using LLMs to Their Full Potential?
+
+{% include repo_image_float_right.html src="cockpit-language-practice.webp" alt="Cockpit decision card: French and Russian practice, how should it show up? Larry recommends on request on calls." %}
+
+- **TOP Takeaway**: The AI that runs my day turned into a language partner. On a 7-minute voice call with [Larry](/larry) I rehearsed my magic patter in Russian and French ("Tu veux voir un tour de cartes ?"), because c'est bon pour mon cerveau.
+- **What it took**: the first try did Russian as an English accent. One system-prompt tweak later it speaks real Russian and French when asked, and the [Cockpit](/larry-cockpit) turned "how often?" into a decision for me: on request, on calls.
 
 ### 2026-08-25
 
@@ -712,7 +793,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
   - **Now**: Code contributions are making the same shift from pets to cattle
 - **The Prediction**: "Most development tools we've been using will completely flip in the next 10 years. Everything we've been using before is either dead or slowly dying, or will completely change the way it works."
 - **Quote**: "The system is dead, long live the factory"
-- **Connection to My Practice**: This is exactly why I use [YOLO containers](/chop#yolo-containers-safe-full-autonomy) - containers are cattle, not pets. Spin up, let AI work, throw away. Same principle applies to AI-generated code.
+- **Connection to My Practice**: This is exactly why I use [YOLO containers](/how-igor-chops#vm-setup-cattle-not-pets) - containers are cattle, not pets. Spin up, let AI work, throw away. Same principle applies to AI-generated code.
 
 #### whenwords: The Ghost Library
 
@@ -1067,7 +1148,7 @@ I love adding tmux workflows, but they usually take me like 10 hours to get righ
   - Many Problems:
     - Stuff on the main account (like co-pilot code review, aren't free for other accounts doing PRs)
     - Linux/arm64: lots of broken things and few prebuilt binaries.
-  - After many false attempts (container terminal tweaks), turned out the root cause was zsh being hardcoded in my .tmux.con. Attempts logged in [Settings commit c03df99](https://github.com/idvorkin/Settings/commit/c03df99adf673707e912d4b03451b172b88c8d45).
+  - After many false attempts (container terminal tweaks), turned out the root cause was zsh being hardcoded in my .tmux.conf. Attempts logged in [Settings commit c03df99](https://github.com/idvorkin/Settings/commit/c03df99adf673707e912d4b03451b172b88c8d45).
   - Fix: made zsh path conditional in tmux for containers. See [Settings commit 3480d36](https://github.com/idvorkin/Settings/commit/3480d3649647424e9be42e3b3648c6786795abec).
   - Current problems
     - Still can't paste images in.
@@ -1145,7 +1226,7 @@ This story perfectly illustrates the current state of AI development: incredibly
 
 ![Text conversation showing discussion about Claude Code usage and subscription pricing, with messages about upgrading from $20/month to $100/month plan after recommendation about LLMs being important for productivity](https://raw.githubusercontent.com/idvorkin/ipaste/main/20250720_135628.webp)
 
-- Starting doing PRs - created 4 PRs today, 3 merged:
+- Started doing PRs - created 4 PRs today, 3 merged:
   - [nlp#11](https://github.com/idvorkin/nlp/pull/11) ✅ "feat: add Kimi AI provider support with --kimi flag (default enabled)"
   - [nlp#12](https://github.com/idvorkin/nlp/pull/12) 🔄 "feat: add comprehensive e2e tests for Kimi AI functionality" (open)
   - [settings#3](https://github.com/idvorkin/Settings/pull/3) ✅ "Add Claude Code detection to tmux_helper window renaming"
@@ -1165,17 +1246,17 @@ Wow - it's been a LONG while before I added journal entries
 - You can see output on: [Donut Profit Calculator App](https://abrupt-carpenter.surge.sh/)
 - And Git Project: [GitHub Repository](https://github.com/idvorkin/donut-profit-calculator)
 
-I also used gpt to illustrated and partially write the updates to this blog based on content from "What I learned so far".
+I also used gpt to illustrate and partially write the updates to this blog based on content from "What I learned so far".
 
 {%include summarize-page.html src="/mental-pain"%}
 
-- Image generation takes a while - but I love it. Agent based apps is super "human input time" efficient, but the wall time is annoying, it's easy to forget what you're trying to do context. I'm guessing we'll need toolls to help us do the "N-slow" tasks at once as it's easy to forget the damn goals
+- Image generation takes a while - but I love it. Agent based apps is super "human input time" efficient, but the wall time is annoying, it's easy to forget what you're trying to do context. I'm guessing we'll need tools to help us do the "N-slow" tasks at once as it's easy to forget the damn goals
 
-- Creating customGPTs from a bunch of content from my old pychiatrist
+- Creating customGPTs from a bunch of content from my old psychiatrist
 - Using chatgpt to figure out what I should/how I should pack crap in my car
 
 - COOL LEARNING:
-  - You can use surge to deploy to static web sites - nicer then clogging up my blog
+  - You can use surge to deploy to static web sites - nicer than clogging up my blog
   - gemini cli sandbox is mostly worthless
 
 ### 2024-10-27
@@ -1184,7 +1265,7 @@ I also used gpt to illustrated and partially write the updates to this blog base
 
 ### 2024-10-26
 
-- Use Semantic Search for similar websites to what im [thinking about](https://github.com/idvorkin/nlp/blob/55a2e50d2f02f7660dbbf101d12c7a1e3368e947/think.py?plain=1#L296) e.g. thinks like [this page](https://gist.github.com/idvorkin/94fb8420a973e61ee5f1b61be926ecaf#---exaai-related-search-results---)
+- Use Semantic Search for similar websites to what I'm [thinking about](https://github.com/idvorkin/nlp/blob/55a2e50d2f02f7660dbbf101d12c7a1e3368e947/think.py?plain=1#L296) e.g. things like [this page](https://gist.github.com/idvorkin/94fb8420a973e61ee5f1b61be926ecaf#---exaai-related-search-results---)
   ![Screen shot of related web results](https://raw.githubusercontent.com/idvorkin/ipaste/main/20241027_093056.webp)
 
 ### 2024-10-20
@@ -1213,10 +1294,10 @@ yt-dlp --write-auto-sub   --skip-download https://www.youtube.com/watch\?v\=kgr2
 - But it's too big, ~ 1M tokens thanks to the VTT format.
   - Good enough to stick into google gemini
   - GROAN, of course that doesn't work since output limit.
-- Sigh, lets upgrade our captions processing - luckily, I've played with this before:
+- Sigh, let's upgrade our captions processing - luckily, I've played with this before:
   - [Captions](https://github.com/idvorkin/nlp/blob/c050626b4f88ffb09622938d1bb5c55c2e05618a/captions.py?plain=1#L21)
   - What's great is I basically wrote this code using Aider.
-- OK Lets run it:
+- OK Let's run it:
 
 ```bash
 cat ~/tmp/t/show.vtt | ./captions.py to-human | tee show.md
@@ -1232,7 +1313,7 @@ cat ~/tmp/t/show.vtt | ./captions.py to-human | tee show.md
 
 - Interesting, trying to get the chatgpt website to read the file fails, even though it fits into the context window.
   - ChatGPT:
-  - I could work around this by working with the API, but for chat I prefer using UX, and its cheaper with these big files
+  - I could work around this by working with the API, but for chat I prefer using UX, and it's cheaper with these big files
 - Back to [google vertex](https://console.cloud.google.com/vertex-ai/studio/), which is working well at this file size
 - Finally the [output of exercises](https://gist.github.com/idvorkin/2e3111a07531fefb11e789144e1c372f)
 
@@ -1278,7 +1359,7 @@ Here's [a change almost totally done with Aider](https://github.com/idvorkin/Set
 
 #### Awesome talks
 
-OK, so turns out [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) Has amazing talks, I watched several, including his great talk on security. Which insipired me to create [AI Security](/ai-security)
+OK, so turns out [Andrej Karpathy](https://www.youtube.com/@AndrejKarpathy) Has amazing talks, I watched several, including his great talk on security. Which inspired me to create [AI Security](/ai-security)
 
 #### Working through making Neural Nets
 
@@ -1288,7 +1369,7 @@ See: <https://karpathy.ai/zero-to-hero.html>
 
 #### Auto code editing (via Aider) - TOO Soon
 
-OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally it could do more complex changes, like find code that would be good to refactor then make those changes. [aider](https://aider.chat/) is supposed to that, but in my experience, it just made stuff wrose and was slower then me making the changes myself. I guess I'll try again in a while.
+OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally it could do more complex changes, like find code that would be good to refactor then make those changes. [aider](https://aider.chat/) is supposed to do that, but in my experience, it just made stuff worse and was slower than me making the changes myself. I guess I'll try again in a while.
 
 ### 2024-07-30
 
@@ -1302,13 +1383,13 @@ OK, so, copilot tends to be just a code completion, which is pretty meh. Ideally
 
 #### Next Gen Models
 
-Claude 3.5 Sonnet just came out. Sonnet is Anthropics Medium model. It has the same performance envelope as GPT-4o, making me assume GPT-4o is also the medium model. What's interesting, it initially OpenAI marketted GPT-4o as a 4x faster 2x cheaper GPT-4 Large model, but honestly I think it' sjust the medium. That means either the medium Gpt 4.5 large is coming, or it's performance envelope isn't worth it.
+Claude 3.5 Sonnet just came out. Sonnet is Anthropic's Medium model. It has the same performance envelope as GPT-4o, making me assume GPT-4o is also the medium model. What's interesting, it initially OpenAI marketed GPT-4o as a 4x faster 2x cheaper GPT-4 Large model, but honestly I think it's just the medium. That means either the medium Gpt 4.5 large is coming, or it's performance envelope isn't worth it.
 
 Model classes: - Price/Latency/Performance
 
 #### Lots of progression on Evals
 
-Check out the great documentation at promptfoo, including redteaming I thgues sthat'll be a big thing soon. - <https://promptfoo.dev/docs/guides/llm-redteaming>
+Check out the great documentation at promptfoo, including redteaming I guess that'll be a big thing soon. - <https://promptfoo.dev/docs/guides/llm-redteaming>
 
 ### 2024-04-06
 
@@ -1319,7 +1400,7 @@ Check out the great documentation at promptfoo, including redteaming I thgues st
 - Retrieval
   - Better Observability
   - Better Retrieval Strategies
-  - Chunk Manager Book my chapters
+  - Chunk Manager Book by chapters
 
 ### 2024-03-24
 

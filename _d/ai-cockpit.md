@@ -68,19 +68,42 @@ The funny part: transcription quality barely matters. Agents are resilient to ga
 
 See more in my [AI Journal entry on voice coding](/ai-journal#using-voice-to-make-commands).
 
-#### The mic matters more than I thought
+#### Custom hardware for voice
 
-Software gets the headlines, but a real lapel mic close to your mouth beats laptop and phone built-ins by a country mile. I used to think Siri dictation was terrible, but it turned out part of the problem was my input. The right microphone totally fixes it — Siri's now almost as good as Wispr Flow.
+Software gets the headlines, but the hardware around voice matters more than I expected. Two pieces: a mic that hears me, and a button so I never reach for the keyboard.
 
-What I'm using:
+{% include amazon.html asin="B0DNQ5D1H4;B0DYCN3G9W" %}
 
-{% include amazon.html asin="B0DNQ5D1H4" %}
+##### The mic matters more than I thought
 
-The Hollyland Lark M2S Mini Combo — wireless lavalier, 7g, USB-C plus a Camera RX, works with iPhone, Android, laptop, or camera, 300m range. I didn't actually buy it for this — I had it for another project, and it turned out to be the right tool for vibing too. So this isn't a "go spend a few hundred bucks" rec; it's a "if you already have a good lav, point it at Wispr or Siri" rec.
+A real lapel mic close to your mouth beats laptop and phone built-ins by a country mile. I used to think Siri dictation was terrible, but it turned out part of the problem was my input. The right microphone totally fixes it — Siri's now almost as good as Wispr Flow.
+
+I use the Hollyland Lark M2S Mini Combo — wireless lavalier, 7g, USB-C plus a Camera RX, works with iPhone, Android, laptop, or camera, 300m range. I didn't actually buy it for this — I had it for another project, and it turned out to be the right tool for vibing too. So this isn't a "go spend a few hundred bucks" rec; it's a "if you already have a good lav, point it at Wispr or Siri" rec. More mic options as I try them.
+
+##### A button for the voice
+
+A $36 [ZTYTO scrolling ring](https://www.amazon.com/dp/B0DYCN3G9W?tag=ighe-20), a touchpad ring sold for scrolling TikTok. I remapped it in Karabiner so a tap toggles Wispr Flow and the right button hits Enter. Now I can dictate and send a prompt from the couch or the treadmill without touching the keyboard.
+
+Wiring it up on a new Mac, once it's paired:
+
+1. **Let Karabiner modify it.** Karabiner leaves mice alone by default. Turn on "Modify events" for the D06 Pro under Devices, which writes [these entries](https://github.com/idvorkin/Settings/blob/671d776/mac/karabiner.json#L2961-L2978). Over the 2.4G USB receiver it reports a different product ID (1025 instead of 257), so the config lists both.
+2. **Add the rule.** [The rule](https://github.com/idvorkin/Settings/blob/671d776/mac/karabiner.json#L6-L63) only matches the ring, so my other mice keep working: tap runs a script, right click sends Enter, middle click becomes a left click.
+3. **Toggle Wispr from the script.** Wispr Flow has no toggle you can call, but the app registers `wispr-flow://start-hands-free` and `wispr-flow://stop-hands-free`. They're undocumented; I found them in version 1.6.1583. [A short script](https://github.com/idvorkin/Settings/blob/671d776/mac/wispr_hands_free.sh) remembers which one comes next.
+
+Nothing needs binding in Wispr. If Wispr stops on its own (silence, or Esc), the script doesn't know, so the next tap is a dud and the one after starts listening again.
+
+The ring's model is the **D06 Pro** (ZTYTO is the seller brand); its [user manual](https://fccid.io/2A66I-D06/User-Manual/User-manual-7870474.pdf) is in the FCC filing.
+
+<details markdown="1">
+<summary>Pairing it with a Mac</summary>
+
+- **On:** hold the scroll wheel 1 s. Fast blue flash = Bluetooth pairing; red and blue flashing together = 2.4G (USB receiver) mode. Press the two keys together for 1 s to switch modes.
+- **Pair:** on power-up it reconnects to the last device, so first forget "D06 Pro" on the old phone or Mac, then add "D06 Pro" in the Mac's Bluetooth settings.
+- **Off:** hold the wheel 5 s. It also turns itself off after 5 minutes unconnected.
+
+</details>
 
 For the full deep dive on why voice changes how you work with AI, see [You Need to Use Voice](/ai-operator#you-need-to-use-voice).
-
-More mic options as I try them.
 
 ### Tmux on Super Steroids - The Multiplexer
 
@@ -141,7 +164,7 @@ The Agent Dashboard knows what my agents are _doing_ right now. GitHub knows wha
 - [Open PRs involving idvorkin-ai-tools](https://github.com/pulls/2294839?q=+%28involves%3Aidvorkin-ai-tools%29+++++state%3Aopen+archived%3Afalse+sort%3Aupdated-desc+created%3A%3E%40today-4w+)
 - [Open issues & PRs involving idvorkin-ai-tools](https://github.com/issues/SSC_kgDOACMG4Q?q=%28involves%3Aidvorkin-ai-tools%29%20state%3Aopen%20archived%3Afalse%20sort%3Aupdated-desc%20created%3A%3E%40today-4w%20is%3Aissue%20is%3Apr)
 
-One tab, one glance, full triage queue. Before I had these, agent PRs on stale branches just vanished from my attention; now the staleness is the sort key.
+One tab, one glance, full triage queue. Before I had these, agent PRs on stale branches just vanished from my attention; now the staleness is the sort key. For the long view, how much of that queue actually merges month over month, I check [Build Stats](/build-stats).
 
 ### Stream Deck - The Physical Buttons
 

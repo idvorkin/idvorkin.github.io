@@ -8,7 +8,7 @@ _[Copied from my GitHub techdiary](https://github.com/idvorkin/techdiary/blob/ma
 
 # Hacking the web for fun and profit
 
-Now a days javascript and HTML are the assembly language of the web (I first [said this in 2012](http://ig2600.blogspot.com/2012/05/assembly-to-javascript-tsrs-to.html)). While still stuff is fun, it's very brittle because 1) the approach is brittle, and 2) everytime the code changes, which it will everything will break.
+Nowadays javascript and HTML are the assembly language of the web (I first [said this in 2012](http://ig2600.blogspot.com/2012/05/assembly-to-javascript-tsrs-to.html)). While still stuff is fun, it's very brittle because 1) the approach is brittle, and 2) every time the code changes, which it will everything will break.
 
 <!-- vim-markdown-toc-start -->
 
@@ -52,9 +52,9 @@ Turns out you can stick javascript in the address bar, that's a bookmarklet. Her
 
 ### Grease Monkey - User Script loader
 
-Called Taper Monkey for chrome, it auto loads a script when you enter a webpage. Useful to personalize websites via css and javascript.
+Called Tamper Monkey for chrome, it auto loads a script when you enter a webpage. Useful to personalize websites via css and javascript.
 
-I'm not sure the differences, but I use [Voilent Monkey](https://violentmonkey.github.io/) now.
+I'm not sure the differences, but I use [Violent Monkey](https://violentmonkey.github.io/) now.
 
 ## Console Tricks
 
@@ -84,11 +84,11 @@ document.querySelector("video").pause()
 
 https://developers.google.com/web/tools/chrome-devtools/shortcuts
 
-| Key   | Command                       |
-| ----- | ----------------------------- |
-| C-S-I | Enter dev tools               |
-| C-S-M | Toggle Mobile Emulator        |
-| C-S-R | Hard reload (breaking cache)  |
+| Key   | Command                      |
+| ----- | ---------------------------- |
+| C-S-I | Enter dev tools              |
+| C-S-M | Toggle Mobile Emulator       |
+| C-S-R | Hard reload (breaking cache) |
 | C-S-P | Command Palette (super cool) |
 
 ### Force reloading
@@ -117,7 +117,7 @@ How to use:
 - Goto Sources -> Page
 - Find your file, right click and save to overrides
 
-Now you can edit your file to your hearts content
+Now you can edit your file to your heart's content
 
 ## Real life examples
 
@@ -131,7 +131,7 @@ Turns out there are audio elements on the page
 
     $("audio")
 
-Normally, the src attribute in the src element would have a src element, which is does not:
+Normally, the src attribute in the src element would have a src element, which it does not:
 
     <audio id="audio-A32DOYMUN6DTXA:1.0/2020/04/21/14/G090U61091621908/08:16::TNIH_2V.4f0562e5-aff9-48a1-868a-85aa77aac07aZXV/1">
         <source id="audioSource-A32DOYMUN6DTXA:1.0/2020/04/21/14/G090U61091621908/08:16::TNIH_2V.4f0562e5-aff9-48a1-868a-85aa77aac07aZXV/1"/>
@@ -144,7 +144,7 @@ However, when you click on the play button src attribute appears on the source e
         src="https://www.amazon.com/hz/mycd/playOption?id=A32DOYMUN6DTXA:1.0/2020/04/21/14/G090U61091621908/08:16::TNIH_2V.4f0562e5-aff9-48a1-868a-85aa77aac07aZXV/1">
     </audio>
 
-And luckily, the "src" is encoding in the audio source id. Let's pull those out:
+And luckily, the "src" is encoded in the audio source id. Let's pull those out:
 
        https://www.amazon.com/hz/mycd/playOption?id=
 
@@ -152,7 +152,7 @@ So
 
     $("audio source").each((i,e)=> console.log($(e).attr("id").replace("audioSource-","")))
 
-And lets prepend the download URL
+And let's prepend the download URL
 
        https://www.amazon.com/hz/mycd/playOption?id=A3S5BH2HU6VAYF:1.0/2020/04/21/19/G090LF1175130LD2/23:09::TNIH_2V.252ac310-314c-48e4-b433-749bdb9e8b5eZXV/0
 
@@ -220,13 +220,13 @@ Red Herring: Audio src doesn't appear till you click the play button:
 
 Red Herring: Search for a handy JSON blob.
 
-If you're lucky the JS downloads a data blob, you can check this by going to the network view, and searching for what you're looking for. In this case, a partial html page was downloaded, which is harder to parse then the DOM (which you can search via JQuery)
+If you're lucky the JS downloads a data blob, you can check this by going to the network view, and searching for what you're looking for. In this case, a partial html page was downloaded, which is harder to parse than the DOM (which you can search via JQuery)
 
 ### Automating todo item creation in omnifocus for web
 
 **Too painful - got into some react/redux sync model, gave up**
 
-Ominfocus doesn't support APIs, so we need to automate the web.
+Omnifocus doesn't support APIs, so we need to automate the web.
 
 In omnifocus, you can add a task by pressing the 'c' key, which brings up a dialog. We can "hook that", by setting a breakpoint on global keypress events.
 
@@ -254,18 +254,18 @@ The cloud reader keeps an iframe containing a subset of the book. You can use jq
 
 If you look in the network panel, you can see individual fragments being downloaded, which is triggered by clicking next or previous page after a few pages. The fragments are used to load/maintain the fragments.
 
-In theory if we can download all fragments you can load the whole book into the iFrame. This was much easier said then done as the code was obfuscicated, and that broke lots of the normal chrome debugging tools.
+In theory if we can download all fragments you can load the whole book into the iFrame. This was much easier said than done as the code was obfuscated, and that broke lots of the normal chrome debugging tools.
 
-I found a a global logging object, I connected it to console.log to see what developers see.
+I found a global logging object, I connected it to console.log to see what developers see.
 
 > KindleDebug.log = console.log
 
-I then spent a bunch of time try to figure out where the fragments were getting selected. It was super hard due to the anti-debugging measures. Finally I found:
+I then spent a bunch of time trying to figure out where the fragments were getting selected. It was super hard due to the anti-debugging measures. Finally I found:
 
 > loadNextPages()
 > loadFragmentsForRange()
 
-I realized I can change the position range for loadFragmentsForRange(). Changing it didn't always result in more content in the iFrame, so I needed a way to automate it. In theory I could change the obfucated source code, but Chrome's workspace/local copy wasn't working (not sure why), so I used a logpoint (a breakpoint that logs) to modify the fragment range. With this, it worked!
+I realized I can change the position range for loadFragmentsForRange(). Changing it didn't always result in more content in the iFrame, so I needed a way to automate it. In theory I could change the obfuscated source code, but Chrome's workspace/local copy wasn't working (not sure why), so I used a logpoint (a breakpoint that logs) to modify the fragment range. With this, it worked!
 
 Hooray.
 
@@ -275,7 +275,7 @@ I started by trying to create this myself, but as with most "build" vs "buy", yo
 
 ### CSS
 
-- Foundation - called [magellon](https://get.foundation/sites/docs/magellan.html)
+- Foundation - called [magellan](https://get.foundation/sites/docs/magellan.html)
 - Bootstrap - called [scroll spy](https://getbootstrap.com/docs/4.4/components/scrollspy/)
 
 ### Javascript Reverse Engineering Fly out TOC
@@ -284,7 +284,7 @@ Looks like the CSS needs to have the data setup correctly. I found some javascri
 
 ## CSS - Styling a web page low level abstraction.
 
-CSS is stying for the web. CSS is very complex. I recommend using a higher level framework like Bootstrap in general, however abstractions are leaky so you also need to understand some core CSS concepts.
+CSS is styling for the web. CSS is very complex. I recommend using a higher level framework like Bootstrap in general, however abstractions are leaky so you also need to understand some core CSS concepts.
 
 ### CSS selectors
 

@@ -106,7 +106,7 @@ Private
 
 ### Software for Balance
 
-- ☑ Parse the the weekly summaries and [put them into the blog post](https://github.com/idvorkin/jupyter/blob/master/WeekAnalysis.ipynb).
+- ☑ Parse the weekly summaries and [put them into the blog post](https://github.com/idvorkin/jupyter/blob/master/WeekAnalysis.ipynb).
 - Review and have someone else score your balance.
 
 ### Tech Guru
@@ -134,7 +134,7 @@ It's something that I'm over invested in, and need to put an upper bound on to l
 ### Blog posts
 
 - ☐ Read and update [Switch](/switch)
-- ☑ Start a [productity post](/productive)
+- ☑ Start a [productivity post](/productive)
 - ☑ Update some [Sleight of mouth](/sleight-of-mouth)
 - ☐ Merge Anxiety Todo list into some of the blogs
 - ☑ Update search to be an auto complete based search.

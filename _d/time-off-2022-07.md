@@ -42,7 +42,7 @@ This is a combination of [time off](/time-off), and all the stuff for [happiness
   - Radishes and Cherries for Lunch
   - Perfect weather, wandering randomly
   - Super tasty salad for dinner
-  - Dipped ice cream - love the coating, thew away the ice cream
+  - Dipped ice cream - love the coating, threw away the ice cream
   - gave out tonnes of balloons
   - Gave a balloon flower to an older lady who was looking at me
   - People asking about why my mismatched shoes - the answer makes people smile
@@ -130,12 +130,12 @@ Last morning
 
 ### Blogging
 
-- Not at the expensive of family time.
+- Not at the expense of family time.
 - Doing it early in the morning before folks get up is reasonable.
 
 ### Programming
 
-- ☐ Finish and summarize book on [recommender systems](/recommender). (Part of the work side of time off and on the flights). Harder then I expected
+- ☐ Finish and summarize book on [recommender systems](/recommender). (Part of the work side of time off and on the flights). Harder than I expected
 
 ## Identity Health (Y/5)
 
@@ -166,7 +166,7 @@ Last morning
 
 - ☐ Foam roll every morning
 - ☐ Wrist stretches every morning
-- ☐ Assisteted weights every few days
+- ☐ Assisted weights every few days
 - ☐ Cardio every other day
 - ☐ Assisted pullups
 
@@ -188,13 +188,13 @@ Gym Days:
 ### Sleep
 
 - ☐ To bed by 10 (if not 8) every night
-- ☐ Only read before bend.
+- ☐ Only read before bed.
 
 ## Mental quicksand
 
 ### Guilt of missing summer time with family
 
-- Very crap weather in seattle, little time to enjoy sumemr with family
+- Very crap weather in seattle, little time to enjoy summer with family
 - Kept trip a bit shorter
 - Work from trip to get other time off with family.
 
@@ -210,7 +210,7 @@ Even with a down market, I've still got lots of savings, and a fantastic job, an
 
 ### Missing root from tooth extraction
 
-I just got a tooth extracton and am concerned about root removal, following up with Oral Surgean and endontist before I go, and deciding I'll trust their answer
+I just got a tooth extraction and am concerned about root removal, following up with Oral Surgeon and endodontist before I go, and deciding I'll trust their answer
 
 ### No buffer between vacation and work
 
@@ -240,7 +240,7 @@ I guess if I do, I can take the time off.
 
 ### Good life
 
-- Got a gym membership - cheaper then day passes
+- Got a gym membership - cheaper than day passes
 - Tried a few. One had no showers,
 - Top metric is probably BP/sqft
 - Last one I went to had a saltwater pool and a cold plunge, and everything else. Was awesome. And massage chairs
@@ -248,7 +248,7 @@ I guess if I do, I can take the time off.
 
 ### Rental Car
 
-- Premium was cheaper then economy.
+- Premium was cheaper than economy.
 - Pretty fun to drive, glad with lots of driving and weather
 - Learning: Take time to learn how to use the features, fuel, fancy lock/unlock
 - Learning: Go buy a phone mount as phones are great
@@ -256,12 +256,12 @@ I guess if I do, I can take the time off.
 ### Air Port to Quebec
 
 - Followed apple map directions to close place in middle of air port
-- Couldn't ge ta hold of my rental company, tried the others, finally someone told me that one was closed, go to other terminal (rudely - compassion)
+- Couldn't get a hold of my rental company, tried the others, finally someone told me that one was closed, go to other terminal (rudely - compassion)
 - Went to take laptop out of bag, not in bag :(
 - Called everywhere I was.
 - Decided couldn't be in my carry on because it was x-ray'd
 - Bag didn't fit in size dimensions by an inch, luckily had bands, and banded them up so it would fit.
-- After all that couldnt' get bag on plane, had to check it. Only thing I had was my foam roller
+- After all that couldn't get bag on plane, had to check it. Only thing I had was my foam roller
 - But had to check bag, and pick up
 - Best part, met someone cool - ranking professor, which I was working on
 
@@ -292,13 +292,13 @@ I guess if I do, I can take the time off.
 Post-Hoc realized I was being an [essentialist](/essential):
 
 - Skipped morning stage shows (don't love them), and did lectures instead. Awesome!
-- Really enjoyed the lecture so boughht his class (OK, will probably never watch it, but fingres crossed)
-- Snuck out of banquet since folks i didn't connect with my table mates to talk to family.
+- Really enjoyed the lecture so bought his class (OK, will probably never watch it, but fingers crossed)
+- Snuck out of banquet since folks I didn't connect with my table mates to talk to family.
 - Took two slots to clear my head and meditate
 - Took a break in the middle of the day to meditate
 - Took time during intermissions to do stretching
 - I do weird stretches so people always ask if I'm OK.
-- Left the envening show 15 minutes in so I could sleep in instead. Should have not showed up.
+- Left the evening show 15 minutes in so I could sleep in instead. Should have not showed up.
 - Asked folks who said they do balloons and bands to show me what they do
 - Talking to Zach and Tori!
 
@@ -317,8 +317,8 @@ Post-Hoc realized I was being an [essentialist](/essential):
 - Cool idea of cards going up
 - Using "broken magic" to be human (see Show don't tell kids magic)
 - Be yourself
-- Have a reason for your magical jesture. Say if someone buys you dinner you can talk for 30 minutes
-- Use cigaratee to load card to cigarette
+- Have a reason for your magical gesture. Say if someone buys you dinner you can talk for 30 minutes
+- Use cigarette to load card to cigarette
 
 ### Priorities
 
