@@ -31,6 +31,28 @@ Cardio capacity is a wide base of easy work under a peak of hard work. Most of t
 
 Peter Attia draws cardio fitness as a [triangle](https://peterattiamd.com/a-better-way-to-think-about-zone-2/):
 
+<figure style="margin:1.5em auto;max-width:460px;">
+<svg viewBox="0 0 380 246" role="img" aria-labelledby="cardio-tri-title cardio-tri-desc" style="display:block;width:100%;height:auto;">
+<title id="cardio-tri-title">Base and peak</title>
+<desc id="cardio-tri-desc">A triangle in three bands. The wide bottom band is zones 1–2, the base, built by lots of easy minutes. A thin middle band is zone 3, the grey zone, where little time goes. The small top band is zones 4–5, the peak, VO2 max, built by a few hard intervals.</desc>
+<g stroke="currentColor" stroke-width="1.5" stroke-linejoin="round">
+<polygon points="125,14 167.5,92 82.5,92" fill="rgba(244,160,0,.45)"/>
+<polygon points="82.5,92 167.5,92 178.5,112 71.5,112" fill="rgba(128,128,128,.4)"/>
+<polygon points="71.5,112 178.5,112 245,234 5,234" fill="rgba(52,168,83,.3)"/>
+<path d="M148 46H182M177 102H182" fill="none" stroke-width="1"/>
+</g>
+<g fill="currentColor">
+<text x="188" y="50" font-size="13" font-weight="600">Zones 4–5 build the peak</text>
+<text x="188" y="66" font-size="11.5" opacity="0.75">VO2 max · a few hard intervals</text>
+<text x="188" y="106" font-size="13" font-weight="600">Zone 3 is the grey zone</text>
+<text x="188" y="122" font-size="11.5" opacity="0.75">little time goes here</text>
+<text x="125" y="204" text-anchor="middle" font-size="13" font-weight="600">Zones 1–2 build the base</text>
+<text x="125" y="221" text-anchor="middle" font-size="11.5" opacity="0.75">volume: lots of easy minutes</text>
+</g>
+</svg>
+<figcaption><small><em>The base and peak triangle, with the zones that build each part.</em></small></figcaption>
+</figure>
+
 - **The base** is how long I can keep doing submaximal work. Volume builds it: lots of easy minutes.
 - **The peak** is VO2 max, the most oxygen I can use going all out. A few hard intervals build it.
 
@@ -193,7 +215,7 @@ That heart rate is the ceiling, on that machine, for now. It moves as the base g
 
 Why these earn a spot:
 
-- **VO2 max** tracks how long people live. In a [study of 122,000 treadmill tests](https://pubmed.ncbi.nlm.nih.gov/30646252/), moving from the bottom quarter of fitness to merely below average went with [about half the risk of dying](https://peterattiamd.com/how-does-vo2-max-correlate-with-longevity/) from any cause.
+- **VO2 max** tracks how long people live. In a [study of 122,000 treadmill tests](https://pubmed.ncbi.nlm.nih.gov/30646252/), moving from the bottom quarter of fitness to merely below average went with about half the [all-cause mortality](https://peterattiamd.com/how-does-vo2-max-correlate-with-longevity/): the risk of dying from anything at all, not only heart disease.
 - **One-minute recovery** of 12 beats or less [predicted higher mortality](https://pubmed.ncbi.nlm.nih.gov/10536127/) in a six-year follow-up of 2,428 adults.
 - **Heart rate at a fixed level** is the cheap version of a lactate test: the same work costing fewer beats means the base grew.
 
