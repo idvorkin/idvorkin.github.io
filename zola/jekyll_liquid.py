@@ -10,9 +10,10 @@ Jekyll specifics on top of stock Liquid:
   shares the page's scope (an `assign` inside it leaks out, which the
   emit-once flags rely on), and quoted values take backslash escapes.
 - filters: jsonify, markdownify, cgi_escape, uri_escape, xml_escape,
-  relative_url, absolute_url. An unknown filter is a no-op, as in Liquid 4's
-  lax mode: the site's `cgi_encode` and `strip_slash` are not real filters,
-  and its tag links rely on that.
+  relative_url, absolute_url. Jekyll passes a value through a filter it does
+  not know; so does this, but it records the name (a warning in previews, a
+  failure with STRICT=1). The two non-filters main already leans on,
+  `cgi_encode` and `strip_slash`, are registered as no-ops.
 """
 
 import json
@@ -21,6 +22,7 @@ import urllib.parse
 from pathlib import Path
 
 from liquid import Environment
+from liquid.exceptions import LiquidNameError
 from liquid._io import StringBuffer
 from liquid.loaders import CachingDictLoader
 from liquid.tokens import TOKEN_COMMA, TOKEN_TAG_END
@@ -160,10 +162,12 @@ def make_env(repo: Path, site: dict) -> Environment:
     for f in (repo / "_includes").iterdir():
         if f.is_file():
             sources[f.name] = rewrite_includes(f.read_text(), literals)
-    env = Environment(loader=CachingDictLoader(sources), strict_filters=False)
+    env = Environment(loader=CachingDictLoader(sources), strict_filters=True)
     env.tags["jinclude"] = JInclude
     env.include_depth = 0
     env.on_include = None
+    env.unknown_filters = set()
+    env.sources = sources
     env.passthrough = {}
     env.literals = literals
     base = str(site.get("baseurl") or "")
@@ -182,11 +186,27 @@ def make_env(repo: Path, site: dict) -> Environment:
         .replace(">", "&gt;")
         .replace('"', "&quot;")
     )
+    # Not real Jekyll filters, but the site uses them, and Liquid 4's lax mode
+    # passes the value through an unknown filter. The tag links rely on it.
+    f["cgi_encode"] = lambda _c, v: v
+    f["strip_slash"] = lambda _c, v: v
     f["relative_url"] = lambda _c, v: base + "/" + _s(v).lstrip("/")
     f["absolute_url"] = lambda _c, v: url + base + "/" + _s(v).lstrip("/")
     return env
 
 
 def render(env: Environment, src: str, data: dict) -> str:
-    template = env.parse(rewrite_includes(src, env.literals))
-    return template.render({**env.literals, **data})
+    """Render, treating an unknown filter the way Jekyll does (the value
+    passes through) but on the record: each one is added to
+    env.unknown_filters, and the caller decides whether that fails the build."""
+    while True:
+        try:
+            template = env.parse(rewrite_includes(src, env.literals))
+            return template.render({**env.literals, **data})
+        except LiquidNameError as e:
+            m = re.search(r"unknown filter '([\w-]+)'", str(e))
+            if not m or m.group(1) in env.filters:
+                raise
+            env.unknown_filters.add(m.group(1))
+            env.filters[m.group(1)] = lambda _c, v, *a, **k: v
+            env.loader = CachingDictLoader(env.sources)  # drop templates parsed before

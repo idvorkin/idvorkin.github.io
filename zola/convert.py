@@ -990,6 +990,12 @@ def main() -> None:
         json.dumps([{"tag": t, "count": len(tag_docs[t])} for t in sorted(tag_docs)])
     )
     check_ported(report)
+    report["unknown_filters"] = sorted(env.unknown_filters)
+    if env.unknown_filters:
+        msg = f"unknown Liquid filters passed through as Jekyll does: {sorted(env.unknown_filters)}"
+        if os.environ.get("STRICT"):
+            sys.exit(msg)
+        print("WARNING: " + msg, file=sys.stderr)
     json.dump(report, sys.stdout, indent=1, default=str)
     print()
     if report["errors"]:

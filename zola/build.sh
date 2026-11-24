@@ -7,6 +7,7 @@
 #   SRC=~/gits/larry-blog/.worktrees/x OUT=/tmp/x zola/build.sh   # any checkout
 #   BASE_URL=https://host:port zola/build.sh                      # preview URLs
 #   BACKLINKS=1 PAGEFIND=1 zola/build.sh   # + back-links.json and search index
+#   BACKLINKS=cached reuses the index from this WORK dir's last full build
 #
 # SRC   Jekyll checkout to build (default: the one this script sits in). It
 #       does not need a zola/ directory: the toolchain is separate from the
@@ -44,13 +45,22 @@ printf '{"branch":"%s","pr_number":%s,"changed_pages":[]}\n' "$branch" "${PR_NUM
 (cd "$WORK" && "$ZOLA" build -o "$OUT" --force --base-url "$BASE_URL")
 python3 "$HERE/finish.py" "$WORK" "$OUT" "$BASE_URL"
 
-if [ -n "${BACKLINKS:-}" ]; then
+if [ "${BACKLINKS:-}" = cached ] && [ -f "$WORK/bbl/back-links.json" ]; then
+  # A preview rebuild: the index from the first build is close enough (what
+  # `just ensure-backlinks` does for jekyll serve), and it costs 10 s to redo.
+  rm -f "$OUT/back-links.json" && cp "$WORK/bbl/back-links.json" "$OUT/back-links.json"
+elif [ -n "${BACKLINKS:-}" ]; then
   # ponytail: build_back_links.py hardcodes ./_site and must run inside the
   # checkout (it asks git about each source file). So run a copy of it that
   # says _zsite instead, with _zsite a short-lived symlink to our
   # output. Upgrade path: a --site-dir option on build_back_links.py upstream.
   mkdir -p "$WORK/bbl"
-  sed 's/_site/_zsite/g' "$SRC/build_back_links.py" > "$WORK/bbl/build_back_links.py"
+  # It also only knows how to strip localhost and idvork.in from URLs, so a
+  # preview on another host needs its BASE_URL stripped as well.
+  sed -e 's/_site/_zsite/g' \
+    -e "s|url = url.replace(\"https://idvork.in\", \"\")|url = url.replace(\"https://idvork.in\", \"\").replace(\"$BASE_URL\", \"\")|" \
+    "$SRC/build_back_links.py" > "$WORK/bbl/build_back_links.py"
+  grep -qF "replace(\"$BASE_URL\"" "$WORK/bbl/build_back_links.py" || { echo "build_back_links.py changed: the BASE_URL patch no longer applies" >&2; exit 1; }
   ln -sfn "$OUT" "$SRC/_zsite"
   (cd "$SRC" && PYTHONPATH="$SRC" uv run "$WORK/bbl/build_back_links.py" build --output-file "$WORK/bbl/back-links.json" > "$WORK/backlinks.log" 2>&1) \
     || { rm -f "$SRC/_zsite"; tail -20 "$WORK/backlinks.log"; exit 1; }

@@ -30,7 +30,7 @@ SRC=$SRC OUT=$ZOUT "$HERE/../build.sh" > "$SHOTS/build.log"
 [ -f "$SRC/back-links.json" ] && cp "$SRC/back-links.json" "$JEKYLL/back-links.json" && cp "$SRC/back-links.json" "$ZOUT/back-links.json"
 
 SHOTS=$SHOTS python3 - "$JEKYLL" "$ZOUT" > "$SHOTS/urls.json" <<'PY'
-import hashlib, json, os, sys
+import hashlib, json, os, re, sys
 from pathlib import Path
 j, z = Path(sys.argv[1]), Path(sys.argv[2])
 urls = []
@@ -65,7 +65,8 @@ for site, root in (("jekyll", j), ("zola", z)):
     for u in urls:
         rel = "index.html" if u == "/" else u.strip("/") + ("/index.html" if u.endswith("/") else ".html")
         f = root / rel
-        now[site][u] = hashlib.sha1(f.read_bytes()).hexdigest() if f.exists() else None
+        # <meta> tags do not render: an og:description tweak re-shoots nothing.
+        now[site][u] = hashlib.sha1(re.sub(rb"<meta\b[^>]*>", b"", f.read_bytes())).hexdigest() if f.exists() else None
 if shots_file.exists() and old:
     shots = json.loads(shots_file.read_text())
     stale = [k for k in shots if (lambda u, w, s: s in now and u in now[s] and old.get(s, {}).get(u) != now[s][u])(*k.split("|"))]
@@ -94,6 +95,7 @@ args=("$SHOTS" --a "$A" --b "$B" --preview "${PREVIEW_URL:-}")
 if [ -z "${NOISE:-}" ]; then
   args+=(--baseline "$HERE/baseline.json")
   [ -n "${UPDATE_BASELINE:-}" ] && args+=(--update-baseline)
+  [ -n "${ACCEPT_WORSE:-}" ] && args+=(--accept-worse)
 fi
 nice -n 19 ionice -c 3 "$HERE/compare.py" "${args[@]}"
 echo "report: $SHOTS/$A-vs-$B/index.html"

@@ -72,7 +72,7 @@ Rewriting every root link for a subpath would break the JS that fetches by
 absolute path, so that is not planned.
 
 Until the CNAME exists, the tailnet preview of the main checkout is the
-mirror: <https://c-5004.squeaker-teeth.ts.net:8448>.
+mirror: `https://<vm>.<tailnet>.ts.net:8448` (the exact URL is on the bead).
 
 ## (c) Shared build
 

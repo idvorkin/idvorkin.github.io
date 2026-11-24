@@ -22,7 +22,9 @@ else
 fi
 WORK=${WORK:-${XDG_CACHE_HOME:-$HOME/.cache}/zola-port/preview-$PORT}
 OUT=$WORK/public
-export SRC WORK OUT BASE_URL BACKLINKS=1
+export SRC WORK OUT BASE_URL
+rm -f "$WORK/bbl/back-links.json" # first build makes a fresh index; rebuilds reuse it
+export BACKLINKS=cached
 stamp=$WORK/.built
 build() { mkdir -p "$WORK"; touch "$stamp.next"; "$HERE/build.sh" | tail -1 && mv "$stamp.next" "$stamp"; }
 build

@@ -26,9 +26,11 @@ A pixel differs when any channel is off by more than 24/255 (font
 anti-aliasing noise sits below that).
 
 The gate is a ratchet: baseline.json holds each page's aligned %, and the run
-fails when a page gets worse than its baseline by more than SLACK points, or a
-page without a baseline is above NEW_MAX. Fixes lower the baseline
-(--update-baseline); nothing is allowed to drift back up.
+fails when a page gets worse than its baseline by more than SLACK points, a
+page without a baseline is above NEW_MAX, or a page could not be rendered.
+--update-baseline only ever lowers a page's number (or adds a page), so a
+partial run (LIMIT=, ONLY=) cannot shrink the baseline and a regression cannot
+be blessed by accident. --accept-worse is the explicit way to raise one.
 """
 
 import argparse
@@ -180,6 +182,8 @@ def main() -> None:
     ap.add_argument("--b", default="zola")
     ap.add_argument("--baseline", type=Path)
     ap.add_argument("--update-baseline", action="store_true")
+    ap.add_argument("--accept-worse", action="store_true")
+    ap.add_argument("--maxh", type=int, default=12000)
     ap.add_argument("--top", type=int, default=80)
     ap.add_argument("--preview", default="")
     args = ap.parse_args()
@@ -244,6 +248,14 @@ def main() -> None:
             "p90_aligned": al[int(len(al) * 0.9)] if al else None,
             "max_aligned": al[-1] if al else None,
             "raw_identical": sum(r["raw"] == 0 for r in rs),
+            # Taller than the screenshot cap: only the first maxh px were compared.
+            "truncated": sum(
+                r["h"] > args.maxh or r["h"] + r["dh"] > args.maxh for r in rs
+            ),
+            "identical_and_whole": sum(
+                r["raw"] == 0 and r["h"] <= args.maxh and r["h"] + r["dh"] <= args.maxh
+                for r in rs
+            ),
             "same_height": sum(r["dh"] == 0 for r in rs),
         }
     doms = [r["dom"] for r in results.values()]
@@ -258,27 +270,35 @@ def main() -> None:
         "of": len(doms),
     }
 
-    gate = {"regressed": [], "new_over": []}
-    if args.baseline and args.baseline.exists() and not args.update_baseline:
+    base = {}
+    if args.baseline and args.baseline.exists():
         base = json.loads(args.baseline.read_text())["aligned"]
-        for k, r in results.items():
-            if k in base and r["aligned"] > base[k] + SLACK:
-                gate["regressed"].append([k, base[k], r["aligned"]])
-            elif k not in base and r["aligned"] > NEW_MAX:
-                gate["new_over"].append([k, r["aligned"]])
-    summary["gate"] = {k: len(v) for k, v in gate.items()}
+    gate = {"regressed": [], "new_over": [], "failed": failed}
+    for k, r in results.items():
+        if k in base and r["aligned"] > base[k] + SLACK:
+            gate["regressed"].append([k, base[k], r["aligned"]])
+        elif k not in base and r["aligned"] > NEW_MAX and base:
+            gate["new_over"].append([k, r["aligned"]])
     if args.baseline and args.update_baseline:
+        merged = dict(base)
+        for k, r in results.items():
+            if k not in merged or r["aligned"] < merged[k] or args.accept_worse:
+                merged[k] = r["aligned"]
         args.baseline.write_text(
             json.dumps(
                 {
                     "slack": SLACK,
                     "new_max": NEW_MAX,
-                    "aligned": {k: r["aligned"] for k, r in sorted(results.items())},
+                    "aligned": dict(sorted(merged.items())),
                 },
                 indent=0,
             )
             + "\n"
         )
+        gate["new_over"] = []  # a first sighting is recorded, not failed
+        if args.accept_worse:
+            gate["regressed"] = []
+    summary["gate"] = {k: len(v) for k, v in gate.items()}
 
     (out / "results.json").write_text(
         json.dumps({"summary": summary, "gate": gate, "pages": pages}, default=float)
@@ -338,7 +358,7 @@ section between shared headings, so one shifted line costs one section; "raw" is
 """
     )
     print(json.dumps(summary, indent=1, default=float))
-    if gate["regressed"] or gate["new_over"]:
+    if gate["regressed"] or gate["new_over"] or gate["failed"]:
         print(json.dumps(gate, indent=1), file=sys.stderr)
         sys.exit(1)
 
