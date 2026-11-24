@@ -123,6 +123,8 @@ The key insight is that these horsemen are interconnected - metabolic health inf
 
 ### Aerobic (Zone 2)
 
+The formulas for the heart rate ceiling, a calculator, the talk test and the markers to watch are in [Cardio](/cardio).
+
 ### Anaerobic (Zone 5)
 
 ## Spiritual Health
