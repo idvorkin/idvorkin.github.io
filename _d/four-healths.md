@@ -75,7 +75,7 @@ Physical health is your body's capacity to generate and sustain energy. Without 
 **Core components:**
 
 - Strength and stability
-- Cardiovascular fitness (aerobic and anaerobic)
+- [Cardiovascular fitness](/cardio) (aerobic and anaerobic)
 - Sleep and recovery
 - Nutrition and metabolic health
 
