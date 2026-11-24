@@ -56,7 +56,7 @@ def html(t: str) -> str:
     t = re.sub(rf"""(url\(\s*['"]?)({PATH})""", add("css-url"), t)
     t = re.sub(rf"""(location(?:\.href)?\s*=\s*["'])({PATH})""", add("location"), t)
     t = re.sub(
-        rf"""(\bfrom\s*["'])({PATH})""", add("import"), t
+        rf"""(\b(?:from|import)\s*["'])({PATH})""", add("import"), t
     )  # inline module imports
     t = re.sub(
         rf"""("\s*:\s*")({PATH})""", add("inline-json"), t
