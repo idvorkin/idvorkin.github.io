@@ -95,6 +95,24 @@
   clipboard, for a reader without Larry (Send needs a Cockpit; a reader is
   never prompted for one).
 
+  TALK WHILE POINTING (Cockpit story 317, cockpit-86l): "🎙 Talk" in the
+  pill, shown only with a Cockpit address and a browser that records
+  (MediaRecorder + getUserMedia). Press it, talk while pointing with the
+  mouse, a finger or the Pencil, press Stop (or it stops at TALK_MAX_MS).
+  The block under the pointer gets a faint red outline meanwhile. One POST
+  to `<Cockpit>/point-review` carries the recording (base64) and the
+  pointer trace on the recorder's clock: each sample is ms since the
+  recorder's start event, both from event.timeStamp, with the block under
+  the point (tag, nearest heading, its text) and the word under it,
+  resolved here because the Cockpit sees only the trace. The Cockpit
+  transcribes it with word timings, pins each word to what was under the
+  pointer when it was said, and posts one message on the page's thread
+  (the chat panel's). Mic and pointer listeners exist only while
+  recording; Comments off mid-recording stops the mic and sends nothing.
+  A failed send keeps the recording for "↻ Retry talk" (same id, so a
+  duplicate wakes nobody) until the page reloads. There is no gist
+  fallback for audio.
+
   SECURITY: the GitHub PAT lives ONLY in this browser's localStorage under
   `blogAnnotateToken`. It is never committed, never sent anywhere except
   api.github.com. Use a fine-grained/classic token with the `gist` scope
@@ -243,6 +261,158 @@
       return prs.filter(function (pr) {
         return (pr.files || []).indexOf(want) !== -1;
       });
+    }
+
+    // ------------------------------------------------- talk while pointing
+    // Pure pieces of TALK WHILE POINTING (see the header), on
+    // window.blogAnnotate for the tests. The browser resolves what the
+    // pointer is over, since the Cockpit only ever sees the trace.
+    var TALK_MAX_MS = 5 * 60 * 1000; // a recording stops itself here
+    var TALK_TIMEOUT_MS = 90000; // the Cockpit transcribes before it answers
+    var TALK_MOVE_MS = 250; // a move on the same word is kept this often
+    var TALK_MAX_SAMPLES = 4000;
+    var TALK_MAX_TARGETS = 2000;
+    var TALK_BLOCKS =
+      "p,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,blockquote,figure,img,svg,video," +
+      "canvas,td,th,table";
+    var TALK_CHROME = '[id^="blog-annot-"],#dev-info-banner';
+    var TALK_INLINE =
+      /^(A|ABBR|B|CODE|EM|I|KBD|MARK|S|SMALL|SPAN|STRONG|SUB|SUP|U)$/;
+    var TALK_WORD = /[^\s.,;:!?()"“”[\]{}<>]/;
+
+    // The block an element sits in, or null on the tool's own UI, the local
+    // dev banner, and anything that is not inside one (margins).
+    function talkBlock(el) {
+      if (el && el.nodeType !== 1) el = el.parentElement;
+      if (!el || !el.closest) return null;
+      if (el.closest(TALK_CHROME)) return null;
+      var block = el.closest(TALK_BLOCKS);
+      if (block) return block;
+      // a page built of divs (an explainer's cards): the nearest element,
+      // past inline ones, that holds text of its own
+      for (var n = el; n && n.nodeType === 1; n = n.parentElement) {
+        if (n === document.body || n === document.documentElement) break;
+        if (TALK_INLINE.test(n.tagName)) continue;
+        for (var c = n.firstChild; c; c = c.nextSibling)
+          if (c.nodeType === 3 && /\S/.test(c.data)) return n;
+      }
+      return null;
+    }
+
+    function talkClean(s, cap) {
+      return String(s || "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .slice(0, cap);
+    }
+
+    // What the agent is told a block is: tag, the nearest h1-h4 above it,
+    // and its text (an image's alt, a diagram's label).
+    function talkDescribe(el) {
+      var tag = el.tagName.toLowerCase();
+      var heading = "";
+      if (!/^h[1-6]$/.test(tag)) {
+        var hs = document.querySelectorAll("h1,h2,h3,h4");
+        for (var i = 0; i < hs.length; i++) {
+          if (hs[i].compareDocumentPosition(el) & 4) heading = hs[i];
+          else break;
+        }
+        heading = heading ? talkClean(heading.textContent, 200) : "";
+      }
+      var quote;
+      if (tag === "img")
+        quote =
+          el.getAttribute("alt") ||
+          el.getAttribute("title") ||
+          String(el.getAttribute("src") || "")
+            .split("/")
+            .pop();
+      else if (tag === "svg")
+        quote =
+          el.getAttribute("aria-label") ||
+          (el.querySelector("title") || {}).textContent ||
+          el.textContent;
+      else quote = el.textContent;
+      var out = { tag: tag, heading: heading, quote: talkClean(quote, 160) };
+      if (el.id) out.id = talkClean(el.id, 100);
+      return out;
+    }
+
+    // The word under (x, y), or "" when there is none or it is not in the
+    // block the pointer is over (caret APIs snap to the nearest text).
+    function talkWordAt(x, y, el) {
+      if (x === null || x === undefined) return "";
+      var node, off;
+      try {
+        if (document.caretPositionFromPoint) {
+          var cp = document.caretPositionFromPoint(x, y);
+          if (!cp) return "";
+          node = cp.offsetNode;
+          off = cp.offset;
+        } else if (document.caretRangeFromPoint) {
+          var r = document.caretRangeFromPoint(x, y);
+          if (!r) return "";
+          node = r.startContainer;
+          off = r.startOffset;
+        } else return "";
+      } catch (e) {
+        return "";
+      }
+      if (!node || node.nodeType !== 3) return "";
+      var block = talkBlock(node);
+      if (!block || block !== talkBlock(el)) return "";
+      var text = node.data;
+      var a = off;
+      var b = off;
+      while (a > 0 && TALK_WORD.test(text[a - 1])) a--;
+      while (b < text.length && TALK_WORD.test(text[b])) b++;
+      return text.slice(a, b).slice(0, 60);
+    }
+
+    // The trace one recording builds: `targets` (each block once) and
+    // `samples` ({t, k, p, x, y, i, w}: ms since the recorder started, kind,
+    // pointer type, viewport point, target index or null, word). A move that
+    // changes neither target nor word is dropped within TALK_MOVE_MS: the
+    // target in force at any moment is the last sample's either way.
+    function pointTrace() {
+      var els = [];
+      var targets = [];
+      var samples = [];
+      var last = null;
+      return {
+        targets: targets,
+        samples: samples,
+        elementOf: function (i) {
+          return i === null || i === undefined ? null : els[i];
+        },
+        add: function (k, p, x, y, t, el, w) {
+          if (samples.length >= TALK_MAX_SAMPLES) return null;
+          var b = talkBlock(el);
+          var i = b ? els.indexOf(b) : -1;
+          if (b && i < 0 && targets.length < TALK_MAX_TARGETS) {
+            i = els.push(b) - 1;
+            targets.push(talkDescribe(b));
+          }
+          i = i < 0 ? null : i;
+          w = w || "";
+          if (
+            (k === "move" || k === "hover") &&
+            last &&
+            last.i === i &&
+            last.w === w &&
+            t - last.t < TALK_MOVE_MS
+          )
+            return null;
+          var s = { t: Math.round(t), k: k, p: p || "", i: i, w: w };
+          if (x !== null && x !== undefined) {
+            s.x = Math.round(x);
+            s.y = Math.round(y);
+          }
+          samples.push(s);
+          last = s;
+          return s;
+        },
+      };
     }
 
     // ---------------------------------------------------------------- flag
@@ -419,6 +589,9 @@
       enterOpensComposer: enterOpensComposer,
       prsTouchingPath: prsTouchingPath,
       cockpitOrigin: cockpitOrigin,
+      pointTrace: pointTrace,
+      talkDescribe: talkDescribe,
+      talkWordAt: talkWordAt,
       set: function (on) {
         live = !!on;
         setEnabled(live);
@@ -718,6 +891,11 @@
         "padding:5px 9px;border:0;border-radius:12px;cursor:pointer;",
         "background:#495057;color:#fff}",
         "#blog-annot-pill button:disabled{opacity:.45;cursor:default}",
+        "#blog-annot-pill #blog-annot-talk[hidden]{display:none}",
+        "#blog-annot-pill #blog-annot-talk[data-state='rec']{background:#e03131}",
+        "#blog-annot-pill #blog-annot-talk[data-state='retry']{background:#f59f00;color:#212529}",
+        ".blog-annot-pointing{outline:2px solid rgba(224,49,49,.55)!important;",
+        "outline-offset:3px;border-radius:2px}",
         "#blog-annot-larry-dot{width:10px;height:10px;border-radius:50%;",
         "background:#868e96;display:inline-block}",
         "#blog-annot-larry-dot[data-state='idle']{background:#2f9e44}",
@@ -817,6 +995,8 @@
           : "") +
         '<button type="button" id="blog-annot-send">Send to Larry</button>' +
         '<button type="button" id="blog-annot-chat-toggle">Chat</button>' +
+        '<button type="button" id="blog-annot-talk" hidden ' +
+        'title="Talk while pointing: what you say goes to Larry with what you point at">🎙 Talk</button>' +
         (SAME_HOST
           ? ""
           : '<button type="button" id="blog-annot-connect"' +
@@ -1359,6 +1539,7 @@
             }
             saveCockpit(origin);
             LARRY = origin;
+            talkRender();
           }
         }
         // Gists only off the tailnet, and only once the Cockpit fails: the
@@ -1929,6 +2110,7 @@
           if (origin) {
             saveCockpit(origin);
             LARRY = origin;
+            talkRender();
           }
         }
         chatPanel.hidden = false;
@@ -2076,6 +2258,324 @@
         close: chatClose,
         send: chatSend,
         poll: chatPoll,
+      };
+
+      // ---------------------------------------------------------------- talk
+      // See TALK WHILE POINTING above. Nothing here runs until Talk is
+      // pressed: no mic, no listener. One recording at a time; a send that
+      // failed keeps its body (and id) for Retry until the page is reloaded.
+      var talkBtn = document.getElementById("blog-annot-talk");
+      var talk = null; // the recording in progress
+      var talkPending = null; // a body whose send failed, for Retry
+      var talkTick = null;
+      var TALK_OK = !!(
+        window.MediaRecorder &&
+        navigator.mediaDevices &&
+        navigator.mediaDevices.getUserMedia
+      );
+
+      function talkRender(state, label) {
+        if (!talkBtn) return;
+        talkBtn.hidden = !TALK_OK || !LARRY;
+        state = state || (talk ? "rec" : talkPending ? "retry" : "idle");
+        talkBtn.setAttribute("data-state", state);
+        talkBtn.setAttribute(
+          "aria-pressed",
+          state === "rec" ? "true" : "false"
+        );
+        talkBtn.disabled = state === "sending";
+        talkBtn.textContent =
+          label ||
+          {
+            idle: "🎙 Talk",
+            rec: "■ Stop",
+            retry: "↻ Retry talk",
+            sending: "Sending…",
+          }[state];
+      }
+
+      function talkMime() {
+        var kinds = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4"];
+        for (var i = 0; i < kinds.length; i++) {
+          if (
+            !MediaRecorder.isTypeSupported ||
+            MediaRecorder.isTypeSupported(kinds[i])
+          )
+            return kinds[i];
+        }
+        return "";
+      }
+
+      function talkPoint(e, kind) {
+        if (!talk || !talk.trace) return;
+        // the event clock; made relative to the recorder's start in talkFinish
+        var t = e.timeStamp || performance.now();
+        if (e.clientX !== undefined) {
+          talk.x = e.clientX;
+          talk.y = e.clientY;
+        }
+        var el = e.target;
+        if (kind === "scroll") {
+          // the page moved under a still pointer: what is under it now
+          if (talk.x === null || !document.elementFromPoint) return;
+          el = document.elementFromPoint(talk.x, talk.y);
+        }
+        var p = e.pointerType || talk.p || "";
+        talk.p = p;
+        if (kind === "move" && p === "pen" && !e.buttons) kind = "hover";
+        var s = talk.trace.add(
+          kind,
+          p,
+          talk.x,
+          talk.y,
+          t,
+          el,
+          talkWordAt(talk.x, talk.y, el)
+        );
+        if (s) talkOutline(talk.trace.elementOf(s.i));
+      }
+
+      // The block under the pointer gets a faint red outline while recording,
+      // so Igor sees what Larry will be told he was pointing at.
+      var talkLit = null;
+      function talkOutline(el) {
+        if (el === talkLit) return;
+        if (talkLit) talkLit.classList.remove("blog-annot-pointing");
+        talkLit = el || null;
+        if (talkLit) talkLit.classList.add("blog-annot-pointing");
+      }
+
+      var TALK_EVENTS = {
+        pointermove: "move",
+        pointerdown: "down",
+        pointerup: "up",
+      };
+      var talkHandlers = {};
+      Object.keys(TALK_EVENTS).forEach(function (type) {
+        talkHandlers[type] = function (e) {
+          talkPoint(e, TALK_EVENTS[type]);
+        };
+      });
+      talkHandlers.scroll = function (e) {
+        talkPoint(e, "scroll");
+      };
+      function talkListen(on) {
+        Object.keys(talkHandlers).forEach(function (type) {
+          var target = type === "scroll" ? window : document;
+          if (on)
+            target.addEventListener(type, talkHandlers[type], {
+              capture: true,
+              passive: true,
+            });
+          else target.removeEventListener(type, talkHandlers[type], true);
+        });
+      }
+
+      function talkStart() {
+        if (talk || !LARRY || !TALK_OK) return Promise.resolve();
+        talk = { starting: true };
+        talkRender("sending", "Mic…");
+        return navigator.mediaDevices.getUserMedia({ audio: true }).then(
+          function (stream) {
+            if (!live || !talk || !talk.starting) {
+              // Comments went off while the mic prompt was up
+              stream.getTracks().forEach(function (tr) {
+                tr.stop();
+              });
+              talk = null;
+              talkRender();
+              return;
+            }
+            var mime = talkMime();
+            var rec = mime
+              ? new MediaRecorder(stream, { mimeType: mime })
+              : new MediaRecorder(stream);
+            talk = {
+              rec: rec,
+              stream: stream,
+              mime: rec.mimeType || mime || "audio/webm",
+              chunks: [],
+              trace: pointTrace(),
+              t0: performance.now(), // until the recorder says when it started
+              x: null,
+              y: null,
+              p: "",
+              cancelled: false,
+            };
+            var mine = talk;
+            rec.ondataavailable = function (e) {
+              if (e.data && e.data.size) mine.chunks.push(e.data);
+            };
+            rec.onstart = function (e) {
+              // one clock: pointer events and this share event.timeStamp
+              mine.t0 = (e && e.timeStamp) || performance.now();
+              mine.started = Date.now();
+            };
+            rec.onstop = function () {
+              talkFinish(mine);
+            };
+            // listening from now, not from onstart: a point made while the
+            // recorder spins up counts as at its start (t 0)
+            talkListen(true);
+            rec.start(1000);
+            mine.timer = setTimeout(talkStop, TALK_MAX_MS);
+            talkRender("rec");
+            talkTick = setInterval(function () {
+              if (!mine.started) return;
+              var s = Math.floor((Date.now() - mine.started) / 1000);
+              talkRender(
+                "rec",
+                "■ Stop " +
+                  Math.floor(s / 60) +
+                  ":" +
+                  ("0" + (s % 60)).slice(-2)
+              );
+            }, 1000);
+          },
+          function (err) {
+            talk = null;
+            talkRender("idle", "🎙 No mic");
+            talkBtn.title =
+              "Mic not available: " + ((err && err.message) || err);
+            setTimeout(function () {
+              talkRender();
+            }, 3000);
+          }
+        );
+      }
+
+      function talkStop() {
+        if (!talk) return;
+        if (talk.starting) {
+          talk.starting = false; // the mic answer will find it cancelled
+          return;
+        }
+        if (talk.rec.state !== "inactive") talk.rec.stop();
+      }
+
+      // Comments off mid-recording: the mic goes off and nothing is sent.
+      function talkCancel() {
+        if (!talk) return;
+        talk.cancelled = true;
+        talkStop();
+      }
+
+      function talkFinish(mine) {
+        talkListen(false);
+        talkOutline(null);
+        clearTimeout(mine.timer);
+        clearInterval(talkTick);
+        mine.stream.getTracks().forEach(function (tr) {
+          tr.stop();
+        });
+        talk = null;
+        if (mine.cancelled || !mine.chunks.length) {
+          talkRender();
+          return Promise.resolve();
+        }
+        mine.trace.samples.forEach(function (s) {
+          s.t = Math.max(0, Math.round(s.t - mine.t0));
+        });
+        var body = {
+          id:
+            "pt-" +
+            Date.now().toString(36) +
+            Math.random().toString(36).slice(2, 10),
+          page_url: CHAT_PAGE.page_url,
+          mime: mine.mime,
+          duration_ms: Math.round(mine.started ? Date.now() - mine.started : 0),
+          targets: mine.trace.targets,
+          trace: mine.trace.samples,
+        };
+        if (CHAT_PAGE.permalink) body.permalink = CHAT_PAGE.permalink;
+        if (CHAT_PAGE.title) body.title = CHAT_PAGE.title;
+        if (CHAT_PAGE.source_repo) body.source_repo = CHAT_PAGE.source_repo;
+        if (CHAT_PAGE.source_repo && CHAT_PAGE.source_path)
+          body.source_path = CHAT_PAGE.source_path;
+        talkRender("sending");
+        return blobBase64(new Blob(mine.chunks, { type: mine.mime })).then(
+          function (b64) {
+            body.audio = b64;
+            return talkSend(body);
+          }
+        );
+      }
+
+      function blobBase64(blob) {
+        return new Promise(function (resolve, reject) {
+          var r = new FileReader();
+          r.onload = function () {
+            resolve(String(r.result).replace(/^data:[^,]*,/, ""));
+          };
+          r.onerror = function () {
+            reject(r.error);
+          };
+          r.readAsDataURL(blob);
+        });
+      }
+
+      function talkSend(body) {
+        talkRender("sending");
+        var init = {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        };
+        if (window.AbortSignal && AbortSignal.timeout)
+          init.signal = AbortSignal.timeout(TALK_TIMEOUT_MS);
+        return fetch(LARRY + "/point-review", init)
+          .then(function (res) {
+            return res.json().then(
+              function (j) {
+                if (!res.ok) throw new Error((j && j.error) || res.status);
+                return j;
+              },
+              function () {
+                throw new Error("Cockpit returned " + res.status);
+              }
+            );
+          })
+          .then(function () {
+            talkPending = null;
+            talkBtn.title = "";
+            talkRender("idle", "✓ Sent");
+            setTimeout(function () {
+              talkRender();
+            }, 2000);
+            if (!chatPanel.hidden) chatPoll();
+          })
+          .catch(function (err) {
+            talkPending = body; // a retry keeps the id: a duplicate wakes nobody
+            talkBtn.title =
+              "Not sent (" +
+              ((err && err.message) || err) +
+              "). Click to retry.";
+            talkRender("retry");
+            offerConnect(true);
+          });
+      }
+
+      if (talkBtn) {
+        talkBtn.onclick = function () {
+          if (talk) return talkStop();
+          if (talkPending) return talkSend(talkPending);
+          return talkStart();
+        };
+        talkRender();
+      }
+
+      var stopChat = stop;
+      stop = function () {
+        stopChat();
+        talkCancel();
+      };
+      window.blogAnnotate.talk = {
+        start: talkStart,
+        stop: talkStop,
+        render: talkRender,
+        state: function () {
+          return talk;
+        },
       };
 
       // ------------------------------------------------------------ open PRs
