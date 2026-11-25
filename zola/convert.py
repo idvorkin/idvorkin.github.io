@@ -1220,7 +1220,8 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
             # Jekyll documents always carry tags (an empty list is truthy in
             # Liquid, so head.html emits keywords content="").
             page_ctx["tags"] = tags
-        elif fm.get("excerpt"):
+        if fm.get("excerpt"):
+            # A front-matter excerpt wins, for documents too.
             page_ctx["excerpt"] = str(fm["excerpt"])
         env.on_include = None
         try:
