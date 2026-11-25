@@ -111,6 +111,32 @@ def publish(n: int) -> None:
     tmp.rename(stamp)
 
 
+def search_index() -> None:
+    """Pagefind over the first build, into the overlay so every rebuild keeps
+    it (zola build --force empties OUT). Built once per start, like the old
+    `just build-search`; restart the preview to refresh it."""
+    dest = build.WORK / "overlay" / "pagefind"
+    shutil.rmtree(dest, ignore_errors=True)
+    log = build.WORK / "pagefind.log"
+    with log.open("w") as f:
+        r = subprocess.run(
+            [
+                "npx",
+                "--yes",
+                "pagefind@1.5.2",
+                "--site",
+                build.OUT,
+                "--output-path",
+                dest,
+            ],
+            cwd=build.SRC,
+            stdout=f,
+            stderr=subprocess.STDOUT,
+        )
+    if r.returncode:
+        print(f"pagefind failed (see {log}); serving without search", flush=True)
+
+
 def main() -> None:
     port = sys.argv[1]
     src = build.SRC
@@ -122,6 +148,8 @@ def main() -> None:
     cache = convert.Cache()
     t0 = time.monotonic()
     build.build(cache)
+    if os.environ.get("PAGEFIND"):
+        search_index()
     publish(0)
     print(f"built in {time.monotonic() - t0:.1f} s", flush=True)
     server = subprocess.Popen(

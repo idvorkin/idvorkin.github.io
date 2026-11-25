@@ -9,7 +9,10 @@ test.describe("Dev Info Banner", () => {
     await page.waitForLoadState("networkidle");
 
     // Take a screenshot to debug
-    await page.screenshot({ path: "dev-banner-debug.png", fullPage: true });
+    await page.screenshot({
+      path: "test-results/dev-banner-debug.png",
+      fullPage: true,
+    });
 
     // Check if branch info is in the page
     const branchInfo = await page.evaluate(() => (window as any).__GIT_BRANCH__);
@@ -64,7 +67,7 @@ test.describe("Dev Info Banner", () => {
     }
 
     // Take a screenshot
-    await page.screenshot({ path: "dev-banner-test.png" });
+    await page.screenshot({ path: "test-results/dev-banner-test.png" });
   });
 
   test("should display clickable PR link when on feature branch with PR", async ({ page }) => {

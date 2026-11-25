@@ -1,14 +1,14 @@
 ---
-description: "Check/start Jekyll server and show preview URL"
+description: "Check/start the Zola preview server and show preview URL"
 argument-hint: "[port]"
 allowed-tools: ["Bash", "Read"]
 ---
 
 # Serve
 
-Quick-start or find the Jekyll server for this blog directory.
+Quick-start or find the preview server (Zola, `just serve`) for this blog directory.
 
-**Port Override:** "$ARGUMENTS" (optional, defaults to auto-detect or 4000)
+**Port Override:** "\$ARGUMENTS" (optional, defaults to auto-detect or 4000)
 
 ## Workflow
 
@@ -19,6 +19,7 @@ running-servers check .
 ```
 
 **If a server is already running:**
+
 - Display the Tailscale URL (e.g., `http://c-5001.squeaker-teeth.ts.net:4001`)
 - Done — no further action needed.
 
@@ -32,10 +33,10 @@ running-servers suggest
 
 If `$ARGUMENTS` is a number, use that as the port instead.
 
-Start the server (livereload port = 35729 + (port - 4000)):
+Start the server (reload rides on the HTTP port, so there is no livereload port):
 
 ```bash
-just jekyll-serve <port> <livereload_port>
+just serve <port>
 ```
 
 Run this in the background — don't wait for it to finish.

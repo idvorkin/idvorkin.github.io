@@ -39,7 +39,7 @@ Parse the user's input for:
    If not running, start it and wait:
 
    ```bash
-   just jekyll-serve 4000 35729 > /tmp/jekyll.log 2>&1 &
+   just serve 4000 > /tmp/serve.log 2>&1 &
    timeout 90 bash -c 'until curl -s -o /dev/null -w "%{http_code}" http://localhost:4000/ | grep -q 200; do sleep 3; done'
    ```
 

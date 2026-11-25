@@ -4,7 +4,8 @@ matters: /x 301s to /x/ (http.server does this already), and a miss serves
 /404.html with status 404.
 
 usage: serve.py <dir> <port> [--reload <stamp file>]
-       (binds 127.0.0.1; tailscale serve fronts it)
+       (binds $SERVE_HOST, default 127.0.0.1; `just serve` sets 0.0.0.0 on
+       the dev VM so the tailnet reaches it, as `jekyll serve` did)
 
 Also serves /x from x.html, as Pages does, so it can serve a Jekyll _site
 for side-by-side screenshots too.
@@ -21,6 +22,7 @@ verify gate sees no difference.
 import functools
 import http.server
 import io
+import os
 import sys
 from pathlib import Path
 
@@ -104,6 +106,15 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         pass
 
 
-http.server.ThreadingHTTPServer(
-    ("127.0.0.1", port), functools.partial(Handler, directory=str(root))
+class Server(http.server.ThreadingHTTPServer):
+    def handle_error(self, request, client_address):
+        # A browser or test that navigates away mid-response drops the socket;
+        # that is not worth a traceback per request.
+        if not isinstance(sys.exc_info()[1], ConnectionError):
+            super().handle_error(request, client_address)
+
+
+Server(
+    (os.environ.get("SERVE_HOST", "127.0.0.1"), port),
+    functools.partial(Handler, directory=str(root)),
 ).serve_forever()
