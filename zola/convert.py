@@ -421,7 +421,11 @@ def kramdownisms(text: str, notes: dict) -> str:
         call = CALL_LINE.fullmatch(line)
         if call and nxt.strip() and not CALL_LINE.fullmatch(nxt):
             if INCS[int(call.group(1))].inline and not (
-                MD_START.match(nxt) or nxt.lstrip().startswith("<")
+                MD_START.match(nxt)
+                or nxt.lstrip().startswith("<")
+                # Output ending in a newline puts a blank line under the call:
+                # kramdown then ends the paragraph there.
+                or INCS[int(call.group(1))].raw.endswith("\n")
             ):
                 # An <img> alone on a line opens a CommonMark HTML block that
                 # swallows the paragraph below; with text after it on the same
@@ -532,6 +536,9 @@ class Inc:
             else:
                 out.append(t.strip() if INLINE_TAG.match(t.lstrip()) else t)
         self.text = re.sub(r"\n{3,}", "\n\n", "\n".join(out)).strip("\n")
+        if INLINE_TAG.match(self.text) and re.fullmatch(r"<[^<>]*>", self.text):
+            # One tag spread over lines: kramdown read it as a span.
+            self.text = " ".join(x.strip() for x in self.text.split("\n"))
         one_line = "\n" not in self.text
         # A lone inline element (the float-right images): kramdown kept it in
         # the paragraph; alone on a line CommonMark opens an HTML block.

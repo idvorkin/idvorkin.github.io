@@ -24,6 +24,7 @@ FENCE = re.compile(r"^\s*(`{3,}|~{3,})")
 T, L = "<!--zp-t-->", "<!--zp-l-->"
 ESC, PARA, TABLE, DROP = "escape", "paragraph", "table", "drop"
 BREAK, AFTER = "<break>", "<after>"  # blank line before / after an HTML line
+INLINE = "<!--zp-i-->"
 # kramdown's span-level HTML elements; any other tag starts a block.
 SPAN = set(
     "a abbr acronym b big bdo br button cite code del dfn em i img input ins kbd"
@@ -135,6 +136,17 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
             # kramdown's block ends at its closing tag: the next line starts
             # a paragraph, where CommonMark would keep it in the HTML block.
             edits[idx[i]] = edits.get(idx[i], "") + AFTER
+        lone = re.match(r" {0,3}</?([a-zA-Z][\w-]*)\b[^>]*>\s*$", line)
+        if (
+            lone
+            and lone.group(1).lower() in SPAN
+            and (i == 0 or not lines[i - 1].strip())
+        ):
+            # A lone span-level tag starts a paragraph for kramdown, an HTML
+            # block for CommonMark; anything after the tag makes it text.
+            edits[idx[i]] = INLINE
+            i += 1
+            continue
         if line.lstrip().startswith("<"):
             # Raw HTML: a comment runs to its "-->" (a marker inside would
             # close it early), any other block to the next blank line.
@@ -251,6 +263,9 @@ def mark(text: str) -> str:
                 ("\n" if BREAK in mk else "") + lines[k] + ("\n" if AFTER in mk else "")
             )
             continue
+        if mk == INLINE:
+            lines[k] = lines[k].rstrip() + INLINE
+            continue
         if mk == DROP:
             lines[k] = None
             continue
@@ -295,7 +310,7 @@ def apply_html(html: str) -> str:
         html,
         flags=re.S,
     )
-    return html.replace(T, "").replace(L, "")
+    return html.replace(T, "").replace(L, "").replace(INLINE, "")
 
 
 def _no_head(table: str) -> str:
