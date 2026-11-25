@@ -1,27 +1,6 @@
 # Files allowed to differ between the Jekyll and Zola builds of one commit.
 # parity.py fails on any other difference. Keep a reason on every group.
 
-# Jekyll's own output is broken here (stray markup shown as text, a raw TOC
-# link, a fence kramdown does not see); Zola renders what the post means.
-# Igor's call, 2026-11-24 (asks igor2-88g.1817.1 and .2): keep Zola's render.
-untangled.html
-content-creation.html
-happy.html
-idle.html
-siy.html
-physical-pain.html
-depression.html
-resistance.html
-y26.html
-life-as-business.html
-brython.html
-ig66/656.html
-ai-security.html
-manager-book.html
-timeoff-2024-04.html
-cache.html
-ai-journal.html
-
 # kramdown re-serializes a `<div />`; the browser's nesting differs, not what
 # it draws (390 px screenshot identical).
 reflect-tool.html

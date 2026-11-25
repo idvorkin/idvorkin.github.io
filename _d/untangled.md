@@ -167,7 +167,7 @@ Family was her tribe. Now she has to build a new one — and tribelessness feels
 
 Research splits popularity in two: _sociometric_ (well-liked, kind, fun) and _perceived_ (powerful, feared, often disliked). When teens say "popular" they almost always mean the second. The girl her class identifies as popular is typically described by those same classmates as domineering, aggressive, and stuck-up — but feared, indulged, and surrounded by a court of girls who don't want to become her target.
 
-The intervention is verbal: separate "powerful" from "liked" when she uses the word. "Is she popular or just powerful? Do kids like her, or are they scared of her?" Naming the distinction repeatedly is the only way to break the loop where she idealizes meanness as social currency. There's a third group — liked-_and_-popular — but those girls have a specific skill: they're both friendly _and_ assertive. They're not willing to be cruel and they're not willing to be pushed around. That's the model worth pointing at.
+The intervention is verbal: separate "powerful" from "liked" when she uses the word. "Is she popular or just powerful? Do kids like her, or are they scared of her?" Naming the distinction repeatedly is the only way to break the loop where she idealizes meanness as social currency. There's a third group — liked-<em>and</em>-popular — but those girls have a specific skill: they're both friendly _and_ assertive. They're not willing to be cruel and they're not willing to be pushed around. That's the model worth pointing at.
 
 ### Quality of tribe beats quantity
 
