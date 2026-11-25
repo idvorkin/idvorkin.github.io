@@ -286,14 +286,14 @@ let's see if we can simulate him, step #1, let's bring the site down into markdo
 
 #### Jekyll to Zola in One Evening: Why, How Easy, and What I Got
 
-- **TOP Takeaway**: Agents moved this blog off Jekyll in one evening, after 12 years, without editing a single post ([PR #1146](https://github.com/idvorkin/idvorkin.github.io/pull/1146)). I could trust it because of the gate: every output file diffed against the Jekyll build. The measured benefit is smaller than I expected: the preview server uses less than half the RAM, and nothing got much faster.
+- **TOP Takeaway**: Agents moved this blog off Jekyll in one evening, after 12 years, without editing a single post ([PR #1146](https://github.com/idvorkin/idvorkin.github.io/pull/1146)). I could trust it because of the gate: every output file diffed against the Jekyll build. On the first night the only clear win was RAM: the preview server used less than half. Speed came the next morning, when a second round made the full build about 3x faster. Saving one post did not get faster.
 - **Why**: I asked about incremental builds. Jekyll felt heavy: gems, a Ruby compatibility patch, and a full build plus a back-links pass before a new worktree can preview. The first Zola port came back with 8 of 500 pages matching the live site, and I said "Zola looks borked".
 - **How easy**: one evening of agent work. My part was deciding what to do where Jekyll itself was wrong.
   - **A shim**: Jekyll's own Liquid templates and my posts run unchanged. The shim copies kramdown's quirks, like list looseness and header-less tables, so Zola's Markdown renders them the same way.
   - **The gate**: build both sites from the same commit, drop what a browser can't see (whitespace, attribute order), and diff every file. Matching pages went 8 → 418 → 481 of 500 over two passes, ending at 1,623 of 1,647 files. The other 24 are a checked-in list, each with its reason: 6 hold the same entries in a different order (feed, sitemap, search), 1 looks identical in a screenshot, and 17 are my decision below. Phone-width screenshots of the live site against a Zola mirror backed up the diff.
   - **My decision**: on 17 pages Jekyll was the broken one, showing a stray `</div>` or a link nested inside a TOC link. Zola renders what I meant, so I kept Zola's.
   - **Rollback**: the old Jekyll build is still there as a workflow I run by hand.
-- **Benefit**: measured on my dev VM, same commit, while other agents kept the box busy, so the times are rough.
+- **Benefit, night one**: measured on my dev VM at the cutover commit, while other agents kept the box busy, so the times are rough.
 
   | Measured                           | Jekyll | Zola   |
   | ---------------------------------- | ------ | ------ |
@@ -304,7 +304,19 @@ let's see if we can simulate him, step #1, let's bring the site down into markdo
   | Fresh worktree to a served preview | 23 s   | 19 s   |
   | Disk a previewed worktree adds     | 440 MB | 583 MB |
 
-- **What didn't**: speed. The full build got slower, because the shim is Python and takes 8.5 of the 9.6 s (Zola itself needs 0.3 s). The edit loop is a tie with `jekyll serve --incremental`, a new worktree is only 4 s quicker, and deploys take about the same time. Zola uses more disk, because its build cache sits outside the worktree. Readers get the same pages and the same search.
+- **What didn't, on night one**: speed. The full build got slower, because the shim is Python and took 8.5 of the 9.6 s (Zola itself needs 0.3 s). The edit loop was a tie with `jekyll serve --incremental`, a new worktree was only 4 s quicker, and deploys took about the same time. Zola uses more disk, because its build cache sits outside the worktree. Readers get the same pages and the same search.
+- **Round 2, the next morning**: agents went after the slow parts. Each PR measured against its own starting point, so the rows don't add up into one series.
+
+  | PR                                                                | Change                          | Before → after                                                                                | Status                                  |
+  | ----------------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------- | --------------------------------------- |
+  | [#1151](https://github.com/idvorkin/idvorkin.github.io/pull/1151) | Fix the Playwright tests        | 15 failed → 178 passed, 3 skipped, over three full runs                                       | Merged                                  |
+  | [#1152](https://github.com/idvorkin/idvorkin.github.io/pull/1152) | Convert on 4 workers, hot spots | Full build 7.8 → 2.5 s; with back-links and Pagefind 12.9 → 6.8 s; include edit 8 → under 3 s | Merged                                  |
+  | [#1153](https://github.com/idvorkin/idvorkin.github.io/pull/1153) | Back-links in Rust              | That step 2.3 → 0.38 s; full build 11.8 → 9.0 s on a busy VM                                  | PR open; its code reached main in #1154 |
+  | [#1154](https://github.com/idvorkin/idvorkin.github.io/pull/1154) | kramdown fixes in Rust          | Full build 3.78 → 2.67 s; include edit 2.35 → 1.63 s; one-post edit 0.96 → 0.93 s             | Merged                                  |
+  - **Where the time went**: `/weeks` re-parsed 50k dates, smart quotes were rescanned, and regexes were compiled per line. About half the back-links gain was calling git differently, not Rust. Liquid stayed in Python: matching it byte for byte would mean rewriting the engine to save about 0.25 s.
+  - **Same gate**: every step writes all 1,647 files byte-identical to before, with a Python fallback. The tests came back without touching site code or loosening an assertion; the failures were pages that changed on purpose, two test bugs and eight flaky waits.
+  - **What's left**: a full build, back-links and Pagefind included, is now about 2.7 s. Jekyll's 7.1 s on night one left both out, though the runs were on different days and loads. The time is spread evenly: convert, back-links, Pagefind and finish take 0.4 to 0.9 s each. Saving one post still takes about 0.9 s, because it re-renders listings and feeds and rewrites every page. Caching those is next, not more porting.
+  - **A miss**: the parity gate reported false differences on a branch with an open PR, because Jekyll embeds the dev server's branch info (`__GIT_BRANCH__`) and Zola doesn't. It cost a scare; the gate should ignore that line.
 
 ### 2026-11-21
 
@@ -321,8 +333,8 @@ let's see if we can simulate him, step #1, let's bring the site down into markdo
 #### Muse Bought My Magic Supplies
 
 - **TOP Takeaway**: Muse replaced another drudgery: going through a website. I needed magic supplies from an online shop, and instead of clicking through the site myself, Muse did it in a browser and bought them.
-- **What it did**: confirmed I was logged in, checked all 9 items in the cart against my list, went through checkout, and told me the order was placed. $113.52 of supplies plus $5 shipping, no tax, $118.52, paid with Stripe Link.
-- **The leash**: a $145 cap. I set the ceiling and it came in under it.
+- **What it did**: confirmed I was logged in, checked all 9 items in the cart against my list, went through checkout, and told me the order was placed. $113.52 of supplies plus $5 shipping, no tax, \$118.52, paid with Stripe Link.
+- **The leash**: a \$145 cap. I set the ceiling and it came in under it.
 - **The dream**: this is the dream of Alexa Shopping, which I worked on, but for every store. Right now Amazon blocks this. My guess is that will change.
 
 <img src="/images/muse-bought-magic-supplies.webp" alt="Two chat messages from Muse. First: yes, you're logged in and all 9 items are in the cart under your account, subtotal $113.52, exactly as ordered; I checked it against the list and told the browser to go ahead with checkout. Second: it's in, order placed, $118.52 ($113.52 + $5 shipping, no tax), well under the $145 cap, all 9 items, paid with Stripe Link. The confirmation number is covered." width="685" height="554" loading="lazy" decoding="async" style="max-width:420px;width:100%;height:auto;border-radius:10px;" />
@@ -351,7 +363,7 @@ let's see if we can simulate him, step #1, let's bring the site down into markdo
   - 08:15: my one round of feedback is in: a separate black-out box, thicker lines, thicker arrows.
   - 08:18: the README has pictures.
   - 08:30: the PR that puts it behind my Alfred `ss` keyword is open.
-- **How much of me it took**: 11 short messages, about 140 words. Three were product decisions: the ask, "add ellipse, no hotkey, call it IgSnap, make it public", and the black-out and thickness note. The rest were "build and run" and "how to launch". I wrote no code and read none. It cost $10 in tokens.
+- **How much of me it took**: 11 short messages, about 140 words. Three were product decisions: the ask, "add ellipse, no hotkey, call it IgSnap, make it public", and the black-out and thickness note. The rest were "build and run" and "how to launch". I wrote no code and read none. It cost \$10 in tokens.
 - **Why I trust code I didn't read**: Claude couldn't see my screen either, so it built its own eyes.
   - The geometry and rendering are a [core with no UI](https://github.com/idvorkin/igsnap/blob/fb9566bcd47b6d40af6ff9f8f5889450c6f8ce94/Sources/IgSnapCore/Annotation.swift#L100-L119), covered by pixel-level tests: the crop is full resolution, the right way up, and the arrow lands where it was drawn.
   - A [headless self-test](https://github.com/idvorkin/igsnap/blob/fb9566bcd47b6d40af6ff9f8f5889450c6f8ce94/Sources/IgSnap/SelfTest.swift#L4-L7) feeds made-up mouse and key events to the real handlers in a window that is never shown.
@@ -500,7 +512,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
 - **The video**: [The Supply and Demand of AI Tokens | Dylan Patel Interview](https://youtu.be/LF3aUIM57uw) — Dylan Patel (founder of [SemiAnalysis](https://www.semianalysis.com/)) on Patrick O'Shaughnessy's [Invest Like the Best, ep. 468](https://open.spotify.com/episode/3Eu3mpOcpEjrg3SYtrglBk), April 23, 2026. Show notes at [colossus.com](https://colossus.com/episode/supply-demand-of-tokens/). Full transcript: [gist](https://gist.github.com/idvorkin-ai-tools/15e47ffab0f6684f474bf29fb6aef5fe).
 - **The numbers Patel actually cites**:
   - **SemiAnalysis Claude Code spend**: tens of thousands last year → **$5M last week → $7M annualized this week** vs a **\$25M salary line** (>25% of payroll, on pace for 100%+ by year-end).
-  - **Anthropic ARR**: $9B → **$35-40B**, adding **~\$10B/month**, gross margins at a \*\*72% floor\*\* — vs leaked funding-round docs showing "30-something percent" at start of year.
+  - **Anthropic ARR**: $9B → **$35-40B**, adding **~\$10B/month\*\*, gross margins at a \*\*72% floor\*\* — vs leaked funding-round docs showing "30-something percent" at start of year.
   - **End-of-year linear extrapolation**: ~**\$400B** on Opus-4.6-tier models alone — and Patel calls that the _linear_ case.
   - **DRAM**: capped at **20-30%/yr** capacity growth; true incremental supply doesn't land until **late 2027 / early 2028**. Prices "will double or triple from here."
   - **GPU useful life**: not 5 years — **7-8+ years**. Hopper clusters resigning at higher prices.
@@ -1087,6 +1099,7 @@ I love adding tmux workflows, but they usually take me like 10 hours to get righ
   - Originally created on July 18, 2025 ([commit 38d87330](https://github.com/idvorkin/idvorkin.github.io/commit/38d87330)) as "crafting spells to banish ruminating thoughts"
   - Added image features ([commit bab47de6](https://github.com/idvorkin/idvorkin.github.io/commit/bab47de6)) - a very lucky last commit or I'd never have found it.
 - **The Shocking Discovery**: File was deleted in [PR #67](https://github.com/idvorkin/idvorkin.github.io/pull/67) ([commit e73324f9](https://github.com/idvorkin/idvorkin.github.io/commit/e73324f9))
+
   - **PR title**: "Add random page navigation feature"
   - **Actual changes**: Also randomly deleted an entire page!
   - 251 lines of carefully crafted content about mental health - gone
@@ -1141,21 +1154,25 @@ I love adding tmux workflows, but they usually take me like 10 hours to get righ
 #### The Claude Review Workflow Saga - When Good Intentions Break Everything
 
 - **The Problem**: Claude Code Review had been failing on EVERY PR since August 17th with mysterious "Invalid OIDC token" errors
+
   - Someone (probably me via AI) had "fixed" the workflow to support fork PRs by changing from `pull_request` to `pull_request_target`
   - Classic case of "the fix that breaks everything else"
 
 - **The Wild Goose Chase**:
+
   - First hypothesis: OIDC tokens don't work with `pull_request_target` - let's add `github_token`!
   - Created PR #120 to add the token - still failed
   - Tested from a fork (PR #121) to be thorough - also failed
   - The beta Claude action just wasn't compatible with `pull_request_target` events
 
 - **The Real Fix**: Sometimes you just have to admit defeat and revert
+
   - PR #122: Reverted to the original `pull_request` event that actually worked
   - Lost fork PR support, but gained back ALL regular PR reviews
   - Better to have 95% working than 100% broken
 
 - **Bonus Discovery**: While debugging the Vitest workflow force-push failures
+
   - Found branch protection rules were set to `~ALL` instead of just `main`
   - This was blocking pushes to PR branches, test-results branch, everything!
   - One setting change fixed multiple mysterious CI failures
@@ -1422,6 +1439,7 @@ Check out the great documentation at promptfoo, including redteaming I guess tha
 ### 2024-04-06
 
 - Containerize Bot
+
   - Secret Injection
   - Auto Starting
 
