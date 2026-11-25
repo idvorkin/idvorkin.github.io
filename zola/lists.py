@@ -22,7 +22,7 @@ LIST = re.compile(
 HR = re.compile(r"^ {0,3}([-*_])(\s*\1){2,}\s*$")
 FENCE = re.compile(r"^\s*(`{3,}|~{3,})")
 T, L = "<!--zp-t-->", "<!--zp-l-->"
-ESC, PARA, TABLE, DROP = "escape", "paragraph", "table", "drop"
+ESC, PARA, TABLE, DROP, DL = "escape", "paragraph", "table", "drop", "dl"
 BREAK, AFTER = "<break>", "<after>"  # blank line before / after an HTML line
 INLINE = "<!--zp-i-->"
 # kramdown's span-level HTML elements; any other tag starts a block.
@@ -217,6 +217,22 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
         for k, it in enumerate(items):
             rows = it["rows"]
             text = [r[1] for r in rows]
+            dds = 0
+            while 1 + dds < len(text) and re.match(r":\s+\S", text[1 + dds]):
+                dds += 1
+            if dds and text[0].strip() and not _block_start(text[0]):
+                # term + ": definition" lines: kramdown's definition list.
+                # ponytail: dt/dd text goes in as-is, no inline Markdown;
+                # one page uses it. Render the spans if a second one appears.
+                dl = f"<dl><dt>{text[0].strip()}</dt>" + "".join(
+                    f"<dd>{x[1:].strip()}</dd>" for x in text[1 : 1 + dds]
+                )
+                edits[idx[rows[0][0]]] = (DL, it["ci"], dl + "</dl>")
+                for r in rows[1 : 1 + dds]:
+                    edits[idx[r[0]]] = DROP
+                earlier_bare_or_not_p = True
+                _scan(text, [idx[r[0]] for r in rows], edits, start=1 + dds)
+                continue
             table = _table(text, 0)
             if table:
                 edits[idx[rows[0][0]]] = (TABLE, _cells(text[0]), it["ci"])
@@ -250,6 +266,9 @@ def mark(text: str) -> str:
         if isinstance(k, tuple):
             ln = lines[k[1]]
             lines[k[1]] = re.sub(r"^(\s*)[-*+]", lambda m: m.group(1) + mk, ln, count=1)
+            continue
+        if isinstance(mk, tuple) and mk[0] == DL:
+            lines[k] = lines[k][: mk[1]] + mk[2]
             continue
         if isinstance(mk, tuple):
             # Marker line, the row, then a delimiter row so GFM sees a table;

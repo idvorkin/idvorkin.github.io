@@ -35,6 +35,7 @@ A Liquid error fails the conversion, so nothing ships silently.
 import datetime
 import hashlib
 import html
+import unicodedata
 import json
 import re
 import sys
@@ -106,7 +107,15 @@ def slugify(text: str, seen: dict | None = None) -> str:
     text = (
         text.replace("---", "\u2014").replace("--", "\u2013").replace("...", "\u2026")
     )
-    return toc_slugify(text, seen)
+    # kramdown keeps every \p{Word} char (letters, marks, digits, _); toc.py
+    # whitelists ranges, which drops marks such as an emoji's U+FE0F. Shield
+    # them through toc.py.
+    marks = [c for c in text if unicodedata.category(c).startswith("M")]
+    if not marks:
+        return toc_slugify(text, seen)
+    shield = {c: f"zpmark{ord(c)}z" for c in marks}
+    out = toc_slugify("".join(shield.get(c, c) for c in text), seen)
+    return re.sub(r"zpmark(\d+)z", lambda m: chr(int(m.group(1))), out)
 
 
 def is_doc(src: str) -> bool:
