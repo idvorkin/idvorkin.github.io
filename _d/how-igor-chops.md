@@ -363,13 +363,13 @@ In November 2026 I gave the agents that build my iOS apps a kit, written down on
 - **The simulator through Apple's own CLIs.** `xcodebuild` builds and tests; `xcrun simctl` boots, installs, launches and screenshots. Each agent gets its own simulator, deleted when it finishes and slimmed with [simslim](https://github.com/MobAI-App/simslim).
 - **Two machines, split by what each can build.** [The Linux VM](#the-server-behind-the-curtain) builds and tests the shared Swift board rules as WebAssembly and runs the Linux Swift tests. The Mac does Xcode, simulators, signing and device installs. Neither side skips the other's check: it pushes the branch and asks.
 
-What I've measured so far, each on one run:
+What I've measured so far:
 
 - **Preview render:** about 0.5 s warm. Cold took 35 to 105 s depending on what else the Mac was doing, and the first one took 45.8 s with a rebuild in it. The same check through a simulator build and screenshot: not measured yet, so I have no ratio.
-- **simslim:** on one idle iPad simulator, keeping Siri, Health, iCloud and Photos on for the tests, it turned off 102 of 173 daemons in 6.8 s, reboot included. Processes went from 180 to 84. Summed memory went from 10.2 GB to 7.0 GB; shared pages are counted more than once, so read that as relative. Disk barely moved, 5.1 GB to 4.8 GB. The README claims about 4 GB down to 0.9 GB per simulator, and I didn't get that. Test time on a slimmed simulator: not measured yet.
+- **simslim:** on one idle iPad simulator, keeping Siri, Health, iCloud and Photos on for the tests, it turned off 102 of 173 daemons in 6.8 s, reboot included. Processes went from 180 to 84. Memory summed over those processes went from 10.2 GB to 7.0 GB; that sum counts shared pages more than once, so read it as relative. The README claims about 4 GB down to 0.9 GB of memory per simulator, measured its own way with everything off, so mine isn't a like-for-like test of that. Disk stayed about the same, 5.1 GB to 4.8 GB: it stops daemons, it doesn't shrink the image. Test time on a slimmed simulator: not measured yet.
 - **Build and test time before and after the machine split:** not measured yet.
 
-The split paid for itself the first night in a bug, not in seconds. A branch used `NSNumber`, which compiles on the Mac and doesn't exist in the wasm build. The VM's build failed on it. After the fix, the VM ran 324 wasm checks with 0 failures, and a check that fails the Mac's own tests on that class of Mac-only type is in review. Earlier that night the VM confirmed a board header fix: its golden test went from 7 of 10 to 10 of 10, with 319 wasm checks passing on that branch.
+The split paid for itself the first night in a bug, not in seconds. A branch used `NSNumber`, which compiles on the Mac and doesn't exist in the wasm build. The VM's build failed on it. After the fix, the VM ran 324 wasm checks with 0 failures, and a check that fails the Mac's own tests on that class of Mac-only type is written, not merged yet. Earlier that night the VM confirmed a board header fix: its golden test went from 7 of 10 to 10 of 10, with 319 wasm checks passing on that branch.
 
 ### Testing and Evals
 
