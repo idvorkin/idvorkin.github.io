@@ -31,6 +31,11 @@ env:
   # Root-absolute links (/assets/..., /magic) are rewritten under /blog-zola/ by
   # zola/prefix_paths.py, which build.sh runs when BASE_URL has a path.
   BASE_URL: https://idvorkin-ai-tools.github.io/blog-zola
+  # Build as CI's Jekyll does: _config_ci.yml on top (its exclude: list
+  # replaces the main one, so CI publishes scripts/, tests/, chop-logs/...),
+  # and page dates in UTC.
+  JEKYLL_CONFIG: _config.yml,_config_ci.yml
+  TZ: UTC
 
 jobs:
   build:
