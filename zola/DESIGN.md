@@ -11,8 +11,8 @@ at once, so that is the win to collect now.
 
 A one-post edit is served 0.5–0.75 s after the save, against Jekyll's 1.1 s
 incremental rebuild (`blog-045`) and 3–4 s for this preview before it cached
-pages. A layout, include or data edit rebuilds every page in about 3 s,
-against Jekyll's 8.8 s full rebuild. Numbers and method in (c).
+pages. A layout, include or data edit rebuilds every page in about 2.5 s
+with 4 workers (6–8 s in one process), against Jekyll's 8.8 s full rebuild. Numbers and method in (c).
 
 Replacing Jekyll on idvork.in is a later, separate decision. Nothing here
 touches upstream `main` or its Pages settings.
@@ -129,6 +129,16 @@ cache, so there is one code path and nothing to keep in sync.
   so restart it after editing them. Static staging is not skipped either: it
   takes 0.05–0.09 s, and telling a static file from a page needs each file's
   first line, so a skip rule would be easy to get wrong for little.
+- **Parallel convert.** When a build has 16 or more pages to convert (a
+  cold build, or an include, layout or data edit), `convert.py` forks
+  `WORKERS` processes (default 4) and hands them pages heaviest first. A
+  fork inherits the site model, the Liquid environment and `SITE_TIME`, and
+  results merge in source order, so the output is byte-identical at 1, 2, 4
+  and 8 workers (checked with the clock pinned). A one-post edit converts
+  about 8 pages and stays in process. Not kept across cold builds: about
+  two-thirds of pages print the build clock (`site.time` is the date of an
+  undated document), so a disk cache would mix clocks from different builds,
+  and CI starts with an empty `WORK` anyway.
 - **Watching.** inotify through libc (`watch.py`, no dependency, Linux only):
   the collections, `_includes`, `_layouts`, `_data`, `assets` and `images`
   recursively, and the checkout's root files, not its directories (a main
@@ -273,9 +283,10 @@ The full sweep took about 100 minutes at nice 19 with two pages at a time on
 a VM at load 15–40. A re-run after a converter change re-shot 102 pages in
 about 10 minutes.
 
-Build time on this VM under load: 3.0 s for 491 pages (Liquid and Markdown
-fixes 2.4 s, Zola 0.3 s), against 8–13 s for Jekyll. With `BACKLINKS=1`,
-11–14 s.
+Build time on this VM, 2026-11-24 at load 4–5 (`build.sh`, CI config): 2.5 s
+at 4 workers (convert 1.8 s, Zola 0.2 s, finish 0.4 s), 5.6 s at 1 worker,
+7.8 s before the parallel convert and the hot-spot fixes. With `BACKLINKS=1
+PAGEFIND=1`, 6.8 s (was 12.9 s); back-links and Pagefind are now most of it.
 
 ## (e) Work split by model tier
 
