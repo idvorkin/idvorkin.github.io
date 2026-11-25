@@ -9,9 +9,9 @@ This page is built with [brython](https://brython.info/gallery/gallery_en.html),
 
 ## Page is Broken -- not worth investigating till later
 
-<script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js" />
+<script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/PierreQuentel/brython-widgets/brython-widgets.brython.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js" />
+<script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js"></script>
 
 <script>
     window.addEventListener('load', (_) => brython() )

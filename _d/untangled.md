@@ -239,7 +239,9 @@ The cost of jumping to solutions: she stops bringing problems to you because she
 
 ### I'm upset, now you're upset
 
-If her storm pulls you into your own storm, you've doubled the problem. Now she has her original distress _plus_ a destabilized parent to manage. Equanimity is contagious — so is panic. [Calm the mind](/be-proactive) — your job is to be the steady thing in the room. {% include summarize-page.html src='/siy' %}
+If her storm pulls you into your own storm, you've doubled the problem. Now she has her original distress _plus_ a destabilized parent to manage. Equanimity is contagious — so is panic. [Calm the mind](/be-proactive) — your job is to be the steady thing in the room.
+
+{% include summarize-page.html src='/siy' %}
 
 The mechanism is real and physiological. Co-regulation: when she's spinning up, your nervous system can either match hers (which doubles the chaos) or stay regulated (which gives her a steady reference point to return to). Building this muscle in yourself is one of the highest-leverage parenting investments available — every storm becomes easier if you can be the lighthouse. The eight-second pause before responding is worth more than whatever you would have said.
 
@@ -422,7 +424,9 @@ Don't lecture this. Ask. "What do you actually like about being with him?" If th
 
 ### Stay askable, not preachy
 
-The conversation you want to have about sex, consent, and pressure happens _only_ if she still thinks you'll handle the answer well. One judgmental reaction closes the door for years. Be the safe ask. {% include summarize-page.html src="/just-listen" %}
+The conversation you want to have about sex, consent, and pressure happens _only_ if she still thinks you'll handle the answer well. One judgmental reaction closes the door for years. Be the safe ask.
+
+{% include summarize-page.html src="/just-listen" %}
 
 Practical rules: when she brings up a topic, follow her lead. Don't pivot from her question into your prepared lecture. Answer the question she asked, then stop. If she wants more, she'll ask more. The first time you turn a casual question into a sex-education seminar, she's filed you as "person who turns casual questions into seminars" and you won't get another one for months.
 

@@ -140,6 +140,7 @@ Having a script transforms your content from rambling to focused. But reading fr
 **Note**: Just because you have a teleprompter doesn't mean you need to be fully scripted. You can also use it for key points to keep your content focused while maintaining a natural, conversational delivery.
 
 **Pro Tips for Teleprompter Success:**
+
 - **Font size matters**: Use large, readable fonts (24pt+)
 - **Eye level**: Position screen at camera height to maintain natural eye contact
 - **Pace yourself**: Write conversationally, include natural pauses
@@ -170,7 +171,9 @@ Having a script transforms your content from rambling to focused. But reading fr
 
 ## Monetization: The Reality Check
 
-Creator monetization is complex and often disappointing. For a comprehensive guide covering all monetization methods, platform-specific strategies, and real earnings data:\n\n{% include summarize-page.html src="/monetize" %}
+Creator monetization is complex and often disappointing. For a comprehensive guide covering all monetization methods, platform-specific strategies, and real earnings data:
+
+{% include summarize-page.html src="/monetize" %}
 
 ### Quick Summary
 

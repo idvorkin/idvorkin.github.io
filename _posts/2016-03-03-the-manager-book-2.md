@@ -1187,7 +1187,8 @@ Quality still needs to be enforced but there are much better approaches:
 - Things like style/lint should be handled by opinionated linters
 - Automated Tests should be the way errors are caught
 - Soon, AI error detectors
-  {%include summarize-page.html src="/testing" %}
+
+{%include summarize-page.html src="/testing" %}
 
 When looking at code reviews as a teaching tool:
 

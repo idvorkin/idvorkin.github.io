@@ -805,6 +805,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
   - **INSTALL.md** - A copy-paste prompt for AI assistants
 - **The Five Functions**: timeago, duration, parse_duration, human_date, date_range
 - **How You "Install" It**: Copy this prompt to Claude/Cursor/whatever:
+
   ```
   Implement the whenwords library in [LANGUAGE].
   1. Read SPEC.md for complete behavior specification
@@ -813,6 +814,7 @@ Source: ["AI is an attention hazard"](https://thoughts.hmmz.org/2026-05-31.html)
   4. Run tests until all pass
   5. Place implementation in [LOCATION]
   ```
+
 - **The Philosophy**: "The prompt IS the code" - flies against the orthodoxy that "code is a liability"
 - **Proven Cross-Language**: Works in Ruby, Python, Rust, Elixir, Swift, PHP, Bash - true language agnosticism through specification
 - **Connection to "Code as Cattle"**: This takes it further - not just the implementation is disposable, but the library distribution model itself assumes ephemeral code generation
