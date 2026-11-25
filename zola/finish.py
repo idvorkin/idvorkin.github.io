@@ -58,6 +58,33 @@ def code_blocks(html: str) -> str:
 TASK = re.compile(r'<li>(\s*<p>)?<input disabled="" type="checkbox"( checked="")?/>\n?')
 
 
+def footnotes(html: str) -> str:
+    """pulldown-cmark's footnote markup -> kramdown's: the reference is
+    sup#fnref:x > a.footnote, the notes a div.footnotes with li#fn:x and a
+    reversefootnote backlink."""
+    if "footnote" not in html:
+        return html
+    html = re.sub(
+        r'<sup class="footnote-reference" id="fr-([^"]+?)-\d+"><a href="#fn-\1">\[(\d+)\]</a></sup>',
+        r'<sup id="fnref:\1" role="doc-noteref"><a href="#fn:\1" class="footnote" rel="footnote">\2</a></sup>',
+        html,
+    )
+    html = re.sub(
+        r'<section class="footnotes">\s*<ol class="footnotes-list">(.*?)</ol>\s*</section>',
+        lambda m: '<div class="footnotes" role="doc-endnotes">\n<ol>'
+        + m.group(1)
+        + "</ol>\n</div>",
+        html,
+        flags=re.S,
+    )
+    html = re.sub(r'<li id="fn-([^"]+)">', r'<li id="fn:\1" role="doc-endnote">', html)
+    return re.sub(
+        r'<a href="#fr-([^"]+?)-\d+">↩</a>',
+        r'<a href="#fnref:\1" class="reversefootnote" role="doc-backlink">&#8617;</a>',
+        html,
+    )
+
+
 def task_lists(html: str) -> str:
     """kramdown's GFM task lists: li.task-list-item holding
     input.task-list-item-checkbox, and the enclosing ul.task-list."""
@@ -120,6 +147,7 @@ def finish(work: Path, out: Path, site_url: str) -> str:
         html = html.replace('<code data-zp-raw="">', "<code>")
         html = code_blocks(html)
         html = task_lists(html)
+        html = footnotes(html)
         starts = list(plan.get("ol_starts", {}).get(url, []))
 
         def ol(m: re.Match) -> str:

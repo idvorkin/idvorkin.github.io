@@ -654,6 +654,49 @@ def render_feeds(out_dir: Path, contents: dict) -> None:
 CACHE_SITE: list = [None, None]
 
 
+def html_block_lines(body: str, notes: dict) -> str:
+    """Two HTML shapes kramdown reads as one block and CommonMark does not:
+    an opening tag whose attributes run over several lines (CommonMark's
+    rule 7 needs the whole tag on its first line, else it is a paragraph and
+    the tag is escaped), and "</script><style>" on one line (a closing script
+    tag cannot start a block, so the CSS after it became a paragraph)."""
+    body, n = re.subn(
+        r"(</(?:script|style)>)[ \t]*(<(?:script|style)\b)", r"\1\n\2", body
+    )
+    # pulldown-cmark drops a soft break inside image alt text; kramdown keeps
+    # it as whitespace.
+    body = re.sub(
+        r"!\[([^\]`]*)\]", lambda m: "![" + m.group(1).replace("\n", " ") + "]", body
+    )
+    out, lines, i = [], body.split("\n"), 0
+    fence = None
+    while i < len(lines):
+        line = lines[i]
+        f = re.match(r"\s{0,3}(`{3,}|~{3,})", line)
+        if f and not fence:
+            fence = f.group(1)
+        elif fence and line.strip().startswith(fence):
+            fence = None
+        elif not fence and re.fullmatch(r"\s{0,3}<[A-Za-z][\w-]*(\s+[^<>]*)?", line):
+            j = i + 1
+            while (
+                j < len(lines)
+                and j - i < 30
+                and ">" not in lines[j]
+                and lines[j].strip()
+            ):
+                j += 1
+            if j < len(lines) and ">" in lines[j] and "<" not in lines[j].split(">")[0]:
+                line = " ".join(x.strip() for x in lines[i : j + 1])
+                n += 1
+                i = j
+        out.append(line)
+        i += 1
+    if n:
+        notes["html_block_lines"] = n
+    return "\n".join(out)
+
+
 def excerpt_html(first_para: str) -> str:
     """Jekyll's excerpt: the first block through kramdown, plus "\n\n"
     (so an empty first block is "\n\n", truthy in Liquid)."""
@@ -765,7 +808,8 @@ def check_ported(report: dict) -> None:
 
 
 LINK_MD = re.compile(r"(\]\()(\s*<?)([^)\s>]+)")
-LINK_REF = re.compile(r"^(\s{0,3}\[[^\]]+\]:\s*)(\S+)", re.M)
+# A link reference definition; [^x]: is a footnote, not a URL.
+LINK_REF = re.compile(r"^(\s{0,3}\[(?!\^)[^\]]+\]:\s*)(\S+)", re.M)
 LINK_HTML = re.compile(r"""(<[a-zA-Z][^<>]*?\s(?:href|src)=)(["'])([^"']*)\2""")
 
 
@@ -1018,10 +1062,14 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
                 parts.append(chunk)
             for inc in INCS:
                 # An include's Markdown links are relative to the page too.
-                inc.text = typography.apply(absolutize(inc.text, base, notes))
+                inc.text = typography.apply(
+                    html_block_lines(absolutize(inc.text, base, notes), notes)
+                )
             # One pass over the whole body, fences included: an HTML comment
             # can hold a fence, so per-chunk state would lose the comment.
-            body = place_tokens(typography.apply("\n".join(parts)), INCS, notes)
+            body = place_tokens(
+                typography.apply(html_block_lines("\n".join(parts), notes)), INCS, notes
+            )
             seen: dict = {}
             body = "\n".join(
                 chunk if code else pin_heading_ids(chunk, seen)
