@@ -87,13 +87,14 @@ test.describe("Homepage search functionality", () => {
   });
 
   test("Shows no results for nonsense search", async ({ page }) => {
-    // TWO nonsense words, deliberately. Pagefind progressively shortens the
-    // LAST query word until something matches (search-as-you-type), so a single
-    // nonsense word like "xyzabc123nonsense" degrades to "xyz" and matches real
-    // pages — by design, with no off switch. Non-final words are not shortened,
-    // so an all-nonsense multi-word query is the deterministic zero-result case.
+    // Quoted, deliberately. Unquoted, Pagefind falls back on EVERY query word
+    // to the longest indexed word that is a prefix of it ("qzxvjw" matches
+    // "qz"), and drops a word that matches nothing at all, so whether a
+    // nonsense query returns zero depends on what the posts happen to contain.
+    // A query in double quotes runs Pagefind's exact search, a plain dictionary
+    // lookup with no prefix fallback: zero results by rule, not by luck.
     const searchInput = page.locator("#search-input");
-    await searchInput.fill("qzxvjw wkjqp");
+    await searchInput.fill('"qzxvjw wkjqp"');
 
     // Check that it shows no results message (retrying assertion covers the
     // first-search index download)

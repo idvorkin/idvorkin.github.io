@@ -89,15 +89,31 @@ BLOCK_HTML = re.compile(
 )
 
 
-def _text(s: str, start: int = 0, end: int | None = None) -> str:
+def _quote_start(s: str, i: int, last: list) -> re.Match | None:
+    """QUOTE_START.search(s, i), reusing the previous search of s (last is
+    [pos, match]). Whether the pattern matches at a position does not depend
+    on where the search began, so a search from pos <= i that found nothing
+    before i has the answer. Without this, each run between two skipped
+    spans rescanned to the same distant quote: a third of the typography."""
+    pos, m = last
+    if pos is not None and pos <= i and (m is None or m.start() >= i):
+        return m
+    m = QUOTE_START.search(s, i)
+    last[:] = [i, m]
+    return m
+
+
+def _text(s: str, start: int = 0, end: int | None = None, last=None) -> str:
     """Typography for s[start:end], one run of plain Markdown text (kramdown's
     span scan: the earliest match wins, a quote rule before a symbol at the
     same spot). Lookaheads see past end: kramdown's quote rules look at the
-    emphasis marks that follow, which SKIP splits off."""
+    emphasis marks that follow, which SKIP splits off. last: _quote_start's
+    memo, shared by the runs of one text."""
     end = len(s) if end is None else end
+    last = [None, None] if last is None else last
     out, i = [], start
     while i < end:
-        mq = QUOTE_START.search(s, i)
+        mq = _quote_start(s, i, last)
         ms = SYM_RE.search(s, i, end)
         mq = mq if mq and mq.start() < end else None
         if not mq and not ms:
@@ -125,12 +141,12 @@ def _text(s: str, start: int = 0, end: int | None = None) -> str:
 
 
 def _line_spans(text: str) -> str:
-    out, i = [], 0
+    out, i, last = [], 0, [None, None]
     for m in SKIP.finditer(text):
-        out.append(_text(text, i, m.start()))
+        out.append(_text(text, i, m.start(), last))
         out.append(m.group(0))
         i = m.end()
-    out.append(_text(text, i))
+    out.append(_text(text, i, None, last))
     return "".join(out)
 
 

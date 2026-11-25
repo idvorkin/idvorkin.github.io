@@ -12,21 +12,20 @@ test.describe("MathJax rendering", () => {
     // Wait for MathJax to process the math - it creates mjx-container elements
     await page.waitForSelector("mjx-container", { timeout: 10000 });
 
-    // Verify that MathJax has processed the equations
-    // There should be at least 3 mjx-container elements (one for each equation part)
+    // Verify that MathJax has processed the equation. The page has one display
+    // equation since e89aac509 merged its three $$ lines into a single block.
     const mathContainers = page.locator("mjx-container");
-    await expect(mathContainers).toHaveCount(3);
+    await expect(mathContainers).toHaveCount(1);
 
-    // Verify the equation content is rendered (not just the raw $$ syntax)
-    // Check that the original $$ delimiters are not visible in the rendered content
+    // Verify the equation content is rendered (not just the raw TeX source):
+    // neither the $$ delimiters nor a TeX command may be left in the page.
     const contentHolder = page.locator("#content-holder");
     const htmlContent = await contentHolder.innerHTML();
-
-    // The raw $$ should not be visible if MathJax processed it correctly
-    expect(htmlContent).not.toContain("$$ Activation");
+    expect(htmlContent).not.toContain("$$");
+    expect(htmlContent).not.toContain("\\text{");
 
     // Verify specific equation parts are rendered
-    await expect(page.locator("mjx-container").first()).toContainText("Activation");
+    await expect(mathContainers.first()).toContainText("Energyactivation=EnergyStop(Activitycurrent)");
 
     // Check that the page title is correct
     await expect(page.locator("h1")).toContainText("Activation Energy");

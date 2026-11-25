@@ -33,12 +33,16 @@ A Liquid error fails the conversion, so nothing ships silently.
 """
 
 import datetime
+import functools
 import hashlib
 import html
+import multiprocessing as mp
+import signal
 import unicodedata
 import json
 import re
 import sys
+from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -232,6 +236,13 @@ def split_fences(body: str):
     return [(c, "\n".join(b)) for c, b in out if b]
 
 
+RAW_OPEN = re.compile(r"\s*<(script|style|pre|textarea)\b")
+ATX = re.compile(r"^(#{1,6})\s+(.*?)(?:\s+#+)?\s*$")
+PINNED = re.compile(r"\{#[^}]*\}\s*$")
+SETEXT_LINE = re.compile(r"(=+|-{2,})\s*")
+NOT_SETEXT_TEXT = re.compile(r"\s|[|\-*>#<+\d]")
+
+
 def pin_heading_ids(text: str, seen: dict) -> str:
     lines = text.split("\n")
     out = []
@@ -242,23 +253,23 @@ def pin_heading_ids(text: str, seen: dict) -> str:
                 raw = None
             out.append(line)
             continue
-        r = re.match(r"\s*<(script|style|pre|textarea)\b", line)
+        r = RAW_OPEN.match(line)
         if r and f"</{r.group(1)}>" not in line:
             raw = r.group(1)
             out.append(line)
             continue
-        m = re.match(r"^(#{1,6})\s+(.*?)(?:\s+#+)?\s*$", line)
-        if m and not re.search(r"\{#[^}]*\}\s*$", m.group(2)):
+        m = ATX.match(line)
+        if m and not PINNED.search(m.group(2)):
             line = f"{m.group(1)} {m.group(2)} {{#{slugify(m.group(2), seen)}}}"
         elif m:
             # Already pinned: still claim the slug so later duplicates suffix.
             seen.setdefault(re.search(r"\{#([^}]*)\}", m.group(2)).group(1), 0)
         # Setext heading: a one-line paragraph underlined with === or ---.
         elif (
-            re.fullmatch(r"(=+|-{2,})\s*", line)
+            SETEXT_LINE.fullmatch(line)
             and out
             and out[-1].strip()
-            and not re.match(r"\s|[|\-*>#<+\d]", out[-1])
+            and not NOT_SETEXT_TEXT.match(out[-1])
             and (len(out) < 2 or not out[-2].strip())
         ):
             level = "#" if line.startswith("=") else "##"
@@ -291,6 +302,27 @@ def closes_block(lines: list[str], i: int) -> bool:
 
 CLOSE_ONLY = re.compile(r"^\s*(</[a-z][a-z0-9]*>\s*)+$")
 MD_START = re.compile(r"^\s{0,3}([*+-]\s|\d+[.)]\s|#{1,6}\s|>|\|)")
+
+
+@functools.cache
+def tag_res(tag: str) -> tuple[re.Pattern, re.Pattern]:
+    """<tag and </tag>, compiled once per tag name."""
+    return re.compile(rf"<{tag}\b"), re.compile(rf"</{tag}>")
+
+
+def block_end(lines: list[str], i: int, tag: str) -> int:
+    """The line where the <tag> block opened on line i closes (its open and
+    close tags balance), or len(lines) when it never does."""
+    open_, close = tag_res(tag)
+    depth, j = 0, i
+    while j < len(lines):
+        depth += len(open_.findall(lines[j])) - len(close.findall(lines[j]))
+        if depth <= 0:
+            break
+        j += 1
+    return j
+
+
 RAW_BLOCK = re.compile(
     r"<(div|p|details|table|figure|section|center|aside|nav|blockquote|ul|ol|dl|form|iframe)\b([^>]*)>"
 )
@@ -308,14 +340,7 @@ def raw_html_blocks(lines: list[str], notes: dict) -> list[str]:
             out.append(lines[i])
             i += 1
             continue
-        tag, depth, j = m.group(1), 0, i
-        while j < len(lines):
-            depth += len(re.findall(rf"<{tag}\b", lines[j])) - len(
-                re.findall(rf"</{tag}>", lines[j])
-            )
-            if depth <= 0:
-                break
-            j += 1
+        j = block_end(lines, i, m.group(1))
         span = lines[i : j + 1]
         if j < len(lines) and any(not x.strip() for x in span):
             notes["raw_html_blocks"] = notes.get("raw_html_blocks", 0) + 1
@@ -489,8 +514,8 @@ def flatten(src: str) -> str:
     out, raw = [], None
     for line in src.split("\n"):
         t = line.strip()
-        m = re.match(r"<(style|script|pre|textarea)\b", t)
-        if m and not re.search(rf"</{m.group(1)}>", t):
+        m = RAW_OPEN.match(t)
+        if m and not tag_res(m.group(1))[1].search(t):
             raw = m.group(1)
             if raw in ("pre", "textarea") and out and out[-1].strip():
                 out.append("")
@@ -499,7 +524,7 @@ def flatten(src: str) -> str:
         if raw:
             if t or raw in ("pre", "textarea"):
                 out.append(line)
-            if re.search(rf"</{raw}>", t):
+            if tag_res(raw)[1].search(t):
                 raw = None
             continue
         if t:
@@ -532,14 +557,7 @@ class Inc:
                 parts.append((False, lines[i]))
                 i += 1
                 continue
-            tag, depth, j = m.group(1), 0, i
-            while j < len(lines):
-                depth += len(re.findall(rf"<{tag}\b", lines[j])) - len(
-                    re.findall(rf"</{tag}>", lines[j])
-                )
-                if depth <= 0:
-                    break
-                j += 1
+            j = block_end(lines, i, m.group(1))
             parts.append((True, flatten("\n".join(lines[i : j + 1]))))
             i = j + 1
         out: list[str] = []
@@ -759,6 +777,13 @@ def kramdown_fences(body: str, notes: dict) -> str:
     )
 
 
+FENCE_OPEN = re.compile(r"\s{0,3}(`{3,}|~{3,})")
+OPEN_TAG_RUNS_ON = re.compile(r"\s{0,3}<[A-Za-z][\w-]*(\s+[^<>]*)?")
+LONE_INLINE_OPEN = re.compile(
+    r"\s*<(span|a|em|strong|small|b|i|u|sup|sub)(\s[^<>]*)?>\s*"
+)
+
+
 def html_block_lines(body: str, notes: dict) -> str:
     """Two HTML shapes kramdown reads as one block and CommonMark does not:
     an opening tag whose attributes run over several lines (CommonMark's
@@ -775,12 +800,12 @@ def html_block_lines(body: str, notes: dict) -> str:
     fence = None
     while i < len(lines):
         line = lines[i]
-        f = re.match(r"\s{0,3}(`{3,}|~{3,})", line)
+        f = FENCE_OPEN.match(line)
         if f and not fence:
             fence = f.group(1)
         elif fence and line.strip().startswith(fence):
             fence = None
-        elif not fence and re.fullmatch(r"\s{0,3}<[A-Za-z][\w-]*(\s+[^<>]*)?", line):
+        elif not fence and OPEN_TAG_RUNS_ON.fullmatch(line):
             j = i + 1
             while (
                 j < len(lines)
@@ -799,9 +824,7 @@ def html_block_lines(body: str, notes: dict) -> str:
     # kramdown closes it in a paragraph (<p><span></span></p>); CommonMark
     # passes it through as an HTML block and it wraps everything after it.
     for k, line in enumerate(out):
-        m = re.fullmatch(
-            r"\s*<(span|a|em|strong|small|b|i|u|sup|sub)(\s[^<>]*)?>\s*", line
-        )
+        m = LONE_INLINE_OPEN.fullmatch(line)
         if not m:
             continue
         rest = []
@@ -1363,6 +1386,64 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
     return r
 
 
+# Below this many pages to convert, forking workers costs more than it saves
+# (a one-post preview rebuild converts the post and the listings, about 8).
+PARALLEL_MIN = 16
+FOR_TAG = re.compile(r"\{%-?\s*for\b")
+JOB: tuple = ()  # (parsed, ctx) while forked workers convert
+
+
+def workers() -> int:
+    """How many processes convert pages: WORKERS, else 4 (or the CPU count
+    when that is lower)."""
+    n = os.environ.get("WORKERS")
+    return max(1, int(n)) if n else min(4, os.cpu_count() or 1)
+
+
+def convert_pages(todo: list[str], parsed: dict, ctx: dict) -> dict:
+    """convert_page for each source in todo: {src: result}.
+
+    Pages convert independently, so they split across forked workers. A
+    fork inherits the site model, the Liquid environment and SITE_TIME, so a
+    page renders the same in any process, and the caller merges results in
+    its own order: the output does not depend on the worker count. What a
+    worker learns that the build reports (unknown Liquid filters) comes back
+    with each result. Without fork (Windows), or for a few pages, it runs
+    here."""
+    n = min(workers(), len(todo))
+    if n < 2 or len(todo) < PARALLEL_MIN or "fork" not in mp.get_all_start_methods():
+        return {src: convert_page(src, *parsed[src], ctx) for src in todo}
+    # Heaviest first, so no slow page is left running alone at the end:
+    # Liquid loops are what make a page slow (/weeks, /tags), then length.
+    order = sorted(
+        todo,
+        key=lambda s: (-len(FOR_TAG.findall(parsed[s][1])), -len(parsed[s][1])),
+    )
+    global JOB
+    JOB = (parsed, ctx)
+    try:
+        with ProcessPoolExecutor(
+            n, mp_context=mp.get_context("fork"), initializer=worker_init
+        ) as pool:
+            done = dict(zip(order, pool.map(convert_one, order)))
+    finally:
+        JOB = ()
+    for _, unknown in done.values():
+        ctx["env"].unknown_filters |= unknown
+    return {src: done[src][0] for src in todo}
+
+
+def worker_init() -> None:
+    # A preview's handlers stop its server; a worker just dies with the build.
+    signal.signal(signal.SIGINT, signal.SIG_DFL)
+    signal.signal(signal.SIGTERM, signal.SIG_DFL)
+
+
+def convert_one(src: str) -> tuple[dict, set]:
+    parsed, ctx = JOB
+    return convert_page(src, *parsed[src], ctx), set(ctx["env"].unknown_filters)
+
+
 def convert(cache: Cache) -> dict:
     """Convert every page, reusing the cache's still-valid pages. Returns the
     report; files go to WORK (content/, wrap/, templates/generated/,
@@ -1451,21 +1532,22 @@ def convert(cache: Cache) -> dict:
         "doc_urls": doc_urls,
     }
 
-    entries, cache.converted = {}, 0
-    for src, (fm, body) in parsed.items():
+    keys, todo = {}, []
+    for src in parsed:
         if taken[urls[src]] != src:
             continue
         if src in shadowed:
             report["shadowed_by_alias"] = report.get("shadowed_by_alias", []) + [src]
             continue
         # A listing page changes with any document.
-        key = (skey + (docs_key if src in LISTINGS else ""), hashes[src])
+        keys[src] = key = (skey + (docs_key if src in LISTINGS else ""), hashes[src])
         old = cache.pages.get(src)
-        if old and old[0] == key and all(f.exists() for f in old[1]["files"]):
-            r = old[1]
-        else:
-            r = convert_page(src, fm, body, ctx)
-            cache.converted += 1
+        if not (old and old[0] == key and all(f.exists() for f in old[1]["files"])):
+            todo.append(src)
+    fresh = convert_pages(todo, parsed, ctx)
+    entries, cache.converted = {}, len(fresh)
+    for src, key in keys.items():
+        r = fresh[src] if src in fresh else cache.pages[src][1]
         entries[src] = (key, r)
         if "error" in r:
             report["errors"][src] = r["error"]

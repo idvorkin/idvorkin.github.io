@@ -43,11 +43,14 @@ test.describe("Amazon Include Test Page", () => {
     await page.goto("/test/include-amazon");
     await page.waitForLoadState("networkidle");
 
-    // Find all keyboard ASINs
+    // Find all keyboard ASINs, in the keyboards row (the second include).
+    // B07ZWK2TQT is also the page's single-product example, so an unscoped
+    // locator matches it twice.
+    const keyboards = page.locator(".amazon-products").nth(1);
     const expectedASINs = ["B07ZWK2TQT", "B01JA6HG88", "B0FGN9GC2G"];
 
     for (const asin of expectedASINs) {
-      const product = page.locator(`.amazon-link[data-asin="${asin}"]`);
+      const product = keyboards.locator(`.amazon-link[data-asin="${asin}"]`);
       await expect(product).toBeVisible();
 
       // Check link has affiliate tag

@@ -1,4 +1,9 @@
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { expect, test } from "./base-test";
+
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 
 test("GitHub source links are visible and functional", async ({ page }) => {
   await page.goto("/all/");
@@ -52,15 +57,18 @@ test("GitHub links point to valid repository paths", async ({ page }) => {
 
     // The file path should have a valid extension
     expect(filePath).toMatch(/\.(md|html)$/);
-
-    // Make a HEAD request to check if the GitHub file exists
-    // Note: This tests the URL structure is valid, not the actual file existence
-    const response = await page.request.head(href);
-
-    // GitHub should respond (either 200 for valid file or 404 for missing file)
-    // Both are acceptable responses indicating the URL structure is correct
-    expect([200, 404]).toContain(response.status());
   }
+
+  // Every link must name a file that exists in this checkout: the link points
+  // at main, and this tree is what main will be. This used to HEAD github.com
+  // and accept 200 or 404, which checked nothing and failed whenever GitHub
+  // answered 429 to a busy test run.
+  const hrefs = await page.locator(".github-link").evaluateAll((links) => links.map((a) => a.getAttribute("href")));
+  expect(hrefs.length).toBeGreaterThan(0);
+  const missing = hrefs
+    .map((h) => h?.match(/\/blob\/main\/(.+)$/)?.[1])
+    .filter((rel) => !rel || !fs.existsSync(path.join(REPO_ROOT, decodeURIComponent(rel))));
+  expect(missing).toEqual([]);
 });
 
 test("GitHub links are grouped correctly by collection", async ({ page }) => {
