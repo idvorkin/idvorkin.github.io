@@ -26,8 +26,12 @@ fi
 WORK=${WORK:-${XDG_CACHE_HOME:-$HOME/.cache}/zola-port/preview-$PORT}
 mkdir -p "$WORK" && WORK=$(cd "$WORK" && pwd)
 OUT=$WORK/public
-ZOLA=${ZOLA:-$(command -v zola || echo "$HOME/tmp/agent/skill/zola/zola")}
-"$ZOLA" --version | grep -q '0\.23\.' || { echo "need zola 0.23.x (ZOLA=$ZOLA)" >&2; exit 1; }
+ZOLA=${ZOLA:-$(command -v zola || echo "$HOME/.local/bin/zola")}
+want="zola $(tr -d '[:space:]' < "$(dirname "$0")/ZOLA_VERSION")"
+[ "$("$ZOLA" --version 2> /dev/null)" = "$want" ] || {
+  echo "need $want (ZOLA=$ZOLA); run zola/install.sh" >&2
+  exit 1
+}
 export SRC WORK OUT BASE_URL ZOLA
 rm -f "$WORK/bbl/back-links.json" # first build makes a fresh index; rebuilds reuse it
 # $WORK/overlay/ is copied over every build (the verify report lives there as _port/).

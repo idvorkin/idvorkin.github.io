@@ -27,7 +27,6 @@ permissions:
   contents: read
 
 env:
-  ZOLA_VERSION: 0.23.6
   # Root-absolute links (/assets/..., /magic) are rewritten under /blog-zola/ by
   # zola/prefix_paths.py, which build.sh runs when BASE_URL has a path.
   BASE_URL: https://idvorkin-ai-tools.github.io/blog-zola
@@ -63,6 +62,7 @@ jobs:
 
       - name: Install Zola
         run: |
+          ZOLA_VERSION=$(cat tool/zola/ZOLA_VERSION)
           curl -sSL "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" | tar -xz -C /usr/local/bin zola
           zola --version
 

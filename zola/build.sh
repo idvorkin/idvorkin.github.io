@@ -22,8 +22,12 @@
 # Then backlinks.sh and Pagefind, when asked for.
 set -euo pipefail
 HERE=$(cd "$(dirname "$0")" && pwd)
-ZOLA=${ZOLA:-$(command -v zola || echo "$HOME/tmp/agent/skill/zola/zola")}
-"$ZOLA" --version | grep -q '0\.23\.' || { echo "need zola 0.23.x (ZOLA=$ZOLA)" >&2; exit 1; }
+ZOLA=${ZOLA:-$(command -v zola || echo "$HOME/.local/bin/zola")}
+want="zola $(tr -d '[:space:]' < "$HERE/ZOLA_VERSION")"
+[ "$("$ZOLA" --version 2> /dev/null)" = "$want" ] || {
+  echo "need $want (ZOLA=$ZOLA); run zola/install.sh" >&2
+  exit 1
+}
 SRC=$(cd "${SRC:-$HERE/..}" && pwd)
 if [ -z "${WORK:-}" ]; then
   if [ "$SRC" = "$(cd "$HERE/.." && pwd)" ]; then WORK=$HERE/.work
