@@ -123,7 +123,7 @@ The key insight is that these horsemen are interconnected - metabolic health inf
 
 ### Aerobic (Zone 2)
 
-The formulas for the heart rate ceiling, a calculator, the talk test and the markers to watch are in [Cardio](/cardio).
+How to build it, zone 2 for the base and a little hard work for the peak, with a heart rate calculator for every zone, is in [Cardio](/cardio).
 
 ### Anaerobic (Zone 5)
 
