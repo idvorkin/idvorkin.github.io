@@ -23,6 +23,8 @@ A journal of random explorations in AI. Keeping track of them so I don't get los
 - [What I wrote summary](#what-i-wrote-summary)
 - [Upcoming](#upcoming)
 - [Diary](#diary)
+  - [2026-11-24](#2026-11-24)
+    - [Jekyll to Zola in One Evening: Why, How Easy, and What I Got](#jekyll-to-zola-in-one-evening-why-how-easy-and-what-i-got)
   - [2026-11-21](#2026-11-21)
     - [Fresh Machine, Old Fear of Losing Branches](#fresh-machine-old-fear-of-losing-branches)
   - [2026-11-14](#2026-11-14)
@@ -279,6 +281,30 @@ let's see if we can simulate him, step #1, let's bring the site down into markdo
 - AI Music: My eulogy as a rap
 
 ## Diary
+
+### 2026-11-24
+
+#### Jekyll to Zola in One Evening: Why, How Easy, and What I Got
+
+- **TOP Takeaway**: Agents moved this blog off Jekyll in one evening, after 12 years, without editing a single post ([PR #1146](https://github.com/idvorkin/idvorkin.github.io/pull/1146)). I could trust it because of the gate: every output file diffed against the Jekyll build. The measured benefit is smaller than I expected: the preview server uses less than half the RAM, and nothing got much faster.
+- **Why**: I asked about incremental builds. Jekyll felt heavy: gems, a Ruby compatibility patch, and a full build plus a back-links pass before a new worktree can preview. The first Zola port came back with 8 of 500 pages matching the live site, and I said "Zola looks borked".
+- **How easy**: one evening of agent work. My part was deciding what to do where Jekyll itself was wrong.
+  - **A shim**: Jekyll's own Liquid templates and my posts run unchanged. The shim copies kramdown's quirks, like list looseness and header-less tables, so Zola's Markdown renders them the same way.
+  - **The gate**: build both sites from the same commit, drop what a browser can't see (whitespace, attribute order), and diff every file. Matching pages went 8 → 418 → 481 of 500 over two passes, ending at 1,623 of 1,647 files. The other 24 are a checked-in list, each with its reason: 6 hold the same entries in a different order (feed, sitemap, search), 1 looks identical in a screenshot, and 17 are my decision below. Phone-width screenshots of the live site against a Zola mirror backed up the diff.
+  - **My decision**: on 17 pages Jekyll was the broken one, showing a stray `</div>` or a link nested inside a TOC link. Zola renders what I meant, so I kept Zola's.
+  - **Rollback**: the old Jekyll build is still there as a workflow I run by hand.
+- **Benefit**: measured on my dev VM, same commit, while other agents kept the box busy, so the times are rough.
+
+  | Measured                           | Jekyll | Zola   |
+  | ---------------------------------- | ------ | ------ |
+  | Full build, time                   | 7.1 s  | 9.6 s  |
+  | Full build, peak RAM               | 300 MB | 189 MB |
+  | Rebuild after saving a post        | 2.0 s  | 1.8 s  |
+  | Preview server RAM, idle           | 290 MB | 124 MB |
+  | Fresh worktree to a served preview | 23 s   | 19 s   |
+  | Disk a previewed worktree adds     | 440 MB | 583 MB |
+
+- **What didn't**: speed. The full build got slower, because the shim is Python and takes 8.5 of the 9.6 s (Zola itself needs 0.3 s). The edit loop is a tie with `jekyll serve --incremental`, a new worktree is only 4 s quicker, and deploys take about the same time. Zola uses more disk, because its build cache sits outside the worktree. Readers get the same pages and the same search.
 
 ### 2026-11-21
 
