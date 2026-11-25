@@ -137,8 +137,9 @@ def _line_spans(text: str) -> str:
 # Block syntax made of dashes, never text: table delimiter rows, thematic
 # breaks, setext underlines.
 VERBATIM = re.compile(
-    r"\s*\|?\s*:?-+:?\s*([|+]\s*:?-+:?\s*)*\|?\s*$|\s{0,3}([-*_])(\s*\2){2,}\s*$|\s{0,3}(=+|-+)\s*$"
+    r"\s*\|?\s*:?-+:?\s*([|+]\s*:?-+:?\s*)*\|?\s*$|\s{0,3}([-*_])(\s*\2){2,}\s*$"
 )
+SETEXT = re.compile(r"\s{0,3}(=+|-+)\s*$")  # an underline only under text
 
 
 END = {
@@ -226,7 +227,12 @@ def apply(md: str) -> str:
                 end = kind or "blank"
             prev_blank = False
             continue
-        if VERBATIM.match(line):
+        if (
+            VERBATIM.match(line)
+            and not (prev_blank and re.fullmatch(r"\s{0,3}--?\s*", line))
+            or SETEXT.match(line)
+            and not prev_blank
+        ):
             flush()
             out.append(line)
             prev_blank = False
