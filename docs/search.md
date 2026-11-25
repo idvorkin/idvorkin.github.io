@@ -52,8 +52,7 @@ Excluded:
 - `page.collection == 'ig66'` — the whole family journal collection
 - `tags: family-journal`
 - `page.search_exclude: true` — per-page opt-out in frontmatter
-- `site.search.exclude_permalinks` in `_config.yml` — currently `/changelog`,
-  `/positive-mitzvahs`, `/negative-mitzvahs`
+- `site.search.exclude_permalinks` in `_config.yml` — currently `/changelog`
 
 `scripts/verify-search-index.sh` asserts this holds and runs in CI on every
 deploy. A Liquid typo in `pagefind-attrs.html` would otherwise silently start
