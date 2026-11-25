@@ -9,8 +9,9 @@ test.describe("7 habits", () => {
 
   test("Has known category", async ({ page }) => {
     // Use a more specific selector to avoid matching multiple elements
-    // Look for the heading element specifically
-    const categoryElement = page.locator("h3#be-proactive");
+    // Look for the heading element specifically. The seven habit headings are
+    // h2 since 27601f1f9 promoted them from h3.
+    const categoryElement = page.locator("h2#be-proactive");
     await expect(categoryElement).toBeVisible();
     await expect(categoryElement).toContainText(known_category_on_sunburst);
   });
