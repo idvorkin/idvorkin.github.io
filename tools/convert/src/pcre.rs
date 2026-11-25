@@ -58,18 +58,22 @@ impl Code {
         if code.is_null() {
             return Err(format!("{} at offset {off}", message(err)));
         }
-        // SAFETY: code is a live compiled pattern. A JIT failure leaves the
-        // interpreter, which pcre2_match falls back to with the same result.
+        // SAFETY: code is a live compiled pattern. Where the JIT is missing
+        // (no JIT on the target) or fails, pcre2_match runs the interpreter,
+        // with the same result; the JIT stack is only made for JIT code.
         unsafe {
-            pcre2_jit_compile_8(code, PCRE2_JIT_COMPLETE);
+            let jit = pcre2_jit_compile_8(code, PCRE2_JIT_COMPLETE) == 0;
             let md = pcre2_match_data_create_from_pattern_8(code, null_mut());
             let mctx = pcre2_match_context_create_8(null_mut());
-            let stack = pcre2_jit_stack_create_8(32 << 10, 64 << 20, null_mut());
-            assert!(
-                !md.is_null() && !mctx.is_null() && !stack.is_null(),
-                "PCRE2: out of memory"
-            );
-            pcre2_jit_stack_assign_8(mctx, None, stack.cast());
+            assert!(!md.is_null() && !mctx.is_null(), "PCRE2: out of memory");
+            let stack = if jit {
+                let st = pcre2_jit_stack_create_8(32 << 10, 4 << 20, null_mut());
+                assert!(!st.is_null(), "PCRE2: out of memory");
+                pcre2_jit_stack_assign_8(mctx, None, st.cast());
+                st
+            } else {
+                null_mut()
+            };
             Ok(Code {
                 code,
                 pattern: pattern.to_string(),
@@ -142,7 +146,9 @@ impl Drop for Code {
         unsafe {
             pcre2_match_data_free_8(d.md);
             pcre2_match_context_free_8(d.mctx);
-            pcre2_jit_stack_free_8(d.stack);
+            if !d.stack.is_null() {
+                pcre2_jit_stack_free_8(d.stack);
+            }
             pcre2_code_free_8(self.code);
         }
     }
