@@ -303,26 +303,33 @@ The full sweep took about 100 minutes at nice 19 with two pages at a time on
 a VM at load 15–40. A re-run after a converter change re-shot 102 pages in
 about 10 minutes.
 
-Build time on this VM, 2026-11-25 at load 2–3 (`build.py` then
-`backlinks.sh` then Pagefind, CI config, median of 5, alternating runs):
+Build time on this VM, 2026-11-25, 8 cores at load 2–3 (`build.py` then
+`backlinks.sh` then Pagefind, CI config, 4 workers unless noted, median of 5
+alternating runs):
 
 | Stage                      | Python fixes | Rust fixes |
 | -------------------------- | ------------ | ---------- |
-| convert, 4 workers         | 1.65 s       | 0.87 s     |
+| `build.py`                 | 2.41 s       | 1.51 s     |
+| convert                    | 1.65 s       | 0.87 s     |
 | convert, 1 worker          | 4.31 s       | 2.03 s     |
 | of which Liquid (1 worker) | 0.94 s       | 0.93 s     |
 | Zola                       | 0.13 s       | 0.13 s     |
 | finish                     | 0.40 s       | 0.36 s     |
-| back-links (Rust)          | 0.66 s       | 0.60 s     |
-| Pagefind                   | 0.70 s       | 0.57 s     |
+| back-links, Pagefind       | 0.66, 0.70 s | unchanged  |
 | whole build                | 3.78 s       | 2.67 s     |
 
-(2026-11-24, before the Rust tools: 7.8 s for `build.py` alone, 12.9 s with
-back-links and Pagefind.) What is left is spread out: convert (Liquid, YAML,
-heading ids, writes), back-links, Pagefind and finish each take 0.4–0.9 s.
-A one-post preview edit is unchanged by the port (0.8 s rebuild: finish
-0.35–0.4 s over the whole site, convert 0.23 s for the post and its listing
-pages, Zola 0.14 s); an include edit went from 2.35 s to 1.6 s.
+Before `tools/convert` (2026-11-24): 2.5 s for `build.py`, 6.8 s with
+back-links and Pagefind, at load 4–5; before the parallel convert, 7.8 s and
+12.9 s. What is left is spread out: convert (Liquid, YAML, heading ids,
+writes), back-links, Pagefind and finish take 0.4–0.9 s each.
+
+A one-post preview edit is unchanged by the port (about 0.8 s of rebuild).
+Profiled, it is Liquid re-rendering the listing pages and feeds (most of the
+0.23 s convert), then finish (0.35–0.4 s: every HTML file is rewritten), Zola
+0.14 s and each document's excerpt rendered again for `site.posts`. What
+would help there is caching, not a port: skip the listing and feed renders
+when no listing-visible field changed, and have finish rewrite only changed
+pages. An include edit went from 2.35 s to 1.6 s.
 
 ## (e) Work split by model tier
 
