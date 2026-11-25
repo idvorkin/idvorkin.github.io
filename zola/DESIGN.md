@@ -28,14 +28,16 @@ include and layout into Tera. Seven weeks of main changed 16 includes, added
 8 and rewrote the annotate tool, and the build broke. The fix is to stop
 translating:
 
-| Layer                                        | October                      | Now                                                                    |
-| -------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------- |
-| Liquid in posts                              | regex to Tera component call | rendered by python-liquid (`jekyll_liquid.py`)                         |
-| `_includes/*` (59)                           | 44 Tera components           | rendered by Liquid, no port                                            |
-| `_layouts/*` + head, menu, scripts, annotate | hand-ported Tera             | rendered by Liquid around a marker; `finish.py` splices Zola's HTML in |
-| Markdown                                     | Zola (pulldown-cmark)        | same, after kramdown-to-CommonMark fixes in `convert.py`               |
-| Listing pages (5)                            | hand-ported Tera             | still hand-ported; pinned by `ported.lock`                             |
-| Output layout                                | `/x/index.html`              | `/x.html`, Jekyll's own, plus its redirect stubs byte for byte         |
+| Layer                                        | October                      | Now                                                                                         |
+| -------------------------------------------- | ---------------------------- | ------------------------------------------------------------------------------------------- |
+| Liquid in posts                              | regex to Tera component call | rendered by python-liquid (`jekyll_liquid.py`)                                              |
+| `_includes/*` (59)                           | 44 Tera components           | rendered by Liquid, no port                                                                 |
+| `_layouts/*` + head, menu, scripts, annotate | hand-ported Tera             | rendered by Liquid around a marker; `finish.py` splices Zola's HTML in                      |
+| Markdown                                     | Zola (pulldown-cmark)        | same, after kramdown-to-CommonMark fixes in `convert.py`                                    |
+| Typography                                   | Zola smart punctuation       | off; kramdown's quote and symbol rules (`typography.py`) on the Markdown                    |
+| Listing pages (5)                            | hand-ported Tera             | still hand-ported; pinned by `ported.lock`                                                  |
+| feed.xml, search JSON, links.jsonp, sitemap  | hand-ported Tera / Zola's    | Jekyll's own Liquid over a `site.posts` model, after Zola (`render_feeds`, `write_sitemap`) |
+| Output layout                                | `/x/index.html`              | `/x.html`, Jekyll's own, plus its redirect stubs byte for byte                              |
 
 So Zola does two jobs: Markdown to HTML, and the five listing pages. A new or
 edited include, layout or data file needs no port work.
@@ -46,7 +48,7 @@ What can still drift, and what catches it:
   One exception, as in Jekyll: a filter the engine does not know passes its
   value through. That is a warning in previews and a failure with `STRICT=1`.
 - The five listing pages (`tags`, `categories`, `all-posts`, `_d/index`,
-  `_ig66/index`) plus `feed.xml` and the search JSON loop over `site.posts`
+  `_ig66/index`) loop over `site.posts`
   and friends. Each page's Jekyll source is hashed in `ported.lock`; a changed
   source warns in previews and fails with `STRICT=1`.
 - kramdown and pulldown-cmark disagree on some Markdown. The verification
@@ -221,19 +223,19 @@ Zola replays it.
 
 Static (`diff_sites.py`, `skeleton.py`, `jscheck.cjs`; 500 page pairs):
 
-| Check                                 | Result                                                    |
-| ------------------------------------- | --------------------------------------------------------- |
-| Output files                          | 1,422 of 1,423 present (`links.jsonp` dropped on purpose) |
-| Pages / redirects                     | 500 of 500 / 428 of 428                                   |
-| Visible text identical                | 426                                                       |
-| Text at least 99.5% the same          | 494                                                       |
-| Text under 95%                        | 2 (`/all` build dates, `/asciinema` quotes)               |
-| Pages whose tag structure differs     | 74 (153 before this session's three converter rules)      |
-| Heading ids kept                      | 6,641 of 6,654                                            |
-| Broken links or anchors the port made | 0 (116 are broken in Jekyll too)                          |
-| Inline scripts the conversion broke   | 0                                                         |
-| `back-links.json` from Zola output    | 387 of 387 URLs; 12 pages differ in outgoing links        |
-| Feeds and search JSON                 | differ (hand-ported templates; `blog-pzp.1`)              |
+| Check                                 | Result                                                                                                                                                                                                        |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Output files                          | 1,422 of 1,423 present (`links.jsonp` dropped on purpose)                                                                                                                                                     |
+| Pages / redirects                     | 500 of 500 / 428 of 428                                                                                                                                                                                       |
+| Visible text identical                | 426                                                                                                                                                                                                           |
+| Text at least 99.5% the same          | 494                                                                                                                                                                                                           |
+| Text under 95%                        | 2 (`/all` build dates, `/asciinema` quotes)                                                                                                                                                                   |
+| Pages whose tag structure differs     | 74 (153 before this session's three converter rules)                                                                                                                                                          |
+| Heading ids kept                      | 6,641 of 6,654                                                                                                                                                                                                |
+| Broken links or anchors the port made | 0 (116 are broken in Jekyll too)                                                                                                                                                                              |
+| Inline scripts the conversion broke   | 0                                                                                                                                                                                                             |
+| `back-links.json` from Zola output    | 387 of 387 URLs; 12 pages differ in outgoing links                                                                                                                                                            |
+| Feeds and search JSON                 | differ (hand-ported templates; `blog-pzp.1`). Since the 2026-11-24 cutover audit: rendered from Jekyll's Liquid; only the order of 12 `_d` docs with quoted dates differs (Ruby sorts String vs Time by path) |
 
 Pixels (492 pages that are not byte-identical copies, 1,968 screenshots, none
 failed):
@@ -319,3 +321,11 @@ is a count per label, which orders the Opus rule work.
 Haiku also drafts Jekyll-safe source fixes where a post's Markdown is
 ambiguous and both renderers agree once it is not (a missing blank line after
 an HTML block). Those are ordinary content PRs for Igor to merge.
+
+## (f) Cutover audit, 2026-11-24
+
+`~/tmp/agent/notes/2026-11-24-zola-cutover-audit.md` (bead `blog-pzp.4`)
+diffs every file of a CI-shaped Jekyll build (`_config.yml,_config_ci.yml`,
+`TZ=UTC`) against this toolchain from the same commit. Builds for that
+comparison need `JEKYLL_CONFIG=_config.yml,_config_ci.yml TZ=UTC`, as the
+cutover workflow will.
