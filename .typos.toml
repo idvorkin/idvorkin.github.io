@@ -38,6 +38,7 @@ idvorkin = "idvorkin"
 zach = "zach"
 amelia = "amelia"
 alz = "alz"  # Alzheimer's abbreviation
+axe = "axe"  # axe, the SwiftUI preview CLI (github.com/k-kohey/axe)
 psyc = "psyc"  # Psychology abbreviation
 opf = "opf"  # OpenAI Privacy Filter CLI and its OPF_* env vars (/privacy-filter)
 lsat = "lsat"
