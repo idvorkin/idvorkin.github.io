@@ -74,15 +74,20 @@ FEED_FILES = {
     "search-pins.json",
     "links.jsonp",
 }
-# Listing pages whose Liquid loops over site.* — hand-ported to Tera templates.
+# Pages Jekyll ran no Markdown over: Liquid only, then a Zola template.
 TEMPLATE_PAGES = {
     "index.md": "generated",
     "featured.html": "generated",
-    "tags.html": "pages/tags.html",
-    "categories.html": "pages/categories.html",
-    "all-posts.md": "pages/all_posts.html",
-    "_d/index.html": "pages/d_index.html",
-    "_ig66/index.md": "pages/ig66_index.html",
+}
+# Pages that list the site's documents: re-rendered when any document changes.
+LISTINGS = {
+    "tags.html",
+    "categories.html",
+    "all-posts.md",
+    "_d/index.html",
+    "_ig66/index.md",
+    "featured.html",
+    "index.md",
 }
 LABELS = {
     "_d": "d",
@@ -607,6 +612,32 @@ def site_docs(parsed: dict, urls: dict) -> dict:
     return out
 
 
+def liquid_collections() -> dict:
+    """site.posts, site.<label>, site.collections and site.tags as Jekyll's
+    Liquid sees them (content is filled in later, for the feeds)."""
+    labels = ["posts", "d", "td", "ig66", "test"]
+    out: dict = {label: SITE_DOCS.get(label, []) for label in labels}
+    # collection.docs ascending; site.posts is newest first.
+    out["collections"] = [
+        {
+            "label": label,
+            "docs": list(reversed(out[label])) if label == "posts" else out[label],
+            "output": True,
+        }
+        for label in labels
+    ]
+    tags: dict = {}
+    for d in reversed(out["posts"]):
+        for t in d["tags"]:
+            tags.setdefault(t, []).append(d)
+    # Jekyll's post_attr_hash: each tag's posts sorted, then reversed.
+    out["tags"] = {
+        t: sorted(v, key=lambda d: d["_key"], reverse=True) for t, v in tags.items()
+    }
+    out["categories"] = {}
+    return out
+
+
 def render_feeds(out_dir: Path, contents: dict) -> None:
     """Jekyll's feed.xml, search.json, search-titles.json and links.jsonp,
     rendered from their own Liquid. post.content is the page's HTML before
@@ -828,29 +859,6 @@ def site_context() -> dict:
     if os.environ.get("BASE_URL"):
         site["url"] = os.environ["BASE_URL"].rstrip("/")
     return site
-
-
-def check_ported(report: dict) -> None:
-    """The listing pages are the only hand ports left (templates/pages/). Each
-    one's Jekyll source is pinned by hash in ported.lock: when the source
-    changes, the port is stale until someone re-syncs it and re-pins."""
-    lock_file = HERE / "ported.lock"
-    lock = json.loads(lock_file.read_text())
-    now = {
-        src: hashlib.sha1((REPO / src).read_bytes()).hexdigest()
-        for src, t in TEMPLATE_PAGES.items()
-        if t != "generated"
-    }
-    if os.environ.get("PIN_PORTED"):
-        lock_file.write_text(json.dumps(now, indent=1, sort_keys=True) + "\n")
-        return
-    drift = sorted(s for s in now if lock.get(s) != now[s])
-    report["ported_drift"] = drift
-    if drift:
-        msg = f"hand-ported pages changed in Jekyll, re-sync templates/pages/ then PIN_PORTED=1: {drift}"
-        if os.environ.get("STRICT"):
-            sys.exit(msg)
-        print("WARNING: " + msg, file=sys.stderr)
 
 
 LINK_MD = re.compile(r"(\]\()(\s*<?)([^)\s>]+)")
@@ -1092,7 +1100,12 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
         is_template = src in TEMPLATE_PAGES or src.endswith(".html")
         INCS.clear()
         if hand in (None, "generated"):
-            page = {**fm, "url": url, "path": src, "title": fm.get("title")}
+            page = {
+                **fm,
+                "url": page_url(src, fm),
+                "path": src,
+                "title": fm.get("title"),
+            }
             if is_doc(src):
                 page["collection"] = LABELS.get(Path(src).parts[0])
             body = jekyll_liquid.render(env, body, {"site": site, "page": page})
@@ -1205,7 +1218,7 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
     if layout and layout_file.exists():
         page_ctx = {
             **fm,
-            "url": url,
+            "url": page_url(src, fm),  # Jekyll's page.url, as written
             "path": src,
             "title": fm.get("title"),
             "tags": tags or None,
@@ -1319,6 +1332,23 @@ def convert(cache: Cache) -> dict:
         if not is_doc(s_) and u in {re.sub(r"\.html$", "", a) for a in alias_owner}
     }
     skey = digest(json.dumps([sorted(urls.items()), sorted(alias_owner.items())]))
+    # The listing pages (tags, categories, /d/, /ig66/, /all/) are Jekyll's
+    # own Liquid over site.posts / site.<label> / site.collections / site.tags.
+    SITE_DOCS.clear()
+    SITE_DOCS.update(site_docs(parsed, urls))
+    site = {**site, **liquid_collections()}
+    site["pages"] = [
+        {
+            **fm_,
+            "url": page_url(s_, fm_),
+            "path": s_,
+            "title": fm_.get("title"),
+            **({"date": jekyll_time(fm_, s_)} if fm_.get("date") else {}),
+        }
+        for s_, (fm_, _) in sorted(parsed.items())
+        if not is_doc(s_)
+    ]
+    docs_key = digest(json.dumps(sorted(hashes.items())))
     ctx = {
         "env": env,
         "site": site,
@@ -1335,7 +1365,8 @@ def convert(cache: Cache) -> dict:
         if src in shadowed:
             report["shadowed_by_alias"] = report.get("shadowed_by_alias", []) + [src]
             continue
-        key = (skey, hashes[src])
+        # A listing page changes with any document.
+        key = (skey + (docs_key if src in LISTINGS else ""), hashes[src])
         old = cache.pages.get(src)
         if old and old[0] == key and all(f.exists() for f in old[1]["files"]):
             r = old[1]
@@ -1414,8 +1445,6 @@ def convert(cache: Cache) -> dict:
         rank = ["_posts", "_d", "_td", "_ig66", "_test"].index(top) if top else 9
         return (rank, doc_date(parsed[src][0], src) if top else "", src)
 
-    SITE_DOCS.clear()
-    SITE_DOCS.update(site_docs(parsed, urls))
     CACHE_SITE[:] = [site, env]
     redirects, alias_pages = {}, []
     for src_ in sorted(parsed, key=generator_order):
@@ -1442,7 +1471,6 @@ def convert(cache: Cache) -> dict:
     (WORK / "data" / "tags.json").write_text(
         json.dumps([{"tag": t, "count": len(tag_docs[t])} for t in sorted(tag_docs)])
     )
-    check_ported(report)
     report["unknown_filters"] = sorted(env.unknown_filters)
     if env.unknown_filters:
         msg = f"unknown Liquid filters passed through as Jekyll does: {sorted(env.unknown_filters)}"

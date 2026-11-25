@@ -204,6 +204,14 @@ def make_env(repo: Path, site: dict) -> Environment:
         return stock_sort(ctx, vals, key)
 
     f["sort"] = sort
+
+    def where_exp(ctx, vals, var, expr):
+        # Jekyll's where_exp: keep the items for which the Liquid condition
+        # holds, the item bound to var.
+        test = env.parse(f"{{% if {expr} %}}1{{% endif %}}")
+        return [v for v in vals or [] if test.render({var: v}) == "1"]
+
+    f["where_exp"] = where_exp
     f["cgi_escape"] = lambda _c, v: urllib.parse.quote_plus(_s(v))
     f["uri_escape"] = lambda _c, v: urllib.parse.quote(
         _s(v), safe="/:?#[]@!$&'()*+,;=%"

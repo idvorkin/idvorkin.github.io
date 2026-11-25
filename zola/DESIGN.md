@@ -35,7 +35,7 @@ translating:
 | `_layouts/*` + head, menu, scripts, annotate | hand-ported Tera             | rendered by Liquid around a marker; `finish.py` splices Zola's HTML in                      |
 | Markdown                                     | Zola (pulldown-cmark)        | same, after kramdown-to-CommonMark fixes in `convert.py`                                    |
 | Typography                                   | Zola smart punctuation       | off; kramdown's quote and symbol rules (`typography.py`) on the Markdown                    |
-| Listing pages (5)                            | hand-ported Tera             | still hand-ported; pinned by `ported.lock`                                                  |
+| Listing pages (5)                            | hand-ported Tera             | Jekyll's own Liquid over the `site.posts` / `site.collections` / `site.pages` model         |
 | feed.xml, search JSON, links.jsonp, sitemap  | hand-ported Tera / Zola's    | Jekyll's own Liquid over a `site.posts` model, after Zola (`render_feeds`, `write_sitemap`) |
 | Output layout                                | `/x/index.html`              | `/x.html`, Jekyll's own, plus its redirect stubs byte for byte                              |
 
@@ -48,9 +48,9 @@ What can still drift, and what catches it:
   One exception, as in Jekyll: a filter the engine does not know passes its
   value through. That is a warning in previews and a failure with `STRICT=1`.
 - The five listing pages (`tags`, `categories`, `all-posts`, `_d/index`,
-  `_ig66/index`) loop over `site.posts`
-  and friends. Each page's Jekyll source is hashed in `ported.lock`; a changed
-  source warns in previews and fails with `STRICT=1`.
+  `_ig66/index`) are Jekyll's own Liquid over a `site.posts` / `site.<label>`
+  / `site.collections` / `site.pages` / `site.tags` model; they re-render when
+  any document changes. Nothing is hand-ported any more.
 - kramdown and pulldown-cmark disagree on some Markdown. The verification
   gate below catches a page that gets worse.
 

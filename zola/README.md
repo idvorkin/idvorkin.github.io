@@ -21,7 +21,6 @@ zola/verify/verify.sh                      # pixel + DOM diff against _site
 | `jekyll_liquid.py` | Jekyll's Liquid pass on python-liquid: `{% include %}`, lax syntax, Jekyll filters                        |
 | `convert.py`       | Per page: Liquid, kramdown to CommonMark fixes, pinned heading ids, the layout around a mark              |
 | `finish.py`        | Zola's `/x/index.html` to Jekyll's `/x.html`, layout splice, redirect stubs, code blocks                  |
-| `templates/pages/` | The five listing pages still ported by hand (pinned by `ported.lock`)                                     |
 | `diff_sites.py`    | Static diff of two builds: URL inventory, text, heading ids, broken links                                 |
 | `verify/`          | Screenshots of both builds, pixel and DOM diff, ranked report, ratchet gate                               |
 | `backlinks.sh`     | `back-links.json` from the Zola output, or the cached one on preview rebuilds                             |
