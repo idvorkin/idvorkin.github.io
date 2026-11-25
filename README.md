@@ -38,6 +38,7 @@ This [blog](https://idvork.in) contains my [evergreen notes](https://notes.andym
     - [Useful scripts](#useful-scripts)
     - [Re-writing from scratch](#re-writing-from-scratch)
     - [Compilation workflow](#compilation-workflow)
+    - [Site build](#site-build)
     - [Jekyll setup](#jekyll-setup)
 
 <!-- vim-markdown-toc -->
@@ -157,6 +158,10 @@ See some of my notes at [https://github.com/idvorkin/idvorkin.github.io/blob/mas
 It's pretty complicated, rendered with [excalidraw](/tools#excalidraw):
 
 ![Build workflow](/images/build-workflow.png)
+
+### Site build
+
+The site deploys from a Zola build of these Jekyll sources: `just setup` once, `just zola-serve` to preview, `just zola-build` for CI's `_site/`. See [zola/README.md](zola/README.md). The Jekyll setup below still works for local preview and the pre-commit anchor checker, and is the rollback build (`pages-jekyll.yml`).
 
 ### Jekyll setup
 

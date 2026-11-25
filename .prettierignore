@@ -31,6 +31,10 @@ _includes/pagefind-attrs.html
 # blank line — kramdown then stops treating it as its own markdown block.
 _includes/den_strip.html
 
+# Zola port (bead blog-pzp): Tera 2 templates; prettier would rewrap tags and
+# inject closing tags, and the components' line structure is load-bearing.
+zola/templates/**
+
 # Must emit one line: prettier splits the optional <a ...> wrapper across
 # lines and kramdown then escapes it into a blockquote.
 _includes/local_image_float_right.html

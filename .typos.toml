@@ -6,6 +6,7 @@ locale = "en-us"
 extend-ignore-re = ['asin="[A-Za-z0-9;]+"']
 
 [default.extend-words]
+"achievment" = "achievment"  # DOM id #achievment in _ig66/index.md, read by src/ (zola port copies it)
 # Common tech/domain-specific terms that might be flagged
 "iterm" = "iterm"  # iTerm is a terminal application for Mac
 "iTerm" = "iTerm"  # iTerm is a terminal application for Mac

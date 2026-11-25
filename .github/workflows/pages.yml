@@ -8,8 +8,11 @@ name: Deploy to GitHub Pages
 # on every deploy and can never drift from published content — and, unlike the
 # old update-backlinks.yml, nothing has to push a generated file back to main.
 #
-# Ruby 3.3.4 matches GitHub's standard Pages build (pages.github.com/versions);
-# the _ruby_compat.rb shim is only needed on Ruby 4.x locally.
+# The site is built by Zola through zola/build.sh: a shim over the unchanged
+# Jekyll sources (Jekyll's own Liquid for layouts, includes and listings;
+# kramdown's rules carried into CommonMark), whose output has Jekyll's shape.
+# zola/DESIGN.md explains it. The Jekyll build lives on as pages-jekyll.yml,
+# a by-hand rollback.
 #
 # ONE-TIME SETUP: repo Settings -> Pages -> Source must be set to "GitHub Actions".
 # Until that is flipped, this workflow runs green but the live site still comes
@@ -49,11 +52,6 @@ jobs:
           # stamped with the deploy commit's date.
           fetch-depth: 0
 
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -64,32 +62,23 @@ jobs:
           npm ci
           npm run build
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build --config _config.yml,_config_ci.yml
-
       - uses: astral-sh/setup-uv@v7
 
-      - name: Build backlinks index
-        # Reads the built HTML in _site/ and writes back-links.json at the repo
-        # root, so it has to run after the Jekyll build. One build pass is
-        # enough: nothing in Jekyll consumes back-links.json — no _plugins,
-        # _includes, or layout reads it; the page fetches /back-links.json from
-        # the client at runtime. So there is no chicken-and-egg to unwind.
-        #
-        # 62-min threshold matches what update-backlinks.yml used, so an
-        # already-current index doesn't churn near-identical timestamps.
-        #
-        # Jekyll already copied the committed (possibly stale) back-links.json
-        # into _site/ — overwrite it with the freshly built one. Nothing is
-        # pushed back to the repo; the fresh index ships in the Pages artifact
-        # only.
+      - name: Install Zola (version pinned in zola/ZOLA_VERSION)
         run: |
-          set -euo pipefail
-          uv run ./build_back_links.py build --threshold-minutes 62
-          cp back-links.json _site/back-links.json
+          ZOLA_VERSION=$(cat zola/ZOLA_VERSION)
+          curl -sSL "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" | sudo tar -xz -C /usr/local/bin zola
+          zola --version
 
-      - name: Build Pagefind search index
-        run: npx --yes pagefind --site _site
+      - name: Build site (Zola), back-links and Pagefind
+        # CI's merged config (_config_ci.yml's exclude: list replaces the main
+        # one, as Jekyll's --config a,b does) and page dates in UTC, as the
+        # Jekyll build had them. STRICT fails on an unknown Liquid filter.
+        # build.sh runs build_back_links.py and Pagefind itself.
+        env:
+          TZ: UTC
+          JEKYLL_CONFIG: _config.yml,_config_ci.yml
+        run: OUT="$PWD/_site" WORK="$PWD/.zola-work" STRICT=1 BACKLINKS=1 PAGEFIND=1 zola/build.sh
 
       - name: Verify search index and exclusions
         run: ./scripts/verify-search-index.sh

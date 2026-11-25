@@ -1,9 +1,28 @@
 default:
     @just --list
 
-# Setup development environment (run once after clone)
+# Setup (run once after clone): hooks + site toolchain (Zola, uv, shim deps, node_modules)
 setup:
     prek install
+    zola/install.sh
+
+# ===== Site build (Zola over the unchanged Jekyll sources; zola/README.md) =====
+
+# Build the site into _site/ the way the Pages workflow does
+zola-build:
+    TZ=UTC JEKYLL_CONFIG=_config.yml,_config_ci.yml OUT="$PWD/_site" BACKLINKS=1 PAGEFIND=1 zola/build.sh
+
+# Live preview with rebuild-on-save (0.6 s per edit)
+zola-serve port="4471":
+    zola/preview.sh . {{port}}
+
+# Gate: build Jekyll and Zola from this checkout, fail on any unlisted difference
+zola-parity:
+    zola/verify/parity.sh
+
+# Bump the pinned Zola (or refresh the shim's deps), then run the parity gate
+zola-update version="":
+    zola/update.sh {{version}}
 
 # ===== JavaScript/TypeScript Build System =====
 # For JavaScript/TypeScript development, use these commands:

@@ -18,6 +18,18 @@ Then read: `repo_tmp/chop-conventions/dev-inner-loop/a_readme_first.md`
 
 **For coding/development work**, see `CLAUDE-CODING.md`.
 
+## How the site builds (Zola since the cutover)
+
+The live site is built by **Zola from these unchanged Jekyll sources** (`zola/build.sh`, run by `.github/workflows/pages.yml`). Write posts, includes and layouts exactly as before: Jekyll's own Liquid still renders them, and kramdown's Markdown rules are carried into CommonMark by a shim in `zola/`.
+
+- Install once: `just setup` (pinned Zola from `zola/ZOLA_VERSION`, uv, the shim's deps, node_modules).
+- Preview: `just zola-serve` (:4471, rebuilds on save, matches production). Build `_site/` as CI does: `just zola-build`.
+- A page renders differently from Jekyll: fix the shim, never the post. `just zola-parity` lists every unexpected difference; `zola/README.md` says which file owns which kind of render.
+- Update Zola or the shim's deps: `just zola-update [version]`. It ends with the parity gate; commit the pin only if the gate passes.
+- Rollback: run the "Deploy to GitHub Pages (Jekyll rollback)" workflow by hand (`pages-jekyll.yml`), or revert the `pages.yml` change.
+
+The Jekyll recipes below (`just jekyll-serve`, `jekyll-build`, `worktree-init`) still work and still feed the `anchor-checker` hook's `_site/`. They are no longer what deploys; `blog-pzp.5` moves them to Zola.
+
 ## Task Tracking
 
 Use beads (`bd` commands) for task tracking. See the Beads Integration section below for details.
@@ -49,7 +61,7 @@ Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow
 
 ### Backlinks index is CI-generated — never commit it
 
-`back-links.json` is **not tracked in git**. `.github/workflows/pages.yml` builds it fresh (`uv run ./build_back_links.py build`) after every Jekyll build on every push to `main`, then ships it in the Pages deploy artifact. Nothing in Jekyll itself consumes the file — no `_plugins`/`_includes`/layout reads it — the browser fetches `/back-links.json` at runtime, so the deployed copy can never go stale and there is nothing to rebuild before opening a PR.
+`back-links.json` is **not tracked in git**. `.github/workflows/pages.yml` builds it fresh (`zola/build.sh` runs `build_back_links.py` with `BACKLINKS=1`) after every site build on every push to `main`, then ships it in the Pages deploy artifact. Nothing in Jekyll itself consumes the file — no `_plugins`/`_includes`/layout reads it — the browser fetches `/back-links.json` at runtime, so the deployed copy can never go stale and there is nothing to rebuild before opening a PR.
 
 **Do not run `just update-backlinks` (or `just back-links`/`bbl`) as a pre-PR step, and never `git add` its output.** The file is gitignored specifically so an accidental `git add -A` can't catch it. (This used to be required — "rebuild before opening a new-post PR, commit the regenerated file" — and it was the single biggest source of merge conflicts between concurrent content PRs, since every PR touched the same generated file. Removed 2026-08; see the PR that removed this section for the history.)
 
@@ -173,7 +185,7 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
 | Find related posts        | `/find-content`                   | Search by keyword, theme, or frontmatter metadata                    |
 | Charts, cards, matrices   | `/blog-visuals`                   | Visual components for blog posts                                     |
 | Amazon product links      | `/amazon-asin`                    | Affiliate links with cached metadata                                 |
-| Preview pages             | `/serve`                          | Start/check Jekyll server, get Tailscale URL                         |
+| Preview pages             | `/serve` (or `just zola-serve`)   | Start/check Jekyll server, get Tailscale URL                         |
 | Test components           | `/test-includes`                  | Playwright tests for includes and components                         |
 | Fetch web content         | `/web-browse`                     | Fallback chain: Lightpanda, Playwright CLI, WebFetch                 |
 | Process YouTube videos    | `youtube-content-processor` agent | Subtitle extraction, conversion, analysis                            |

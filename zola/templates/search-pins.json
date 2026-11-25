@@ -1,0 +1,2 @@
+{%- set pins = load_data(path="data/search_pins.yml") -%}
+{{ pins.pins | json_encode | safe }}
