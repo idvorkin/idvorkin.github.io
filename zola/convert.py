@@ -515,6 +515,9 @@ class Inc:
     def __init__(self, name: str, text: str):
         self.name = name
         self.raw = text
+        # "</script><div" ({%- -%} trims the newline): the div opens a block
+        # of its own, so give it its own line.
+        text = re.sub(r"(</(?:script|style)>)[ \t]*(<[A-Za-z])", r"\1\n\2", text)
         lines = text.strip("\n").split("\n")
         parts: list[tuple[bool, str]] = []  # (is_html, text)
         i = 0
@@ -662,9 +665,7 @@ def html_block_lines(body: str, notes: dict) -> str:
     rule 7 needs the whole tag on its first line, else it is a paragraph and
     the tag is escaped), and "</script><style>" on one line (a closing script
     tag cannot start a block, so the CSS after it became a paragraph)."""
-    body, n = re.subn(
-        r"(</(?:script|style)>)[ \t]*(<(?:script|style)\b)", r"\1\n\2", body
-    )
+    body, n = re.subn(r"(</(?:script|style)>)[ \t]*(<[A-Za-z])", r"\1\n\2", body)
     # pulldown-cmark drops a soft break inside image alt text; kramdown keeps
     # it as whitespace.
     body = re.sub(
