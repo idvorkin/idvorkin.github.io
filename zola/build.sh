@@ -14,6 +14,7 @@
 #       content, so any branch or PR builds with the current toolchain.
 # WORK  scratch Zola site dir (default: zola/.work, or a per-SRC cache dir).
 # OUT   output dir, shaped like Jekyll's _site (default: $WORK/public).
+# WORKERS  processes converting pages (default 4, at most the CPU count).
 #
 # Steps (build.py): stage the files Jekyll copies verbatim, copy _data, write
 # the dev banner's git.json (Jekyll's _plugins/git_data_generator.rb did

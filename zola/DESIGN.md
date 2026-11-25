@@ -101,6 +101,7 @@ Pagefind when asked:
 | `BACKLINKS=1` | run `build_back_links.py` over the output                    |
 | `PAGEFIND=1`  | build the search index                                       |
 | `STRICT=1`    | fail on a stale hand port or an unknown Liquid filter        |
+| `WORKERS`     | processes converting pages (default 4, at most the CPUs)     |
 
 The toolchain lives on `zola-port` in the fork until Igor decides to merge
 `zola/` into main. That merge is safe for Jekyll (`zola` is in `exclude:`)

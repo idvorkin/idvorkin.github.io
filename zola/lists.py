@@ -40,6 +40,12 @@ NOHEAD = "<!--zp-nohead-->"
 CODE = re.compile(r"(`+).*?\1")
 # kramdown's separator line: dashes, optional colons, | or + between cells.
 DELIM = re.compile(r"^\s*\|?\s*:?-+:?\s*([|+]\s*:?-+:?\s*)*\|?\s*$")
+# _scan's per-line tests, compiled once.
+OPEN_TAG = re.compile(r" {0,3}<([a-zA-Z][\w-]*)(?=[\s/>]|$)")
+CLOSED_TAG = re.compile(r" {0,3}<([a-zA-Z][\w-]*)\b[^>]*>.*</\1>\s*$")
+LONE_TAG = re.compile(r" {0,3}</?([a-zA-Z][\w-]*)\b[^>]*>\s*$")
+INDENTED_COMMENT = re.compile(r" {1,3}<!--.*-->\s*$")
+DD = re.compile(r":\s+\S")
 
 
 def _cells(s: str) -> int:
@@ -119,7 +125,7 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
             fence = f.group(1)
             i += 1
             continue
-        tag = re.match(r" {0,3}<([a-zA-Z][\w-]*)(?=[\s/>]|$)", line)
+        tag = OPEN_TAG.match(line)
         if (
             tag
             and tag.group(1).lower() not in SPAN
@@ -130,7 +136,7 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
             # kramdown lets a block-level (or unknown) element interrupt a
             # paragraph; CommonMark only for its own list of names.
             edits[idx[i]] = BREAK
-        closed = re.match(r" {0,3}<([a-zA-Z][\w-]*)\b[^>]*>.*</\1>\s*$", line)
+        closed = CLOSED_TAG.match(line)
         if (
             closed
             and closed.group(1).lower() not in SPAN
@@ -141,7 +147,7 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
             # kramdown's block ends at its closing tag: the next line starts
             # a paragraph, where CommonMark would keep it in the HTML block.
             edits[idx[i]] = edits.get(idx[i], "") + AFTER
-        lone = re.match(r" {0,3}</?([a-zA-Z][\w-]*)\b[^>]*>\s*$", line)
+        lone = LONE_TAG.match(line)
         if (
             lone
             and lone.group(1).lower() in SPAN
@@ -155,7 +161,7 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
         if line.lstrip().startswith("<"):
             # Raw HTML: a comment runs to its "-->" (a marker inside would
             # close it early), any other block to the next blank line.
-            if re.match(r" {1,3}<!--.*-->\s*$", line):
+            if INDENTED_COMMENT.match(line):
                 # kramdown reads an indented one-line comment as a paragraph.
                 edits[idx[i]] = PARA
             elif line.lstrip().startswith("<!--"):
@@ -237,7 +243,7 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
             rows = it["rows"]
             text = [r[1] for r in rows]
             dds = 0
-            while 1 + dds < len(text) and re.match(r":\s+\S", text[1 + dds]):
+            while 1 + dds < len(text) and DD.match(text[1 + dds]):
                 dds += 1
             if dds and text[0].strip() and not _block_start(text[0]):
                 # term + ": definition" lines: kramdown's definition list.
