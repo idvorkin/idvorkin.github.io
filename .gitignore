@@ -421,3 +421,6 @@ docs/superpowers/specs/private/
 # pair of concurrent content PRs.
 /back-links.json
 .build_stats_cache/
+
+# Zola build work dir (pages.yml)
+.zola-work/

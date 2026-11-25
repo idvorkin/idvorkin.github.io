@@ -15,3 +15,6 @@ exclude:
   # Agent skill files (raw-fetched from GitHub, not site pages). Listed here
   # too because this exclude list REPLACES the one in _config.yml in CI.
   - skill/
+  # The Zola toolchain (zola/build.sh builds the site; this list only matters
+  # to the Jekyll rollback build).
+  - zola/
