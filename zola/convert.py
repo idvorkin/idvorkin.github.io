@@ -709,7 +709,13 @@ def html_block_lines(body: str, notes: dict) -> str:
                 break
             rest.append(x)
         if f"</{m.group(1)}>" not in "\n".join(rest):
-            out[k] = f"<p><{m.group(1)}{m.group(2) or ''}></{m.group(1)}></p>"
+            tag = f"<{m.group(1)}{m.group(2) or ''}></{m.group(1)}>"
+            prev = out[k - 1] if k else ""
+            # Under a paragraph's text it closes inside that paragraph.
+            joins = prev.strip() and not re.match(
+                r"\s*(<|#|\||[-*+]\s|\d+[.)]\s)", prev
+            )
+            out[k] = tag if joins else f"<p>{tag}</p>"
             n += 1
     if n:
         notes["html_block_lines"] = n
