@@ -161,7 +161,7 @@ It's pretty complicated, rendered with [excalidraw](/tools#excalidraw):
 
 ### Site build
 
-The site deploys from a Zola build of these Jekyll sources: `just setup` once, `just zola-serve` to preview, `just zola-build` for CI's `_site/`. See [zola/README.md](zola/README.md). The Jekyll setup below still works for local preview and the pre-commit anchor checker, and is the rollback build (`pages-jekyll.yml`).
+The site deploys from a Zola build of these Jekyll sources: `just setup` once, `just serve` to preview on :4000, `just build` for CI's `_site/` and `back-links.json`. See [zola/README.md](zola/README.md). The Jekyll setup below is only for the Jekyll-only recipes (`jekyll-build`, `jekyll-serve-legacy`, `zola-parity`) and the rollback build (`pages-jekyll.yml`).
 
 ### Jekyll setup
 

@@ -9,13 +9,14 @@ allowed-tools:
 
 Comprehensive workflow for working on blog content (new or existing) following project conventions.
 
-**Branch Name:** "$ARGUMENTS" (or prompt Igor if needed)
+**Branch Name:** "\$ARGUMENTS" (or prompt Igor if needed)
 
 ## Workflow
 
 ### Phase 1: Read Content Guidelines
 
 1. **Read content_guidelines.md**
+
    - Extract and display the 8 content types with their purposes
    - Show this as a quick reference for Igor
 
@@ -44,12 +45,14 @@ Comprehensive workflow for working on blog content (new or existing) following p
    ```
 
 2. **If on main branch:**
+
    - Check for uncommitted changes: `git status --short`
-   - If $ARGUMENTS provided, create/switch to that branch
+   - If \$ARGUMENTS provided, create/switch to that branch
    - Otherwise, ask Igor: "You're on main. Create new branch or switch to existing?"
    - Pattern: `add-{topic}` or `update-{post-name}` for new branches
 
 3. **If already on a feature branch:**
+
    - Show current branch name
    - If $ARGUMENTS provided and different, ask: "Switch to {$ARGUMENTS}?"
    - Otherwise, confirm: "Continue on {current-branch}?"
@@ -76,20 +79,23 @@ Comprehensive workflow for working on blog content (new or existing) following p
    ```
 
 2. **If server is running:**
+
    - Display the URL from `running-servers` output
    - No restart needed - plugin auto-detects branch/PR changes
 
 3. **If not running:**
-   - Start server using `just jekyll-serve` (defaults to port 4000)
-   - Or specify custom port: `just jekyll-serve 4001 35730`
+   - Start server using `just serve` (Zola preview, defaults to port 4000)
+   - Or specify custom port: `just serve 4001`
 
 ### Phase 4: Ready for Content Work
 
 1. **Ask Igor what they're working on**
+
    - New post? Editing existing? Updating draft?
    - Keep it brief - just ask what file or topic
 
 2. **If creating new content:**
+
    - Show the 8 content types briefly
    - Ask which type applies
    - Provide key guidelines for that type

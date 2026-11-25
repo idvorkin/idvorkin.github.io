@@ -62,25 +62,22 @@ indexing every family journal entry with no other visible symptom.
 ## Building the index
 
 ```bash
-just build-search       # jekyll build + index  (~20s)
+just build-search       # Zola build of _site/ + back-links + index  (~15s)
 just build-search-only  # index only, when _site/ is already current  (~3s)
 ```
 
-The index is written to **`./pagefind/`** (gitignored), then copied into
-`_site/`. It is not written straight into `_site/` because
-`jekyll serve --incremental` deletes anything in `_site/` it did not generate —
-on every single content edit. Writing to the repo root makes `pagefind/` a normal
-static source directory that Jekyll re-copies on every build, so the index
-survives the edit loop. (`keep_files` in `_config.yml` covers the plain
-`jekyll build` case; it does **not** cover serve rebuilds.)
+Both write the index to `_site/pagefind/`, as CI does. The live preview
+(`just serve`) indexes its own first build into its overlay directory
+(`~/.cache/zola-port/preview-<port>/overlay/pagefind/`), which is copied over
+every rebuild, so search works in the preview without a separate step.
 
-The index does go stale as you edit content — re-run `just build-search-only` to
-refresh it. If it is missing entirely, search degrades gracefully to title-only
+The preview's index goes stale as you edit content — restart `just serve` to
+refresh it; for `_site/`, re-run `just build-search-only`. If it is missing entirely, search degrades gracefully to title-only
 rather than erroring.
 
 ## Deploy
 
-`.github/workflows/pages.yml` builds the JS bundle, builds Jekyll, runs Pagefind
+`.github/workflows/pages.yml` builds the JS bundle, builds the site with Zola (`zola/build.sh`), runs Pagefind
 against `_site/`, verifies the exclusions, and deploys via GitHub Actions
 (Settings → Pages → Source is **"GitHub Actions"**, flipped 2026-08-12). The
 index is produced fresh on every deploy and ships only in the Pages artifact —

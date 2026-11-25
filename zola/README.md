@@ -8,7 +8,9 @@ CommonMark by the shim. Why and how: [DESIGN.md](DESIGN.md).
 
 ```bash
 just setup              # once: pinned Zola, uv, the shim's deps, node_modules (zola/install.sh)
-just zola-serve         # preview this checkout on :4471, rebuild on save
+just serve              # everyday preview: :4000 (or the next free port), tailnet-reachable, search index
+just zola-serve         # the same loop on loopback :4471, without the search index
+just build              # zola-build, plus ./back-links.json for the commit hooks
 just zola-build         # _site/ exactly as the Pages workflow builds it
 just zola-parity        # gate: Jekyll and Zola builds of this checkout must match
 just zola-update 0.24.0 # bump the pinned Zola (no arg: refresh the shim's deps), then the gate

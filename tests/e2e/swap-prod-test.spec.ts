@@ -70,6 +70,13 @@ test.describe("'p' swaps prod and test", () => {
     await mockProd(context);
   });
 
+  // The page keeps fetching after the last assertion (back-links.json, the
+  // preview's reload poll); a mocked fetch still in flight at teardown would
+  // otherwise fail the test with "Target page, context or browser has been closed".
+  test.afterEach(async ({ context }) => {
+    await context.unrouteAll({ behavior: "ignoreErrors" });
+  });
+
   test("a second test origin on another port returns to itself, not to the first one", async ({ page }) => {
     await page.goto(`${ORIGIN_A}${PAGE}`);
     await pressP(page);

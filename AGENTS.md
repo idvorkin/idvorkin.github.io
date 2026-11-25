@@ -23,12 +23,13 @@ Then read: `repo_tmp/chop-conventions/dev-inner-loop/a_readme_first.md`
 The live site is built by **Zola from these unchanged Jekyll sources** (`zola/build.sh`, run by `.github/workflows/pages.yml`). Write posts, includes and layouts exactly as before: Jekyll's own Liquid still renders them, and kramdown's Markdown rules are carried into CommonMark by a shim in `zola/`.
 
 - Install once: `just setup` (pinned Zola from `zola/ZOLA_VERSION`, uv, the shim's deps, node_modules).
-- Preview: `just zola-serve` (:4471, rebuilds on save, matches production). Build `_site/` as CI does: `just zola-build`.
+- Preview: `just serve` (old name `just jekyll-serve` still works): Zola on :4000, drifting to a free port if another checkout holds it, rebuilds on save and reloads open pages, reachable over Tailscale on the dev VM. `just zola-serve` is the same preview on loopback :4471.
+- Build `_site/` and `./back-links.json` as CI does: `just build` (~15 s). That is what the commit hooks read.
 - A page renders differently from Jekyll: fix the shim, never the post. `just zola-parity` lists every unexpected difference; `zola/README.md` says which file owns which kind of render.
 - Update Zola or the shim's deps: `just zola-update [version]`. It ends with the parity gate; commit the pin only if the gate passes.
 - Rollback: run the "Deploy to GitHub Pages (Jekyll rollback)" workflow by hand (`pages-jekyll.yml`), or revert the `pages.yml` change.
 
-The Jekyll recipes below (`just jekyll-serve`, `jekyll-build`, `worktree-init`) still work and still feed the `anchor-checker` hook's `_site/`. They are no longer what deploys; `blog-pzp.5` moves them to Zola.
+Everyday recipes run on Zola: `serve`/`jekyll-serve`, `build`, `worktree-init`, `update-backlinks`/`ensure-backlinks`/`bbl`, `build-search`, `broken-links`, and the Playwright tests (their `webServer` is `just serve`). Jekyll is left only in the recipes the justfile labels Jekyll-only: `jekyll-build`, `jekyll-rebuild`, `jekyll-clean`, `jekyll-serve-legacy`, `jekyll-docker` and the `docker-*` image recipes, kept for comparing a render against Jekyll and for the rollback. `just zola-parity` builds its own Jekyll copy.
 
 ## Task Tracking
 
@@ -36,20 +37,19 @@ Use beads (`bd` commands) for task tracking. See the Beads Integration section b
 
 ## First commit in a fresh worktree
 
-The `anchor-checker` pre-commit hook reads `_site/*.html` **and** `back-links.json` to validate markdown anchors and resolve permalinks/redirects. A freshly cloned worktree has neither — `back-links.json` is gitignored and CI-generated, not checked out — and the hook hard-fails with `Error: _site not found. Run 'jekyll build' first.` or `Error: back-links.json not found. Run build_back_links.py first.` Run once before your first commit:
+The `anchor-checker` pre-commit hook reads `_site/*.html` **and** `back-links.json` to validate markdown anchors and resolve permalinks/redirects. A freshly cloned worktree has neither — `back-links.json` is gitignored and CI-generated, not checked out — and the hook hard-fails with `Error: _site not found. Run 'jekyll build' first.` or `Error: back-links.json not found. Run build_back_links.py first.` (the messages predate Zola; the Zola `_site/` satisfies the hook). Run once before your first commit:
 
 ```bash
-bundle exec jekyll build --incremental
-just update-backlinks
+just build   # Zola: _site/ + ./back-links.json + search index, ~15 s
 ```
 
-(If you've already run `just jekyll-serve` in this checkout, `back-links.json` is there — `ensure-backlinks` built it. The commit path can't rely on that, hence the explicit step.)
+`just serve` does not help here: the preview builds into `~/.cache/zola-port/preview-<port>/`, never into the checkout.
 
-- **Background jekyll build on worktree creation**: after `git worktree add <path>`, cd in and run `just worktree-init`. Fires `bundle exec jekyll build && uv run ./build_back_links.py build` in the background (log: `/tmp/jekyll-worktree-<branch>.log`). By the time you're ready to commit, both `_site/` and `back-links.json` are populated and the `anchor-checker` pre-commit hook resolves anchors correctly — no need for `SKIP=anchor-checker` unless there are genuinely-broken anchors in source.
+- **Background build on worktree creation**: after `git worktree add <path>`, cd in and run `just worktree-init`. Fires `zola/install.sh && just build` in the background (toolchain check, `npm ci`, then the Zola build; log: `/tmp/worktree-init-<branch>.log`). By the time you're ready to commit, both `_site/` and `back-links.json` are populated and the `anchor-checker` pre-commit hook resolves anchors correctly — no need for `SKIP=anchor-checker` unless there are genuinely-broken anchors in source.
 
-Same fix applies if you edit a heading mid-session and the live `jekyll serve` hasn't written it to disk yet — see the screenshot section below.
+Same fix applies if you edit a heading mid-session: the hooks read `_site/` on disk, so run `just build` again.
 
-- **Committing `_d/*.md` mid-session:** rebuild `_site` first (`bundle exec jekyll build`) so `anchor-checker` doesn't false-fail on posts merged to `upstream/main` since your last build, then commit with `SKIP=prettier` — the commit-time prettier hook trips a stash-rollback even on clean files, silently aborting the commit. (There used to be a second hook in this `SKIP` list that stamped `back-links.json` on every commit — removed; see "Backlinks index" below.)
+- **Committing `_d/*.md` mid-session:** rebuild `_site` first (`just build`) so `anchor-checker` doesn't false-fail on posts merged to `upstream/main` since your last build, then commit with `SKIP=prettier` — the commit-time prettier hook trips a stash-rollback even on clean files, silently aborting the commit. (There used to be a second hook in this `SKIP` list that stamped `back-links.json` on every commit — removed; see "Backlinks index" below.)
 
 - **After every commit, `git status`**: the prettier hook can land the commit and leave its reformatted files unstaged; amend them in with `SKIP=prettier git commit --amend --no-edit`.
 
@@ -65,7 +65,7 @@ Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow
 
 **Do not run `just update-backlinks` (or `just back-links`/`bbl`) as a pre-PR step, and never `git add` its output.** The file is gitignored specifically so an accidental `git add -A` can't catch it. (This used to be required — "rebuild before opening a new-post PR, commit the regenerated file" — and it was the single biggest source of merge conflicts between concurrent content PRs, since every PR touched the same generated file. Removed 2026-08; see the PR that removed this section for the history.)
 
-**Local preview builds it for you.** `just jekyll-serve` (and `just jekyll-container`) depend on `just ensure-backlinks`, which builds `back-links.json` **only if it is missing** — so `git clone && just jekyll-serve` just works, and the check costs ~4ms once the file exists. It is deliberately missing-only, not staleness-checked: `update-backlinks` runs a full Jekyll build first, and paying that on every serve to catch a rare case is the worse trade. After adding or renaming a permalink, refresh by hand with `just update-backlinks`.
+**Local preview builds it for you.** `just serve` builds a fresh `back-links.json` into the preview's own output on start (and reuses it on rebuilds), so `git clone && just setup && just serve` just works. It does not write the checkout's `./back-links.json`; `just ensure-backlinks` builds that **only if it is missing**, and `just update-backlinks` refreshes it (a full Zola build, ~15 s) after adding or renaming a permalink.
 
 Why it matters at all: the browser fetches `/back-links.json` at runtime and **the failure is silent**. `get_link_info()` catches the error and returns `{}`, so with the file absent the home page's Featured card sits on "Loading…" forever, Recent and Random render empty, and every search result description is blank — while titles still render everywhere, so the page looks fine at a glance. The only signal is a caught `SyntaxError: Unexpected token '<'` in the console (the 404 HTML parsed as JSON). `index.md` now renders an explicit "couldn't load /back-links.json" line in those three sections instead of nothing, so the failure explains itself if you ever reach it another way.
 
@@ -75,17 +75,17 @@ Why it matters at all: the browser fetches `/back-links.json` at runtime and **t
 - `build_topics.py` (see `docs/topics-index.md`) reads it as an input to `topics.json`.
 - The `anchor-checker` pre-commit hook — see "First commit in a fresh worktree" above (`just worktree-init` covers this for new worktrees).
 
-#### Ruby version requirement (local backlinks rebuild)
+#### Ruby version requirement (Jekyll-only recipes)
 
-`build_back_links.py build` reads from `_site/` (built HTML), so a fresh Jekyll build must succeed first. **A bare `bundle exec jekyll build` CRASHES on Ruby 4.x** — verified 2026-06. liquid is exact-pinned to `4.0.3` by the `github-pages` gem, and `liquid-4.0.3/lib/liquid/variable.rb:124` is `return unless obj.tainted?` with **no** `respond_to?` guard (read the gem source — an earlier version of this note claimed the line was guarded; it is not). Ruby 4 removed `tainted?`, so the build dies with `undefined method 'tainted?'` rendering `_layouts/post.html`.
+Only the Jekyll-only recipes and `just zola-parity` need Ruby now; everything everyday builds with Zola. **A bare `bundle exec jekyll build` CRASHES on Ruby 4.x** — verified 2026-06. liquid is exact-pinned to `4.0.3` by the `github-pages` gem, and `liquid-4.0.3/lib/liquid/variable.rb:124` is `return unless obj.tainted?` with **no** `respond_to?` guard (read the gem source — an earlier version of this note claimed the line was guarded; it is not). Ruby 4 removed `tainted?`, so the build dies with `undefined method 'tainted?'` rendering `_layouts/post.html`.
 
-The working fix is the `_ruby_compat.rb` shim, which patches the removed methods back. **Every `just` build recipe already exports `RUBYOPT="-r$(pwd)/_ruby_compat.rb"`**, so `just`-based builds (`just jekyll-serve`, `just back-links`, …) work on Ruby 4 — which is exactly why the crash is easy to miss: it only surfaces when you bypass `just`. To build by hand on Ruby 4, load the shim yourself:
+The working fix is the `_ruby_compat.rb` shim, which patches the removed methods back. **Every Jekyll-only `just` recipe already exports `RUBYOPT="-r$(pwd)/_ruby_compat.rb"`**, so they (`just jekyll-build`, `just jekyll-serve-legacy`, …) work on Ruby 4 — which is exactly why the crash is easy to miss: it only surfaces when you bypass `just`. To build by hand on Ruby 4, load the shim yourself:
 
 ```bash
 RUBYOPT="-r$(pwd)/_ruby_compat.rb" bundle exec jekyll build
 ```
 
-You **cannot** `bundle update` to a patched liquid: `github-pages` exact-pins `liquid (= 4.0.3)` and `jekyll (= 3.9.0)` to mirror GitHub Pages' native build (which is how this site deploys — there is no custom site-build workflow). The only ways off the shim are pinning an older local Ruby that still has `tainted?` (`brew install ruby@3.1`), or migrating off `github-pages` to plain `jekyll 4` / `liquid 5` — a deploy-stack change, not a quick bump. A **stale or missing `_site/`** is a separate failure mode — it makes the backlinks rebuild emit stale entries even when the build itself succeeds.
+You **cannot** `bundle update` to a patched liquid: `github-pages` exact-pins `liquid (= 4.0.3)` and `jekyll (= 3.9.0)` to mirror GitHub Pages' native build (what the Jekyll rollback workflow still uses). The only ways off the shim are pinning an older local Ruby that still has `tainted?` (`brew install ruby@3.1`), or migrating off `github-pages` to plain `jekyll 4` / `liquid 5` — a deploy-stack change, not a quick bump. A **stale or missing `_site/`** is a separate failure mode — it makes the backlinks rebuild emit stale entries even when the build itself succeeds.
 
 When superseding a PR you opened on `idvorkin/*`, **close it yourself** — `gh pr close <N> --repo idvorkin/<repo> --comment "Superseded by #M — …"` works for the `idvorkin-ai-tools` actor on PRs it authored. Don't leave orphan PRs for Igor to clean up.
 
@@ -110,28 +110,30 @@ This saves a click and goes directly to what matters - the code changes.
 
 For content/visual PRs, include a rendered screenshot in the PR description. Protocol:
 
-0. **Ensure Jekyll server is running** (screenshots will be blank/wrong without it):
+0. **Ensure the preview server is running** (screenshots will be blank/wrong without it):
 
    ```bash
-   # Check specifically for Jekyll on :4000 — without --port/--process,
+   # Check specifically for the Zola preview on :4000 — without --port/--process,
    # any stray server in the dir (serena MCP, a stale node, etc.) gives a
    # false-positive ✓ and you'll screenshot nothing. See settings@e847a5d.
-   running-servers check . --port 4000 --process jekyll
+   # The listener is zola/serve.py, so the process match is "zola".
+   running-servers check . --port 4000 --process zola
 
    # If not running (exit 1), start it (blocks terminal — use background or separate shell)
-   just jekyll-serve 4000 35729 > /tmp/jekyll.log 2>&1 &
+   just serve 4000 > /tmp/serve.log 2>&1 &
 
-   # Wait for it to be ready (first build takes ~30s)
+   # Wait for it to be ready (first build takes ~15s)
    timeout 60 bash -c 'until curl -s -o /dev/null -w "%{http_code}" http://localhost:4000/ | grep -q 200; do sleep 2; done'
    ```
 
    Common gotchas:
-   - Server takes ~30s on first build — screenshot before it's ready = blank page
-   - Port 4000 may be taken — always use `--port 4000 --process jekyll` so serena MCP or other stray dir-servers don't trigger a false ✓
-   - **`just jekyll-serve` drifts to a free port** (`:4001`, `:4002`, …) when another repo's Jekyll holds `:4000`, and prints `🔨 serving … on :PORT`. Screenshot the port it actually bound, not a hardcoded `4000` — find it via `running-servers status --json` (the entry whose `directory` is this repo). A second `just jekyll-serve` in the same dir fails fast with "already running here". (Requires `running-servers >= 0.2.0`.)
-   - Content changes need a rebuild — wait for livereload or give it a few seconds after saving
-   - **`jekyll serve --incremental --livereload` serves fresh HTML over HTTP but does NOT write `_site/*.html` to disk.** `prek`'s anchor checker and lychee read disk, so they'll flag phantom broken anchors right after you edit a heading. Fix: `bundle exec jekyll build --incremental` (the live server can stay up), then re-run the hook.
-   - **Pre-commit hook escape hatch.** The `anchor-checker` hook has `pass_filenames: false` in `.pre-commit-config.yaml` — it scans every markdown file in `_d/`, `_posts/`, `_td/` regardless of what's staged. Pre-existing broken anchors elsewhere in the repo block unrelated commits. When `bundle exec jekyll build --incremental` can't refresh `_site/` (env issue, stale worktree, etc.), commit with `SKIP=anchor-checker git commit ...` — NOT `--no-verify`, which silently skips every hook.
+
+   - Server takes ~15s on first build — screenshot before it's ready = blank page
+   - Port 4000 may be taken — always use `--port 4000 --process zola` so serena MCP or other stray dir-servers don't trigger a false ✓
+   - **`just serve` drifts to a free port** (`:4001`, `:4002`, …) when another checkout's server holds `:4000`, and prints `🔨 serving … on :PORT`. Screenshot the port it actually bound, not a hardcoded `4000` — find it via `running-servers status --json` (the entry whose `directory` is this repo). A second `just serve` in the same dir fails fast with "already running here". (Requires `running-servers >= 0.2.0`.)
+   - Content changes rebuild in about a second and open pages reload themselves; give it a moment after saving
+   - **The preview serves fresh HTML over HTTP but does NOT write `_site/*.html` in the checkout** (it builds under `~/.cache/zola-port/`). `prek`'s anchor checker and lychee read disk, so they'll flag phantom broken anchors right after you edit a heading. Fix: `just build` (the preview can stay up), then re-run the hook.
+   - **Pre-commit hook escape hatch.** The `anchor-checker` hook has `pass_filenames: false` in `.pre-commit-config.yaml` — it scans every markdown file in `_d/`, `_posts/`, `_td/` regardless of what's staged. Pre-existing broken anchors elsewhere in the repo block unrelated commits. When `just build` can't refresh `_site/` (env issue, stale worktree, etc.), commit with `SKIP=anchor-checker git commit ...` — NOT `--no-verify`, which silently skips every hook.
 
 1. **Take screenshot** of the rendered page section:
 
@@ -144,14 +146,14 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
    - Verify screenshot size is >50KB; if ~5KB it's blank
    - If you need to scroll to a specific section, use a node one-liner with `scrollIntoView`
 
-2. **Create a gist** to host the image:
+1. **Create a gist** to host the image:
 
    ```bash
    echo "Screenshots for PR #N" > /tmp/readme.md
    gh gist create --public -d "Screenshots for PR #N" /tmp/readme.md
    ```
 
-3. **Clone gist, add image, push** (gist API doesn't support binary uploads):
+1. **Clone gist, add image, push** (gist API doesn't support binary uploads):
 
    ```bash
    git clone https://gist.github.com/GIST_ID.git /tmp/gist-pr
@@ -161,7 +163,7 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
    git add *.jpg && git commit -m "Add screenshots" && git push
    ```
 
-4. **Reference in PR body** with absolute raw URL:
+1. **Reference in PR body** with absolute raw URL:
    ```markdown
    ![Section screenshot](https://gist.githubusercontent.com/USER/GIST_ID/raw/screenshot.jpg)
    ```
@@ -185,7 +187,7 @@ For content/visual PRs, include a rendered screenshot in the PR description. Pro
 | Find related posts        | `/find-content`                   | Search by keyword, theme, or frontmatter metadata                    |
 | Charts, cards, matrices   | `/blog-visuals`                   | Visual components for blog posts                                     |
 | Amazon product links      | `/amazon-asin`                    | Affiliate links with cached metadata                                 |
-| Preview pages             | `/serve` (or `just zola-serve`)   | Start/check Jekyll server, get Tailscale URL                         |
+| Preview pages             | `/serve` (or `just serve`)        | Start/check the Zola preview, get Tailscale URL                      |
 | Test components           | `/test-includes`                  | Playwright tests for includes and components                         |
 | Fetch web content         | `/web-browse`                     | Fallback chain: Lightpanda, Playwright CLI, WebFetch                 |
 | Process YouTube videos    | `youtube-content-processor` agent | Subtitle extraction, conversion, analysis                            |

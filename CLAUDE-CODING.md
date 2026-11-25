@@ -13,8 +13,8 @@ This file contains coding-specific conventions for the blog. For content/writing
 - Check code formatting: `just js-lint`
 - Format code: `just js-format`
 - Validate code (typecheck + lint): `just js-validate`
-- Serve local Jekyll site: `just jekyll-serve` (usually already running at http://localhost:4000)
-- Rebuild the local backlinks index (for `jq` queries / after renaming a permalink — CI generates the deployed copy, never commit the output; see `CLAUDE.md`): `just update-backlinks`. `just jekyll-serve` builds it automatically when it's missing, so local preview needs no manual step.
+- Preview the site: `just serve` (Zola; old name `just jekyll-serve`; usually already running at http://localhost:4000)
+- Rebuild the local backlinks index (for `jq` queries / after renaming a permalink — CI generates the deployed copy, never commit the output; see `CLAUDE.md`): `just update-backlinks`. `just serve` builds its own copy into the preview, so local preview needs no manual step.
 
 ## Test Driven Development (TDD)
 
@@ -68,16 +68,17 @@ Names MUST tell what code does, not how it's implemented or its history:
 ## Development Workflow
 
 - Run `just js-build` after TypeScript changes
-- Check Jekyll at http://localhost:4000 when developing
+- Check the preview at http://localhost:4000 when developing
 - When running e2e tests, always use headless mode (not `--debug`)
 
-### Running Jekyll Server
+### Running the Preview Server
 
-**IMPORTANT:** For ALL local dev servers (Vite, Jekyll, etc.): always bind to `--host 0.0.0.0` for Tailscale/external access. Kill stale servers before starting new ones on the same port. When changing directories, verify CWD is correct before running commands.
+**IMPORTANT:** For ALL local dev servers (Vite, the preview, etc.): bind to `0.0.0.0` for Tailscale/external access (`just serve` does this itself in the dev container). Kill stale servers before starting new ones on the same port. When changing directories, verify CWD is correct before running commands.
 
-- **Default**: `just jekyll-serve` (port 4000, livereload port 35729)
-- **Custom port**: `just jekyll-serve 4002`
-- **Run in background**: `just jekyll-serve 4002 35730 > /tmp/jekyll.log 2>&1 &`
+- **Default**: `just serve` (Zola, port 4000; reload rides on the same port)
+- **Custom port**: `just serve 4002`
+- **Run in background**: `just serve 4002 > /tmp/serve.log 2>&1 &`
+- **Old name**: `just jekyll-serve [port] [ignored]` runs the same Zola preview; the Jekyll one is `just jekyll-serve-legacy`
 - **On c-500X machines**: Use `http://c-500X:4000/page-name`
 
 ### Checking Running Servers

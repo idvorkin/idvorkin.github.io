@@ -25,5 +25,5 @@ export default defineConfig({
     navigationTimeout: 15000,
   },
   // No browser launch — tests connect to Lightpanda via CDP fixture
-  // No webServer — assumes Jekyll is already running
+  // No webServer — assumes a preview (`just serve`) is already running
 });

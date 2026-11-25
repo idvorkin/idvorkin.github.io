@@ -42,7 +42,7 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: `just jekyll-serve ${SERVER_PORT}`,
+    command: `just serve ${SERVER_PORT}`,
     url: BASE_URL,
     reuseExistingServer: true, // Always reuse existing server
     stdout: "pipe",
