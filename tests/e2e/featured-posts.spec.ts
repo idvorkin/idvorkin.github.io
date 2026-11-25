@@ -136,27 +136,22 @@ test.describe("Featured Posts functionality", () => {
   });
 
   test("Featured posts remain consistent across page reloads", async ({ page }) => {
+    // The hardcoded featured list must show on every load. Read it with
+    // retrying assertions: the "Loading featured posts..." placeholder in
+    // index.md is itself a .result-item, so waiting for that selector and
+    // then reading textContent() once sometimes read the placeholder.
+    const featured = page.locator("#featured-results");
+    const expectFeatured = async () => {
+      await expect(featured).toContainText("Igor's Eulogy");
+      await expect(featured).toContainText("How to EM");
+      await expect(featured).toContainText("I don't want to die knowing I spent too much time at work");
+    };
+
     await page.goto("/");
+    await expectFeatured();
 
-    // Wait for featured posts to load
-    await page.waitForSelector("#featured-results .result-item");
-
-    // Get featured posts
-    const firstLoad = await page.locator("#featured-results").textContent();
-
-    // Reload the page
+    // Reload the page, and they should be identical (hardcoded list)
     await page.reload();
-    await page.waitForSelector("#featured-results .result-item");
-
-    // Get featured posts again
-    const secondLoad = await page.locator("#featured-results").textContent();
-
-    // They should be identical (hardcoded list)
-    expect(firstLoad).toContain("Igor's Eulogy");
-    expect(secondLoad).toContain("Igor's Eulogy");
-    expect(firstLoad).toContain("How to EM");
-    expect(secondLoad).toContain("How to EM");
-    expect(firstLoad).toContain("I don't want to die knowing I spent too much time at work");
-    expect(secondLoad).toContain("I don't want to die knowing I spent too much time at work");
+    await expectFeatured();
   });
 });
