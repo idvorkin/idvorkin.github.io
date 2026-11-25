@@ -2,8 +2,8 @@
 # Run tools/backlinks, compiling it first only when no build of these exact
 # sources exists yet. Builds are shared by every checkout and worktree:
 # ~/.cache/backlinks/<hash of the crate's sources>/backlinks, so a fresh
-# worktree reuses one, and a cold compile (~15-25 s) happens once per change
-# to the crate.
+# worktree reuses one. A change to the crate compiles in tools/backlinks/target:
+# ~12-16 s the first time in a checkout, ~1 s after that.
 # Run from the source checkout: it reads each page's markdown_path and asks
 # git for its date relative to the cwd.
 #
@@ -26,16 +26,15 @@ if [ -z "$BIN" ]; then
       echo "backlinks: no cargo; run 'just setup', or BACKLINKS_PY=1 for the Python build" >&2
       exit 1
     }
-    # A private target dir per compile, so two checkouts compiling different
-    # sources at once cannot hand each other the wrong binary.
-    mkdir -p "$CACHE"
-    T=$(mktemp -d "$CACHE/target.XXXXXX")
-    trap 'rm -rf "$T"' EXIT
+    # This checkout's own target dir, kept between compiles, so an edit
+    # rebuilds only the crate (~1 s) and not regex and html5ever (~12 s cold).
+    # Never one dir for all checkouts: cargo gives every checkout's crate the
+    # same unit and judges it fresh by mtime, so a checkout with older files
+    # would be handed another checkout's binary.
+    T=$HERE/target
     "$CARGO" build --release --locked --quiet --manifest-path "$HERE/Cargo.toml" --target-dir "$T"
     mkdir -p "$CACHE/$key"
     cp "$T/release/backlinks" "$BIN.tmp.$$" && mv -f "$BIN.tmp.$$" "$BIN"
-    rm -rf "$T"
-    trap - EXIT
   fi
 fi
 [ $# -gt 0 ] || { echo "backlinks: $BIN"; exit 0; }

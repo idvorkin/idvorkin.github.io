@@ -1,2 +1,3 @@
-# cargo build by hand; build.sh compiles under ~/.cache/zola-convert
+# Kept between compiles: build.sh builds here, then files the library
+# under ~/.cache/zola-convert/<hash>
 target/
