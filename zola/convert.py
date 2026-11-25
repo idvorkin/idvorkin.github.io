@@ -617,14 +617,15 @@ def liquid_collections() -> dict:
     Liquid sees them (content is filled in later, for the feeds)."""
     labels = ["posts", "d", "td", "ig66", "test"]
     out: dict = {label: SITE_DOCS.get(label, []) for label in labels}
-    # collection.docs ascending; site.posts is newest first.
+    # collection.docs ascending; site.posts is newest first. Jekyll adds
+    # posts after the configured collections (add_default_collections).
     out["collections"] = [
         {
             "label": label,
             "docs": list(reversed(out[label])) if label == "posts" else out[label],
             "output": True,
         }
-        for label in labels
+        for label in labels[1:] + labels[:1]
     ]
     tags: dict = {}
     for d in reversed(out["posts"]):
@@ -752,6 +753,25 @@ def html_block_lines(body: str, notes: dict) -> str:
     if n:
         notes["html_block_lines"] = n
     return "\n".join(out)
+
+
+def liquid_excerpt(source: str, first_para: str, env, site, fm, src, url) -> str:
+    """Jekyll cuts the excerpt from the source at the first blank line and
+    then renders its Liquid, closing any block tag the cut left open; the
+    rendered body's first block differs when a loop spans blank lines of
+    output. Excerpts that call includes keep the rendered body's block."""
+    head = source.removeprefix("{% raw %}").strip().split("\n\n")[0]
+    if not re.search(r"\{[{%]", head) or "include" in head:
+        return first_para
+    for tag in ("for", "if", "unless", "capture", "case"):
+        opened = len(re.findall(rf"\{{%-?\s*{tag}\b", head))
+        closed = len(re.findall(rf"\{{%-?\s*end{tag}\b", head))
+        head += f"{{% end{tag} %}}" * max(opened - closed, 0)
+    page = {**fm, "url": page_url(src, fm), "path": src, "title": fm.get("title")}
+    try:
+        return jekyll_liquid.render(env, head, {"site": site, "page": page})
+    except Exception:  # noqa: BLE001 - a cut Jekyll would also choke on
+        return first_para
 
 
 def excerpt_html(first_para: str) -> str:
@@ -1095,6 +1115,7 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
     notes: dict = {}
     try:
         body = POST_URL.sub(lambda m: ctx["post_urls"][m.group(1)], body)
+        source_body = body
         base = jekyll_base(src, fm, url)
         hand = TEMPLATE_PAGES.get(src)
         is_template = src in TEMPLATE_PAGES or src.endswith(".html")
@@ -1225,7 +1246,11 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
             # Jekyll: the first block, rendered (head.html strip_html's it).
             # Jekyll: the first block through kramdown, then "\n\n" (an
             # empty first block still gives "\n\n", which is truthy).
-            "excerpt": excerpt_html(first_para) if is_doc(src) else None,
+            "excerpt": excerpt_html(
+                liquid_excerpt(source_body, first_para, env, site, fm, src, url)
+            )
+            if is_doc(src)
+            else None,
             "date": jekyll_time(fm, src),
             "collection": extra["collection"],
         }
