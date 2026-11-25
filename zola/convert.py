@@ -355,7 +355,8 @@ SPAN_IAL = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)\{:\s*([^}]*?)\s*\}")
 # line would be wrapped in <p>. Split after the open tag and it is an HTML
 # block (CommonMark start condition 7: a line holding one complete tag).
 LONE_ELEMENT = re.compile(
-    r"^(<(canvas|audio|video|[a-z]+-[a-z-]+)\b[^>]*>)(</\2>)[ \t]*$", re.M
+    r"^(<(canvas|audio|video|[a-z][a-z0-9]*-[a-z0-9-]+)\b[^>]*>)[ \t]*(</\2>)[ \t]*$",
+    re.M,
 )
 
 
@@ -731,6 +732,20 @@ def place_tokens(body: str, incs: list[Inc], notes: dict) -> str:
         prefix = body[line_start : m.start()]
         line_end = body.find("\n", m.end())
         rest = body[m.end() : line_end if line_end >= 0 else len(body)]
+        prev = body[
+            body.rfind("\n", 0, max(line_start - 1, 0)) + 1 : max(line_start - 1, 0)
+        ]
+        if (
+            inc.inline
+            and not prefix.strip()
+            and not rest.strip()
+            and prev.strip()
+            and not prev.lstrip().startswith(("<", "#", "{{<inc", "|"))
+            and not re.match(r"\s*([-*+]|\d+[.)])\s", prev)
+        ):
+            # Right under a paragraph's text it joins that paragraph (for
+            # CommonMark too: a lone inline tag cannot interrupt one).
+            return text
         if inc.inline and not prefix.strip() and not rest.strip():
             # Alone on its line kramdown made it a paragraph; CommonMark would
             # pass the bare tag through as an HTML block, with no <p>.

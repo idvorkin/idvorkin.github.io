@@ -22,10 +22,18 @@ LIST = re.compile(
 HR = re.compile(r"^ {0,3}([-*_])(\s*\1){2,}\s*$")
 FENCE = re.compile(r"^\s*(`{3,}|~{3,})")
 T, L = "<!--zp-t-->", "<!--zp-l-->"
-ESC, PARA, TABLE = "escape", "paragraph", "table"
+ESC, PARA, TABLE, DROP = "escape", "paragraph", "table", "drop"
+BREAK, AFTER = "<break>", "<after>"  # blank line before / after an HTML line
+# kramdown's span-level HTML elements; any other tag starts a block.
+SPAN = set(
+    "a abbr acronym b big bdo br button cite code del dfn em i img input ins kbd"
+    " label mark option q rb rbc rp rt rtc ruby samp select small span strong"
+    " sub sup tt u var textarea".split()
+)
 NOHEAD = "<!--zp-nohead-->"
 CODE = re.compile(r"(`+).*?\1")
-DELIM = re.compile(r"^\s*\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)*\|?\s*$")
+# kramdown's separator line: dashes, optional colons, | or + between cells.
+DELIM = re.compile(r"^\s*\|?\s*:?-+:?\s*([|+]\s*:?-+:?\s*)*\|?\s*$")
 
 
 def _cells(s: str) -> int:
@@ -54,9 +62,22 @@ def _table(text: list[str], k: int) -> int:
         if not _cells(text[e]):
             return 0
         e += 1
-    if e - k >= 2 and DELIM.match(text[k + 1]):
-        return 0
+    if e - k >= 2 and DELIM.match(text[k + 1]) or DELIM.match(text[k]):
+        return 0  # GFM sees it too, or kramdown's leading separator (_lead)
     return e - k
+
+
+def _lead(text: list[str], k: int) -> bool:
+    """A table opening on a separator line, then a row and a separator:
+    kramdown drops the first separator and heads the table with the row."""
+    return (
+        k + 2 < len(text)
+        and bool(DELIM.match(text[k]))
+        and "|" in text[k]
+        and bool(_cells(text[k + 1]))
+        and not DELIM.match(text[k + 1])
+        and bool(DELIM.match(text[k + 2]))
+    )
 
 
 def _block_start(s: str) -> bool:
@@ -75,10 +96,10 @@ def _kind(marker: str) -> str:
     return "ul" if marker in "-*+" else "ol"
 
 
-def _scan(lines: list[str], idx: list[int], edits: dict, top: bool = True) -> None:
+def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None:
     """Find every list in these lines (original indexes in idx), decide each
-    item, recurse into item contents."""
-    i, n = 0, len(lines)
+    item, recurse into item contents (start=1 skips the item's own line)."""
+    i, n = start, len(lines)
     fence = None
     while i < n:
         line = lines[i]
@@ -92,6 +113,28 @@ def _scan(lines: list[str], idx: list[int], edits: dict, top: bool = True) -> No
             fence = f.group(1)
             i += 1
             continue
+        tag = re.match(r" {0,3}<([a-zA-Z][\w-]*)(?=[\s/>]|$)", line)
+        if (
+            tag
+            and tag.group(1).lower() not in SPAN
+            and i
+            and lines[i - 1].strip()
+            and not _block_start(lines[i - 1])
+        ):
+            # kramdown lets a block-level (or unknown) element interrupt a
+            # paragraph; CommonMark only for its own list of names.
+            edits[idx[i]] = BREAK
+        closed = re.match(r" {0,3}<([a-zA-Z][\w-]*)\b[^>]*>.*</\1>\s*$", line)
+        if (
+            closed
+            and closed.group(1).lower() not in SPAN
+            and i + 1 < n
+            and lines[i + 1].strip()
+            and not lines[i + 1].lstrip().startswith("<")
+        ):
+            # kramdown's block ends at its closing tag: the next line starts
+            # a paragraph, where CommonMark would keep it in the HTML block.
+            edits[idx[i]] = edits.get(idx[i], "") + AFTER
         if line.lstrip().startswith("<"):
             # Raw HTML: a comment runs to its "-->" (a marker inside would
             # close it early), any other block to the next blank line.
@@ -106,7 +149,11 @@ def _scan(lines: list[str], idx: list[int], edits: dict, top: bool = True) -> No
                     i += 1
             i += 1
             continue
-        if (i or top) and (i == 0 or not lines[i - 1].strip()) and _table(lines, i):
+        if (i == 0 or not lines[i - 1].strip()) and _lead(lines, i):
+            edits[idx[i]] = DROP
+            i += 1
+            continue
+        if (i == 0 or not lines[i - 1].strip()) and _table(lines, i):
             edits[idx[i]] = (TABLE, _cells(line), None)
             i += _table(lines, i)
             continue
@@ -175,7 +222,7 @@ def _scan(lines: list[str], idx: list[int], edits: dict, top: bool = True) -> No
             if not first_p or bare:
                 earlier_bare_or_not_p = True
             # nested content
-            _scan(text[1:], [idx[r[0]] for r in rows[1:]], edits, top=False)
+            _scan(text, [idx[r[0]] for r in rows], edits, start=1)
         i = max(j, i + 1)
 
 
@@ -192,10 +239,20 @@ def mark(text: str) -> str:
             ind = " " * ci if ci is not None else line[: len(line) - len(line.lstrip())]
             head = line[:ci] if ci is not None else ind
             row = line[ci:] if ci is not None else line.lstrip()
-            delim = " | ".join(["---"] * cells)
+            delim = (
+                "| " + " | ".join(["---"] * cells) + " |"
+            )  # pipes: "---" alone is a heading
             lines[k] = (
                 f"{head.rstrip() + ' ' if ci is not None else head}{NOHEAD}\n{ind}{row}\n{ind}{delim}"
             )
+            continue
+        if mk in (BREAK, AFTER, BREAK + AFTER):
+            lines[k] = (
+                ("\n" if BREAK in mk else "") + lines[k] + ("\n" if AFTER in mk else "")
+            )
+            continue
+        if mk == DROP:
+            lines[k] = None
             continue
         if mk == PARA:
             lines[k] = "<p>" + lines[k].strip() + "</p>"
@@ -207,7 +264,7 @@ def mark(text: str) -> str:
         # list, so both keep working.
         m = re.match(r"(.*?)(\s*(?:\{[#:][^}]*\})?(?:  +|\\)?)$", lines[k])
         lines[k] = m.group(1) + mk + m.group(2)
-    return "\n".join(lines)
+    return "\n".join(x for x in lines if x is not None)
 
 
 def apply_html(html: str) -> str:

@@ -133,7 +133,7 @@ def _line_spans(text: str) -> str:
 # Block syntax made of dashes, never text: table delimiter rows, thematic
 # breaks, setext underlines.
 VERBATIM = re.compile(
-    r"\s*\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)*\|?\s*$|\s{0,3}([-*_])(\s*\2){2,}\s*$|\s{0,3}(=+|-+)\s*$"
+    r"\s*\|?\s*:?-+:?\s*([|+]\s*:?-+:?\s*)*\|?\s*$|\s{0,3}([-*_])(\s*\2){2,}\s*$|\s{0,3}(=+|-+)\s*$"
 )
 
 
