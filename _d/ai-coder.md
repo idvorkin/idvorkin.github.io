@@ -109,7 +109,7 @@ Don't rely on it. Keep secrets out of the environment the agent can see, gitigno
 
 ## Verification Is the Job
 
-Far more important than the code is how you know the code does what you want. Software engineers have a name for that: testing. CHOP makes it harder, because vibed code is often correct by evolution rather than design, so an out-of-context change breaks something nobody understood. (I had the same experience on the Windows network stack in 2003.)
+Far more important than the code is how you know the code does what you want. Software engineers have a name for that: testing. CHOP makes it harder, because vibed code is often correct by evolution rather than design, so an out-of-context change breaks something nobody understood. (I had the same experience on the Windows network stack in 2003.) How much of that checking a compiler does for you depends on the language: [How Well AI Writes Each Language](/ai-coding-by-language).
 
 So the skill I spend my time on is the eval: can I define what good looks like and measure whether we're there? Tests as specification mean fewer interventions. Once the eval is sharp, the search runs itself: the agent proposes, the eval scores, the winner becomes the next baseline.
 
