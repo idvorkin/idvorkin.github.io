@@ -59,6 +59,7 @@ sys.path.insert(0, str(HERE.parent / ".claude/skills/toc"))
 import jekyll_liquid  # noqa: E402
 import typography  # noqa: E402
 import lists  # noqa: E402
+import rustconvert  # noqa: E402
 from toc import slugify as toc_slugify  # noqa: E402  the GFM slug rule kramdown's GFM parser uses
 
 # WORK: the Zola site dir being assembled (build.sh makes one per source
@@ -106,6 +107,8 @@ COMMENT = re.compile(r"\{%-?\s*comment\s*-?%\}.*?\{%-?\s*endcomment\s*-?%\}", re
 POST_URL = re.compile(r"\{%-?\s*post_url\s+([\w./-]+)\s*-?%\}")
 # The current page's include outputs, indexed by token number.
 INCS: list = []
+# tools/convert (Rust), or None with CONVERT_PY=1.
+RUST = rustconvert.MOD
 
 
 def slugify(text: str, seen: dict | None = None) -> str:
@@ -1063,7 +1066,13 @@ def doc_date(fm: dict, src: str) -> str:
 
 
 # Jekyll's site.time: one build clock, in the build's local zone (CI: UTC).
-SITE_TIME = datetime.datetime.now().astimezone()
+# SITE_TIME=<ISO 8601> pins it, so two builds compare byte for byte
+# (tools/convert/compare.sh).
+SITE_TIME = (
+    datetime.datetime.fromisoformat(os.environ["SITE_TIME"])
+    if os.environ.get("SITE_TIME")
+    else datetime.datetime.now()
+).astimezone()
 
 
 def jekyll_time(fm: dict, src: str) -> str | None:
@@ -1197,6 +1206,48 @@ def on_include(name: str, params: dict, text: str) -> str:
     return f"{{{{<inc {len(INCS) - 1} />}}}}"
 
 
+def fix_markdown_py(body: str, base: str, notes: dict) -> str:
+    """kramdown's Markdown -> CommonMark that renders the same, for a body
+    whose includes are tokens (INCS). Each include's text is fixed in place."""
+    parts = []
+    # Before the fence split: a list item or HTML comment can hold a fence.
+    body = lists.mark(kramdown_fences(toc_links(body, notes), notes))
+    for code, chunk in split_fences(body):
+        if not code:
+            chunk = kramdown_em(kramdownisms(chunk, notes), notes)
+            chunk = absolutize(chunk, base, notes)
+        parts.append(chunk)
+    for inc in INCS:
+        # An include's Markdown links are relative to the page too.
+        inc.text = typography.apply(
+            html_block_lines(absolutize(inc.text, base, notes), notes)
+        )
+    # One pass over the whole body, fences included: an HTML comment
+    # can hold a fence, so per-chunk state would lose the comment.
+    return place_tokens(
+        typography.apply(html_block_lines("\n".join(parts), notes)), INCS, notes
+    )
+
+
+def fix_markdown(body: str, base: str, notes: dict) -> str:
+    """fix_markdown_py, done by tools/convert (Rust) unless CONVERT_PY=1. A
+    page the Rust cannot do (a regex past its backtrack limit) is redone in
+    Python, and the page's report says rust_fallback."""
+    if RUST is None:
+        return fix_markdown_py(body, base, notes)
+    incs = [(i.raw, i.text, i.inline, i.markdown) for i in INCS]
+    try:
+        out, texts, ops = RUST.fix_markdown(body, base, incs)
+    except RuntimeError as e:
+        notes["rust_fallback"] = str(e)
+        return fix_markdown_py(body, base, notes)
+    for inc, t in zip(INCS, texts):
+        inc.text = t
+    for k, v in ops:
+        notes[k] = v
+    return out
+
+
 def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
     """Convert one page and write its files. Returns what the site-wide
     outputs need from it (report entry, stubs, tags, wrap, files written)."""
@@ -1225,24 +1276,7 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
             notes.setdefault("includes", {}).setdefault(inc.name, 0)
             notes["includes"][inc.name] += 1
         if not is_template:
-            parts = []
-            # Before the fence split: a list item or HTML comment can hold a fence.
-            body = lists.mark(kramdown_fences(toc_links(body, notes), notes))
-            for code, chunk in split_fences(body):
-                if not code:
-                    chunk = kramdown_em(kramdownisms(chunk, notes), notes)
-                    chunk = absolutize(chunk, base, notes)
-                parts.append(chunk)
-            for inc in INCS:
-                # An include's Markdown links are relative to the page too.
-                inc.text = typography.apply(
-                    html_block_lines(absolutize(inc.text, base, notes), notes)
-                )
-            # One pass over the whole body, fences included: an HTML comment
-            # can hold a fence, so per-chunk state would lose the comment.
-            body = place_tokens(
-                typography.apply(html_block_lines("\n".join(parts), notes)), INCS, notes
-            )
+            body = fix_markdown(body, base, notes)
             seen: dict = {}
             body = "\n".join(
                 chunk if code else pin_heading_ids(chunk, seen)
@@ -1649,6 +1683,18 @@ def convert(cache: Cache) -> dict:
     report["unknown_filters"] = sorted(env.unknown_filters)
     if env.unknown_filters:
         msg = f"unknown Liquid filters passed through as Jekyll does: {sorted(env.unknown_filters)}"
+        if os.environ.get("STRICT"):
+            sys.exit(msg)
+        print("WARNING: " + msg, file=sys.stderr)
+    # Pages tools/convert handed back to the Python (fix_markdown). The output
+    # is still right, but a fallback means the port missed a case: STRICT
+    # (CI, the parity gate) fails on it rather than quietly running Python.
+    fell_back = sorted(
+        s_ for s_, p_ in report["pages"].items() if "rust_fallback" in p_
+    )
+    report["rust_fallbacks"] = len(fell_back)
+    if fell_back:
+        msg = f"tools/convert fell back to Python on {len(fell_back)} page(s): {fell_back[:5]}"
         if os.environ.get("STRICT"):
             sys.exit(msg)
         print("WARNING: " + msg, file=sys.stderr)

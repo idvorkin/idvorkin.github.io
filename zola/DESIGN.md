@@ -11,8 +11,8 @@ at once, so that is the win to collect now.
 
 A one-post edit is served 0.5–0.75 s after the save, against Jekyll's 1.1 s
 incremental rebuild (`blog-045`) and 3–4 s for this preview before it cached
-pages. A layout, include or data edit rebuilds every page in about 2.5 s
-with 4 workers (6–8 s in one process), against Jekyll's 8.8 s full rebuild. Numbers and method in (c).
+pages. A layout, include or data edit rebuilds every page in about 1.6 s
+with 4 workers (2.5 s in one process), against Jekyll's 8.8 s full rebuild. Numbers and method in (c).
 
 Replacing Jekyll on idvork.in is a later, separate decision. Nothing here
 touches upstream `main` or its Pages settings.
@@ -33,8 +33,8 @@ translating:
 | Liquid in posts                              | regex to Tera component call | rendered by python-liquid (`jekyll_liquid.py`)                                              |
 | `_includes/*` (59)                           | 44 Tera components           | rendered by Liquid, no port                                                                 |
 | `_layouts/*` + head, menu, scripts, annotate | hand-ported Tera             | rendered by Liquid around a marker; `finish.py` splices Zola's HTML in                      |
-| Markdown                                     | Zola (pulldown-cmark)        | same, after kramdown-to-CommonMark fixes in `convert.py`                                    |
-| Typography                                   | Zola smart punctuation       | off; kramdown's quote and symbol rules (`typography.py`) on the Markdown                    |
+| Markdown                                     | Zola (pulldown-cmark)        | same, after kramdown-to-CommonMark fixes (`convert.py`, run by `tools/convert` in Rust)     |
+| Typography                                   | Zola smart punctuation       | off; kramdown's quote and symbol rules (`typography.py`, likewise) on the Markdown          |
 | Listing pages (5)                            | hand-ported Tera             | Jekyll's own Liquid over the `site.posts` / `site.collections` / `site.pages` model         |
 | feed.xml, search JSON, links.jsonp, sitemap  | hand-ported Tera / Zola's    | Jekyll's own Liquid over a `site.posts` model, after Zola (`render_feeds`, `write_sitemap`) |
 | Output layout                                | `/x/index.html`              | `/x.html`, Jekyll's own, plus its redirect stubs byte for byte                              |
@@ -92,16 +92,18 @@ mirror: `https://<vm>.<tailnet>.ts.net:8448` (the exact URL is on the bead).
 static files, data, convert, Zola, finish) and then `backlinks.sh` and
 Pagefind when asked:
 
-| Variable      | Meaning                                                              |
-| ------------- | -------------------------------------------------------------------- |
-| `SRC`         | checkout to build (default: the one `zola/` sits in)                 |
-| `OUT`         | output dir, shaped like `_site`                                      |
-| `WORK`        | scratch Zola site; one per source, so builds run in parallel         |
-| `BASE_URL`    | becomes `site.url`, as `jekyll serve` does                           |
-| `BACKLINKS=1` | run `tools/backlinks` over the output (`BACKLINKS_PY=1`: the Python) |
-| `PAGEFIND=1`  | build the search index                                               |
-| `STRICT=1`    | fail on a stale hand port or an unknown Liquid filter                |
-| `WORKERS`     | processes converting pages (default 4, at most the CPUs)             |
+| Variable       | Meaning                                                              |
+| -------------- | -------------------------------------------------------------------- |
+| `SRC`          | checkout to build (default: the one `zola/` sits in)                 |
+| `OUT`          | output dir, shaped like `_site`                                      |
+| `WORK`         | scratch Zola site; one per source, so builds run in parallel         |
+| `BASE_URL`     | becomes `site.url`, as `jekyll serve` does                           |
+| `BACKLINKS=1`  | run `tools/backlinks` over the output (`BACKLINKS_PY=1`: the Python) |
+| `PAGEFIND=1`   | build the search index                                               |
+| `STRICT=1`     | fail on a stale hand port or an unknown Liquid filter                |
+| `WORKERS`      | processes converting pages (default 4, at most the CPUs)             |
+| `CONVERT_PY=1` | the Markdown fixes in Python, not `tools/convert`                    |
+| `SITE_TIME`    | pin the build clock (ISO 8601), so two builds compare byte for byte  |
 
 The toolchain lives on `zola-port` in the fork until Igor decides to merge
 `zola/` into main. That merge is safe for Jekyll (`zola` is in `exclude:`)
@@ -139,6 +141,24 @@ cache, so there is one code path and nothing to keep in sync.
   two-thirds of pages print the build clock (`site.time` is the date of an
   undated document), so a disk cache would mix clocks from different builds,
   and CI starts with an empty `WORK` anyway.
+- **Markdown fixes in Rust.** `tools/convert` is a Python extension (PyO3)
+  that ports `convert.py`'s per-page kramdown-to-CommonMark chain
+  (`fix_markdown_py`: TOC links, fences, `lists.mark`, `kramdownisms`,
+  emphasis, relative links, HTML block lines, `typography.apply`, include
+  placement) and `typography.apply` itself, to the byte. Liquid, heading-id
+  pinning (`slugify`), YAML and the layouts stay in Python. The regexes run on
+  PCRE2, bundled and linked statically: a backtracking engine like Python's
+  `re`, with lookbehind and backreferences, which Rust's `regex` lacks. A
+  thin wrapper (`pcre.rs`) matches without PCRE2's per-call UTF-8 scan, which
+  made a scan through a page quadratic. `pyre.rs` maps the Python semantics
+  that differ (`\s` with \x1c–\x1f, Unicode `\w` and `\b`, `str.strip`,
+  code-point lengths). The Python stays the reference: a page the Rust cannot
+  finish (a panic) is redone in Python and counted on the build line
+  (`fixes: rust, N fallback(s)`), and `STRICT=1` fails on any.
+  `tools/convert/compare.sh` builds the checkout both ways with the clock
+  pinned and diffs every output and `WORK` file; `parity.sh` runs it. The
+  `.so` is compiled once per crate change into `~/.cache/zola-convert/` (CI
+  caches that directory, keyed like `tools/backlinks`).
 - **Watching.** inotify through libc (`watch.py`, no dependency, Linux only):
   the collections, `_includes`, `_layouts`, `_data`, `assets` and `images`
   recursively, and the checkout's root files, not its directories (a main
@@ -283,10 +303,26 @@ The full sweep took about 100 minutes at nice 19 with two pages at a time on
 a VM at load 15–40. A re-run after a converter change re-shot 102 pages in
 about 10 minutes.
 
-Build time on this VM, 2026-11-24 at load 4–5 (`build.sh`, CI config): 2.5 s
-at 4 workers (convert 1.8 s, Zola 0.2 s, finish 0.4 s), 5.6 s at 1 worker,
-7.8 s before the parallel convert and the hot-spot fixes. With `BACKLINKS=1
-PAGEFIND=1`, 6.8 s (was 12.9 s); back-links and Pagefind are now most of it.
+Build time on this VM, 2026-11-25 at load 2–3 (`build.py` then
+`backlinks.sh` then Pagefind, CI config, median of 5, alternating runs):
+
+| Stage                      | Python fixes | Rust fixes |
+| -------------------------- | ------------ | ---------- |
+| convert, 4 workers         | 1.65 s       | 0.87 s     |
+| convert, 1 worker          | 4.31 s       | 2.03 s     |
+| of which Liquid (1 worker) | 0.94 s       | 0.93 s     |
+| Zola                       | 0.13 s       | 0.13 s     |
+| finish                     | 0.40 s       | 0.36 s     |
+| back-links (Rust)          | 0.66 s       | 0.60 s     |
+| Pagefind                   | 0.70 s       | 0.57 s     |
+| whole build                | 3.78 s       | 2.67 s     |
+
+(2026-11-24, before the Rust tools: 7.8 s for `build.py` alone, 12.9 s with
+back-links and Pagefind.) What is left is spread out: convert (Liquid, YAML,
+heading ids, writes), back-links, Pagefind and finish each take 0.4–0.9 s.
+A one-post preview edit is unchanged by the port (0.8 s rebuild: finish
+0.35–0.4 s over the whole site, convert 0.23 s for the post and its listing
+pages, Zola 0.14 s); an include edit went from 2.35 s to 1.6 s.
 
 ## (e) Work split by model tier
 

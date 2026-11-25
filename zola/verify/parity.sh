@@ -22,4 +22,6 @@ rm -rf "$OUTDIR/zola"
 SRC=$SRC OUT=$OUTDIR/zola WORK=$OUTDIR/work STRICT=1 nice -n 19 "$HERE/../build.sh" > "$OUTDIR/zola.log"
 # verify.sh gives both sides one back-links.json, so check the index here.
 "$SRC/tools/backlinks/compare.sh" "$OUTDIR/zola"
+# And that tools/convert converts every page as the Python does.
+nice -n 19 "$SRC/tools/convert/compare.sh" "$SRC"
 nice -n 19 "$HERE/parity.py" "$OUTDIR/jekyll" "$OUTDIR/zola" "$OUTDIR/parity.csv" "$OUTDIR/buckets.json"

@@ -88,10 +88,25 @@ jobs:
           mkdir -p ~/.cache/backlinks-bin
           cp tools/backlinks/target/release/backlinks ~/.cache/backlinks-bin/
 
+      # tools/convert (Rust, a Python extension) does convert.py's Markdown
+      # fixes. Same cache pattern; tools/convert/build.sh compiles on a miss
+      # into ~/.cache/zola-convert, with PCRE2 bundled and static.
+      - name: Restore the Markdown-fix extension
+        id: convert-so
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/zola-convert
+          key: zola-convert-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('tools/convert/Cargo.lock', 'tools/convert/Cargo.toml', 'tools/convert/build.rs', 'tools/convert/src/**') }}
+
+      - name: Compile the Markdown-fix extension (cache miss only)
+        if: steps.convert-so.outputs.cache-hit != 'true'
+        run: tools/convert/build.sh
+
       - name: Build site (Zola), back-links and Pagefind
         # CI's merged config (_config_ci.yml's exclude: list replaces the main
         # one, as Jekyll's --config a,b does) and page dates in UTC, as the
-        # Jekyll build had them. STRICT fails on an unknown Liquid filter.
+        # Jekyll build had them. STRICT fails on an unknown Liquid filter,
+        # and on a page tools/convert handed back to the Python.
         # build.sh runs tools/backlinks and Pagefind itself.
         env:
           TZ: UTC
