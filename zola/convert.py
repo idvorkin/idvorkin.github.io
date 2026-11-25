@@ -681,6 +681,26 @@ def render_feeds(out_dir: Path, contents: dict) -> None:
 CACHE_SITE: list = [None, None]
 
 
+TOC_BLOCK = re.compile(
+    r"<!-- vim-markdown-toc-start -->.*?<!-- vim-markdown-toc-end -->", re.S
+)
+TOC_ENTRY = re.compile(r"^(\s*[-*+] \[)(.*)(\]\(#[^)\s]*\))[ \t]*$", re.M)
+
+
+def toc_links(body: str, notes: dict) -> str:
+    """vim-markdown-toc copies a heading's link into its entry,
+    "- [[Anxiety](/anxiety), more](#anchor)": a link inside a link, which
+    neither kramdown nor CommonMark renders as one. Igor's call (2026-11-24):
+    keep the entry as one clean link to its anchor, so drop the inner link."""
+
+    def entry(m: re.Match) -> str:
+        text, n = re.subn(r"\[([^\[\]]*)\]\([^()\s]*\)", r"\1", m.group(2))
+        notes["toc_inner_links"] = notes.get("toc_inner_links", 0) + n
+        return m.group(1) + text + m.group(3)
+
+    return TOC_BLOCK.sub(lambda b: TOC_ENTRY.sub(entry, b.group(0)), body)
+
+
 def kramdown_fences(body: str, notes: dict) -> str:
     """A ``` line whose info string has a space is not a fence to kramdown's
     GFM parser; the backticks open a code span that runs to the closing ```,
@@ -1146,7 +1166,7 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
         if not is_template:
             parts = []
             # Before the fence split: a list item or HTML comment can hold a fence.
-            body = lists.mark(kramdown_fences(body, notes))
+            body = lists.mark(kramdown_fences(toc_links(body, notes), notes))
             for code, chunk in split_fences(body):
                 if not code:
                     chunk = kramdownisms(chunk, notes)
