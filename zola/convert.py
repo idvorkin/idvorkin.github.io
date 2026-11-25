@@ -53,6 +53,7 @@ sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / ".claude/skills/toc"))
 import jekyll_liquid  # noqa: E402
 import typography  # noqa: E402
+import lists  # noqa: E402
 from toc import slugify as toc_slugify  # noqa: E402  the GFM slug rule kramdown's GFM parser uses
 
 # WORK: the Zola site dir being assembled (build.sh makes one per source
@@ -347,57 +348,6 @@ def kramdown_tables(lines: list[str], notes: dict) -> list[str]:
 
 
 LIST_ITEM = re.compile(r"^( *)(?:[-*+]|\d+[.)])(?: +|$)")
-
-
-def tighten_lists(text: str, notes: dict) -> str:
-    """Drop the blank lines between list items that kramdown kept tight.
-
-    kramdown decides <p> per item: only an item whose own text is followed
-    by a blank line gets one (a blank after a nested list does not count).
-    CommonMark makes the whole list loose for any blank between items, which
-    put <p> margins on every item. So: blank gaps after a nested list always
-    go; gaps right after an item's text go unless most of that list's gaps
-    are like that (then kramdown <p>'d most items too). Blank lines inside an
-    item (between its own blocks) stay.
-    """
-    lines = text.split("\n")
-    stack: list[tuple[int, int]] = []  # (marker indent, list start line)
-    last_marker = -1  # indent of the most recent item marker
-    gaps = []  # (first blank, next line, list key, own_text)
-    per_list: dict = {}  # list key -> [sibling gaps, own_text gaps]
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        m = LIST_ITEM.match(line)
-        if m:
-            ind = len(m.group(1))
-            same = [x for x in stack if x[0] == ind]
-            stack = [x for x in stack if x[0] < ind] + (same or [(ind, i)])
-            per_list.setdefault(stack[-1], [0, 0])[0] += 1
-            last_marker = ind
-        elif line.strip() and not line.startswith(" "):
-            stack, last_marker = [], -1  # an unindented paragraph ends the list
-        elif not line.strip() and stack and i and lines[i - 1].strip():
-            j = i
-            while j < len(lines) and not lines[j].strip():
-                j += 1
-            nxt = LIST_ITEM.match(lines[j]) if j < len(lines) else None
-            prev = lines[i - 1].lstrip()
-            sib = [x for x in stack if nxt and x[0] == len(nxt.group(1))]
-            if sib and not prev.startswith(("<", "|", "{{", "{%")):
-                own = last_marker == sib[0][0]
-                gaps.append((i, j, sib[0], own))
-                per_list[sib[0]][1] += own
-            i = j
-            continue
-        i += 1
-    drop = set()
-    for first, nxt, key, own in gaps:
-        items, loose = per_list[key]
-        if not own or loose * 2 < items - 1:
-            drop.update(range(first, nxt))
-    notes["tight_lists"] = notes.get("tight_lists", 0) + len(drop)
-    return "\n".join(x for k, x in enumerate(lines) if k not in drop)
 
 
 SPAN_IAL = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)\{:\s*([^}]*?)\s*\}")
@@ -1107,10 +1057,11 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
             notes["includes"][inc.name] += 1
         if not is_template:
             parts = []
-            body = kramdown_fences(body, notes)
+            # Before the fence split: a list item or HTML comment can hold a fence.
+            body = lists.mark(kramdown_fences(body, notes))
             for code, chunk in split_fences(body):
                 if not code:
-                    chunk = kramdownisms(tighten_lists(chunk, notes), notes)
+                    chunk = kramdownisms(chunk, notes)
                     chunk = absolutize(chunk, base, notes)
                 parts.append(chunk)
             for inc in INCS:

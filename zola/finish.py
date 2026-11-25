@@ -18,6 +18,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import lists  # noqa: E402
+
 STUB = """<!DOCTYPE html>
 <html lang="en-US">
   <meta charset="utf-8">
@@ -146,6 +149,7 @@ def finish(work: Path, out: Path, site_url: str) -> str:
         )
         html = html.replace('<code data-zp-raw="">', "<code>")
         html = code_blocks(html)
+        html = lists.apply_html(html)
         html = task_lists(html)
         html = html.replace("<!--zp-raw-->", "")
         html = footnotes(html)
