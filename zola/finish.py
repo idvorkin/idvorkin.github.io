@@ -55,6 +55,42 @@ def code_blocks(html: str) -> str:
     )
 
 
+TASK = re.compile(r'<li>(\s*<p>)?<input disabled="" type="checkbox"( checked="")?/>\n?')
+
+
+def task_lists(html: str) -> str:
+    """kramdown's GFM task lists: li.task-list-item holding
+    input.task-list-item-checkbox, and the enclosing ul.task-list."""
+    if "checkbox" not in html:
+        return html
+
+    def item(m: re.Match) -> str:
+        checked = ' checked="checked"' if m.group(2) else ""
+        return (
+            f'<li class="task-list-item">{m.group(1) or ""}<input type="checkbox" '
+            f'class="task-list-item-checkbox" disabled="disabled"{checked} />'
+        )
+
+    html = TASK.sub(item, html)
+    # Mark each <ul> that directly holds a task item.
+    out, stack, pos = [], [], 0
+    for m in re.finditer(r'<ul>|</ul>|<li class="task-list-item">', html):
+        if m.group(0) == "<ul>":
+            stack.append(len(out) + 1)
+            out += [html[pos : m.start()], m.group(0)]
+        elif m.group(0) == "</ul>":
+            if stack:
+                stack.pop()
+            out.append(html[pos : m.end()])
+        else:
+            if stack:
+                out[stack[-1]] = '<ul class="task-list">'
+            out.append(html[pos : m.end()])
+        pos = m.end() if m.group(0) != "<ul>" else m.end()
+    out.append(html[pos:])
+    return "".join(out)
+
+
 def finish(work: Path, out: Path, site_url: str) -> str:
     site_url = site_url.rstrip("/")
     plan = json.loads((work / "finish.json").read_text())
@@ -69,7 +105,29 @@ def finish(work: Path, out: Path, site_url: str) -> str:
         html = src.read_text().replace(
             f'href="{site_url}{url.rstrip("/")}/#', 'href="#'
         )
+        # kramdown+rouge gives inline code a class; Zola writes a bare <code>.
+        # Raw HTML <code> (marked by convert.py) stays bare, as kramdown left it.
+        html = re.sub(
+            r"(?<!<pre>)<code>",
+            '<code class="language-plaintext highlighter-rouge">',
+            html,
+        )
+        html = html.replace('<code data-zp-raw="">', "<code>")
         html = code_blocks(html)
+        html = task_lists(html)
+        starts = list(plan.get("ol_starts", {}).get(url, []))
+
+        def ol(m: re.Match) -> str:
+            n = int(m.group(1))
+            if n in starts:
+                starts.remove(n)
+                return m.group(0)
+            return "<ol>"
+
+        html = re.sub(r'<ol start="(\d+)">', ol, html)
+        # Zola marks every external Markdown link rel="external"; kramdown
+        # writes a bare <a href>. No Jekyll page has rel="external" itself.
+        html = html.replace(' rel="external"', "")
         if url in plan["wraps"]:
             html = (
                 (work / "wrap" / plan["wraps"][url])

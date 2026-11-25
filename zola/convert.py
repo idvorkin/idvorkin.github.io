@@ -522,6 +522,15 @@ class Inc:
         self.markdown = bool(parts) and not parts[-1][0] and not self.inline
 
 
+def mark_raw_code(text: str) -> str:
+    """A raw-HTML <code> kramdown passed through bare; finish.py gives every
+    other (Markdown) <code> rouge's class. Backtick spans are left alone."""
+    parts = re.split(r"(`+)(.*?)(\1)", text, flags=re.S)
+    for k in range(0, len(parts), 4):
+        parts[k] = parts[k].replace("<code>", '<code data-zp-raw="">')
+    return "".join(parts)
+
+
 def place_tokens(body: str, incs: list[Inc], notes: dict) -> str:
     """Put each include's output back where its token sits.
 
@@ -703,6 +712,54 @@ def doc_date(fm: dict, src: str) -> str:
     return "%04d-%02d-%02d" % tuple(map(int, m.groups())) if m else "9999"
 
 
+# Jekyll's site.time: one build clock, in the build's local zone (CI: UTC).
+SITE_TIME = datetime.datetime.now().astimezone()
+
+
+def jekyll_time(fm: dict, src: str) -> str | None:
+    """page.date as Jekyll renders it: a Ruby Time printed
+    "%Y-%m-%d %H:%M:%S %z" in the build's local zone. Documents fall back to
+    the filename's YYYY-M-D- prefix, then site.time; pages have a date only
+    when the front matter gives one (printed as given)."""
+    d = fm.get("date")
+    if not is_doc(src):
+        return str(d) if d else None
+    t = None
+    if isinstance(d, datetime.datetime):
+        t = d if d.tzinfo else d.astimezone()
+    elif isinstance(d, datetime.date):
+        t = datetime.datetime(d.year, d.month, d.day).astimezone()
+    elif d:
+        # Time.parse: a numeric offset counts, a zone name it cannot read
+        # ("Pacific Standard Time") is ignored and the clock read as local.
+        m = re.match(
+            r"\s*(\d{4})-(\d{1,2})-(\d{1,2})(?:[ T](\d{1,2}):(\d{2})(?::(\d{2}))?)?\s*([+-]\d{2}:?\d{2}|Z)?",
+            str(d),
+        )
+        if m:
+            y, mo, dd, hh, mi, ss, off = m.groups()
+            naive = datetime.datetime(
+                int(y), int(mo), int(dd), int(hh or 0), int(mi or 0), int(ss or 0)
+            )
+            if off:
+                off = off.replace(":", "")
+                tz = (
+                    datetime.timezone.utc
+                    if off == "Z"
+                    else datetime.timezone(
+                        (1 if off[0] == "+" else -1)
+                        * datetime.timedelta(hours=int(off[1:3]), minutes=int(off[3:5]))
+                    )
+                )
+                t = naive.replace(tzinfo=tz).astimezone()
+            else:
+                t = naive.astimezone()
+    if t is None:
+        m = re.match(r"(\d{4})-(\d{1,2})-(\d{1,2})-", Path(src).name)
+        t = datetime.datetime(*map(int, m.groups())).astimezone() if m else SITE_TIME
+    return t.astimezone().strftime("%Y-%m-%d %H:%M:%S %z")
+
+
 def zola_date(fm: dict, src: str):
     d = fm.get("date")
     if isinstance(d, str):
@@ -823,6 +880,10 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
                 chunk if code else pin_heading_ids(chunk, seen)
                 for code, chunk in split_fences(body)
             )
+            body = "\n".join(
+                chunk if code else mark_raw_code(chunk)
+                for code, chunk in split_fences(body)
+            )
             if "{% endraw" in body or "{%- endraw" in body:
                 raise ValueError("body contains a literal endraw tag")
             body = "{% raw %}" + body + "{% endraw %}"
@@ -885,7 +946,7 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
     if is_template and hand in (None, "generated"):
         # Jekyll ran no Markdown over these (.html, or pure-HTML .md), so
         # they become templates and CommonMark never sees them.
-        body = TOKEN.sub(lambda m: INCS[int(m.group(1))].raw, body)
+        body = mark_raw_code(TOKEN.sub(lambda m: INCS[int(m.group(1))].raw, body))
         if "{% endraw" in body:
             raise SystemExit(f"{src}: body contains a literal endraw tag")
         gen = GENERATED / f"{name}.html"
@@ -909,9 +970,15 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
             + "\n"
             if extra["excerpt"]
             else None,
-            "date": extra["jekyll_date"],
+            "date": jekyll_time(fm, src),
             "collection": extra["collection"],
         }
+        if is_doc(src):
+            # Jekyll documents always carry tags (an empty list is truthy in
+            # Liquid, so head.html emits keywords content="").
+            page_ctx["tags"] = tags
+        elif fm.get("excerpt"):
+            page_ctx["excerpt"] = str(fm["excerpt"])
         env.on_include = None
         try:
             wrapped = jekyll_liquid.render(
@@ -1079,6 +1146,15 @@ def convert(cache: Cache) -> dict:
                 "dir_stubs": sorted(dir_alias),
                 "wraps": wraps,
                 "mark": CONTENT_MARK,
+                # kramdown numbers an ordered list from 1 unless an IAL sets
+                # start=; these are the starts the IALs asked for.
+                "ol_starts": {
+                    urls[s_]: [
+                        int(re.search(r"\d+", x).group()) for x in p_["ial_applied"]
+                    ]
+                    for s_, p_ in report["pages"].items()
+                    if p_.get("ial_applied")
+                },
             }
         )
     )

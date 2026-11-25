@@ -173,7 +173,10 @@ def make_env(repo: Path, site: dict) -> Environment:
     base = str(site.get("baseurl") or "")
     url = str(site.get("url") or "")
     f = env.filters
-    f["jsonify"] = lambda _c, v: json.dumps(_plain(v), ensure_ascii=False)
+    # Ruby's to_json: compact separators, UTF-8 left as is.
+    f["jsonify"] = lambda _c, v: json.dumps(
+        _plain(v), ensure_ascii=False, separators=(",", ":")
+    )
     f["markdownify"] = lambda _c, v: MD.render(_s(v))
     f["cgi_escape"] = lambda _c, v: urllib.parse.quote_plus(_s(v))
     f["uri_escape"] = lambda _c, v: urllib.parse.quote(
