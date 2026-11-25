@@ -2,7 +2,7 @@
 # Preview any checkout of the blog with Zola instead of `jekyll serve`:
 # build, serve, rebuild when a source file changes, reload open pages.
 # A one-post edit is served in well under 1.5 s (DESIGN.md has the numbers);
-# a layout or include edit rebuilds every page in about 3 s.
+# a layout or include edit rebuilds every page in about 2.5 s (4 workers).
 #
 #   zola/preview.sh                         # this checkout on :4471
 #   zola/preview.sh ~/gits/larry-blog/.worktrees/my-branch 4480

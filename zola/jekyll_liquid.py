@@ -16,11 +16,13 @@ Jekyll specifics on top of stock Liquid:
   `cgi_encode` and `strip_slash`, are registered as no-ops.
 """
 
+import functools
 import json
 import re
 import urllib.parse
 from pathlib import Path
 
+import dateutil.parser
 from liquid import Environment
 from liquid.exceptions import LiquidNameError
 from liquid._io import StringBuffer
@@ -165,13 +167,37 @@ def _plain(v):
     return str(v)
 
 
+@functools.lru_cache(maxsize=8192)
+def _parse_date(text: str):
+    try:
+        return dateutil.parser.parse(text)
+    except dateutil.parser.ParserError:
+        return None
+
+
+class JekyllEnvironment(Environment):
+    def to_date(self, obj, context, span):
+        """The stock coercion, with the dateutil parse of a string
+        memoized: /weeks feeds the `date` filter 50,000 strings, most of
+        them repeats, and parsing them was a third of a full build. "now",
+        "today" and digit strings take the stock path, which is cheap."""
+        if (
+            isinstance(obj, str)
+            and obj
+            and obj.lower() not in ("now", "today")
+            and not obj.isdigit()
+        ):
+            return _parse_date(obj)
+        return super().to_date(obj, context, span)
+
+
 def make_env(repo: Path, site: dict) -> Environment:
     literals = Literals()
     sources = {}
     for f in (repo / "_includes").iterdir():
         if f.is_file():
             sources[f.name] = rewrite_includes(f.read_text(), literals)
-    env = Environment(loader=CachingDictLoader(sources), strict_filters=True)
+    env = JekyllEnvironment(loader=CachingDictLoader(sources), strict_filters=True)
     env.tags["jinclude"] = JInclude
     env.include_depth = 0
     env.on_include = None
