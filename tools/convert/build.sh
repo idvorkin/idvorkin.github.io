@@ -2,7 +2,8 @@
 # Compile tools/convert (a Python extension) once per change to its sources
 # and print the path of the .so. Builds are shared by every checkout and
 # worktree: ~/.cache/zola-convert/<hash of the crate's sources>/, so a fresh
-# worktree reuses one and a cold compile (~20-40 s) happens once per change.
+# worktree reuses one. A change compiles in tools/convert/target: ~12 s the
+# first time in a checkout, ~1 s after that.
 # zola/rustconvert.py runs this; CONVERT_SO=/path/to/zolaconvert.so skips it,
 # CONVERT_PY=1 skips Rust entirely. CI caches ~/.cache/zola-convert itself.
 set -euo pipefail
@@ -20,17 +21,16 @@ if [ ! -f "$SO" ]; then
     echo "convert: no cargo; run 'just setup', or CONVERT_PY=1 for the Python fixes" >&2
     exit 1
   }
-  # A private target dir per compile, so two checkouts compiling different
-  # sources at once cannot hand each other the wrong library.
-  mkdir -p "$CACHE"
-  T=$(mktemp -d "$CACHE/target.XXXXXX")
-  trap 'rm -rf "$T"' EXIT
+  # This checkout's own target dir, kept between compiles, so an edit
+  # rebuilds only the crate (~1 s) and not PCRE2 and pyo3 (~12 s cold).
+  # Never one dir for all checkouts: cargo gives every checkout's crate the
+  # same unit and judges it fresh by mtime, so a checkout with older files
+  # would be handed another checkout's library.
+  T=$HERE/target
   "$CARGO" build --release --locked --quiet --manifest-path "$HERE/Cargo.toml" --target-dir "$T" >&2
   lib=$T/release/libzolaconvert.so
   [ -f "$lib" ] || lib=$T/release/libzolaconvert.dylib
   mkdir -p "$CACHE/$key"
   cp "$lib" "$SO.tmp.$$" && mv -f "$SO.tmp.$$" "$SO"
-  rm -rf "$T"
-  trap - EXIT
 fi
 echo "$SO"
