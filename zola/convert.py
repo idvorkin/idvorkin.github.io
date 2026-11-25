@@ -701,6 +701,44 @@ def toc_links(body: str, notes: dict) -> str:
     return TOC_BLOCK.sub(lambda b: TOC_ENTRY.sub(entry, b.group(0)), body)
 
 
+# A lone * after a letter or digit and before punctuation: kramdown opens
+# emphasis there (it only asks that no space follows), CommonMark's flanking
+# rule does not.
+EM_OPEN = re.compile(r"(?<=[A-Za-z0-9])(?<![*\\])\*(?=[!-)+-/:-@\[-`{-~])")
+
+
+def kramdown_em(text: str, notes: dict) -> str:
+    """Pair such an opener with the next lone * in its paragraph that has no
+    space before it, as kramdown does, and write the pair as <em> tags.
+    Code spans are left alone."""
+    out = []
+    for para in re.split(r"(\n[ \t]*\n)", text):
+        if not EM_OPEN.search(para):
+            out.append(para)
+            continue
+        code = [m.span() for m in re.finditer(r"(`+).+?\1", para, re.S)]
+        incode = lambda i: any(a <= i < b for a, b in code)  # noqa: E731
+        m = next((m for m in EM_OPEN.finditer(para) if not incode(m.start())), None)
+        close = None
+        if m:
+            for c in re.finditer(r"(?<![*\s\\])\*(?!\*)", para[m.end() + 1 :]):
+                i = m.end() + 1 + c.start()
+                if not incode(i):
+                    close = i
+                    break
+        if m and close is not None:
+            para = (
+                para[: m.start()]
+                + "<em>"
+                + para[m.end() : close]
+                + "</em>"
+                + para[close + 1 :]
+            )
+            notes["kramdown_em"] = notes.get("kramdown_em", 0) + 1
+        out.append(para)
+    return "".join(out)
+
+
 def kramdown_fences(body: str, notes: dict) -> str:
     """A ``` line whose info string has a space is not a fence to kramdown's
     GFM parser; the backticks open a code span that runs to the closing ```,
@@ -1169,7 +1207,7 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
             body = lists.mark(kramdown_fences(toc_links(body, notes), notes))
             for code, chunk in split_fences(body):
                 if not code:
-                    chunk = kramdownisms(chunk, notes)
+                    chunk = kramdown_em(kramdownisms(chunk, notes), notes)
                     chunk = absolutize(chunk, base, notes)
                 parts.append(chunk)
             for inc in INCS:
