@@ -576,7 +576,7 @@ def site_docs(parsed: dict, urls: dict) -> dict:
     url, date and tags, in Jekyll's order (Document#<=>: date, then path;
     site.posts newest first)."""
     out: dict = {}
-    for src, (fm, _) in parsed.items():
+    for src, (fm, body) in parsed.items():
         if not is_doc(src):
             continue
         top = Path(src).parts[0]
@@ -589,9 +589,13 @@ def site_docs(parsed: dict, urls: dict) -> dict:
         date = jekyll_time(fm, src)
         # Document#<=>: a quoted date stays a String, which never compares
         # with a Time, so Ruby falls back to the path: order it as undated.
+        # Ruby's YAML (Psych) reads 2022-11-6 as a Date; PyYAML keeps a str.
+        quoted = isinstance(fm.get("date"), str) and not re.fullmatch(
+            r"\d{4}-\d{1,2}-\d{1,2}", fm["date"].strip()
+        )
         order = (
             SITE_TIME
-            if label != "posts" and isinstance(fm.get("date"), str)
+            if label != "posts" and quoted
             else datetime.datetime.strptime(date, "%Y-%m-%d %H:%M:%S %z")
         )
         out.setdefault(label, []).append(
@@ -604,6 +608,12 @@ def site_docs(parsed: dict, urls: dict) -> dict:
                 "tags": tags,
                 "collection": label,
                 "content": None,
+                # Liquid listings print item.excerpt (the ig66 index).
+                "excerpt": excerpt_html(
+                    typography.apply(
+                        body.removeprefix("{% raw %}").strip().split("\n\n")[0]
+                    )
+                ),
                 "_key": (order, src),
             }
         )
