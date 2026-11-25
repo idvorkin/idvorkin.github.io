@@ -424,6 +424,11 @@ def span_ial(m: re.Match) -> str:
 
 
 def kramdownisms(text: str, notes: dict) -> str:
+    # A list marker followed by five or more spaces: CommonMark makes the
+    # item's text an indented code block, kramdown plain text.
+    text, n = re.subn(r"(?m)^([ \t]*(?:[-*+]|\d+\.))[ \t]{5,}(?=\S)", r"\1 ", text)
+    if n:
+        notes["wide_list_markers"] = n
     lines = kramdown_tables(raw_html_blocks(text.split("\n"), notes), notes)
     text = re.sub(r'\s+markdown="(1|block|span)"', "", "\n".join(lines))
     text, n = SPAN_IAL.subn(span_ial, text)
@@ -652,6 +657,26 @@ def render_feeds(out_dir: Path, contents: dict) -> None:
 
 
 CACHE_SITE: list = [None, None]
+
+
+def kramdown_fences(body: str, notes: dict) -> str:
+    """A ``` line whose info string has a space is not a fence to kramdown's
+    GFM parser; the backticks open a code span that runs to the closing ```,
+    so the block renders as a paragraph holding inline code."""
+
+    def one(m: re.Match) -> str:
+        notes["fence_as_codespan"] = notes.get("fence_as_codespan", 0) + 1
+        code = html.escape(m.group(1) + "\n" + m.group(2) + "\n", quote=False)
+        return (
+            f'<p><code class="language-plaintext highlighter-rouge">{code}</code></p>'
+        )
+
+    return re.sub(
+        r"(?m)^ {0,3}```(\S+[ \t]+\S[^`\n]*)\n(.*?)\n {0,3}```[ \t]*$",
+        one,
+        body,
+        flags=re.S,
+    )
 
 
 def html_block_lines(body: str, notes: dict) -> str:
@@ -1055,6 +1080,7 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
             notes["includes"][inc.name] += 1
         if not is_template:
             parts = []
+            body = kramdown_fences(body, notes)
             for code, chunk in split_fences(body):
                 if not code:
                     chunk = kramdownisms(tighten_lists(chunk, notes), notes)
