@@ -329,3 +329,23 @@ diffs every file of a CI-shaped Jekyll build (`_config.yml,_config_ci.yml`,
 `TZ=UTC`) against this toolchain from the same commit. Builds for that
 comparison need `JEKYLL_CONFIG=_config.yml,_config_ci.yml TZ=UTC`, as the
 cutover workflow will.
+
+After the second shim pass (`zola-port` `133e79e7f`), 1,622 of 1,647 files
+are identical or equivalent, and 477 of 500 pages. The kramdown block rules
+now carried by `lists.py` and `convert.py`:
+
+- per-item list looseness (`<!--zp-t-->` / `<!--zp-l-->` markers, resolved
+  in `finish.py`), one list across changed bullets, a bare marker is text, a
+  `-` under an item's text is an h2;
+- header-less pipe tables (any block whose every line holds a bare pipe),
+  `+` in separator lines, a leading separator dropped;
+- a block-level or unknown tag interrupts a paragraph, a whole block element
+  on one line ends it, a lone span-level tag starts one, an indented comment
+  is a paragraph, a comment after a block's closing tag is its own paragraph;
+- definition lists inside list items;
+- quote rules that look past emphasis marks; a lone `--` after a blank line
+  is an en dash.
+
+What is left: pages where Jekyll's own output is broken (Igor's call), one
+emphasis rule (`/genai-talk`), kramdown's HTML re-serialization
+(`/reflect-tool`), and order-only differences from Ruby's String-vs-Time sort.
