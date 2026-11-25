@@ -26,8 +26,8 @@ With these insights, ensure this model serves rather than controls how we live.
 <!-- vim-markdown-toc GFM -->
 
 - [The Two Currencies of Life](#the-two-currencies-of-life)
-- [The Life Balance Sheet \& Income Statement](#the-life-balance-sheet--income-statement)
-    - [Life Balance Sheet (Snapshot of assets \& liabilities)](#life-balance-sheet-snapshot-of-assets--liabilities)
+- [The Life Balance Sheet & Income Statement](#the-life-balance-sheet--income-statement)
+    - [Life Balance Sheet (Snapshot of assets & liabilities)](#life-balance-sheet-snapshot-of-assets--liabilities)
     - [Life Income Statement (Tracking energy flows)](#life-income-statement-tracking-energy-flows)
 - [Life Assets: Building, Maintaining, and Growing](#life-assets-building-maintaining-and-growing)
     - [Building Assets: Effectiveness Over Efficiency](#building-assets-effectiveness-over-efficiency)

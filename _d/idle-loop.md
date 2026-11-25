@@ -137,7 +137,10 @@ The two lists below are still worth having — they're where the good and bad be
 
 - Doom scrolling - news, Twitter, social media
   - Interestingly, this has been pushed more to video
-- Ruminating - I don't do this nearly as much as I did. When ruminating thoughts become specific, persistent patterns that haunt you, they become psychic shadows requiring specialized spell-crafting techniques: {%include summarize-page.html src="/psychic-shadows" %}
+- Ruminating - I don't do this nearly as much as I did. When ruminating thoughts become specific, persistent patterns that haunt you, they become psychic shadows requiring specialized spell-crafting techniques:
+
+{%include summarize-page.html src="/psychic-shadows" %}
+
 - TikTok / Reels / YouTube Shorts
   - Rant, this is so addictive, I put too much energy into this
   - Oddly my common categories are

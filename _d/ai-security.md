@@ -215,10 +215,12 @@ AI systems can pose psychological risks including addiction, dependency, and rea
 Altman has a fantastic discussion on this with Tucker Carlson around what ethics should be applied
 
 - 6:37 What Is Morally Right and Wrong According to ChatGPT?
-  {% include youtube.html src="5KmpT-BoVf4?=411" %}
+
+{% include youtube.html src="5KmpT-BoVf4?=411" %}
 
 - 49:37 Is AI a Religion?
-  {% include youtube.html src="5KmpT-BoVf4?t=2977" %}
+
+{% include youtube.html src="5KmpT-BoVf4?t=2977" %}
 
 ### How to record zoom
 

@@ -143,7 +143,9 @@ New Learnings
 ## Physical Health
 
 - ☐ Video my swings and run them through my Swing-A-Lyzer
-  {% include youtube.html src="BD6Sys1GIuU" %}
+
+{% include youtube.html src="BD6Sys1GIuU" %}
+
 - ☑ 3x5 Good Pullups
 - ☐ 10x10 swings in 30 min
 

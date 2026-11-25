@@ -26,11 +26,11 @@ The seminal work on the resistance is [Flinch](https://github.com/idvorkin/blob/
 - [Fighting the resistance](#fighting-the-resistance)
   - [The 3 lies of laziness](#the-3-lies-of-laziness)
   - [If you don't beat it back, it will get stronger](#if-you-dont-beat-it-back-it-will-get-stronger)
-  - [[Jump in the lake day](https://ig66.blogspot.com/search/label/jump_in_lake_day)](#jump-in-the-lake-day)
+  - [Jump in the lake day](#jump-in-the-lake-day)
   - [Cold Exposure and Physiology - The science behind jump in the lake day](#cold-exposure-and-physiology---the-science-behind-jump-in-the-lake-day)
-  - [Positive [Habits](/habits) and Routine](#positive-habits-and-routine)
+  - [Positive Habits and Routine](#positive-habits-and-routine)
   - [Related books](#related-books)
-    - [[Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf)](#flinch)
+    - [Flinch](#flinch)
     - [7 Habits begin with the end in mind](#7-habits-begin-with-the-end-in-mind)
     - [Getting things done](#getting-things-done)
     - [Eat that frog](#eat-that-frog)
@@ -72,9 +72,9 @@ At my very best, I applied a powerful antidote. I told myself I'd ask the first 
 
 Every victory over the resistance will give you the strength for the next victory. Every loss will make it harder.
 
-### [Jump in the lake day](https://ig66.blogspot.com/search/label/jump_in_lake_day)
+### Jump in the lake day
 
-To remind me the resistance is a huge enemy, I do a polar bear plunge every new year, I call it jump in the lake day.
+To remind me the resistance is a huge enemy, I do a polar bear plunge every new year, I call it [jump in the lake day](https://ig66.blogspot.com/search/label/jump_in_lake_day).
 
 ![Jump in the lake day](/images/jump-in-lake-day.jpg)
 
@@ -84,13 +84,15 @@ Pretty cool discussion of cold exposure and its brain chemistry defenses using a
 
 <https://www.youtube.com/watch?v=pq6WHJzOkno>
 
-### Positive [Habits](/habits) and Routine
+### Positive Habits and Routine
 
-Every day I wake up at 5 am, it's my first victory over the resistance, and it gives me strength to fight through the day.
+[Every day I wake up at 5 am](/habits), it's my first victory over the resistance, and it gives me strength to fight through the day.
 
 ### Related books
 
-#### [Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf)
+#### Flinch
+
+[Flinch](https://github.com/idvorkin/blob/blob/master/books/the-flinch.pdf)
 
 #### 7 Habits begin with the end in mind
 

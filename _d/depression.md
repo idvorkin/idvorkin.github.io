@@ -25,7 +25,7 @@ An excellent post on depression from [Dr Raph](https://whatilearnedsofar.com/the
 <!-- vim-markdown-toc-start -->
 
 - [Depression, Grief and Sadness](#depression-grief-and-sadness)
-- [[Anxiety](/anxiety), Depression's cruel enforcer](#anxiety-depressions-cruel-enforcer)
+- [Anxiety, Depression's cruel enforcer](#anxiety-depressions-cruel-enforcer)
 - [My own experiences with depression and anxiety](#my-own-experiences-with-depression-and-anxiety)
 - [My antidotes](#my-antidotes)
 - [Related notes I plan to write](#related-notes-i-plan-to-write)
@@ -41,7 +41,7 @@ It's a strange poverty of the English language, and indeed of many other languag
 
 Grief is explicitly reactive. If you have a loss and you feel incredibly unhappy, and then, six months later, you are still deeply sad, but you're functioning a little better, it's probably grief, and it will probably ultimately resolve itself in some measure. If you experience a catastrophic loss, and you feel terrible, and six months later you can barely function at all, then it's probably a depression that was triggered by the catastrophic circumstances. The trajectory tells us a great deal. People think of depression as being just sadness. It's much, much too much sadness, much too much grief at far too slight a cause.
 
-### [Anxiety](/anxiety), Depression's cruel enforcer
+### Anxiety, Depression's cruel enforcer
 
 In its weaker forms, [anxiety](/anxiety) is the difference between reality and expectations. But as it becomes fiercer, I'll quote Solomon again:
 
