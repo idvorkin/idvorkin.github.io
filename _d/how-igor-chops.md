@@ -62,6 +62,7 @@ I mumble to Claude on my couch while my family wonders who I'm talking to. I vib
   - [MCP Servers and Skills](#mcp-servers-and-skills)
 - [My Projects](#my-projects)
   - [Command Line, PWAs, and Now Apps](#command-line-pwas-and-now-apps)
+  - [iOS: What the Agents Use](#ios-what-the-agents-use)
   - [Testing and Evals](#testing-and-evals)
 - [The Server Behind the Curtain](#the-server-behind-the-curtain)
   - [Why Not Cloud Environments?](#why-not-cloud-environments)
@@ -351,6 +352,26 @@ CHOP widened what I'll attempt. iOS apps I'd never have built by hand ([a lift t
 {% include summarize-page.html src="/pet-projects" %}
 
 CHOP has made it so much easier to spin up new ideas and actually finish them. [Build Stats](/build-stats) keeps the receipts: merged PRs, lines changed and commits, month over month.
+
+### iOS: What the Agents Use
+
+In November 2026 I gave the agents that build my iOS apps a kit, written down once in the [ios-codev skill](https://github.com/idvorkin/chop-conventions/blob/main/skills/ios-codev/SKILL.md). Every piece is a command an agent runs and reads, [not an MCP server](#mcp-servers-and-skills).
+
+- **Apple docs: [Sosumi](https://sosumi.ai/).** developer.apple.com needs JavaScript, so a plain fetch sees nothing. Swap the host and curl returns Markdown: `curl -s https://sosumi.ai/documentation/swiftui/view`.
+- **Previews before the simulator.** The rule is from [Natasha the Robot](https://www.natashatherobot.com/p/claude-mac-mini): every changed view gets a `#Preview` on fixture data, and the simulator boots only for what a preview can't show, like transitions and animations. Context Grabber had no previews when I adopted this, so they're being added now.
+- **Previews rendered from the command line.** Xcode 27.2 ships `xcrun mcpbridge`. A shell script hands it a Swift file and gets a PNG back, with no Xcode window and nothing registered as an MCP server. It took a one-time `sudo` approval of the calling binary and the project folders. [axe](https://github.com/k-kohey/axe) is the fallback; I haven't tried it yet.
+- **The simulator through Apple's own CLIs.** `xcodebuild` builds and tests; `xcrun simctl` boots, installs, launches and screenshots. Each agent gets its own simulator, deleted when it finishes and slimmed with [simslim](https://github.com/MobAI-App/simslim).
+- **Two machines, split by what each can build.** [The Linux VM](#the-server-behind-the-curtain) builds and tests the shared Swift board rules as WebAssembly and runs the Linux Swift tests. The Mac does Xcode, simulators, signing and device installs. Neither side skips the other's check: it pushes the branch and asks.
+
+What I've measured so far:
+
+- **Preview render:** about 0.5 s warm. Cold took 35 to 105 s depending on what else the Mac was doing, and the first one took 45.8 s with a rebuild in it. The same check through a simulator build and screenshot: not measured yet, so I have no ratio.
+- **simslim:** it doesn't make a test faster; it lets more simulators stay booted before memory runs out. On the same simulator, idle a minute after boot, stock ran 214 processes at 29.9 GB of summed memory and 1.4% CPU; slim ran 120 processes at 16.6 GB and 0.3%. That's about 45% less of both. The sum counts shared pages more than once, so read it as relative. Disk is unchanged: it stops daemons, it doesn't shrink the image. The README claims about 4 GB down to 0.9 GB of memory per simulator, measured its own way with everything off, so mine isn't a like-for-like test of that.
+- **Tests on a slimmed simulator:** no real difference. The same UI test set, on the same simulator, alternating slim and stock, took 184 s slim and 178 s stock on the warm pair, with single tests within 1 to 2 s either way. My first measurement said 255 s stock and 185 s slim, a 27% win. It wasn't: it compared different simulators, loads and build caches. Pair the runs before believing a speedup.
+- **What slimming cost:** switching off services can silently break tests that need them. With widgets off, two UI test classes failed until I kept Widgets on too. Then a catch-all category turned off `linkd`, the App Intents index, and a widget's tap stopped firing its intent. That's three silent breaks in one night, so switch categories off one at a time and run the full suite after each. Context Grabber keeps Siri, Health, iCloud, Photos, Widgets and the App Intents index (linkd). Each agent's simulator now gets slimmed once after it boots, with no one asking.
+- **Build and test time before and after the machine split:** not measured yet.
+
+The split paid for itself the first night in a bug, not in seconds. A branch used `NSNumber`, which compiles on the Mac and doesn't exist in the wasm build. The VM's build failed on it. After the fix, the VM ran 324 wasm checks with 0 failures, and a check that fails the Mac's own tests on that class of Mac-only type is written, not merged yet. Earlier that night the VM confirmed a board header fix: its golden test went from 7 of 10 to 10 of 10, with 319 wasm checks passing on that branch.
 
 ### Testing and Evals
 
