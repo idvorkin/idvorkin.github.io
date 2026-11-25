@@ -741,6 +741,12 @@ def place_tokens(body: str, incs: list[Inc], notes: dict) -> str:
         if not prefix.strip():
             notes["indented_calls"] = notes.get("indented_calls", 0) + 1
             return text.replace("\n", "\n" + " " * len(prefix))
+        if re.search(r"\n[ \t]*\n", text):
+            # A blank line in the output ends the caller's paragraph for
+            # kramdown too: the output goes in as blocks, the line's rest
+            # becomes the next paragraph.
+            notes["block_calls"] = notes.get("block_calls", 0) + 1
+            return text.rstrip() + "\n\n"
         notes["inline_calls"] = notes.get("inline_calls", 0) + 1
 
         # Joined into a paragraph, a <script> would be inline text: // comments

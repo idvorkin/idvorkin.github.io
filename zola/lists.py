@@ -16,10 +16,13 @@ paragraph or stayed bare. Blank lines between items belong to the item above.
 
 import re
 
-LIST = re.compile(r"^( {0,3})([-*+]|\d{1,9}[.)])([ \t]+|$)(.*)$")
+LIST = re.compile(
+    r"^( {0,3})([-*+]|\d{1,9}[.)])([ \t]+|$)(.*)$"
+)  # group 3 empty: bare marker
 HR = re.compile(r"^ {0,3}([-*_])(\s*\1){2,}\s*$")
 FENCE = re.compile(r"^\s*(`{3,}|~{3,})")
 T, L = "<!--zp-t-->", "<!--zp-l-->"
+ESC, PARA = "escape", "paragraph"
 
 
 def _block_start(s: str) -> bool:
@@ -58,7 +61,10 @@ def _scan(lines: list[str], idx: list[int], edits: dict) -> None:
         if line.lstrip().startswith("<"):
             # Raw HTML: a comment runs to its "-->" (a marker inside would
             # close it early), any other block to the next blank line.
-            if line.lstrip().startswith("<!--"):
+            if re.match(r" {1,3}<!--.*-->\s*$", line):
+                # kramdown reads an indented one-line comment as a paragraph.
+                edits[idx[i]] = PARA
+            elif line.lstrip().startswith("<!--"):
                 while i < n and "-->" not in lines[i]:
                     i += 1
             else:
@@ -67,6 +73,12 @@ def _scan(lines: list[str], idx: list[int], edits: dict) -> None:
             i += 1
             continue
         m = LIST.match(line)
+        if m and not m.group(3) and (i == 0 or not lines[i - 1].strip()):
+            # A marker with nothing after it starts no list in kramdown
+            # (it wants a space): CommonMark's empty item becomes text.
+            edits[idx[i]] = ESC
+            i += 1
+            continue
         if not m or HR.match(line):
             i += 1
             continue
@@ -78,6 +90,7 @@ def _scan(lines: list[str], idx: list[int], edits: dict) -> None:
             mm = LIST.match(s)
             if (
                 mm
+                and mm.group(3)
                 and not HR.match(s)
                 and _kind(mm.group(2)) == kind
                 and (not items or len(mm.group(1)) < items[-1]["ci"])
@@ -130,6 +143,12 @@ def mark(text: str) -> str:
     edits: dict = {}
     _scan(lines, list(range(len(lines))), edits)
     for k, mk in edits.items():
+        if mk == PARA:
+            lines[k] = "<p>" + lines[k].strip() + "</p>"
+            continue
+        if mk == ESC:
+            lines[k] = re.sub(r"^(\s*\d*)(\S)", r"\1\\\2", lines[k])
+            continue
         # Before a trailing hard break ("  " or a backslash) or attribute
         # list, so both keep working.
         m = re.match(r"(.*?)(\s*(?:\{[#:][^}]*\})?(?:  +|\\)?)$", lines[k])
