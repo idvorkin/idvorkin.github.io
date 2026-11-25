@@ -147,6 +147,7 @@ def finish(work: Path, out: Path, site_url: str) -> str:
         html = html.replace('<code data-zp-raw="">', "<code>")
         html = code_blocks(html)
         html = task_lists(html)
+        html = html.replace("<!--zp-raw-->", "")
         html = footnotes(html)
         starts = list(plan.get("ol_starts", {}).get(url, []))
 

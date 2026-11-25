@@ -424,6 +424,16 @@ def span_ial(m: re.Match) -> str:
 
 
 def kramdownisms(text: str, notes: dict) -> str:
+    # kramdown math: a $$...$$ paragraph becomes \[...\] for MathJax, its
+    # body untouched and no <p>. A comment opens a CommonMark HTML block, so
+    # the rest of the line passes raw; finish.py drops the comment.
+    text, n = re.subn(
+        r"(?m)(?:(?<=\n\n)|\A)\$\$(.+?)\$\$[ \t]*(?=\n\n|\n?\Z)",
+        lambda m: "<!--zp-raw-->\\[" + m.group(1).strip() + "\\]",
+        text,
+    )
+    if n:
+        notes["math_blocks"] = n
     # A list marker followed by five or more spaces: CommonMark makes the
     # item's text an indented code block, kramdown plain text.
     text, n = re.subn(r"(?m)^([ \t]*(?:[-*+]|\d+\.))[ \t]{5,}(?=\S)", r"\1 ", text)
@@ -717,6 +727,23 @@ def html_block_lines(body: str, notes: dict) -> str:
                 i = j
         out.append(line)
         i += 1
+    # A lone inline open tag with no close before the next blank line:
+    # kramdown closes it in a paragraph (<p><span></span></p>); CommonMark
+    # passes it through as an HTML block and it wraps everything after it.
+    for k, line in enumerate(out):
+        m = re.fullmatch(
+            r"\s*<(span|a|em|strong|small|b|i|u|sup|sub)(\s[^<>]*)?>\s*", line
+        )
+        if not m:
+            continue
+        rest = []
+        for x in out[k + 1 :]:
+            if not x.strip():
+                break
+            rest.append(x)
+        if f"</{m.group(1)}>" not in "\n".join(rest):
+            out[k] = f"<p><{m.group(1)}{m.group(2) or ''}></{m.group(1)}></p>"
+            n += 1
     if n:
         notes["html_block_lines"] = n
     return "\n".join(out)
