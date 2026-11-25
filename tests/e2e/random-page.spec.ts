@@ -32,8 +32,10 @@ test.describe("Random Page Navigation", () => {
     // Navigate to /random
     await page.goto("/random");
 
-    // Wait for navigation to complete
-    await page.waitForLoadState("networkidle");
+    // Wait for the redirect itself. "networkidle" never arrives on landing
+    // pages whose third-party embeds keep polling, so it timed out at random.
+    await page.waitForURL((url) => url.pathname !== "/random");
+    await page.waitForLoadState("domcontentloaded");
 
     // Get the current URL after redirect
     const currentUrl = page.url();
@@ -63,8 +65,9 @@ test.describe("Random Page Navigation", () => {
     // Get initial text
     const initialText = await randomPostDiv.textContent();
 
-    // Click to load a random post
-    await randomPostDiv.click();
+    // Click to load a random post. Click the box's padding: its center is often
+    // the current post's link, which navigates away instead of re-rolling.
+    await randomPostDiv.click({ position: { x: 4, y: 4 } });
 
     // Wait for content to change
     await page.waitForTimeout(500);

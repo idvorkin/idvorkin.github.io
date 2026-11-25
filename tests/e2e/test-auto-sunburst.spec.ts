@@ -48,23 +48,21 @@ test.describe("Auto-generated Sunburst", () => {
     const firstPromptDiv = page.locator("h3 + div.alert.alert-primary").first();
     const initialPrompt = await firstPromptDiv.textContent();
 
-    // Click the refresh icon
+    // Click the refresh icon until the prompt changes. Each click draws again
+    // from the category's list with replacement, and Subcategory A1 has three
+    // items, so a click repeats the prompt a third of the time by design (two
+    // tries still failed one run in nine). Clicking for up to 10 s makes a
+    // false failure vanishingly rare, while a refresh that never changes the
+    // prompt still fails.
     const refreshIcon = firstPromptDiv.locator("span[title='Click for another prompt']");
-    await refreshIcon.click();
-
-    // Wait a bit for the prompt to update
-    await page.waitForTimeout(1000);
-
-    // Prompt should have changed
-    let newPrompt = await firstPromptDiv.textContent();
-
-    // If the prompt hasn't changed, try clicking again
-    if (newPrompt === initialPrompt) {
-      await refreshIcon.click();
-      await page.waitForTimeout(1000);
-      newPrompt = await firstPromptDiv.textContent();
-    }
-
-    expect(newPrompt).not.toBe(initialPrompt);
+    await expect
+      .poll(
+        async () => {
+          await refreshIcon.click();
+          return firstPromptDiv.textContent();
+        },
+        { intervals: [100], timeout: 10000 },
+      )
+      .not.toBe(initialPrompt);
   });
 });

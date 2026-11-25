@@ -1,4 +1,15 @@
-import { expect, test } from "./base-test";
+import { type Page, expect, test } from "./base-test";
+
+// Clicking a leaf of the sunburst scrolls the page to that leaf's heading, by
+// design. The slices are shuffled on every load, so whether a given path is a
+// leaf is random, and the next click then found the chart scrolled out of the
+// viewport. Bring the chart back before each click.
+async function clickPath(page: Page, i: number): Promise<void> {
+  await page.evaluate(() =>
+    document.getElementById("sunburst")?.scrollIntoView({ block: "center", behavior: "instant" }),
+  );
+  await page.locator("#sunburst path").nth(i).click({ force: true });
+}
 
 test.describe("Sunburst path element clicks", () => {
   test("Clicking sunburst text div can trigger prompt change", async ({ page }) => {
@@ -34,7 +45,7 @@ test.describe("Sunburst path element clicks", () => {
 
       // Try clicking different path elements until we find one that triggers a change
       for (let i = 1; i < Math.min(pathCount, 5); i++) {
-        await pathElements.nth(i).click({ force: true });
+        await clickPath(page, i);
         await page.waitForTimeout(500);
 
         newText = await promptElement.textContent();
@@ -79,7 +90,7 @@ test.describe("Sunburst path element clicks", () => {
 
     // Click different path elements and collect any text changes
     for (let i = 1; i <= 3 && i < (await pathElements.count()); i++) {
-      await pathElements.nth(i).click({ force: true });
+      await clickPath(page, i);
       await page.waitForTimeout(500);
 
       const text = await promptElement.textContent();

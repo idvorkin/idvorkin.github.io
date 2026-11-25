@@ -1,8 +1,10 @@
 import { expect, test } from "./base-test";
 
+// The keyboards and their Amazon links moved from /irl to the /keyboard post
+// (2ce9f165d), one amazon include per keyboard.
 test.describe("IRL Page Keyboards Section", () => {
   test("should take screenshot of keyboard products", async ({ page }) => {
-    await page.goto("/irl#keyboards");
+    await page.goto("/keyboard#my-keyboards");
     await page.waitForLoadState("networkidle");
 
     // Wait for images to load
@@ -23,7 +25,7 @@ test.describe("IRL Page Keyboards Section", () => {
   });
 
   test("should verify all 3 keyboard images load", async ({ page }) => {
-    await page.goto("/irl#keyboards");
+    await page.goto("/keyboard#my-keyboards");
     await page.waitForLoadState("networkidle");
     await page.waitForTimeout(3000);
 

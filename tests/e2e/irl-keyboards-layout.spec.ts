@@ -39,8 +39,10 @@ test.describe("IRL Keyboards Section - Layout Testing", () => {
     console.log("✓ Mobile layout screenshot saved");
   });
 
+  // The keyboard details moved from /irl to their own /keyboard post
+  // (2ce9f165d); /irl#keyboards is now a one-line pointer to it.
   test("verify alert box is visible and properly positioned", async ({ page }) => {
-    await page.goto("/irl#keyboards");
+    await page.goto("/keyboard#my-keyboards");
     await page.waitForLoadState("networkidle");
     await page.waitForTimeout(3000);
 
@@ -56,11 +58,11 @@ test.describe("IRL Keyboards Section - Layout Testing", () => {
   });
 
   test("verify keyboard images have alt text", async ({ page }) => {
-    await page.goto("/irl");
+    await page.goto("/keyboard");
     await page.waitForLoadState("domcontentloaded");
 
     // Navigate to keyboards section
-    await page.locator("#keyboards").scrollIntoViewIfNeeded();
+    await page.locator("#my-keyboards").scrollIntoViewIfNeeded();
     await page.waitForTimeout(2000);
 
     // Check both keyboard images exist with alt text

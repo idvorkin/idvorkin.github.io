@@ -1,54 +1,63 @@
-import { expect, test } from "./base-test";
+import { type Page, expect, test } from "./base-test";
 
-test("All links on 404 page work correctly", async ({ page }) => {
-  // Navigate to 404 page
-  await page.goto("/this-page-does-not-exist");
+// One test per link: five navigations in one 30 s budget timed out on a busy
+// machine, and a failure now names the link that broke.
+const links: { name: string; from: string; landed: (page: Page) => Promise<void> }[] = [
+  {
+    name: "About",
+    from: "/this-page-does-not-exist",
+    landed: async (page) => {
+      await expect(page.locator("h1")).toContainText("Where am I?");
+    },
+  },
+  {
+    name: "Search",
+    from: "/another-non-existent-page",
+    // Just check we're on the home page by looking for the featured content
+    landed: async (page) => {
+      await expect(page.locator("body")).toContainText("Featured");
+    },
+  },
+  {
+    name: "Random post",
+    from: "/yet-another-missing-page",
+    // Random page should redirect to some blog post, just check we're not on 404
+    landed: async (page) => {
+      await page.waitForURL((url) => url.pathname !== "/random");
+      await expect(page).not.toHaveTitle(/PAGE NOT FOUND/);
+    },
+  },
+  {
+    name: "Table of Contents",
+    from: "/missing-page-for-toc-test",
+    landed: async (page) => {
+      await expect(page.locator("body")).toContainText("Table of Contents");
+    },
+  },
+  {
+    name: "All posts",
+    from: "/missing-page-for-all-test",
+    landed: async (page) => {
+      await expect(page.locator("h1")).toContainText("All Blog Posts");
+      await expect(page.locator("body")).toContainText("This page lists all blog posts for link checking purposes");
+    },
+  },
+];
 
-  // Test About link (get the one in the main content, not navigation)
-  const aboutLink = page.getByRole("link", { name: "About" });
-  await expect(aboutLink).toBeVisible();
-  await aboutLink.click();
-  await expect(page.locator("h1")).toContainText("Where am I?");
+for (const link of links) {
+  test(`404 page link "${link.name}" works`, async ({ page }) => {
+    // The links are static HTML, so don't wait for "load": that waits on the
+    // monkey picture from i.pinimg.com, which has its own test below.
+    await page.goto(link.from, { waitUntil: "domcontentloaded" });
 
-  // Go back to 404
-  await page.goto("/another-non-existent-page");
-
-  // Test Search link (home page)
-  const searchLink = page.getByRole("link", { name: "Search" });
-  await expect(searchLink).toBeVisible();
-  await searchLink.click();
-  // Just check we're on the home page by looking for the search input or featured content
-  await expect(page.locator("body")).toContainText("Featured");
-
-  // Go back to 404
-  await page.goto("/yet-another-missing-page");
-
-  // Test Random post link
-  const randomLink = page.getByRole("link", { name: "Random post" });
-  await expect(randomLink).toBeVisible();
-  await randomLink.click();
-  // Random page should redirect to some blog post, just check we're not on 404
-  await expect(page).not.toHaveTitle(/PAGE NOT FOUND/);
-
-  // Go back to 404
-  await page.goto("/missing-page-for-toc-test");
-
-  // Test Table of Contents link
-  const tocLink = page.getByRole("link", { name: "Table of Contents" });
-  await expect(tocLink).toBeVisible();
-  await tocLink.click();
-  await expect(page.locator("body")).toContainText("Table of Contents");
-
-  // Go back to 404
-  await page.goto("/missing-page-for-all-test");
-
-  // Test All posts link
-  const allLink = page.getByRole("link", { name: "All posts" });
-  await expect(allLink).toBeVisible();
-  await allLink.click();
-  await expect(page.locator("h1")).toContainText("All Blog Posts");
-  await expect(page.locator("body")).toContainText("This page lists all blog posts for link checking purposes");
-});
+    // Look inside the page body only: the header also carries a "Random post"
+    // dice link (b3bb3e726), so an unscoped lookup matches twice.
+    const target = page.locator("#content-holder").getByRole("link", { name: link.name });
+    await expect(target).toBeVisible();
+    await target.click();
+    await link.landed(page);
+  });
+}
 
 test("404 page image loads correctly", async ({ page }) => {
   await page.goto("/non-existent-page");
