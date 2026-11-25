@@ -28,6 +28,8 @@ from liquid.loaders import CachingDictLoader
 from liquid.tokens import TOKEN_COMMA, TOKEN_TAG_END
 from markdown_it import MarkdownIt
 
+import typography
+
 INCLUDE = re.compile(
     r"\{%(-?)\s*include\s+([\w./-]+)(\s+.*?)?\s*(-?)%\}",
     re.S,
@@ -37,6 +39,13 @@ ARG = re.compile(
 )
 MD = MarkdownIt("commonmark", {"typographer": True, "html": True}).enable(
     ["smartquotes", "replacements", "strikethrough", "table"]
+)
+
+
+# The excerpt and markdownify: kramdown's typography (typography.py), then
+# CommonMark without markdown-it's own typographer.
+MD_PLAIN = MarkdownIt("commonmark", {"typographer": False, "html": True}).enable(
+    ["strikethrough", "table"]
 )
 
 
@@ -177,7 +186,7 @@ def make_env(repo: Path, site: dict) -> Environment:
     f["jsonify"] = lambda _c, v: json.dumps(
         _plain(v), ensure_ascii=False, separators=(",", ":")
     )
-    f["markdownify"] = lambda _c, v: MD.render(_s(v))
+    f["markdownify"] = lambda _c, v: MD_PLAIN.render(typography.apply(_s(v)))
     stock_sort = f["sort"]
 
     def sort(ctx, vals, key=None):

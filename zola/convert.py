@@ -52,6 +52,7 @@ REPO = Path(os.environ.get("SRC") or HERE.parent).resolve()
 sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / ".claude/skills/toc"))
 import jekyll_liquid  # noqa: E402
+import typography  # noqa: E402
 from toc import slugify as toc_slugify  # noqa: E402  the GFM slug rule kramdown's GFM parser uses
 
 # WORK: the Zola site dir being assembled (build.sh makes one per source
@@ -653,6 +654,13 @@ def render_feeds(out_dir: Path, contents: dict) -> None:
 CACHE_SITE: list = [None, None]
 
 
+def excerpt_html(first_para: str) -> str:
+    """Jekyll's excerpt: the first block through kramdown, plus "\n\n"
+    (so an empty first block is "\n\n", truthy in Liquid)."""
+    html = jekyll_liquid.MD_PLAIN.render(re.sub(r"\{#[^}]*\}", "", first_para))
+    return (html if html.strip() else "\n") + "\n"
+
+
 def mark_raw_code(text: str) -> str:
     """A raw-HTML <code> kramdown passed through bare; finish.py gives every
     other (Markdown) <code> rouge's class. Backtick spans are left alone."""
@@ -1010,8 +1018,10 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
                 parts.append(chunk)
             for inc in INCS:
                 # An include's Markdown links are relative to the page too.
-                inc.text = absolutize(inc.text, base, notes)
-            body = place_tokens("\n".join(parts), INCS, notes)
+                inc.text = typography.apply(absolutize(inc.text, base, notes))
+            # One pass over the whole body, fences included: an HTML comment
+            # can hold a fence, so per-chunk state would lose the comment.
+            body = place_tokens(typography.apply("\n".join(parts)), INCS, notes)
             seen: dict = {}
             body = "\n".join(
                 chunk if code else pin_heading_ids(chunk, seen)
@@ -1103,10 +1113,9 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
             "title": fm.get("title"),
             "tags": tags or None,
             # Jekyll: the first block, rendered (head.html strip_html's it).
-            "excerpt": jekyll_liquid.MD.render(re.sub(r"\{#[^}]*\}", "", first_para))
-            + "\n"
-            if extra["excerpt"]
-            else None,
+            # Jekyll: the first block through kramdown, then "\n\n" (an
+            # empty first block still gives "\n\n", which is truthy).
+            "excerpt": excerpt_html(first_para) if is_doc(src) else None,
             "date": jekyll_time(fm, src),
             "collection": extra["collection"],
         }
