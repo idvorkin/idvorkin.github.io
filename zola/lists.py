@@ -22,7 +22,41 @@ LIST = re.compile(
 HR = re.compile(r"^ {0,3}([-*_])(\s*\1){2,}\s*$")
 FENCE = re.compile(r"^\s*(`{3,}|~{3,})")
 T, L = "<!--zp-t-->", "<!--zp-l-->"
-ESC, PARA = "escape", "paragraph"
+ESC, PARA, TABLE = "escape", "paragraph", "table"
+NOHEAD = "<!--zp-nohead-->"
+CODE = re.compile(r"(`+).*?\1")
+DELIM = re.compile(r"^\s*\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)*\|?\s*$")
+
+
+def _cells(s: str) -> int:
+    """Cells in a kramdown table row, 0 when the line has no bare pipe
+    (escaped pipes and pipes in code spans do not count)."""
+    t = re.sub(r"\\.", "xx", s.strip())
+    t = CODE.sub(lambda m: "x" * len(m.group(0)), t)
+    if "|" not in t:
+        return 0
+    t = t[1:] if t.startswith("|") else t
+    t = t[:-1] if t.endswith("|") else t
+    return t.count("|") + 1
+
+
+def _table(text: list[str], k: int) -> int:
+    """kramdown makes a table of any block whose every line holds a bare pipe;
+    GFM wants a delimiter row second. The block's length when only kramdown
+    would see a table, else 0."""
+    t = text[k].lstrip()
+    if text[k].startswith(("    ", "\t")):  # indented code
+        return 0
+    if t.startswith(("#", "<", ">", "```", "~~~")) or LIST.match(t):
+        return 0
+    e = k
+    while e < len(text) and text[e].strip():
+        if not _cells(text[e]):
+            return 0
+        e += 1
+    if e - k >= 2 and DELIM.match(text[k + 1]):
+        return 0
+    return e - k
 
 
 def _block_start(s: str) -> bool:
@@ -41,7 +75,7 @@ def _kind(marker: str) -> str:
     return "ul" if marker in "-*+" else "ol"
 
 
-def _scan(lines: list[str], idx: list[int], edits: dict) -> None:
+def _scan(lines: list[str], idx: list[int], edits: dict, top: bool = True) -> None:
     """Find every list in these lines (original indexes in idx), decide each
     item, recurse into item contents."""
     i, n = 0, len(lines)
@@ -71,6 +105,10 @@ def _scan(lines: list[str], idx: list[int], edits: dict) -> None:
                 while i < n and lines[i].strip():
                     i += 1
             i += 1
+            continue
+        if (i or top) and (i == 0 or not lines[i - 1].strip()) and _table(lines, i):
+            edits[idx[i]] = (TABLE, _cells(line), None)
+            i += _table(lines, i)
             continue
         m = LIST.match(line)
         if m and not m.group(3) and (i == 0 or not lines[i - 1].strip()):
@@ -116,7 +154,10 @@ def _scan(lines: list[str], idx: list[int], edits: dict) -> None:
         for k, it in enumerate(items):
             rows = it["rows"]
             text = [r[1] for r in rows]
-            first_p = bool(text[0].strip()) and not _block_start(text[0])
+            table = _table(text, 0)
+            if table:
+                edits[idx[rows[0][0]]] = (TABLE, _cells(text[0]), it["ci"])
+            first_p = bool(text[0].strip()) and not _block_start(text[0]) and not table
             # the first paragraph: up to a blank or a block start
             e = 1
             while e < len(text) and text[e].strip() and not _block_start(text[e]):
@@ -134,7 +175,7 @@ def _scan(lines: list[str], idx: list[int], edits: dict) -> None:
             if not first_p or bare:
                 earlier_bare_or_not_p = True
             # nested content
-            _scan(text[1:], [idx[r[0]] for r in rows[1:]], edits)
+            _scan(text[1:], [idx[r[0]] for r in rows[1:]], edits, top=False)
         i = max(j, i + 1)
 
 
@@ -143,6 +184,19 @@ def mark(text: str) -> str:
     edits: dict = {}
     _scan(lines, list(range(len(lines))), edits)
     for k, mk in edits.items():
+        if isinstance(mk, tuple):
+            # Marker line, the row, then a delimiter row so GFM sees a table;
+            # finish.py turns the header back into a body row.
+            _, cells, ci = mk
+            line = lines[k]
+            ind = " " * ci if ci is not None else line[: len(line) - len(line.lstrip())]
+            head = line[:ci] if ci is not None else ind
+            row = line[ci:] if ci is not None else line.lstrip()
+            delim = " | ".join(["---"] * cells)
+            lines[k] = (
+                f"{head.rstrip() + ' ' if ci is not None else head}{NOHEAD}\n{ind}{row}\n{ind}{delim}"
+            )
+            continue
         if mk == PARA:
             lines[k] = "<p>" + lines[k].strip() + "</p>"
             continue
@@ -178,4 +232,17 @@ def apply_html(html: str) -> str:
         html,
         flags=re.S,
     )
+    html = re.sub(
+        re.escape(NOHEAD) + r"\s*(<table>.*?</table>)",
+        lambda m: _no_head(m.group(1)),
+        html,
+        flags=re.S,
+    )
     return html.replace(T, "").replace(L, "")
+
+
+def _no_head(table: str) -> str:
+    """kramdown's header-less table: every row in <tbody>, cells <td>."""
+    table = re.sub(r"<th\b", "<td", table).replace("</th>", "</td>")
+    table = re.sub(r"</thead>\s*<tbody>", "", table)
+    return table.replace("<thead>", "<tbody>").replace("</thead>", "</tbody>")
