@@ -116,7 +116,9 @@ test.describe("Amazon affiliate links", () => {
 
   test("should handle multiple ASINs in one include", async ({ page }) => {
     // Navigate to machine learning page which has multiple ASINs
-    await page.goto("/machine-learning", { waitUntil: "networkidle" });
+    // Only the rendered hrefs are read, so the load event is enough.
+    // "networkidle" timed out whenever a third-party embed kept polling.
+    await page.goto("/machine-learning");
 
     // Find Amazon links
     const amazonLinks = page.locator("a[href*='amazon.com/dp/']");

@@ -1,4 +1,13 @@
-import { expect, test } from "./base-test";
+import { type Page, expect, test } from "./base-test";
+
+// Clicking a leaf of the sunburst scrolls the page to that leaf's heading, by
+// design (see sunburst-scroll.spec.ts). Before clicking the chart again, bring
+// it back into view, or the click lands while the page is scrolling away.
+async function showChart(page: Page): Promise<void> {
+  await page.evaluate(() =>
+    document.getElementById("sunburst")?.scrollIntoView({ block: "center", behavior: "instant" }),
+  );
+}
 
 test.describe("Things I enjoy page", () => {
   test.beforeEach(async ({ page }) => {
@@ -15,17 +24,12 @@ test.describe("Things I enjoy page", () => {
     // Get the original text
     const originalText = await blogPostElement.textContent();
 
-    // Click the element
-    await blogPostElement.click();
+    // Click the box's padding, not its center: the center is often the random
+    // post's own link, and clicking that navigates away instead of re-rolling.
+    await blogPostElement.click({ position: { x: 4, y: 4 } });
 
-    // Wait for potential update
-    await page.waitForTimeout(500);
-
-    // Get the new text
-    const newText = await blogPostElement.textContent();
-
-    // Verify the text changed
-    expect(newText).not.toEqual(originalText);
+    // Verify the text changed (retrying: the new post is filled in async)
+    await expect(blogPostElement).not.toHaveText(originalText ?? "");
   });
 
   test("Get different prompt clicking in donut", async ({ page }) => {
@@ -84,7 +88,9 @@ test.describe("Things I enjoy page", () => {
     // Verify center text still shows Entertaining
     await expect(donutCenter).toContainText("Entertaining");
 
-    // Go back to default by clicking center with force: true
+    // Go back to default by clicking center with force: true. Juggling is a
+    // leaf, so its click scrolled the page to the Juggling heading.
+    await showChart(page);
     await donutCenter.click({ force: true });
 
     // Verify center text changed back to default
@@ -107,6 +113,7 @@ test.describe("Things I enjoy page", () => {
 
     // Try clicking different paths to find one that has prompts
     for (let i = 1; i < Math.min(pathCount, 10); i++) {
+      await showChart(page);
       await pathElements.nth(i).click({ force: true });
       await page.waitForTimeout(500);
 
