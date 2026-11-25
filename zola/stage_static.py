@@ -39,8 +39,18 @@ def has_front_matter(p: Path) -> bool:
         return False
 
 
+def jekyll_config() -> dict:
+    """Jekyll's --config a.yml,b.yml: later files win key by key, and a list
+    (exclude:) is replaced, not appended. CI builds with _config_ci.yml on
+    top, whose exclude: list replaces the main one."""
+    cfg: dict = {}
+    for name in os.environ.get("JEKYLL_CONFIG", "_config.yml").split(","):
+        cfg.update(yaml.safe_load((REPO / name.strip()).read_text()) or {})
+    return cfg
+
+
 def stage() -> dict:
-    cfg = yaml.safe_load((REPO / "_config.yml").read_text())
+    cfg = jekyll_config()
     excludes = list(cfg.get("exclude") or []) + ["zola"]
     includes = set(cfg.get("include") or [])
 

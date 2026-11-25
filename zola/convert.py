@@ -131,6 +131,54 @@ def jekyll_url(src: str, fm: dict) -> str:
     return url
 
 
+def page_url(src: str, fm: dict) -> str:
+    """Jekyll's page.url as it prints it. A permalink as written (with a
+    leading slash added); documents otherwise use jekyll_url. A page without
+    one follows Page#template under `permalink: /:title`: HTML output drops
+    its extension, an index becomes its directory, other output keeps it."""
+    if fm.get("permalink"):
+        return "/" + str(fm["permalink"]).lstrip("/")
+    if is_doc(src):
+        return jekyll_url(src, fm)
+    p = Path(src)
+    parent = "" if str(p.parent) == "." else "/" + p.parent.as_posix()
+    if p.suffix in (".md", ".markdown", ".html"):
+        return parent + "/" if p.stem == "index" else f"{parent}/{p.stem}"
+    return f"{parent}/{p.name}"
+
+
+def write_sitemap(site: dict, parsed: dict, alias_pages: list) -> None:
+    """Jekyll's own sitemap.xml template: site.pages (root pages, feed-like
+    files with front matter, one redirect page per redirect_from, and
+    redirects.json), then site.posts. Order differs from Jekyll's (its page
+    order is the filesystem's); the URL set is the same."""
+    base = str(site.get("url") or "https://idvork.in").rstrip("/")
+    staged = json.loads((WORK / "static-report.json").read_text())["root_pages"]
+    locs = [base]
+    for src_ in sorted(staged):
+        if src_ in parsed:
+            fm_ = parsed[src_][0]
+        else:  # feed-like files (feed.xml, search.json, ...)
+            m = FM.match((REPO / src_).read_text())
+            fm_ = (yaml.safe_load(m.group(1)) or {}) if m else {}
+        locs.append(base + page_url(src_, fm_))
+    locs += [base + a for a in alias_pages]
+    locs.append(base + "/redirects.json")
+    posts = sorted(
+        (s_ for s_ in parsed if Path(s_).parts[0] == "_posts"),
+        key=lambda s_: doc_date(parsed[s_][0], s_),
+        reverse=True,
+    )
+    locs += [base + page_url(s_, parsed[s_][0]) for s_ in posts]
+    body = "".join(f"    <url>\n        <loc>{u}</loc>\n    </url>\n" for u in locs)
+    (WORK / "static" / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + body
+        + "</urlset>\n"
+    )
+
+
 def jekyll_base(src: str, fm: dict, url: str) -> str:
     """What the browser resolved relative links against on Jekyll: /x for
     x.html, but /x/ for a page served as x/index.html."""
@@ -580,7 +628,9 @@ def place_tokens(body: str, incs: list[Inc], notes: dict) -> str:
 
 
 def site_context() -> dict:
-    site = yaml.safe_load((REPO / "_config.yml").read_text()) or {}
+    site: dict = {}
+    for name in os.environ.get("JEKYLL_CONFIG", "_config.yml").split(","):
+        site.update(yaml.safe_load((REPO / name.strip()).read_text()) or {})
     data = {}
     for f in sorted((REPO / "_data").iterdir()):
         if f.suffix in (".yml", ".yaml"):
@@ -800,7 +850,11 @@ def digest(*parts) -> str:
 def global_key() -> str:
     """Everything a page's output reads besides its own source and the
     cross-page maps: config, data, includes, layouts, git.json, BASE_URL."""
-    files = [REPO / "_config.yml", WORK / "data" / "git.json"]
+    files = [
+        REPO / n.strip()
+        for n in os.environ.get("JEKYLL_CONFIG", "_config.yml").split(",")
+    ]
+    files.append(WORK / "data" / "git.json")
     for d in ("_data", "_includes", "_layouts"):
         files += sorted(p for p in (REPO / d).iterdir() if p.is_file())
     return digest(
@@ -1158,19 +1212,37 @@ def convert(cache: Cache) -> dict:
             }
         )
     )
-    # jekyll-redirect-from's /redirects.json: every redirect, source -> target
-    # (Jekyll URL shape, as the old site published it).
-    redirects = {}
-    for a, owner in alias_owner.items():
-        if re.sub(r"\.html$", "", a) not in doc_urls:
-            redirects[a] = "https://idvork.in" + urls[owner]
-    for src_, (fm_, _) in parsed.items():
+
+    # jekyll-redirect-from's /redirects.json: every redirect page's URL as
+    # written in redirect_from (a trailing slash kept), to its owner's
+    # page.url.
+    # The generator walks site.docs_to_write (collections in order, each
+    # sorted by Document#<=>: date, then path) and then site.pages; a later
+    # claim on a URL overwrites the value but keeps the key's position.
+    def generator_order(src: str):
+        top = Path(src).parts[0] if is_doc(src) else ""
+        rank = ["_posts", "_d", "_td", "_ig66", "_test"].index(top) if top else 9
+        return (rank, doc_date(parsed[src][0], src) if top else "", src)
+
+    redirects, alias_pages = {}, []
+    for src_ in sorted(parsed, key=generator_order):
+        fm_ = parsed[src_][0]
+        rf = fm_.get("redirect_from") or []
+        for x in [rf] if isinstance(rf, str) else rf:
+            raw = "/" + str(x).strip().lstrip("/")
+            a = "/" + str(x).strip().strip("/")
+            alias_pages.append(raw)
+            if re.sub(r"\.html$", "", a) not in doc_urls:
+                redirects[raw] = "https://idvork.in" + page_url(src_, fm_)
         if fm_.get("redirect_to"):
             t = str(fm_["redirect_to"])
             redirects[urls[src_]] = (
                 t if t.startswith("http") else "https://idvork.in" + t
             )
-    (WORK / "static" / "redirects.json").write_text(json.dumps(redirects))
+    (WORK / "static" / "redirects.json").write_text(
+        json.dumps(redirects, separators=(",", ":"), ensure_ascii=False)
+    )
+    write_sitemap(site, parsed, alias_pages)
     report["redirects"] = len(redirects)
     # /tags lists every tag a collection document uses, sorted like Liquid's
     # `sort` (case-sensitive), with its document count.
