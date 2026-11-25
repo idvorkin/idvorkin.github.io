@@ -2,7 +2,9 @@
 # Install the site toolchain on a fresh Mac or Linux box: the Zola version
 # pinned in zola/ZOLA_VERSION (the Pages workflow reads the same file), uv
 # (it runs the shim's Python scripts and resolves their inline deps), the
-# shim's deps themselves, and the JS bundle's node_modules.
+# shim's deps themselves, cargo, tools/backlinks (the back-links.json
+# builder) and tools/convert (the Markdown fixes), and the JS bundle's
+# node_modules.
 #
 #   zola/install.sh            # or: just setup
 #   BIN=/somewhere zola/install.sh
@@ -37,6 +39,15 @@ for f in "$HERE"/*.py "$HERE"/verify/*.py; do
   grep -q '^# /// script' "$f" && uv sync --script "$f" --quiet
 done
 
+# tools/backlinks is Rust; rustup's minimal profile is just rustc + cargo.
+if ! command -v cargo > /dev/null && [ ! -x "$HOME/.cargo/bin/cargo" ]; then
+  echo "installing rust (rustup, minimal profile) into ~/.cargo"
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --profile minimal --no-modify-path
+fi
+command -v cargo > /dev/null || export PATH="$HOME/.cargo/bin:$PATH"
+"$HERE/../tools/backlinks/run.sh"
+"$HERE/../tools/convert/build.sh" > /dev/null
+
 if command -v npm > /dev/null; then
   (cd "$HERE/.." && npm ci --silent)
 else
@@ -44,4 +55,5 @@ else
 fi
 
 case ":$PATH:" in *":$BIN:"*) ;; *) echo "note: add $BIN to PATH" ;; esac
+command -v cargo > /dev/null || echo "note: add ~/.cargo/bin to PATH"
 echo "ok: zola $V, $(uv --version)"

@@ -17,6 +17,8 @@ attribute lists and the include tokens.
 
 import re
 
+import rustconvert
+
 SQ_PUNCT = r"""[!"#$%'()*+,\-./:;<=>?@\[\\\]^_`{|}~]"""
 SQ_CLOSE = r"""[^ \\\t\r\n\[{(\-]"""
 LQ, RQ = {"'": "‘", '"': "“"}, {"'": "’", '"': "”"}
@@ -257,3 +259,15 @@ def apply(md: str) -> str:
         prev_blank = False
     flush()
     return "\n".join(out)
+
+
+# tools/convert's port of apply(), unless CONVERT_PY=1; apply_py stays the
+# reference and takes over for a text the Rust cannot do.
+apply_py = apply
+if rustconvert.MOD is not None:
+
+    def apply(md: str) -> str:  # noqa: F811
+        try:
+            return rustconvert.MOD.typography_apply(md)
+        except RuntimeError:
+            return apply_py(md)

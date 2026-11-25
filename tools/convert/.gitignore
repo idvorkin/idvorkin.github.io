@@ -1,0 +1,2 @@
+# cargo build by hand; build.sh compiles under ~/.cache/zola-convert
+target/

@@ -109,6 +109,8 @@ exclude:
     "__pycache__",
     "zola",
     "skill",
+    "tools",
+    "topic_rules.json",
   ]
 
 permalink: /:title

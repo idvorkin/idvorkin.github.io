@@ -310,8 +310,9 @@ update-backlinks: build
 # Update backlinks with a custom output file (reads the current _site/)
 update-backlinks-to:
     #!/usr/bin/env sh
-    # First argument is the output file
-    uv run ./build_back_links.py build "$1"
+    # First argument is the output file (old Python build:
+    # uv run ./build_back_links.py build --output-file "$1")
+    tools/backlinks/run.sh --site _site --output "$1"
 
 # The live preview (`just serve`) indexes its own first build, so this is for
 # the on-disk _site/ (scripts/verify-search-index.sh, docs/search.md).
@@ -354,7 +355,7 @@ write-backlinks-tmp:
     mkdir -p ~/tmp
 
     # Rebuild backlinks directly to ~/tmp
-    uv run ./build_back_links.py build ~/tmp/back-links.json
+    tools/backlinks/run.sh --site _site --output ~/tmp/back-links.json
     echo "Backlinks written to ~/tmp/back-links.json"
 
 # Crawl a running preview (`just serve`) for broken internal links

@@ -38,55 +38,12 @@ def _rule(words: str = "", tags: str = "", not_tags: str = "") -> TopicRule:
     )
 
 
-# The slugs are a contract with the Grabber app's hold-to-pick menu.
+# The slugs are a contract with the Grabber app's hold-to-pick menu. The rules
+# live in topic_rules.json so tools/backlinks (Rust) reads the same ones.
+TOPIC_RULES_PATH = Path(__file__).parent / "topic_rules.json"
 TOPIC_RULES: Dict[str, TopicRule] = {
-    "ai": _rule(
-        words="ai llm llms agentic agent agents chatgpt gpt claude openai anthropic "
-        "prompt rag",
-        tags="machine-learning large-language-models natural-language-processing "
-        "recommender-systems vibe-coding",
-    ),
-    "tech": _rule(
-        words="software developer programming coding code tooling python javascript "
-        "typescript debugging git github tmux vim neovim jekyll docker aws macos ios "
-        "linux ssh cloud shell terminal tech technology cli api databases devops",
-        tags="tools command-line security web-development system-design "
-        "distributed-systems data-engineering browser-automation web-scraping "
-        "self-hosting home-server hardware",
-        # On life posts as often as tech ones (the year reviews, time off); AI has it.
-        not_tags="ai-tooling",
-    ),
-    "family": _rule(
-        words="family parenting kids child marriage fatherhood",
-        tags="dad",
-    ),
-    "health": _rule(
-        words="physical fitness sleep diet dieting nutrition exercise workout injury "
-        "biohacking rehab mobility",
-        tags="health longevity pain-management weight-loss strength-training "
-        "body-mechanics biking cycling",
-        not_tags="fitness-functions",
-    ),
-    "mind": _rule(
-        words="mindfulness meditation emotional mental psychology anxiety depression "
-        "stoicism gratitude compassion rumination happiness burnout resilience "
-        "spiritual spirituality buddhism equanimity shame",
-        tags="self-reflection self-awareness self-talk self-knowledge self-confidence "
-        "self-discipline self-care mindset growth-mindset therapy "
-        "cognitive-reframing cognitive-behavioral-therapy "
-        "acceptance-and-commitment-therapy exposure-therapy reframing emotion "
-        "inner-peace inner-voices imposter-syndrome",
-        # Thinking frameworks, on strategy and productivity posts as much as these.
-        not_tags="mental-models resilience-patterns",
-    ),
-    "work": _rule(
-        words="career job hiring leadership manager team interview interviews "
-        "mentorship",
-        tags="management engineering-management people-management managing-up "
-        "one-on-ones company-culture engineering-culture performance-reviews "
-        "compensation remote-work future-of-work work-satisfaction",
-    ),
-    "books": _rule(words="book"),
+    slug: _rule(rule.get("words", ""), rule.get("tags", ""), rule.get("not_tags", ""))
+    for slug, rule in json.loads(TOPIC_RULES_PATH.read_text(encoding="utf-8")).items()
 }
 
 

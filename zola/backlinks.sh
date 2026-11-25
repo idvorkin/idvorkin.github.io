@@ -2,15 +2,29 @@
 # back-links.json for a Zola build in $OUT. build.sh runs this when BACKLINKS
 # is set; watch.py runs it after every preview rebuild.
 #
-#   BACKLINKS=1       build the index from $OUT (about 10 s)
+#   BACKLINKS=1       build the index from $OUT (tools/backlinks, ~0.4 s)
 #   BACKLINKS=cached  reuse $WORK/bbl/back-links.json from an earlier full
 #                     build, and build it only when there is none
+#   BACKLINKS_PY=1    build it with the old build_back_links.py (~2.3 s), the
+#                     fallback until the Rust port has earned its keep
 #
 # Needs SRC, WORK, OUT and BASE_URL, as build.sh exports them.
 set -euo pipefail
+HERE=$(cd "$(dirname "$0")" && pwd)
 if [ "${BACKLINKS:-}" = cached ] && [ -f "$WORK/bbl/back-links.json" ]; then
   # A preview rebuild: the index from the first build is close enough (what
   # `just ensure-backlinks` does for jekyll serve), and it costs 10 s to redo.
+  rm -f "$OUT/back-links.json" && cp "$WORK/bbl/back-links.json" "$OUT/back-links.json"
+elif [ -n "${BACKLINKS:-}" ] && [ -z "${BACKLINKS_PY:-}" ]; then
+  # A port of `build_back_links.py build` that writes the same bytes. The
+  # toolchain's copy runs, so any SRC checkout gets it; topic_rules.json comes
+  # from SRC when it has one.
+  mkdir -p "$WORK/bbl"
+  rules=$SRC/topic_rules.json
+  [ -f "$rules" ] || rules=$HERE/../topic_rules.json
+  (cd "$SRC" && "$HERE/../tools/backlinks/run.sh" --site "$OUT" --output "$WORK/bbl/back-links.json" \
+    --base-url "$BASE_URL" --topics "$SRC/topics.json" --rules "$rules" > "$WORK/backlinks.log" 2>&1) \
+    || { tail -20 "$WORK/backlinks.log"; exit 1; }
   rm -f "$OUT/back-links.json" && cp "$WORK/bbl/back-links.json" "$OUT/back-links.json"
 elif [ -n "${BACKLINKS:-}" ]; then
   # ponytail: build_back_links.py hardcodes ./_site and must run inside the

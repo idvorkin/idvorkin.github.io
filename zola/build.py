@@ -77,6 +77,11 @@ def build(cache: convert.Cache, restage: bool = True) -> dict:
         json.dumps(report, indent=1, default=str) + "\n"
     )
     lap("convert")
+    times["fixes"] = (
+        "python"
+        if convert.RUST is None
+        else f"rust, {report['rust_fallbacks']} fallback(s)"
+    )
     subprocess.run(
         [ZOLA, "build", "-o", str(OUT), "--force", "--base-url", BASE_URL],
         cwd=WORK,
