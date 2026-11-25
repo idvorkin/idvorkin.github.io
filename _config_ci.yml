@@ -18,3 +18,5 @@ exclude:
   # The Zola toolchain (zola/build.sh builds the site; this list only matters
   # to the Jekyll rollback build).
   - zola/
+  # tools/backlinks: the Rust back-links.json builder, and its target/.
+  - tools/

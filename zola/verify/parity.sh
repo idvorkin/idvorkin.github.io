@@ -20,4 +20,6 @@ echo "jekyll build -> $OUTDIR/jekyll"
 echo "zola build -> $OUTDIR/zola"
 rm -rf "$OUTDIR/zola"
 SRC=$SRC OUT=$OUTDIR/zola WORK=$OUTDIR/work STRICT=1 nice -n 19 "$HERE/../build.sh" > "$OUTDIR/zola.log"
+# verify.sh gives both sides one back-links.json, so check the index here.
+"$SRC/tools/backlinks/compare.sh" "$OUTDIR/zola"
 nice -n 19 "$HERE/parity.py" "$OUTDIR/jekyll" "$OUTDIR/zola" "$OUTDIR/parity.csv" "$OUTDIR/buckets.json"

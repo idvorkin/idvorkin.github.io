@@ -61,7 +61,7 @@ Repo-mode distinctions (AI-Tools vs Human-Supervised) and the fork-push workflow
 
 ### Backlinks index is CI-generated — never commit it
 
-`back-links.json` is **not tracked in git**. `.github/workflows/pages.yml` builds it fresh (`zola/build.sh` runs `build_back_links.py` with `BACKLINKS=1`) after every site build on every push to `main`, then ships it in the Pages deploy artifact. Nothing in Jekyll itself consumes the file — no `_plugins`/`_includes`/layout reads it — the browser fetches `/back-links.json` at runtime, so the deployed copy can never go stale and there is nothing to rebuild before opening a PR.
+`back-links.json` is **not tracked in git**. `.github/workflows/pages.yml` builds it fresh (`zola/build.sh` runs `tools/backlinks`, a Rust port of `build_back_links.py` that writes the same bytes, with `BACKLINKS=1`; `BACKLINKS_PY=1` runs the Python instead) after every site build on every push to `main`, then ships it in the Pages deploy artifact. Nothing in Jekyll itself consumes the file — no `_plugins`/`_includes`/layout reads it — the browser fetches `/back-links.json` at runtime, so the deployed copy can never go stale and there is nothing to rebuild before opening a PR.
 
 **Do not run `just update-backlinks` (or `just back-links`/`bbl`) as a pre-PR step, and never `git add` its output.** The file is gitignored specifically so an accidental `git add -A` can't catch it. (This used to be required — "rebuild before opening a new-post PR, commit the regenerated file" — and it was the single biggest source of merge conflicts between concurrent content PRs, since every PR touched the same generated file. Removed 2026-08; see the PR that removed this section for the history.)
 

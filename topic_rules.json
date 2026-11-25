@@ -1,0 +1,34 @@
+{
+  "ai": {
+    "words": "agent agentic agents ai anthropic chatgpt claude gpt llm llms openai prompt rag",
+    "tags": "large-language-models machine-learning natural-language-processing recommender-systems vibe-coding"
+  },
+  "tech": {
+    "words": "api aws cli cloud code coding databases debugging developer devops docker git github ios javascript jekyll linux macos neovim programming python shell software ssh tech technology terminal tmux tooling typescript vim",
+    "tags": "browser-automation command-line data-engineering distributed-systems hardware home-server security self-hosting system-design tools web-development web-scraping",
+    "not_tags": "ai-tooling",
+    "why_not_tags": "ai-tooling is on life posts as often as tech ones (the year reviews, time off); AI has it."
+  },
+  "family": {
+    "words": "child family fatherhood kids marriage parenting",
+    "tags": "dad"
+  },
+  "health": {
+    "words": "biohacking diet dieting exercise fitness injury mobility nutrition physical rehab sleep workout",
+    "tags": "biking body-mechanics cycling health longevity pain-management strength-training weight-loss",
+    "not_tags": "fitness-functions"
+  },
+  "mind": {
+    "words": "anxiety buddhism burnout compassion depression emotional equanimity gratitude happiness meditation mental mindfulness psychology resilience rumination shame spiritual spirituality stoicism",
+    "tags": "acceptance-and-commitment-therapy cognitive-behavioral-therapy cognitive-reframing emotion exposure-therapy growth-mindset imposter-syndrome inner-peace inner-voices mindset reframing self-awareness self-care self-confidence self-discipline self-knowledge self-reflection self-talk therapy",
+    "not_tags": "mental-models resilience-patterns",
+    "why_not_tags": "Thinking frameworks, on strategy and productivity posts as much as these."
+  },
+  "work": {
+    "words": "career hiring interview interviews job leadership manager mentorship team",
+    "tags": "company-culture compensation engineering-culture engineering-management future-of-work management managing-up one-on-ones people-management performance-reviews remote-work work-satisfaction"
+  },
+  "books": {
+    "words": "book"
+  }
+}

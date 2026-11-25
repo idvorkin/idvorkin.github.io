@@ -44,7 +44,7 @@ jobs:
       - uses: actions/checkout@v6
         with:
           persist-credentials: false
-          # build_back_links.py derives each page's last_modified from
+          # The back-links builder derives each page's last_modified from
           # `git log -1 -- <file>`. A shallow checkout grafts the tip commit to
           # have no parents, so git reports EVERY tracked file as added by it —
           # verified locally: the same commit shows 3 changed files in a full
@@ -70,15 +70,33 @@ jobs:
           curl -sSL "https://github.com/getzola/zola/releases/download/v${ZOLA_VERSION}/zola-v${ZOLA_VERSION}-x86_64-unknown-linux-gnu.tar.gz" | sudo tar -xz -C /usr/local/bin zola
           zola --version
 
+      # back-links.json is built by tools/backlinks (Rust). Cache the release
+      # binary itself, keyed on everything that compiles into it, so a deploy
+      # that does not touch the crate spends no time in cargo. A miss compiles
+      # it with the runner's preinstalled toolchain (about half a minute).
+      - name: Restore the back-links builder
+        id: backlinks-bin
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/backlinks-bin
+          key: backlinks-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('tools/backlinks/Cargo.lock', 'tools/backlinks/Cargo.toml', 'tools/backlinks/src/**') }}
+
+      - name: Compile the back-links builder (cache miss only)
+        if: steps.backlinks-bin.outputs.cache-hit != 'true'
+        run: |
+          cargo build --release --locked --manifest-path tools/backlinks/Cargo.toml --target-dir tools/backlinks/target
+          mkdir -p ~/.cache/backlinks-bin
+          cp tools/backlinks/target/release/backlinks ~/.cache/backlinks-bin/
+
       - name: Build site (Zola), back-links and Pagefind
         # CI's merged config (_config_ci.yml's exclude: list replaces the main
         # one, as Jekyll's --config a,b does) and page dates in UTC, as the
         # Jekyll build had them. STRICT fails on an unknown Liquid filter.
-        # build.sh runs build_back_links.py and Pagefind itself.
+        # build.sh runs tools/backlinks and Pagefind itself.
         env:
           TZ: UTC
           JEKYLL_CONFIG: _config.yml,_config_ci.yml
-        run: OUT="$PWD/_site" WORK="$PWD/.zola-work" STRICT=1 BACKLINKS=1 PAGEFIND=1 zola/build.sh
+        run: BACKLINKS_BIN="$HOME/.cache/backlinks-bin/backlinks" OUT="$PWD/_site" WORK="$PWD/.zola-work" STRICT=1 BACKLINKS=1 PAGEFIND=1 zola/build.sh
 
       - name: Verify search index and exclusions
         run: ./scripts/verify-search-index.sh

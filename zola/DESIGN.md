@@ -92,15 +92,15 @@ mirror: `https://<vm>.<tailnet>.ts.net:8448` (the exact URL is on the bead).
 static files, data, convert, Zola, finish) and then `backlinks.sh` and
 Pagefind when asked:
 
-| Variable      | Meaning                                                      |
-| ------------- | ------------------------------------------------------------ |
-| `SRC`         | checkout to build (default: the one `zola/` sits in)         |
-| `OUT`         | output dir, shaped like `_site`                              |
-| `WORK`        | scratch Zola site; one per source, so builds run in parallel |
-| `BASE_URL`    | becomes `site.url`, as `jekyll serve` does                   |
-| `BACKLINKS=1` | run `build_back_links.py` over the output                    |
-| `PAGEFIND=1`  | build the search index                                       |
-| `STRICT=1`    | fail on a stale hand port or an unknown Liquid filter        |
+| Variable      | Meaning                                                              |
+| ------------- | -------------------------------------------------------------------- |
+| `SRC`         | checkout to build (default: the one `zola/` sits in)                 |
+| `OUT`         | output dir, shaped like `_site`                                      |
+| `WORK`        | scratch Zola site; one per source, so builds run in parallel         |
+| `BASE_URL`    | becomes `site.url`, as `jekyll serve` does                           |
+| `BACKLINKS=1` | run `tools/backlinks` over the output (`BACKLINKS_PY=1`: the Python) |
+| `PAGEFIND=1`  | build the search index                                               |
+| `STRICT=1`    | fail on a stale hand port or an unknown Liquid filter                |
 
 The toolchain lives on `zola-port` in the fork until Igor decides to merge
 `zola/` into main. That merge is safe for Jekyll (`zola` is in `exclude:`)
