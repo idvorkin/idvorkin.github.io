@@ -277,7 +277,8 @@ worktree-init:
     BRANCH=$(git branch --show-current | tr '/' '-')
     LOG="/tmp/worktree-init-$BRANCH.log"
     echo "🔨 Starting bg toolchain + npm ci + Zola build + backlinks — log: $LOG"
-    nohup sh -c "zola/install.sh && just build" >"$LOG" 2>&1 & disown
+    # No `disown`: /bin/sh is dash here and has none (with set -e it aborted the recipe).
+    nohup sh -c "zola/install.sh && just build" >"$LOG" 2>&1 &
     echo "✅ Background setup fired. Ready in ~30-60s; first commit should find _site/ and back-links.json populated and the test hook runnable."
 
 # ===== Local-preview bootstrap =====
