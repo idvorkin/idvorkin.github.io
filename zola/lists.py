@@ -26,6 +26,10 @@ ESC, PARA, TABLE, DROP, DL = "escape", "paragraph", "table", "drop", "dl"
 BREAK, AFTER = "<break>", "<after>"  # blank line before / after an HTML line
 INLINE = "<!--zp-i-->"
 SETX = "setext:"
+# "</div> <!-- end -->" closing a block: kramdown's block ends at the tag
+# and the comment after it is a paragraph of its own.
+TAIL_COMMENT = re.compile(r"^(\s*</[a-zA-Z]\w*>)\s+(<!--.*-->)\s*$")
+TAIL = "<tail>"
 # kramdown's span-level HTML elements; any other tag starts a block.
 SPAN = set(
     "a abbr acronym b big bdo br button cite code del dfn em i img input ins kbd"
@@ -160,6 +164,8 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
             else:
                 while i < n and lines[i].strip():
                     i += 1
+                if TAIL_COMMENT.match(lines[i - 1]):
+                    edits[idx[i - 1]] = TAIL
             i += 1
             continue
         if (i == 0 or not lines[i - 1].strip()) and _lead(lines, i):
@@ -320,6 +326,9 @@ def mark(text: str) -> str:
             lines[k] = (
                 ("\n" if BREAK in mk else "") + lines[k] + ("\n" if AFTER in mk else "")
             )
+            continue
+        if mk == TAIL:
+            lines[k] = TAIL_COMMENT.sub(r"\1\n\n<p>\2</p>", lines[k])
             continue
         if mk == INLINE:
             lines[k] = lines[k].rstrip() + INLINE
