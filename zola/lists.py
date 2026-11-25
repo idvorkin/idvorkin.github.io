@@ -195,6 +195,10 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
                 sp = len(mm.group(3).expandtabs(4)) if mm.group(4) else 1
                 ci = len(mm.group(1)) + len(mm.group(2)) + (sp if 1 <= sp <= 4 else 1)
                 items.append({"ci": ci, "rows": [(j, mm.group(4))]})
+                if kind == "ul" and mm.group(2) != m.group(2):
+                    # kramdown keeps one list across - * +; CommonMark would
+                    # start another at the changed bullet.
+                    edits[("bullet", idx[j])] = m.group(2)
                 last_blank = False
             elif not items:
                 break
@@ -242,7 +246,11 @@ def mark(text: str) -> str:
     lines = text.split("\n")
     edits: dict = {}
     _scan(lines, list(range(len(lines))), edits)
-    for k, mk in edits.items():
+    for k, mk in list(edits.items()):
+        if isinstance(k, tuple):
+            ln = lines[k[1]]
+            lines[k[1]] = re.sub(r"^(\s*)[-*+]", lambda m: m.group(1) + mk, ln, count=1)
+            continue
         if isinstance(mk, tuple):
             # Marker line, the row, then a delimiter row so GFM sees a table;
             # finish.py turns the header back into a body row.
