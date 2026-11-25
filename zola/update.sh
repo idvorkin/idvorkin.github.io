@@ -14,7 +14,7 @@ for f in "$HERE"/*.py "$HERE"/verify/*.py; do
   grep -q '^# /// script' "$f" && uv sync --script "$f" --upgrade --quiet
 done
 # tools/backlinks: newest crate versions its Cargo.toml allows.
-cargo update --quiet --manifest-path "$HERE/../tools/backlinks/Cargo.toml"
+"$(command -v cargo || echo "$HOME/.cargo/bin/cargo")" update --quiet --manifest-path "$HERE/../tools/backlinks/Cargo.toml"
 "$HERE/install.sh"
 "$HERE/verify/parity.sh"
 echo "parity holds: commit zola/ZOLA_VERSION, tools/backlinks/Cargo.lock (and any shim change) together"

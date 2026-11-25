@@ -1,1 +1,2 @@
+# cargo run / cargo build by hand; run.sh builds under ~/.cache/backlinks
 target/

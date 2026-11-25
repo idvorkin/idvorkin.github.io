@@ -110,6 +110,7 @@ exclude:
     "zola",
     "skill",
     "tools",
+    "topic_rules.json",
   ]
 
 permalink: /:title

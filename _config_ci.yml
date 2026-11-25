@@ -20,3 +20,4 @@ exclude:
   - zola/
   # tools/backlinks: the Rust back-links.json builder, and its target/.
   - tools/
+  - topic_rules.json
