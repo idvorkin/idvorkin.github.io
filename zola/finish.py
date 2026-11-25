@@ -91,6 +91,11 @@ def task_lists(html: str) -> str:
     return "".join(out)
 
 
+# Each page's HTML before its layout, by URL: Jekyll's page.content, which
+# convert.render_feeds puts in feed.xml.
+CONTENTS: dict = {}
+
+
 def finish(work: Path, out: Path, site_url: str) -> str:
     site_url = site_url.rstrip("/")
     plan = json.loads((work / "finish.json").read_text())
@@ -128,6 +133,7 @@ def finish(work: Path, out: Path, site_url: str) -> str:
         # Zola marks every external Markdown link rel="external"; kramdown
         # writes a bare <a href>. No Jekyll page has rel="external" itself.
         html = html.replace(' rel="external"', "")
+        CONTENTS[url] = html
         if url in plan["wraps"]:
             html = (
                 (work / "wrap" / plan["wraps"][url])

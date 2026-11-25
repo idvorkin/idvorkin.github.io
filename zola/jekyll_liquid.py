@@ -178,6 +178,23 @@ def make_env(repo: Path, site: dict) -> Environment:
         _plain(v), ensure_ascii=False, separators=(",", ":")
     )
     f["markdownify"] = lambda _c, v: MD.render(_s(v))
+    stock_sort = f["sort"]
+
+    def sort(ctx, vals, key=None):
+        # `sort: title` with no such variable: Ruby Liquid sorts the items
+        # themselves, and Documents compare by date, then path (convert.py
+        # stores that as _key).
+        if (
+            (key is None or _undefined(key))
+            and isinstance(vals, list)
+            and vals
+            and isinstance(vals[0], dict)
+            and "_key" in vals[0]
+        ):
+            return sorted(vals, key=lambda d: d["_key"])
+        return stock_sort(ctx, vals, key)
+
+    f["sort"] = sort
     f["cgi_escape"] = lambda _c, v: urllib.parse.quote_plus(_s(v))
     f["uri_escape"] = lambda _c, v: urllib.parse.quote(
         _s(v), safe="/:?#[]@!$&'()*+,;=%"
@@ -188,6 +205,16 @@ def make_env(repo: Path, site: dict) -> Environment:
         .replace("<", "&lt;")
         .replace(">", "&gt;")
         .replace('"', "&quot;")
+        .replace("'", "&apos;")
+    )
+    # Ruby Liquid's escape is CGI.escapeHTML.
+    f["escape"] = lambda _c, v: (
+        _s(v)
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+        .replace("'", "&#39;")
     )
     # Not real Jekyll filters, but the site uses them, and Liquid 4's lax mode
     # passes the value through an unknown filter. The tag links rely on it.

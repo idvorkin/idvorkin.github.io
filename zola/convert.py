@@ -138,9 +138,12 @@ def page_url(src: str, fm: dict) -> str:
     its extension, an index becomes its directory, other output keeps it."""
     if fm.get("permalink"):
         return "/" + str(fm["permalink"]).lstrip("/")
-    if is_doc(src):
-        return jekyll_url(src, fm)
     p = Path(src)
+    if is_doc(src):
+        if p.parts[0] == "_posts":
+            return jekyll_url(src, fm)
+        # /:collection/:path keeps a trailing "index".
+        return f"/{COLLECTIONS[p.parts[0]]}/" + "/".join(p.parts[1:-1] + (p.stem,))
     parent = "" if str(p.parent) == "." else "/" + p.parent.as_posix()
     if p.suffix in (".md", ".markdown", ".html"):
         return parent + "/" if p.stem == "index" else f"{parent}/{p.stem}"
@@ -568,6 +571,86 @@ class Inc:
         self.inline = one_line and bool(INLINE_TAG.match(self.text))
         # Ends in Markdown: flows into what follows, as kramdown read it.
         self.markdown = bool(parts) and not parts[-1][0] and not self.inline
+
+
+# Feed-like root files rendered by Jekyll's own Liquid after Zola, from a
+# site.posts / site.<collection> model (render_feeds). sitemap.xml is
+# write_sitemap's; search-pins.json is still a Zola template.
+LIQUID_FEEDS = ("feed.xml", "search.json", "search-titles.json", "links.jsonp")
+SITE_DOCS: dict = {}
+
+
+def site_docs(parsed: dict, urls: dict) -> dict:
+    """site.posts and site.<label>: every document with its front matter,
+    url, date and tags, in Jekyll's order (Document#<=>: date, then path;
+    site.posts newest first)."""
+    out: dict = {}
+    for src, (fm, _) in parsed.items():
+        if not is_doc(src):
+            continue
+        top = Path(src).parts[0]
+        label = "posts" if top == "_posts" else LABELS[top]
+        tag = fm.get("tag")
+        tags = (
+            (tag if isinstance(tag, list) else [tag]) if tag else (fm.get("tags") or [])
+        )
+        tags = tags.split() if isinstance(tags, str) else [str(t) for t in tags if t]
+        date = jekyll_time(fm, src)
+        # Document#<=>: a quoted date stays a String, which never compares
+        # with a Time, so Ruby falls back to the path: order it as undated.
+        order = (
+            SITE_TIME
+            if label != "posts" and isinstance(fm.get("date"), str)
+            else datetime.datetime.strptime(date, "%Y-%m-%d %H:%M:%S %z")
+        )
+        out.setdefault(label, []).append(
+            {
+                **fm,
+                "url": page_url(src, fm),
+                "path": src,
+                "title": fm.get("title"),
+                "date": date,
+                "tags": tags,
+                "collection": label,
+                "content": None,
+                "_key": (order, src),
+            }
+        )
+    for label, docs in out.items():
+        docs.sort(key=lambda d: d["_key"], reverse=label == "posts")
+    return out
+
+
+def render_feeds(out_dir: Path, contents: dict) -> None:
+    """Jekyll's feed.xml, search.json, search-titles.json and links.jsonp,
+    rendered from their own Liquid. post.content is the page's HTML before
+    its layout (finish.py hands it over); a redirect_to document's is a
+    newline, as jekyll-redirect-from leaves it."""
+    site = {**CACHE_SITE[0], "time": SITE_TIME.strftime("%Y-%m-%d %H:%M:%S %z")}
+    for label, docs in SITE_DOCS.items():
+        for d in docs:
+            d["content"] = (
+                "\n"
+                if d.get("redirect_to")
+                else contents.get(jekyll_url(d["path"], d), "")
+            )
+        site[label] = docs
+    env = CACHE_SITE[1]
+    for name in LIQUID_FEEDS:
+        f = REPO / name
+        if not f.exists():
+            continue
+        m = re.match(
+            r"\A---[ \t]*\n(.*?)^---[ \t]*\n?(.*)\Z", f.read_text(), re.S | re.M
+        )
+        fm = (yaml.safe_load(m.group(1)) or {}) if m else {}
+        text = jekyll_liquid.render(
+            env, m.group(2) if m else f.read_text(), {"site": site, "page": fm}
+        )
+        (out_dir / name).write_text(text)
+
+
+CACHE_SITE: list = [None, None]
 
 
 def mark_raw_code(text: str) -> str:
@@ -1224,6 +1307,9 @@ def convert(cache: Cache) -> dict:
         rank = ["_posts", "_d", "_td", "_ig66", "_test"].index(top) if top else 9
         return (rank, doc_date(parsed[src][0], src) if top else "", src)
 
+    SITE_DOCS.clear()
+    SITE_DOCS.update(site_docs(parsed, urls))
+    CACHE_SITE[:] = [site, env]
     redirects, alias_pages = {}, []
     for src_ in sorted(parsed, key=generator_order):
         fm_ = parsed[src_][0]

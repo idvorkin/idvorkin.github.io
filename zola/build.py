@@ -85,6 +85,7 @@ def build(cache: convert.Cache, restage: bool = True) -> dict:
     )
     lap("zola")
     finish.finish(WORK, OUT, BASE_URL)
+    convert.render_feeds(OUT, finish.CONTENTS)
     lap("finish")
     times["converted"] = cache.converted
     return times

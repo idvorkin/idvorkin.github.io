@@ -16,12 +16,9 @@ generate_sitemap = false
 # (templates/feed.xml, templates/search.json, ...), which pull the full page
 # list with get_section rather than the date-only feed list.
 generate_feeds = true
-feed_filenames = [
-  "feed.xml",
-  "search.json",
-  "search-titles.json",
-  "search-pins.json",
-]
+feed_filenames = ["search-pins.json"]
+# feed.xml, search.json, search-titles.json and links.jsonp are Jekyll's own
+# Liquid, rendered after Zola by convert.render_feeds.
 # Dropped: links.jsonp (legacy JSONP of post titles; nothing in src/ or any
 # page loads it, and Zola only loads templates with known extensions).
 feed_limit = 20
