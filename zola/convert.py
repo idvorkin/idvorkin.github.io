@@ -1181,7 +1181,8 @@ def convert_page(src: str, fm: dict, body: str, ctx: dict) -> dict:
     date = zola_date(fm, src)
     if date:
         zfm["date"] = date
-    r["stubs"] = {a: url for a in kept}
+    # jekyll-redirect-from points a stub at page.url as written (/all/).
+    r["stubs"] = {a: page_url(src, fm) for a in kept}
     if fm.get("redirect_to"):
         # jekyll-redirect-from replaces the page with its stub.
         r["stubs"][url] = str(fm["redirect_to"])
