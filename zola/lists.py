@@ -25,6 +25,7 @@ T, L = "<!--zp-t-->", "<!--zp-l-->"
 ESC, PARA, TABLE, DROP, DL = "escape", "paragraph", "table", "drop", "dl"
 BREAK, AFTER = "<break>", "<after>"  # blank line before / after an HTML line
 INLINE = "<!--zp-i-->"
+SETX = "setext:"
 # kramdown's span-level HTML elements; any other tag starts a block.
 SPAN = set(
     "a abbr acronym b big bdo br button cite code del dfn em i img input ins kbd"
@@ -166,7 +167,7 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
             i += 1
             continue
         if (i == 0 or not lines[i - 1].strip()) and _table(lines, i):
-            edits[idx[i]] = (TABLE, _cells(line), None)
+            edits[idx[i]] = (TABLE, None, _cells(line))
             i += _table(lines, i)
             continue
         m = LIST.match(line)
@@ -202,6 +203,18 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
                 last_blank = False
             elif not items:
                 break
+            elif (
+                mm
+                and not mm.group(3)
+                and mm.group(2) == "-"
+                and not last_blank
+                and len(items[-1]["rows"]) == 1
+            ):
+                # "-" right under the item's text: kramdown's setext underline
+                # (an h2 in the item); indented, CommonMark reads it so too.
+                items[-1]["rows"].append((j, "-"))
+                items[-1]["setext"] = True
+                edits[idx[j]] = f"{SETX}{idx[items[-1]['rows'][0][0]]}"
             elif not s.strip():
                 items[-1]["rows"].append((j, ""))
                 last_blank = True
@@ -235,8 +248,13 @@ def _scan(lines: list[str], idx: list[int], edits: dict, start: int = 0) -> None
                 continue
             table = _table(text, 0)
             if table:
-                edits[idx[rows[0][0]]] = (TABLE, _cells(text[0]), it["ci"])
-            first_p = bool(text[0].strip()) and not _block_start(text[0]) and not table
+                edits[idx[rows[0][0]]] = (TABLE, it["ci"], _cells(text[0]))
+            first_p = (
+                bool(text[0].strip())
+                and not _block_start(text[0])
+                and not table
+                and not it.get("setext")
+            )
             # the first paragraph: up to a blank or a block start
             e = 1
             while e < len(text) and text[e].strip() and not _block_start(text[e]):
@@ -263,17 +281,30 @@ def mark(text: str) -> str:
     edits: dict = {}
     _scan(lines, list(range(len(lines))), edits)
     for k, mk in list(edits.items()):
+        if isinstance(mk, str) and mk.startswith(SETX):
+            item = lines[int(mk[len(SETX) :])]
+            head = re.match(r"\s*([-*+]|\d+[.)])[ \t]*", item).group(0)
+            lines[k] = " " * len(head) + lines[k].strip()
+            continue
         if isinstance(k, tuple):
             ln = lines[k[1]]
             lines[k[1]] = re.sub(r"^(\s*)[-*+]", lambda m: m.group(1) + mk, ln, count=1)
             continue
+        if isinstance(mk, tuple) and mk[1] is not None:
+            # An item's own line: ci counted from this list's margin, which
+            # for a nested list sits right of the page's.
+            mk = (
+                mk[0],
+                len(re.match(r"\s*([-*+]|\d+[.)])[ \t]*", lines[k]).group(0)),
+                mk[2],
+            )
         if isinstance(mk, tuple) and mk[0] == DL:
             lines[k] = lines[k][: mk[1]] + mk[2]
             continue
         if isinstance(mk, tuple):
             # Marker line, the row, then a delimiter row so GFM sees a table;
             # finish.py turns the header back into a body row.
-            _, cells, ci = mk
+            _, ci, cells = mk
             line = lines[k]
             ind = " " * ci if ci is not None else line[: len(line) - len(line.lstrip())]
             head = line[:ci] if ci is not None else ind
