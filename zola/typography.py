@@ -89,20 +89,24 @@ BLOCK_HTML = re.compile(
 )
 
 
-def _text(s: str) -> str:
-    """Typography for one run of plain Markdown text (kramdown's span scan:
-    the earliest match wins, a quote rule before a symbol at the same spot)."""
-    out, i = [], 0
-    while i < len(s):
+def _text(s: str, start: int = 0, end: int | None = None) -> str:
+    """Typography for s[start:end], one run of plain Markdown text (kramdown's
+    span scan: the earliest match wins, a quote rule before a symbol at the
+    same spot). Lookaheads see past end: kramdown's quote rules look at the
+    emphasis marks that follow, which SKIP splits off."""
+    end = len(s) if end is None else end
+    out, i = [], start
+    while i < end:
         mq = QUOTE_START.search(s, i)
-        ms = SYM_RE.search(s, i)
+        ms = SYM_RE.search(s, i, end)
+        mq = mq if mq and mq.start() < end else None
         if not mq and not ms:
             break
         if mq and (not ms or mq.start() <= ms.start()):
             m = None
             for rx, fn in RULES:
                 m = rx.match(s, mq.start())
-                if m and m.end() > mq.start():
+                if m and mq.start() < m.end() <= end:
                     break
                 m = None
             if not m:
@@ -116,17 +120,17 @@ def _text(s: str) -> str:
             out.append(s[i : ms.start()])
             out.append(dict(SYMS)[ms.group(0)])
             i = ms.end()
-    out.append(s[i:])
+    out.append(s[i:end])
     return "".join(out)
 
 
 def _line_spans(text: str) -> str:
     out, i = [], 0
     for m in SKIP.finditer(text):
-        out.append(_text(text[i : m.start()]))
+        out.append(_text(text, i, m.start()))
         out.append(m.group(0))
         i = m.end()
-    out.append(_text(text[i:]))
+    out.append(_text(text, i))
     return "".join(out)
 
 
