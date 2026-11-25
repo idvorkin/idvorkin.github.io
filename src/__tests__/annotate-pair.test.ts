@@ -14,7 +14,10 @@ const loadAnnotate = () => {
 };
 
 const json = (body: unknown, status = 200) =>
-  new Response(JSON.stringify(body), { status, headers: { "Content-Type": "application/json" } });
+  new Response(JSON.stringify(body), {
+    status,
+    headers: { "Content-Type": "application/json" },
+  });
 
 type Call = { url: string; init?: RequestInit };
 
@@ -99,7 +102,38 @@ describe("Connect to Larry", () => {
     expect(window.location.reload).toHaveBeenCalledTimes(1);
     const redeem = calls.find((c) => c.url.endsWith("/pair/redeem"));
     expect(redeem?.url).not.toContain("482913");
-    expect(JSON.parse(String(redeem?.init?.body))).toEqual({ challenge: "K7QX", code: "482913" });
+    expect(JSON.parse(String(redeem?.init?.body))).toEqual({
+      challenge: "K7QX",
+      code: "482913",
+    });
+  });
+
+  it("Copy puts the challenge and what to do with it on the clipboard", async () => {
+    pairingCockpit();
+    boot("blog.example");
+    const writeText = vi.fn(async () => {});
+    Object.defineProperty(navigator, "clipboard", {
+      value: { writeText },
+      configurable: true,
+    });
+    $("blog-annot-connect").click();
+    await flush();
+    $("blog-annot-pair-copy").click();
+    await flush();
+    expect(writeText).toHaveBeenCalledWith(
+      "Pair blog.example with Larry: code K7QX. In the Cockpit, open Pair a page (footer link) " +
+        "and type K7QX, then type the number it shows back on the page.",
+    );
+    expect($("blog-annot-pair-copy").textContent).toBe("Copied");
+  });
+
+  it("takes a pasted number with spaces: no length cap on the field", async () => {
+    pairingCockpit();
+    boot("blog.example");
+    $("blog-annot-connect").click();
+    await flush();
+    expect($("blog-annot-pair-code").getAttribute("maxlength")).toBeNull();
+    expect($("blog-annot-pair-code").getAttribute("inputmode")).toBe("numeric");
   });
 
   it("off the tailnet says so instead of hanging", async () => {
