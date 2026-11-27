@@ -94,7 +94,13 @@
   panel re-reads it from the start, so the Cockpit's page-details opener
   sits above that message. Copy puts the message and the page URL on the
   clipboard, for a reader without Larry (Send needs a Cockpit; a reader is
-  never prompted for one).
+  never prompted for one). The poll never gives up: a failure backs off
+  (4 s doubling to 60 s) and keeps trying, and the tab coming back, a
+  back-forward-cache restore, the network coming back or "Try again" polls
+  at once. The error line says what failed (network refused, timeout or
+  HTTP status), when the last success and attempt were, the retry count
+  and wait, the Cockpit host and whether the tab was hidden; "Details"
+  opens the Check card, whose report carries the last 20 polls.
 
   SECURITY: the GitHub PAT lives ONLY in this browser's localStorage under
   `blogAnnotateToken`. It is never committed, never sent anywhere except
@@ -264,6 +270,77 @@
       return prs.filter(function (pr) {
         return (pr.files || []).indexOf(want) !== -1;
       });
+    }
+
+    // The wait before the next chat poll after `fails` failures in a row:
+    // the base interval, doubling per failure, capped (see CHAT PANEL).
+    function chatPollDelay(fails, baseMs, maxMs) {
+      var n = Math.max(0, Math.min(fails || 0, 30));
+      return Math.min(baseMs * Math.pow(2, n), maxMs);
+    }
+
+    // HH:MM:SS in the browser's own time zone, or "never".
+    function clockTime(ms) {
+      if (!ms) return "never";
+      var d = new Date(ms);
+      return [d.getHours(), d.getMinutes(), d.getSeconds()]
+        .map(function (n) {
+          return (n < 10 ? "0" : "") + n;
+        })
+        .join(":");
+    }
+
+    // What went wrong, from a poll's {kind: network|timeout|http, status, error}.
+    function chatFailWhat(f) {
+      var what =
+        f.kind === "http"
+          ? "HTTP " + f.status + (f.status === 404 ? " (no page chat)" : "")
+          : f.kind === "timeout"
+            ? "timeout"
+            : "network refused";
+      return what + (f.error && f.kind !== "http" ? " (" + f.error + ")" : "");
+    }
+
+    // The chat's one-line error (see CHAT PANEL): the failure, the last
+    // success and attempt, the retry count and wait, the Cockpit host, and
+    // whether the tab was hidden. f adds lastOkAt, lastTryAt, fails, nextMs,
+    // cockpit and hidden to chatFailWhat's fields.
+    function chatFailLine(f) {
+      var host = "";
+      try {
+        host = new URL(f.cockpit).host;
+      } catch (e) {
+        host = String(f.cockpit || "no Cockpit");
+      }
+      var parts = [
+        "Can't reach Larry: " + chatFailWhat(f),
+        "last ok " +
+          clockTime(f.lastOkAt) +
+          ", tried " +
+          clockTime(f.lastTryAt),
+      ];
+      if (f.fails)
+        parts.push(
+          "retry " +
+            f.fails +
+            (f.nextMs ? " in " + Math.round(f.nextMs / 1000) + " s" : "")
+        );
+      parts.push(host);
+      if (f.hidden) parts.push("tab was hidden");
+      return parts.join(" · ");
+    }
+
+    // One poll from the recent log, for the Check report.
+    function chatPollLogLine(p) {
+      return (
+        clockTime(p.at) +
+        " " +
+        (p.ok ? "ok " + p.status : "✗ " + chatFailWhat(p)) +
+        " " +
+        p.ms +
+        " ms" +
+        (p.hidden ? " (tab hidden)" : "")
+      );
     }
 
     // ---------------------------------------------------- connection check
@@ -529,16 +606,18 @@
 
     // The report Copy and Send carry: when, then one line per step. Never
     // message text, the token or the buffer, so it is safe to paste anywhere.
-    function connectionReport(result, at) {
-      return ["Connection check, " + at]
-        .concat(
-          result.steps.map(function (s) {
-            return (
-              (CHECK_MARK[s.status] || "·") + " " + s.name + ": " + s.detail
-            );
-          })
-        )
-        .join("\n");
+    // `polls`, the chat's recent poll log (oldest first), is added when given.
+    function connectionReport(result, at, polls) {
+      var lines = ["Connection check, " + at].concat(
+        result.steps.map(function (s) {
+          return (CHECK_MARK[s.status] || "·") + " " + s.name + ": " + s.detail;
+        })
+      );
+      if (polls && polls.length)
+        lines = lines
+          .concat(["Recent page-chat polls (oldest first):"])
+          .concat(polls.map(chatPollLogLine));
+      return lines.join("\n");
     }
 
     // ---------------------------------------------------------------- flag
@@ -717,6 +796,9 @@
       cockpitOrigin: cockpitOrigin,
       connectionCheck: connectionCheck,
       connectionReport: connectionReport,
+      chatPollDelay: chatPollDelay,
+      chatFailLine: chatFailLine,
+      chatPollLogLine: chatPollLogLine,
       set: function (on) {
         live = !!on;
         setEnabled(live);
@@ -2107,8 +2189,26 @@
             list.appendChild(li);
           },
         }).then(function (result) {
-          report = connectionReport(result, new Date().toISOString());
+          report = connectionReport(
+            result,
+            new Date().toISOString(),
+            chatPolls
+          );
           if (!list.isConnected) return result;
+          if (chatPolls.length) {
+            var li = document.createElement("li");
+            li.id = "blog-annot-check-polls";
+            li.style.cssText =
+              "padding:5px 0;border-top:1px solid #e9ecef;white-space:pre-wrap;" +
+              "font:12px/1.4 ui-monospace,monospace";
+            var b = document.createElement("b");
+            b.textContent = "· Recent page-chat polls (oldest first):\n";
+            li.appendChild(b);
+            li.appendChild(
+              document.createTextNode(chatPolls.map(chatPollLogLine).join("\n"))
+            );
+            list.appendChild(li);
+          }
           copyBtn.disabled = false;
           // Only to the address Send and Chat already use, and only when it answered.
           var canSend = result.statusOk && !!LARRY && result.cockpit === LARRY;
@@ -2179,7 +2279,30 @@
       // by polling GET /page-chat. Polls only while the panel is open and the
       // tab is visible; stop() closes it, so it is as inert as the rest. The
       // inline comments above are untouched by it.
+      //
+      // The poll never gives up (igor2 bug 2026-11-27: on iPhone Safari a
+      // failed poll, likely a suspended tab, left the panel dead for good
+      // while another tab worked). A failure backs off, CHAT_POLL_MS doubling
+      // to CHAT_POLL_MAX_MS, and keeps trying; the tab coming back
+      // (visibilitychange, pageshow from the back-forward cache) or the
+      // network coming back ('online') polls at once, as does "Try again" on
+      // the error line. Each poll is capped at CHAT_POLL_GUARD_MS whether or
+      // not its fetch ever settles, and only the newest round reschedules,
+      // so a hung request can't stall or double the loop. The next success
+      // clears the error line and re-reads the status dot.
       var CHAT_POLL_MS = 4000;
+      var CHAT_POLL_MAX_MS = 60000;
+      var CHAT_POLL_GUARD_MS = COCKPIT_TIMEOUT_MS + 4000;
+      // The error line names the failure kind, the last success and attempt,
+      // the retry count and wait, the Cockpit host and whether the tab was
+      // hidden, with "Details" opening the Check card. The last CHAT_POLL_LOG
+      // polls are kept in memory and go into the Check report.
+      var CHAT_POLL_LOG = 20;
+      var chatPolls = []; // {at, ok, kind, status, error, ms, hidden}, oldest first
+      var chatLastOkAt = 0;
+      var chatLastFail = null;
+      var chatFails = 0; // failed polls in a row
+      var chatRound = 0; // bumped by every tick; a stale round never reschedules
       var chatTimer = null;
       var chatLastId = null; // the newest message id the panel has from a poll
       var chatSeen = {}; // message id -> its bubble
@@ -2217,27 +2340,62 @@
       var chatTa = document.getElementById("blog-annot-chat-text");
       var chatSendBtn = document.getElementById("blog-annot-chat-send");
 
-      function chatStatus(text) {
-        document.getElementById("blog-annot-chat-status").textContent =
-          text || "";
+      // `retry` adds "Try again" (polls now) and "Details" (the Check card).
+      function chatStatus(text, retry) {
+        var el = document.getElementById("blog-annot-chat-status");
+        el.textContent = text || "";
+        if (!text || !retry) return;
+        function link(id, label, onClick) {
+          var a = document.createElement("a");
+          a.href = "#";
+          a.id = id;
+          a.textContent = label;
+          a.style.marginLeft = "6px";
+          a.onclick = function (e) {
+            e.preventDefault();
+            onClick();
+          };
+          el.appendChild(a);
+        }
+        link("blog-annot-chat-retry", "Try again", function () {
+          chatStatus("Trying again…");
+          chatTick();
+        });
+        link("blog-annot-chat-details", "Details", checkOpen);
       }
 
       function chatFetch(path, init) {
         init = init || {};
         if (!SAME_HOST && window.AbortSignal && AbortSignal.timeout)
           init.signal = AbortSignal.timeout(COCKPIT_TIMEOUT_MS);
+        // Each error carries kind (http|timeout|network), status and the
+        // browser's own text, for the chat's error line and poll log.
+        function fail(msg, kind, status, detail) {
+          var e = new Error(msg);
+          e.kind = kind;
+          e.status = status || 0;
+          e.detail = detail || "";
+          return e;
+        }
         return fetch(LARRY + path, init).then(
           function (res) {
             if (res.status === 404)
-              throw new Error("this Cockpit has no page chat yet");
-            if (!res.ok) throw new Error("Cockpit returned " + res.status);
+              throw fail("this Cockpit has no page chat yet", "http", 404);
+            if (!res.ok)
+              throw fail("Cockpit returned " + res.status, "http", res.status);
             return res.json();
           },
-          function () {
+          function (err) {
             // An older Cockpit answers 404 with no CORS header, which the browser
             // reports as a failed fetch, the same as being off the tailnet.
-            throw new Error(
-              "can't reach the Cockpit, or it has no page chat yet"
+            var name = (err && err.name) || "";
+            throw fail(
+              "can't reach the Cockpit, or it has no page chat yet",
+              name === "TimeoutError" || name === "AbortError"
+                ? "timeout"
+                : "network",
+              0,
+              String((err && err.message) || err || "")
             );
           }
         );
@@ -2313,14 +2471,24 @@
           (chatLastId && !fromId
             ? "&after=" + encodeURIComponent(chatLastId)
             : "");
+        var t0 = Date.now();
+        var hidden = !!document.hidden;
         return chatFetch(q, { cache: "no-store" })
           .then(function (out) {
+            chatRecord({
+              at: t0,
+              ok: true,
+              status: 200,
+              ms: Date.now() - t0,
+              hidden: hidden,
+            });
+            chatLastOkAt = t0;
             var msgs = out.messages || [];
             if (fromId) {
               var has = msgs.some(function (x) {
                 return x.id === fromId;
               });
-              if (!has) return;
+              if (!has) return true;
               chatLog.textContent = "";
               chatSeen = {};
               chatLastId = null;
@@ -2336,21 +2504,126 @@
             if (!chatBusy) chatStatus("");
             offerConnect(false);
             flushToCockpit();
+            return true;
           })
           .catch(function (err) {
-            chatStatus("Can't reach Larry: " + (err.message || err));
+            chatLastFail = {
+              at: t0,
+              ok: false,
+              kind: err.kind || "network",
+              status: err.status || 0,
+              error: err.detail || "",
+              ms: Date.now() - t0,
+              hidden: hidden,
+            };
+            chatRecord(chatLastFail);
+            chatShowFail(0);
             offerConnect(true);
+            setDot("unreachable");
+            return false;
           });
       }
 
-      function chatSchedule() {
+      // The recent poll log the Check report carries (see CHAT PANEL).
+      function chatRecord(p) {
+        chatPolls.push(p);
+        if (chatPolls.length > CHAT_POLL_LOG) chatPolls.shift();
+      }
+
+      // The error line for the latest failure; nextMs is the wait before the
+      // next try, or 0 while it is not decided yet.
+      function chatShowFail(nextMs) {
+        var f = chatLastFail;
+        if (!f) return;
+        chatStatus(
+          chatFailLine({
+            kind: f.kind,
+            status: f.status,
+            error: f.error,
+            lastOkAt: chatLastOkAt,
+            lastTryAt: f.at,
+            fails: chatFails,
+            nextMs: nextMs,
+            cockpit: LARRY,
+            hidden: f.hidden,
+          }),
+          true
+        );
+      }
+
+      // One round of the poll loop (see CHAT PANEL): poll unless the tab is
+      // hidden, then arm the next round at the backoff delay. Resolves once
+      // the round is decided, even if its fetch never settles.
+      function chatTick() {
+        var round = ++chatRound;
         clearTimeout(chatTimer);
         chatTimer = null;
-        if (chatPanel.hidden || !live) return;
-        chatTimer = setTimeout(function () {
-          (document.hidden ? Promise.resolve() : chatPoll()).then(chatSchedule);
-        }, CHAT_POLL_MS);
+        if (chatPanel.hidden || !live || !LARRY) return Promise.resolve();
+        if (document.hidden) {
+          chatArm(round);
+          return Promise.resolve();
+        }
+        var guard;
+        var tryAt = Date.now();
+        var capped = new Promise(function (res) {
+          guard = setTimeout(function () {
+            res(false);
+          }, CHAT_POLL_GUARD_MS);
+        });
+        return Promise.race([chatPoll(), capped]).then(function (ok) {
+          clearTimeout(guard);
+          if (round !== chatRound) return;
+          var wasFailing = chatFails > 0;
+          if (ok === false) {
+            if (!chatLastFail || chatLastFail.at < tryAt) {
+              // The guard fired: the fetch never settled.
+              chatLastFail = {
+                at: tryAt,
+                ok: false,
+                kind: "timeout",
+                status: 0,
+                error:
+                  "no answer in " +
+                  CHAT_POLL_GUARD_MS / 1000 +
+                  " s, request hung",
+                ms: CHAT_POLL_GUARD_MS,
+                hidden: !!document.hidden,
+              };
+              chatRecord(chatLastFail);
+            }
+            chatFails++;
+            chatShowFail(
+              chatPollDelay(chatFails, CHAT_POLL_MS, CHAT_POLL_MAX_MS)
+            );
+          } else {
+            chatFails = 0;
+            // Back after a failure: the dot shows the Cockpit's real state.
+            if (wasFailing) refreshLarry();
+          }
+          chatArm(round);
+        });
       }
+
+      function chatArm(round) {
+        if (round !== chatRound || chatPanel.hidden || !live) return;
+        chatTimer = setTimeout(
+          chatTick,
+          chatPollDelay(chatFails, CHAT_POLL_MS, CHAT_POLL_MAX_MS)
+        );
+      }
+
+      // Back in view, back from the back-forward cache, or back online: poll
+      // now instead of waiting out the backoff.
+      function chatResume() {
+        if (chatPanel.hidden || !live || !LARRY) return;
+        if (document.hidden) return;
+        chatTick();
+      }
+      document.addEventListener("visibilitychange", chatResume);
+      window.addEventListener("pageshow", function (e) {
+        if (e.persisted) chatResume();
+      });
+      window.addEventListener("online", chatResume);
 
       function chatOpen() {
         if (!LARRY && !SAME_HOST && OWNER) {
@@ -2378,11 +2651,13 @@
           return Promise.resolve();
         }
         chatTa.focus();
-        return chatPoll().then(chatSchedule);
+        chatFails = 0;
+        return chatTick();
       }
 
       function chatClose() {
         chatPanel.hidden = true;
+        chatRound++; // an in-flight round must not re-arm
         clearTimeout(chatTimer);
         chatTimer = null;
       }
@@ -2510,6 +2785,7 @@
         close: chatClose,
         send: chatSend,
         poll: chatPoll,
+        tick: chatTick,
       };
 
       // ------------------------------------------------------------ open PRs
