@@ -155,9 +155,10 @@
       tailnet), or a fetch the browser refused, which it never explains (not
       on Tailscale, DNS, certificate, CORS or a Local Network Access block).
       Then Chrome's Local Network Access permission for this site, from
-      `navigator.permissions` (granted, denied, prompt or unknown): a public
-      page needs it to fetch a tailnet address, and a denied or dismissed
-      prompt fails as that same bare network error. (3) GET `/page-chat` for this page, the poll's query without `after`:
+      `navigator.permissions` (granted, denied, prompt or unknown), read
+      after the status fetch since that fetch is what raises the prompt: a
+      public page needs it to fetch a tailnet address, and a denied or
+      dismissed prompt fails as that same bare network error. (3) GET `/page-chat` for this page, the poll's query without `after`:
       status and message count only. (4) The page origin, whether storage
       is persistent (`navigator.storage.persisted()`), and the user agent.
       "Copy report" copies the lines; "Send report to Larry" posts them to
@@ -411,11 +412,23 @@
 
       var answered = false; // any HTTP status at all
       var statusOk = false;
+      // Read before and after the status fetch: in Chrome that fetch is what
+      // raises the prompt, and it waits on the answer.
+      var lnaBefore = "unknown";
       var lna = "unknown";
+      function knownLna(state) {
+        return LOCAL_NETWORK[state] ? state : "unknown";
+      }
       return localNetworkState(env.permissions)
         .then(function (state) {
-          lna = LOCAL_NETWORK[state] ? state : "unknown";
+          lnaBefore = knownLna(state);
           return checkGet(env, target + "/larry/status");
+        })
+        .then(function (r) {
+          return localNetworkState(env.permissions).then(function (state) {
+            lna = knownLna(state);
+            return r;
+          });
         })
         .then(function (r) {
           answered = r.status > 0;
@@ -432,12 +445,22 @@
                 (r.body.state || "state unknown")
             );
           } else {
-            add("Cockpit status", "fail", checkFailText(r, env.timeoutMs));
+            add(
+              "Cockpit status",
+              "fail",
+              checkFailText(r, env.timeoutMs) +
+                (r.kind === "timeout" && lnaBefore === "prompt"
+                  ? ", or the browser's Local network access prompt was left unanswered"
+                  : "")
+            );
           }
           add(
             "Local network access",
             LOCAL_NETWORK[lna][0],
-            LOCAL_NETWORK[lna][1]
+            LOCAL_NETWORK[lna][1] +
+              (lnaBefore !== lna && lnaBefore !== "unknown"
+                ? " (was " + lnaBefore + " before this check's request)"
+                : "")
           );
           if (!answered) {
             add("Page chat", "info", "skipped: the Cockpit did not answer");

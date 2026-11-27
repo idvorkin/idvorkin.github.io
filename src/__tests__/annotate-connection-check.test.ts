@@ -202,7 +202,7 @@ describe("connectionCheck (the step logic)", () => {
         },
       }),
     );
-    expect(queried).toEqual(["local-network-access"]);
+    expect(queried).toEqual(["local-network-access", "local-network-access"]);
     const rejects = await api().connectionCheck(
       env({
         stored: SAVED,
@@ -219,6 +219,32 @@ describe("connectionCheck (the step logic)", () => {
       status: "info",
       detail: "not reported by this browser",
     });
+  });
+
+  it("reports the permission as it stands after the request, which may have raised the prompt", async () => {
+    const states = ["prompt", "granted"];
+    const r = await api().connectionCheck(
+      env({ stored: SAVED, permissions: { query: async () => ({ state: states.shift() || "granted" }) } }),
+    );
+    expect(step(r, "Local network access")).toEqual({
+      name: "Local network access",
+      status: "pass",
+      detail: "granted (was prompt before this check's request)",
+    });
+  });
+
+  it("a timeout while the prompt was pending names the prompt as a cause", async () => {
+    const hang = (_url: string, init?: RequestInit) =>
+      new Promise<Response>((_res, rej) => {
+        init?.signal?.addEventListener("abort", () => rej(new DOMException("aborted", "AbortError")));
+      });
+    const r = await api().connectionCheck(
+      env({ stored: SAVED, fetch: hang, timeoutMs: 20, permissions: { query: async () => ({ state: "prompt" }) } }),
+    );
+    expect(step(r, "Cockpit status").detail).toBe(
+      "no answer in 0.02 s (the usual sign of being off Tailscale), " +
+        "or the browser's Local network access prompt was left unanswered",
+    );
   });
 
   it("names the page origin and user agent", async () => {
