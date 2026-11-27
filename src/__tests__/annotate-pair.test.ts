@@ -190,7 +190,7 @@ describe("Connect to Larry", () => {
       await flush();
       await (window as any).blogAnnotate.chat.open();
       await flush();
-      expect($("blog-annot-chat-status").textContent).toMatch(/can't reach the Cockpit/);
+      expect($("blog-annot-chat-status").textContent).toMatch(/^Can't reach Larry: network refused/);
       expect($("blog-annot-chat-connect").hidden).toBe(false);
       $("blog-annot-chat-connect").click();
       await flush();
