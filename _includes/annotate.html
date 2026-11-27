@@ -154,7 +154,10 @@
       time: an HTTP status, no answer within COCKPIT_TIMEOUT_MS (off the
       tailnet), or a fetch the browser refused, which it never explains (not
       on Tailscale, DNS, certificate, CORS or a Local Network Access block).
-      (3) GET `/page-chat` for this page, the poll's query without `after`:
+      Then Chrome's Local Network Access permission for this site, from
+      `navigator.permissions` (granted, denied, prompt or unknown): a public
+      page needs it to fetch a tailnet address, and a denied or dismissed
+      prompt fails as that same bare network error. (3) GET `/page-chat` for this page, the poll's query without `after`:
       status and message count only. (4) The page origin, whether storage
       is persistent (`navigator.storage.persisted()`), and the user agent.
       "Copy report" copies the lines; "Send report to Larry" posts them to
@@ -322,10 +325,47 @@
       return "HTTP " + r.status + " in " + r.ms + " ms";
     }
 
+    // Chrome asks before a public page may fetch a private (tailnet) address,
+    // and a refused or dismissed prompt surfaces only as "Failed to fetch".
+    // The Permissions API is the one place that says so; other browsers
+    // don't know the name and reject, which reads as "unknown".
+    function localNetworkState(permissions) {
+      if (!permissions || typeof permissions.query !== "function")
+        return Promise.resolve("unknown");
+      return Promise.resolve()
+        .then(function () {
+          return permissions.query({ name: "local-network-access" });
+        })
+        .then(
+          function (p) {
+            return (p && p.state) || "unknown";
+          },
+          function () {
+            return "unknown";
+          }
+        );
+    }
+
+    var LOCAL_NETWORK = {
+      granted: ["pass", "granted"],
+      denied: [
+        "fail",
+        "denied, so this page cannot reach a tailnet address. Allow " +
+          "Local network access in this site's settings (the icon left of the address)",
+      ],
+      prompt: [
+        "info",
+        "not decided yet: the browser asks on the first Cockpit request, " +
+          "and a dismissed prompt fails as a network error",
+      ],
+      unknown: ["info", "not reported by this browser"],
+    };
+
     // The steps, in order: {name, status: pass|fail|info, detail}. env:
     // stored (raw localStorage value or null), sameHost, host, fallback
     // (DEFAULT_COCKPIT), page (the page-chat key), pageOrigin, userAgent,
-    // storage (navigator.storage or null), fetch, now, timeoutMs, and an
+    // storage (navigator.storage or null), permissions (navigator.permissions
+    // or null), fetch, now, timeoutMs, and an
     // optional onStep called as each line lands. Resolves to {steps,
     // cockpit (the address tested), answered (any HTTP status), statusOk}.
     function connectionCheck(env) {
@@ -371,7 +411,12 @@
 
       var answered = false; // any HTTP status at all
       var statusOk = false;
-      return checkGet(env, target + "/larry/status")
+      var lna = "unknown";
+      return localNetworkState(env.permissions)
+        .then(function (state) {
+          lna = LOCAL_NETWORK[state] ? state : "unknown";
+          return checkGet(env, target + "/larry/status");
+        })
         .then(function (r) {
           answered = r.status > 0;
           statusOk = !!r.ok;
@@ -389,6 +434,11 @@
           } else {
             add("Cockpit status", "fail", checkFailText(r, env.timeoutMs));
           }
+          add(
+            "Local network access",
+            LOCAL_NETWORK[lna][0],
+            LOCAL_NETWORK[lna][1]
+          );
           if (!answered) {
             add("Page chat", "info", "skipped: the Cockpit did not answer");
             return;
@@ -2012,6 +2062,7 @@
           pageOrigin: ORIGIN,
           userAgent: navigator.userAgent,
           storage: navigator.storage || null,
+          permissions: navigator.permissions || null,
           fetch: function (url, init) {
             return fetch(url, init);
           },

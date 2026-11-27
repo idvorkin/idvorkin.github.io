@@ -68,6 +68,7 @@ describe("connectionCheck (the step logic)", () => {
     expect(r.steps.map((s) => s.name)).toEqual([
       "Cockpit address",
       "Cockpit status",
+      "Local network access",
       "Page chat",
       "Page origin",
       "Storage",
@@ -176,6 +177,50 @@ describe("connectionCheck (the step logic)", () => {
     expect(step(none, "Storage").detail).toBe("unknown");
   });
 
+  it("reports Chrome's Local Network Access permission, and unknown where it isn't known", async () => {
+    const perm = (state: string) => ({ query: async ({ name }: { name: string }) => ({ name, state }) });
+    const granted = await api().connectionCheck(env({ stored: SAVED, permissions: perm("granted") }));
+    expect(step(granted, "Local network access")).toEqual({
+      name: "Local network access",
+      status: "pass",
+      detail: "granted",
+    });
+    const denied = await api().connectionCheck(env({ stored: SAVED, permissions: perm("denied") }));
+    expect(step(denied, "Local network access").status).toBe("fail");
+    expect(step(denied, "Local network access").detail).toMatch(/^denied, so this page cannot reach a tailnet address/);
+    const prompt = await api().connectionCheck(env({ stored: SAVED, permissions: perm("prompt") }));
+    expect(step(prompt, "Local network access").detail).toMatch(/^not decided yet/);
+    const queried: string[] = [];
+    await api().connectionCheck(
+      env({
+        stored: SAVED,
+        permissions: {
+          query: async ({ name }: { name: string }) => {
+            queried.push(name);
+            return { state: "granted" };
+          },
+        },
+      }),
+    );
+    expect(queried).toEqual(["local-network-access"]);
+    const rejects = await api().connectionCheck(
+      env({
+        stored: SAVED,
+        permissions: {
+          query: () => {
+            throw new TypeError("not a valid PermissionName");
+          },
+        },
+      }),
+    );
+    expect(step(rejects, "Local network access").detail).toBe("not reported by this browser");
+    const none = await api().connectionCheck(env({ stored: SAVED, permissions: null }));
+    expect(step(none, "Local network access")).toMatchObject({
+      status: "info",
+      detail: "not reported by this browser",
+    });
+  });
+
   it("names the page origin and user agent", async () => {
     const r = await api().connectionCheck(env({ stored: SAVED }));
     expect(step(r, "Page origin")).toEqual({ name: "Page origin", status: "info", detail: "https://idvork.in" });
@@ -185,7 +230,7 @@ describe("connectionCheck (the step logic)", () => {
   it("calls onStep as each line lands", async () => {
     const seen: string[] = [];
     await api().connectionCheck(env({ stored: SAVED, onStep: (s: Step) => seen.push(s.name) }));
-    expect(seen).toHaveLength(6);
+    expect(seen).toHaveLength(7);
     expect(seen[0]).toBe("Cockpit address");
   });
 
@@ -196,6 +241,7 @@ describe("connectionCheck (the step logic)", () => {
       "Connection check, 2026-11-27T18:00:00.000Z",
       `✓ Cockpit address: saved: ${SAVED}`,
       "✓ Cockpit status: HTTP 200 in 25 ms, Larry idle",
+      "· Local network access: not reported by this browser",
       "✓ Page chat: HTTP 200 in 25 ms, no thread for this page yet",
       "· Page origin: https://idvork.in",
       "· Storage: unknown",
@@ -259,7 +305,7 @@ describe("the Check card", () => {
     $("blog-annot-check").click();
     await flush();
     const lines = Array.from(document.querySelectorAll("#blog-annot-check-list li"));
-    expect(lines).toHaveLength(6);
+    expect(lines).toHaveLength(7);
     expect(lines[0].getAttribute("data-status")).toBe("pass");
     expect($("blog-annot-check-send").disabled).toBe(false);
     $("blog-annot-check-send").click();

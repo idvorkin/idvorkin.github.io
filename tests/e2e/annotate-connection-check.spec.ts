@@ -32,10 +32,10 @@ test.describe("annotate connection check", () => {
     await openWithSaved(page, baseURL, SAVED);
     await page.locator("#blog-annot-check").click();
     const lines = page.locator("#blog-annot-check-list li");
-    await expect(lines).toHaveCount(6);
+    await expect(lines).toHaveCount(7);
     await expect(lines.nth(0)).toHaveText(`✓ Cockpit address: saved: ${SAVED}`);
     await expect(lines.nth(1)).toContainText("✓ Cockpit status: HTTP 200");
-    await expect(lines.nth(2)).toContainText("no thread for this page yet");
+    await expect(lines.nth(3)).toContainText("no thread for this page yet");
     await expect(page.locator("#blog-annot-check-send")).toBeEnabled();
   });
 
@@ -45,10 +45,10 @@ test.describe("annotate connection check", () => {
     await openWithSaved(page, baseURL, bogus);
     await page.locator("#blog-annot-check").click();
     const lines = page.locator("#blog-annot-check-list li");
-    await expect(lines).toHaveCount(6);
+    await expect(lines).toHaveCount(7);
     await expect(lines.nth(1)).toHaveAttribute("data-status", "fail");
     await expect(lines.nth(1)).toContainText("network error");
-    await expect(lines.nth(2)).toContainText("skipped");
+    await expect(lines.nth(3)).toContainText("skipped");
     await expect(page.locator("#blog-annot-check-send")).toBeDisabled();
     await expect(page.locator("#blog-annot-check-copy")).toBeEnabled();
   });
